@@ -81,7 +81,11 @@
                         <xsl:value-of select="format-date(tei:p/tei:date[@type='entry']/@to,'[D01] [Mn,*-3] [Y0001]', 'fr', (), ())"/>
                     </xsl:when>
                 </xsl:choose>-->
-                <xsl:apply-templates select="tei:p/tei:date[@type='entry']" mode="date"/>                                        
+                <xsl:apply-templates select="tei:p/tei:date[@type='entry']" mode="date"/>
+                <!--<xsl:if test="tei:p/tei:pb[@facs] | tei:pb[@fac]">
+                    <xsl:variable name="img" select="/tei:pb/@facs"/>
+                    <img src="../images/complet/{$img}.jpg" alt="Durival"/>
+                </xsl:if>-->
             </div>
             <div class="large-8 columns">
                 <xsl:for-each select="tei:p">
@@ -136,19 +140,31 @@
         <xsl:text>]</xsl:text>
     </xsl:template>
     
-    <xsl:template match="tei:div[@type='transcription']//tei:persName | tei:div[@type='transcription']//tei:rs[@type='person']">
-        <span class="ident"><xsl:apply-templates/></span>
+    <xsl:template match="tei:div[@type='transcription']//tei:persName[@ref]">
+        <span class="identPers"><xsl:apply-templates/></span>
     </xsl:template>
     
-    <xsl:template match="tei:div[@type='transcription']//tei:placeName">
-        <span class="ident"><xsl:apply-templates/></span>
+    <xsl:template match="tei:div[@type='transcription']//tei:rs[@type='person' and @ref]">
+        <span class="identPers"><u><xsl:apply-templates/></u></span>
+    </xsl:template>
+    
+    <xsl:template match="tei:div[@type='transcription']//tei:placeName[@ref]">
+        <span class="identPlace"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="tei:div[@type='transcription']//tei:orgName[@ref]">
+        <span class="identOrg"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="tei:div[@type='transcription']//tei:placeName[not(@ref)] | tei:div[@type='transcription']//tei:persName[not(@ref)] | tei:div[@type='transcription']//tei:orgName[not(@ref)] | tei:div[@type='transcription']//tei:rs[not(@ref) and not(@type='memoir')]">
+        <span class="identRef"><xsl:apply-templates/></span>
     </xsl:template>
     
     <xsl:template match="tei:div[@type='transcription']//tei:date[not(@type='entry')]">
-        <span class="ident"><xsl:apply-templates/></span>
+        <span class="identDate"><xsl:apply-templates/></span>
     </xsl:template>
     
-    <xsl:template match="tei:div[@type='transcription']//tei:title">
+    <xsl:template match="tei:div[@type='transcription']//tei:title | tei:div[@type='transcription']//tei:rs[@type='memoir']">
         <i><xsl:apply-templates/></i>
     </xsl:template>
     
