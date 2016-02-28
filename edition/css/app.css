@@ -7,7 +7,27 @@
         padding-left:100px; 
     }
     
-.ident
+.identPers
+    {
+        color:blue;
+    }
+    
+.identPlace
+    {
+        color:green;
+    }
+    
+.identRef
     {
         color:red;
+    }
+
+.identDate
+    {
+        color:brown;
+    }
+    
+.identOrg
+    {
+        color:purple;
     }
