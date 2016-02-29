@@ -40,9 +40,9 @@
             <person xml:id="fleury"><persName>Joseph-Abraham Bénard dit Fleury </persName><state><p>comédien</p></state></person>
             <person xml:id="rocourt"><persName>M. le S. Rocourt</persName><state><p>comédien</p></state></person><!-- Sauxerotte -->
             <person xml:id="commissairefleury"><persName>M. S. Fleury</persName><state><p>commissaire de police</p></state></person>
-            <person xml:id="deMorey"><persName>M. de Morey</persName></person>                        
+            <!--<person xml:id="deMorey"><persName>M. de Morey</persName></person>-->                        
             <person xml:id="christineSaxe"><persName>Christine de Saxe</persName><state><p>princesse et comtesse d'Henneberg</p></state></person>
-            <person xml:id="princesseSaxe"><persName>Mad. la princesse de Saxe</persName><state><p><!-- todo idem Christine de Saxe --></p></state></person>
+            <!--<person xml:id="princesseSaxe"><persName>Mad. la princesse de Saxe</persName><state><p><!-\- todo idem Christine de Saxe -\-></p></state></person>-->
             <person xml:id="boufflersStanislas"><persName>Stanislas Jean de Boufflers</persName><state><p>chevalier</p></state></person>            
             <person xml:id="salmon"><persName>Jean-Baptiste Salmon</persName><state><p>maître de latin</p></state></person>                                   
             <person xml:id="remyCellier"><persName>Dom Remy Cellier</persName><state><p>abbé prélat de Flavigny</p></state></person>
@@ -161,7 +161,7 @@
             <person xml:id="louis"><persName>M. Louis</persName><state><p>Secrétaire du duc de Fleury<!-- todo il y a peut être 2 "M. Louis", un secrétaire et un médecin --></p></state></person>
             <person xml:id="croismare"><persName>M. de Croismare</persName></person>
             <person xml:id="lenoncourt"><persName>M. de Lenoncourt</persName></person>
-            <person xml:id="rochouartC"><persName>M. le cardinal de Rochouart</persName></person>
+            <!--<person xml:id="rochouartC"><persName>M. le cardinal de Rochouart</persName></person>-->
             <person xml:id="lefevre"><persName>M. Lefevre</persName></person>
             <person xml:id="schmidt"><persName>M. Schimdt <!-- todo dans le batiment neuf de Schimdt --></persName></person>
             <person xml:id="leSeur"><persName>M. Le Seur</persName><state><p><!-- todo Imprimeur ? --></p></state></person>
@@ -224,13 +224,13 @@
             <person xml:id="avocatRoy"/>
             <!--<person xml:id="vriot"><persName>S. Vriot</persName><state><p>ancien comédien</p></state></person> voir Urio -->
             <person xml:id="henry"><persName>M. Henry</persName><state><p>procureur du roi à Toul</p></state></person>
-            <person xml:id="sommiervre"><persName>M. de Sommiervre</persName></person>
+            <person xml:id="sommievre"><persName>M. de Sommievre</persName></person>
             <person xml:id="mestivier"><persName>Mestivier</persName><state><p>todo controlleur des actes</p></state></person>
             <person xml:id="nanon"><persName>Nanon</persName><state><p>Concierge de Nicolas Durival à Heillecourt</p></state></person>
             <person xml:id="leBas"><persName>M. Le Bas</persName><state><p>Médecin</p></state></person>
             <person xml:id="plaid"><persName>M. Plaid</persName></person>
             <person xml:id="claudon"><persName>Claudon</persName><state><p>peintre<!-- peint des boiseries --></p></state></person>
-            <person xml:id="francois"><persName>M. François</persName><state><p><!-- todo membre de l'académie ? écrit une héroïde sur Charles I, il a 15 ans --></p></state></person>
+            <!--<person xml:id="francois"><persName>M. François</persName><state><p><!-\- todo membre de l'académie ? écrit une héroïde sur Charles I, il a 15 ans -\-></p></state></person>-->
             <person xml:id="francoisJeanCharles"><persName>Jean Charles François</persName><state><p>Conseiller en hôtel de ville</p></state></person>
             <person xml:id="taylor"><persName>Le chevalier Taylor</persName><state><p>Occuliste anglais</p></state></person>
             <person xml:id="contade"><persName>Le maréchal de Contade</persName></person>            
@@ -259,13 +259,13 @@
             <person xml:id="leSeure"><persName>le Seure</persName><state><p>imprimeur</p></state></person>
             <person xml:id="maisonneuve"><persName>M. de Maisonneuve</persName></person>
             <person xml:id="devaux"><persName>M. Devaux</persName></person>
-            <person xml:id="dombale"><persName>M. de Dombâle<!-- todo nous avons aussi un abbé Dombasle --></persName></person>
+            <!--<person xml:id="dombale"><persName>M. de Dombâle<!-\- todo nous avons aussi un abbé Dombasle -\-></persName></person>-->
             <person xml:id="bressey"><persName><persName>l'abbé de Bressey</persName></persName></person>
             <person xml:id="najac"><persName>M. de Najac</persName></person>
             <person xml:id="najacMme"><persName>Mme de Najac</persName></person>
             <person xml:id="turique"><persName>M. l'abbé de Turique</persName></person>
             <person xml:id="laSalle"><persName>M. de La Salle</persName><state><p>Aide major des gardes du corps<!-- à lunéville --></p></state></person>
-            <person xml:id="dalmas"><persName>M. Damals</persName></person>
+            <!--<person xml:id="dalmas"><persName>M. Damals</persName></person>-->
             <person xml:id="godechaux"><persName>Michel Godechaux</persName></person>
             <person xml:id="hoffman"><persName>M. Hoffman</persName></person>
             <person xml:id="beauvau"><persName>M. le prince de Beauvau</persName></person>
@@ -274,7 +274,7 @@
             <person xml:id="rorteMme"><persName>Mme Rorté</persName><state><p>Mère du marquis Dessalles</p></state></person>
             <person xml:id="dessalles"><persName>M. le Marquis Dessalles</persName></person>
             <person xml:id="monboisThibault"><persName>M. Thibault de Monbois</persName><state><p>Maitre des comptes</p></state></person>
-            <person xml:id="friantMlle"><persName>Mlle Friant</persName><state><p>élève de saint Cyr et épouse de M. Thibault de Monbois</p></state></person>
+            <person xml:id="monboisThibaultMme"><persName>Mlle Friant</persName><state><p>élève de saint Cyr et épouse de M. Thibault de Monbois</p></state></person>
             <person xml:id="friant"><persName>M. Friant</persName><state><p>Procureur du roi</p></state></person>
             <person xml:id="catalde"><persName>Mme Catalde</persName><state><p>Supérieure des Dames prêcheresses</p></state></person>
             <person xml:id="chasteletMisFrere"><persName>Frère du marquis du Chastelet</persName></person>            
@@ -285,7 +285,7 @@
             <person xml:id="rochechouardC"><persName>M. le cardinal de Rochechouard</persName></person>
             <person xml:id="potier"><persName>M. Potier</persName><state><p>Commissaire ordonnateur à Nancy</p></state></person>
             <person xml:id="pitoux"><persName>M. Pitoux</persName></person>
-            <person xml:id="nicolas"><persName>M. Nicolas</persName></person>
+            
             <person xml:id="hœner"><persName>M. Hœner</persName><state><p>imprimeur</p></state></person>
             <person xml:id="serignac"><persName>M. de Serignac</persName><state><p>Officier au régiment du roi</p></state></person>
             <person xml:id="bains"><persName>M. de Bain</persName><state><p>Officier au régiment du roi</p></state></person>
@@ -338,7 +338,7 @@
             <person xml:id="deRutan"><persName>M. de Rutant de Saulxures</persName><state><p>Epoux de la Fille de M. Cheneau</p></state></person>
             <person xml:id="protin"><persName>Paul-Louis Protin</persName><state><p>Conseiller en la cour souveraine</p></state></person>            
             <person xml:id="charvet"><persName>M. Charvet</persName></person>
-            <person xml:id="chap"><persName>M. Chap<!-- todo il y a une tâche d'encre certainement Chapuis --></persName></person>
+            <!--<person xml:id="chap"><persName>M. Chap<!-\- todo il y a une tâche d'encre certainement Chapuis -\-></persName></person>-->
             <person xml:id="chapuis"><persName>M. Chapuis</persName></person>
             <person xml:id="chapuisComedien"><persName>M. Chapuis</persName><state><p>Directeur de l'opéra Bouffon</p></state></person>
             <person xml:id="chancelierLudres"><persName>M. le chancelier de Ludres</persName></person>
@@ -379,7 +379,7 @@
             <person xml:id="dailly"><persName>M. Dailly</persName></person>
             <person xml:id="guerre"><persName>M. Guerre</persName></person>            
             <person xml:id="deLaFargue"><persName>M. de La Fargue</persName></person>
-            <person xml:id="collemel"><persName>Collemel</persName></person>
+            <!--<person xml:id="collemel"><persName>Collemel</persName></person>-->
             <person xml:id="deLaPonce"><persName>M. de La Ponce</persName><state><p>Secrétaire de confiance d'un Ministre</p></state></person>
             <person xml:id="porquet"><persName>M. Porquet</persName></person>
             <person xml:id="custine"><persName>M. Custine</persName></person>
@@ -452,7 +452,7 @@
             <person xml:id="dAuthieulles"><persName>M. d'Authieulles</persName><state><p>lieutenant du roi</p></state></person>
             <person xml:id="deFaremont"><persName>M. de Farémont</persName><state><p>gentilhomme du Barrois et époux de Mlle Dureteste</p></state></person>
             <person xml:id="duretesteMlle"><persName>Mlle Dureteste</persName><state><p>épouse de M. de Farémont et gentilhomme du Barrois</p></state></person>
-            <person xml:id="despos"><persName>M. Despos</persName><state><p>inventeur d'une pompe prix de l'Académie</p></state></person><!-- todo vérif personne non identifiée -->
+            <!--<person xml:id="despos"><persName>M. Despos</persName><state><p>inventeur d'une pompe prix de l'Académie</p></state></person>--><!-- todo vérif personne non identifiée -->
             <person xml:id="renelMarianne"><persName>Mme Marianne Renel</persName><state><p>pensionnaire au refuge de la fondation de l'abbé de Bousey pour l'année 1767</p></state></person>
             <person xml:id="antoineFrancoise"><persName>Mme François Antoine</persName><state><p>pensionnaire au refuge de la fondation de l'abbé de Bousey pour l'année 1767</p></state></person>
             <person xml:id="laDuclos"><persName>Mme La Duclos</persName><state><p>pensionnaire au refuge de la fondation de l'abbé de Bousey pour l'année 1767 et 1768</p></state></person>
@@ -468,6 +468,20 @@
             <person xml:id="puiseur"><persName>le puiseur</persName></person>
             <person xml:id="gerardDeVietAnneCatherine"><persName>Mme Anne-Catherine Gerard de Viet</persName><state><p>maréchale de Bercheny</p></state></person>
             <person xml:id="bourcierDeTheyLeopold"><persName>M. Leopold de Bourcier de They</persName><state><p>colonnel des Gardes du duc Leopold</p></state></person>
+            
+            <!-- ajouts -->
+            <person xml:id="maitreBasseOeuvres"><persName>maitre des basses œuvres</persName></person>
+            <person xml:id="deLaGal"><persName>M. de La Galaiziere</persName></person>
+            <person xml:id="cdtGnl"><persName>commandant general de la province</persName></person>
+            <person xml:id="maitreComptes"><persName>Maitre des comptes (M Malcuit ?)</persName></person>
+            <person xml:id="ltGnlBauge"><persName>le lieutenant general du Bauge</persName></person>
+            <person xml:id="becher"><persName>S. Bécher</persName><state><p>Receveur de la fondation des maladies péidémiques</p></state></person>
+            <person xml:id="ministre"><persName>ministre</persName></person>
+            <person xml:id="thouveninFille"><persName>La fille de Thouvenin (huilier)</persName></person>
+            <person xml:id="auroyMise"><persName>Anne-Françoise de Foucoult-St.Germain-Beaupré, marquise d’Auroy</persName></person>
+            <person xml:id="cureHeillecourt"><persName>le curé d’Heillecourt</persName></person>
+            <person xml:id="michelHeille"><persName>nommé Michel habitant d'Heillecourt</persName></person>
+            
          </listPerson>
          
          <listPlace xml:id="listPlace">
@@ -656,6 +670,7 @@
             
             <!-- Ajout placeName -->
             <place xml:id="nancyComedie"><placeName>La comédie</placeName></place>
+            <place xml:id="nancyRuePoissonnerie"><placeName>Rue de la poissonnerie</placeName></place>
             <place xml:id="garenne"><placeName>La Garenne</placeName></place>
             <place xml:id="etuve"><placeName>L'étuve des blés</placeName></place>
             <place xml:id="etuveDuhamel"><placeName>L'étuve de Duhamel</placeName></place>
@@ -665,6 +680,21 @@
             <place xml:id="nancyPorteStStanislas"><placeName>Porte Saint Stanislas</placeName></place>
             <place xml:id="nancySecherie"><placeName>la sécherie des lavoirs publics</placeName></place>
             <place xml:id="hotelLeopold"><placeName>Hôtel du duc Léopold</placeName></place>
+            <place xml:id="luneManu"><placeName ref="#luneManu">la manufacture nouvelle à Luneville faubourg de Viller</placeName></place>
+            <place xml:id="fontaineRoyale"><placeName>la fontaine roïale</placeName></place>
+            <place xml:id="commercyChateau"><placeName>Chateau de Commercy</placeName></place>
+            <place xml:id="stNicolas"><placeName>Saint Nicolas</placeName></place>
+            <place xml:id="nancyStFiacre"><placeName>Paroisse Saint Fiacre</placeName></place>
+            <place xml:id="barCollege"><placeName>celui de Bar</placeName></place>
+            <place xml:id="faux"><placeName>Canton de Faux</placeName></place>
+            <place xml:id="nancyOpheline"><placeName>Orphelines</placeName></place>
+            <place xml:id="hotelPrimatiale"><placeName>l'hotel du grand Doyen de la Primatiale</placeName></place>
+            <place xml:id="conciergerie"><placeName>la conciergerie</placeName></place>
+            <place xml:id="arsenal"><placeName>l’arsenal</placeName></place>
+            <place xml:id="manufactureBains"><placeName>la manufacture de bains</placeName></place>
+            <place xml:id="villerFbg"><placeName>Faubourg de Viller, Lunéville</placeName></place>
+            <place xml:id="rhone"><placeName>Le Rhône</placeName></place>
+            <place xml:id="premontes"><placeName>Les Premontés de Nancy</placeName></place>
          </listPlace>
          
          <listOrg xml:id="listOrg">
@@ -698,8 +728,14 @@
             <org xml:id="aumonePub"><orgName>Bureau de l'aumône publique</orgName></org>
             <org xml:id="ancChpStGeorges"><orgName>l'ancien chapitre de S. Georges</orgName></org>
             <org xml:id="fondationI"><orgName>Dernière fonction de Stanislas</orgName></org>
+            <org xml:id="fondationII"><orgName>Fondation de l'abbé Bousey</orgName></org>
             <org xml:id="conseilAulique"><orgName>Le Conseil aulique</orgName></org>
             <org xml:id="conseil"><orgName>Le conseil</orgName></org>
+            <org xml:id="cafeRoyal"><orgName>caffé roïal</orgName></org>
+            <org xml:id="collegeRoyalMedecins"><orgName>Collège royale de médecine</orgName></org>
+            <org xml:id="comedie"><orgName>La comédie</orgName></org>
+            <org xml:id="HDVLuneville"><orgName>l'hotel de ville de Luneville</orgName></org>
+            <org xml:id="fondationMaladieEpi"><orgName>la fondation des maladies épidémiques</orgName></org>
          </listOrg>
       </body>
   </text>
