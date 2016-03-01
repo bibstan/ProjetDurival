@@ -298,7 +298,7 @@
                         <lb/>la suite des memoires ; qu'on demanderoit aussi le
                         <lb/>catalogue general des livres à remettre à <orgName ref="#HDV">l'hotel 
                         <lb/>de ville</orgName>, et les noms de ceux qui avoient faits
-                        <lb/>des dons à <orgName ref="#Bibliotheque">la biblioteque</orgName>, pour imprimer &amp;.
+                        <lb/>des dons à <orgName ref="#bibliotheque">la biblioteque</orgName>, pour imprimer &amp;.
                         <lb/>Il a été parlé des retablissemens des jettons.<!-- todo note ? -->
                      </p>
                   </div>
@@ -328,7 +328,7 @@
                         <date type="entry" when="1765-01-28">28</date>                     
                         <lb/>Je recois les trois volumes du <bibl><title>recueil
                         <lb/>(<persName type="author">Héré</persName>) des bâtimens du roy</title></bibl>, pour les
-                        <lb/>deposer aux archives de <orgName ref="#nancyHDV">l'hotel de ville</orgName>.
+                        <lb/>deposer aux archives de <orgName ref="#HDV">l'hotel de ville</orgName>.
                      </p>
                   </div>
                   
@@ -1100,8 +1100,8 @@
                      </p>     
                      <p xml:id="d1765050803" ana="#fetes">
                         L'usage etoit de faire un feu de joye chaque
-                        <lb/>année le jour de S. Stanislas sur <orgName ref="#Marche">la place du
-                        <lb/>marché de la ville neuve</orgName>. Dès l'année <choice><abbr>dern<hi rend="super">re</hi>.</abbr><expan>dernière</expan></choice>
+                        <lb/>année le jour de S. Stanislas sur <placeName ref="#nancyMarche">la place du
+                        <lb/>marché de la ville neuve</placeName>. Dès l'année <choice><abbr>dern<hi rend="super">re</hi>.</abbr><expan>dernière</expan></choice>
                         <lb/><placeName ref="#nancyHDV">l'hotel de ville</placeName> prit la résolution de suprimer
                         <lb/>ce feu de joye qui inquiétoit les proprietaires
                         <lb/>de maisons ; et de faire éxécuter en place
@@ -1824,7 +1824,7 @@
                      </p>
                      <p xml:id="d1765072002" ana="#ville">
                         Les corps de fer substitués à celui de plomb,
-                        <lb/>à <placeName ref="#boudonvilleAcqueduc">l'aqueduc de Boudonville</placeName>, ont rendu l'eau
+                        <lb/>à <placeName ref="#boudonvilleAqueduc">l'aqueduc de Boudonville</placeName>, ont rendu l'eau
                         <lb/>à <placeName ref="#nancy">la ville vielle</placeName> qui en manquoit depuis
                         <lb/>deux mois.
                      </p>
@@ -2391,7 +2391,7 @@
                         <date type="entry" when="1765-09-02">2</date>
                         Arrivent à 9 h <hi rend="super">1</hi>/<hi rend="sub">2</hi> du matin les 2 <hi rend="super">d</hi>.
                         <lb/>et 4 <hi rend="super">e</hi>. bataillons du regiment du roy.
-                        <lb/>À midi <persName ref="#rochechouardC">le <choice><abbr>card<hi rend="super">l</hi>.</abbr><expan>cardinal</expan></choice> de Rochechouard</persName>, <persName ref="#aiguillonDuchesse">la
+                        <lb/>À midi <persName ref="#rochechouartC">le <choice><abbr>card<hi rend="super">l</hi>.</abbr><expan>cardinal</expan></choice> de Rochechouard</persName>, <persName ref="#aiguillonDuchesse">la
                         <lb/>duchesse d'Aiguillon</persName>, <persName ref="#valbelleMise">la marquise de
                         <lb/>Valbelle</persName>, et <persName ref="#bartMis">le <choice><abbr>m<hi rend="super">is</hi>.</abbr><expan>marquis</expan></choice> de Bart</persName>, qui <choice><abbr>vienn<hi rend="super">t</hi>.</abbr><expan>viennent</expan></choice>
                         <lb/>de <placeName ref="#commercy">Commercy</placeName> voir <placeName ref="#nancy">Nancy</placeName> &amp;.
@@ -2486,7 +2486,7 @@
                         <date type="entry" when="1765-09-07">7</date>
                         Je reçois à dix heures du soir, par <persName ref="#lenoncourt">M. de
                         <lb/>Lenoncourt</persName> une lettre de <rs type="person" ref="#chancelier">M. le Chancelier</rs>,
-                        <lb/>portant que <rs type="person" ref="#stanislas">le roy</rs> a permis à <persName ref="#rochechouardC">M. le cardinal
+                        <lb/>portant que <rs type="person" ref="#stanislas">le roy</rs> a permis à <persName ref="#rochechouartC">M. le cardinal
                         <lb/>de <choice><abbr>Rochouart</abbr><expan>Rochechouard</expan></choice></persName> <add place="above">de faire <choice><abbr>imp.</abbr><expan>imprimer</expan></choice></add> les pièces jointes, qui sont une
                         <lb/>lettre circulaire de l'assemblée generale du
                         <lb/>clergé de France, et les actes de l'assemblée
@@ -2583,7 +2583,7 @@
                         On donne le premier exemplaire de la
                         <lb/>réimpression des <bibl><title>Actes de l'assemblée generale
                         <lb/>du clergé de <choice><abbr>F<hi rend="super">ce</hi>.</abbr><expan>France</expan></choice> de 1765</title></bibl> et de la lettre
-                        <lb/>circulaire du <date when="1765-08-27">27 aout</date> ; <persName ref="#rochechouardC">M. le cardinal
+                        <lb/>circulaire du <date when="1765-08-27">27 aout</date> ; <persName ref="#rochechouartC">M. le cardinal
                            <lb/>de Rochouard</persName> avoit demandé au <rs type="person" ref="#stanislas">roy</rs> de
                         <lb/>faire faire cette réimpression, et <persName ref="#leSeur">Le Seur</persName>
                         <lb/>en etoit chargé. Il y en a 500 exemplaires
@@ -3032,7 +3032,7 @@
                   <div type="day" xml:id="d17651110">
                      <p xml:id="d1765111001" ana="#ville">
                         <date type="entry" when="1765-11-10">10</date>
-                        J'ai fait mettre en prison <persName ref="#hœner">Hœner</persName>, pour avoir
+                        J'ai fait mettre en prison <persName ref="#haener">Hœner</persName>, pour avoir
                         <lb/>imprimé : <bibl><title>Histoire de Sinal</title>, traduite d'un
                         <lb/>manuscrit hebreu, à <placeName ref="#smirne">Smirne</placeName> <date when="1765">1765</date>, <term type="format" subtype="in-douze">in 12</term> de
                         <lb/>14 pages</bibl>. C'est une sanglante satyre contre
@@ -3068,7 +3068,7 @@
                         <lb/><placeName ref="#nancyStEpvre">S. Epvre</placeName> et à <placeName ref="#nancyCongregation">la Congrégation</placeName>.
                      </p>
                      <p xml:id="d1765111202" ana="#ville">
-                        J'ai le soir fait sortir <persName ref="#hœner">Hœner</persName> de prison.
+                        J'ai le soir fait sortir <persName ref="#haener">Hœner</persName> de prison.
                      </p>
                   </div>
                   
@@ -5250,7 +5250,7 @@
                         <lb/><choice><abbr>L<hi rend="super">ne</hi>.</abbr><expan>Lorraine</expan></choice></measure> par année, <placeName ref="#maisonForce">le jardin de la maison de force</placeName>.
                      </p>
                      <p xml:id="d1766030702">
-                        <persName ref="#Noverre">M. Noverre</persName>, arrivé de <placeName ref="#stuttgart">Stuggard</placeName> est venu
+                        <persName ref="#noverre">M. Noverre</persName>, arrivé de <placeName ref="#stuttgart">Stuggard</placeName> est venu
                         <lb/>me voir avec une lettre de <persName ref="#uriot">M. Uriot</persName>
                      </p>
                   </div>
@@ -5303,7 +5303,7 @@
                      </p>
                      <p xml:id="d1766031202">
                         J'ai reçu aussi une lettre de <rs type="person">mon frere</rs>
-                        <lb/>du meme jour <date when="1766-03-09">9</date>. <persName ref="deLaGal">M. de La <choice><abbr>Gal</abbr><expan>Galaiziere</expan></choice></persName> dit
+                        <lb/>du meme jour <date when="1766-03-09">9</date>. <persName ref="#deLaGal">M. de La <choice><abbr>Gal</abbr><expan>Galaiziere</expan></choice></persName> dit
                         <lb/>plaisamment que ce qui a été lû au<!-- todo rs pour ce qui a été lu -->
                         <lb/><orgName ref="#parlement">Parlement</orgName> <date when="1766-03-03">le 3</date> est un plagiat de ce qu'il
                         <lb/>a fait en <placeName ref="#lorraine">Lorraine</placeName>.
@@ -5502,7 +5502,7 @@
                         <lb/>faire la meme opération.
                      </p>
                      <p xml:id="d1766032202">
-                        <orgName ref="#nancyHDV">l'hotel de ville</orgName> a <sic>ajugé</sic> <placeName ref="#coteSteCatherine">des bois de la
+                        <orgName ref="#HDV">l'hotel de ville</orgName> a <sic>ajugé</sic> <placeName ref="#coteSteCatherine">des bois de la
                         <lb/>côte S<hi rend="super">te</hi>. Catherine</placeName> et au dessus de <placeName ref="#mareville">Maréville</placeName>.
                         <lb/>Il y a été résolu un service solennel
                         <lb/>pour <persName ref="#stanislas">le feu roy de P</persName>. dans <placeName ref="#nancyStRoch">l’église S. Roch</placeName>,
@@ -5728,7 +5728,7 @@
                   <div type="day" xml:id="d17660407">
                      <p xml:id="d1766040701">
                         <date type="entry" when="1766-04-07">7</date>
-                        On m'ecrit de <placeName ref="#paris">Paris</placeName> <date when="1766-04-03">le 3</date> : <quote><persName ref="#castrieMis">M. le <choice><abbr>M<hi rend="super">is</hi>.</abbr><expan>marquis</expan></choice> de 
+                        On m'ecrit de <placeName ref="#paris">Paris</placeName> <date when="1766-04-03">le 3</date> : <quote><persName ref="#castriesMis">M. le <choice><abbr>M<hi rend="super">is</hi>.</abbr><expan>marquis</expan></choice> de 
                         <lb/>Castries</persName>, beau frere de <persName ref="#ducFleury">M. le duc de Fleury</persName>,
                         <lb/>vient d'avoir la lieutenance generale du
                         <lb/><placeName ref="#barrois">Barrois</placeName></quote>.
@@ -5975,7 +5975,7 @@
                         J'ai fait des representations sur les lesquelles <rs type="person" ref="#marcol">M. le                           
                         <lb/><choice><abbr>p<hi rend="super">r</hi>. g<hi rend="super">l</hi>.</abbr><expan>procureur général</expan></choice></rs> doit faire ordonner que les corps des
                         <lb/><placeName ref="#nancyHopitalStJulien">hopitaux S. Julien</placeName>, et <placeName ref="#nancyHopitalStCharles">S. Charles</placeName> seront inhumés
-                        <lb/>au <placeName ref="#NancyCimetierePorteStJean">cimetiere extérieur de la porte S. Jean</placeName>.
+                        <lb/>au <placeName ref="#nancyCimetierePorteStJean">cimetiere extérieur de la porte S. Jean</placeName>.
                      </p>
                      <p xml:id="d1766042703">
                         On m'amêne la nouvelle charruë que
@@ -6135,7 +6135,7 @@
                            <lb/>l'usage
                         </p> 
                         <seg type="closer">
-                           <seg type="signed"><hi rend="underline">signé</hi> <persName ref="#collendlel">Collenel</persName>.</seg>
+                           <seg type="signed"><hi rend="underline">signé</hi> <persName ref="#collenel">Collenel</persName>.</seg>
                         </seg>
                      </quote>
                   </div>
@@ -6442,7 +6442,7 @@
                      </p>
                      <p xml:id="d1766052803">
                         <persName ref="#luceComte">M. de Lucé</persName> arrive de <placeName ref="#metz">Mets</placeName>, et nous <sic>aprend</sic>
-                        <lb/>qu'<placeName ref="#ChambiereCasernes">une partie des casernes de Chambiere</placeName>
+                        <lb/>qu'<placeName ref="#chambiereCasernes">une partie des casernes de Chambiere</placeName>
                         <lb/>a été incendiée hier vers dix heures du soir
                         <lb/>on croit que c'est le feu du ciel, il a
                         <lb/>péri quelques personnes.
@@ -6523,7 +6523,7 @@
                   <div type="day" xml:id="d17660607">
                      <p xml:id="d17660600701" ana="#ville">
                         <date type="entry" when="1766-06-07">7</date>
-                        <orgName ref="#nancyHDV">L'hotel de ville</orgName> a nommé commissaire au
+                        <orgName ref="#HDV">L'hotel de ville</orgName> a nommé commissaire au
                         <lb/><placeName ref="#NancyfxbrgStPierre">fauxbourg S<hi rend="super">t</hi>. Pierre</placeName>, <persName ref="#darche">Darche</persName>, pour remplacer
                         <lb/><persName ref="#robinetPierre">Robinet</persName>.
                      </p>
@@ -6726,11 +6726,11 @@
                         <date type="entry" when="1766-06-29">29</date>
                         <persName ref="#princeBrunswic">M. le prince heréditaire de Brunswic</persName> est
                         <lb/>arrivé à onze heres du soir, venant de <placeName ref="#metz">Mets</placeName>,
-                        <lb/>avec M<hi rend="super">rs</hi>. <persName ref="#armentieres">d'Armentieres</persName>, <persName ref="#rochechouardC">de Rochouart</persName> et
+                        <lb/>avec M<hi rend="super">rs</hi>. <persName ref="#armentieres">d'Armentieres</persName>, <persName ref="#rochechouartC">de Rochouart</persName> et
                         <lb/>autres. <persName ref="#stainville">M. le comte de Stainville</persName> leur a
                         <lb/>donné un grand souper d'environ 45 couverts.
                         <lb/><persName ref="#princeBrunswic">Le <choice><abbr>p<hi rend="super">ce</hi>.</abbr><expan>prince</expan></choice></persName> a couché au <orgName ref="#gouvernement"><choice><abbr>gouvernem<hi rend="super">t</hi>.</abbr><expan>gouvernement</expan></choice></orgName> M<hi rend="super">rs</hi>.
-                        <lb/><persName ref="#armentieres">d'Armantieres</persName> et <persName ref="#rochechouardC">de Rochouart</persName> à <orgName ref="#intendance">l'<choice><abbr>Intend<hi rend="super">ce</hi>.</abbr><expan>Intendance</expan></choice></orgName>
+                        <lb/><persName ref="#armentieres">d'Armantieres</persName> et <persName ref="#rochechouartC">de Rochouart</persName> à <orgName ref="#intendance">l'<choice><abbr>Intend<hi rend="super">ce</hi>.</abbr><expan>Intendance</expan></choice></orgName>
                      </p>
                   </div>
                   
@@ -7690,7 +7690,7 @@
                   <div type="day" xml:id="d17660921">
                      <p xml:id="d1766092101">
                         <date type="entry" when="1766-09-21">21</date>
-                        On arrête en <orgName ref="#nancyHDV">l’hotel de ville</orgName> la déclaration à
+                        On arrête en <orgName ref="#HDV">l’hotel de ville</orgName> la déclaration à
                         <lb/>faire au <orgName ref="#parlementParis">Parlement de Paris</orgName>, pour satisfaire
                         <lb/>aux arrêts concernant les jesuites.
                      </p>
