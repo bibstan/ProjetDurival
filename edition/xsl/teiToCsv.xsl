@@ -6,39 +6,48 @@
     version="2.0">
     
     <xsl:output method="text"/>
+    <xsl:output method="text" name="csv"/>
     
     <xsl:template match="/">
-        <!--<xsl:apply-templates select="//tei:listPerson"/>-->
+        <xsl:apply-templates select="//tei:listPerson"/>
         <xsl:apply-templates select="//tei:listPlace"/>
+        <xsl:apply-templates select="//tei:listOrg"/>
     </xsl:template>
+    
+
     
     <xsl:template match="//tei:listPerson">
         <xsl:text>@XML:ID,NOM,INFOS;
         </xsl:text>
         <xsl:for-each select="tei:person">
-            <xsl:value-of select="@xml:id"/><xsl:text>,</xsl:text>
-            <xsl:value-of select="tei:persName"/><xsl:text>,</xsl:text>
-            <xsl:value-of select="tei:state/tei:p"/><xsl:text>;
+            <xsl:value-of select="normalize-space(@xml:id)"/><xsl:text>,</xsl:text>
+            <xsl:value-of select="normalize-space(tei:persName)"/><xsl:text>,</xsl:text>
+            <xsl:value-of select="normalize-space(tei:state/tei:p)"/><xsl:text>;
             </xsl:text>
         </xsl:for-each>
     </xsl:template>
     
     <xsl:template match="//tei:listPlace">
-        <xsl:text>@XML:ID,lieux;
+        <xsl:result-document format="csv" encoding="UTF-8" href="listPlace.csv">
+            <xsl:text>@XML:ID,lieux;
         </xsl:text>
-        <xsl:for-each select="tei:place">
-            <xsl:value-of select="@xml:id"/><xsl:text>,</xsl:text>
-            <xsl:value-of select="tei:placeName"/><xsl:text>;
+            <xsl:for-each select="tei:place">
+                <xsl:value-of select="normalize-space(@xml:id)"/><xsl:text>,</xsl:text>
+                <xsl:value-of select="normalize-space(tei:placeName)"/><xsl:text>;
             </xsl:text>
-        </xsl:for-each>
+            </xsl:for-each>
+        </xsl:result-document>
     </xsl:template>
+    
     <xsl:template match="//tei:listOrg">
-        <xsl:text>@XML:ID,Org;
+        <xsl:result-document format="csv" encoding="UTF-8" href="listOrg.csv">
+            <xsl:text>@XML:ID,Org;
         </xsl:text>
-        <xsl:for-each select="tei:org">
-            <xsl:value-of select="@xml:id"/><xsl:text>,</xsl:text>
-            <xsl:value-of select="tei:orgName"/><xsl:text>;
+            <xsl:for-each select="tei:org">
+                <xsl:value-of select="normalize-space(@xml:id)"/><xsl:text>,</xsl:text>
+                <xsl:value-of select="normalize-space(tei:orgName)"/><xsl:text>;
             </xsl:text>
-        </xsl:for-each>
+            </xsl:for-each>
+        </xsl:result-document>
     </xsl:template>
 </xsl:stylesheet>
