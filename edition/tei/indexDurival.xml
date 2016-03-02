@@ -799,9 +799,7 @@
             <person xml:id="elisee">
                <persName>le P. Elisée</persName>
             </person>
-            <person xml:id="elzbietaSzydlowska">
-               <persName>La feue reine de Pologne</persName>
-            </person>
+            
             <person xml:id="eveqCracovie">
                <persName>M. l'évêque de Cracovie</persName>
             </person>
@@ -1033,12 +1031,12 @@
                   <p>1723-1782 - médecin ordinaire de Stanislas - président du collège royal de médecine - directeur du jardin botanique - membre de l'Académie</p>
                </state>
             </person>
-            <person xml:id="henriIV">
+            <!--<person xml:id="henriIV">
                <persName>Henri IV</persName>
                <state>
                   <p>roi de France et de Navarre</p>
                </state>
-            </person>
+            </person>-->
             <person xml:id="henry">
                <persName>M. Henry</persName>
                <state>
@@ -1374,10 +1372,7 @@
                <state>
                   <p>1708-1768 - évêque in partibus de Sion - frère du chancelier La Galaizière</p>
                </state>
-            </person>
-            <person xml:id="marieJosepheDeSaxe">
-               <persName>Madame la Dauphine</persName>
-            </person>
+            </person>            
             <person xml:id="marin">
                <persName>M. Marin</persName>
                <state>
@@ -2059,9 +2054,9 @@
             <person xml:id="maitreBasseOeuvres">
                <persName>maitre des basses œuvres</persName>
             </person>
-            <person xml:id="deLaGal">
+            <!--<person xml:id="deLaGal"> M. le Chancelier
                <persName>M. de La Galaiziere</persName>
-            </person>
+            </person>-->
             <person xml:id="cdtGnl">
                <persName>commandant general de la province</persName>
             </person>
@@ -2095,6 +2090,20 @@
             <person xml:id="michelHeille">
                <persName>nommé Michel habitant d'Heillecourt</persName>
             </person>
+            <!-- ajout -->
+            <person xml:id="here">
+               <persName>Héré</persName>
+            </person>
+            <person xml:id="poniatowski"><persName>Le roi de Pologne Poniatowski</persName></person>
+            
+            <!-- encart -->
+            <person xml:id="souvPontif">
+               <persName><persName>souverain pontif</persName></persName>
+            </person>
+            <person xml:id="opalinska"><persName>Catherine Opalinska</persName></person>
+            <person xml:id="marieJosepheDeSaxe"><persName>Madame la Dauphine</persName></person>
+            <!--<person xml:id="elzbietaSzydlowska"><persName>La feue reine de Pologne</persName></person>-->
+
          </listPerson>
 
          <listPlace xml:id="listPlace">
@@ -2833,7 +2842,83 @@
             <org xml:id="fondationMaladieEpi">
                <orgName>la fondation des maladies épidémiques</orgName>
             </org>
+            <org xml:id="ecoleRoyaleMili">
+               <orgName>Ecole royale Militaire</orgName>
+            </org>
          </listOrg>
+         <listBibl xml:id="listBibl">
+            <bibl xml:id="bib1"><title>les eaux de Luxeuil</title><author>M. Bagard</author></bibl>
+            <bibl xml:id="bib2"><title>le discours de reception de M. l'abbé Millot</title>abbé Millot<author></author></bibl>
+            <bibl xml:id="bib3"><title>Discours de M. du Rouvrois</title><author>du Rouvrois</author></bibl>
+            <bibl xml:id="bib4"><title>memoire lu par Coster le 12 juin 1765</title></bibl>
+            <bibl xml:id="bib5"><title>Les duchés de Lorraine et de Bar</title><author>Nicolas Durival</author></bibl>
+            <bibl xml:id="bib6"><title>Discours sur l'agriculture en lorraine lu par Coster</title></bibl>
+            <bibl xml:id="bib7"><title>Discours sur les eaux thermales lu par Bagard le 26/06/1765 - voir bib1 ?</title></bibl>
+            <bibl xml:id="bib8"><title>Eloge historique</title><author>Dom Remy Cellier</author></bibl>
+            <bibl xml:id="bib9"><title>ouvrage de l'abbé sigorque</title><author>abbé Sigorque</author></bibl>
+            <bibl xml:id="bib10"><title>Les lettres écrites de la montagne</title><author>J.J. Rousseau</author></bibl>
+            <bibl xml:id="bib11"><title>ouvrage sur les inconvénients de la litterature</title></bibl>
+            <bibl xml:id="bib12"><title>mémoire militaire (nov. 1765)</title><author>jean Durival</author></bibl>
+            <bibl xml:id="bib13"><title>Ouvrage sur la manière de tenir les livres de commerce</title></bibl>
+            <bibl xml:id="bib14"><title>un ouvrage de méchanique pour sonner en volée, brider et débrider les cloches sans monter au clocher</title></bibl>
+            <bibl xml:id="bib15"><title>un ouvrage sur les fortifications (voir 1765-12-27)</title></bibl>
+            <bibl xml:id="bib16"><title>Eloge du roi de Pologne</title><author>Solignac</author></bibl>
+            <bibl xml:id="bib17"><title>ouvrage sur les impots (voir 1766-05-03)</title><author>Jean Durival</author></bibl>
+            <bibl xml:id="bib18"><title>Mémoire sur les abbayes et prieurés de Lorraine</title><author>M. Guerre</author></bibl>
+            <bibl xml:id="bib19"><title>dissertation sur les deux odes d'Horace (voir 1766-05-28)</title></bibl>
+            <bibl xml:id="bib20"><title>Memoire "indécent" des messins (voir 1766-07-14)</title></bibl>
+            <bibl xml:id="bib21"><title>Memoire de la Cour Souveraine (voir 1766-07-14)</title></bibl>
+            <bibl xml:id="bib22"><title>Memoire de 1738 sur la liquidation des dettes de Lorraine</title></bibl>
+            <bibl xml:id="bib23"><title>Mémoire de la Cour souveraine contre le parlement de Metz</title></bibl>
+            <bibl xml:id="bib24"><title>Mémoire d'observation sur les deux parlement</title><author>M. l'intendant de lorraine</author></bibl>
+            <bibl xml:id="bib25"><title>Discours sur la conservation des grains</title><author>Gandoger</author></bibl>
+            <bibl xml:id="bib26"><title>Discours (voir 1766-10-15)</title><author>François</author></bibl>
+            <bibl xml:id="bib27"><title>Héroïde de Charles I</title><author>François</author></bibl>
+            <bibl xml:id="bib28"><title>Histoire romaine (voir 1766-11-05)</title></bibl>
+            <bibl xml:id="bib29"><title>méthode presque géometrique de former l’Ennéagone</title></bibl>           
+            <bibl xml:id="bib30"><title>le Dictionnaire philosophique</title></bibl>
+            <bibl xml:id="bib31"><title>la Théogonie</title><author>Hésiode</author></bibl>
+            <bibl xml:id="bib32"><title>Siége de Calais</title></bibl>            
+            <bibl xml:id="bib33"><title>Essai sur le luxe</title></bibl>
+            <bibl xml:id="bib34"><title>journal de commerce</title></bibl>
+            <bibl xml:id="bib35"><title>Recueil sur diverses matieres</title></bibl>
+            <bibl xml:id="bib36"><title>ortograf des dames</title></bibl>
+            <bibl xml:id="bib37"><title>Actes de l'assemblée generale du clergé de France de 1765</title></bibl>
+            <bibl xml:id="bib38"><title>Extrait des assertions dangereuses et pernicieuses en tout genre que les soi-disans jesuites &amp;</title></bibl>
+            <bibl xml:id="bib39"><title>Histoire de Sinal</title></bibl>
+            <bibl xml:id="bib40"><title>Anti-réformateur</title></bibl>
+            <bibl xml:id="bib41"><title>La gazette de France</title></bibl>
+            <bibl xml:id="bib60"><title>Disours sur la théologie</title></bibl>
+            <bibl xml:id="bib61"><title>Discours sur le luxe</title></bibl>
+            <bibl xml:id="bib63"><title>Recueil des batiments du roi</title><author>Héré</author></bibl>
+            <bibl xml:id="bib64"><title>Ouvrage sur la formation des glaces dans les eaux mortes et rivières</title></bibl>
+            <bibl xml:id="bib65"><title>Eloge au roi de Pologne ou le regne de Thelemaque dans Itaque</title></bibl>
+            <bibl xml:id="bib66"><title>Discours sur les qualités qui font un bon citoyen</title><author>Coster</author></bibl>            
+            <bibl xml:id="bib68"><title>Manuscrit d'un ouvrage sur la finance</title></bibl>
+            <!-- Pièces de théatre -->
+            
+            <bibl xml:id="bib42"><title>Zaïre</title><author>Voltaire</author></bibl>            
+            <bibl xml:id="bib43"><title>les Folies amoureuses</title></bibl>
+            <bibl xml:id="bib62"><title>Annette et Lubin</title></bibl>
+            <bibl xml:id="bib44"><title>Alzire</title></bibl>
+            <bibl xml:id="bib45"><title>Le duc de Foix</title></bibl>
+            <bibl xml:id="bib46"><title>Iphigenie en Tauride</title></bibl>
+            <bibl xml:id="bib47"><title>Mitridate</title></bibl>
+            <bibl xml:id="bib48"><title>Philosophe marié</title></bibl>
+            <bibl xml:id="bib67"><title>la jeune indienne</title></bibl>
+            <bibl xml:id="bib49"><title>Misantrope</title></bibl>
+            <bibl xml:id="bib50"><title>Pere de famille</title></bibl>            
+            <bibl xml:id="bib51"><title>écossaise</title></bibl>            
+            <bibl xml:id="bib52"><title>Légataire</title></bibl>
+            <bibl xml:id="bib53"><title>Crispin médecin</title></bibl>
+            <bibl xml:id="bib54"><title>Crispin Rival de son maitre</title></bibl>
+            <bibl xml:id="bib55"><title>Les menechenes</title></bibl>
+            <bibl xml:id="bib56"><title>Le medecin malgré lui</title></bibl>
+            <bibl xml:id="bib57"><title>Le Philosophe sans le savoir</title></bibl>
+            <bibl xml:id="bib58"><title>Les trois freres rivaux</title></bibl>
+            <bibl xml:id="bib59"><title>Confidences réciproques</title></bibl>
+            <bibl xml:id="bib69"><title>La Partie de chasse de Henri IV</title></bibl>
+         </listBibl>
       </body>
    </text>
 </TEI>
