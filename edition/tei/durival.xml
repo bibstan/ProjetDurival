@@ -241,7 +241,7 @@
                   <div type="day" xml:id="d17650117">
                      <p xml:id="d1765011701" ana="#ville">
                         <date type="entry" when="1765-01-17">17</date>
-                        <persName ref="#marcol">M. de Marcol</persName>, <choice><abbr>p<hi rend="super">r</hi>. g<hi rend="super">l</hi>.</abbr><expan>procureur général</expan></choice> envoye chercher le sindic
+                        <persName ref="#marcol">M. de Marcol</persName>, <choice><abbr>P<hi rend="super">r</hi>. g<hi rend="super">l</hi>.</abbr><expan>procureur général</expan></choice> envoye chercher le sindic
                         <lb/>des imprimeurs de <placeName ref="#nancy">Nancy</placeName>, touchant <title ref="#bib30">le <choice><abbr>Dict.</abbr><expan>Dictionnaire</expan></choice>
                         <lb/>philosophique</title>, et les impressions sans permissions.
                         <lb/>Les imprimeurs et libraires, s'assemblent en <choice><abbr>conseq<hi rend="super">ce</hi></abbr><expan>conséquence</expan></choice>.
@@ -273,7 +273,7 @@
                         <lb/>au barreau.
                      </p>
                      <p xml:id="d1765012203" ana="#ville">
-                        J'ai parlé à <persName ref="#marcol">M. de Marcol</persName> <choice><abbr>p<hi rend="super">r</hi>. g<hi rend="super">l</hi>.</abbr><expan>procureur général</expan></choice> sur la
+                        J'ai parlé à <persName ref="#marcol">M. de Marcol</persName> <choice><abbr>P<hi rend="super">r</hi>. g<hi rend="super">l</hi>.</abbr><expan>procureur général</expan></choice> sur la
                         <lb/>librairie. Il a renouvellé les <sic>deffences</sic> aux
                         <lb/>imprimeurs et libraires, et d'ouvrir leurs
                         <lb/>ballots qu'en ma presence
