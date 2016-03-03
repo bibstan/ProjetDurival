@@ -348,7 +348,7 @@
                         <date type="entry" when="1765-02-01">1<hi rend="super">er</hi>.</date>
                         J'ai fait ma cour au <rs type="person" ref="#stanislas">roy</rs>, et vû <rs type="person" ref="#chancelier">M.
                         <lb/>le Chancelier</rs> sur l'arrêt <placeName ref="#nancyFabriques">des fabriques
-                           <lb/>de Nancy</placeName>. <rs type="person" ref="#stanislas"><choice><abbr>S. M. Pol.</abbr></choice><expan>Sa Majesté de Pologne</expan></rs> vient à <placeName ref="#nancy">Nancy</placeName>
+                           <lb/>de Nancy</placeName>. <rs type="person" ref="#stanislas"><choice><abbr>S. M. Pol.</abbr></choice><expan>Sa Majesté Polonaise</expan></rs> vient à <placeName ref="#nancy">Nancy</placeName>
                         <lb/>voir <persName ref="#choiseul">le <choice><abbr>card<hi rend="super">l</hi>.</abbr><expan>cardinal</expan></choice> de Choiseul</persName>, et <persName ref="#desarmoisesMme">M<hi rend="super">e</hi>. Desarmoises</persName>.
                      </p>
                   </div>                  
@@ -507,7 +507,7 @@
                         <lb/>vouloit donner <measure type="currency" quantity="100000" unit="lFr">cent mille livres de <choice><abbr>F<hi rend="super">ce</hi>.</abbr><expan>France</expan></choice></measure> a <placeName ref="#nancy">la ville
                         <lb/>de Nancy</placeName>, pour des objets ; de bien public. Et
                         <lb/>aujourdhui je lui ai donné une <sic>notte</sic> pour 
-                        <pb facs="B543956101M00863_06_0076_1L" n="73v"/>détourner <rs type="person" ref="#stanislas"><choice><abbr>S. M. P.</abbr><expan>Sa Majesté de Pologne</expan></choice></rs> d'ordonner que cette <choice><abbr>so<hi rend="super">e</hi>.</abbr><expan>somme</expan></choice> soit
+                        <pb facs="B543956101M00863_06_0076_1L" n="73v"/>détourner <rs type="person" ref="#stanislas"><choice><abbr>S. M. P.</abbr><expan>Sa Majesté Polonaise</expan></choice></rs> d'ordonner que cette <choice><abbr>so<hi rend="super">e</hi>.</abbr><expan>somme</expan></choice> soit
                         <lb/>prétée sous caution à 2 % de rente à
                         <lb/>des bourgeois pauvres ; et donné un <choice><abbr>mem<hi rend="super">re</hi>.</abbr><expan>mémoire</expan></choice>
                         <lb/>pour employer <measure type="currency" quantity="5000">les 5000<hi rend="super">#</hi>.</measure> de rente savoir :
@@ -976,7 +976,7 @@
                   <div type="day" xml:id="d17650501">
                      <p xml:id="d1765050101" ana="#cour">
                         <date type="entry" when="1765-05-01">1<hi rend="super">er</hi>.</date>
-                        J'ai vû aujourd'hui <rs type="person" ref="#stanislas"><choice><abbr>S. M. Pol.</abbr><expan>Sa Majesté de Pologne</expan></choice></rs> <persName ref="#stainvilleMme">la comtesse
+                        J'ai vû aujourd'hui <rs type="person" ref="#stanislas"><choice><abbr>S. M. Pol.</abbr><expan>Sa Majesté Polonaise</expan></choice></rs> <persName ref="#stainvilleMme">la comtesse
                         <lb/>de Stainville</persName> &amp;. a dîné à <placeName ref="#malgrange">la <choice><abbr>Malg</abbr><expan>Malgrange</expan></choice></placeName>.
                      </p>
                   </div>
@@ -1440,7 +1440,7 @@
                         <lb/>le refus d'aller à la procession ; mais <persName ref="#rouvrois">M. du Rouvrois</persName>
                         <lb/>lui a fait répondre verbalement. Au reste <orgName ref="#courSouveraine">la
                         <lb/>Cour <choice><abbr>S<hi rend="super">ne</hi>.</abbr><expan>souveraine</expan></choice></orgName> a fait un arrêté et veut porter ses
-                        <lb/>plaintes au <persName ref="#louisXV">roy de <choice><abbr>F.</abbr><expan>France</expan></choice></persName> comme <rs type="person" ref="#stanislas"><choice><abbr>S. M. Pol.</abbr><expan>Sa Majesté de Pologne</expan></choice></rs> l'a permis.
+                        <lb/>plaintes au <persName ref="#louisXV">roy de <choice><abbr>F.</abbr><expan>France</expan></choice></persName> comme <rs type="person" ref="#stanislas"><choice><abbr>S. M. Pol.</abbr><expan>Sa Majesté Polonaise</expan></choice></rs> l'a permis.
                      </p>
                   </div>
                   
@@ -2149,7 +2149,7 @@
                   <div type="day" xml:id="d17650816">
                      <p xml:id="d1765081601" ana="#cour">
                         <date type="entry" when="1765-08-16">16</date>
-                        On m'ecrit de <placeName ref="#commercy">Commercy</placeName> que <rs type="person" ref="#stanislas"><choice><abbr>S. M. Pol.</abbr><expan>Sa Majesté de Pologne</expan></choice></rs>
+                        On m'ecrit de <placeName ref="#commercy">Commercy</placeName> que <rs type="person" ref="#stanislas"><choice><abbr>S. M. Pol.</abbr><expan>Sa Majesté Polonaise</expan></choice></rs>
                         <lb/>y est arrivé hier en bonne santé, et
                         <lb/>y a trouvé <persName ref="#fleury">le duc de Fleury</persName>, gouverneur
                         <lb/>de la province, qui y restera pendant
@@ -3610,7 +3610,7 @@
                            <lb/>que le besoin que ses gardes ont d'un
                            <lb/>chef, fait passer sur toutes les objections
                            <pb facs="B543956101M00863_06_0110_1L" n="107v"/>D'ailleurs l'embonpoint de <rs type="person" ref="#stanislas">Sa Majesté
-                           <lb/>polonaise</rs> et la maigreur du <persName ref="#boufflersMis">marquis de
+                           <lb/>Polonaise</rs> et la maigreur du <persName ref="#boufflersMis">marquis de
                            <lb/>Boufflers</persName> compensent assés la difference
                            <lb/>d'age. On pourroit trouver encore une
                            <lb/>autre compensation dans les vœux que <placeName ref="#france">la
@@ -4036,7 +4036,7 @@
                         <lb/>le croire. Le service pour <rs type="person" ref="#louisDeFrance">M. le Dauphin</rs>
                         <lb/>devoit commencer à 10 h. précises. Un
                         <lb/>détachement du régiment du roy etoit au portail
-                        <lb/>des gardes du corps de <rs type="person" ref="#stanislas"><choice><abbr>S. M. Pol.</abbr><expan>Sa Majesté de Pologne</expan></choice></rs> dans <placeName ref="#nancyPrimatiale">l’église
+                        <lb/>des gardes du corps de <rs type="person" ref="#stanislas"><choice><abbr>S. M. Pol.</abbr><expan>Sa Majesté Polonaise</expan></choice></rs> dans <placeName ref="#nancyPrimatiale">l’église
                         <lb/>primatiale</placeName>. <orgName ref="#baillage">Le bailliage</orgName>, <orgName ref="#maitriseEauxForets">la maitrise des <choice><abbr>E.</abbr><expan>eaux</expan></choice> et <choice><abbr>F.</abbr><expan>forêts</expan></choice></orgName>
                         <lb/><orgName ref="#HDV">l'hotel de ville</orgName>, et la justice consulaire etoient
                         <lb/>déjà placés ; <orgName ref="#chambreComptes">la Chambre des Comptes</orgName> est
@@ -4071,7 +4071,7 @@
                      </p>
                      <p xml:id="d1766020302" ana="#cour">
                         Il n'y avoit là que le fauteuil du roy,
-                        <lb/><rs type="person" ref="#stanislas"><choice><abbr>S. M. Pol.</abbr><expan>Sa Majesté de Pologne</expan></choice></rs> etoit restée presque seule à
+                        <lb/><rs type="person" ref="#stanislas"><choice><abbr>S. M. Pol.</abbr><expan>Sa Majesté Polonaise</expan></choice></rs> etoit restée presque seule à
                         <lb/><placeName ref="#malgrange">la Malgrange</placeName>.
                      </p>
                      <p xml:id="d1766020303" ana="#theatre">
@@ -4082,7 +4082,7 @@
                         L'oraison funébre avoit été luë au <persName ref="#stanislas">roy</persName> à
                         <lb/><placeName ref="#luneville">Lunèville</placeName> par <persName ref="#coster">M. Coster</persName> l'academicien frere
                         <lb/>de l'auteur. à l'endroit d'un très bel éloge
-                        <lb/>de <rs type="person" ref="#stanislas"><choice><abbr>S. M. Pol.</abbr><expan>Sa Majesté de Pologne</expan></choice></rs> Elle dit au <persName ref="#coster">S. Coster</persName> : <quote>dit à
+                        <lb/>de <rs type="person" ref="#stanislas"><choice><abbr>S. M. Pol.</abbr><expan>Sa Majesté Polonaise</expan></choice></rs> Elle dit au <persName ref="#coster">S. Coster</persName> : <quote>dit à
                         <lb/>ton frere d'oter cela et de le réserver pour
                         <lb/>mon oraison funébre.</quote>
                      </p>
@@ -6593,7 +6593,7 @@
                   <div type="day" xml:id="d17660619">
                      <p xml:id="d1766061901" ana="#stan">
                         <date type="entry" when="1766-06-19">19</date>
-                        Service aux <placeName ref="#nancyOpheline">Orphelines</placeName>, pour <persName ref="#stanislas"><choice><abbr>S. M. Pol.</abbr><expan>Sa Majesté de Pologne</expan></choice></persName>
+                        Service aux <placeName ref="#nancyOpheline">Orphelines</placeName>, pour <persName ref="#stanislas"><choice><abbr>S. M. Pol.</abbr><expan>Sa Majesté Polonaise</expan></choice></persName>
                      </p>
                   </div>
                   
