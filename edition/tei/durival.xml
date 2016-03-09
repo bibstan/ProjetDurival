@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../schema/oddDurival.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-stylesheet type="text/xsl" href="../xsl/durival.xsl"?>
+<!--<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:xi="http://www.w3.org/2001/XInclude">
    <teiHeader>
@@ -504,7 +505,7 @@
                      <p xml:id="d1765031301" ana="#ville">
                         <date type="entry" when="1765-03-13">13</date>
                         <persName ref="#alliot">M. Alliot</persName> me fis part hier soir que <rs type="person" ref="#stanislas">le roy</rs>
-                        <lb/>vouloit donner <measure type="currency" quantity="100000" unit="lFr">cent mille livres de <choice><abbr>F<hi rend="super">ce</hi>.</abbr><expan>France</expan></choice></measure> a <placeName ref="#nancy">la ville
+                        <lb/>vouloit donner <measure type="currency" quantity="100000" unit="lF">cent mille livres de <choice><abbr>F<hi rend="super">ce</hi>.</abbr><expan>France</expan></choice></measure> a <placeName ref="#nancy">la ville
                         <lb/>de Nancy</placeName>, pour des objets ; de bien public. Et
                         <lb/>aujourdhui je lui ai donné une <sic>notte</sic> pour 
                         <pb facs="B543956101M00863_06_0076_1L" n="73v"/>détourner <rs type="person" ref="#stanislas"><choice><abbr>S. M. P.</abbr><expan>Sa Majesté Polonaise</expan></choice></rs> d'ordonner que cette <choice><abbr>so<hi rend="super">e</hi>.</abbr><expan>somme</expan></choice> soit
@@ -646,8 +647,8 @@
                      </p>
                   </div>
                   
-                  <div type="day" xml:id="d17650325" ana="#cour">
-                     <p xml:id="d1765032501">
+                  <div type="day" xml:id="d17650325">
+                     <p xml:id="d1765032501" ana="#cour">
                         <date type="entry" when="1765-03-25">25</date>
                         Conseil encore l'après midi
                         <lb/><persName ref="#fleury">Fleury</persName> est parti ce matin pour <placeName ref="#turin">Turin</placeName>,
@@ -947,7 +948,7 @@
                      </p>
                      <p xml:id="d1765042602">
                         La seconde <choice><abbr>éd.</abbr><expan>édition</expan></choice> de l'<title ref="#bib33">Essai sur le luxe</title> de
-                        <lb/><persName type="auteur" ref="#lambert">M. de S. Lambert</persName>, avec des changemens de
+                        <lb/><persName type="author" ref="#lambert">M. de S. Lambert</persName>, avec des changemens de
                         <lb/>l'auteur paroît chès <persName ref="#leClerc">le Clerc</persName> à <placeName ref="#nancy">Nancy</placeName>.
                      </p>
                   </div>
@@ -2245,8 +2246,8 @@
                      </quote>
                   </div>
                   <pb facs="B543956101M00863_06_0095_1L" n="92v"/>
-                  <div type="day" xml:id="d17650822" ana="#cour">
-                     <p xml:id="d1765082201">
+                  <div type="day" xml:id="d17650822">
+                     <p xml:id="d1765082201" ana="#cour">
                         <date type="entry" when="1765-08-22">22</date>                        
                         <persName ref="#christineSaxe">Mad. la princesse de Saxe</persName> a passé à
                         <lb/><placeName ref="#nancy">Nancy</placeName>, venant de <placeName ref="#commercy">Commercy</placeName> et retournant
@@ -2971,7 +2972,7 @@
                      <p xml:id="d1765110201" ana="#cour">
                         <date type="entry" when="1765-11-02">2</date>
                         On m'ecrit de <placeName ref="#luneville">Lunèville</placeName> le 2 <choice><abbr>9<hi rend="super">bre</hi></abbr><expan>novembre</expan></choice>.
-                        <lb/><persName type="person" ref="#steinbockComte">Un pretendu comte de Steinbock</persName>, livonien,
+                        <lb/><rs type="person" ref="#steinbockComte">Un pretendu comte de Steinbock</rs>, livonien,
                         <lb/>s'est annoncé ici sous ce tître, a été presenté
                         <lb/>de meme par <persName ref="#zuilyComte">M. le comte de Zuily</persName>, et a dîné
                         <lb/>à la table du <rs type="person" ref="#stanislas">roy</rs>. On a apris par l'arrivée
@@ -2993,8 +2994,8 @@
                   <div type="day" xml:id="d17651104">
                      <p xml:id="d1765110401" ana="#cour">
                         <date type="entry" when="1765-11-04">4</date>
-                        Du 4 à <placeName ref="#luneville">Lunèville</placeName>. <persName type="person" ref="#steinbockComte">le prétendu comte de
-                        <lb/>Steinbock</persName> a laissé ici des effets pour <choice><abbr>nantissem<hi rend="super">t</hi>.</abbr><expan>nantissement</expan></choice>
+                        Du 4 à <placeName ref="#luneville">Lunèville</placeName>. <rs type="person" ref="#steinbockComte">le prétendu comte de
+                        <lb/>Steinbock</rs> a laissé ici des effets pour <choice><abbr>nantissem<hi rend="super">t</hi>.</abbr><expan>nantissement</expan></choice>
                         <lb/>des <measure type="currency" quantity="40" unit="louis">40 louis</measure> empruntés, et est parti cet après
                         <lb/>dîner, pour retourner dit-il à <placeName ref="#paris">Paris</placeName>. Les <choice><abbr>n<hi rend="super">lles</hi>.</abbr><expan>nouvelles</expan></choice>
                         <lb/>de la santé de <rs type="person" ref="#louisDeFrance">M. le Dauphin</rs> sont un peu meilleures.
@@ -3238,8 +3239,8 @@
                      </p>
                   </div>
                   <pb facs="B543956101M00863_06_0105_1L" n="102v"/>
-                  <div type="day" xml:id="d17651127" ana="#aca #ville">
-                     <p xml:id="d1765112701">
+                  <div type="day" xml:id="d17651127">
+                     <p xml:id="d1765112701" ana="#aca #ville">
                         <date type="entry" when="1765-11-27">27</date>
                         Assemblée particuliere de <orgName ref="#academie">l'Academie</orgName>, où
                         <lb/>etoient M<hi rend="super">rs</hi>. <persName ref="#rouvrois">du Rouvrois</persName>, <persName ref="#sivry">de Sivry</persName>, <persName ref="#thibault">Thibault</persName>,
@@ -4156,8 +4157,8 @@
                      </p>
                   </div>
                   
-                  <div type="day" xml:id="d17660207" ana="#stan">
-                     <p xml:id="d1766020701">
+                  <div type="day" xml:id="d17660207">
+                     <p xml:id="d1766020701" ana="#stan">
                         <date type="entry" when="1766-02-07">7</date>
                         <persName ref="#intendant">M. l'Intendant</persName> revient de <placeName ref="#luneville">Lunèville</placeName>. <rs type="person" ref="#stanislas">Le
                         <lb/>roy</rs> continuë a bien se porter, et à plaisanter
@@ -4169,8 +4170,8 @@
                      </p>
                   </div>
                   
-                  <div type="day" xml:id="d17660208" ana="#ville">
-                     <p xml:id="d1766020801">
+                  <div type="day" xml:id="d17660208">
+                     <p xml:id="d1766020801" ana="#ville">
                         <date type="entry" when="1766-02-08">8</date>
                         Ce matin à <orgName ref="#HDV">l'hotel-de ville</orgName>, sur ce qu'on avoit
                         <lb/>dit des dispositions de <rs type="person" ref="#eveqToul">M. l'Eveque de Toul</rs>, M<hi rend="super">rs</hi>.
@@ -6050,8 +6051,8 @@
                      </p>
                   </div>
                   
-                  <div type="day" xml:id="d17660503" ana="#ville">
-                     <p xml:id="d1766050301">
+                  <div type="day" xml:id="d17660503">
+                     <p xml:id="d1766050301" ana="#ville">
                         <date type="entry" when="1766-05-03">3</date>
                         Aujourd'hui matin <placeName ref="#cantonFlavigny">le canton de Flavigny</placeName>. 3.
                         <lb/>Cet après midi <placeName ref="#cantonLupcourt">celui de Lupcourt</placeName>. Il devoit
@@ -6479,8 +6480,8 @@
                <div type="month" xml:id="d176606">
                   <pb facs="B543956101M00863_06_0141_1L" n="137v"/>
                   <fw type="runningHead"><seg type="print">Jours du mois.</seg> <date when="1766-06">mois de juin 1766</date></fw>
-                  <div type="day" xml:id="d17660604" ana="#ville #meteo #aca">
-                     <p xml:id="d1766060401">
+                  <div type="day" xml:id="d17660604">
+                     <p xml:id="d1766060401" ana="#ville #meteo #aca">
                         <date type="entry" when="1766-06-04">4</date>
                         Sur mon procès verbal du <date when="1766-06-02">2 juin</date>, la commission
                         <lb/>accordée jusqu'à bon plaisir <date when="1757-03-30">le 30 mars 1757</date> à
@@ -6650,7 +6651,7 @@
                      </p>
                   </div>
                   <pb facs="B543956101M00863_06_0142_2R" n="139"/><fw type="pageNum" n="139" place="topRight">139</fw>
-                  <div type="day" xml:id="d17660624_01" ana="#theatre">
+                  <div type="day" xml:id="d17660624_01">
                      <p xml:id="d17660624_0101" ana="#theatre">
                         <date type="entry" when="1766-06-24">24</date>
                         La troupe de <persName ref="#brisson">Brisson</persName>, qui part demain et
@@ -6760,8 +6761,8 @@
                   <fw type="runningHead"><seg type="print">Jours du mois.</seg> <date when="1766-07">mois de juillet 1766</date></fw>
                   <fw type="pageNum" n="140" place="topRight">140</fw>
                   
-                  <div type="day" xml:id="d17660701" ana="#bio">
-                     <p xml:id="d1766070101">
+                  <div type="day" xml:id="d17660701">
+                     <p xml:id="d1766070101" ana="#bio">
                         <date type="entry" when="1766-07-01">1<hi rend="super">er</hi>.</date>
                         J'ai donné congé à <persName ref="#demangeAnneMarie">Anne-Marie Demange</persName>,
                         <lb/>qui etoit ma concierge à <placeName ref="#heillecourt">Heillecourt</placeName>, depuis
@@ -7398,8 +7399,8 @@
                      </p>
                   </div>
    
-                  <div type="day" xml:id="d17660822" ana="#ville">
-                     <p xml:id="d1766082201">
+                  <div type="day" xml:id="d17660822">
+                     <p xml:id="d1766082201" ana="#ville">
                         <date type="entry" when="1766-08-22">22</date>
                         J'ai vû aujourdhui <persName ref="#puiseur">le jeune puiseur</persName>, <choice><abbr>con<hi rend="super">er</hi>.</abbr><expan>conseiller</expan></choice> de
                         <lb/><orgName ref="#HDV">l'hotel de ville</orgName>, il a quitté depuis trois jours
@@ -8185,7 +8186,7 @@
                      <p xml:id="d1766112001" ana="#necro">
                         <date type="entry" when="1766-11-20">20</date>
                         Mort du <persName ref="#huguetDeMontaran">S. Pierre François Huguet de Montaran</persName>,
-                        <lb/><add place="margin-left"><choice><abbr>E<hi rend="super">cuy</hi>.</abbr><expan>écuyer</expan></choice></add> avocat en <orgName ref="#parlementParis">Parlement de Paris</orgName>. Sera inhumé
+                        <lb/><add place="marginLeft"><choice><abbr>E<hi rend="super">cuy</hi>.</abbr><expan>écuyer</expan></choice></add> avocat en <orgName ref="#parlementParis">Parlement de Paris</orgName>. Sera inhumé
                         <lb/>dans <placeName ref="#nancyStRoch">l’église de S. Roch</placeName>.
                      </p>
                      <p xml:id="d1766112002"><!-- todo Mrs -->

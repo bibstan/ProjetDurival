@@ -3,7 +3,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2016-03-08T11:32:47Z. .
+Schema generated from ODD source 2016-03-09T18:44:46Z. .
 TEI Edition: Version 2.9.1. Last updated on
 	15th October 2015, revision 46ac023
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.9.1/
@@ -90,12 +90,6 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.9.1/
          </zeroOrMore>
       </element>
    </define>
-   <define name="data.probability">
-      <data type="double">
-         <param name="minInclusive">0</param>
-         <param name="maxInclusive">1</param>
-      </data>
-   </define>
    <define name="data.numeric">
       <choice>
          <data type="double"/>
@@ -115,13 +109,6 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.9.1/
          <data type="gMonthDay"/>
          <data type="time"/>
          <data type="dateTime"/>
-      </choice>
-   </define>
-   <define name="data.xTruthValue">
-      <choice>
-         <data type="boolean"/>
-         <value>unknown</value>
-         <value>inapplicable</value>
       </choice>
    </define>
    <define name="data.language">
@@ -144,21 +131,6 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.9.1/
    <define name="data.enumerated">
       <ref name="data.word"/>
    </define>
-   <define name="data.temporal.iso">
-      <choice>
-         <data type="date"/>
-         <data type="gYear"/>
-         <data type="gMonth"/>
-         <data type="gDay"/>
-         <data type="gYearMonth"/>
-         <data type="gMonthDay"/>
-         <data type="time"/>
-         <data type="dateTime"/>
-         <data type="token">
-            <param name="pattern">[0-9.,DHMPRSTWYZ/:+\-]+</param>
-         </data>
-      </choice>
-   </define>
    <define name="att.canonical.attributes">
       <ref name="att.canonical.attribute.ref"/>
    </define>
@@ -174,66 +146,8 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.9.1/
          </attribute>
       </optional>
    </define>
-   <define name="att.ranging.attributes">
-      <ref name="att.ranging.attribute.atLeast"/>
-      <ref name="att.ranging.attribute.atMost"/>
-      <ref name="att.ranging.attribute.min"/>
-      <ref name="att.ranging.attribute.max"/>
-      <ref name="att.ranging.attribute.confidence"/>
-   </define>
-   <define name="att.ranging.attribute.atLeast">
-      <optional>
-         <attribute name="atLeast">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">gives a minimum estimated value for the approximate measurement.</a:documentation>
-            <ref name="data.numeric"/>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.ranging.attribute.atMost">
-      <optional>
-         <attribute name="atMost">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">gives a maximum estimated value for the approximate measurement.</a:documentation>
-            <ref name="data.numeric"/>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.ranging.attribute.min">
-      <optional>
-         <attribute name="min">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">where the measurement summarizes more than one observation or a range, supplies the minimum value observed.</a:documentation>
-            <ref name="data.numeric"/>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.ranging.attribute.max">
-      <optional>
-         <attribute name="max">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">where the measurement summarizes more than one observation or a range, supplies the maximum value observed.</a:documentation>
-            <ref name="data.numeric"/>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.ranging.attribute.confidence">
-      <optional>
-         <attribute name="confidence">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the degree of statistical confidence (between zero and one) that a value falls within the range specified by min and max, or the proportion of observed values that fall within that range.</a:documentation>
-            <ref name="data.probability"/>
-         </attribute>
-      </optional>
-   </define>
    <define name="att.dimensions.attributes">
-      <ref name="att.ranging.attributes"/>
-   </define>
-   <define name="att.breaking.attributes">
-      <ref name="att.breaking.attribute.break"/>
-   </define>
-   <define name="att.breaking.attribute.break">
-      <optional>
-         <attribute name="break">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates whether or not the element bearing this attribute should be considered to mark the end of an orthographic token in the same way as whitespace.</a:documentation>
-            <ref name="data.enumerated"/>
-         </attribute>
-      </optional>
+      <empty/>
    </define>
    <define name="att.cReferencing.attributes">
       <ref name="att.cReferencing.attribute.cRef"/>
@@ -277,68 +191,6 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.9.1/
    </define>
    <define name="att.datable.attributes">
       <ref name="att.datable.w3c.attributes"/>
-      <ref name="att.datable.iso.attributes"/>
-      <ref name="att.datable.custom.attributes"/>
-   </define>
-   <define name="att.datcat.attribute.datcat">
-      <optional>
-         <attribute name="datcat" ns="http://www.isocat.org/ns/dcr">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a PID (persistent identifier) that aligns the given element with the appropriate Data Category (or categories) in ISOcat.</a:documentation>
-            <list>
-               <oneOrMore>
-                  <ref name="data.pointer"/>
-               </oneOrMore>
-            </list>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.datcat.attribute.valueDatcat">
-      <optional>
-         <attribute name="valueDatcat" ns="http://www.isocat.org/ns/dcr">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a PID (persistent identifier) that aligns the content of the given element or the value of the given attribute with the appropriate simple Data Category (or categories) in ISOcat.</a:documentation>
-            <list>
-               <oneOrMore>
-                  <ref name="data.pointer"/>
-               </oneOrMore>
-            </list>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.declaring.attributes">
-      <ref name="att.declaring.attribute.decls"/>
-   </define>
-   <define name="att.declaring.attribute.decls">
-      <optional>
-         <attribute name="decls">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">identifies one or more declarable elements within the header, which are understood to apply to the element bearing this attribute and its content.</a:documentation>
-            <list>
-               <oneOrMore>
-                  <ref name="data.pointer"/>
-               </oneOrMore>
-            </list>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.fragmentable.attribute.part">
-      <optional>
-         <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                    name="part"
-                    a:defaultValue="N">
-            <a:documentation>specifies whether or not its parent element is fragmented in some way, typically by some other overlapping structure: for example a speech which is divided between two or more verse stanzas, a paragraph which is split across a page division, a verse line which is divided between two speakers.</a:documentation>
-            <choice>
-               <value>Y</value>
-               <a:documentation>(yes) the element is fragmented in some (unspecified) respect</a:documentation>
-               <value>N</value>
-               <a:documentation>(no) the element is not fragmented, or no claim is made as to its completeness</a:documentation>
-               <value>I</value>
-               <a:documentation>(initial) this is the initial part of a fragmented element</a:documentation>
-               <value>M</value>
-               <a:documentation>(medial) this is a medial part of a fragmented element</a:documentation>
-               <value>F</value>
-               <a:documentation>(final) this is the final part of a fragmented element</a:documentation>
-            </choice>
-         </attribute>
-      </optional>
    </define>
    <define name="att.global.responsibility.attribute.resp">
       <optional>
@@ -352,21 +204,6 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.9.1/
          </attribute>
       </optional>
    </define>
-   <define name="att.editLike.attributes">
-      <ref name="att.dimensions.attributes"/>
-      <ref name="att.source.attributes"/>
-      <ref name="att.editLike.attribute.instant"/>
-   </define>
-   <define name="att.editLike.attribute.instant">
-      <optional>
-         <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                    name="instant"
-                    a:defaultValue="false">
-            <a:documentation>indicates whether this is an instant revision or not.</a:documentation>
-            <ref name="data.xTruthValue"/>
-         </attribute>
-      </optional>
-   </define>
    <define name="att.global.rendition.attribute.rend">
       <optional>
          <attribute name="rend">
@@ -374,26 +211,6 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.9.1/
             <list>
                <oneOrMore>
                   <ref name="data.word"/>
-               </oneOrMore>
-            </list>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.global.rendition.attribute.style">
-      <optional>
-         <attribute name="style">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains an expression in some formal style definition language which defines the rendering or presentation used for this element in the source text</a:documentation>
-            <ref name="data.text"/>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.global.rendition.attribute.rendition">
-      <optional>
-         <attribute name="rendition">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">points to a description of the rendering or presentation used for this element in the source text.</a:documentation>
-            <list>
-               <oneOrMore>
-                  <ref name="data.pointer"/>
                </oneOrMore>
             </list>
          </attribute>
@@ -420,27 +237,6 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.9.1/
          <attribute name="xml:lang">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(language) indicates the language of the element content using a tag generated according to BCP 47.</a:documentation>
             <ref name="data.language"/>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.global.attribute.xmlbase">
-      <optional>
-         <attribute name="xml:base">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">provides a base URI reference with which applications can resolve relative URI references into absolute URI references.</a:documentation>
-            <ref name="data.pointer"/>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.global.attribute.xmlspace">
-      <optional>
-         <attribute name="xml:space">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">signals an intention about how white space should be managed by applications.</a:documentation>
-            <choice>
-               <value>default</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">signals that the application's default white-space processing modes are acceptable</a:documentation>
-               <value>preserve</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates the intent that applications preserve all white space</a:documentation>
-            </choice>
          </attribute>
       </optional>
    </define>
@@ -514,77 +310,11 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.9.1/
          </attribute>
       </optional>
    </define>
-   <define name="att.sortable.attributes">
-      <ref name="att.sortable.attribute.sortKey"/>
+   <define name="att.segLike.attributes">
+      <empty/>
    </define>
-   <define name="att.sortable.attribute.sortKey">
-      <optional>
-         <attribute name="sortKey">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">supplies the sort key for this element in an index, list or group which contains it.</a:documentation>
-            <ref name="data.word"/>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.edition.attributes">
-      <ref name="att.edition.attribute.ed"/>
-      <ref name="att.edition.attribute.edRef"/>
-   </define>
-   <define name="att.edition.attribute.ed">
-      <optional>
-         <attribute name="ed">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(edition) supplies a sigil or other arbitrary identifier for the source edition in which the associated feature (for example, a page, column, or line break) occurs at this point in the text.</a:documentation>
-            <list>
-               <oneOrMore>
-                  <ref name="data.word"/>
-               </oneOrMore>
-            </list>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.edition.attribute.edRef">
-      <optional>
-         <attribute name="edRef">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(edition reference) provides a pointer to the source edition in which the associated feature (for example, a page, column, or line break) occurs at this point in the text.</a:documentation>
-            <list>
-               <oneOrMore>
-                  <ref name="data.pointer"/>
-               </oneOrMore>
-            </list>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.spanning.attributes">
-      <ref name="att.spanning.attribute.spanTo"/>
-   </define>
-   <define name="att.spanning.attribute.spanTo">
-      <optional>
-         <attribute name="spanTo">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates the end of a span initiated by the element bearing this attribute.</a:documentation>
-            <ref name="data.pointer"/>
-         </attribute>
-      </optional>
-   </define>
-   <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="oddbyexample-att.spanning-spanTo-spanTo-2-constraint-3">
-      <sch:rule xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                xmlns="http://www.tei-c.org/ns/1.0"
-                context="tei:*[@spanTo]">
-            <sch:assert test="id(substring(@spanTo,2)) and following::*[@xml:id=substring(current()/@spanTo,2)]">
-The element indicated by @spanTo (<sch:value-of select="@spanTo"/>) must follow the current element <sch:name/>
-                  </sch:assert>
-          </sch:rule>
-   </pattern>
-   <define name="att.translatable.attributes">
-      <ref name="att.translatable.attribute.versionDate"/>
-   </define>
-   <define name="att.translatable.attribute.versionDate">
-      <optional>
-         <attribute name="versionDate">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the date on which the source text was extracted and sent to the translator</a:documentation>
-            <ref name="data.temporal.w3c"/>
-         </attribute>
-      </optional>
+   <define name="att.transcriptional.attributes">
+      <empty/>
    </define>
    <define name="model.nameLike.agent">
       <choice>
@@ -1757,21 +1487,6 @@ The element indicated by @spanTo (<sch:value-of select="@spanTo"/>) must follow 
          <ref name="interpretation"/>
       </choice>
    </define>
-   <define name="att.source.attributes">
-      <ref name="att.source.attribute.source"/>
-   </define>
-   <define name="att.source.attribute.source">
-      <optional>
-         <attribute name="source">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">provides a pointer to the bibliographical source from which a quotation or citation is drawn.</a:documentation>
-            <list>
-               <oneOrMore>
-                  <ref name="data.pointer"/>
-               </oneOrMore>
-            </list>
-         </attribute>
-      </optional>
-   </define>
    <define name="model.resourceLike">
       <notAllowed/>
    </define>
@@ -1807,33 +1522,8 @@ The element indicated by @spanTo (<sch:value-of select="@spanTo"/>) must follow 
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
          <ref name="att.global.analytic.attribute.ana"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.declaring.attributes"/>
-         <optional>
-            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                       name="part"
-                       a:defaultValue="N">
-               <a:documentation>specifies whether or not its parent element is fragmented in some way, typically by some other overlapping structure: for example a speech which is divided between two or more verse stanzas, a paragraph which is split across a page division, a verse line which is divided between two speakers.</a:documentation>
-               <choice>
-                  <value>N</value>
-                  <a:documentation/>
-               </choice>
-            </attribute>
-         </optional>
          <empty/>
       </element>
    </define>
@@ -1844,20 +1534,7 @@ The element indicated by @spanTo (<sch:value-of select="@spanTo"/>) must follow 
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
          <empty/>
       </element>
    </define>
@@ -1868,23 +1545,8 @@ The element indicated by @spanTo (<sch:value-of select="@spanTo"/>) must follow 
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
          <ref name="att.global.analytic.attribute.ana"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.msExcerpt.attributes"/>
-         <ref name="att.source.attributes"/>
          <optional>
             <attribute name="type">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">characterizes the element in some sense, using any convenient classification scheme or typology.</a:documentation>
@@ -1908,21 +1570,7 @@ The element indicated by @spanTo (<sch:value-of select="@spanTo"/>) must follow 
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.translatable.attributes"/>
          <empty/>
       </element>
    </define>
@@ -1933,23 +1581,8 @@ The element indicated by @spanTo (<sch:value-of select="@spanTo"/>) must follow 
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.declaring.attributes"/>
          <ref name="att.pointing.attributes"/>
-         <ref name="att.sortable.attributes"/>
          <ref name="att.cReferencing.attributes"/>
          <optional>
             <attribute name="type">
@@ -1964,6 +1597,10 @@ The element indicated by @spanTo (<sch:value-of select="@spanTo"/>) must follow 
             <attribute name="subtype">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">provides a sub-categorization of the element, if needed</a:documentation>
                <choice>
+                  <value>in-folio</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>in-quarto</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                   <value>in-douze</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                   <value>in-quarto</value>
@@ -1982,21 +1619,7 @@ The element indicated by @spanTo (<sch:value-of select="@spanTo"/>) must follow 
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.source.attributes"/>
          <empty/>
       </element>
    </define>
@@ -2012,20 +1635,7 @@ The element indicated by @spanTo (<sch:value-of select="@spanTo"/>) must follow 
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
          <empty/>
       </element>
    </define>
@@ -2041,22 +1651,8 @@ The element indicated by @spanTo (<sch:value-of select="@spanTo"/>) must follow 
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
          <ref name="att.global.responsibility.attribute.resp"/>
-         <ref name="att.editLike.attributes"/>
          <optional>
             <attribute name="reason">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">gives the reason for omission. Sample values include sampling, inaudible, irrelevant, cancelled.</a:documentation>
@@ -2075,40 +1671,9 @@ The element indicated by @spanTo (<sch:value-of select="@spanTo"/>) must follow 
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(addition) contains letters, words, or phrases inserted in the source text by an author, scribe, or a previous annotator or corrector. [3.4.3. Additions, Deletions, and Omissions]</a:documentation>
          <ref name="macro.paraContent"/>
          <ref name="att.global.attribute.xmlid"/>
-         <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.editLike.attribute.instant"/>
-         <ref name="att.ranging.attribute.atLeast"/>
-         <ref name="att.ranging.attribute.atMost"/>
-         <ref name="att.ranging.attribute.min"/>
-         <ref name="att.ranging.attribute.max"/>
-         <ref name="att.ranging.attribute.confidence"/>
-         <ref name="att.source.attribute.source"/>
-         <optional>
-            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                       name="status"
-                       a:defaultValue="unremarkable">
-               <a:documentation>indicates the effect of the intervention, for example in the case of a deletion, strikeouts which include too much or too little text, or in the case of an addition, an insertion which duplicates some of the text already present.</a:documentation>
-               <choice>
-                  <value>unremarkable</value>
-                  <a:documentation/>
-               </choice>
-            </attribute>
-         </optional>
+         <ref name="att.transcriptional.attributes"/>
          <optional>
             <attribute name="place">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies where this item is placed.</a:documentation>
@@ -2121,7 +1686,9 @@ The element indicated by @spanTo (<sch:value-of select="@spanTo"/>) must follow 
                         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                         <value>inline</value>
                         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                        <value>margin-left</value>
+                        <value>marginLeft</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                        <value>marginRight</value>
                         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                         <value>overimposed</value>
                         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
@@ -2138,40 +1705,9 @@ The element indicated by @spanTo (<sch:value-of select="@spanTo"/>) must follow 
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(deletion) contains a letter, word, or passage deleted, marked as deleted, or otherwise indicated as superfluous or spurious in the copy text by an author, scribe, or a previous annotator or corrector. [3.4.3. Additions, Deletions, and Omissions]</a:documentation>
          <ref name="macro.paraContent"/>
          <ref name="att.global.attribute.xmlid"/>
-         <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.editLike.attribute.instant"/>
-         <ref name="att.ranging.attribute.atLeast"/>
-         <ref name="att.ranging.attribute.atMost"/>
-         <ref name="att.ranging.attribute.min"/>
-         <ref name="att.ranging.attribute.max"/>
-         <ref name="att.ranging.attribute.confidence"/>
-         <ref name="att.source.attribute.source"/>
-         <optional>
-            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                       name="status"
-                       a:defaultValue="unremarkable">
-               <a:documentation>indicates the effect of the intervention, for example in the case of a deletion, strikeouts which include too much or too little text, or in the case of an addition, an insertion which duplicates some of the text already present.</a:documentation>
-               <choice>
-                  <value>unremarkable</value>
-                  <a:documentation/>
-               </choice>
-            </attribute>
-         </optional>
+         <ref name="att.transcriptional.attributes"/>
          <empty/>
       </element>
    </define>
@@ -2180,24 +1716,9 @@ The element indicated by @spanTo (<sch:value-of select="@spanTo"/>) must follow 
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(referencing string) contains a general purpose name or referring string. [13.2.1. Personal Names 3.5.1. Referring Strings]</a:documentation>
          <ref name="macro.phraseSeq"/>
          <ref name="att.global.attribute.xmlid"/>
-         <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
          <ref name="att.naming.attributes"/>
-         <ref name="att.source.attributes"/>
          <optional>
             <attribute name="type">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">characterizes the element in some sense, using any convenient classification scheme or typology.</a:documentation>
@@ -2237,22 +1758,8 @@ The element indicated by @spanTo (<sch:value-of select="@spanTo"/>) must follow 
             </oneOrMore>
          </group>
          <ref name="att.global.attribute.xmlid"/>
-         <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
          <empty/>
       </element>
    </define>
@@ -2261,22 +1768,8 @@ The element indicated by @spanTo (<sch:value-of select="@spanTo"/>) must follow 
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(address line) contains one line of a postal address. [3.5.2. Addresses 2.2.4. Publication, Distribution, Licensing, etc. 3.11.2.4. Imprint, Size of a Document, and Reprint Information]</a:documentation>
          <ref name="macro.phraseSeq"/>
          <ref name="att.global.attribute.xmlid"/>
-         <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
          <empty/>
       </element>
    </define>
@@ -2286,37 +1779,21 @@ The element indicated by @spanTo (<sch:value-of select="@spanTo"/>) must follow 
 Measures]</a:documentation>
          <ref name="macro.phraseSeq"/>
          <ref name="att.global.attribute.xmlid"/>
-         <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
          <ref name="att.measurement.attribute.quantity"/>
          <optional>
             <attribute name="unit">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates the units used for the measurement, usually using the standard symbol for the desired units.</a:documentation>
                <choice>
                   <value>l</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Livre (non identifiée)</a:documentation>
                   <value>lF</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value>lFr</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Livre de France</a:documentation>
                   <value>lL</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Livre de Lorraine</a:documentation>
                   <value>louis</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Louis</a:documentation>
                </choice>
             </attribute>
          </optional>
@@ -2346,22 +1823,8 @@ Measures]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
          <ref name="att.datable.attributes"/>
-         <ref name="att.editLike.attributes"/>
          <optional>
             <attribute name="type">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">characterizes the element in some sense, using any convenient classification scheme or typology.</a:documentation>
@@ -2383,21 +1846,7 @@ Measures]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.source.attributes"/>
          <empty/>
       </element>
    </define>
@@ -2408,21 +1857,7 @@ Measures]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.editLike.attributes"/>
          <empty/>
       </element>
    </define>
@@ -2471,7 +1906,7 @@ Measures]</a:documentation>
             </zeroOrMore>
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-list-gloss-list-must-have-labels-constraint-4">
+                  id="oddbyexample-list-gloss-list-must-have-labels-constraint-3">
             <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
                       xmlns="http://www.tei-c.org/ns/1.0"
@@ -2482,21 +1917,7 @@ Measures]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.sortable.attributes"/>
          <optional>
             <attribute name="type">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">describes the nature of the items in the list.</a:documentation>
@@ -2516,21 +1937,7 @@ Measures]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.sortable.attributes"/>
          <empty/>
       </element>
    </define>
@@ -2551,20 +1958,7 @@ Measures]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
          <empty/>
       </element>
    </define>
@@ -2576,24 +1970,8 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
          <ref name="att.global.facs.attribute.facs"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.edition.attributes"/>
-         <ref name="att.spanning.attributes"/>
-         <ref name="att.breaking.attributes"/>
          <empty/>
       </element>
    </define>
@@ -2605,23 +1983,19 @@ Elements 7.2.5. Speech Contents]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
-         <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.edition.attributes"/>
-         <ref name="att.spanning.attributes"/>
-         <ref name="att.breaking.attributes"/>
+         <optional>
+            <attribute name="rend">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(rendition) indicates how the element in question was rendered or presented in the source text.</a:documentation>
+               <list>
+                  <oneOrMore>
+                     <choice>
+                        <value>hyphen</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                     </choice>
+                  </oneOrMore>
+               </list>
+            </attribute>
+         </optional>
          <empty/>
       </element>
    </define>
@@ -2633,23 +2007,7 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.edition.attributes"/>
-         <ref name="att.spanning.attributes"/>
-         <ref name="att.breaking.attributes"/>
          <empty/>
       </element>
    </define>
@@ -2660,20 +2018,7 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
          <empty/>
       </element>
    </define>
@@ -2701,20 +2046,7 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
          <empty/>
       </element>
    </define>
@@ -2725,32 +2057,7 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.datable.iso.attribute.when-iso"/>
-         <ref name="att.datable.iso.attribute.notBefore-iso"/>
-         <ref name="att.datable.iso.attribute.notAfter-iso"/>
-         <ref name="att.datable.iso.attribute.from-iso"/>
-         <ref name="att.datable.iso.attribute.to-iso"/>
-         <ref name="att.datable.custom.attribute.when-custom"/>
-         <ref name="att.datable.custom.attribute.notBefore-custom"/>
-         <ref name="att.datable.custom.attribute.notAfter-custom"/>
-         <ref name="att.datable.custom.attribute.from-custom"/>
-         <ref name="att.datable.custom.attribute.to-custom"/>
-         <ref name="att.datable.custom.attribute.datingPoint"/>
-         <ref name="att.datable.custom.attribute.datingMethod"/>
          <empty/>
       </element>
    </define>
@@ -2761,20 +2068,7 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
          <ref name="att.canonical.attributes"/>
          <empty/>
       </element>
@@ -2786,20 +2080,7 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
          <empty/>
       </element>
    </define>
@@ -2810,20 +2091,7 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
          <empty/>
       </element>
    </define>
@@ -2845,44 +2113,6 @@ Elements]</a:documentation>
          </zeroOrMore>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
-         <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
-         <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.sortable.attributes"/>
-         <optional>
-            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                       name="default"
-                       a:defaultValue="false">
-               <a:documentation>indicates whether or not this element is selected by default when its parent is selected.</a:documentation>
-               <choice>
-                  <value>false</value>
-                  <a:documentation/>
-               </choice>
-            </attribute>
-         </optional>
-         <optional>
-            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                       name="status"
-                       a:defaultValue="draft">
-               <a:documentation>describes the status of a document either currently or, when associated with a dated element, at the time indicated.</a:documentation>
-               <choice>
-                  <value>draft</value>
-                  <a:documentation/>
-               </choice>
-            </attribute>
-         </optional>
          <empty/>
       </element>
    </define>
@@ -2904,32 +2134,10 @@ Elements]</a:documentation>
             </zeroOrMore>
          </group>
          <ref name="att.global.attribute.xmlid"/>
-         <ref name="att.global.attribute.n"/>
-         <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
-         <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.sortable.attributes"/>
          <optional>
-            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                       name="default"
-                       a:defaultValue="false">
-               <a:documentation>indicates whether or not this element is selected by default when its parent is selected.</a:documentation>
-               <choice>
-                  <value>false</value>
-                  <a:documentation/>
-               </choice>
+            <attribute name="xml:base">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <text/>
             </attribute>
          </optional>
          <empty/>
@@ -2960,31 +2168,7 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <optional>
-            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                       name="part"
-                       a:defaultValue="N">
-               <a:documentation>specifies whether or not its parent element is fragmented in some way, typically by some other overlapping structure: for example a speech which is divided between two or more verse stanzas, a paragraph which is split across a page division, a verse line which is divided between two speakers.</a:documentation>
-               <choice>
-                  <value>N</value>
-                  <a:documentation/>
-               </choice>
-            </attribute>
-         </optional>
          <empty/>
       </element>
    </define>
@@ -3023,7 +2207,7 @@ Elements]</a:documentation>
             </zeroOrMore>
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-lg-atleast1oflggapl-constraint-5">
+                  id="oddbyexample-lg-atleast1oflggapl-constraint-4">
             <rule context="tei:lg">
                <sch:assert xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -3045,235 +2229,18 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.declaring.attributes"/>
-         <optional>
-            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                       name="org"
-                       a:defaultValue="uniform">
-               <a:documentation>(organization) specifies how the content of the division is organized.</a:documentation>
-               <choice>
-                  <value>uniform</value>
-                  <a:documentation/>
-               </choice>
-            </attribute>
-         </optional>
-         <optional>
-            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                       name="sample"
-                       a:defaultValue="complete">
-               <a:documentation>indicates whether this division is a sample of the original source and if so, from which part.</a:documentation>
-               <choice>
-                  <value>complete</value>
-                  <a:documentation/>
-               </choice>
-            </attribute>
-         </optional>
-         <optional>
-            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                       name="part"
-                       a:defaultValue="N">
-               <a:documentation>specifies whether or not its parent element is fragmented in some way, typically by some other overlapping structure: for example a speech which is divided between two or more verse stanzas, a paragraph which is split across a page division, a verse line which is divided between two speakers.</a:documentation>
-               <choice>
-                  <value>N</value>
-                  <a:documentation/>
-               </choice>
-            </attribute>
-         </optional>
          <empty/>
       </element>
-   </define>
-   <define name="att.datable.custom.attributes">
-      <ref name="att.datable.custom.attribute.when-custom"/>
-      <ref name="att.datable.custom.attribute.notBefore-custom"/>
-      <ref name="att.datable.custom.attribute.notAfter-custom"/>
-      <ref name="att.datable.custom.attribute.from-custom"/>
-      <ref name="att.datable.custom.attribute.to-custom"/>
-      <ref name="att.datable.custom.attribute.datingPoint"/>
-      <ref name="att.datable.custom.attribute.datingMethod"/>
-   </define>
-   <define name="att.datable.custom.attribute.when-custom">
-      <optional>
-         <attribute name="when-custom">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">supplies the value of a date or time in some custom standard form.</a:documentation>
-            <list>
-               <oneOrMore>
-                  <ref name="data.word"/>
-               </oneOrMore>
-            </list>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.datable.custom.attribute.notBefore-custom">
-      <optional>
-         <attribute name="notBefore-custom">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the earliest possible date for the event in some custom standard form.</a:documentation>
-            <list>
-               <oneOrMore>
-                  <ref name="data.word"/>
-               </oneOrMore>
-            </list>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.datable.custom.attribute.notAfter-custom">
-      <optional>
-         <attribute name="notAfter-custom">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the latest possible date for the event in some custom standard form.</a:documentation>
-            <list>
-               <oneOrMore>
-                  <ref name="data.word"/>
-               </oneOrMore>
-            </list>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.datable.custom.attribute.from-custom">
-      <optional>
-         <attribute name="from-custom">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates the starting point of the period in some custom standard form.</a:documentation>
-            <list>
-               <oneOrMore>
-                  <ref name="data.word"/>
-               </oneOrMore>
-            </list>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.datable.custom.attribute.to-custom">
-      <optional>
-         <attribute name="to-custom">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates the ending point of the period in some custom standard form.</a:documentation>
-            <list>
-               <oneOrMore>
-                  <ref name="data.word"/>
-               </oneOrMore>
-            </list>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.datable.custom.attribute.datingPoint">
-      <optional>
-         <attribute name="datingPoint">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">supplies a pointer to some location defining a named point in time with reference to which the datable item is understood to have occurred</a:documentation>
-            <ref name="data.pointer"/>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.datable.custom.attribute.datingMethod">
-      <optional>
-         <attribute name="datingMethod">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">supplies a pointer to a calendar element or other means of interpreting the values of the custom dating attributes.</a:documentation>
-            <ref name="data.pointer"/>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.datable.iso.attributes">
-      <ref name="att.datable.iso.attribute.when-iso"/>
-      <ref name="att.datable.iso.attribute.notBefore-iso"/>
-      <ref name="att.datable.iso.attribute.notAfter-iso"/>
-      <ref name="att.datable.iso.attribute.from-iso"/>
-      <ref name="att.datable.iso.attribute.to-iso"/>
-   </define>
-   <define name="att.datable.iso.attribute.when-iso">
-      <optional>
-         <attribute name="when-iso">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">supplies the value of a date or time in a standard form.</a:documentation>
-            <ref name="data.temporal.iso"/>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.datable.iso.attribute.notBefore-iso">
-      <optional>
-         <attribute name="notBefore-iso">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the earliest possible date for the event in standard form, e.g. yyyy-mm-dd.</a:documentation>
-            <ref name="data.temporal.iso"/>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.datable.iso.attribute.notAfter-iso">
-      <optional>
-         <attribute name="notAfter-iso">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the latest possible date for the event in standard form, e.g. yyyy-mm-dd.</a:documentation>
-            <ref name="data.temporal.iso"/>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.datable.iso.attribute.from-iso">
-      <optional>
-         <attribute name="from-iso">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates the starting point of the period in standard form.</a:documentation>
-            <ref name="data.temporal.iso"/>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.datable.iso.attribute.to-iso">
-      <optional>
-         <attribute name="to-iso">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates the ending point of the period in standard form.</a:documentation>
-            <ref name="data.temporal.iso"/>
-         </attribute>
-      </optional>
    </define>
    <define name="orgName">
       <element name="orgName">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(organization name) contains an organizational name. [13.2.2. Organizational Names]</a:documentation>
          <ref name="macro.phraseSeq"/>
          <ref name="att.global.attribute.xmlid"/>
-         <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.datable.iso.attribute.when-iso"/>
-         <ref name="att.datable.iso.attribute.notBefore-iso"/>
-         <ref name="att.datable.iso.attribute.notAfter-iso"/>
-         <ref name="att.datable.iso.attribute.from-iso"/>
-         <ref name="att.datable.iso.attribute.to-iso"/>
-         <ref name="att.datable.custom.attribute.when-custom"/>
-         <ref name="att.datable.custom.attribute.notBefore-custom"/>
-         <ref name="att.datable.custom.attribute.notAfter-custom"/>
-         <ref name="att.datable.custom.attribute.from-custom"/>
-         <ref name="att.datable.custom.attribute.to-custom"/>
-         <ref name="att.datable.custom.attribute.datingPoint"/>
-         <ref name="att.datable.custom.attribute.datingMethod"/>
-         <ref name="att.editLike.attributes"/>
          <ref name="att.canonical.attribute.ref"/>
-         <optional>
-            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                       name="full"
-                       a:defaultValue="yes">
-               <a:documentation>indicates whether the name component is given in full, as an abbreviation or simply as an initial.</a:documentation>
-               <choice>
-                  <value>yes</value>
-                  <a:documentation/>
-               </choice>
-            </attribute>
-         </optional>
          <empty/>
       </element>
    </define>
@@ -3282,55 +2249,15 @@ Elements]</a:documentation>
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(personal name) contains a proper noun or proper-noun phrase referring to a person, possibly including one or more of the person's forenames, surnames, honorifics, added names, etc. [13.2.1. Personal Names]</a:documentation>
          <ref name="macro.phraseSeq"/>
          <ref name="att.global.attribute.xmlid"/>
-         <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.datable.iso.attribute.when-iso"/>
-         <ref name="att.datable.iso.attribute.notBefore-iso"/>
-         <ref name="att.datable.iso.attribute.notAfter-iso"/>
-         <ref name="att.datable.iso.attribute.from-iso"/>
-         <ref name="att.datable.iso.attribute.to-iso"/>
-         <ref name="att.datable.custom.attribute.when-custom"/>
-         <ref name="att.datable.custom.attribute.notBefore-custom"/>
-         <ref name="att.datable.custom.attribute.notAfter-custom"/>
-         <ref name="att.datable.custom.attribute.from-custom"/>
-         <ref name="att.datable.custom.attribute.to-custom"/>
-         <ref name="att.datable.custom.attribute.datingPoint"/>
-         <ref name="att.datable.custom.attribute.datingMethod"/>
-         <ref name="att.editLike.attributes"/>
          <ref name="att.canonical.attribute.ref"/>
-         <optional>
-            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                       name="full"
-                       a:defaultValue="yes">
-               <a:documentation>indicates whether the name component is given in full, as an abbreviation or simply as an initial.</a:documentation>
-               <choice>
-                  <value>yes</value>
-                  <a:documentation/>
-               </choice>
-            </attribute>
-         </optional>
          <optional>
             <attribute name="type">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">characterizes the element in some sense, using any convenient classification scheme or typology.</a:documentation>
                <choice>
                   <value>author</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value>person</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Indique la présence l'auteur au sein d'une référence bibliographique</a:documentation>
                </choice>
             </attribute>
          </optional>
@@ -3342,33 +2269,8 @@ Elements]</a:documentation>
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a forename, given or baptismal name. [13.2.1. Personal Names]</a:documentation>
          <ref name="macro.phraseSeq"/>
          <ref name="att.global.attribute.xmlid"/>
-         <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <optional>
-            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                       name="full"
-                       a:defaultValue="yes">
-               <a:documentation>indicates whether the name component is given in full, as an abbreviation or simply as an initial.</a:documentation>
-               <choice>
-                  <value>yes</value>
-                  <a:documentation/>
-               </choice>
-            </attribute>
-         </optional>
          <empty/>
       </element>
    </define>
@@ -3377,33 +2279,8 @@ Elements]</a:documentation>
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(generational name component) contains a name component used to distinguish otherwise similar names on the basis of the relative ages or generations of the persons named. [13.2.1. Personal Names]</a:documentation>
          <ref name="macro.phraseSeq"/>
          <ref name="att.global.attribute.xmlid"/>
-         <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <optional>
-            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                       name="full"
-                       a:defaultValue="yes">
-               <a:documentation>indicates whether the name component is given in full, as an abbreviation or simply as an initial.</a:documentation>
-               <choice>
-                  <value>yes</value>
-                  <a:documentation/>
-               </choice>
-            </attribute>
-         </optional>
          <empty/>
       </element>
    </define>
@@ -3412,22 +2289,8 @@ Elements]</a:documentation>
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(name link) contains a connecting phrase or link used within a name but not regarded as part of it, such as van der or of. [13.2.1. Personal Names]</a:documentation>
          <ref name="macro.phraseSeq"/>
          <ref name="att.global.attribute.xmlid"/>
-         <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
          <empty/>
       </element>
    </define>
@@ -3436,33 +2299,8 @@ Elements]</a:documentation>
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a name component which indicates that the referent has a particular role or position in society, such as an official title or rank. [13.2.1. Personal Names]</a:documentation>
          <ref name="macro.phraseSeq"/>
          <ref name="att.global.attribute.xmlid"/>
-         <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <optional>
-            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                       name="full"
-                       a:defaultValue="yes">
-               <a:documentation>indicates whether the name component is given in full, as an abbreviation or simply as an initial.</a:documentation>
-               <choice>
-                  <value>yes</value>
-                  <a:documentation/>
-               </choice>
-            </attribute>
-         </optional>
          <optional>
             <attribute name="type">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">characterizes the element in some sense, using any convenient classification scheme or typology.</a:documentation>
@@ -3479,48 +2317,10 @@ Elements]</a:documentation>
       <element name="placeName">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains an absolute or relative place name. [13.2.3. Place Names]</a:documentation>
          <ref name="macro.phraseSeq"/>
-         <ref name="att.datable.iso.attribute.when-iso"/>
-         <ref name="att.datable.iso.attribute.notBefore-iso"/>
-         <ref name="att.datable.iso.attribute.notAfter-iso"/>
-         <ref name="att.datable.iso.attribute.from-iso"/>
-         <ref name="att.datable.iso.attribute.to-iso"/>
-         <ref name="att.datable.custom.attribute.when-custom"/>
-         <ref name="att.datable.custom.attribute.notBefore-custom"/>
-         <ref name="att.datable.custom.attribute.notAfter-custom"/>
-         <ref name="att.datable.custom.attribute.from-custom"/>
-         <ref name="att.datable.custom.attribute.to-custom"/>
-         <ref name="att.datable.custom.attribute.datingPoint"/>
-         <ref name="att.datable.custom.attribute.datingMethod"/>
-         <ref name="att.editLike.attributes"/>
          <ref name="att.global.attribute.xmlid"/>
-         <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
          <ref name="att.canonical.attribute.ref"/>
-         <optional>
-            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                       name="full"
-                       a:defaultValue="yes">
-               <a:documentation>indicates whether the name component is given in full, as an abbreviation or simply as an initial.</a:documentation>
-               <choice>
-                  <value>yes</value>
-                  <a:documentation/>
-               </choice>
-            </attribute>
-         </optional>
          <empty/>
       </element>
    </define>
@@ -3529,34 +2329,8 @@ Elements]</a:documentation>
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains the name of a geo-political unit, such as a nation, country, colony, or commonwealth, larger than or administratively superior to a region and smaller than a bloc. [13.2.3. Place Names]</a:documentation>
          <ref name="macro.phraseSeq"/>
          <ref name="att.global.attribute.xmlid"/>
-         <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.datable.iso.attribute.when-iso"/>
-         <ref name="att.datable.iso.attribute.notBefore-iso"/>
-         <ref name="att.datable.iso.attribute.notAfter-iso"/>
-         <ref name="att.datable.iso.attribute.from-iso"/>
-         <ref name="att.datable.iso.attribute.to-iso"/>
-         <ref name="att.datable.custom.attribute.when-custom"/>
-         <ref name="att.datable.custom.attribute.notBefore-custom"/>
-         <ref name="att.datable.custom.attribute.notAfter-custom"/>
-         <ref name="att.datable.custom.attribute.from-custom"/>
-         <ref name="att.datable.custom.attribute.to-custom"/>
-         <ref name="att.datable.custom.attribute.datingPoint"/>
-         <ref name="att.datable.custom.attribute.datingMethod"/>
          <empty/>
       </element>
    </define>
@@ -3565,36 +2339,9 @@ Elements]</a:documentation>
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains information about a person's birth, such as its date and place. [15.2.2. The Participant Description]</a:documentation>
          <ref name="macro.phraseSeq"/>
          <ref name="att.global.attribute.xmlid"/>
-         <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.editLike.attributes"/>
          <ref name="att.datable.w3c.attribute.when"/>
-         <ref name="att.datable.iso.attribute.when-iso"/>
-         <ref name="att.datable.iso.attribute.notBefore-iso"/>
-         <ref name="att.datable.iso.attribute.notAfter-iso"/>
-         <ref name="att.datable.iso.attribute.from-iso"/>
-         <ref name="att.datable.iso.attribute.to-iso"/>
-         <ref name="att.datable.custom.attribute.when-custom"/>
-         <ref name="att.datable.custom.attribute.notBefore-custom"/>
-         <ref name="att.datable.custom.attribute.notAfter-custom"/>
-         <ref name="att.datable.custom.attribute.from-custom"/>
-         <ref name="att.datable.custom.attribute.to-custom"/>
-         <ref name="att.datable.custom.attribute.datingPoint"/>
-         <ref name="att.datable.custom.attribute.datingMethod"/>
          <empty/>
       </element>
    </define>
@@ -3603,36 +2350,9 @@ Elements]</a:documentation>
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains information about a person's death, such as its date and place. [15.2.2. The Participant Description]</a:documentation>
          <ref name="macro.phraseSeq"/>
          <ref name="att.global.attribute.xmlid"/>
-         <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.editLike.attributes"/>
          <ref name="att.datable.w3c.attribute.when"/>
-         <ref name="att.datable.iso.attribute.when-iso"/>
-         <ref name="att.datable.iso.attribute.notBefore-iso"/>
-         <ref name="att.datable.iso.attribute.notAfter-iso"/>
-         <ref name="att.datable.iso.attribute.from-iso"/>
-         <ref name="att.datable.iso.attribute.to-iso"/>
-         <ref name="att.datable.custom.attribute.when-custom"/>
-         <ref name="att.datable.custom.attribute.notBefore-custom"/>
-         <ref name="att.datable.custom.attribute.notAfter-custom"/>
-         <ref name="att.datable.custom.attribute.from-custom"/>
-         <ref name="att.datable.custom.attribute.to-custom"/>
-         <ref name="att.datable.custom.attribute.datingPoint"/>
-         <ref name="att.datable.custom.attribute.datingMethod"/>
          <empty/>
       </element>
    </define>
@@ -3666,36 +2386,8 @@ Elements]</a:documentation>
             </zeroOrMore>
          </group>
          <ref name="att.global.attribute.xmlid"/>
-         <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.datable.iso.attribute.when-iso"/>
-         <ref name="att.datable.iso.attribute.notBefore-iso"/>
-         <ref name="att.datable.iso.attribute.notAfter-iso"/>
-         <ref name="att.datable.iso.attribute.from-iso"/>
-         <ref name="att.datable.iso.attribute.to-iso"/>
-         <ref name="att.datable.custom.attribute.when-custom"/>
-         <ref name="att.datable.custom.attribute.notBefore-custom"/>
-         <ref name="att.datable.custom.attribute.notAfter-custom"/>
-         <ref name="att.datable.custom.attribute.from-custom"/>
-         <ref name="att.datable.custom.attribute.to-custom"/>
-         <ref name="att.datable.custom.attribute.datingPoint"/>
-         <ref name="att.datable.custom.attribute.datingMethod"/>
-         <ref name="att.editLike.attributes"/>
-         <ref name="att.sortable.attributes"/>
          <empty/>
       </element>
    </define>
@@ -3717,32 +2409,10 @@ Elements]</a:documentation>
             </zeroOrMore>
          </group>
          <ref name="att.global.attribute.xmlid"/>
-         <ref name="att.global.attribute.n"/>
-         <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
-         <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.sortable.attributes"/>
          <optional>
-            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                       name="default"
-                       a:defaultValue="false">
-               <a:documentation>indicates whether or not this element is selected by default when its parent is selected.</a:documentation>
-               <choice>
-                  <value>false</value>
-                  <a:documentation/>
-               </choice>
+            <attribute name="xml:base">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <text/>
             </attribute>
          </optional>
          <empty/>
@@ -3766,34 +2436,8 @@ Elements]</a:documentation>
             </zeroOrMore>
          </group>
          <ref name="att.global.attribute.xmlid"/>
-         <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.sortable.attributes"/>
-         <optional>
-            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                       name="default"
-                       a:defaultValue="false">
-               <a:documentation>indicates whether or not this element is selected by default when its parent is selected.</a:documentation>
-               <choice>
-                  <value>false</value>
-                  <a:documentation/>
-               </choice>
-            </attribute>
-         </optional>
          <empty/>
       </element>
    </define>
@@ -3815,32 +2459,10 @@ Elements]</a:documentation>
             </zeroOrMore>
          </group>
          <ref name="att.global.attribute.xmlid"/>
-         <ref name="att.global.attribute.n"/>
-         <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
-         <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.sortable.attributes"/>
          <optional>
-            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                       name="default"
-                       a:defaultValue="false">
-               <a:documentation>indicates whether or not this element is selected by default when its parent is selected.</a:documentation>
-               <choice>
-                  <value>false</value>
-                  <a:documentation/>
-               </choice>
+            <attribute name="xml:base">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <text/>
             </attribute>
          </optional>
          <empty/>
@@ -3864,32 +2486,10 @@ Elements]</a:documentation>
             </zeroOrMore>
          </group>
          <ref name="att.global.attribute.xmlid"/>
-         <ref name="att.global.attribute.n"/>
-         <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
-         <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.sortable.attributes"/>
          <optional>
-            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                       name="default"
-                       a:defaultValue="false">
-               <a:documentation>indicates whether or not this element is selected by default when its parent is selected.</a:documentation>
-               <choice>
-                  <value>false</value>
-                  <a:documentation/>
-               </choice>
+            <attribute name="xml:base">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <text/>
             </attribute>
          </optional>
          <empty/>
@@ -3929,24 +2529,6 @@ Elements]</a:documentation>
             </zeroOrMore>
          </group>
          <ref name="att.global.attribute.xmlid"/>
-         <ref name="att.global.attribute.n"/>
-         <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
-         <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.editLike.attributes"/>
-         <ref name="att.sortable.attributes"/>
          <empty/>
       </element>
    </define>
@@ -3965,24 +2547,6 @@ Elements]</a:documentation>
             </zeroOrMore>
          </choice>
          <ref name="att.global.attribute.xmlid"/>
-         <ref name="att.global.attribute.n"/>
-         <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
-         <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.editLike.attributes"/>
-         <ref name="att.sortable.attributes"/>
          <empty/>
       </element>
    </define>
@@ -4022,24 +2586,6 @@ Elements]</a:documentation>
             </zeroOrMore>
          </group>
          <ref name="att.global.attribute.xmlid"/>
-         <ref name="att.global.attribute.n"/>
-         <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
-         <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.editLike.attributes"/>
-         <ref name="att.sortable.attributes"/>
          <empty/>
       </element>
    </define>
@@ -4077,35 +2623,8 @@ Elements]</a:documentation>
             </choice>
          </group>
          <ref name="att.global.attribute.xmlid"/>
-         <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.datable.iso.attribute.when-iso"/>
-         <ref name="att.datable.iso.attribute.notBefore-iso"/>
-         <ref name="att.datable.iso.attribute.notAfter-iso"/>
-         <ref name="att.datable.iso.attribute.from-iso"/>
-         <ref name="att.datable.iso.attribute.to-iso"/>
-         <ref name="att.datable.custom.attribute.when-custom"/>
-         <ref name="att.datable.custom.attribute.notBefore-custom"/>
-         <ref name="att.datable.custom.attribute.notAfter-custom"/>
-         <ref name="att.datable.custom.attribute.from-custom"/>
-         <ref name="att.datable.custom.attribute.to-custom"/>
-         <ref name="att.datable.custom.attribute.datingPoint"/>
-         <ref name="att.datable.custom.attribute.datingMethod"/>
-         <ref name="att.editLike.attributes"/>
          <empty/>
       </element>
    </define>
@@ -4121,20 +2640,7 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
          <optional>
             <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
                        name="type"
@@ -4164,20 +2670,7 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
          <empty/>
       </element>
    </define>
@@ -4195,20 +2688,7 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
          <empty/>
       </element>
    </define>
@@ -4219,20 +2699,7 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
          <empty/>
       </element>
    </define>
@@ -4257,20 +2724,7 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
          <empty/>
       </element>
    </define>
@@ -4287,21 +2741,13 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.sortable.attributes"/>
+         <optional>
+            <attribute name="type">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">categorizes the identifier, for example as an ISBN, Social Security number, etc.</a:documentation>
+               <ref name="data.enumerated"/>
+            </attribute>
+         </optional>
          <empty/>
       </element>
    </define>
@@ -4317,42 +2763,7 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <optional>
-            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                       name="default"
-                       a:defaultValue="false">
-               <a:documentation>indicates whether or not this element is selected by default when its parent is selected.</a:documentation>
-               <choice>
-                  <value>false</value>
-                  <a:documentation/>
-               </choice>
-            </attribute>
-         </optional>
-         <optional>
-            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                       name="status"
-                       a:defaultValue="unknown">
-               <a:documentation>supplies a code identifying the current availability of the text.</a:documentation>
-               <choice>
-                  <value>unknown</value>
-                  <a:documentation/>
-               </choice>
-            </attribute>
-         </optional>
          <empty/>
       </element>
    </define>
@@ -4374,31 +2785,7 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <optional>
-            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                       name="default"
-                       a:defaultValue="false">
-               <a:documentation>indicates whether or not this element is selected by default when its parent is selected.</a:documentation>
-               <choice>
-                  <value>false</value>
-                  <a:documentation/>
-               </choice>
-            </attribute>
-         </optional>
          <empty/>
       </element>
    </define>
@@ -4416,20 +2803,7 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
          <empty/>
       </element>
    </define>
@@ -4442,31 +2816,7 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <optional>
-            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                       name="default"
-                       a:defaultValue="false">
-               <a:documentation>indicates whether or not this element is selected by default when its parent is selected.</a:documentation>
-               <choice>
-                  <value>false</value>
-                  <a:documentation/>
-               </choice>
-            </attribute>
-         </optional>
          <empty/>
       </element>
    </define>
@@ -4482,31 +2832,7 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <optional>
-            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                       name="default"
-                       a:defaultValue="false">
-               <a:documentation>indicates whether or not this element is selected by default when its parent is selected.</a:documentation>
-               <choice>
-                  <value>false</value>
-                  <a:documentation/>
-               </choice>
-            </attribute>
-         </optional>
          <empty/>
       </element>
    </define>
@@ -4519,42 +2845,7 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <optional>
-            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                       name="default"
-                       a:defaultValue="false">
-               <a:documentation>indicates whether or not this element is selected by default when its parent is selected.</a:documentation>
-               <choice>
-                  <value>false</value>
-                  <a:documentation/>
-               </choice>
-            </attribute>
-         </optional>
-         <optional>
-            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                       name="method"
-                       a:defaultValue="silent">
-               <a:documentation>indicates the method adopted to indicate normalizations within the text.</a:documentation>
-               <choice>
-                  <value>silent</value>
-                  <a:documentation/>
-               </choice>
-            </attribute>
-         </optional>
          <empty/>
       </element>
    </define>
@@ -4567,31 +2858,7 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <optional>
-            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                       name="default"
-                       a:defaultValue="false">
-               <a:documentation>indicates whether or not this element is selected by default when its parent is selected.</a:documentation>
-               <choice>
-                  <value>false</value>
-                  <a:documentation/>
-               </choice>
-            </attribute>
-         </optional>
          <empty/>
       </element>
    </define>
@@ -4620,22 +2887,7 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.sortable.attributes"/>
-         <ref name="att.declaring.attributes"/>
          <empty/>
       </element>
    </define>
@@ -4671,20 +2923,7 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
          <empty/>
       </element>
    </define>
@@ -4695,20 +2934,7 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
          <empty/>
       </element>
    </define>
@@ -4719,20 +2945,7 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
          <empty/>
       </element>
    </define>
@@ -4752,20 +2965,7 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
          <empty/>
       </element>
    </define>
@@ -4781,21 +2981,7 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.msExcerpt.attributes"/>
          <empty/>
       </element>
    </define>
@@ -4813,34 +2999,9 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
          <empty/>
       </element>
-   </define>
-   <define name="att.global.change.attribute.change">
-      <optional>
-         <attribute name="change">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">points to one or more change elements documenting a state or revision campaign to which the element bearing this attribute and its children have been assigned by the encoder.</a:documentation>
-            <list>
-               <oneOrMore>
-                  <ref name="data.pointer"/>
-               </oneOrMore>
-            </list>
-         </attribute>
-      </optional>
    </define>
    <define name="fw">
       <element name="fw">
@@ -4849,20 +3010,7 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
          <optional>
             <attribute name="place">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies where this item is placed.</a:documentation>
@@ -4904,24 +3052,9 @@ Elements]</a:documentation>
             </choice>
          </zeroOrMore>
          <ref name="att.global.attribute.xmlid"/>
-         <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
          <ref name="att.dimensions.attributes"/>
-         <ref name="att.source.attributes"/>
          <empty/>
       </element>
    </define>
@@ -4936,7 +3069,7 @@ Elements]</a:documentation>
             </choice>
          </oneOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-subst-substContents1-constraint-6">
+                  id="oddbyexample-subst-substContents1-constraint-5">
             <rule context="tei:subst">
                <assert xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="child::tei:add and child::tei:del">
@@ -4944,40 +3077,9 @@ Elements]</a:documentation>
             </rule>
          </pattern>
          <ref name="att.global.attribute.xmlid"/>
-         <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.editLike.attribute.instant"/>
-         <ref name="att.ranging.attribute.atLeast"/>
-         <ref name="att.ranging.attribute.atMost"/>
-         <ref name="att.ranging.attribute.min"/>
-         <ref name="att.ranging.attribute.max"/>
-         <ref name="att.ranging.attribute.confidence"/>
-         <ref name="att.source.attribute.source"/>
-         <optional>
-            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                       name="status"
-                       a:defaultValue="unremarkable">
-               <a:documentation>indicates the effect of the intervention, for example in the case of a deletion, strikeouts which include too much or too little text, or in the case of an addition, an insertion which duplicates some of the text already present.</a:documentation>
-               <choice>
-                  <value>unremarkable</value>
-                  <a:documentation/>
-               </choice>
-            </attribute>
-         </optional>
+         <ref name="att.transcriptional.attributes"/>
          <empty/>
       </element>
    </define>
@@ -4986,23 +3088,8 @@ Elements]</a:documentation>
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">signifies text supplied by the transcriber or editor for any reason; for example because the original cannot be read due to physical damage, or because of an obvious omission by the author or scribe. [11.3.3.1. Damage, Illegibility, and Supplied Text]</a:documentation>
          <ref name="macro.paraContent"/>
          <ref name="att.global.attribute.xmlid"/>
-         <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.editLike.attributes"/>
          <optional>
             <attribute name="reason">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">one or more words indicating why the text has had to be supplied, e.g. overbinding, faded-ink, lost-folio, omitted-in-original.</a:documentation>
@@ -5021,23 +3108,8 @@ Elements]</a:documentation>
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">marks text present in the source which the editor believes to be superfluous or redundant. [11.3.3.1. Damage, Illegibility, and Supplied Text]</a:documentation>
          <ref name="macro.paraContent"/>
          <ref name="att.global.attribute.xmlid"/>
-         <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.editLike.attributes"/>
          <optional>
             <attribute name="reason">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">one or more words indicating why this text is believed to be superfluous, e.g. repeated, interpolated etc.</a:documentation>
@@ -5051,121 +3123,14 @@ Elements]</a:documentation>
          <empty/>
       </element>
    </define>
-   <define name="att.global.linking.attribute.corresp">
-      <optional>
-         <attribute name="corresp">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(corresponds) points to elements that correspond to the current element in some way.</a:documentation>
-            <list>
-               <oneOrMore>
-                  <ref name="data.pointer"/>
-               </oneOrMore>
-            </list>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.global.linking.attribute.synch">
-      <optional>
-         <attribute name="synch">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(synchronous) points to elements that are synchronous with the current element.</a:documentation>
-            <list>
-               <oneOrMore>
-                  <ref name="data.pointer"/>
-               </oneOrMore>
-            </list>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.global.linking.attribute.sameAs">
-      <optional>
-         <attribute name="sameAs">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">points to an element that is the same as the current element.</a:documentation>
-            <ref name="data.pointer"/>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.global.linking.attribute.copyOf">
-      <optional>
-         <attribute name="copyOf">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">points to an element of which the current element is a copy.</a:documentation>
-            <ref name="data.pointer"/>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.global.linking.attribute.next">
-      <optional>
-         <attribute name="next">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">points to the next element of a virtual aggregate of which the current element is part.</a:documentation>
-            <ref name="data.pointer"/>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.global.linking.attribute.prev">
-      <optional>
-         <attribute name="prev">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(previous) points to the previous element of a virtual aggregate of which the current element is part.</a:documentation>
-            <ref name="data.pointer"/>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.global.linking.attribute.exclude">
-      <optional>
-         <attribute name="exclude">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">points to elements that are in exclusive alternation with the current element.</a:documentation>
-            <list>
-               <oneOrMore>
-                  <ref name="data.pointer"/>
-               </oneOrMore>
-            </list>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.global.linking.attribute.select">
-      <optional>
-         <attribute name="select">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">selects one or more alternants; if one alternant is selected, the ambiguity or uncertainty is marked as resolved. If more than one alternant is selected, the degree of ambiguity or uncertainty is marked as reduced by the number of alternants not selected.</a:documentation>
-            <list>
-               <oneOrMore>
-                  <ref name="data.pointer"/>
-               </oneOrMore>
-            </list>
-         </attribute>
-      </optional>
-   </define>
    <define name="seg">
       <element name="seg">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(arbitrary segment) represents any segmentation of text below the chunk level. [16.3. Blocks, Segments, and Anchors 6.2. Components of the Verse Line 7.2.5. Speech Contents]</a:documentation>
          <ref name="macro.paraContent"/>
          <ref name="att.global.attribute.xmlid"/>
-         <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.datcat.attribute.datcat"/>
-         <ref name="att.datcat.attribute.valueDatcat"/>
-         <ref name="att.source.attributes"/>
-         <optional>
-            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                       name="part"
-                       a:defaultValue="N">
-               <a:documentation>specifies whether or not its parent element is fragmented in some way, typically by some other overlapping structure: for example a speech which is divided between two or more verse stanzas, a paragraph which is split across a page division, a verse line which is divided between two speakers.</a:documentation>
-               <choice>
-                  <value>N</value>
-                  <a:documentation/>
-               </choice>
-            </attribute>
-         </optional>
+         <ref name="att.segLike.attributes"/>
          <optional>
             <attribute name="type">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">characterizes the element in some sense, using any convenient classification scheme or typology.</a:documentation>
@@ -5208,33 +3173,8 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.datcat.attribute.datcat"/>
-         <ref name="att.datcat.attribute.valueDatcat"/>
-         <optional>
-            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                       name="part"
-                       a:defaultValue="N">
-               <a:documentation>specifies whether or not its parent element is fragmented in some way, typically by some other overlapping structure: for example a speech which is divided between two or more verse stanzas, a paragraph which is split across a page division, a verse line which is divided between two speakers.</a:documentation>
-               <choice>
-                  <value>N</value>
-                  <a:documentation/>
-               </choice>
-            </attribute>
-         </optional>
+         <ref name="att.segLike.attributes"/>
          <empty/>
       </element>
    </define>
@@ -5252,21 +3192,7 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.source.attribute.source"/>
          <empty/>
       </element>
    </define>
@@ -5284,21 +3210,7 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.source.attribute.source"/>
          <optional>
             <attribute name="type">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates what kind of phenomenon is being noted in the passage.</a:documentation>
@@ -5340,20 +3252,7 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
          <empty/>
       </element>
    </define>
@@ -5380,21 +3279,7 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.declaring.attributes"/>
          <empty/>
       </element>
    </define>
@@ -5515,21 +3400,7 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.declaring.attributes"/>
          <empty/>
       </element>
    </define>
@@ -5609,55 +3480,7 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.analytic.attribute.ana"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.declaring.attributes"/>
-         <optional>
-            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                       name="org"
-                       a:defaultValue="uniform">
-               <a:documentation>(organization) specifies how the content of the division is organized.</a:documentation>
-               <choice>
-                  <value>uniform</value>
-                  <a:documentation/>
-               </choice>
-            </attribute>
-         </optional>
-         <optional>
-            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                       name="sample"
-                       a:defaultValue="complete">
-               <a:documentation>indicates whether this division is a sample of the original source and if so, from which part.</a:documentation>
-               <choice>
-                  <value>complete</value>
-                  <a:documentation/>
-               </choice>
-            </attribute>
-         </optional>
-         <optional>
-            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                       name="part"
-                       a:defaultValue="N">
-               <a:documentation>specifies whether or not its parent element is fragmented in some way, typically by some other overlapping structure: for example a speech which is divided between two or more verse stanzas, a paragraph which is split across a page division, a verse line which is divided between two speakers.</a:documentation>
-               <choice>
-                  <value>N</value>
-                  <a:documentation/>
-               </choice>
-            </attribute>
-         </optional>
          <optional>
             <attribute name="type">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">characterizes the element in some sense, using any convenient classification scheme or typology.</a:documentation>
@@ -5705,20 +3528,7 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
          <empty/>
       </element>
    </define>
@@ -5739,20 +3549,7 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
          <empty/>
       </element>
    </define>
@@ -5763,20 +3560,7 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
          <empty/>
       </element>
    </define>
@@ -5787,20 +3571,7 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
          <empty/>
       </element>
    </define>
@@ -5864,21 +3635,7 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
-         <ref name="att.global.attribute.xmlbase"/>
-         <ref name="att.global.attribute.xmlspace"/>
          <ref name="att.global.rendition.attribute.rend"/>
-         <ref name="att.global.rendition.attribute.style"/>
-         <ref name="att.global.rendition.attribute.rendition"/>
-         <ref name="att.global.linking.attribute.corresp"/>
-         <ref name="att.global.linking.attribute.synch"/>
-         <ref name="att.global.linking.attribute.sameAs"/>
-         <ref name="att.global.linking.attribute.copyOf"/>
-         <ref name="att.global.linking.attribute.next"/>
-         <ref name="att.global.linking.attribute.prev"/>
-         <ref name="att.global.linking.attribute.exclude"/>
-         <ref name="att.global.linking.attribute.select"/>
-         <ref name="att.global.change.attribute.change"/>
-         <ref name="att.declaring.attributes"/>
          <empty/>
       </element>
    </define>
@@ -5951,19 +3708,6 @@ Elements]</a:documentation>
    </define>
    <define name="model.ptrLike.form">
       <notAllowed/>
-   </define>
-   <define name="att.msExcerpt.attributes">
-      <ref name="att.msExcerpt.attribute.defective"/>
-   </define>
-   <define name="att.msExcerpt.attribute.defective">
-      <optional>
-         <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                    name="defective"
-                    a:defaultValue="false">
-            <a:documentation>indicates whether the passage being quoted is defective, i.e. incomplete through loss or damage.</a:documentation>
-            <ref name="data.xTruthValue"/>
-         </attribute>
-      </optional>
    </define>
    <define name="att.global.facs.attribute.facs">
       <optional>
