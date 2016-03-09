@@ -53,6 +53,7 @@
             <classSpec type="atts" ident="att.translatable" mode="delete"/>
             <classSpec type="atts" ident="att.docStatus" mode="delete"/>
             <classSpec type="atts" ident="att.msExcerpt" mode="delete"/>
+            <classSpec type="atts" ident="att.fragmentable" mode="delete"></classSpec>
             <classSpec type="atts" ident="att.global" mode="change">
                <attList>
                   <attDef ident="xml:space" mode="delete"/>
@@ -61,6 +62,19 @@
             </classSpec>
             <classSpec type="atts" ident="att.global.rendition" mode="change">
                <attList>
+                  <attDef ident="rend" mode="change">
+                     <valList mode="add" type="closed">
+                        <valItem ident="super"/>
+                        <valItem ident="sub"/>
+                        <valItem ident="strikethrough"/>
+                        <valItem ident="underline"/>
+                        <valItem ident="center"/>
+                        <valItem ident="italic"/>
+                        <valItem ident="hyphen"/>
+                        <valItem ident="overwritten"/>
+                        <valItem ident="superimposed"/>
+                     </valList>
+                  </attDef>
                   <attDef ident="rendition" mode="delete"/>
                   <attDef ident="style" mode="delete"/>
                </attList>
@@ -460,8 +474,7 @@
             <elementSpec ident="p" mode="change">
                <attList>
                   <attDef ident="facs" mode="delete"/>
-                  <attDef ident="resp" mode="delete"/>
-                  <attDef ident="part" mode="delete"/>
+                  <attDef ident="resp" mode="delete"/>                  
                </attList>
             </elementSpec>
             <elementSpec ident="hi" mode="change">
@@ -541,18 +554,16 @@
                <attList>
                   <attDef ident="ana" mode="delete"/>
                   <attDef ident="facs" mode="delete"/>
-                  <attDef ident="resp" mode="delete"/>
-                  <attDef ident="status" mode="delete"/>
+                  <attDef ident="resp" mode="delete"/>                  
                   <attDef ident="place" mode="change">
                      <valList mode="add" type="closed">
                         <valItem ident="above"/>
                         <valItem ident="below"/>
                         <valItem ident="inline"/>
                         <valItem ident="marginLeft"/>
-                        <valItem ident="marginRight"/>
-                        <valItem ident="overimposed"/>
+                        <valItem ident="marginRight"/>                        
                      </valList>
-                  </attDef>
+                  </attDef>                  
                   <attDef ident="type" mode="delete"/>
                   <attDef ident="subtype" mode="delete"/>
                   <attDef ident="n" mode="delete"/>
@@ -562,11 +573,10 @@
                <attList>
                   <attDef ident="ana" mode="delete"/>
                   <attDef ident="facs" mode="delete"/>
-                  <attDef ident="resp" mode="delete"/>
-                  <attDef ident="status" mode="delete"/>
+                  <attDef ident="resp" mode="delete"/>                  
                   <attDef ident="type" mode="delete"/>
                   <attDef ident="subtype" mode="delete"/>
-                  <attDef ident="n" mode="delete"/>
+                  <attDef ident="n" mode="delete"/>                  
                </attList>
             </elementSpec>
             <elementSpec ident="rs" mode="change">
@@ -707,12 +717,7 @@
                   <attDef ident="facs" mode="delete"/>
                   <attDef ident="resp" mode="delete"/>
                   <attDef ident="type" mode="delete"/>
-                  <attDef ident="subtype" mode="delete"/>
-                  <attDef ident="rend" mode="change">
-                     <valList mode="add" type="closed">
-                        <valItem ident="hyphen"/>
-                     </valList>
-                  </attDef>
+                  <attDef ident="subtype" mode="delete"/>                  
                </attList>
             </elementSpec>
             <elementSpec ident="cb" mode="change">
@@ -784,8 +789,7 @@
                   <attDef ident="resp" mode="delete"/>
                   <attDef ident="default" mode="delete"/>
                   <attDef ident="type" mode="delete"/>
-                  <attDef ident="subtype" mode="delete"/>
-                  <attDef ident="status" mode="delete"/>
+                  <attDef ident="subtype" mode="delete"/>                  
                   <attDef ident="rend" mode="delete"/>
                   <attDef ident="xml:lang" mode="delete"/>
                </attList>
@@ -808,18 +812,14 @@
                <attList>
                   <attDef ident="ana" mode="delete"/>
                   <attDef ident="facs" mode="delete"/>
-                  <attDef ident="resp" mode="delete"/>
-                  <attDef ident="part" mode="delete"/>
+                  <attDef ident="resp" mode="delete"/>                  
                </attList>
             </elementSpec>
             <elementSpec ident="lg" mode="change">
                <attList>
                   <attDef ident="ana" mode="delete"/>
                   <attDef ident="facs" mode="delete"/>
-                  <attDef ident="resp" mode="delete"/>
-                  <attDef ident="org" mode="delete"/>                  
-                  <attDef ident="sample" mode="delete"/>
-                  <attDef ident="part" mode="delete"/>
+                  <attDef ident="resp" mode="delete"/>                                                                        
                   <attDef ident="type" mode="delete"/>
                   <attDef ident="subtype" mode="delete"/>
                </attList>
@@ -1034,8 +1034,7 @@
                <attList>
                   <attDef ident="ana" mode="delete"/>
                   <attDef ident="facs" mode="delete"/>
-                  <attDef ident="resp" mode="delete"/>
-                  <attDef ident="status" mode="delete"/>
+                  <attDef ident="resp" mode="delete"/>                  
                   <attDef ident="n" mode="delete"/>
                </attList>
             </elementSpec>
@@ -1062,8 +1061,7 @@
                   <attDef ident="ana" mode="delete"/>
                   <attDef ident="n" mode="delete"/>
                   <attDef ident="facs" mode="delete"/>
-                  <attDef ident="resp" mode="delete"/>
-                  <attDef ident="part" mode="delete"/>
+                  <attDef ident="resp" mode="delete"/>                  
                   <attDef ident="type" mode="change">
                      <valList mode="add" type="closed">
                         <valItem ident="closer"/>
@@ -1088,8 +1086,7 @@
                   <attDef ident="lemmaRef" mode="delete"/>
                   <attDef ident="ana" mode="delete"/>
                   <attDef ident="facs" mode="delete"/>
-                  <attDef ident="resp" mode="delete"/>
-                  <attDef ident="part" mode="delete"/>
+                  <attDef ident="resp" mode="delete"/>                  
                   <attDef ident="type" mode="delete"/>
                   <attDef ident="subtype" mode="delete"/>
                </attList>
@@ -1145,10 +1142,7 @@
                <attList>
                   <attDef ident="facs" mode="delete"/>
                   <attDef ident="resp" mode="delete"/>
-                  <attDef ident="ana" mode="delete"/>
-                  <attDef ident="org" mode="delete"/>
-                  <attDef ident="sample" mode="delete"/>
-                  <attDef ident="part" mode="delete"/>
+                  <attDef ident="ana" mode="delete"/>                                                      
                   <attDef ident="type" mode="change">
                      <valList mode="add" type="closed">
                         <valItem ident="day"/>
