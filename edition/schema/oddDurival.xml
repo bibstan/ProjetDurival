@@ -15,7 +15,7 @@
    </teiHeader>
    <text>
       <body>
-         <schemaSpec ident="oddbyexample" start="TEI ">
+         <schemaSpec ident="oddbyexample" start="TEI teiCorpus">
             <moduleRef key="tei"/>
             <!--Checking module textcrit-->
             <classRef key="att.textCritical"/>
@@ -53,7 +53,15 @@
             <classSpec type="atts" ident="att.translatable" mode="delete"/>
             <classSpec type="atts" ident="att.docStatus" mode="delete"/>
             <classSpec type="atts" ident="att.msExcerpt" mode="delete"/>
-            <classSpec type="atts" ident="att.fragmentable" mode="delete"></classSpec>
+            <classSpec type="atts" ident="att.fragmentable" mode="delete"/>
+            <classSpec type="atts" ident="att.cReferencing" mode="delete"/>
+            <classSpec type="atts" ident="att.internetMedia" mode="delete"/>  
+            <classSpec type="atts" ident="att.pointing" mode="change">
+               <attList>
+                  <attDef ident="targetLang" mode="delete"/>
+                  <attDef ident="evaluate" mode="delete"/>
+               </attList>
+            </classSpec>
             <classSpec type="atts" ident="att.global" mode="change">
                <attList>
                   <attDef ident="xml:space" mode="delete"/>
@@ -470,11 +478,43 @@
             </classSpec>
             <!--Checking module core-->
             <moduleRef key="core"
-                       include="p hi quote desc term sic choice gap add del rs address addrLine measure date abbr expan list item head pb lb cb author respStmt resp title publisher pubPlace bibl listBibl l lg"/>
+                       include="p hi quote desc term sic choice gap add del rs address addrLine measure date abbr expan list item head pb lb cb author respStmt resp title publisher pubPlace bibl listBibl l lg note ref teiCorpus"/>
             <elementSpec ident="p" mode="change">
                <attList>
                   <attDef ident="facs" mode="delete"/>
                   <attDef ident="resp" mode="delete"/>                  
+               </attList>
+            </elementSpec>
+            <elementSpec ident="ref" mode="change">
+               <attList>
+                  <attDef ident="ana" mode="delete"/>
+                  <attDef ident="facs" mode="delete"/>
+                  <attDef ident="resp" mode="delete"/>
+                  <attDef ident="rend" mode="delete"/>
+                  <attDef ident="xml:lang" mode="delete"/>
+                  <attDef ident="n" mode="delete"/>
+                  <attDef ident="type" mode="change">
+                     <valList mode="add" type="closed">
+                        <valItem ident="note"></valItem>
+                     </valList>
+                  </attDef>
+                  <attDef ident="subtype" mode="delete"/>
+               </attList>
+            </elementSpec>
+            <elementSpec ident="note" mode="change">
+               <attList>
+                  <attDef ident="ana" mode="delete"/>
+                  <attDef ident="facs" mode="delete"/>
+                  <attDef ident="resp" mode="delete"/>
+                  <attDef ident="rend" mode="delete"/>                  
+                  <attDef ident="n" mode="delete"/>
+                  <attDef ident="anchored" mode="delete"/>
+                  <attDef ident="targetEnd" mode="delete"/>
+                  <attDef ident="target" mode="delete"/>
+                  <attDef ident="place" mode="delete"/>
+                  <attDef ident="type" mode="delete"/>
+                  <attDef ident="subtype" mode="delete"/>
+                  <attDef ident="xml:lang" mode="delete"/>                  
                </attList>
             </elementSpec>
             <elementSpec ident="hi" mode="change">
@@ -1197,6 +1237,29 @@
                </attList>
             </elementSpec>
          </schemaSpec>
+         <div1>
+            <head>Manuel d'encodage XML-TEI pour l'édition du Journal de Nicolas Durival (1765-1766)</head>
+            <p>
+               Ces deux années du Journal de Nicolas Durival ont été transcrites et encodées en XML à partir de la version P5 des <emph>Guidelines</emph>
+               de la <emph><ref target="http://www.tei-c.org/index.xml">Text Encoding Initiative</ref></emph> (TEI).
+            </p>
+            <p>
+               Ce manuel rassemble les pratiques d'encodage adoptées lors de l'édition de ce journal. Il présente des explications sur les points techniques et l'usage des balises XML.               
+               Au sein de ce guide, les éléments (ou balises) sont représentés entre des chevrons ("&lt;" et "&gt;"). Des liens renvoient vers la documentation TEI.
+               Enfin, par conventions les attributs seront représentés en italique et de la manière suivante : <att>attribut</att> ; leur valeur sera précisée entre guillemets : <val>valeur</val>. 
+            </p>
+            <div2>
+               <head>Organisation des fichiers</head>
+               <p>
+                  L'édition electronique du Journal de Durival est composée de deux fichiers XML distincts : 
+                  <lb/>- durival.xml
+                  <lb/>- indexDurival.xml
+               </p>
+               <p>
+                  Le premier fichier, durival.xml, est le fichier maître. C'est à dire qu'il rassemble l'ensemble 
+               </p>
+            </div2>
+         </div1>
       </body>
    </text>
 </TEI>

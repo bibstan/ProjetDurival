@@ -3,7 +3,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2016-03-09T20:54:36Z. .
+Schema generated from ODD source 2016-03-13T17:37:11Z. .
 TEI Edition: Version 2.9.1. Last updated on
 	15th October 2015, revision 46ac023
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.9.1/
@@ -120,6 +120,11 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.9.1/
    <define name="data.pointer">
       <data type="anyURI"/>
    </define>
+   <define name="data.version">
+      <data type="token">
+         <param name="pattern">[\d]+(\.[\d]+){0,2}</param>
+      </data>
+   </define>
    <define name="data.word">
       <data type="token">
          <param name="pattern">(\p{L}|\p{N}|\p{P}|\p{S})+</param>
@@ -148,17 +153,6 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.9.1/
    </define>
    <define name="att.dimensions.attributes">
       <empty/>
-   </define>
-   <define name="att.cReferencing.attributes">
-      <ref name="att.cReferencing.attribute.cRef"/>
-   </define>
-   <define name="att.cReferencing.attribute.cRef">
-      <optional>
-         <attribute name="cRef">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(canonical reference) specifies the destination of the pointer by supplying a canonical reference expressed using the scheme defined in a refsDecl element in the TEI header</a:documentation>
-            <ref name="data.text"/>
-         </attribute>
-      </optional>
    </define>
    <define name="att.datable.w3c.attributes">
       <ref name="att.datable.w3c.attribute.when"/>
@@ -192,6 +186,9 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.9.1/
    <define name="att.datable.attributes">
       <ref name="att.datable.w3c.attributes"/>
    </define>
+   <define name="att.global.responsibility.attributes">
+      <ref name="att.global.responsibility.attribute.resp"/>
+   </define>
    <define name="att.global.responsibility.attribute.resp">
       <optional>
          <attribute name="resp">
@@ -203,6 +200,9 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.9.1/
             </list>
          </attribute>
       </optional>
+   </define>
+   <define name="att.global.rendition.attributes">
+      <ref name="att.global.rendition.attribute.rend"/>
    </define>
    <define name="att.global.rendition.attribute.rend">
       <optional>
@@ -234,6 +234,15 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.9.1/
             </list>
          </attribute>
       </optional>
+   </define>
+   <define name="att.global.attributes">
+      <ref name="att.global.rendition.attributes"/>
+      <ref name="att.global.analytic.attributes"/>
+      <ref name="att.global.facs.attributes"/>
+      <ref name="att.global.responsibility.attributes"/>
+      <ref name="att.global.attribute.xmlid"/>
+      <ref name="att.global.attribute.n"/>
+      <ref name="att.global.attribute.xmllang"/>
    </define>
    <define name="att.global.attribute.xmlid">
       <optional>
@@ -281,27 +290,8 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.9.1/
       </sch:rule>
    </pattern>
    <define name="att.pointing.attributes">
-      <ref name="att.pointing.attribute.targetLang"/>
       <ref name="att.pointing.attribute.target"/>
-      <ref name="att.pointing.attribute.evaluate"/>
    </define>
-   <define name="att.pointing.attribute.targetLang">
-      <optional>
-         <attribute name="targetLang">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the language of the content to be found at the destination referenced by target, using a language tag generated according to BCP 47.</a:documentation>
-            <ref name="data.language"/>
-         </attribute>
-      </optional>
-   </define>
-   <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="oddbyexample-att.pointing-targetLang-targetLang-constraint-2">
-      <sch:rule xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                xmlns="http://www.tei-c.org/ns/1.0"
-                context="tei:*[not(self::tei:schemaSpec)][@targetLang]">
-            <sch:assert test="@target">@targetLang should only be used on <sch:name/> if @target is specified.</sch:assert>
-          </sch:rule>
-   </pattern>
    <define name="att.pointing.attribute.target">
       <optional>
          <attribute name="target">
@@ -311,21 +301,6 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.9.1/
                   <ref name="data.pointer"/>
                </oneOrMore>
             </list>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.pointing.attribute.evaluate">
-      <optional>
-         <attribute name="evaluate">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the intended meaning when the target of a pointer is itself a pointer.</a:documentation>
-            <choice>
-               <value>all</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">if the element pointed to is itself a pointer, then the target of that pointer will be taken, and so on, until an element is found which is not a pointer.</a:documentation>
-               <value>one</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">if the element pointed to is itself a pointer, then its target (whether a pointer or not) is taken as the target of this pointer.</a:documentation>
-               <value>none</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">no further evaluation of targets is carried out beyond that needed to find the element specified in the pointer's target.</a:documentation>
-            </choice>
          </attribute>
       </optional>
    </define>
@@ -700,7 +675,9 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.9.1/
       </choice>
    </define>
    <define name="model.ptrLike">
-      <notAllowed/>
+      <choice>
+         <ref name="ref"/>
+      </choice>
    </define>
    <define name="model.lPart">
       <notAllowed/>
@@ -931,7 +908,9 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.9.1/
       </oneOrMore>
    </define>
    <define name="model.noteLike">
-      <notAllowed/>
+      <choice>
+         <ref name="note"/>
+      </choice>
    </define>
    <define name="model.lLike">
       <choice>
@@ -1602,7 +1581,6 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.9.1/
          <ref name="att.global.attribute.xmllang"/>
          <ref name="att.global.rendition.attribute.rend"/>
          <ref name="att.pointing.attributes"/>
-         <ref name="att.cReferencing.attributes"/>
          <optional>
             <attribute name="type">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">characterizes the element in some sense, using any convenient classification scheme or typology.</a:documentation>
@@ -1878,6 +1856,32 @@ Measures]</a:documentation>
          <empty/>
       </element>
    </define>
+   <define name="ref">
+      <element name="ref">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(reference) defines a reference to another location, possibly modified by additional text or comment. [3.6. Simple Links and Cross-References 16.1. Links]</a:documentation>
+         <ref name="macro.paraContent"/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="oddbyexample-ref-refAtts-constraint-3">
+            <rule context="tei:ref">
+               <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="@target and @cRef">Only one of the
+	attributes @target' and @cRef' may be supplied on <name/>
+               </report>
+            </rule>
+         </pattern>
+         <ref name="att.global.attribute.xmlid"/>
+         <ref name="att.pointing.attributes"/>
+         <optional>
+            <attribute name="type">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">characterizes the element in some sense, using any convenient classification scheme or typology.</a:documentation>
+               <choice>
+                  <value>note</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               </choice>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
    <define name="list">
       <element name="list">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains any sequence of items organized as a list. [3.7. Lists]</a:documentation>
@@ -1923,7 +1927,7 @@ Measures]</a:documentation>
             </zeroOrMore>
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-list-gloss-list-must-have-labels-constraint-3">
+                  id="oddbyexample-list-gloss-list-must-have-labels-constraint-2">
             <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
                       xmlns="http://www.tei-c.org/ns/1.0"
@@ -1976,6 +1980,14 @@ Measures]</a:documentation>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
          <ref name="att.global.rendition.attribute.rend"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="note">
+      <element name="note">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a note or annotation. [3.8.1. Notes and Simple Annotation 2.2.6. The Notes Statement 3.11.2.8. Notes and Statement of Language 9.3.5.4. Notes within Entries]</a:documentation>
+         <ref name="macro.specialPara"/>
+         <ref name="att.global.attribute.xmlid"/>
          <empty/>
       </element>
    </define>
@@ -2161,7 +2173,7 @@ Elements]</a:documentation>
             </choice>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-l-abstractModel-structure-l-constraint-3">
+                  id="oddbyexample-l-abstractModel-structure-l-constraint-4">
             <rule context="tei:l">
                <report xmlns:tei="http://www.tei-c.org/ns/1.0"
                        xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -2212,7 +2224,7 @@ Elements]</a:documentation>
             </zeroOrMore>
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-lg-atleast1oflggapl-constraint-4">
+                  id="oddbyexample-lg-atleast1oflggapl-constraint-3">
             <rule context="tei:lg">
                <sch:assert xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -2222,7 +2234,7 @@ Elements]</a:documentation>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-lg-abstractModel-structure-l-constraint-4">
+                  id="oddbyexample-lg-abstractModel-structure-l-constraint-5">
             <rule context="tei:lg">
                <report xmlns:tei="http://www.tei-c.org/ns/1.0"
                        xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -2235,6 +2247,43 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
          <ref name="att.global.rendition.attribute.rend"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="teiCorpus">
+      <element name="teiCorpus">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains the whole of a TEI encoded corpus, comprising a single corpus header and one or more TEI elements, each containing a single text header and a text. [4. Default Text Structure 15.1. Varieties of Composite Text]</a:documentation>
+         <group>
+            <ref name="teiHeader"/>
+            <choice>
+               <group>
+                  <oneOrMore>
+                     <ref name="model.resourceLike"/>
+                  </oneOrMore>
+                  <zeroOrMore>
+                     <choice>
+                        <ref name="TEI"/>
+                        <ref name="teiCorpus"/>
+                     </choice>
+                  </zeroOrMore>
+               </group>
+               <oneOrMore>
+                  <choice>
+                     <ref name="TEI"/>
+                     <ref name="teiCorpus"/>
+                  </choice>
+               </oneOrMore>
+            </choice>
+         </group>
+         <ref name="att.global.attributes"/>
+         <optional>
+            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+                       name="version"
+                       a:defaultValue="5.0">
+               <a:documentation>The version of the TEI scheme</a:documentation>
+               <ref name="data.version"/>
+            </attribute>
+         </optional>
          <empty/>
       </element>
    </define>
@@ -2919,7 +2968,7 @@ Elements]</a:documentation>
             </zeroOrMore>
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-msIdentifier-msId_minimal-constraint-5">
+                  id="oddbyexample-msIdentifier-msId_minimal-constraint-6">
             <rule context="tei:msIdentifier">
                <report xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="not(parent::tei:msPart) and       (local-name(*[1])='idno' or       local-name(*[1])='altIdentifier' or       normalize-space(.)='')">An msIdentifier must contain either a repository or location of some type, or a manuscript name</report>
@@ -2966,6 +3015,9 @@ Elements]</a:documentation>
                <ref name="repository"/>
             </optional>
             <ref name="idno"/>
+            <optional>
+               <ref name="note"/>
+            </optional>
          </group>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
@@ -3074,7 +3126,7 @@ Elements]</a:documentation>
             </choice>
          </oneOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-subst-substContents1-constraint-5">
+                  id="oddbyexample-subst-substContents1-constraint-4">
             <rule context="tei:subst">
                <assert xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="child::tei:add and child::tei:del">
@@ -3463,7 +3515,7 @@ Elements]</a:documentation>
             </optional>
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-div-abstractModel-structure-l-constraint-6">
+                  id="oddbyexample-div-abstractModel-structure-l-constraint-7">
             <rule context="tei:div">
                <report xmlns:tei="http://www.tei-c.org/ns/1.0"
                        xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -3473,7 +3525,7 @@ Elements]</a:documentation>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-div-abstractModel-structure-p-constraint-7">
+                  id="oddbyexample-div-abstractModel-structure-p-constraint-8">
             <rule context="tei:div">
                <report xmlns:tei="http://www.tei-c.org/ns/1.0"
                        xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -3714,6 +3766,9 @@ Elements]</a:documentation>
    <define name="model.ptrLike.form">
       <notAllowed/>
    </define>
+   <define name="att.global.facs.attributes">
+      <ref name="att.global.facs.attribute.facs"/>
+   </define>
    <define name="att.global.facs.attribute.facs">
       <optional>
          <attribute name="facs">
@@ -3725,6 +3780,9 @@ Elements]</a:documentation>
             </list>
          </attribute>
       </optional>
+   </define>
+   <define name="att.global.analytic.attributes">
+      <ref name="att.global.analytic.attribute.ana"/>
    </define>
    <define name="att.global.analytic.attribute.ana">
       <optional>
@@ -3741,6 +3799,7 @@ Elements]</a:documentation>
    <start>
       <choice>
          <ref name="TEI"/>
+         <ref name="teiCorpus"/>
       </choice>
    </start>
 </grammar>
