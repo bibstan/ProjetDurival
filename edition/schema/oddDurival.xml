@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -15,7 +15,7 @@
    </teiHeader>
    <text>
       <body>
-         <schemaSpec ident="oddbyexample" start="TEI teiCorpus">
+         <schemaSpec ident="oddbyexample" docLang="fr" xml:lang="fr" start="TEI teiCorpus">
             <moduleRef key="tei"/>
             <!--Checking module textcrit-->
             <classRef key="att.textCritical"/>
@@ -111,7 +111,7 @@
                   <attDef ident="when" mode="delete"/>
                   <attDef ident="from" mode="delete"/>
                   <attDef ident="to" mode="delete"/>
-                  <attDef ident="full" mode="delete"/>
+                  <!--<attDef ident="full" mode="delete"/>--><!-- todo le garder ? -->
                   <attDef ident="type" mode="change">
                      <valList mode="add" type="closed">
                         <valItem ident="author">
@@ -1251,13 +1251,809 @@
             <div2>
                <head>Organisation des fichiers</head>
                <p>
-                  L'édition electronique du Journal de Durival est composée de deux fichiers XML distincts : 
+                  L'édition electronique du Journal de Nicolas Durival est composée de deux fichiers XML distincts : 
                   <lb/>- durival.xml
                   <lb/>- indexDurival.xml
                </p>
                <p>
-                  Le premier fichier, durival.xml, est le fichier maître. C'est à dire qu'il rassemble l'ensemble 
+                  Le premier fichier, durival.xml, est le fichier maître. Il rassemble la transcription ainsi que tous les documents annexes liés à l'édition.
+                  Il s'agit d'un fichier <emph>teiCorpus</emph>. Il permet de rassembler, au sein d'un seul fichier, un ensemble de document TEI bien distincts 
+                  et pouvant partager un ensemble de métadonnées communes. Il se subdivise ainsi : 
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <teiCorpus>
+                        <teiHeader>
+                           <!--[en−tête du corpus pouvant contenir les différentes métadonnées communes]-->
+                        </teiHeader>
+                        <TEI>
+                           <teiHeader>
+                              <!--[en−tête du premier document]-->
+                           </teiHeader>
+                           <text>
+                              <!--[corps du premier texte]-->
+                           </text>
+                        </TEI>
+                        <TEI>
+                           <teiHeader>
+                              <!--[en−tête du deuxième document]-->
+                           </teiHeader>
+                           <text>
+                              <!--[corps du deuxième document]-->
+                           </text>
+                        </TEI>
+                        [...]
+                     </teiCorpus>
+                  </egXML>
                </p>
+               <p>
+                  Le second fichier, indexDurival.xml, contient les différents index lié au Journal de Nicolas Durival.
+                  Il est externalisé afin de permettre aux membres du projet de travailler de manière distincte sur le texte et ses index.                      
+               </p>
+               <p>
+                  Ce fichier, est intégré au document maître par l'intermédiaire Xinclude. Ce standard autorise la combinaison
+                  de plusieurs documents XML.
+                  <lb/>- Au sein du fichier indexDurival.xml, les parties à inclure dans le fichier maître doivent comporter un attribut <att>xml:id</att>.
+                  <lb/>- Au sein du fichier maître, Xinclude nécessite d'être déclaré. Afin de pouvoir procéder à des inclusions n'importe où 
+                  dans le document, cette déclaration sera rattachée à l'élément racine <gi>teiCorpus</gi> : xmlns:xi="http://www.w3.org/2001/XInclude".
+                  pour inclure une partie, il faut procéder comme dans l'exemple suivant :                  
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">                     
+                     <![CDATA[<teiCorpus xmlns:xi="http://www.w3.org/2001/XInclude">]]>
+                     <!-- On déclare Xinclude au niveau de l'élément racine-->
+                     [...]
+                        <!-- Au niveau où l'on souhaite procéder à une inclusion : -->
+                        <![CDATA[<xi:include href="indexDurival.xml" xpointer="listPerson" parse="xml"/>]]>
+                        <!-- l’attribut @href cible le fichier contenant la partie de document à intéger -->
+                        <!-- l’attribut @xpointer cible l’@xml:id du morceau de code à inclure -->
+                        <!-- l’attribut @parse indique le type de données -->
+                     [...]
+                     <![CDATA[</teiCorpus>]]>
+                  </egXML>                  
+               </p>
+            </div2>
+            <div2>
+               <head>L'en-tête TEI : <gi>teiHeader</gi></head>
+               <p> 
+                  Tout document TEI peut se décomposer en deux éléments principaux ; le <gi>teiHeader</gi> et le <gi>text</gi>.
+                  <lb/>Le <gi>teiHeader</gi> est l'en-tête du document. Il rassemble les informations et métadonnées permettant son identification.                  
+                  <lb/>Il se subdivise ainsi : 
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <teiHeader>
+                        <fileDesc>(obligatoire) description bibliographique</fileDesc>
+                        <encodingDesc> description des normes d'encodage</encodingDesc>
+                        <profileDesc> description des aspects non bibliographiques</profileDesc>
+                     </teiHeader>
+                  </egXML>
+               </p>
+               <div3>
+                  <head>Élément de description bibliographique : <gi>fileDesc</gi></head>
+                  <div4>
+                     <head>Déclaration du titre : <gi>titleStmt</gi></head>
+                     <p> 
+                        Cet élément est obligatoire. On y trouve les éléments suivants : 
+                        <specList>
+                           <specDesc key="title"/>
+                           <specDesc key="respStmt"/>
+                           <specDesc key="funder"/>
+                        </specList>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <titleStmt>                              
+                              <title>(répétable) Il désigne le/les titre(s) donné(s) à l'édition électronique.</title>            
+                              <respStmt>cet élément se réfère aux mentions de responsabilités concernant l'édition électronique</respStmt>
+                              <funder>Organisme qui finance l'édition électronique</funder>
+                           </titleStmt>
+                        </egXML>                         
+                        <!-- todo intégation ? voir Header préparé par Eric -->
+                        <!--<lb/><gi>author</gi> : nom de l'auteur 
+                        <lb/><gi>editor</gi> : mentions de responsabilités secondaires-->
+                        <lb/>L'élément <gi>respStmt</gi> doit être complété par les sous-éléments suivants :
+                        <specList>
+                           <specDesc key="resp"/>
+                           <specDesc key="persName"/>
+                        </specList>
+                        <lb/>Exemple de <gi>titleStmt</gi> complété :
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <titleStmt>
+                              <title>Edition augmentée du Journal de Nicolas Durival (1765-1766)</title>            
+                              <respStmt>
+                                 <resp>édité et encodé en XML-TEI par </resp>
+                                 <persName xml:id="CH">Claire Haquet</persName>
+                                 <persName xml:id="EN">Eric Nunes</persName>
+                                 <persName xml:id="JM">Josselin Morvan</persName>
+                              </respStmt>
+                              <funder>Ville de Nancy</funder>
+                           </titleStmt>
+                        </egXML>
+                     </p>                     
+                  </div4>
+                  <!-- todo editionStmt ? -->
+                  <!--<div4>
+                     <head>Mentions d'édition : <gi>editionStmt</gi></head>
+                     <p> 
+                        La balise <gi>editionStmt</gi> renvoie aux mentions d'édition. Le sous-élément <gi>edition</gi>
+                        permet de décrire les spécificités de l'édition d'un texte.
+                     </p>
+                  </div4>-->
+                  <div4>
+                     <head>Mentions de publication : <gi>publicationStmt</gi></head>
+                     <p> 
+                        L'élément <gi>publicationStmt</gi> (obligatoire) regroupe les informations relatives à la publication 
+                        et à la diffusion d'un texte : 
+                        <specList>
+                           <specDesc key="publisher"/>
+                           <specDesc key="pubPlace"/>
+                           <specDesc key="address"/>
+                           <specDesc key="addrLine"/>
+                           <specDesc key="date"/>
+                           <specDesc key="availability"/>
+                        </specList>
+                        <lb/>Exemple de <gi>publicationStmt</gi> complété :
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <publicationStmt>
+                              <publisher>Les Bibliothèques de Nancy</publisher>
+                              <pubPlace>Nancy, Bibliothèque Stanislas</pubPlace>
+                              <address>
+                                 <addrLine>43, rue Stanislas, 54 000 Nancy</addrLine>
+                              </address>
+                              <date when="2016">2016</date>
+                              <availability>
+                                 <p>Licence ouverte Etalab</p>
+                              </availability>
+                           </publicationStmt>
+                        </egXML>
+                     </p>
+                  </div4>                        
+                  <div4>
+                     <head>Description de la source : <gi>sourceDesc</gi></head>
+                     <p> 
+                        L'élément <gi>sourceDesc</gi> (obligatoire) consigne toutes les informations sur la source originale. 
+                        Elles peuvent être détaillées à l'intérieur d'une simple balise <gi>p</gi>, ou plus détaillées avec 
+                        l'utilisation d'un élément <gi>msDesc</gi>.
+                     </p>
+                     <div5>
+                        <head>Manuscript description : <gi>msDesc</gi></head>
+                        <p> 
+                           Cette balise est dédiée à la description des manuscrits anciens, elle peut contenir les balises
+                           de description suivantes : 
+                           <specList>
+                              <specDesc key="msIdentifier"/>
+                              <specDesc key="msContents"/>
+                           </specList>
+                        </p>
+                        <p>
+                           La balise <gi>msIdentifier</gi> rassemble les éléments
+                           d'identification de la source comme le lieu de conservation,
+                           son identifiant <emph>etc.</emph>
+                           <specList>
+                              <specDesc key="country"></specDesc>
+                              <specDesc key="institution"/>
+                              <specDesc key="repository"/>
+                              <specDesc key="idno"/>
+                              <specDesc key="altIdentifier"/>
+                           </specList>
+                        </p>
+                        <p>
+                           L'élément <gi>msContent</gi> est relatif au contenu intellectuel du
+                           texte édité. Il peut être décrit à l'aide d'une simple balise <gi>p</gi>.
+                        </p>
+                        <p>
+                           Exemple de <gi>msDesc</gi> : 
+                           <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                              <msDesc>
+                                 <msIdentifier>
+                                    <country>France</country>
+                                    <institution>Bibliothèque municipale classée de Nancy</institution>                  
+                                    <repository>Bibliothèque Stanislas</repository>
+                                    <idno>ms. 863</idno>
+                                    <altIdentifier>
+                                       <idno>ancienne cote : catalogue Favier 1315</idno>
+                                    </altIdentifier>                  
+                                 </msIdentifier>
+                                 <msContents>
+                                    <p><!--Description intellectuelle du manuscrit / dates / sujet--></p>
+                                 </msContents>
+                                 <physDesc>
+                                    <p>
+                                       Manuscrit autographe en 14 volumes. Durival utilise un papier imprimé
+                                       destiné à la rédaction d'un journal
+                                    </p>
+                                 </physDesc>               
+                              </msDesc>
+                           </egXML>
+                        </p>                                                                                                
+                     </div5>
+                  </div4>
+                  <div4>
+                     <head type="subsection">Description de l'encodage : <gi>encodingDesc</gi></head>
+                     <p> 
+                        Cet élément relatif a l'encodage, précise les principes éditoriaux qui ont permis la 
+                        transcription du texte. Il peut contenir les sous-éléments suivants : 
+                        <specList>
+                           <specDesc key="projectDesc"/>                           
+                           <specDesc key="editorialDecl"/>                                                      
+                        </specList>
+                     </p>
+                     <div5>
+                        <head>Déclaration des pratiques éditoriales <gi>editorialDecl</gi></head>
+                        <p>
+                           Cet élément doit être complété par les balises descriptives suivantes :
+                           <specList>
+                              <specDesc key="normalization"/>
+                              <specDesc key="quotation"/>
+                              <specDesc key="interpretation"/>
+                           </specList>
+                        </p>
+                        <p>
+                           Exemple d'<gi>encodingDesc</gi>
+                           <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                              <encodingDesc>
+                                 <projectDesc>
+                                    <p>L'objectif du projet est de fournir une édition augmentée du Journal [...]</p>
+                                 </projectDesc>
+                                 <editorialDecl>
+                                    <normalization>
+                                       <p><!--Décisions de transcription--></p>
+                                    </normalization>
+                                    <interpretation>                                       
+                                       <p>
+                                          <interpGrp type="theme">
+                                             <interp xml:id="meteo">
+                                                météo
+                                                <desc>
+                                                   Entrées concernant les conditions
+                                                   météorologiques et leurs conséquences sur l'agriculture et la
+                                                   vie quotidienne
+                                                </desc>
+                                             </interp>
+                                             <interp xml:id="aca">
+                                                Académie
+                                                <desc>
+                                                   Entrées relatant les séances ou
+                                                   rencontres des membres de l'Académie Royale des Sciences, Arts
+                                                   et Belles-Lettres de Nancy
+                                                </desc>
+                                             </interp>
+                                             <interp xml:id="theatre">
+                                                représentation théâtrale
+                                                <desc>
+                                                   Entrées concernant
+                                                   les représentations théâtrales données à Nancy et devant le roi
+                                                   Stanislas
+                                                </desc>
+                                             </interp>
+                                             <interp xml:id="cour">
+                                                Stanislas et la Cour
+                                                <desc>Entrées relatant la vie du
+                                                   roi Stanislas et de sa cour, la plupart du temps à
+                                                   Lunéville
+                                                </desc>                        
+                                             </interp>
+                                             <interp xml:id="ville">
+                                                administration de la ville
+                                                <desc>
+                                                   Entrées relatant les
+                                                   événements du quotidien et la gestion de la ville de Nancy par
+                                                   Nicolas Durival
+                                                </desc>
+                                             </interp>
+                                             <interp xml:id="bio">
+                                                éléments biographiques
+                                                <desc>
+                                                   Entrées concernant des
+                                                   événements de la vie personnelle de Durival et de sa
+                                                   famille
+                                                </desc>
+                                             </interp>
+                                             <interp xml:id="armee">
+                                                armées
+                                                <desc>
+                                                   Entrées relatant les mouvements et
+                                                   exercices des régiments stationnés à Nancy et dans la
+                                                   région
+                                                </desc>
+                                             </interp>
+                                             <interp xml:id="fetes">
+                                                fêtes et cérémonies
+                                                <desc>
+                                                   Entrées relatant les
+                                                   différentes manifestations civiles ou
+                                                   religieuses
+                                                </desc>
+                                             </interp>
+                                             <interp xml:id="necro">
+                                                décès
+                                                <desc>
+                                                   Entrées relatant les
+                                                   décès
+                                                </desc>
+                                             </interp>
+                                             <interp xml:id="stan">
+                                                <desc>
+                                                   Entrées relatant l'accident et la mort du  
+                                                </desc>
+                                             </interp>
+                                          </interpGrp>
+                                       </p>
+                                    </interpretation>
+                                 </editorialDecl>
+                              </encodingDesc>
+                           </egXML>
+                        </p>
+                     </div5>
+                  </div4>                        
+               </div3>        
+            </div2>
+            <div2>
+               <head>Le texte : <gi>text</gi></head>
+               <p>
+                  <specList><specDesc key="text"/></specList>
+                  Le corps du document sera établi au sein de l'élément <gi>body</gi>. 
+                  Les notes historique et l'apparat critique seront balisés avec l'élément <gi>back</gi>
+               </p>
+               <div3>
+                  <head>Le corps du texte : <gi>body</gi></head>
+                  <p>
+                     Au sein du <gi>body</gi>, nous utiliserons la balise générique <gi>div</gi> afin d'établir les sous divisions du texte.
+                     L'intégralité de la transcription sera placée au sein d'une <gi>div</gi> identifiée par l'attribut <att>type</att>
+                     de valeur <val>transcription</val>.
+                     <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <text>
+                           <body>
+                              <div type="transcription">
+                                 [Intégralité du texte édité]
+                              </div>
+                           </body>
+                        </text>
+                     </egXML>
+                  </p>
+                  <p>
+                     Les divisions du texte sont matérialisées le plus souvent par une rupture verticale ne correspondant pas à un paragraphe.
+                     Les principales subdivisions ont été identifiées et différenciées par différentes valeurs associées à l'attribut <att>type</att>.
+                     <list>
+                        <item>
+                           L'attribut <att>type</att> de valeur <val>year</val> identifie chaque nouvelle 
+                           année du Journal de Nicolas Durival. l'élément <gi>div</gi> doit être complété par l'attribut
+                           <att>xml:id</att> de valeur <val>dAAAA</val>, où AAAA correspond à l'année. Il est important pour tous les attributs <att>xml:id</att>
+                           de faire précéder les nombres par une lettre pour que cet identifiant soit valide. la lettre "d" renvoie à Durival.
+                        </item>
+                        <item>
+                           L'attribut <att>type</att> de valeur <val>month</val> renvoi à un mois. Il est précisé par l'attribut
+                           <att>xml:id</att> de valeur <val>dAAAAMM</val>.
+                        </item>
+                        <item>
+                           L'attribut <att>type</att> de valeur <val>day</val>, permet l'encodage des entrées journalières.
+                           Elles sont identifiée par l'attribut <att>xml:id</att> de valeur <val>dAAAAMMJJ</val>.
+                           Pour les cas ou une entrée est dédoublée, la valeur de l'attribut sera modifiée par l'ajout d'un "_02" : 
+                           <val>dAAAMMJJ_02</val>
+                        </item>
+                        <item>
+                           L'attribut <att>type</att> de valeur <val>insert</val>, sera utilisé pour les encarts intégrés au journal. 
+                        </item>
+                        <item>
+                           L'attribut <att>type</att> de valeur <val>letter</val>, sera utilisé pour l'encodage des lettres.
+                        </item>
+                        <item>
+                           L'attribut <att>type</att> de valeur <val>verse</val>, sera utilisé pour les parties en vers.
+                        </item>
+                     </list>
+                     Exemple :
+                     <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <div type="year" xml:id="d1764">
+                           <!-- L'année 1764 -->
+                           <div type="month" xml:id="d176401">
+                              <!-- Le mois de janvier -->
+                              <div type="day" xml:id="d17640101">
+                                 <!-- Le premier janvier 1764 -->
+                              </div>
+                              <div type="day" xml:id="d17640103">
+                                 <!-- Le trois janvier 1764 -->
+                              </div>
+                           </div>
+                           <div type="month" xml:id="d176402">
+                              <!-- Le mois de février -->
+                              [...]
+                           </div>
+                           [...]
+                        </div>
+                     </egXML>
+                     Liste des valeurs disponibles pour l'attribut <att>type</att> de l'élément <gi>div</gi> :
+                     <list>
+                        <item><val>transcription</val></item>
+                        <item><val>year</val></item>
+                        <item><val>month</val></item>
+                        <item><val>day</val></item>
+                        <item><val>insert</val></item>
+                        <item><val>letter</val></item>                        
+                        <item><val>verse</val></item>                                                
+                     </list>
+                  </p>
+                  <p>
+                     Certaines sections du texte peuvent comporter un titre ou un titre courant.
+                     <lb/>Les titres seront encodés avec la balise <gi>head</gi>
+                     <lb/>Les titres courant seront quant à eux encodés avec l'élément <gi>fw</gi> comportant l'attribut
+                     <att>type</att> de valeur <val>runningHead</val>, uniquement lors de leur premiere apparition. 
+                     <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <div type="year" xml:id="d1765">
+                           <head>Année 1765</head>               
+                           <div type="month" xml:id="d176501">                                  
+                              <fw type="runningHead" place="top"><seg type="print">Jours du mois</seg> <date when="1765-01">mois de Janvier 1765</date></fw>                                            
+                              <div type="day" xml:id="d17650101">                     
+                                 <p xml:id="d1765010101" ana="#meteo">
+                                    <date type="entry" when="1765-01-01">1<hi rend="super">er</hi></date>
+                                    Le verglas d'hier a causé beaucoup d'accidens
+                                    <lb/>à <placeName ref="#nancy">Nancy</placeName>. Il en a été de meme à <placeName ref="#luneville">Lunèville</placeName>.
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </egXML>
+                  </p>
+                  <p>
+                     Les entrées du journal seront balisées avec les éléments <gi>dateline</gi> et <gi>date</gi> associé à deux attributs, 
+                     <att>type</att> de valeur <val>entry</val> et <att>when</att> dont la valeur correspond à la forme normalisée de la date
+                     sous la forme "AAAA-MM-JJ"
+                     <lb/>Lorsque qu'une entrée correspond à plusieurs jours, l'attribut <att>when</att> sera remplacé par les attributs <att>from</att>
+                     et <att>to</att>. La valeur de ces attributs correspond respectivement au premier et au dernier jour.
+                     <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <div type="day" xml:id="d17650101">  
+                           <dateline>
+                              <date type="entry" when="1765-01-01">1<hi rend="super">er</hi></date>
+                           </dateline>
+                           <p xml:id="d1765010101" ana="#meteo">
+                              
+                              Le verglas d'hier a causé beaucoup d'accidens
+                              <lb/>à <placeName ref="#nancy">Nancy</placeName>. Il en a été de meme à <placeName ref="#luneville">Lunèville</placeName>.
+                           </p>                           
+                        </div>
+                        <div type="day" xml:id="d17650107">     
+                           <dateline>
+                              <date type="entry" from="1765-01-07" to="1765-01-08">7<lb/>8</date>
+                           </dateline>
+                           <p xml:id="d1765010701" ana="#meteo">                              
+                              Pluye par huit et 8 <hi rend="super">1</hi>/<hi rend="sub">2</hi> dégrés de chaud
+                           </p>
+                        </div>
+                     </egXML>
+                  </p>
+               </div3>
+               <div3>
+                  <head>Sous-unités textuelles et paragraphes</head>
+                  <div4>
+                     <head>Les paragraphes <gi>p</gi></head>
+                     <p>
+                        Au sein de chaque journée, les différents paragraphes seront identifiés par la balise <gi>p</gi>.
+                        Un identifiant <att>xml:id</att> leur est attaché. Sa valeur suit la logique employée pour les années, mois, et jours, à savoir :
+                        <val>"dAAAAMMJJNN"</val>, où "NN" correspond à la numérotation de chaque paragraphe au sein d'une journée, sous la forme 01, 02, 03, etc.
+                     </p>
+                     <p>
+                        Afin de procéder à des extractions thématiques du texte l'attribut <att>ana</att> pourra être utilisé lorsque l'objet du paragraphe
+                        correspond à une ou plusieurs interprétations définies au sein de l'élément <gi>interpretation</gi> du <gi>teiHeader</gi>. 
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <interpretation>               
+                              <p>
+                                 <interpGrp type="theme">
+                                    <interp xml:id="meteo">
+                                       météo
+                                       <desc>
+                                          Entrées concernant les conditions
+                                          météorologiques et leurs conséquences sur l'agriculture et la
+                                          vie quotidienne
+                                       </desc>
+                                    </interp>
+                                    [...]
+                                 </interpGrp>
+                              </p>
+                           </interpretation>
+                           [...]
+                           <div type="day" xml:id="d17650101">                               
+                              <p xml:id="d1765010101" ana="#meteo">                          
+                                 Le verglas d'hier a causé beaucoup d'accidens
+                                 <lb/>à <placeName ref="#nancy">Nancy</placeName>. Il en a été de meme à <placeName ref="#luneville">Lunèville</placeName>.
+                              </p>
+                              <p xml:id="d1765010102" ana="#ville">
+                                 <placeName ref="#nancyHDV">L'hotel de ville de Nancy</placeName> aiant fait graver par
+                                 <lb/><persName ref="#collin">Collin</persName> l'estampe de la construction <placeName ref="#nancyCasernes">du quartier <!-- todo estampe de Collin ? -->
+                                    <lb/>roïal des cazernes</placeName>. Elle a été presentée ce matin
+                                 <lb/>au <rs type="person" ref="#stanislas">roy de Pologne</rs> à <placeName ref="#luneville">Lunéville</placeName>. <rs type="person" ref="#stanislas"><choice><abbr>S. M.</abbr><expan>Sa Majesté</expan></choice></rs> en a été contente.
+                              </p>
+                           </div>
+                        </egXML>
+                     </p>
+                  </div4>
+                  <div4>
+                     <head>Les citations : <gi>quote</gi> et <gi>q</gi></head>
+                     <p>
+                        Les différentes citations seront encodées à l'aide des deux balises <gi>quote</gi> et <gi>q</gi>. Plusieurs cas de figures sont à identifier : 
+                        <list>
+                           <item>
+                              Les citations de type "block", c'est à dire détachées d'un paragraphe, seront balisées avec <gi>quote</gi>.
+                              Elles seront précisées par les attributs <att>xml:id</att> (dont la valeur suit celle des paragraphes) et <att>type</att>.
+                              Pour ce dernier, les valeurs peuvent être <val>letter</val> lorsqu'il s'agit d'un lettre recopiée, <val>report</val> lorsqu'il s'agit d'un rapport
+                              et <val>verse</val> lorsqu'il s'agit d'un texte en vers. 
+                              <lb/>Notons cette liste de valeur pourra évoluer tout au long du développement du projet.
+                           </item>
+                           <item>
+                              Les citations intégrées dans un paragraphe seront encodées avec l'élément <gi>q</gi> lorsqu'ellee sont représentées entre guillemets, et l'élément 
+                              <gi>quote</gi> dans les autres cas. 
+                           </item>
+                        </list>
+                     </p>
+                  </div4>
+                  <div4>
+                     <head>Les lettres, bulletins et textes en vers</head>
+                     <p>
+                        Afin de ne perdre aucune information et rendre ces documents intelligibles, il est important de rendre compte,
+                        par l'encodage, de la structure de ces textes. Ce traitement sera opéré qu'il s'agisse d'un encart, ou d'une citation.
+                     </p>
+                     <div5>
+                        <head>Les lettres</head>
+                        <p>
+                           Il existe dans les <emph>Guidelines</emph> des éléments spécifiques pour encoder la correspondance. 
+                           Toutefois, l'utilisation de ces éléments est restrictif, ils ne peuvent par exemple pas être employés a l'intérieur d'un élément <gi>quote</gi>.
+                           Afin de rationaliser l'usage des balises et n'avoir d'une seule manière de procéder nous ferons un usage exclusif de l'élément <gi>seg</gi>, que nous
+                           typerons afin d'identifier les informations qui nous intéressent. 
+                        </p>
+                        <p>
+                           Dans les cas les plus simples, une correspondance, comporte généralement trois : 
+                           <list>
+                              <item>une formule d'ouverture</item>
+                              <item>des paragraphes de texte</item>
+                              <item>une formule de politesse</item>                              
+                           </list>                           
+                        </p>
+                        <div6>
+                           <head>La formule d'ouverture</head>
+                           <p>
+                              La formule d'ouverture sera balisée à l'aide de l'élément <gi>seg</gi> et de son attribut <att>type</att> de valeur <val>opener</val>.
+                              Elle peut contenir une mention de date encodée avec l'élément <gi>seg</gi> typé <val>dateline</val>, ainsi qu'une apostrophe ou salutation
+                              identifiée par le même élément mais dont la valeur de l'attribut <att>type</att> est <val>salute</val>.
+                           </p>
+                        </div6>
+                        <div6>
+                           <head>Les paragraphes de texte</head>
+                           <p>
+                              Les paragraphes de texte seront balisés par l'élément <gi>p</gi>.
+                           </p>
+                        </div6>
+                        <div6>
+                           <head>La formule de politesse ou de fermeture</head>
+                           <p>
+                              La formule de fermeture sera encodée au sein d'une balise <gi>seg</gi> dont la valeur de l'attibut <att>type</att> sera <val>closer</val>.
+                              Les eventuelles mention de date ou de lieu seront placées dans un élément <gi>seg</gi> typé <val>dateline</val>.
+                              La formule de courtoisie (<gi>seg</gi> avec un attribut <att>type</att> de valeur <val>salute</val>) ainsi que la signature (<gi>seg</gi>, <att>type</att> de valeur <val>signed</val>)
+                              y trouveront également leur place.
+                           </p>                                                         
+                           <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                              <quote type="letter" xml:id="d1765041402">
+                                 <seg type="opener">
+                                    <seg type="dateline">
+                                       <placeName ref="#nancy">Nancy</placeName> ce <date when="1765-04-16">14 avril 1765</date>.
+                                    </seg>
+                                    <seg type="salute">
+                                       <lb/>Mgr
+                                    </seg>
+                                 </seg>
+                                 <p>                                                                        
+                                    <lb/>Je ne pourrai vous exprimer que tres <choice><abbr>imparfaitem</abbr><expan>imparfaitement</expan></choice>
+                                    <lb/>les sentimens d'admiration, d'<subst><del rend="strikethrough">atendrisse</del> <add place="above"><choice><abbr>attendrissem<hi rend="super">t</hi></abbr><expan>attendrissement</expan></choice></add></subst> et
+                                    [...]
+                                    <lb/>donné pour notre bonheur et <add place="above">pour</add> la gloire
+                                    <lb/>de l'humanité.
+                                 </p>
+                                 <seg type="closer">
+                                    <seg type="salute">
+                                       Je suis avec le plus profond respect
+                                       <lb/>Mgr
+                                    </seg>
+                                    <seg type="signed">
+                                       <persName>V.</persName>
+                                    </seg>                    
+                                 </seg>
+                              </quote>
+                           </egXML>
+                        </div6>
+                     </div5>
+                     <div5>
+                        <head>Les bulletins</head>
+                        <p>
+                           Les bulletins seront encodés de la même manière que les lettres.
+                           Ils sont toutefois moins formalisés que les lettres, aussi les mentions de date n'auront pas besoin d'être placées au sein d'un
+                           <gi>seg</gi> de <att>type</att> <val>opener</val>
+                        </p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <quote type="report" xml:id="d1766022002" ana="#stan">                        
+                              <seg type="dateline">Bulletin de <placeName ref="#luneville">Luneville</placeName> <date when="1766-02-20">le 20</date></seg>
+                              <p>
+                                 <lb/><rs type="person" ref="#stanislas">le roy</rs> eut <date when="1766-02-20T22:00:00">hier à 10 h. du soir</date> un frisson
+                                 <lb/>de quelques <sic>minuttes</sic>, mais qui n'a point
+                                 [...]
+                                 <lb/>jusqu'à present de symptomes qui fondent
+                                 <lb/>cette <sic>apréhension</sic>.
+                              </p>
+                           </quote>
+                        </egXML>
+                     </div5>
+                     <div5>
+                        <head>Les textes en vers</head>
+                        <p>
+                           Pour les textes en vers chaque strophe sera encodé avec d'un élément <gi>lg</gi>. 
+                           Les différents vers prendront place dans un élément <g>l</g>
+                        </p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <div type="verse">                              
+                              <lg>
+                                 <l>Venez vous en à moi Lorrains</l>
+                                 <l>fidèles,</l>
+                                 <l>Venez vous en pleurer avec moi,</l>
+                                 <l>Et prier Dieu humblement avec zéle,</l>
+                                 <l>Sur le tombeau de <rs type="person" ref="#stanislas">notre deffunt roi</rs>,</l>
+                                 <l>Qui en ce monde toujours à Dieu</l>
+                                 <l>fidèle, bis.</l>
+                                 <l>A pratiquer les préceptes de sa loi.</l>
+                              </lg>
+                              <lg>
+                                 <l>Pieux, dévot à la sainte Vierge,</l>
+                                 <l>Qui en sa vie, l’a souvent protégé,</l>
+                                 <l>Dedans le ciel sa fidéle concierge,</l>
+                                 <l>Qu'en récompense de sa fidélité,</l>
+                                 <l>Présente son ame allumée comme</l>
+                                 <l>un cierge, bis</l>
+                                 <l>Aux trois perfonnes de la Ste Trinité</l>
+                              </lg>
+                           </div>
+                        </egXML>
+                     </div5>
+                  </div4>
+               </div3>
+               <div3>
+                  <head>Les listes</head>
+                  <p>
+                     La <emph>text encoding initiative</emph> nous permet de distinguer plusieurs types de liste. 
+                     Les listes de personnes <gi>listPerson</gi>, de lieux (<gi>listPlace</gi>), d'organisations (<gi>listOrg</gi>), 
+                     les listes bibliographiques (<gi>listBibl</gi>), et enfin les listes polyvalentes (<gi>list</gi>).
+                  </p>
+                  <div4>
+                     <head>Les listes polyvalentes : <gi>list</gi></head>
+                     <p>
+                        Pour ces listes, chaque entrée doit être placée dans un sous élément <gi>item</gi>. Notons qu'il est possible d'imbriquer des listes.
+                     </p>
+                     <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <list>
+                           <item>hommes 5517</item>
+                           <item>femmes 6428</item>
+                           <item>Enfans
+                              <list>
+                                 <item>mâles 4474</item>
+                                 <item>femelles 5284</item>
+                              </list>                              
+                           </item>                           
+                        </list>
+                     </egXML>
+                  </div4>
+                  <div4>
+                     <head>Les listes de personnes : <gi>listPerson</gi></head>
+                     <p>
+                        Chanque entrée doit être encodée au sein de deux sous-éléments : <gi>person</gi> et <gi>persName</gi>.
+                        Ce liste sera utile pour la réalisation de l'index que nous verrons dans un second temps. Elle peut toutefois être utilisé dans le texte.
+                     </p>
+                     <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <listPerson>
+                           <person><persName ref="#mouchotAnneMarie">Anne Marie Mouchot</persName></person>
+                           <person><persName ref="#craincourtAnne">Anne Craincourt</persName></person>
+                           <person><persName ref="#moitrierAnne">Anne Moitrier</persName></person>
+                           <person><persName ref="#pileCatherine">Catherine Pile dite la fortune</persName></person>
+                           <person><persName ref="#thoilleyMarguerite">Marguerite Thoilley</persName></person>
+                           <person><persName ref="#potesDlle">la D<hi rend="super">lle</hi>. de Potès.</persName></person>
+                        </listPerson>
+                     </egXML>
+                  </div4>
+                  <div4>
+                     <head>Les listes de lieux : <gi>listPlace</gi></head>
+                     <p>
+                        Chanque entrée doit être encodée au sein du sous-éléments <gi>place</gi>.
+                        Ce liste sera utile pour la réalisation de l'index que nous verrons dans un second temps.
+                     </p>
+                  </div4>
+                  <div4>
+                     <head>Les listes d'organisation: <gi>listOrg</gi></head>
+                     <p>
+                        Chanque entrée doit être encodée au sein du sous-éléments : <gi>org</gi>.
+                        Ce liste sera utile pour la réalisation de l'index que nous verrons dans un second temps.
+                     </p>
+                  </div4>
+                  <div4>
+                     <head>Les listes bibliographiques : <gi>listBibl</gi></head>
+                     <p>
+                        Chanque entrée doit être encodée au sein du sous-éléments : <gi>bibl</gi>.
+                        Ce liste sera utile pour la réalisation de l'index que nous verrons dans un second temps.
+                     </p>
+                  </div4>
+               </div3>
+               <div3>
+                  <head>L'indexation</head>
+                  <p>
+                     Pour l'édition du Journal de Nicolas Durival, quatre index ont été réalisés ; un index des noms, des lieux, 
+                     des institutions et relatif à la bibliographie.
+                  </p>
+                  <div4>
+                     <head>L'encodage des références</head>
+                     <p>
+                        Tous les cas énumérés ci-dessous, seront complétés par l'attribut <att>ref</att>, afin d'être liés aux l'index.
+                     </p>
+                     <div5>
+                        <head>Les noms propres</head>
+                        <p>
+                           Les noms propres seront encodés à l'aide de l'élément <gi>persName</gi>.
+                           Lorsque la personne n'est pas directement nommée, il convient de recourir à l'élément <gi>rs</gi> et de sont attribut <att>type</att>
+                           de valeur <val>person</val> lorsqu'il s'agit d'une seul personne, ou <val>groupPerson</val> lorsqu'il est fait référence à plusieurs personnes.
+                        </p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <p>
+                              <rs type="person" ref="#cureCommercy">Le curé de Commercy</rs>
+                           </p>
+                           <p>
+                              <rs type="groupPerson" ref="#durivalJean #durivalClaude">Mes freres</rs>
+                           </p>                              
+                        </egXML>
+                     </div5>
+                     <div5>
+                        <head>Les noms de lieux</head>
+                        <p>
+                           Les noms de lieux seront encodés à l'aide de l'élément <gi>placeName</gi>.                           
+                        </p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <placeName ref="#nancy">Nancy</placeName>                    
+                        </egXML>
+                     </div5>
+                     <div5>
+                        <head>Les noms d'institutions</head>
+                        <p>
+                           Les noms d'institutions seront encodés à l'aide de l'élément <gi>orgName</gi>.                           
+                        </p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <orgName ref="#academie">l'Académie</orgName>                    
+                        </egXML>
+                     </div5>
+                     <div5>
+                        <head>Les références bibliographiques</head>
+                        <p>
+                           Les références bibliographiques seront encodées à l'aide de la balise <gi>bibl</gi> et du sous-élément <gi>title</gi> lorsqu'elle
+                           est citée de manière plus ou moins précise. Pour les autres il convient d'utiliser l'élément <gi>rs</gi> avec un attribut <att>type</att>
+                           de <val>bibl</val>.  
+                           <lb/>Lorsque l'auteur est cité, il pourra être encodé à l'aide de l'élément <gi>persName</gi> et de son attribut <att>type</att> de valeur
+                           <val>author</val>.
+                        </p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <p>
+                              <bibl><title ref="#bib31">la Théogonie</title> d'<persName type="author">Hésiode</persName></bibl>
+                           </p>
+                           <p>
+                              <rs type="bibl" ref="#bib2">le discours de <persName type="author" ref="#millot">M. l'abbé Millot</persName></rs>
+                           </p>                    
+                        </egXML>
+                     </div5>
+                  </div4>
+                  <div4>
+                     <head>Les index</head>
+                     <p>
+                        Les différents index doivent être regroupés au sein du <gi>teiCorpus</gi>, et former un document à part entière.
+                        Afin de pouvoir être intégré avec le standard XInclude, il convient d'attribuer à chaque index (<gi>listPerson</gi>, <gi>listPlace</gi>, <gi>listOrg</gi> et <gi>listBibl</gi>) 
+                        un <att>xml:id</att>. 
+                     </p>
+                     <div5>
+                        <head>L'index des noms de personnes</head>
+                     </div5>
+                     <div5>
+                        <head>L'index des noms de lieux</head>
+                     </div5>
+                     <div5>
+                        <head>L'index des noms d'institutions</head>
+                     </div5>
+                     <div5>
+                        <head>L'index bibliographique</head>
+                     </div5>
+                  </div4>
+               </div3>
+               <div3>
+                  <head>Les notes et l'apparat critique : <gi>back</gi></head></div3>
             </div2>
          </div1>
       </body>
