@@ -115,7 +115,7 @@
                   <attDef ident="type" mode="change">
                      <valList mode="add" type="closed">
                         <valItem ident="author">
-                           <desc>Indique la présence l'auteur au sein d'une référence bibliographique</desc>
+                           <desc>Indique la présence de l'auteur au sein d'une référence bibliographique</desc>
                         </valItem>                        
                      </valList>
                   </attDef>
@@ -182,7 +182,11 @@
                   <attDef ident="facs" mode="delete"/>
                   <attDef ident="resp" mode="delete"/>
                   <attDef ident="full" mode="delete"/>
-                  <attDef ident="type" mode="delete"/>
+                  <attDef ident="type" mode="change">
+                     <valList mode="add" type="closed">
+                        <valItem ident="today"/>
+                     </valList>
+                  </attDef>
                   <attDef ident="subtype" mode="delete"/>
                   <attDef ident="n" mode="delete"/>
                </attList>
@@ -1971,7 +1975,7 @@
                   <head>L'indexation</head>
                   <p>
                      Pour l'édition du Journal de Nicolas Durival, quatre index ont été réalisés ; un index des noms, des lieux, 
-                     des institutions et relatif à la bibliographie.
+                     des institutions et une bibliographie.
                   </p>
                   <div4>
                      <head>L'encodage des références</head>
@@ -2038,17 +2042,22 @@
                         Afin de pouvoir être intégré avec le standard XInclude, il convient d'attribuer à chaque index (<gi>listPerson</gi>, <gi>listPlace</gi>, <gi>listOrg</gi> et <gi>listBibl</gi>) 
                         un <att>xml:id</att>. 
                      </p>
+                     <p>
+                        Autant que faire se peut, nous tacherons de fournir les formes normalisées pour chaque entrée.
+                     </p>
                      <div5>
                         <head>L'index des noms de personnes</head>
+                        <!-- todo après l'import -->
                      </div5>
                      <div5>
                         <head>L'index des noms de lieux</head>
+                        
                      </div5>
                      <div5>
                         <head>L'index des noms d'institutions</head>
                      </div5>
                      <div5>
-                        <head>L'index bibliographique</head>
+                        <head>La bibliographie</head>
                      </div5>
                   </div4>
                </div3>
