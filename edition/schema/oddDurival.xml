@@ -667,7 +667,7 @@
                   <attDef ident="n" mode="delete"/>
                </attList>
             </elementSpec>
-            <elementSpec ident="measure" mode="change">
+            <elementSpec ident="measure" mode="change"><!-- todo faire quelque chose pour la température -->
                <attList>
                   <attDef ident="type" mode="change">
                      <valList mode="add" type="closed">
@@ -675,8 +675,8 @@
                      </valList>
                   </attDef>
                   <attDef ident="ana" mode="delete"/>
-                  <attDef ident="facs" mode="delete"/>
                   <attDef ident="resp" mode="delete"/>
+                  <attDef ident="facs" mode="delete"/>
                   <attDef ident="unit" mode="change">
                      <valList mode="add" type="closed">
                         <valItem ident="l">
@@ -1049,7 +1049,7 @@
             </elementSpec>
             <!--Checking module transcr-->
             <classRef key="att.global.facs"/>
-            <moduleRef key="transcr" include="fw space subst supplied surplus"/>
+            <moduleRef key="transcr" include="fw space subst supplied surplus"/><!-- todo ajouter les valeurs pour supplied -->
             <elementSpec ident="fw" mode="change">
                <attList>
                   <attDef ident="type" mode="change">
@@ -1089,8 +1089,8 @@
                   <attDef ident="n" mode="delete"/>
                </attList>
             </elementSpec>
-            <elementSpec ident="supplied" mode="change">
-               <attList>
+            <elementSpec ident="supplied" mode="change"><!-- todo ajouter aussi l'élément unclear -->
+               <attList><!-- todo ajouter l'attribut cert ? -->
                   <attDef ident="ana" mode="delete"/>
                   <attDef ident="facs" mode="delete"/>
                   <attDef ident="resp" mode="delete"/>
@@ -2090,9 +2090,175 @@
                         <choice><abbr>traduct.</abbr><expan>traduction</expan></choice>
                      </egXML>
                   </div4>
+                  <div4>
+                     <head>Les termes étrangers</head>
+                     <p>
+                        Les termes étrangers seront encodés avec l'élément <gi>foreign</gi> et sont attribut <att>xml:lang</att> afin d'identifier leur origine.
+                        Lorsque ces termes font déjà l'objet d'un encodage, dans le cadre d'une citation par exemple, seul l'attribut <att>xml:lang</att> est nécessaire. 
+                     </p>
+                     <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <foreign xml:lang="lat" rend="underline">in partibus</foreign>
+                        <l xml:lang="lat">Requies cat in pace.</l>                        
+                     </egXML>
+                  </div4>
+                  <div4>
+                     <head>La mise en valeur</head>
+                     <p>
+                        L'encodage TEI nous permet de rendre compte de la manière dont est représenté le texte (soulignement, biffures, etc.).
+                        Ces passages doivent être encodés avec l'élément <gi>hi</gi> et l'attribut <att>rend</att>. S'ils font déjà l'objet d'un 
+                        balisage seul l'attribut <att>rend</att> est nécessaire. 
+                     </p>
+                     <p>
+                        Les valeurs de l'attribut <att>rend</att> sont : 
+                        <list>
+                           <item><val>super</val> : exposant</item>
+                           <item><val>sub</val> : indice</item>
+                           <item><val>strikethrough</val> : rayé</item>
+                           <item><val>underline</val> : souligné</item>
+                           <item><val>center</val> : centré</item>
+                           <item><val>italic</val> : italique</item>
+                           <item><val>hyphen</val> : coupé</item>
+                           <item><val>overwritten</val> : superposition (couche inférieure)</item>
+                           <item><val>superimposed</val> : superposition (couche supérieure)</item>
+                        </list>
+                     </p>                     
+                  </div4>
+                  <div4>
+                     <head>Les changements de page, de ligne, de colonne</head>
+                     <p>
+                        Les changements de page, ligne et colonne, doivent être balisés.
+                     </p>
+                     <div5>
+                        <head>Le saut de page <gi>pb</gi></head>
+                        <p>
+                           Chaque changement de page sera encodé avec l'élément <gi>pb</gi>.
+                           Deux attributs completeront ce balisage :
+                           <list>
+                              <item><att>facs</att> : la valeur de cet attribut correspond au nom du facsimilé numérique de la nouvelle page. Nous prendrons soin de ne pas y faire figurer l'extension du fichier</item>
+                              <item><att>n</att> : cet attribut permet de numéroter les pages. La numérotation se fait au recto ; pour les verso nous ajouterons un "v"</item>
+                           </list>
+                        </p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <pb facs="B543956101M00863_06_0072_2R" n="70"/>
+                           <pb facs="B543956101M00863_06_0073_1L" n="70v"/>
+                        </egXML>
+                        <p>
+                           Lorsque la numérotation des pages est présente, elle sera balisée avec l'élément <gi>fw</gi> comporant les 
+                           attributs <att>type</att> de valeur <val>pageNum</val>, <att>n</att> et <att>place</att> pour localiser cette numérotation 
+                           sur la page.                           
+                        </p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <fw type="pageNum" place="topRight" n="70">70</fw>
+                        </egXML>
+                     </div5>
+                     <div5>
+                        <head>Les changements de ligne : <gi>lb</gi></head>
+                        <p>
+                           Les sauts de lignes seront encodés avec l'élément <gi>lb</gi>.
+                        </p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <p xml:id="d1766022605" ana="#ville">
+                              <persName ref="#intendant">M. l'Intendant</persName> est parti cet après midi
+                              <lb/>pour <placeName ref="#luneville">Lunèville</placeName>.
+                              <lb/><orgName ref="#jesuitesPontamousson">Les jesuites de <placeName ref="#pontamousson">Pont a mousson</placeName></orgName> et de <placeName ref="#nancy">Nancy</placeName>, et sans
+                              <lb/>doute les autres qui se trouvent en <placeName ref="#lorraine">Lorraine</placeName>,
+                              <lb/>se dépêchent de vendre et de faire argent de tout.
+                           </p>
+                        </egXML>
+                        <p>
+                           Lorsqu'il y a coupure du mot en fin de ligne, le terme doit être placé dans un élément <gi>w</gi>, et la changement de ligne 
+                           doit comporter un attribut <att>rend</att> de valeur <val>hyphen</val>.
+                        </p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <w>chré-<lb rend="hyphen"/>tien</w>
+                        </egXML>
+                     </div5>
+                     <div5>
+                        <head>Les changements de colonne</head>
+                        <p>
+                           Les changements de colonne seront matérialisés par l'élément <gi>cb</gi>
+                        </p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <lg>
+                              <l>Le corp du roi fut déposé,</l>
+                              <l>Au milieu de l’église,</l>
+                              <l><cb/>Sur un mosolé préparé,</l>
+                              <l>De suite fait le service,</l>
+                              <l>Par prélats &amp; religieux,</l>
+                              <l>Qui chantérent ses obséques,</l>
+                              <l>Que son âme soit dedans les cieux,</l>
+                              <l>Jérusalem céleste.</l>
+                           </lg>
+                        </egXML>
+                     </div5>
+                  </div4>
+                  <div4>
+                     <head>Les ajouts, suppressions et corrections : <gi>add</gi>, <gi>del</gi> et <gi>subst</gi></head>
+                     <p>
+                        Les ajouts et suppressions doivent être encodés respectivement avec les éléments <gi>add</gi> et <gi>del</gi>.
+                        L'attribut <att>place</att> permet d'indiquer ou se situe l'ajout par rapport au texte (marge, interligne, bas de page, etc.).
+                        Ces deux éléments peuvent être complété par l'attribut <att>rend</att>.
+                     </p>
+                     <p>
+                        Les corrections seront encodées avec la balise <gi>subst</gi>.
+                     </p>
+                     <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <subst>
+                           <del rend="strikethrough">atendrisse</del>
+                           <add place="above">attendrissem<hi rend="super">t</hi></add>
+                        </subst>
+                     </egXML>
+                  </div4>
+                  <div4>
+                     <head>Texte manquant et dommage matériel et restitutions</head>
+                     <p>
+                        Il convient de distinguer, les omissions de l'auteur et les blancs, et d'indiquer les eventuelles restitutions de l'éditeur. 
+                     </p>
+                     <div5>
+                        <head>Les omissions</head>
+                        <p>
+                           Deux cas sont à distinguer, les blancs laissés vides, et les omissions volontaires.
+                           Les blancs représentent des espaces laissés vide par l'auteur en vu d'y inscrire, ultérieurement, une information.
+                           Il doivent être encodés avec l'élément <gi>space</gi>.
+                           <lb/>Les omissions volontaires correspondent aux cas, où l'auteur à délibérément tronqué le texte. Elles peuvent par exemple être
+                           matérialisées par l'usage de trois points. Il convient d'utiliser la balise <gi>gap</gi> complété par les <att>reason</att> de valeur <val>omitted</val> et <att>resp</att>.
+                           pour indiquer que ce texte est une omission volontaire.
+                        </p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <space/>
+                           <lb/>de leurs Majestés dans la maison de Schmidt <gap resp="#durival" reason="missing"><!-- ... --></gap>
+                           <lb/>Bien en a pris à <rs type="person" ref="#intendant">M. l'Intendant</rs> d'etre allé
+                        </egXML>
+                     </div5>
+                     <div5>
+                        <head>Les restitutions</head>
+                        <p>
+                           Suite à un dommage matériel, il est possible d'un segment du texte soit devenu illisible.
+                           Lorsqu'il est possible de restituer ce passage, il convient d'utiliser la balise <gi>supplied</gi>
+                           et son attribut <att>reason</att> pour indiquer la cause.
+                           <lb/>Lorsque toute restitution est impossible, il sera fait utilisation de l'élément <gi>gap</gi>.
+                        </p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <del rend="strikethrough"><supplied reason="illegible">Viar</supplied></del>
+                        </egXML>
+                     </div5>
+                  </div4>
+                  <div4>
+                     <head>Les unités de mesures</head>
+                     <p>
+                        L'encodage des unités de mesure présente des intérêts historiques et scientifiques.
+                        Ces données seront encodées à l'aide de la balise <gi>measure</gi> complêtée des attributs <att>type</att> (type de donnée encodée),
+                        <att>unit</att> (unité), et <att>quantity</att> (pour l'indication numéraire).
+                     </p>
+                     <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <measure type="currency" unit="l" quantity="100000">cent mille livres</measure>
+                     </egXML>
+                  </div4>
                </div3>
                <div3>
-                  <head>Les notes et l'apparat critique : <gi>back</gi></head></div3>
+                  <head>Les notes et l'apparat critique : <gi>back</gi></head>
+                  <!-- todo voir type de note -->
+               </div3>
             </div2>
          </div1>
       </body>
