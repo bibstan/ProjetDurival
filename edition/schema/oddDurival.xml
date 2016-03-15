@@ -482,11 +482,20 @@
             </classSpec>
             <!--Checking module core-->
             <moduleRef key="core"
-                       include="p hi quote desc term sic choice gap add del rs address addrLine measure date abbr expan list item head pb lb cb author respStmt resp title publisher pubPlace bibl listBibl l lg note ref teiCorpus"/>
+                       include="p hi quote desc term sic choice gap add del rs address addrLine measure date abbr expan list item head pb lb cb author respStmt resp title publisher pubPlace bibl listBibl l lg note ref teiCorpus foreign"/>
             <elementSpec ident="p" mode="change">
                <attList>
                   <attDef ident="facs" mode="delete"/>
                   <attDef ident="resp" mode="delete"/>                  
+               </attList>
+            </elementSpec>
+            <elementSpec ident="foreign" mode="change">
+               <attList>
+                  <attDef ident="ana" mode="delete"/>
+                  <attDef ident="facs" mode="delete"/>
+                  <attDef ident="resp" mode="delete"/>
+                  <attDef ident="rend" mode="delete"/>
+                  <attDef ident="n" mode="delete"/>
                </attList>
             </elementSpec>
             <elementSpec ident="ref" mode="change">
@@ -1063,9 +1072,7 @@
             </elementSpec>
             <elementSpec ident="space" mode="change">
                <attList>
-                  <attDef ident="dim" mode="delete"/>
-                  <!-- todo ajouter @ref pour notifier la responsabilité de l'auteur ? -->
-                  <!--<attDef ident="resp" mode="delete"/>-->
+                  <attDef ident="dim" mode="delete"/>                                    
                   <attDef ident="ana" mode="delete"/>
                   <attDef ident="facs" mode="delete"/>
                   <attDef ident="resp" mode="delete"/>
@@ -1109,8 +1116,7 @@
                   <attDef ident="type" mode="change">
                      <valList mode="add" type="closed">
                         <valItem ident="closer"/>
-                        <valItem ident="dateline"/>
-                        <valItem ident="language"/>
+                        <valItem ident="dateline"/>                        
                         <valItem ident="opener"/>
                         <valItem ident="print"/>
                         <valItem ident="salute"/>
@@ -2051,14 +2057,38 @@
                      </div5>
                      <div5>
                         <head>L'index des noms de lieux</head>
-                        
+                        <!-- todo après l'import -->
                      </div5>
                      <div5>
                         <head>L'index des noms d'institutions</head>
+                        <!-- todo après l'import -->
                      </div5>
                      <div5>
                         <head>La bibliographie</head>
+                        <!-- todo après l'import -->
                      </div5>
+                  </div4>
+               </div3>
+               <div3>
+                  <head>La transcription</head>
+                  <div4>
+                     <head>L'Émendation</head>
+                     <p>
+                        Le texte n'a pas fait l'objet de correction. Seul l'emploi des majuscules a été modernisé.
+                        <lb/>Lorsque la graphie ancienne d'un mot peut sembler suspecte, elle doit être balisée avec un élément <gi>sic</gi>.
+                     </p>
+                     <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <sic>datte</sic>
+                     </egXML>
+                  </div4>
+                  <div4>
+                     <head>Les abréviations</head>
+                     <p>
+                        Les abréviations sont maintenues et leur résolution doit faire l'objet d'un encodage avec les éléments <gi>choice</gi>, <gi>abbr</gi> et <gi>expan</gi>. 
+                     </p>
+                     <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <choice><abbr>traduct.</abbr><expan>traduction</expan></choice>
+                     </egXML>
                   </div4>
                </div3>
                <div3>
