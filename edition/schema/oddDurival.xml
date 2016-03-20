@@ -1255,8 +1255,7 @@
             </p>
             <p>
                Ce manuel rassemble les pratiques d'encodage adoptées lors de l'édition de ce journal. Il présente des explications sur les points techniques et l'usage des balises XML.               
-               Au sein de ce guide, les éléments (ou balises) sont représentés entre des chevrons ("&lt;" et "&gt;"). Des liens renvoient vers la documentation TEI.
-               Enfin, par conventions les attributs seront représentés en italique et de la manière suivante : <att>attribut</att> ; leur valeur sera précisée entre guillemets : <val>valeur</val>. 
+               Au sein de ce guide, les éléments (ou balises) sont représentés entre des chevrons ("&lt;" et "&gt;"). Par conventions les attributs seront représentés en italique, de la manière suivante : <att>attribut</att> ; leur valeur sera précisée entre guillemets : <val>"valeur"</val>. 
             </p>
             <div2>
                <head>Organisation des fichiers</head>
@@ -1267,8 +1266,8 @@
                </p>
                <p>
                   Le premier fichier, durival.xml, est le fichier maître. Il rassemble la transcription ainsi que tous les documents annexes liés à l'édition.
-                  Il s'agit d'un fichier <emph>teiCorpus</emph>. Il permet de rassembler, au sein d'un seul fichier, un ensemble de document TEI bien distincts 
-                  et pouvant partager un ensemble de métadonnées communes. Il se subdivise ainsi : 
+                  Il s'agit d'un fichier <emph>teiCorpus</emph>. Il permet de réunir, au sein d'un seul fichier, un ensemble de documents TEI bien distincts 
+                  et pouvant partager des métadonnées communes. Il se subdivise ainsi : 
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <teiCorpus>
                         <teiHeader>
@@ -1295,16 +1294,16 @@
                   </egXML>
                </p>
                <p>
-                  Le second fichier, indexDurival.xml, contient les différents index lié au Journal de Nicolas Durival.
+                  Le second fichier, indexDurival.xml, contient les différents index liés à l'édition.
                   Il est externalisé afin de permettre aux membres du projet de travailler de manière distincte sur le texte et ses index.                      
                </p>
                <p>
-                  Ce fichier, est intégré au document maître par l'intermédiaire Xinclude. Ce standard autorise la combinaison
+                  Ce fichier, est intégré au document maître par l'intermédiaire d'<emph>Xinclude</emph>. Ce standard autorise la combinaison
                   de plusieurs documents XML.
                   <lb/>- Au sein du fichier indexDurival.xml, les parties à inclure dans le fichier maître doivent comporter un attribut <att>xml:id</att>.
-                  <lb/>- Au sein du fichier maître, Xinclude nécessite d'être déclaré. Afin de pouvoir procéder à des inclusions n'importe où 
+                  <lb/>- Au sein du fichier maître, <emph>Xinclude</emph> nécessite d'être déclaré. Afin de pouvoir procéder à des inclusions n'importe où 
                   dans le document, cette déclaration sera rattachée à l'élément racine <gi>teiCorpus</gi> : xmlns:xi="http://www.w3.org/2001/XInclude".
-                  pour inclure une partie, il faut procéder comme dans l'exemple suivant :                  
+                  Pour inclure une partie, il faut procéder comme dans l'exemple suivant :                  
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">                     
                      <![CDATA[<teiCorpus xmlns:xi="http://www.w3.org/2001/XInclude">]]>
                      <!-- On déclare Xinclude au niveau de l'élément racine-->
@@ -1328,8 +1327,8 @@
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <teiHeader>
                         <fileDesc>(obligatoire) description bibliographique</fileDesc>
-                        <encodingDesc> description des normes d'encodage</encodingDesc>
-                        <profileDesc> description des aspects non bibliographiques</profileDesc>
+                        <encodingDesc>description des normes d'encodage</encodingDesc>
+                        <profileDesc>description des aspects non bibliographiques</profileDesc>
                      </teiHeader>
                   </egXML>
                </p>
@@ -1348,13 +1347,13 @@
                            <titleStmt>                              
                               <title>(répétable) Il désigne le/les titre(s) donné(s) à l'édition électronique.</title>            
                               <respStmt>cet élément se réfère aux mentions de responsabilités concernant l'édition électronique</respStmt>
-                              <funder>Organisme qui finance l'édition électronique</funder>
+                              <funder>organisme qui finance l'édition électronique</funder>
                            </titleStmt>
                         </egXML>                         
                         <!-- todo intégation ? voir Header préparé par Eric -->
                         <!--<lb/><gi>author</gi> : nom de l'auteur 
                         <lb/><gi>editor</gi> : mentions de responsabilités secondaires-->
-                        <lb/>L'élément <gi>respStmt</gi> doit être complété par les sous-éléments suivants :
+                        <lb/>L'élément <gi>respStmt</gi> peut être complété par les sous-éléments suivants :
                         <specList>
                            <specDesc key="resp"/>
                            <specDesc key="persName"/>
@@ -1364,7 +1363,7 @@
                            <titleStmt>
                               <title>Edition augmentée du Journal de Nicolas Durival (1765-1766)</title>            
                               <respStmt>
-                                 <resp>édité et encodé en XML-TEI par </resp>
+                                 <resp>édité et encodé en XML-TEI par</resp>
                                  <persName xml:id="CH">Claire Haquet</persName>
                                  <persName xml:id="EN">Eric Nunes</persName>
                                  <persName xml:id="JM">Josselin Morvan</persName>
@@ -1484,7 +1483,7 @@
                      <div5>
                         <head>Déclaration des pratiques éditoriales <gi>editorialDecl</gi></head>
                         <p>
-                           Cet élément doit être complété par les balises descriptives suivantes :
+                           <lb/>Cet élément doit être complété par les balises descriptives suivantes :
                            <specList>
                               <specDesc key="normalization"/>
                               <specDesc key="quotation"/>
@@ -1603,7 +1602,7 @@
                   <p>
                      Au sein du <gi>body</gi>, nous utiliserons la balise générique <gi>div</gi> afin d'établir les sous divisions du texte.
                      L'intégralité de la transcription sera placée au sein d'une <gi>div</gi> identifiée par l'attribut <att>type</att>
-                     de valeur <val>transcription</val>.
+                     de valeur <val>"transcription"</val>.
                      <egXML xmlns="http://www.tei-c.org/ns/Examples">
                         <text>
                            <body>
@@ -1619,29 +1618,29 @@
                      Les principales subdivisions ont été identifiées et différenciées par différentes valeurs associées à l'attribut <att>type</att>.
                      <list>
                         <item>
-                           L'attribut <att>type</att> de valeur <val>year</val> identifie chaque nouvelle 
-                           année du Journal de Nicolas Durival. l'élément <gi>div</gi> doit être complété par l'attribut
-                           <att>xml:id</att> de valeur <val>dAAAA</val>, où AAAA correspond à l'année. Il est important pour tous les attributs <att>xml:id</att>
-                           de faire précéder les nombres par une lettre pour que cet identifiant soit valide. la lettre "d" renvoie à Durival.
+                           L'attribut <att>type</att> de valeur <val>"year"</val> identifie chaque nouvelle 
+                           année du Journal de Nicolas Durival. L'élément <gi>div</gi> doit être complété par l'attribut
+                           <att>xml:id</att> de valeur <val>"dAAAA"</val>, où AAAA correspond à l'année. Il est important pour tous les attributs <att>xml:id</att>
+                           de faire précéder les nombres par une lettre pour que cet identifiant soit valide. La lettre "d" renvoie à Durival.
                         </item>
                         <item>
-                           L'attribut <att>type</att> de valeur <val>month</val> renvoi à un mois. Il est précisé par l'attribut
-                           <att>xml:id</att> de valeur <val>dAAAAMM</val>.
+                           L'attribut <att>type</att> de valeur <val>"month"</val> renvoi à un mois. Il est précisé par l'attribut
+                           <att>xml:id</att> de valeur <val>"dAAAAMM"</val>.
                         </item>
                         <item>
-                           L'attribut <att>type</att> de valeur <val>day</val>, permet l'encodage des entrées journalières.
-                           Elles sont identifiée par l'attribut <att>xml:id</att> de valeur <val>dAAAAMMJJ</val>.
-                           Pour les cas ou une entrée est dédoublée, la valeur de l'attribut sera modifiée par l'ajout d'un "_02" : 
-                           <val>dAAAMMJJ_02</val>
+                           L'attribut <att>type</att> de valeur <val>"day"</val>, permet l'encodage des entrées journalières.
+                           Elles sont identifiée par l'attribut <att>xml:id</att> de valeur <val>"dAAAAMMJJ"</val>.
+                           Pour les cas où une entrée est dédoublée, la valeur de l'attribut sera modifiée par l'ajout d'un "_02" : 
+                           <val>"dAAAMMJJ_02"</val>
                         </item>
                         <item>
-                           L'attribut <att>type</att> de valeur <val>insert</val>, sera utilisé pour les encarts intégrés au journal. 
+                           L'attribut <att>type</att> de valeur <val>"insert"</val>, sera utilisé pour les encarts intégrés au journal. 
                         </item>
                         <item>
-                           L'attribut <att>type</att> de valeur <val>letter</val>, sera utilisé pour l'encodage des lettres.
+                           L'attribut <att>type</att> de valeur <val>"letter"</val>, sera utilisé pour l'encodage des lettres.
                         </item>
                         <item>
-                           L'attribut <att>type</att> de valeur <val>verse</val>, sera utilisé pour les parties en vers.
+                           L'attribut <att>type</att> de valeur <val>"verse"</val>, sera utilisé pour les parties en vers.
                         </item>
                      </list>
                      Exemple :
@@ -1666,20 +1665,20 @@
                      </egXML>
                      Liste des valeurs disponibles pour l'attribut <att>type</att> de l'élément <gi>div</gi> :
                      <list>
-                        <item><val>transcription</val></item>
-                        <item><val>year</val></item>
-                        <item><val>month</val></item>
-                        <item><val>day</val></item>
-                        <item><val>insert</val></item>
-                        <item><val>letter</val></item>                        
-                        <item><val>verse</val></item>                                                
+                        <item><val>"transcription"</val></item>
+                        <item><val>"year"</val></item>
+                        <item><val>"month"</val></item>
+                        <item><val>"day"</val></item>
+                        <item><val>"insert"</val></item>
+                        <item><val>"letter"</val></item>                        
+                        <item><val>"verse"</val></item>                                                
                      </list>
                   </p>
                   <p>
                      Certaines sections du texte peuvent comporter un titre ou un titre courant.
-                     <lb/>Les titres seront encodés avec la balise <gi>head</gi>
+                     <lb/>Les titres seront encodés avec la balise <gi>head</gi>.
                      <lb/>Les titres courant seront quant à eux encodés avec l'élément <gi>fw</gi> comportant l'attribut
-                     <att>type</att> de valeur <val>runningHead</val>, uniquement lors de leur premiere apparition. 
+                     <att>type</att> de valeur <val>"runningHead"</val>, uniquement lors de leur premiere apparition. 
                      <egXML xmlns="http://www.tei-c.org/ns/Examples">
                         <div type="year" xml:id="d1765">
                            <head>Année 1765</head>               
@@ -1697,9 +1696,9 @@
                      </egXML>
                   </p>
                   <p>
-                     Les entrées du journal seront balisées avec les éléments <gi>dateline</gi> et <gi>date</gi> associé à deux attributs, 
-                     <att>type</att> de valeur <val>entry</val> et <att>when</att> dont la valeur correspond à la forme normalisée de la date
-                     sous la forme "AAAA-MM-JJ"
+                     Les entrées du journal seront balisées avec les éléments <gi>dateline</gi> et <gi>date</gi> associés à deux attributs, 
+                     <att>type</att> de valeur <val>"entry"</val> et <att>when</att> dont la valeur correspond à la forme normalisée de la date
+                     sous la forme "AAAA-MM-JJ".
                      <lb/>Lorsque qu'une entrée correspond à plusieurs jours, l'attribut <att>when</att> sera remplacé par les attributs <att>from</att>
                      et <att>to</att>. La valeur de ces attributs correspond respectivement au premier et au dernier jour.
                      <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -1730,8 +1729,8 @@
                      <head>Les paragraphes <gi>p</gi></head>
                      <p>
                         Au sein de chaque journée, les différents paragraphes seront identifiés par la balise <gi>p</gi>.
-                        Un identifiant <att>xml:id</att> leur est attaché. Sa valeur suit la logique employée pour les années, mois, et jours, à savoir :
-                        <val>"dAAAAMMJJNN"</val>, où "NN" correspond à la numérotation de chaque paragraphe au sein d'une journée, sous la forme 01, 02, 03, etc.
+                        Un identifiant <att>xml:id</att> doit leur être attaché. Sa valeur suit la logique employée pour les années, mois, et jours, à savoir :
+                        <val>""dAAAAMMJJNN""</val>, où "NN" correspond à la numérotation de chaque paragraphe au sein d'une journée, sous la forme 01, 02, 03, etc.
                      </p>
                      <p>
                         Afin de procéder à des extractions thématiques du texte l'attribut <att>ana</att> pourra être utilisé lorsque l'objet du paragraphe
@@ -1776,12 +1775,12 @@
                            <item>
                               Les citations de type "block", c'est à dire détachées d'un paragraphe, seront balisées avec <gi>quote</gi>.
                               Elles seront précisées par les attributs <att>xml:id</att> (dont la valeur suit celle des paragraphes) et <att>type</att>.
-                              Pour ce dernier, les valeurs peuvent être <val>letter</val> lorsqu'il s'agit d'un lettre recopiée, <val>report</val> lorsqu'il s'agit d'un rapport
-                              et <val>verse</val> lorsqu'il s'agit d'un texte en vers. 
-                              <lb/>Notons cette liste de valeur pourra évoluer tout au long du développement du projet.
+                              Pour ce dernier, les valeurs peuvent être <val>"letter"</val> lorsqu'il s'agit d'un lettre recopiée, <val>"report"</val> lorsqu'il s'agit d'un rapport
+                              et <val>"verse"</val> lorsqu'il s'agit d'un texte en vers. 
+                              <lb/>Notons que cette liste de valeur pourra évoluer tout au long du développement du projet.
                            </item>
                            <item>
-                              Les citations intégrées dans un paragraphe seront encodées avec l'élément <gi>q</gi> lorsqu'ellee sont représentées entre guillemets, et l'élément 
+                              Les citations intégrées dans un paragraphe seront encodées avec l'élément <gi>q</gi> lorsqu'elles sont représentées entre guillemets, et l'élément 
                               <gi>quote</gi> dans les autres cas. 
                            </item>
                         </list>
@@ -1796,13 +1795,13 @@
                      <div5>
                         <head>Les lettres</head>
                         <p>
-                           Il existe dans les <emph>Guidelines</emph> des éléments spécifiques pour encoder la correspondance. 
-                           Toutefois, l'utilisation de ces éléments est restrictif, ils ne peuvent par exemple pas être employés a l'intérieur d'un élément <gi>quote</gi>.
-                           Afin de rationaliser l'usage des balises et n'avoir d'une seule manière de procéder nous ferons un usage exclusif de l'élément <gi>seg</gi>, que nous
+                           <lb/>Il existe dans les <emph>Guidelines</emph> des éléments spécifiques pour encoder la correspondance. 
+                           Toutefois, l'utilisation de ces éléments est restrictif, ils ne peuvent par exemple pas être employés à l'intérieur d'un élément <gi>quote</gi>.
+                           Afin de rationaliser l'usage des balises et n'avoir d'une seule manière de procéder, nous ferons un usage exclusif de l'élément <gi>seg</gi>, que nous
                            typerons afin d'identifier les informations qui nous intéressent. 
                         </p>
                         <p>
-                           Dans les cas les plus simples, une correspondance, comporte généralement trois : 
+                           Dans les cas les plus simples, une correspondance, comporte généralement trois subdivisions : 
                            <list>
                               <item>une formule d'ouverture</item>
                               <item>des paragraphes de texte</item>
@@ -1812,9 +1811,9 @@
                         <div6>
                            <head>La formule d'ouverture</head>
                            <p>
-                              La formule d'ouverture sera balisée à l'aide de l'élément <gi>seg</gi> et de son attribut <att>type</att> de valeur <val>opener</val>.
-                              Elle peut contenir une mention de date encodée avec l'élément <gi>seg</gi> typé <val>dateline</val>, ainsi qu'une apostrophe ou salutation
-                              identifiée par le même élément mais dont la valeur de l'attribut <att>type</att> est <val>salute</val>.
+                              La formule d'ouverture doit être balisée à l'aide de l'élément <gi>seg</gi> et de son attribut <att>type</att> de valeur <val>"opener"</val>.
+                              Elle peut contenir une mention de date encodée avec l'élément <gi>seg</gi> typé <val>"dateline"</val>, ainsi qu'une apostrophe ou salutation
+                              identifiée par le même élément mais dont la valeur de l'attribut <att>type</att> sera alors <val>"salute"</val>.
                            </p>
                         </div6>
                         <div6>
@@ -1826,9 +1825,9 @@
                         <div6>
                            <head>La formule de politesse ou de fermeture</head>
                            <p>
-                              La formule de fermeture sera encodée au sein d'une balise <gi>seg</gi> dont la valeur de l'attibut <att>type</att> sera <val>closer</val>.
-                              Les eventuelles mention de date ou de lieu seront placées dans un élément <gi>seg</gi> typé <val>dateline</val>.
-                              La formule de courtoisie (<gi>seg</gi> avec un attribut <att>type</att> de valeur <val>salute</val>) ainsi que la signature (<gi>seg</gi>, <att>type</att> de valeur <val>signed</val>)
+                              La formule de fermeture sera encodée au sein d'une balise <gi>seg</gi> dont la valeur de l'attibut <att>type</att> sera <val>"closer"</val>.
+                              Les eventuelles mentions de date ou de lieu seront placées dans un élément <gi>seg</gi> typé <val>"dateline"</val>.
+                              La formule de courtoisie (<gi>seg</gi> avec un attribut <att>type</att> de valeur <val>"salute"</val>) ainsi que la signature (<gi>seg</gi>, <att>type</att> de valeur <val>"signed"</val>)
                               y trouveront également leur place.
                            </p>                                                         
                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -1864,9 +1863,9 @@
                      <div5>
                         <head>Les bulletins</head>
                         <p>
-                           Les bulletins seront encodés de la même manière que les lettres.
-                           Ils sont toutefois moins formalisés que les lettres, aussi les mentions de date n'auront pas besoin d'être placées au sein d'un
-                           <gi>seg</gi> de <att>type</att> <val>opener</val>
+                           <lb/>Les bulletins peuvent être encodés de la même manière que les lettres.
+                           Ils sont toutefois moins formalisés que ces dernieres, aussi les mentions de date n'auront pas besoin d'être placées au sein d'un élément
+                           <gi>seg</gi> de <att>type</att> <val>"opener"</val>.
                         </p>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples">
                            <quote type="report" xml:id="d1766022002" ana="#stan">                        
@@ -1884,8 +1883,8 @@
                      <div5>
                         <head>Les textes en vers</head>
                         <p>
-                           Pour les textes en vers chaque strophe sera encodé avec d'un élément <gi>lg</gi>. 
-                           Les différents vers prendront place dans un élément <g>l</g>
+                           <lb/>Pour les textes en vers, chaque strophe sera encodée par un élément <gi>lg</gi>. 
+                           Les différents vers prendront place au sein d'un élément <gi>l</gi>
                         </p>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples">
                            <div type="verse">                              
@@ -1941,8 +1940,8 @@
                   <div4>
                      <head>Les listes de personnes : <gi>listPerson</gi></head>
                      <p>
-                        Chanque entrée doit être encodée au sein de deux sous-éléments : <gi>person</gi> et <gi>persName</gi>.
-                        Ce liste sera utile pour la réalisation de l'index que nous verrons dans un second temps. Elle peut toutefois être utilisé dans le texte.
+                        Chaque entrée doit être encodée au sein de deux sous-éléments : <gi>person</gi> et <gi>persName</gi>.
+                        Cette liste sera notamment utilisée pour la réalisation de l'index que nous verrons dans un second temps. Elle peut toutefois être utilisée dans le texte.
                      </p>
                      <egXML xmlns="http://www.tei-c.org/ns/Examples">
                         <listPerson>
@@ -1958,42 +1957,43 @@
                   <div4>
                      <head>Les listes de lieux : <gi>listPlace</gi></head>
                      <p>
-                        Chanque entrée doit être encodée au sein du sous-éléments <gi>place</gi>.
-                        Ce liste sera utile pour la réalisation de l'index que nous verrons dans un second temps.
+                        Chaque entrée doit être encodée au sein du sous-élément <gi>place</gi>.
+                        Ce liste sera notamment utilisée pour la réalisation de l'index que nous verrons dans un second temps.
                      </p>
                   </div4>
                   <div4>
                      <head>Les listes d'organisation: <gi>listOrg</gi></head>
                      <p>
-                        Chanque entrée doit être encodée au sein du sous-éléments : <gi>org</gi>.
-                        Ce liste sera utile pour la réalisation de l'index que nous verrons dans un second temps.
+                        Chaque entrée doit être encodée au sein du sous-élément : <gi>org</gi>.
+                        Ce liste sera notamment utilisée pour la réalisation de l'index que nous verrons dans un second temps.
                      </p>
                   </div4>
                   <div4>
                      <head>Les listes bibliographiques : <gi>listBibl</gi></head>
                      <p>
-                        Chanque entrée doit être encodée au sein du sous-éléments : <gi>bibl</gi>.
-                        Ce liste sera utile pour la réalisation de l'index que nous verrons dans un second temps.
+                        Chaque entrée doit être encodée au sein du sous-élément : <gi>bibl</gi>.
+                        Ce liste sera notamment utilisée pour la réalisation de l'index que nous verrons dans un second temps.
                      </p>
                   </div4>
                </div3>
                <div3>
                   <head>L'indexation</head>
                   <p>
-                     Pour l'édition du Journal de Nicolas Durival, quatre index ont été réalisés ; un index des noms, des lieux, 
-                     des institutions et une bibliographie.
+                     Pour l'édition du Journal de Nicolas Durival, quatre index ont été réalisés. Un index des noms, un index des lieux, 
+                     un index des institutions et une bibliographie.
                   </p>
                   <div4>
                      <head>L'encodage des références</head>
                      <p>
-                        Tous les cas énumérés ci-dessous, seront complétés par l'attribut <att>ref</att>, afin d'être liés aux l'index.
+                        Tous les cas énumérés ci-dessous, seront complétés par l'attribut <att>ref</att>, afin d'être liés aux index. La valeur de cet attribut
+                        renvoie à la valeur l'<att>xml:id</att> de l'entrée d'index correspondante et précédée du caractère "#".
                      </p>
                      <div5>
                         <head>Les noms propres</head>
                         <p>
-                           Les noms propres seront encodés à l'aide de l'élément <gi>persName</gi>.
+                           <lb/>Les noms propres seront encodés à l'aide de l'élément <gi>persName</gi>.
                            Lorsque la personne n'est pas directement nommée, il convient de recourir à l'élément <gi>rs</gi> et de sont attribut <att>type</att>
-                           de valeur <val>person</val> lorsqu'il s'agit d'une seul personne, ou <val>groupPerson</val> lorsqu'il est fait référence à plusieurs personnes.
+                           de valeur <val>"person"</val> lorsqu'il s'agit d'une seul personne, ou <val>"groupPerson"</val> lorsqu'il est fait référence à plusieurs personnes.
                         </p>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples">
                            <p>
@@ -2007,7 +2007,7 @@
                      <div5>
                         <head>Les noms de lieux</head>
                         <p>
-                           Les noms de lieux seront encodés à l'aide de l'élément <gi>placeName</gi>.                           
+                           <lb/>Les noms de lieux seront encodés à l'aide de l'élément <gi>placeName</gi>.                           
                         </p>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples">
                            <placeName ref="#nancy">Nancy</placeName>                    
@@ -2016,7 +2016,7 @@
                      <div5>
                         <head>Les noms d'institutions</head>
                         <p>
-                           Les noms d'institutions seront encodés à l'aide de l'élément <gi>orgName</gi>.                           
+                           <lb/>Les noms d'institutions seront encodés à l'aide de l'élément <gi>orgName</gi>.                           
                         </p>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples">
                            <orgName ref="#academie">l'Académie</orgName>                    
@@ -2025,11 +2025,11 @@
                      <div5>
                         <head>Les références bibliographiques</head>
                         <p>
-                           Les références bibliographiques seront encodées à l'aide de la balise <gi>bibl</gi> et du sous-élément <gi>title</gi> lorsqu'elle
-                           est citée de manière plus ou moins précise. Pour les autres il convient d'utiliser l'élément <gi>rs</gi> avec un attribut <att>type</att>
-                           de <val>bibl</val>.  
+                           <lb/>Les références bibliographiques seront encodées à l'aide de la balise <gi>bibl</gi> et du sous-élément <gi>title</gi> lorsqu'elle
+                           est citée de manière plus ou moins précise. Pour les autres citations, il convient d'utiliser l'élément <gi>rs</gi> avec un attribut <att>type</att>
+                           de valeur : <val>"bibl"</val>.  
                            <lb/>Lorsque l'auteur est cité, il pourra être encodé à l'aide de l'élément <gi>persName</gi> et de son attribut <att>type</att> de valeur
-                           <val>author</val>.
+                           <val>"author"</val>.
                         </p>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples">
                            <p>
@@ -2044,8 +2044,8 @@
                   <div4>
                      <head>Les index</head>
                      <p>
-                        Les différents index doivent être regroupés au sein du <gi>teiCorpus</gi>, et former un document à part entière.
-                        Afin de pouvoir être intégré avec le standard XInclude, il convient d'attribuer à chaque index (<gi>listPerson</gi>, <gi>listPlace</gi>, <gi>listOrg</gi> et <gi>listBibl</gi>) 
+                        Les différents index doivent être regroupés au sein du <gi>teiCorpus</gi>. Ils forment un document à part entière.
+                        Afin de pouvoir être intégré avec le standard <emph>XInclude</emph>, il convient d'attribuer à chaque index (<gi>listPerson</gi>, <gi>listPlace</gi>, <gi>listOrg</gi> et <gi>listBibl</gi>) 
                         un <att>xml:id</att>. 
                      </p>
                      <p>
@@ -2075,7 +2075,7 @@
                      <head>L'Émendation</head>
                      <p>
                         Le texte n'a pas fait l'objet de correction. Seul l'emploi des majuscules a été modernisé.
-                        <lb/>Lorsque la graphie ancienne d'un mot peut sembler suspecte, elle doit être balisée avec un élément <gi>sic</gi>.
+                        <lb/>Lorsque la graphie ancienne d'un mot peut sembler suspecte, elle peut être balisée avec un élément <gi>sic</gi>.
                      </p>
                      <egXML xmlns="http://www.tei-c.org/ns/Examples">
                         <sic>datte</sic>
@@ -2084,7 +2084,7 @@
                   <div4>
                      <head>Les abréviations</head>
                      <p>
-                        Les abréviations sont maintenues et leur résolution doit faire l'objet d'un encodage avec les éléments <gi>choice</gi>, <gi>abbr</gi> et <gi>expan</gi>. 
+                        Les abréviations sont maintenues. Leur résolution doit faire l'objet d'un encodage avec les éléments <gi>choice</gi>, <gi>abbr</gi> et <gi>expan</gi>. 
                      </p>
                      <egXML xmlns="http://www.tei-c.org/ns/Examples">
                         <choice><abbr>traduct.</abbr><expan>traduction</expan></choice>
@@ -2104,22 +2104,22 @@
                   <div4>
                      <head>La mise en valeur</head>
                      <p>
-                        L'encodage TEI nous permet de rendre compte de la manière dont est représenté le texte (soulignement, biffures, etc.).
+                        L'encodage TEI nous permet de rendre compte de la manière dont est représenté le texte (soulignement, biffure, etc.).
                         Ces passages doivent être encodés avec l'élément <gi>hi</gi> et l'attribut <att>rend</att>. S'ils font déjà l'objet d'un 
                         balisage seul l'attribut <att>rend</att> est nécessaire. 
                      </p>
                      <p>
                         Les valeurs de l'attribut <att>rend</att> sont : 
                         <list>
-                           <item><val>super</val> : exposant</item>
-                           <item><val>sub</val> : indice</item>
-                           <item><val>strikethrough</val> : rayé</item>
-                           <item><val>underline</val> : souligné</item>
-                           <item><val>center</val> : centré</item>
-                           <item><val>italic</val> : italique</item>
-                           <item><val>hyphen</val> : coupé</item>
-                           <item><val>overwritten</val> : superposition (couche inférieure)</item>
-                           <item><val>superimposed</val> : superposition (couche supérieure)</item>
+                           <item><val>"super"</val> : exposant</item>
+                           <item><val>"sub"</val> : indice</item>
+                           <item><val>"strikethrough"</val> : rayé</item>
+                           <item><val>"underline"</val> : souligné</item>
+                           <item><val>"center"</val> : centré</item>
+                           <item><val>"italic"</val> : italique</item>
+                           <item><val>"hyphen"</val> : coupé</item>
+                           <item><val>"overwritten"</val> : superposition (couche inférieure)</item>
+                           <item><val>"superimposed"</val> : superposition (couche supérieure)</item>
                         </list>
                      </p>                     
                   </div4>
@@ -2129,13 +2129,13 @@
                         Les changements de page, ligne et colonne, doivent être balisés.
                      </p>
                      <div5>
-                        <head>Le saut de page <gi>pb</gi></head>
+                        <head>Les sauts de page <gi>pb</gi></head>
                         <p>
-                           Chaque changement de page sera encodé avec l'élément <gi>pb</gi>.
+                           <lb/>Chaque changement de page sera encodé avec l'élément <gi>pb</gi>.
                            Deux attributs completeront ce balisage :
                            <list>
-                              <item><att>facs</att> : la valeur de cet attribut correspond au nom du facsimilé numérique de la nouvelle page. Nous prendrons soin de ne pas y faire figurer l'extension du fichier</item>
-                              <item><att>n</att> : cet attribut permet de numéroter les pages. La numérotation se fait au recto ; pour les verso nous ajouterons un "v"</item>
+                              <item><att>facs</att> : la valeur de cet attribut correspond au nom du facsimilé numérique de la nouvelle page. Il est important de ne pas y faire figurer l'extension du fichier.</item>
+                              <item><att>n</att> : cet attribut permet de numéroter les pages. La numérotation se fait au recto ; pour les versos nous ajouterons un "v".</item>
                            </list>
                         </p>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -2143,8 +2143,8 @@
                            <pb facs="B543956101M00863_06_0073_1L" n="70v"/>
                         </egXML>
                         <p>
-                           Lorsque la numérotation des pages est présente, elle sera balisée avec l'élément <gi>fw</gi> comporant les 
-                           attributs <att>type</att> de valeur <val>pageNum</val>, <att>n</att> et <att>place</att> pour localiser cette numérotation 
+                           Lorsque la numérotation des pages est présente, elle doit être balisée avec l'élément <gi>fw</gi> comportant les 
+                           attributs <att>type</att> de valeur <val>"pageNum"</val>, <att>n</att> et <att>place</att> pour localiser cette numérotation 
                            sur la page.                           
                         </p>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -2154,7 +2154,7 @@
                      <div5>
                         <head>Les changements de ligne : <gi>lb</gi></head>
                         <p>
-                           Les sauts de lignes seront encodés avec l'élément <gi>lb</gi>.
+                           <lb/>Les sauts de ligne seront encodés avec l'élément <gi>lb</gi>.
                         </p>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples">
                            <p xml:id="d1766022605" ana="#ville">
@@ -2166,8 +2166,8 @@
                            </p>
                         </egXML>
                         <p>
-                           Lorsqu'il y a coupure du mot en fin de ligne, le terme doit être placé dans un élément <gi>w</gi>, et la changement de ligne 
-                           doit comporter un attribut <att>rend</att> de valeur <val>hyphen</val>.
+                           Lorsqu'il y a coupure du mot en fin de ligne, le terme doit être placé dans un élément <gi>w</gi> et l'élément <gi>lb</gi>
+                           doit comporter un attribut <att>rend</att> de valeur <val>"hyphen"</val>.
                         </p>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples">
                            <w>chré-<lb rend="hyphen"/>tien</w>
@@ -2176,7 +2176,7 @@
                      <div5>
                         <head>Les changements de colonne</head>
                         <p>
-                           Les changements de colonne seront matérialisés par l'élément <gi>cb</gi>
+                           <lb/>Les changements de colonne seront matérialisés par l'élément <gi>cb</gi>
                         </p>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples">
                            <lg>
@@ -2196,7 +2196,7 @@
                      <head>Les ajouts, suppressions et corrections : <gi>add</gi>, <gi>del</gi> et <gi>subst</gi></head>
                      <p>
                         Les ajouts et suppressions doivent être encodés respectivement avec les éléments <gi>add</gi> et <gi>del</gi>.
-                        L'attribut <att>place</att> permet d'indiquer ou se situe l'ajout par rapport au texte (marge, interligne, bas de page, etc.).
+                        L'attribut <att>place</att> permet d'indiquer où se situe l'ajout par rapport au texte (marge, interligne, bas de page, etc.).
                         Ces deux éléments peuvent être complété par l'attribut <att>rend</att>.
                      </p>
                      <p>
@@ -2212,16 +2212,16 @@
                   <div4>
                      <head>Texte manquant et dommage matériel et restitutions</head>
                      <p>
-                        Il convient de distinguer, les omissions de l'auteur et les blancs, et d'indiquer les eventuelles restitutions de l'éditeur. 
+                        Il convient de distinguer, les omissions de l'auteur, les blancs et d'indiquer les eventuelles restitutions. 
                      </p>
                      <div5>
                         <head>Les omissions</head>
                         <p>
-                           Deux cas sont à distinguer, les blancs laissés vides, et les omissions volontaires.
-                           Les blancs représentent des espaces laissés vide par l'auteur en vu d'y inscrire, ultérieurement, une information.
+                           <lb/>Deux cas sont à distinguer, les blancs laissés vides, et les omissions volontaires.
+                           Les blancs représentent des espaces laissés vides par l'auteur en vu d'y inscrire, ultérieurement, une information.
                            Il doivent être encodés avec l'élément <gi>space</gi>.
-                           <lb/>Les omissions volontaires correspondent aux cas, où l'auteur à délibérément tronqué le texte. Elles peuvent par exemple être
-                           matérialisées par l'usage de trois points. Il convient d'utiliser la balise <gi>gap</gi> complété par les <att>reason</att> de valeur <val>omitted</val> et <att>resp</att>.
+                           <lb/>Les omissions volontaires correspondent aux cas où l'auteur à délibérément tronqué le texte. Elles peuvent par exemple être
+                           matérialisées par l'usage de trois points. Il convient d'utiliser la balise <gi>gap</gi> complétée par les attributs <att>reason</att> de valeur <val>"omitted"</val> et <att>resp</att>
                            pour indiquer que ce texte est une omission volontaire.
                         </p>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -2233,7 +2233,7 @@
                      <div5>
                         <head>Les restitutions</head>
                         <p>
-                           Suite à un dommage matériel, il est possible d'un segment du texte soit devenu illisible.
+                           <lb/>Suite à un dommage matériel, il est possible qu'un segment du texte soit devenu illisible.
                            Lorsqu'il est possible de restituer ce passage, il convient d'utiliser la balise <gi>supplied</gi>
                            et son attribut <att>reason</att> pour indiquer la cause.
                            <lb/>Lorsque toute restitution est impossible, il sera fait utilisation de l'élément <gi>gap</gi>.
@@ -2247,7 +2247,7 @@
                      <head>Les unités de mesures</head>
                      <p>
                         L'encodage des unités de mesure présente des intérêts historiques et scientifiques.
-                        Ces données seront encodées à l'aide de la balise <gi>measure</gi> complêtée des attributs <att>type</att> (type de donnée encodée),
+                        Ces données seront encodées à l'aide de la balise <gi>measure</gi> complêtée des attributs <att>type</att> (type de données encodées),
                         <att>unit</att> (unité), et <att>quantity</att> (pour l'indication numéraire).
                      </p>
                      <egXML xmlns="http://www.tei-c.org/ns/Examples">
