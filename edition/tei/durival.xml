@@ -234,7 +234,7 @@
                            </date>
                         </dateline>
                         <p xml:id="d1765010701" ana="#meteo">
-                           Pluye par huit et 8 <hi rend="super">1</hi>/<hi rend="sub">2</hi> dégrés de chaud
+                           Pluye par <measure type="temperature" unit="°C" quantity="8.5">huit et 8 <hi rend="super">1</hi>/<hi rend="sub">2</hi> dégrés de chaud</measure>
                         </p>
                      </div>
                      <div type="day" xml:id="d17650109">
@@ -457,7 +457,7 @@
                      <div type="day" xml:id="d17650218">
                         <dateline><date type="entry" when="1765-02-18">18</date></dateline>
                         <p xml:id="d1765021801" ana="#meteo">                           
-                           6 <hi rend="super">1</hi>/<hi rend="sub">2</hi> degrés de froid, à huit heures du matin.
+                           <measure type="temperature" unit="°C" quantity="-6.5">6 <hi rend="super">1</hi>/<hi rend="sub">2</hi> degrés de froid</measure>, à huit heures du matin.
                            <lb/>C'est le plus grand de cet hyver.
                         </p>
                         <p xml:id="d1765021802" ana="#ville">
@@ -474,8 +474,8 @@
                         <dateline><date type="entry" when="1765-02-19">19</date></dateline>
                         <p xml:id="d1765021901" ana="#meteo #ville #theatre #fetes">                           
                            Mardi gras. Representation au profit
-                           <lb/>des pauvres. 5 <hi rend="super">1</hi>/<hi rend="sub">2</hi> dégrés de frois à 8 h
-                           <lb/>du matin. 0 à <sic>un</sic> heure après midi.
+                           <lb/>des pauvres. <measure type="temperature" unit="°C" quantity="-5.5">5 <hi rend="super">1</hi>/<hi rend="sub">2</hi> dégrés de frois à <date when="1765-02-19T08:00:00">8 h
+                              <lb/>du matin</date></measure>. <measure type="temperature" unit="°C" quantity="0">0 à <date when="1765-02-19T13:00:00"><sic>un</sic> heure après midi</date></measure>.
                            <lb/>Les productions de la terre sont en sureté
                            <lb/>sous quelques pouces de neige.
                         </p>
@@ -572,7 +572,7 @@
                            <lb/>Il avoit été commis du tresorier de <placeName ref="#hotelLeopold">l'hotel du duc Leopold</placeName>.
                         </p>
                         <p xml:id="d1765031402" ana="#meteo">
-                           10 dégrés de chaud.
+                           <measure type="temperature" unit="°C" quantity="10">10 dégrés de chaud</measure>.
                         </p>
                      </div>
                      
@@ -1226,7 +1226,7 @@
                      <div type="day" xml:id="d17650517">
                         <dateline><date type="entry" when="1765-05-17">17</date></dateline>
                         <p xml:id="d1765051701" ana="#meteo">                           
-                           20 degrés de chaud après midi.
+                           <measure type="temperature" unit="°C" quantity="20">20 degrés de chaud <date when="1765-05-17T13:00:00">après midi</date></measure>.
                         </p>
                      </div>
                      <div type="day" xml:id="d17650520">
@@ -2344,7 +2344,7 @@
                      <div type="day" xml:id="d17650825">
                         <dateline><date type="entry" when="1765-08-25">25</date></dateline>
                         <p xml:id="d1765082501" ana="#meteo">                           
-                           Après midi 25 <hi rend="super">1</hi>/<hi rend="sub">2</hi> degrés de chaud.
+                           <measure type="temperature" unit="°C" quantity="25.5"><date when="1765-08-25T13:00:00">Après midi</date> 25 <hi rend="super">1</hi>/<hi rend="sub">2</hi> degrés de chaud</measure>.
                         </p>
                         <p xml:id="d1765082502" ana="#cour">
                            À <placeName ref="#commercy">Commercy</placeName> la ville avoit fait elever
@@ -2390,7 +2390,7 @@
                      <div type="day" xml:id="d17650828">
                         <dateline><date type="entry" when="1765-08-28">28</date></dateline>
                         <p xml:id="d1765082801" ana="#meteo">                           
-                           15 <choice><abbr>dég.</abbr><expan>degrés</expan></choice> de chaud à 7 h. du <choice><abbr>mat.</abbr><expan>matin</expan></choice> 25 à midi.
+                           <measure type="temperature" unit="°C" quantity="15">15 <choice><abbr>dég.</abbr><expan>degrés</expan></choice> de chaud à <date when="1765-08-28T07:00:00">7 h. du <choice><abbr>mat.</abbr><expan>matin</expan></choice></date></measure> <measure type="temperature" unit="°C" quantity="25">25 à <date when="1765-08-28T12:00:00">midi</date></measure>.
                         </p>
                         <p xml:id="d1765082802" ana="#cour">
                            <persName ref="#ducFleury">Le duc de Fleury</persName> passe incognito
@@ -3234,7 +3234,7 @@
                         </p>
                         <p xml:id="d1765112102" ana="#meteo">
                            Il a un peu gelé cette nuit, et le matin
-                           <lb/>le thermométre etoit au dégré glace.
+                           <lb/>le thermométre etoit <measure type="temperature" unit="°C" quantity="0">au dégré glace</measure>.
                         </p>
                      </div>
                   
@@ -3390,7 +3390,7 @@
                         <dateline><date type="entry" when="1765-12-05">5</date></dateline>
                         <p xml:id="d1765120501" ana="#theatre #meteo">                           
                            Aujourd'hui il a joué <title ref="#bib49">le Misantrope</title>. Son
-                           <lb/>jeu est la nature. 3 <choice><abbr>d</abbr><expan>degrés</expan></choice> <hi rend="super">1</hi>/<hi rend="sub">2</hi> de froid le matin.
+                           <lb/>jeu est la nature. <measure type="temperature" unit="°C" quantity="-3">3 <choice><abbr>d</abbr><expan>degrés</expan></choice> <hi rend="super">1</hi>/<hi rend="sub">2</hi> de froid <date when="1765-12-05">le matin</date></measure>.
                         </p>
                      </div>
                   
@@ -3613,8 +3613,8 @@
                      <div type="day" xml:id="d17651225">
                         <dateline><date type="entry" when="1765-12-25">25</date></dateline>
                         <p xml:id="d1765122501" ana="#meteo">                           
-                           Jour de Noël, 4 <choice><abbr>dég.</abbr><expan>degrés</expan></choice> de froid, à 8 h. du <choice><abbr>mat</abbr><expan>matin</expan></choice>.
-                           <lb/>Le soir à zero.
+                           Jour de Noël, <measure type="temperature" unit="°C" quantity="-4">4 <choice><abbr>dég.</abbr><expan>degrés</expan></choice> de froid, à <date when="1765-12-25T08:00:00">8 h. du <choice><abbr>mat</abbr><expan>matin</expan></choice></date></measure>.
+                           <lb/><measure type="temperature" unit="°C" quantity="0"><date when="1765-12-25">Le soir</date> à zero</measure>.
                         </p>
                      </div>
                   
@@ -3762,7 +3762,7 @@
                      <div type="day" xml:id="d17651231">
                         <dateline><date type="entry" when="1765-12-31">31</date></dateline>
                         <p xml:id="d1765123101" ana="#meteo">                           
-                           5 dégrés de froid à 8 h. du matin.
+                           <measure type="temperature" unit="°C" quantity="-5">5 dégrés de froid à <date when="1765-12-31T08:00:00">8 h. du matin</date></measure>.
                         </p>
                         <p xml:id="d1765123102" ana="#ville">
                            Adjudication à <placeName ref="#nancyHDV">l'hotel de ville</placeName> du droit
@@ -3785,7 +3785,7 @@
                      <div type="day" xml:id="d17660101">
                         <dateline><date type="entry" when="1766-01-01">1<hi rend="super">er.</hi></date></dateline>
                         <p xml:id="d1766010101" ana="#meteo">                           
-                           7 dégrés de froid à 8 h. du matin 6 à 9 h.
+                           <measure type="temperature" unit="°C" quantity="-7">7 dégrés de froid à <date when="1766-01-01T08:00:00">8 h. du matin</date></measure> <measure type="temperature" unit="°C" quantity="-6">6 à <date when="1766-01-01T09:00:00">9 h</date></measure>.
                            <lb/>Le feu à une cheminé <sic>chés</sic> <persName ref="#deMalleloy">M. de Malleloy</persName>
                            <lb/>à midi.
                         </p>
@@ -3798,14 +3798,14 @@
                      <div type="day" xml:id="d17660102">
                         <dateline><date type="entry" when="1766-01-02">2</date></dateline>
                         <p xml:id="d1766010201" ana="#meteo">                           
-                           7 <choice><abbr>dèg.</abbr><expan>degrés</expan></choice> de froid à 8 h <hi rend="super">1</hi>/<hi rend="sub">2</hi> du matin
+                           <measure type="temperature" unit="°C" quantity="-7">7 <choice><abbr>dèg.</abbr><expan>degrés</expan></choice> de froid à <date when="1766-02-01T08:30:00">8 h <hi rend="super">1</hi>/<hi rend="sub">2</hi> du matin</date></measure>
                         </p>
                      </div>
                      
                      <div type="day" xml:id="d17660103">
                         <dateline><date type="entry" when="1766-01-03">3</date></dateline>
                         <p xml:id="d1766010301" ana="#meteo">                           
-                           Id.
+                           <measure type="temperature" unit="°C" quantity="-7">Id</measure>.
                         </p>
                         <p xml:id="d1766010302" ana="#cour">
                            On me mande de <placeName ref="#versailles">Versailles</placeName> <date when="1765-12-30">le 30 <choice><abbr>X<hi rend="super">bre</hi></abbr><expan>décembre</expan></choice></date>.
@@ -3828,15 +3828,15 @@
                      <div type="day" xml:id="d17660106">
                         <dateline><date type="entry" when="1766-01-06">6</date></dateline>
                         <p xml:id="d1766010601" ana="#meteo">                           
-                           6 <choice><abbr>dég</abbr><expan>degrés</expan></choice> <hi rend="super">1</hi>/<hi rend="sub">2</hi>. de froid à 8 h. du matin.
+                           <measure type="temperature" unit="°C" quantity="-6.5">6 <choice><abbr>dég</abbr><expan>degrés</expan></choice> <hi rend="super">1</hi>/<hi rend="sub">2</hi>. de froid à <date when="1766-01-06T08:00:00">8 h. du matin</date></measure>.
                         </p>
                      </div>
                      
                      <div type="day" xml:id="d17660107">
                         <dateline><date type="entry" when="1766-01-07">7</date></dateline>
                         <p xml:id="d1766010701" ana="#meteo">                           
-                           7 <choice><abbr>dég</abbr><expan>degrés</expan></choice> <hi rend="super">1</hi>/<hi rend="sub">2</hi>. de froid à 8 h. du matin. 4 à
-                           <lb/>2h. après midi.
+                           <measure type="temperature" unit="°C" quantity="-7.5">7 <choice><abbr>dég</abbr><expan>degrés</expan></choice> <hi rend="super">1</hi>/<hi rend="sub">2</hi>. de froid à <date when="1766-07-06T08:00:00">8 h. du matin</date></measure>. <measure type="temperature" unit="°C" quantity="-4">4 à
+                              <lb/><date when="1766-01-07T14:00:00">2h. après midi</date></measure>.
                         </p>
                         <p xml:id="d1766010702" ana="#ville">
                            Le feu a pris cet après midi dans le cabinet
@@ -3859,10 +3859,10 @@
                      <div type="day" xml:id="d17660108">
                         <dateline><date type="entry" when="1766-01-08">8</date></dateline>
                         <p xml:id="d1766010801" ana="#meteo">                           
-                           A onze heures du soir hier 8 <choice><abbr>dég</abbr><expan>degrés</expan></choice> <hi rend="super">1</hi>/<hi rend="sub">2</hi> de
-                           <lb/>froid. aujourd'hui à 4 h. du matin
-                           <lb/>7 <choice><abbr>dég.</abbr><expan>degrés</expan></choice> à 9 h. 5 à midi 4, et à
-                           <lb/>3 h. du soir  3 <hi rend="super">1</hi>/<hi rend="sub">2</hi>.
+                           <measure type="temperature" unit="°C" quantity="-8">A <date when="1766-01-07T23:00:00">onze heures du soir hier</date> 8 <choice><abbr>dég</abbr><expan>degrés</expan></choice> <hi rend="super">1</hi>/<hi rend="sub">2</hi> de
+                              <lb/>froid</measure>. aujourd'hui à <measure type="temperature" unit="°C" quantity="-7"><date when="1766-01-08T04:00:00">4 h. du matin</date>
+                                 <lb/>7 <choice><abbr>dég.</abbr><expan>degrés</expan></choice></measure> à <measure type="temperature" unit="°C" quantity="-5"><date when="1766-01-08T09:00:00">9 h</date>. 5</measure> à <measure type="temperature" unit="°C" quantity="-4"><date when="1766-01-08T12:00:00">midi</date> 4</measure>, et à
+                           <lb/><measure type="temperature" unit="°C" quantity="-3.5">3 h. du soir  3 <hi rend="super">1</hi>/<hi rend="sub">2</hi></measure>.<!-- todo 3h du soir => 3 h du matin ? -->
                         </p>
                      </div>
                      
@@ -3870,8 +3870,8 @@
                         <dateline><date type="entry" when="1766-01-09">9</date></dateline>
                         <p xml:id="d1766010901" ana="#meteo">                           
                            Le vent est revenu au Nord-Est pendant la
-                           <lb/>nuit, et il y avoit 9 dégrés de froid à
-                           <lb/>7 h. du matin 7 <choice><abbr>dég.</abbr><expan>degrés</expan></choice> à 9. h. Il avoit
+                           <lb/>nuit, et il y avoit <measure type="temperature" unit="°C" quantity="-9">9 dégrés de froid à
+                              <lb/><date when="1766-01-09T07:00:00">7 h. du matin</date></measure> <measure type="temperature" unit="°C" quantity="-7">7 <choice><abbr>dég.</abbr><expan>degrés</expan></choice> à <date when="1766-01-09T09:00:00">9. h</date></measure>. Il avoit
                            <lb/>hier tombé de la neige.
                         </p>
                         <p xml:id="d1766010902" ana="#aca">
@@ -3912,15 +3912,15 @@
                      <div type="day" xml:id="d17660110">
                         <dateline><date type="entry" when="1766-01-10">10</date></dateline>
                         <p xml:id="d1766011001" ana="#meteo">                           
-                           froid 10 <choice><abbr>deg.</abbr><expan>degrés</expan></choice> <hi rend="super">3</hi>/<hi rend="sub">4</hi> à 7 heures du matin.
-                           <lb/>10 dég. à 9 h.
+                           <measure type="temperature" unit="°C" quantity="-10.7">froid 10 <choice><abbr>deg.</abbr><expan>degrés</expan></choice> <hi rend="super">3</hi>/<hi rend="sub">4</hi> à <date when="1766-01-10T07:00:00">7 heures du matin</date></measure>.
+                           <lb/><measure type="temperature" unit="°C" quantity="-10">10 dég. à <date when="1766-01-10T09:00:00">9 h</date></measure>.
                         </p>
                      </div>
                      
                      <div type="day" xml:id="d17660111">
                         <dateline><date type="entry" when="1766-01-11">11</date></dateline>
                         <p xml:id="d1766011101" ana="#meteo">                           
-                           Aujoud'hui à 8 h. du matin 8 <choice><abbr>dég.</abbr><expan>degrés</expan></choice> <hi rend="super">1</hi>/<hi rend="sub">2</hi>
+                           Aujoud'hui à <measure type="temperature" unit="°C" quantity="-8.5"><date when="1766-01-11T08:00:00">8 h. du matin</date> 8 <choice><abbr>dég.</abbr><expan>degrés</expan></choice> <hi rend="super">1</hi>/<hi rend="sub">2</hi></measure>
                         </p>
                         <p xml:id="d1766011102" ana="#fetes">
                            Service que sont célébrer <orgName ref="#benedictin">les PP. benedictins</orgName>
