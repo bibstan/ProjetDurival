@@ -686,6 +686,7 @@
                   <attDef ident="type" mode="change">
                      <valList mode="add" type="closed">
                         <valItem ident="currency"/>
+                        <valItem ident="temperature"/>
                      </valList>
                   </attDef>
                   <attDef ident="ana" mode="delete"/>
@@ -704,6 +705,9 @@
                         </valItem>
                         <valItem ident="louis">
                            <desc>Louis</desc>
+                        </valItem>
+                        <valItem ident="°C">
+                           <desc>°C</desc>
                         </valItem>
                      </valList>
                   </attDef>
