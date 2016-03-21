@@ -347,14 +347,14 @@
                      <div type="day" xml:id="d17650124">
                         <dateline><date type="entry" when="1765-01-24">24</date></dateline>
                         <p xml:id="d1765012401" ana="#bio">                                                   
-                           <persName ref="#durivalClaude">Mon frere Claude</persName> m'ecrit : <quote><orgName ref="#conseilAulique">Le Conseil aulique</orgName>
+                           <persName ref="#durivalClaude">Mon frere Claude</persName> m'ecrit <q ><orgName ref="#conseilAulique">Le Conseil aulique</orgName>
                               <lb/>m'a fait présent d'un brevet de secretaire du
                               <lb/>cabinet du roy, en consideration de mes <hi rend="underline">longs
                                  <lb/>services, tant comme secretaire de l'intendance
                                  <lb/>qu'en mes qualites actuelles de greffier en chef
                                  <pb facs="B543956101M00863_06_0074_1L" n="71v"/>du <orgName ref="#conseilEtat">Conseil d’État</orgName> et d'œconome-séquestre des
                                  <lb/>benefices à la nomination de <rs type="person" ref="#stanislas"><choice><abbr>S. M.</abbr><expan>Sa Majesté</expan></choice></rs></hi>
-                           </quote>.
+                           </q>.
                         </p>
                      </div>
                      <div type="day" xml:id="d17650127">
@@ -2220,7 +2220,7 @@
                      <div type="day" xml:id="d17650818">
                         <dateline><date type="entry" when="1765-08-18">18</date></dateline>
                         <p xml:id="d1765081801" ana="#cour">                           
-                           On m'ecrit de <placeName ref="#commercy">Commercy</placeName> : <quote><rs type="person" ref="#intendant">M. l'Intendant</rs>
+                           On m'ecrit de <placeName ref="#commercy">Commercy</placeName> <q><rs type="person" ref="#intendant">M. l'Intendant</rs>
                               <lb/>arriva <date when="1765-08-17">hier vers 8 h <hi rend="super">1</hi>/<hi rend="sub">2</hi></date> il est parti cet après
                               <lb/>midi avec <persName ref="#fleury">M. le duc de Fleury</persName>, pour se rendre
                               <lb/>à <placeName ref="#bar">Bar</placeName>. <rs type="person" ref="#durivalJean">Notre frere</rs> les dévance de quelques 
@@ -2230,7 +2230,7 @@
                               <lb/>On croit que <rs type="person" ref="#stanislas">le roy</rs> ira à sa rencontre jusqu'à
                               <lb/><placeName ref="#stAubin">S. Aubin</placeName> ; on voudroit qu'il n'allat qu'à <placeName ref="#fontaineRoyale">la
                                  <lb/>fontaine roïale</placeName>. Toutes les maisons des
-                              <lb/>bourgeois sont remplies</quote>.
+                              <lb/>bourgeois sont remplies</q>.
                         </p>
                      </div>
                   
@@ -2265,10 +2265,8 @@
                         <dateline><date type="entry" when="1765-08-20">20</date></dateline>
                         <p xml:id="d17650820_0201" ana="#cour">                           
                            Lettre de <rs type="person" ref="#durivalClaude">mon jeune frere</rs>, écrite de <placeName ref="#commercy">Commercy</placeName>.
-                        </p>
-                        <quote type="letter" xml:id="d17650820_0202">
-                           <p>
-                              <rs type="person" ref="#leszczynskaMarie">La reine</rs> arriva hier vers six heures du
+                           <q>                           
+                              <lb/><rs type="person" ref="#leszczynskaMarie">La reine</rs> arriva hier vers six heures du
                               <lb/>soir. <rs type="person" ref="#stanislas">Le roi</rs> etoit allé à sa rencontre jusqu'à
                               <lb/><placeName ref="#stAubin">S. Aubin</placeName>, où il attendit plus de trois heures.
                               <lb/>C'est là que s'est faite la premiere entrevuë
@@ -2287,9 +2285,9 @@
                               <lb/>arrêter les comptes et solder. <persName ref="#najacMme">Mad. de Najac</persName>
                               <lb/>et <rs type="person" ref="#najac">M.</rs> sont logés dans mon corridor, <persName ref="#thibaultMme">Mad.
                                  <lb/>Thibault</persName> et <persName ref="#marchandMlle">M<hi rend="super">lle</hi>. Marchand</persName> en sont tous
-                              <lb/>à portée.
-                           </p>
-                        </quote>
+                              <lb/>à portée.                           
+                           </q>
+                        </p>                        
                      </div>
                      <pb facs="B543956101M00863_06_0095_1L" n="92v"/>
                      <div type="day" xml:id="d17650822">
@@ -3476,7 +3474,7 @@
                               Vers <persName ref="#aufresnePere">d'Aufresne</persName>, pere de l'acteur,
                               <lb/>à <persName ref="#voltaire">M. de Voltaire</persName>
                            </p>                     
-                           <quote>
+                           <quote type="verse">
                               <lg>
                                  <l><persName ref="#servet">Servet</persName> eut tort et fus un sot</l>
                                  <l>d'oser dans un siécle falot</l>
@@ -4189,11 +4187,11 @@
                         <p xml:id="d1766020603" ana="#meteo">
                            Je reçois une lettre de <persName ref="#abbeExpilly">l'abbée Expilly</persName>
                            <lb/>d'<placeName ref="#avignon">avignon</placeName> <date when="1766-01-26">26 Janv<hi rend="super">er</hi>. 1766.</date> Il dit :
-                           <lb/><quote>Depuis près d'un mois et demi il ne cesse
+                           <lb/><q>Depuis près d'un mois et demi il ne cesse
                               <lb/>de geler ici. Ces jours passés le regiment
                               <lb/>de roïal-italien a traversé <placeName ref="#rhone">le Rhône</placeName> sur
                               <lb/>la glace, à sec, de <placeName ref="#beaucaire">Beaucaire</placeName> à <placeName ref="#tarascon">Tarascon</placeName>,
-                              <lb/>avec armes et bagages</quote>.
+                              <lb/>avec armes et bagages</q>.
                         </p>
                         <p xml:id="d1766020604" ana="#necro">
                            Mort du <persName ref="#menoux">pere de Menoux</persName>, jesuite cyd.
@@ -4519,7 +4517,7 @@
                               <lb/>et demie après midi</date>, j'ai reçu ceci
                            <lb/>de <rs type="person" ref="#durivalJean">mon frere <choice><abbr>comm<hi rend="super">re</hi></abbr><expan>commissaire</expan></choice></rs>.
                         </p> 
-                        <quote type="report" xml:id="d1766022302" ana="#stan">
+                        <q type="report" xml:id="d1766022302" ana="#stan">
                            <seg type="dateline"><date when="1766-02-23T08:00:00">Le 23 8 h. du matin</date></seg>
                            <p xml:id="d176602230201">
                               <lb/>Il n'y a plus d'espérance de conserver
@@ -4527,7 +4525,7 @@
                               <lb/>de vie : vous recevrés encore de mes
                               <lb/>nouvelles aujourdhui.
                            </p>
-                        </quote>
+                        </q>
                         <p xml:id="d1766022303" ana="#stan">
                            Il ajoute séparément ;
                            <quote>
@@ -4577,7 +4575,13 @@
                            <seg type="dateline"><placeName ref="#luneville">Lunèville</placeName> <date when="1766-02-23T16:15:00">23 <choice><abbr>f<hi rend="super">er</hi>.</abbr><expan>février</expan></choice> 4 h<hi rend="super">1</hi>/<hi rend="sub">4</hi></date></seg>
                            <lb/><persName ref="#chapuis">M. Chapuis</persName> va vous annoncer la perte que
                            <lb/>nous venons de faire du <rs type="person" ref="#stanislas">meilleur des rois</rs>. Je
-                           <lb/>vous attens demain dans la matinée.
+                           <lb/>vous attens demain dans la matinée. 
+                           <add place="marginLeft">
+                              Il expira
+                              <lb/>à 4 h. et
+                              <lb/>quelques minuttes
+                              <lb/>du soir.
+                           </add>
                         </quote>
                         <p xml:id="d1766022310" ana="#stan">
                            <persName ref="#chapuis">M. Chapuis</persName> a ajouté de bouche beaucoup de
@@ -5566,10 +5570,10 @@
                            <lb/>et <persName ref="#stRochVicaire">le vicaire de S. Roch</persName> est allé convenir du jour.
                         </p>
                         <p xml:id="d1766032203" ana="#cour">
-                           On m'écrit de <placeName ref="#luneville">Lunéville</placeName> <date when="1766-03-22">le 22.</date> : <quote>notre cour
+                           On m'écrit de <placeName ref="#luneville">Lunéville</placeName> <date when="1766-03-22">le 22.</date> : <q>notre cour
                               <lb/>se dépeuple petit à petit. Tout le monde se
                               <lb/>plaint. Il n'y a encore rien de décidé
-                              <lb/>définitivement En attendant on délivre les legs</quote>.
+                              <lb/>définitivement En attendant on délivre les legs</q>.
                         </p>
                      </div>
                      <pb facs="B543956101M00863_06_0130_2R" n="127"/><fw type="pageNum" n="127" place="topRight">127</fw>
@@ -6174,7 +6178,7 @@
                            <lb/>arrivé d'hier. L'après midi j'ai reçu cet
                            <lb/>avertissement.
                         </p>
-                        <quote type="letter" xml:id="d1766050902" ana="#stan">
+                        <q type="letter" xml:id="d1766050902" ana="#stan">
                            <seg type="opener">
                               <seg type="salute"><rs type="person" ref="#durival">M. le lieutenant general de police</rs></seg>
                            </seg>
@@ -6192,7 +6196,7 @@
                            <seg type="closer">
                               <seg type="signed"><hi rend="underline">signé</hi> <persName ref="#collenel">Collenel</persName>.</seg>
                            </seg>
-                        </quote>
+                        </q>
                      </div>
                   
                      <div type="day" xml:id="d17660510">
@@ -6390,13 +6394,13 @@
                         </p>
                         <p xml:id="d1766052402">
                            <rs type="person" ref="#durivalJean">Mon frere</rs> qui m'avoit prevenu dès <date when="1766-05-19">le 19</date>
-                           <lb/>m'ecrit de <placeName ref="#versailles">Versailles</placeName> <date when="1766-05-21">le 21</date> <quote>Je suis en exercice
+                           <lb/>m'ecrit de <placeName ref="#versailles">Versailles</placeName> <date when="1766-05-21">le 21</date> <q>Je suis en exercice
                               <lb/>de la place de <hi rend="underline">secretaire des affaire étrangeres</hi>.
                               <lb/>Je partage aussi avec <persName ref="#deLaPonce">M. de La Ponce</persName> les détails
                               <lb/>du secretariat de la guerre, comme il partage
                               <lb/>avec moi ceux du secretariat des affaires
                               <lb/>étrangeres, afin de pouvoir <choice><abbr>mutuellem<hi rend="super">t</hi>.</abbr><expan>mutuellement</expan></choice>
-                              <lb/>nous <sic>supléer</sic> <sic>au près</sic> du <rs type="person" ref="#ministre">ministre</rs></quote>
+                              <lb/>nous <sic>supléer</sic> <sic>au près</sic> du <rs type="person" ref="#ministre">ministre</rs></q>
                         </p>
                         <p xml:id="d1766052403">
                            <rs type="person" ref="#durivalClaude">Mon jeune frere</rs> m'avoit <sic>apris</sic> du <date when="1766-05-18">18</date> que
@@ -6839,9 +6843,9 @@
                   
                      <div type="day" xml:id="d17660707">
                         <dateline><date type="entry" when="1766-07-07">7</date></dateline>
-                        <p xml:id="d1766070701" ana="#necro">                           
-                           On m'ecrit du <date when="1766-07-06">6</date> de <placeName ref="#luneville">Lunèville</placeName> : <quote><persName ref="#mengin">M. Mengin</persName>
-                              <lb/><choice><abbr>P<hi rend="super">r</hi>.</abbr><expan>procureur</expan></choice> du roy est mort la nuit derniere d'apoplexie</quote>.
+                        <p xml:id="d1766070701" ana="#necro"><!-- todo vérif sur l'original la modif du 6 en 7 -->                           
+                           On m'ecrit du <date when="1766-07-07"><subst><del rend="overwritten">6</del><add rend="superimposed">7</add></subst></date> de <placeName ref="#luneville">Lunèville</placeName> : <q><persName ref="#mengin">M. Mengin</persName>
+                              <lb/><choice><abbr>P<hi rend="super">r</hi>.</abbr><expan>procureur</expan></choice> du roy est mort la nuit derniere d'apoplexie</q>.
                         </p>
                      </div>
                   
@@ -7274,11 +7278,11 @@
                         <dateline><date type="entry" when="1766-08-15">15</date></dateline>
                         <p xml:id="d1766081501" ana="#armee">                           
                            <rs type="person" ref="#durivalJean">Mon frere le <choice><abbr>comm<hi rend="super">re</hi>.</abbr><expan>commissaire</expan></choice></rs> m'ecrit de <placeName ref="#compiegne">Compiégne</placeName>
-                           <lb/><date when="1766-08-11">le 11</date> <quote>Le camps des suisses se séparera dans
+                           <lb/><date when="1766-08-11">le 11</date> <q>Le camps des suisses se séparera dans
                               <lb/>deux jours. Celui des français s'assemblera
                               <lb/>ensuite composé de 16 bataillons, et puis
                               <pb facs="B543956101M00863_06_0148_1L" n="144v"/>Un troisiéme du seul <choice><abbr>reg<hi rend="super">t</hi>.</abbr><expan>régiment</expan></choice> de navarre. Tous
-                              <lb/>cela sera fini pour <date when="1766-08-28">le 28</date></quote>.
+                              <lb/>cela sera fini pour <date when="1766-08-28">le 28</date></q>.
                         </p>                     
                         <p xml:id="d1766081502" ana="#fetes #meteo">
                            Tout etoit prêt pour faire aujourd'hui la
@@ -7339,7 +7343,7 @@
                            J'ai reçu ce matin de <persName ref="#marcol">M. de Marcol</persName>, <choice><abbr>P<hi rend="super">r</hi>. g<hi rend="super">l</hi>.</abbr><expan>procureur général</expan></choice>
                            <lb/>la lettre suivante.
                         </p>
-                        <quote type="letter" xml:id="d1766081702">
+                        <q type="letter" xml:id="d1766081702">
                            <seg type="opener">
                               <seg type="dateline"><placeName ref="#nancy">Nancy</placeName> <date when="1766-08-15">le 15 août 1766</date></seg>
                            </seg>
@@ -7373,7 +7377,7 @@
                               </seg>
                               <seg type="signed"><hi rend="underline">signé</hi> <persName ref="#marcol">Marcol.</persName></seg>
                            </seg>
-                        </quote>
+                        </q>
                      </div>
                   
                      <div type="day" xml:id="d17660817_02">
@@ -7920,7 +7924,7 @@
                            Je reçois en meme tems pour les officiers
                            <lb/>municipaux la lettre ci-après.
                         </p> 
-                        <quote type="letter" xml:id="d1766100803">
+                        <q type="letter" xml:id="d1766100803">
                            <seg type="opener">
                               <seg type="salute">Messieurs,</seg>
                            </seg>
@@ -7974,7 +7978,7 @@
                                  <lb/><addrLine>à <placeName ref="#paris">Paris</placeName></addrLine></address> <date when="1766-10-01">le 1<hi rend="super">er</hi> octobre 1766</date>
                               </seg>                              
                            </seg>                           
-                        </quote>
+                        </q>
                         <p xml:id="d1766100804" ana="#ville"><!-- todo note criaient haillons -->
                            Cet après midi comme les vendanges rentroient
                            <lb/>à <placeName ref="#heillecourt">Heillecourt</placeName> et crioient haillons, comme
@@ -8031,12 +8035,12 @@
                         <dateline><date type="entry" when="1766-10-17">17</date></dateline>
                         <p xml:id="d1766101701">                           
                            <rs type="person" ref="#durivalClaude">Mon jeune frere</rs> me marque du <date when="1766-10-12">12</date> 
-                           <quote>
+                           <q>
                               <lb/>J’<sic>apris</sic> hier qu’on a établi <persName ref="#cochin">M. Cochin</persName>, avocat
                               <pb facs="B543956101M00863_06_0155_2R" n="152"/><fw type="pageNum" n="152" place="topRight">152</fw>parent de <rs type="person" ref="#controleurGeneral">M. le controleur general</rs>, dépositaire
                               <lb/>des papiers de <placeName ref="#lorraine">la Lorraine</placeName>, et qu’on attendra
                               <lb/><persName ref="#bremon">M. Bremon</persName> pour lui en faire la remise
-                           </quote>.
+                           </q>.
                         </p>
                      </div>
                      
