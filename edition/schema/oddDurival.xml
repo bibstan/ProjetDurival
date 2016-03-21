@@ -494,9 +494,14 @@
                   <attDef ident="facs" mode="delete"/>
                   <attDef ident="resp" mode="delete"/>
                   <attDef ident="who" mode="delete"/>
-                  <attDef ident="type" mode="delete"/>
-                  <attDef ident="n" mode="delete"/>
-                  <attDef ident="ana" mode="delete"/>                  
+                  <attDef ident="type" mode="change">
+                     <valList mode="add" type="closed">
+                        <valItem ident="letter"/>
+                        <valItem ident="report"/>
+                        <valItem ident="verse"/>
+                     </valList>
+                  </attDef>
+                  <attDef ident="n" mode="delete"/>                                    
                </attList>
             </elementSpec>
             <elementSpec ident="foreign" mode="change">
@@ -1789,8 +1794,7 @@
                               <lb/>Notons que cette liste de valeur pourra évoluer tout au long du développement du projet.
                            </item>
                            <item>
-                              Les citations intégrées dans un paragraphe seront encodées avec l'élément <gi>q</gi> lorsqu'elles sont représentées entre guillemets, et l'élément 
-                              <gi>quote</gi> dans les autres cas. 
+                              De la même manière les passages entre guillemets seront encodées avec l'élément <gi>q</gi>. 
                            </item>
                         </list>
                      </p>
