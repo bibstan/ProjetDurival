@@ -55,7 +55,10 @@
          </projectDesc>
          <editorialDecl>
             <normalization>
-               <p><!--Décisions de transcription--></p>
+               <p>
+                  <!-- todo -->
+                  
+               </p>
             </normalization>
             <interpretation>               
                <p>
@@ -8455,7 +8458,7 @@
                      <div type="day" xml:id="d17661220">
                         <dateline><date type="entry" when="1766-12-20">20</date></dateline>
                         <p xml:id="d1766122001" ana="#meteo">                           
-                           Il a commencé à neiger vers dis heures
+                           Il a commencé à neiger vers dix heures
                            <lb/>du matin. Il avoit un peu gelé la nuit
                         </p>
                         <p xml:id="d1766122002">
