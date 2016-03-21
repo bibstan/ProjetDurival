@@ -94,7 +94,7 @@
     
     <xsl:template match="tei:div[@type='day']">
         <div class="row">
-            <div class="large-4 columns"><xsl:apply-templates select="tei:p/tei:dateline/tei:date[@type='entry']"/></div>
+            <div class="large-4 columns"><xsl:apply-templates select="tei:dateline/tei:date[@type='entry']"/></div>
             <div class="large-8 columns">
                 <xsl:for-each select="tei:p | tei:quote | tei:q">
                     <xsl:variable name="id" select="@xml:id"/>
