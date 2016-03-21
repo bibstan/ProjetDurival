@@ -482,19 +482,28 @@
             </classSpec>
             <!--Checking module core-->
             <moduleRef key="core"
-                       include="p hi quote desc term sic choice gap add del rs address addrLine measure date abbr expan list item head pb lb cb author respStmt resp title publisher pubPlace bibl listBibl l lg note ref teiCorpus foreign"/>
+                       include="p hi quote q desc term sic choice gap add del rs address addrLine measure date abbr expan list item head pb lb cb author respStmt resp title publisher pubPlace bibl listBibl l lg note ref teiCorpus foreign"/>
             <elementSpec ident="p" mode="change">
                <attList>
                   <attDef ident="facs" mode="delete"/>
                   <attDef ident="resp" mode="delete"/>                  
                </attList>
             </elementSpec>
+            <elementSpec ident="q" mode="change">
+               <attList>
+                  <attDef ident="facs" mode="delete"/>
+                  <attDef ident="resp" mode="delete"/>
+                  <attDef ident="who" mode="delete"/>
+                  <attDef ident="type" mode="delete"/>
+                  <attDef ident="n" mode="delete"/>
+                  <attDef ident="ana" mode="delete"/>                  
+               </attList>
+            </elementSpec>
             <elementSpec ident="foreign" mode="change">
                <attList>
                   <attDef ident="ana" mode="delete"/>
                   <attDef ident="facs" mode="delete"/>
-                  <attDef ident="resp" mode="delete"/>
-                  <attDef ident="rend" mode="delete"/>
+                  <attDef ident="resp" mode="delete"/>                  
                   <attDef ident="n" mode="delete"/>
                </attList>
             </elementSpec>
