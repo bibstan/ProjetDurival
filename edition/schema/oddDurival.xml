@@ -1257,7 +1257,7 @@
                            <desc>Indique un signature.</desc>
                         </valItem>
                         <valItem ident="event">
-                           <desc>Cette valeur peut être utilisée lorsqu'un évênement est daté de manière précise.</desc>
+                           <desc>Cette valeur peut être utilisée lorsqu'un évènement est daté de manière précise.</desc>
                         </valItem>
                      </valList>
                   </attDef>
@@ -2034,6 +2034,21 @@
                         </egXML>
                      </div5>
                      <div5>
+                        <head>Les évènements</head>
+                        <p>
+                           <lb/>Certains evênements, comme l'agonie du roi de Pologne, sont très détaillés et son état de santé nous est rapporté presque heure par heure.
+                           Ces passages comportant une date précise, peuvent être encodés à l'aide de l'élément <gi>seg</gi> et de son attribut <att>type</att> de valeur <val>"event"</val>.
+                           <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                              <p xml:id="d176602210202" ana="#stan">
+                                 Le présage qu'on en tira pour une nuit plus
+                                 <lb/><sic>tranquile</sic> que la précédente s'est confirmé en
+                                 <lb/>partie ; <seg type="event"><rs type="person" ref="#stanislas">le roy</rs> a passablement dormi <date from="1766-02-21T00:00:00" to="1766-02-21T06:00:00">depuis
+                                 <lb/>minuit jusqu'à six heures</date></seg>.
+                              </p>
+                           </egXML>
+                        </p>
+                     </div5>
+                     <div5>
                         <head>Les textes en vers</head>
                         <p>
                            <lb/>Pour les textes en vers, chaque strophe sera encodée par un élément <gi>lg</gi>. 
@@ -2402,10 +2417,17 @@
                         L'encodage des unités de mesure présente des intérêts historiques et scientifiques.
                         Ces données seront encodées à l'aide de la balise <gi>measure</gi> complêtée des attributs <att>type</att> (type de données encodées),
                         <att>unit</att> (unité), et <att>quantity</att> (pour l'indication numéraire).
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <measure type="currency" unit="l" quantity="100000">cent mille livres</measure>
+                        </egXML>
+                     </p>                     
+                     <p>
+                        Pour les données météorologiques, il est important de les relier à la date correspondante. Nous prendrons soin d'attribuer un <att>xml:id</att> à la date, 
+                        et de lier l'élément <gi>measure</gi> à cette date par l'utilisation de l'attribut <att>corresp</att>.
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                           <measure type="temperature" unit="°Re" quantity="0" corresp="#meteo176504">0</measure> à <date xml:id="meteo176504" when="1765-02-19T13:00:00">une heure après midi</date>.
+                        </egXML>
                      </p>
-                     <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                        <measure type="currency" unit="l" quantity="100000">cent mille livres</measure>
-                     </egXML>
                   </div4>
                </div3>
                <div3>
