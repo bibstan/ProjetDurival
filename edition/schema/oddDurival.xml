@@ -405,12 +405,13 @@
                   <attDef ident="group" mode="delete"/>
                </attList>
             </classSpec>
-            <classSpec ident="att.datable.w3c" type="atts" mode="change">
+            <!-- Pour la méteo à décommenter si inutile -->
+            <!--<classSpec ident="att.datable.w3c" type="atts" mode="change"> 
                <attList>
                   <attDef ident="notBefore" mode="delete"/>
                   <attDef ident="notAfter" mode="delete"/>
                </attList>
-            </classSpec>
+            </classSpec>-->
             <classSpec ident="att.datable" type="atts" mode="change">
                <attList>
                   <attDef ident="calendar" mode="delete"/>
@@ -683,6 +684,7 @@
             </elementSpec>
             <elementSpec ident="measure" mode="change"><!-- todo faire quelque chose pour la température -->
                <attList>
+                  <attDef ident="corresp" mode="add"/>
                   <attDef ident="type" mode="change">
                      <valList mode="add" type="closed">
                         <valItem ident="currency"/>
@@ -706,8 +708,8 @@
                         <valItem ident="louis">
                            <desc>Louis</desc>
                         </valItem>
-                        <valItem ident="°C">
-                           <desc>°C</desc>
+                        <valItem ident="°Re">
+                           <desc>°Ré : degré Réaumur</desc>
                         </valItem>
                      </valList>
                   </attDef>
