@@ -1151,6 +1151,7 @@
                         <valItem ident="print"/>
                         <valItem ident="salute"/>
                         <valItem ident="signed"/>
+                        <valItem ident="event"/>
                      </valList>
                   </attDef>
                   <attDef ident="n" mode="delete"/>

@@ -54,15 +54,25 @@
             <p>L'objectif du projet est de fournir une édition augmentée du Journal blabla</p>
          </projectDesc>
          <editorialDecl>            
-            <normalization>               
-               <p>                  
-                                    
+            <normalization method="silent">               
+               <p>
+                  Lors de la transcription, l'emploi des majuscules et des minuscules a été modernisé. 
+                  Si les mots agglutinés ont été séparés conformément à la graphie moderne, les termes aujourd'hui réunis n'ont pas été soudés.
+                  La ponctuation a été mintenue, en revanche, les signes de ponctuation double (;-:-?-!) sont précédés d'un espace.
+               </p>
+            </normalization>
+            <normalization method="markup">
+               <p>
+                  Les éléments <gi>choice</gi>, <gi>abbr</gi> et <gi>expan</gi> ont été utilisés pour le développement des abréviations.
+                  La graphie n'ayant pas été modernisée, les termes dont l'orthographe peut sembler douteuse, ont été encodés avec l'élément <gi>sic</gi>.
+                  Les coupures de mot en fin de ligne sont maintenues ; elles sont balisées au moyen des éléments <gi>w</gi> et <gi>lb</gi>.
+                  Les omissions et blancs laissés vacants par l'auteur, sont encodés respectivement avec les balises <gi>gap</gi> et <gi>space</gi>. 
                </p>
             </normalization>
             <quotation>
                <p>
                   Les guillemets n'ont pas été conservés. En lieu et place de ces marques de citation, nous avons utilisé l'élément <gi>q</gi>.
-                  Pour les autres cas de figure c'est l'élément <gi>quote</gi> qui a été retenu.
+                  Lorsque les citations n'ont pas été retranscrites avec des guillemets par l'auteur, nous avons employé la balise <gi>quote</gi>.
                </p>
             </quotation>            
             <interpretation>               
@@ -4346,7 +4356,7 @@
                         <p xml:id="d1766021903">
                            <persName ref="#intendantMme">Mad <hi rend="super">e</hi>. l'Intendante</persName> est partie ce matin
                            <lb/>pour <placeName ref="#paris">Paris</placeName>, où elle fera ses couches. <persName ref="#intendant">M.
-                              <lb/>l'Intendant</persName> est allé à <placeName ref="#luneville">Lunèville</placeName>.
+                           <lb/>l'Intendant</persName> est allé à <placeName ref="#luneville">Lunèville</placeName>.
                         </p>
                      </div>
                   
@@ -4361,9 +4371,9 @@
                         <quote type="report" xml:id="d1766022002" ana="#stan">                        
                            <seg type="dateline">Bulletin de <placeName ref="#luneville">Luneville</placeName> <date when="1766-02-20">le 20</date></seg>
                            <p>
-                              <lb/><rs type="person" ref="#stanislas">le roy</rs> eut <date when="1766-02-20T22:00:00">hier à 10 h. du soir</date> un frisson
+                              <lb/><seg type="event"><rs type="person" ref="#stanislas">le roy</rs> eut <date when="1766-02-20T22:00:00">hier à 10 h. du soir</date> un frisson
                               <lb/>de quelques <sic>minuttes</sic>, mais qui n'a point
-                              <lb/>eu de <sic>suittes</sic>, ce qui donne à penser qu'il ne
+                              <lb/>eu de <sic>suittes</sic></seg>, ce qui donne à penser qu'il ne
                               <lb/>provient que de <choice><abbr>refroidissem<hi rend="super">t</hi>.</abbr><expan>refroidissement</expan></choice> sans principe
                               <lb/>de fievre. Les playes ont été trouvées au
                               <lb/>pansement de ce matin, encore en meilleur
@@ -4404,15 +4414,15 @@
                            <p xml:id="d176602210202" ana="#stan">
                               Le présage qu'on en tira pour une nuit plus
                               <lb/><sic>tranquile</sic> que la précédente s'est confirmé en
-                              <lb/>partie ; <rs type="person" ref="#stanislas">le roy</rs> a passablement dormi <date from="1766-02-21T00:00:00" to="1766-02-21T06:00:00">depuis
-                                 <lb/>minuit jusqu'à six heures</date>.
+                              <lb/>partie ; <seg type="event"><rs type="person" ref="#stanislas">le roy</rs> a passablement dormi <date from="1766-02-21T00:00:00" to="1766-02-21T06:00:00">depuis
+                              <lb/>minuit jusqu'à six heures</date></seg>.
                            </p>
                            <p xml:id="d176602210203">
-                              Le pansement ne s'est fait qu'à <date when="1766-02-21T08:00:00">huit</date>, les chairs
+                              <seg type="event">Le pansement ne s'est fait qu'à <date when="1766-02-21T08:00:00">huit</date>, les chairs
                               <lb/>reprennent dans les parties découvertes ; on a levé
                               <lb/>de nouveaux escars dans quelques autres ; ces
                               <lb/>derniers bien plus profonds qu'on ne l'avoit cru,
-                              <lb/>mais bien détachés malgré l'epaisseur. Beaucoup
+                              <lb/>mais bien détachés malgré l'epaisseur</seg>. Beaucoup
                               <lb/>des parties tenaces sont disposées à se détacher
                               <lb/>aux pansemens prochains. Dans celui de
                               <lb/>ce matin les playes ont été trouvées et
@@ -4471,14 +4481,14 @@
                            <seg type="dateline"><placeName ref="#luneville">Luneville</placeName> <date when="1766-02-22T20:30:00">22 <choice><abbr>f<hi rend="super">er</hi>.</abbr><expan>février</expan></choice> 8 h <hi rend="super">1</hi>/<hi rend="sub">2</hi> du soir</date>.</seg>
                            <p xml:id="d176602220601">
                               <lb/>J'allois vous ecrire au moment où votre
-                              <lb/>courrier est arrivé. <rs type="person" ref="#stanislas">Notre maitre</rs>
+                              <lb/>courrier est arrivé. <seg type="event"><rs type="person" ref="#stanislas">Notre maitre</rs>
                               <pb facs="B543956101M00863_06_0121_2R" n="118"/><fw type="pageNum" n="118" place="topRight">118</fw>respire encore. Après avoir reçu l'extreme
                               <lb/>onction <date when="1766-02-22T10:00:00">vers 10 h. du matin</date>, sans connoissance
                               <lb/>ni mouvement, il y a eu quelques instants
-                              <lb/>lucides. À midi une moiteur salutaire. Elle
+                                 <lb/>lucides</seg>. <seg type="event"><date when="1766-02-22T12:00:00">À midi</date> une moiteur salutaire. Elle
                               <lb/>s'est soutenuë et a retabli la suppuration.
                               <lb/>Quelques paroles sont sorties avec effort de la
-                              <lb/>bouche du malade avant et après le pansement.
+                              <lb/>bouche du malade avant et après le pansement</seg>.
                               <lb/>Ce soir la tête est plus libre, et je me hâte
                               <lb/>de vous renvoyer votre courrier, en attendant
                               <lb/>celui que je vous dépêcherai demain après
@@ -4585,10 +4595,12 @@
                            <lb/>nous venons de faire du <rs type="person" ref="#stanislas">meilleur des rois</rs>. Je
                            <lb/>vous attens demain dans la matinée. 
                            <add place="marginLeft">
-                              Il expira
-                              <lb/>à 4 h. et
-                              <lb/>quelques minuttes
-                              <lb/>du soir.
+                              <seg type="event">
+                                 Il expira
+                                 <lb/>à <date when="1766-02-23T16:00:00">4 h. et
+                                 <lb/>quelques minuttes
+                                 <lb/>du soir</date>
+                              </seg>.
                            </add>
                         </quote>
                         <p xml:id="d1766022310" ana="#stan">
