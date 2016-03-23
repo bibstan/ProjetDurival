@@ -3,7 +3,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2016-03-23T11:24:10Z. .
+Schema generated from ODD source 2016-03-23T14:57:16Z. .
 TEI Edition: Version 2.9.1. Last updated on
 	15th October 2015, revision 46ac023
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.9.1/
@@ -132,6 +132,9 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.9.1/
    </define>
    <define name="data.text">
       <data type="string"/>
+   </define>
+   <define name="data.name">
+      <data type="Name"/>
    </define>
    <define name="data.enumerated">
       <ref name="data.word"/>
@@ -748,7 +751,9 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.9.1/
       <notAllowed/>
    </define>
    <define name="model.phrase.xml">
-      <notAllowed/>
+      <choice>
+         <ref name="gi"/>
+      </choice>
    </define>
    <define name="model.specDescLike">
       <notAllowed/>
@@ -1524,6 +1529,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.9.1/
    <define name="model.editorialDeclPart">
       <choice>
          <ref name="normalization"/>
+         <ref name="quotation"/>
          <ref name="interpretation"/>
       </choice>
    </define>
@@ -2816,6 +2822,23 @@ Elements]</a:documentation>
          <empty/>
       </element>
    </define>
+   <define name="gi">
+      <element name="gi">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(identifiant générique) contient le nom d'un élément. [22. Documentation Elements 22.4.4. Element Specifications]</a:documentation>
+         <ref name="data.name"/>
+         <ref name="att.global.attributes"/>
+         <optional>
+            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+                       name="scheme"
+                       a:defaultValue="TEI">
+               <a:documentation>fournit le nom du modèle dans lequel ce nom est défini
+Exemple de valeurs possibles: 1] TEI; 2] DBK(docbook) ; 3] XX(unknown) ; 4] Schematron; 5] HTML</a:documentation>
+               <ref name="data.enumerated"/>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
    <define name="teiHeader">
       <element name="teiHeader">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(en-tête TEI) fournit des informations descriptives et déclaratives qui constituent une page de titre électronique au début de tout texte conforme à la TEI. [2.1.1. The TEI Header and Its Components 15.1. Varieties of Composite Text]</a:documentation>
@@ -3034,6 +3057,39 @@ Elements]</a:documentation>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
          <ref name="att.global.rendition.attribute.rend"/>
+         <optional>
+            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+                       name="method"
+                       a:defaultValue="silent">
+               <a:documentation>indique la méthode adoptée pour signaler les normalisations dans le texte.</a:documentation>
+               <choice>
+                  <value>silent</value>
+                  <a:documentation>normalisation effectuée sans être mentionnée.</a:documentation>
+                  <value>markup</value>
+                  <a:documentation>la normalisation a été décrite en employant un codage</a:documentation>
+               </choice>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="quotation">
+      <element name="quotation">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(citation) décrit la pratique éditoriale adoptée par rapport aux guillements dans l’original. [2.3.3. The Editorial Practices Declaration 15.3.2. Declarable Elements]</a:documentation>
+         <zeroOrMore>
+            <ref name="model.pLike"/>
+         </zeroOrMore>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="oddbyexample-quotation-quotationContents-constraint-6">
+            <rule context="tei:quotation">
+               <report xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                       xmlns:xi="http://www.w3.org/2001/XInclude"
+                       test="not(@marks) and not (tei:p)">
+On <name/>, either the @marks attribute should be used, or a paragraph of description provided</report>
+            </rule>
+         </pattern>
+         <ref name="att.global.attribute.xmlid"/>
+         <ref name="att.global.attribute.xmllang"/>
          <empty/>
       </element>
    </define>
@@ -3102,7 +3158,7 @@ Elements]</a:documentation>
             </zeroOrMore>
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-msIdentifier-msId_minimal-constraint-6">
+                  id="oddbyexample-msIdentifier-msId_minimal-constraint-7">
             <rule context="tei:msIdentifier">
                <report xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="not(parent::tei:msPart) and       (local-name(*[1])='idno' or       local-name(*[1])='altIdentifier' or       normalize-space(.)='')">An msIdentifier must contain either a repository or location of some type, or a manuscript name</report>
@@ -3647,7 +3703,7 @@ Elements]</a:documentation>
             </optional>
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-div-abstractModel-structure-l-constraint-7">
+                  id="oddbyexample-div-abstractModel-structure-l-constraint-8">
             <rule context="tei:div">
                <report xmlns:tei="http://www.tei-c.org/ns/1.0"
                        xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -3657,7 +3713,7 @@ Elements]</a:documentation>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-div-abstractModel-structure-p-constraint-8">
+                  id="oddbyexample-div-abstractModel-structure-p-constraint-9">
             <rule context="tei:div">
                <report xmlns:tei="http://www.tei-c.org/ns/1.0"
                        xmlns:rng="http://relaxng.org/ns/structure/1.0"

@@ -367,6 +367,7 @@
                </attList>
             </classSpec>
             <!--Checking module tagdocs-->
+            <moduleRef key="tagdocs" include="gi"/>
             <macroRef key="macro.schemaPattern"/>
             <classRef key="att.combinable"/>
             <classRef key="att.identified"/>
@@ -899,7 +900,7 @@
             </elementSpec>
             <!--Checking module header-->
             <moduleRef key="header"
-                       include="teiHeader fileDesc titleStmt funder publicationStmt idno availability sourceDesc encodingDesc projectDesc editorialDecl normalization interpretation"/>
+                       include="teiHeader fileDesc titleStmt funder publicationStmt idno availability sourceDesc encodingDesc projectDesc editorialDecl normalization quotation interpretation"/>
             <elementSpec ident="teiHeader" mode="change">
                <attList>
                   <attDef ident="type" mode="change">
@@ -933,7 +934,7 @@
                   <attDef ident="resp" mode="delete"/>
                   <attDef ident="ref" mode="delete"/>
                </attList>
-            </elementSpec>
+            </elementSpec>            
             <elementSpec ident="publicationStmt" mode="change">
                <attList>
                   <attDef ident="ana" mode="delete"/>
@@ -990,12 +991,21 @@
             </elementSpec>
             <elementSpec ident="normalization" mode="change">
                <attList>
-                  <attDef ident="source" mode="delete"/>
-                  <attDef ident="method" mode="delete"/>
+                  <attDef ident="source" mode="delete"/>                 
                   <attDef ident="ana" mode="delete"/>
                   <attDef ident="facs" mode="delete"/>
                   <attDef ident="resp" mode="delete"/>
                   <attDef ident="default" mode="delete"/>
+               </attList>
+            </elementSpec>
+            <elementSpec ident="quotation" mode="change">
+               <attList>
+                  <attDef ident="ana" mode="delete"/>
+                  <attDef ident="facs" mode="delete"/>
+                  <attDef ident="marks" mode="delete"/>
+                  <attDef ident="n" mode="delete"/>
+                  <attDef ident="rend" mode="delete"/>
+                  <attDef ident="resp" mode="delete"/>                  
                </attList>
             </elementSpec>
             <elementSpec ident="interpretation" mode="change">
