@@ -72,15 +72,33 @@
                <attList>
                   <attDef ident="rend" mode="change">
                      <valList mode="add" type="closed">
-                        <valItem ident="super"/>
-                        <valItem ident="sub"/>
-                        <valItem ident="strikethrough"/>
-                        <valItem ident="underline"/>
-                        <valItem ident="center"/>
-                        <valItem ident="italic"/>
-                        <valItem ident="hyphen"/>
-                        <valItem ident="overwritten"/>
-                        <valItem ident="superimposed"/>
+                        <valItem ident="super">
+                           <desc>Indique une portion de texte en exposant</desc>
+                        </valItem>
+                        <valItem ident="sub">
+                           <desc>Indique une portion de texte en indice</desc>
+                        </valItem>
+                        <valItem ident="strikethrough">
+                           <desc>Indique une portion de texte rayée</desc>
+                        </valItem>
+                        <valItem ident="underline">
+                           <desc>Indique une portion de texte soulignés</desc>
+                        </valItem>
+                        <valItem ident="center">
+                           <desc>Indique un portion de texte centrée</desc>
+                        </valItem>
+                        <valItem ident="italic">
+                           <desc>Indique du texte en italic</desc>
+                        </valItem>
+                        <valItem ident="hyphen">
+                           <desc>Employé avec l'élément 'lb' pour signifier la coupure d'un mot en fin de ligne</desc>
+                        </valItem>
+                        <valItem ident="overwritten">
+                           <desc>Indique une portion de texte sur laquelle on a réécrit</desc>
+                        </valItem>
+                        <valItem ident="superimposed">
+                           <desc>Indique une portion de texte superposée</desc>
+                        </valItem>
                      </valList>
                   </attDef>
                   <attDef ident="rendition" mode="delete"/>
@@ -184,7 +202,9 @@
                   <attDef ident="full" mode="delete"/>
                   <attDef ident="type" mode="change">
                      <valList mode="add" type="closed">
-                        <valItem ident="today"/>
+                        <valItem ident="today">
+                           <desc>Identifie la nom actuel d'un lieu.</desc>
+                        </valItem>
                      </valList>
                   </attDef>
                   <attDef ident="subtype" mode="delete"/>
@@ -498,9 +518,15 @@
                   <attDef ident="who" mode="delete"/>
                   <attDef ident="type" mode="change">
                      <valList mode="add" type="closed">
-                        <valItem ident="letter"/>
-                        <valItem ident="report"/>
-                        <valItem ident="verse"/>
+                        <valItem ident="letter">
+                           <desc>Indique que le document cité est une lettre.</desc>
+                        </valItem>
+                        <valItem ident="report">
+                           <desc>Indique que le document cité est un bulletin/rapport.</desc>
+                        </valItem>
+                        <valItem ident="verse">
+                           <desc>Indique que le texte cité est en vers.</desc>
+                        </valItem>
                      </valList>
                   </attDef>
                   <attDef ident="n" mode="delete"/>                                    
@@ -524,7 +550,9 @@
                   <attDef ident="n" mode="delete"/>
                   <attDef ident="type" mode="change">
                      <valList mode="add" type="closed">
-                        <valItem ident="note"></valItem>
+                        <valItem ident="note">
+                           <desc>Identifie un renvoi vers une note.</desc>
+                        </valItem>
                      </valList>
                   </attDef>
                   <attDef ident="subtype" mode="delete"/>
@@ -559,9 +587,15 @@
                   <attDef ident="resp" mode="delete"/>
                   <attDef ident="type" mode="change">
                      <valList mode="add" type="closed">
-                        <valItem ident="letter"/>
-                        <valItem ident="report"/>
-                        <valItem ident="verse"/>
+                        <valItem ident="letter">
+                           <desc>Indique que le document cité est une lettre.</desc>
+                        </valItem>
+                        <valItem ident="report">
+                           <desc>Indique que le document cité est un bulletin/rapport.</desc>
+                        </valItem>
+                        <valItem ident="verse">
+                           <desc>Indique que le texte cité est en vers.</desc>
+                        </valItem>
                      </valList>
                   </attDef>
                   <attDef ident="subtype" mode="delete"/>
@@ -583,15 +617,22 @@
                   <attDef ident="resp" mode="delete"/>
                   <attDef ident="type" mode="change">
                      <valList mode="add" type="closed">
-                        <valItem ident="format"/>
+                        <valItem ident="format">
+                           <desc>Indique que le terme balisé représente le format d'un ouvrage. Il peut être précisé avec l'attribut @subtype</desc>
+                        </valItem>
                      </valList>
                   </attDef>
                   <attDef ident="subtype" mode="change">
                      <valList mode="add" type="closed">
-                        <valItem ident="in-folio"/>
-                        <valItem ident="in-quarto"/>
-                        <valItem ident="in-douze"/>
-                        <valItem ident="in-quarto"/>
+                        <valItem ident="in-folio">
+                           <desc>Identifie un format in-folio</desc>
+                        </valItem>
+                        <valItem ident="in-quarto">
+                           <desc>Identifie un format in-quarto</desc>
+                        </valItem>
+                        <valItem ident="in-douze">
+                           <desc>Identifie un format in-douze</desc>
+                        </valItem>                        
                      </valList>
                   </attDef>
                   <attDef ident="ref" mode="delete"/>
@@ -626,11 +667,21 @@
                   <attDef ident="resp" mode="delete"/>                  
                   <attDef ident="place" mode="change">
                      <valList mode="add" type="closed">
-                        <valItem ident="above"/>
-                        <valItem ident="below"/>
-                        <valItem ident="inline"/>
-                        <valItem ident="marginLeft"/>
-                        <valItem ident="marginRight"/>                        
+                        <valItem ident="above">
+                           <desc>Indique un ajout placé dans l'interligne supérieur.</desc>
+                        </valItem>
+                        <valItem ident="below">
+                           <desc>Indique un ajout placé dans l'interligne inférieur.</desc>
+                        </valItem>
+                        <valItem ident="inline">
+                           <desc>Indique un ajout placé à la suite du texte.</desc>
+                        </valItem>
+                        <valItem ident="marginLeft">
+                           <desc>Indique un ajout placé dans la marge gauche.</desc>
+                        </valItem>
+                        <valItem ident="marginRight">
+                           <desc>Indique un ajout placé dans la marge droite.</desc>
+                        </valItem>                        
                      </valList>
                   </attDef>                  
                   <attDef ident="type" mode="delete"/>
@@ -655,12 +706,21 @@
                   <attDef ident="resp" mode="delete"/>
                   <attDef ident="type" mode="change">
                      <valList mode="add" type="closed">
-                        <valItem ident="artwork"/>
-                        <valItem ident="bibl"/>
-                        <valItem ident="groupPerson"/>
-                        <valItem ident="memoir"/>
-                        <valItem ident="org"/>
-                        <valItem ident="person"/>
+                        <valItem ident="artwork">
+                           <desc>Identifie une oeuvre d'art.</desc>
+                        </valItem>
+                        <valItem ident="bibl">
+                           <desc>Identifie une référence bibliographie implicite.</desc>
+                        </valItem>
+                        <valItem ident="groupPerson">
+                           <desc>Identifie un groupe de personne.</desc>
+                        </valItem>                        
+                        <valItem ident="org">
+                           <desc>Identifie une institution citée de manière implicite.</desc>
+                        </valItem>
+                        <valItem ident="person">
+                           <desc>Identifie une personne citée de manière implicite.</desc>
+                        </valItem>
                      </valList>
                   </attDef>
                   <attDef ident="subtype" mode="delete"/>
@@ -683,13 +743,17 @@
                   <attDef ident="n" mode="delete"/>
                </attList>
             </elementSpec>
-            <elementSpec ident="measure" mode="change"><!-- todo faire quelque chose pour la température -->
+            <elementSpec ident="measure" mode="change">
                <attList>
                   <attDef ident="corresp" mode="add"/>
                   <attDef ident="type" mode="change">
                      <valList mode="add" type="closed">
-                        <valItem ident="currency"/>
-                        <valItem ident="temperature"/>
+                        <valItem ident="currency">
+                           <desc>Valeur utilisée pour l'encodage des devises.</desc>
+                        </valItem>
+                        <valItem ident="temperature">
+                           <desc>Valeur utilisée pour l'encodage de la tampérature.</desc>
+                        </valItem>
                      </valList>
                   </attDef>
                   <attDef ident="ana" mode="delete"/>
@@ -724,8 +788,12 @@
                   <attDef ident="resp" mode="delete"/>
                   <attDef ident="type" mode="change">
                      <valList mode="add" type="closed">
-                        <valItem ident="entry"/>
-                        <valItem ident="pub"/>
+                        <valItem ident="entry">
+                           <desc>Identifie les dates des différentes entrées du journal.</desc>
+                        </valItem>
+                        <valItem ident="pub">
+                           <desc>Cette valeur peut être utilisée pour identifier, au sein d'une référence bibliographique, la date de publication.</desc>
+                        </valItem>
                      </valList>
                   </attDef>
                   <attDef ident="subtype" mode="delete"/>
@@ -749,12 +817,12 @@
                </attList>
             </elementSpec>
             <elementSpec ident="list" mode="change">
-               <attList>
-                  <attDef ident="type" mode="change">
+               <attList><!-- todo vérif il n'y a plus de <list @ type='person'> -->
+                  <!--<attDef ident="type" mode="change">
                      <valList mode="add" type="closed">
                         <valItem ident="person"/>
                      </valList>
-                  </attDef>
+                  </attDef>-->
                   <attDef ident="ana" mode="delete"/>
                   <attDef ident="facs" mode="delete"/>
                   <attDef ident="resp" mode="delete"/>                  
@@ -1084,8 +1152,12 @@
                <attList>
                   <attDef ident="type" mode="change">
                      <valList mode="add" type="closed">
-                        <valItem ident="pageNum"/>
-                        <valItem ident="runningHead"/>
+                        <valItem ident="pageNum">
+                           <desc>Identifie le numéro de la page.</desc>
+                        </valItem>
+                        <valItem ident="runningHead">
+                           <desc>Indique que le texte encodé correspond au titre courant.</desc>
+                        </valItem>
                      </valList>
                   </attDef>
                   <attDef ident="ana" mode="delete"/>
@@ -1093,9 +1165,30 @@
                   <attDef ident="resp" mode="delete"/>
                   <attDef ident="place" mode="change">
                      <valList mode="add" type="closed">
-                        <valItem ident="top"/>
-                        <valItem ident="topCenter"/>
-                        <valItem ident="topRight"/>
+                        <valItem ident="top">
+                           <desc>Indique que le terme encodé est placé en haut de page.</desc>
+                        </valItem>
+                        <valItem ident="topCenter">
+                           <desc>Indique que le terme encodé est placé en haut de page et centré.</desc>
+                        </valItem>
+                        <valItem ident="topRight">
+                           <desc>Indique que le terme encodé est placé en haut de page à droite.</desc>
+                        </valItem>
+                        <valItem ident="topLeft">
+                           <desc>Indique que le terme encodé est placé en haut de page à gauche.</desc>
+                        </valItem>
+                        <valItem ident="bottom">
+                           <desc>Indique que le terme encodé est placé en bas de page.</desc>
+                        </valItem>
+                        <valItem ident="bottomCenter">
+                           <desc>Indique que le terme encodé est placé en bas de page et centré.</desc>
+                        </valItem>
+                        <valItem ident="bottomRight">
+                           <desc>Indique que le terme encodé est placé en bas de page à droite.</desc>
+                        </valItem>
+                        <valItem ident="bottomLeft">
+                           <desc>Indique que le terme encodé est placé en bas de page à gauche.</desc>
+                        </valItem>
                      </valList>
                   </attDef>
                </attList>
@@ -1145,13 +1238,27 @@
                   <attDef ident="resp" mode="delete"/>                  
                   <attDef ident="type" mode="change">
                      <valList mode="add" type="closed">
-                        <valItem ident="closer"/>
-                        <valItem ident="dateline"/>                        
-                        <valItem ident="opener"/>
-                        <valItem ident="print"/>
-                        <valItem ident="salute"/>
-                        <valItem ident="signed"/>
-                        <valItem ident="event"/>
+                        <valItem ident="closer">
+                           <desc>Identifie les formules de fermeture d'une lettre.</desc>
+                        </valItem>
+                        <valItem ident="dateline">
+                           <desc>Indique le lieu et la date, relatifs à la rédaction d'un lettre.</desc>
+                        </valItem>                        
+                        <valItem ident="opener">
+                           <desc>Identifie les formules d'ouverture d'une lettre.</desc>
+                        </valItem>
+                        <valItem ident="print">
+                           <desc>Indique un passage imprimé.</desc>
+                        </valItem>
+                        <valItem ident="salute">
+                           <desc>Indique une formule de salutation (dans une lettre).</desc>
+                        </valItem>
+                        <valItem ident="signed">
+                           <desc>Indique un signature.</desc>
+                        </valItem>
+                        <valItem ident="event">
+                           <desc>Cette valeur peut être utilisée lorsqu'un évênement est daté de manière précise.</desc>
+                        </valItem>
                      </valList>
                   </attDef>
                   <attDef ident="n" mode="delete"/>
@@ -1226,18 +1333,34 @@
                   <attDef ident="ana" mode="delete"/>                                                      
                   <attDef ident="type" mode="change">
                      <valList mode="add" type="closed">
-                        <valItem ident="day"/>
-                        <valItem ident="insert"/>
-                        <valItem ident="letter"/>
-                        <valItem ident="month"/>
-                        <valItem ident="transcription"/>
-                        <valItem ident="verse"/>
-                        <valItem ident="year"/>
+                        <valItem ident="day">
+                           <desc>La valeur "day" indique chaque nouvelle entrée du Journal.</desc>
+                        </valItem>
+                        <valItem ident="insert">
+                           <desc>La valeur "insert" indique un encart.</desc>
+                        </valItem>
+                        <valItem ident="letter">
+                           <desc>La valeur "letter" indique une lettre.</desc>
+                        </valItem>
+                        <valItem ident="month">
+                           <desc>La valeur "day" indique chaque nouveau mois du Journal.</desc>
+                        </valItem>
+                        <valItem ident="transcription">
+                           <desc>La valeur "transcription" doit être unique. Elle contient l'ensemble du texte édité.</desc>
+                        </valItem>
+                        <valItem ident="verse">
+                           <desc>La valeur "verse" indique un texte en vers.</desc>
+                        </valItem>
+                        <valItem ident="year">
+                           <desc>La valeur "year" indique chaque nouvelle année du Journal.</desc>
+                        </valItem>
                      </valList>
                   </attDef>
                   <attDef ident="subtype" mode="change">
                      <valList mode="add" type="closed">
-                        <valItem ident="print"/>
+                        <valItem ident="print">
+                           <desc>La valeur "print" indique un texte imprimé.</desc>
+                        </valItem>
                      </valList>
                   </attDef>
                </attList>

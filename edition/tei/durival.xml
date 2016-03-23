@@ -66,7 +66,8 @@
                   Les éléments <gi>choice</gi>, <gi>abbr</gi> et <gi>expan</gi> ont été utilisés pour le développement des abréviations.
                   La graphie n'ayant pas été modernisée, les termes dont l'orthographe peut sembler douteuse, ont été encodés avec l'élément <gi>sic</gi>.
                   Les coupures de mot en fin de ligne sont maintenues ; elles sont balisées au moyen des éléments <gi>w</gi> et <gi>lb</gi>.
-                  Les omissions et blancs laissés vacants par l'auteur, sont encodés respectivement avec les balises <gi>gap</gi> et <gi>space</gi>. 
+                  Les omissions et blancs laissés vacants par l'auteur, sont encodés respectivement avec les balises <gi>gap</gi> et <gi>space</gi>.
+                  Les titres courants sont encodés lors de leur première apparition à l'aide de l'élément <gi>fw</gi>.
                </p>
             </normalization>
             <quotation>
@@ -6955,7 +6956,7 @@
                               <lb/>président</rs> a écrit pour les dèsavouër de la
                            <lb/>part de sa compagnie. Il y a une reponse
                            <lb/>de plusieurs gentilshommes au <rs type="bibl" ref="#bib20">mémoire
-                              <lb/>indécent des Messins</rs>, plus semée que <rs type="memoir" ref="#bib21">le
+                              <lb/>indécent des Messins</rs>, plus semée que <rs type="bibl" ref="#bib21">le
                                  <lb/>memoire de la <choice><abbr>S<hi rend="super">ne</hi>.</abbr><expan>souveraine</expan></choice></rs> sans finesse, sans
                            <lb/>recherches et sans pédanteries.
                         </p>
