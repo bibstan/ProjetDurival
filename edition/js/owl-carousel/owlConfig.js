@@ -7,7 +7,8 @@ $(document).ready(function() {
         margin: 10,
         callbacks: true,
         URLhashListener: true,
-        autoplayHoverPause: true,
+        autoHeight:true,
+        /*autoplayHoverPause: true,*/
         startPosition: 'URLHash'
     });
 })
