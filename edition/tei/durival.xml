@@ -624,7 +624,7 @@
                         </p><!-- todo note ici parce que l'encart coupe la journée ?  -->                     
                      </div>
                      
-                     <div type="insert">
+                     <div type="insert" xml:id="d1765I01">
                         <div type="letter">
                            <pb facs="B543956101M00863_06_0076_2R" n="74"/>
                            <fw type="pageNum" place="topRight" n="74">74</fw>
@@ -3351,7 +3351,7 @@
                      </div>
                      <pb facs="B543956101M00863_06_0105_2R" n="103"/>
                      <fw type="pageNum" n="103" place="topRight">103</fw>
-                     <div type="insert">
+                     <div type="insert" xml:id="d1765I02">
                         <div type="verse">
                            <p rend="center">
                               Vers de <persName ref="#solignac">M. de Solignac</persName> à <persName ref="#durivalClaude">M. 
@@ -3487,7 +3487,7 @@
                      </div>
                      <pb facs="B543956101M00863_06_0107_2R" n="105"/>
                      <fw type="pageNum" n="105" place="topRight">105</fw>
-                     <div type="insert">
+                     <div type="insert" xml:id="d1765I03">
                         <div type="verse">
                            <p>
                               Vers <persName ref="#aufresnePere">d'Aufresne</persName>, pere de l'acteur,
@@ -3641,7 +3641,7 @@
                         </p>
                      </div>
                      <pb facs="B543956101M00863_06_0109_2R" n="107"/>
-                     <div type="insert">                     
+                     <div type="insert" xml:id="d1765I04">                     
                         <div>
                            <fw type="pageNum" n="107" place="topRight">107</fw>
                            <p>
@@ -4903,7 +4903,7 @@
                         </p>
                      </div>
                      <pb/><!-- todo @facs -->
-                     <div type="insert" subtype="print">
+                     <div type="insert" subtype="print" xml:id="d1766I01">
                         <div type="verse">                        
                            <head>PRIÉRES</head>
                            <p rend="italic">
@@ -8603,10 +8603,12 @@
       </teiHeader>
       <text>
          <body>
-            <xi:include href="indexDurival.xml" xpointer="listPerson" parse="xml"/>
-            <xi:include href="indexDurival.xml" xpointer="listPlace" parse="xml"/>
-            <xi:include href="indexDurival.xml" xpointer="listOrg" parse="xml"/>
-            <xi:include href="indexDurival.xml" xpointer="listBibl" parse="xml"/>
+            <div type="index">
+               <xi:include href="indexDurival.xml" xpointer="listPerson" parse="xml"/>
+               <xi:include href="indexDurival.xml" xpointer="listPlace" parse="xml"/>
+               <xi:include href="indexDurival.xml" xpointer="listOrg" parse="xml"/>
+               <xi:include href="indexDurival.xml" xpointer="listBibl" parse="xml"/>
+            </div>
          </body>
       </text>
    </TEI>
