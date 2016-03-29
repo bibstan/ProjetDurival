@@ -120,47 +120,46 @@
     </xsl:template>
     
     <xsl:template match="tei:div[@type='insert']">
-        <xsl:choose>
-            <xsl:when test="tei:div[@type='letter']">
-                <div class="row">
-                    <div class="large-4 columns">
-                        <p>Encart : Lettre</p>
-                    </div>
-                    <div class="large-8 columns">
-                        <p class="dateline"><xsl:apply-templates select="tei:div[@type='letter']/tei:dateline"/></p>
-                        <xsl:for-each select="tei:div[@type='letter']/tei:p">
-                            <p><xsl:apply-templates select="."/></p>
-                        </xsl:for-each>
-                        <p class="salute"><xsl:apply-templates select="tei:div[@type='letter']/tei:closer/tei:salute"/></p>
-                        <p class="signed"><xsl:apply-templates select="tei:div[@type='letter']/tei:closer/tei:signed"/></p>
-                    </div>
-                </div>
-            </xsl:when>
-            <xsl:when test="tei:div[@type='verse']">
-                <div class="row">
-                    <div class="large-4 columns">
-                        <p>Encart : Vers</p>
-                    </div>
-                    <div class="large-8 columns">
-                        <xsl:for-each select="tei:div[@type='verse']/tei:p | tei:div[@type='verse']/tei:quote/tei:lg | tei:div[@type='verse']/tei:lg">
-                            <p><xsl:apply-templates select="."/></p>    
-                        </xsl:for-each>                        
-                    </div>
-                </div>
-            </xsl:when>
-            <xsl:otherwise>
-                <div class="row">
-                    <div class="large-4 columns">
-                        <p>Encart</p>
-                    </div>
-                    <div class="large-8 columns">
-                        <xsl:for-each select="tei:div/tei:p">
-                            <p><xsl:apply-templates select="."/></p>    
-                        </xsl:for-each>                        
-                    </div>
-                </div>
-            </xsl:otherwise>
-        </xsl:choose>
+        <xsl:variable name="id" select="@xml:id"/>
+        <div class="item" data-hash="{$id}">
+            <div class="row">
+                <xsl:choose>
+                    <xsl:when test="tei:div[@type='letter']">
+                        <div class="large-4 columns">
+                            <p>Encart : Lettre</p>
+                        </div>
+                        <div class="large-8 columns">
+                            <p class="dateline"><xsl:apply-templates select="tei:div[@type='letter']/tei:dateline"/></p>
+                            <xsl:for-each select="tei:div[@type='letter']/tei:p">
+                                <p><xsl:apply-templates select="."/></p>
+                            </xsl:for-each>
+                            <p class="salute"><xsl:apply-templates select="tei:div[@type='letter']/tei:closer/tei:salute"/></p>
+                            <p class="signed"><xsl:apply-templates select="tei:div[@type='letter']/tei:closer/tei:signed"/></p>
+                        </div>                                    
+                    </xsl:when>
+                    <xsl:when test="tei:div[@type='verse']">
+                        <div class="large-4 columns">
+                            <p>Encart : Vers</p>
+                        </div>
+                        <div class="large-8 columns">
+                            <xsl:for-each select="tei:div[@type='verse']/tei:p | tei:div[@type='verse']/tei:quote/tei:lg | tei:div[@type='verse']/tei:lg">
+                                <p><xsl:apply-templates select="."/></p>    
+                            </xsl:for-each>                        
+                        </div>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <div class="large-4 columns">
+                            <p>Encart</p>
+                        </div>
+                        <div class="large-8 columns">
+                            <xsl:for-each select="tei:div/tei:p">
+                                <p><xsl:apply-templates select="."/></p>    
+                            </xsl:for-each>                        
+                        </div>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </div>
+        </div>
     </xsl:template>
     
     <xsl:template match="tei:lg">        
@@ -323,28 +322,6 @@
         </xsl:result-document>        
     </xsl:template>
     
-    <!--<xsl:template match="//tei:div[@type='index']/tei:listPerson">
-        <ul>
-            <xsl:for-each select="tei:person">
-                <xsl:variable name="id" select=" concat('#',@xml:id)"/>
-                <li>                    
-                    <xsl:apply-templates select="tei:persName"></xsl:apply-templates>
-                    <ul>
-                        <xsl:for-each select="//tei:div[@type='transcription']//tei:p |//tei:div[@type='transcription']//tei:quote[@type] | //tei:div[@type='transcription']//tei:q[@type]">
-                            <xsl:if test=".//tei:persName[@ref=$id] | .//tei:rs[@type='person' and @ref=$id]">
-                                <xsl:variable name="id" select="concat(../../@xml:id,'.html#',@xml:id)"/>
-                                <li>
-                                    <a href="{$id}"><xsl:value-of select="../@xml:id"/></a>
-                                    
-                                </li>
-                            </xsl:if>
-                        </xsl:for-each>
-                    </ul>
-                </li>
-            </xsl:for-each>
-        </ul>
-    </xsl:template>-->
-    
     <xsl:template match="//tei:div[@type='index']/tei:listPerson">
         <ul>
             <xsl:for-each select="tei:person">
@@ -352,11 +329,11 @@
                 <li>                    
                     <xsl:apply-templates select="tei:persName"/>
                     <ul>
-                        <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='day']">
+                        <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='day'] | //tei:div[@type='transcription']//tei:div[@type='insert']">
                             <xsl:if test=".//tei:persName[@ref=$id] | .//tei:rs[@type='person' and @ref=$id]">
                                 <xsl:variable name="id" select="concat(../@xml:id,'.html#',@xml:id)"/>
                                 <li>
-                                    <a href="{$id}"><xsl:value-of select="../@xml:id"/></a>                                    
+                                    <a href="{$id}"><xsl:value-of select="@xml:id"/></a>                                    
                                 </li>
                             </xsl:if>
                         </xsl:for-each>
@@ -371,14 +348,13 @@
             <xsl:for-each select="tei:place">
                 <xsl:variable name="id" select=" concat('#',@xml:id)"/>
                 <li>                    
-                    <xsl:apply-templates select="tei:placeName"></xsl:apply-templates>
+                    <xsl:apply-templates select="tei:placeName"/>
                     <ul>
-                        <xsl:for-each select="//tei:div[@type='transcription']//tei:p |//tei:div[@type='transcription']//tei:quote[@type] | //tei:div[@type='transcription']//tei:q[@type]">
+                        <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='day'] | //tei:div[@type='transcription']//tei:div[@type='insert']">
                             <xsl:if test=".//tei:placeName[@ref=$id]">
-                                <xsl:variable name="id" select="concat(../../@xml:id,'.html#',@xml:id)"/>
+                                <xsl:variable name="id" select="concat(../@xml:id,'.html#',@xml:id)"/>
                                 <li>
-                                    <a href="{$id}"><xsl:value-of select="../@xml:id"/></a>
-                                    
+                                    <a href="{$id}"><xsl:value-of select="@xml:id"/></a>                                    
                                 </li>
                             </xsl:if>
                         </xsl:for-each>
@@ -393,13 +369,13 @@
             <xsl:for-each select="tei:org">
                 <xsl:variable name="id" select=" concat('#',@xml:id)"/>
                 <li>                    
-                    <xsl:apply-templates select="tei:orgName"></xsl:apply-templates>
+                    <xsl:apply-templates select="tei:orgName"/>
                     <ul>
-                        <xsl:for-each select="//tei:div[@type='transcription']//tei:p | //tei:div[@type='transcription']//tei:quote[@type] | //tei:div[@type='transcription']//tei:q[@type]">
+                        <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='day'] | //tei:div[@type='transcription']//tei:div[@type='insert']">
                             <xsl:if test=".//tei:orgName[@ref=$id]">
-                                <xsl:variable name="id" select="concat(../../@xml:id,'.html#',@xml:id)"/>
+                                <xsl:variable name="id" select="concat(../@xml:id,'.html#',@xml:id)"/>
                                 <li>
-                                    <a href="{$id}"><xsl:value-of select="../@xml:id"/></a>
+                                    <a href="{$id}"><xsl:value-of select="@xml:id"/></a>
                                     
                                 </li>
                             </xsl:if>
@@ -415,13 +391,13 @@
             <xsl:for-each select="tei:bibl">
                 <xsl:variable name="id" select=" concat('#',@xml:id)"/>
                 <li>                    
-                    <xsl:apply-templates select="tei:title"></xsl:apply-templates>
+                    <xsl:apply-templates select="tei:title"/>
                     <ul>
-                        <xsl:for-each select="//tei:div[@type='transcription']//tei:p |//tei:div[@type='transcription']//tei:quote[@type] | //tei:div[@type='transcription']//tei:q[@type]">
+                        <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='day'] | //tei:div[@type='transcription']//tei:div[@type='insert']">
                             <xsl:if test=".//tei:title[@ref=$id] or .//tei:rs[@type='bibl' and @ref=$id]">
-                                <xsl:variable name="id" select="concat(../../@xml:id,'.html#',@xml:id)"/>
+                                <xsl:variable name="id" select="concat(../@xml:id,'.html#',@xml:id)"/>
                                 <li>
-                                    <a href="{$id}"><xsl:value-of select="../@xml:id"/></a>                                    
+                                    <a href="{$id}"><xsl:value-of select="@xml:id"/></a>                                    
                                 </li>
                             </xsl:if>
                         </xsl:for-each>
