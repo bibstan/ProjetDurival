@@ -53,7 +53,7 @@
          <projectDesc>
             <p>L'objectif du projet est de fournir une édition augmentée du Journal blabla</p>
          </projectDesc>
-         <editorialDecl>            
+         <editorialDecl><!-- todo symbole pour la livre => # -->            
             <normalization method="silent">               
                <p>
                   Lors de la transcription, l'emploi des majuscules et des minuscules a été modernisé. 
