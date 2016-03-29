@@ -32,7 +32,7 @@
                 </div>
                 <!-- pour fonction result-document -->
                 <xsl:apply-templates select="//tei:body"/>
-                <xsl:apply-templates select="//tei:back"/>
+                <xsl:apply-templates select="//tei:div[@type='index']"/>
             </body>
         </html>
     </xsl:template>
@@ -44,13 +44,20 @@
                     <head>
                         <title>Édition du journal de Nicolas Durival ß</title>
                         <meta charset="utf-8"/>
-                        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>                
-                        <link rel="stylesheet" href="../css/foundation.css"/>
-                        <!-- Pour personnalisation -->
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
+                        
+                        <!-- css Pour personnalisation -->
                         <link rel="stylesheet" href="../css/app.css"/>
+                        <!-- Css Foundation -->
+                        <link rel="stylesheet" href="../css/foundation.css"/>
+                                                
+                        <!-- css Owl-Carousel -->
+                        <link rel="stylesheet" href="../css/owl-carousel/owl.carousel.css"/>                         
+                        <link rel="stylesheet" href="../css/owl-carousel/owl.theme.default.css"/>
+                                                
                         <script src="../js/vendor/modernizr.js">/*Pour transformation xslt*/</script>
                         <script src="../js/js/jquery.js">/*Pour transformation xslt*/</script>
-                        <script src="../js/vendor/modernizr.js">/*xslt*/</script>
+                        <script src="../js/vendor/modernizr.js">/*xslt*/</script>                         
                     </head>
                     <body>
                         <header class="row border-top">
@@ -72,11 +79,16 @@
                         </header>
                         <div class="row">
                             <div class="large-10 center">                            
-                                <xsl:apply-templates/> 
+                                <div class="owl-carousel">
+                                    <xsl:apply-templates/>
+                                </div> 
                             </div>
                         </div>                         
                         <script src="../js/vendor/jquery.js">/*Pour transformation xslt*/</script>
                         <script src="../js/foundation.min.js">/*Pour transformation xslt*/</script>
+                        
+                        <script src="../js/owl-carousel/owl.js"></script>                        
+                        <script src="../js/owl-carousel/owlConfig.js"></script>                        
                         <script>$(document).foundation();</script>
                     </body>
                 </html>
@@ -92,14 +104,17 @@
         <xsl:apply-templates select="tei:div[@type='day']"/>
     </xsl:template>
     
-    <xsl:template match="tei:div[@type='day']">
-        <div class="row">
-            <div class="large-4 columns"><xsl:apply-templates select="tei:dateline/tei:date[@type='entry']"/></div>
-            <div class="large-8 columns">
-                <xsl:for-each select="tei:p | tei:quote | tei:q">
-                    <xsl:variable name="id" select="@xml:id"/>
-                    <p id="{$id}"><xsl:apply-templates select="."/></p>
-                </xsl:for-each>
+    <xsl:template match="tei:div[@type='day']">        
+        <xsl:variable name="id" select="@xml:id"/>
+        <div class="item" data-hash="{$id}">
+            <div class="row">
+                <div class="large-4 columns"><xsl:apply-templates select="tei:dateline/tei:date[@type='entry']"/></div>
+                <div class="large-8 columns">
+                    <xsl:for-each select="tei:p | tei:quote | tei:q">
+                        <xsl:variable name="id" select="@xml:id"/>
+                        <p id="{$id}"><xsl:apply-templates select="."/></p>
+                    </xsl:for-each>
+                </div>
             </div>
         </div>
     </xsl:template>
@@ -270,7 +285,7 @@
     </xsl:template>
     
     <!-- ********** INDEX ********** -->
-    <xsl:template match="//tei:back">
+    <xsl:template match="//tei:div[@type='index']">
         <xsl:result-document format="html" encoding="UTF-8" href="list.html">
             <html>
                 <head>
@@ -300,7 +315,7 @@
                     </div>
                     <div class="row">
                         <div class="large-10 center">                            
-                            <xsl:apply-templates select="tei:div/tei:listBibl"/> 
+                            <xsl:apply-templates select="tei:listBibl"/> 
                         </div>
                     </div>                    
                 </body>
@@ -308,7 +323,7 @@
         </xsl:result-document>        
     </xsl:template>
     
-    <xsl:template match="//tei:back/tei:listPerson">
+    <!--<xsl:template match="//tei:div[@type='index']/tei:listPerson">
         <ul>
             <xsl:for-each select="tei:person">
                 <xsl:variable name="id" select=" concat('#',@xml:id)"/>
@@ -328,9 +343,30 @@
                 </li>
             </xsl:for-each>
         </ul>
+    </xsl:template>-->
+    
+    <xsl:template match="//tei:div[@type='index']/tei:listPerson">
+        <ul>
+            <xsl:for-each select="tei:person">
+                <xsl:variable name="id" select=" concat('#',@xml:id)"/>
+                <li>                    
+                    <xsl:apply-templates select="tei:persName"/>
+                    <ul>
+                        <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='day']">
+                            <xsl:if test=".//tei:persName[@ref=$id] | .//tei:rs[@type='person' and @ref=$id]">
+                                <xsl:variable name="id" select="concat(../@xml:id,'.html#',@xml:id)"/>
+                                <li>
+                                    <a href="{$id}"><xsl:value-of select="../@xml:id"/></a>                                    
+                                </li>
+                            </xsl:if>
+                        </xsl:for-each>
+                    </ul>
+                </li>
+            </xsl:for-each>
+        </ul>
     </xsl:template>
     
-    <xsl:template match="//tei:back/tei:listPlace">
+    <xsl:template match="//tei:div[@type='index']/tei:listPlace">
         <ul>
             <xsl:for-each select="tei:place">
                 <xsl:variable name="id" select=" concat('#',@xml:id)"/>
@@ -352,7 +388,7 @@
         </ul>
     </xsl:template>
     
-    <xsl:template match="//tei:back/tei:listOrg">
+    <xsl:template match="//tei:div[@type='index']/tei:listOrg">
         <ul>
             <xsl:for-each select="tei:org">
                 <xsl:variable name="id" select=" concat('#',@xml:id)"/>
@@ -374,7 +410,7 @@
         </ul>
     </xsl:template>
     
-    <xsl:template match="//tei:back/tei:div/tei:listBibl">
+    <xsl:template match="//tei:div[@type='index']/tei:listBibl">
         <ul>
             <xsl:for-each select="tei:bibl">
                 <xsl:variable name="id" select=" concat('#',@xml:id)"/>
