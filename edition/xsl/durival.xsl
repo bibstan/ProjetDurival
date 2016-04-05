@@ -256,8 +256,7 @@
     </xsl:template>
     
     <xsl:template match="tei:choice">
-        <xsl:apply-templates select="tei:abbr"/>
-        <xsl:text> [</xsl:text><xsl:apply-templates select="tei:expan"/><xsl:text>]</xsl:text>
+        <span class="abbr"><xsl:apply-templates select="tei:abbr"/></span><span class="expan"><xsl:apply-templates select="tei:expan"/></span>
     </xsl:template>    
     
     <xsl:template match="tei:div[@type='transcription']//tei:list">
