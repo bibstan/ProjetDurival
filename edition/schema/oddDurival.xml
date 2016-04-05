@@ -1348,6 +1348,9 @@
                         <valItem ident="transcription">
                            <desc>La valeur "transcription" doit être unique. Elle contient l'ensemble du texte édité.</desc>
                         </valItem>
+                        <valItem ident="index">
+                           <desc>La valeur "index" doit être unique. Elle contient l'ensemble des index.</desc>
+                        </valItem>
                         <valItem ident="verse">
                            <desc>La valeur "verse" indique un texte en vers.</desc>
                         </valItem>

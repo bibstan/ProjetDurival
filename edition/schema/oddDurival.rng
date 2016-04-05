@@ -3750,6 +3750,8 @@ On <name/>, either the @marks attribute should be used, or a paragraph of descri
                <choice>
                   <value>day</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">La valeur "day" indique chaque nouvelle entrée du Journal.</a:documentation>
+                  <value>index</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">La valeur "index" doit être unique. Elle contient l'ensemble des index.</a:documentation>
                   <value>insert</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">La valeur "insert" indique un encart.</a:documentation>
                   <value>letter</value>
