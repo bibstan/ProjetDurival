@@ -24,7 +24,7 @@
                         <ul>
                             <xsl:for-each select="//tei:body//tei:div[@type='month']">
                                 <li>
-                                    <a href="{./@xml:id}.html"><xsl:value-of select="tei:fw[@type='runningHead']/tei:date"/><!--<xsl:value-of select="./@xml:id"/>--></a>
+                                    <a href="{./@xml:id}.html"><xsl:value-of select="tei:fw[@type='runningHead']/tei:date"/></a>
                                 </li>
                             </xsl:for-each>
                         </ul>
@@ -68,7 +68,7 @@
                                             <a href="#">Accès</a>
                                             <ul class="dropdown">
                                                 <xsl:for-each select="//tei:body//tei:div[@type='month']">                                                                            
-                                                    <li><a href="{./@xml:id}.html"><xsl:value-of select="tei:fw[@type='runningHead']/tei:date"/><!--<xsl:value-of select="./@xml:id"/>--></a></li>                                    
+                                                    <li><a href="{./@xml:id}.html"><xsl:value-of select="tei:fw[@type='runningHead']/tei:date"/></a></li>                                    
                                                 </xsl:for-each>
                                             </ul>
                                         </li> 
@@ -78,7 +78,7 @@
                             </nav>
                         </header>
                         <div class="row">
-                            <div class="large-10 center">                            
+                            <div class="large-12 center">                            
                                 <div class="owl-carousel">
                                     <xsl:apply-templates/>
                                 </div> 
@@ -101,19 +101,16 @@
     </xsl:template>
     
     <xsl:template match="tei:div[@type='month']">
-        <xsl:apply-templates select="tei:div[@type='day']"/>
+        <xsl:apply-templates/>
     </xsl:template>
     
     <xsl:template match="tei:div[@type='day']">        
         <xsl:variable name="id" select="@xml:id"/>
         <div class="item" data-hash="{$id}">
             <div class="row">
-                <div class="large-4 columns"><xsl:apply-templates select="tei:dateline/tei:date[@type='entry']"/></div>
-                <div class="large-8 columns">
-                    <xsl:for-each select="tei:p | tei:quote | tei:q">
-                        <xsl:variable name="id" select="@xml:id"/>
-                        <p id="{$id}"><xsl:apply-templates select="."/></p>
-                    </xsl:for-each>
+                <div class="large-4 columns"><xsl:apply-templates select="tei:dateline/tei:date[@type='entry']" mode="date"/></div>
+                <div class="large-8 columns">                                                            
+                    <xsl:apply-templates/>
                 </div>
             </div>
         </div>
@@ -124,153 +121,43 @@
         <div class="item" data-hash="{$id}">
             <div class="row">
                 <xsl:choose>
-                    <xsl:when test="tei:div[@type='letter']">
-                        <div class="large-4 columns">
-                            <p>Encart : Lettre</p>
-                        </div>
+                    <xsl:when test="tei:div[@type='letter']"><!-- todo Vérifier si besoin d'ajouter des @class pour les <p> -->
+                        <div class="large-4 columns"><p>Encart : lettre</p></div>
                         <div class="large-8 columns">
-                            <p class="dateline"><xsl:apply-templates select="tei:div[@type='letter']/tei:dateline"/></p>
+                            <p><xsl:apply-templates select="tei:div[@type='letter']/tei:dateline"/></p>
                             <xsl:for-each select="tei:div[@type='letter']/tei:p">
-                                <p><xsl:apply-templates select="."/></p>
+                                <xsl:apply-templates select="."/>
                             </xsl:for-each>
-                            <p class="salute"><xsl:apply-templates select="tei:div[@type='letter']/tei:closer/tei:salute"/></p>
-                            <p class="signed"><xsl:apply-templates select="tei:div[@type='letter']/tei:closer/tei:signed"/></p>
-                        </div>                                    
+                            <p><xsl:apply-templates select="tei:div[@type='letter']/tei:closer/tei:salute"/></p>
+                            <p class="right"><xsl:apply-templates select="tei:div[@type='letter']/tei:closer/tei:signed"/></p>
+                        </div>
                     </xsl:when>
                     <xsl:when test="tei:div[@type='verse']">
-                        <div class="large-4 columns">
-                            <p>Encart : Vers</p>
-                        </div>
-                        <div class="large-8 columns">
-                            <xsl:for-each select="tei:div[@type='verse']/tei:p | tei:div[@type='verse']/tei:quote/tei:lg | tei:div[@type='verse']/tei:lg">
-                                <p><xsl:apply-templates select="."/></p>    
-                            </xsl:for-each>                        
-                        </div>
+                        <xsl:for-each select="./tei:div[@type='verse']">
+                            <div class="large-4 columns"><p>Encart : vers</p></div>
+                            <div class="large-8 columns">
+                                <xsl:if test="tei:head">
+                                    <h3><xsl:apply-templates select="tei:head"/></h3>
+                                </xsl:if>
+                                <xsl:for-each select="tei:p | tei:lg | tei:quote">
+                                    <xsl:apply-templates select="."/>
+                                </xsl:for-each>
+                            </div>
+                        </xsl:for-each>
                     </xsl:when>
                     <xsl:otherwise>
-                        <div class="large-4 columns">
-                            <p>Encart</p>
-                        </div>
+                        <div class="large-4 columns"><p>Encart</p></div>
                         <div class="large-8 columns">
-                            <xsl:for-each select="tei:div/tei:p">
-                                <p><xsl:apply-templates select="."/></p>    
-                            </xsl:for-each>                        
+                            <xsl:apply-templates select=".//tei:p"/>
                         </div>
                     </xsl:otherwise>
                 </xsl:choose>
             </div>
         </div>
-    </xsl:template>
+    </xsl:template>     
     
-    <xsl:template match="tei:lg">        
-        <xsl:for-each select="tei:l">
-            <xsl:apply-templates select="."/>
-            <br />
-        </xsl:for-each>        
-    </xsl:template>
-    
-    <xsl:template match="tei:w">
-        <xsl:value-of select="replace(.,'-','')"/>        
-    </xsl:template>
-    
-    
-    <xsl:template match="tei:sic">
-        <xsl:apply-templates/><xsl:text>(sic)</xsl:text>
-    </xsl:template>
-    
-    <xsl:template match="tei:hi">
-        <xsl:choose>
-            <xsl:when test="@rend='super'">
-                <sup><xsl:apply-templates/></sup>
-            </xsl:when>
-            <xsl:when test="@rend='sub'">
-                <sub><xsl:apply-templates/></sub>
-            </xsl:when>
-            <xsl:when test="@rend='underline'">
-                <u><xsl:apply-templates/></u>
-            </xsl:when>
-        </xsl:choose>
-    </xsl:template>
-    
-    <xsl:template match="tei:subst"><xsl:apply-templates/></xsl:template>
-    
-    <xsl:template match="tei:quote | tei:q">
-        <xsl:choose>
-            <xsl:when test="@type='letter'">
-                <blockquote>
-                    <xsl:if test="tei:seg[@type='opener']">
-                        <xsl:if test="tei:seg[@type='opener']/tei:seg[@type='dateline']"><p class="dateline"><xsl:apply-templates select="tei:seg[@type='opener']/tei:seg[@type='dateline']"/></p></xsl:if>                        
-                        <xsl:if test="tei:seg[@type='opener']/tei:seg[@type='salute']"><p class="salute"><xsl:apply-templates select="tei:seg[@type='opener']/tei:seg[@type='salute']"/></p></xsl:if>                        
-                    </xsl:if>
-                    <p>
-                        <xsl:apply-templates select="tei:p"/>
-                    </p>                    
-                    <xsl:if test="tei:seg[@type='closer']">
-                        <xsl:if test="tei:seg[@type='closer']/tei:seg[@type='salute']"><p class="salute"><xsl:apply-templates select="tei:seg[@type='closer']/tei:seg[@type='salute']"/></p></xsl:if>                        
-                        <xsl:if test="tei:seg[@type='closer']/tei:seg[@type='signed']"><p class="signed"><xsl:apply-templates select="tei:seg[@type='closer']/tei:seg[@type='signed']"/></p></xsl:if>                        
-                    </xsl:if>
-                </blockquote>                                
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:text>« </xsl:text><xsl:apply-templates/><xsl:text> »</xsl:text>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:template>
-    
-    <xsl:template match="tei:add[@place='above']">
-        <sup><xsl:apply-templates/></sup>
-    </xsl:template>
-    
-    <xsl:template match="tei:del">
-        <strike><xsl:apply-templates/></strike>
-    </xsl:template>
-    
-    <xsl:template match="tei:choice">
-        <xsl:apply-templates select="tei:abbr"/>
-        <xsl:text> [</xsl:text><xsl:apply-templates select="tei:expan"/><xsl:text>]</xsl:text>
-    </xsl:template>
-    
-    <xsl:template match="tei:div[@type='transcription']//tei:persName[@ref]">
-        <span class="identPers"><xsl:apply-templates/></span>
-    </xsl:template>
-    
-    <xsl:template match="tei:div[@type='transcription']//tei:rs[@type='person' and @ref]">
-        <span class="identPers"><u><xsl:apply-templates/></u></span>
-    </xsl:template>
-    
-    <xsl:template match="tei:div[@type='transcription']//tei:placeName[@ref]">
-        <span class="identPlace"><xsl:apply-templates/></span>
-    </xsl:template>
-    
-    <xsl:template match="tei:div[@type='transcription']//tei:orgName[@ref]">
-        <span class="identOrg"><xsl:apply-templates/></span>
-    </xsl:template>
-    
-    <xsl:template match="tei:div[@type='transcription']//tei:placeName[not(@ref)] | tei:div[@type='transcription']//tei:persName[not(@ref)] | tei:div[@type='transcription']//tei:orgName[not(@ref)] | tei:div[@type='transcription']//tei:rs[not(@ref) and not(@type='memoir')]">
-        <span class="identRef"><xsl:apply-templates/></span>
-    </xsl:template>
-    
-    <xsl:template match="tei:div[@type='transcription']//tei:date[not(@type='entry')]">
-        <span class="identDate"><xsl:apply-templates/></span>
-    </xsl:template>
-    
-    <xsl:template match="tei:div[@type='transcription']//tei:title | tei:div[@type='transcription']//tei:rs[@type='memoir']">
-        <i><xsl:apply-templates/></i>
-    </xsl:template>
-    
-    <xsl:template match="tei:fw[@type='pageNum']"/>
-    
-    <xsl:template match="tei:div[@type='transcription']//tei:list">
-        <ul>
-            <xsl:for-each select="tei:item">
-                <li>
-                    <xsl:apply-templates select="."/>
-                </li>
-            </xsl:for-each>
-        </ul>
-    </xsl:template>
-        
-    <xsl:template match="tei:dateline/tei:date[@type='entry']">
+    <xsl:template match="tei:dateline/tei:date[@type='entry']"/>            
+    <xsl:template match="tei:dateline/tei:date[@type='entry']" mode="date">
         <xsl:choose>
             <xsl:when test="@when">
                 <xsl:value-of select="format-date(@when,'[D01] [Mn,*-3] [Y0001]', 'fr', (), ())"/>        
@@ -282,6 +169,106 @@
             </xsl:when>
         </xsl:choose>        
     </xsl:template>
+    
+    <xsl:template match="tei:p"><!-- todo besoin des id pour les p ? -->
+        <!--<xsl:variable name="id" select="@xml:id"/>-->
+        <p><xsl:apply-templates/></p>
+    </xsl:template>
+    
+    <xsl:template match="tei:q | tei:quote">                            
+        <xsl:choose>
+            <xsl:when test="@type='report'">
+                <xsl:variable name="id" select="@xml:id"/>
+                <blockquote id="{$id}">
+                    <p class="right"><xsl:apply-templates select="tei:seg[@type='dateline']"/></p>
+                    <xsl:apply-templates select="tei:p"/>
+                </blockquote>
+            </xsl:when>
+            <xsl:when test="@type='letter'">
+                <xsl:variable name="id" select="@xml:id"/>
+                <blockquote id="{$id}">
+                    <xsl:if test="tei:seg[@type='opener']/tei:seg[@type='dateline']">
+                        <p class="right"><xsl:apply-templates select="tei:seg[@type='opener']/tei:seg[@type='dateline']"/></p>
+                    </xsl:if>
+                    <xsl:if test="tei:seg[@type='opener']/tei:seg[@type='salute']">
+                        <p><xsl:apply-templates select="tei:seg[@type='opener']/tei:seg[@type='salute']"/></p>                        
+                    </xsl:if>
+                    <xsl:apply-templates select="tei:p"/>
+                    <xsl:if test="tei:seg[@type='closer']/tei:seg[@type='salute']">
+                        <p><xsl:apply-templates select="tei:seg[@type='closer']/tei:seg[@type='salute']"/></p>
+                    </xsl:if>
+                    <xsl:if test="tei:seg[@type='closer']/tei:seg[@type='signed']">
+                        <p class="right"><xsl:apply-templates select="tei:seg[@type='closer']/tei:seg[@type='signed']"/></p>
+                    </xsl:if>
+                    <xsl:if test="tei:seg[@type='closer']/tei:seg[@type='dateline']">
+                        <p><xsl:apply-templates select="tei:seg[@type='closer']/tei:seg[@type='dateline']"/></p>
+                    </xsl:if>
+                </blockquote>
+            </xsl:when>
+            <xsl:when test="@type='verse'">                
+                <blockquote><xsl:apply-templates select="tei:lg"/></blockquote>
+            </xsl:when>
+            <xsl:when test="parent::tei:p">
+                <xsl:text>« </xsl:text><xsl:apply-templates/><xsl:text> »</xsl:text>
+            </xsl:when>
+        </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template match="tei:lg">        
+        <p>
+            <xsl:for-each select="tei:l">
+                <xsl:apply-templates select="."/>
+                <br />
+            </xsl:for-each>
+        </p>        
+    </xsl:template>
+    
+    <xsl:template match="tei:subst">
+        <xsl:apply-templates/>
+    </xsl:template>        
+    
+    <xsl:template match="tei:del">
+        <del><xsl:apply-templates/></del>
+    </xsl:template>
+        
+    <xsl:template match="tei:w">
+        <xsl:value-of select="replace(.,'-','')"/>        
+    </xsl:template>
+        
+    <xsl:template match="tei:sic">
+        <xsl:apply-templates/><i>(sic)</i>
+    </xsl:template>
+    
+    <xsl:template match="tei:hi">
+        <xsl:choose>
+            <xsl:when test="@rend='super'"><sup><xsl:apply-templates/></sup></xsl:when>
+            <xsl:when test="@rend='sub'"><sub><xsl:apply-templates/></sub></xsl:when>
+            <xsl:otherwise><xsl:apply-templates/></xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template match="//*[@rend='underline']">
+        <u><xsl:apply-templates/></u>
+    </xsl:template>
+    
+    <xsl:template match="tei:title[ancestor::tei:p]">
+        <cite><xsl:apply-templates/></cite>
+    </xsl:template>
+    
+    <xsl:template match="tei:choice">
+        <xsl:apply-templates select="tei:abbr"/>
+        <xsl:text> [</xsl:text><xsl:apply-templates select="tei:expan"/><xsl:text>]</xsl:text>
+    </xsl:template>    
+    
+    <xsl:template match="tei:div[@type='transcription']//tei:list">
+        <ul>
+            <xsl:for-each select="tei:item">
+                <li><xsl:apply-templates select="."/></li>
+            </xsl:for-each>
+        </ul>
+    </xsl:template>
+    
+    <xsl:template match="tei:fw"/>
     
     <!-- ********** INDEX ********** -->
     <xsl:template match="//tei:div[@type='index']">
@@ -406,6 +393,36 @@
             </xsl:for-each>
         </ul>
     </xsl:template>
+    
+    <!-- pour vérification d'encodage à supprimer par la suite -->
+    
+    <!--<xsl:template match="tei:div[@type='transcription']//tei:persName[@ref]">
+        <span class="identPers"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="tei:div[@type='transcription']//tei:rs[@type='person' and @ref]">
+        <span class="identPers"><u><xsl:apply-templates/></u></span>
+    </xsl:template>
+    
+    <xsl:template match="tei:div[@type='transcription']//tei:placeName[@ref]">
+        <span class="identPlace"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="tei:div[@type='transcription']//tei:orgName[@ref]">
+        <span class="identOrg"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="tei:div[@type='transcription']//tei:placeName[not(@ref)] | tei:div[@type='transcription']//tei:persName[not(@ref)] | tei:div[@type='transcription']//tei:orgName[not(@ref)] | tei:div[@type='transcription']//tei:rs[not(@ref) and not(@type='memoir')]">
+        <span class="identRef"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="tei:div[@type='transcription']//tei:date[not(@type='entry')]">
+        <span class="identDate"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="tei:div[@type='transcription']//tei:title | tei:div[@type='transcription']//tei:rs[@type='memoir']">
+        <i><xsl:apply-templates/></i>
+    </xsl:template>-->
     
     
 </xsl:stylesheet>
