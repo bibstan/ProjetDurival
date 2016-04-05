@@ -4560,15 +4560,17 @@
                         </p>
                         <quote type="report" xml:id="d1766022305" ana="#stan">
                            <seg type="dateline"><lb/><placeName ref="#luneville"><choice><abbr>Lun<hi rend="super">lle</hi>.</abbr><expan>Lunéville</expan></choice></placeName> <date when="1766-02-23T11:00:00">23 fev 11 h. du matin</date>.</seg>
-                           <lb/>Je n'ai rien de plus à vous dire sur l'etat du <rs type="person" ref="#stanislas">roy</rs>,
-                           <lb/>que ce que je vous en ai marqué à 8 h. <rs type="person" ref="#stanislas"><choice><abbr>S. M.</abbr><expan>Sa Majesté</expan></choice></rs>
-                           <lb/>a donné quelques signes de connoissance
-                           <lb/>mais sa situation est absolument dèserspérées ;
-                           <lb/>Je ne vous parle pas de l'accablement de <orgName ref="#laCour">la
-                              <lb/>Cour</orgName>. <persName ref="#chapuis">M. Chap<supplied reason="inkBlot">uis</supplied></persName> va faire partir ceci
-                           <lb/>par le messager qui l'a suivi ; je lui ai
-                           <pb facs="B543956101M00863_06_0122_2R" n="119"/><fw type="pageNum" n="119" place="topRight">119</fw>conseille de ne partir lui même que ce soir.
-                           <lb/>Nous sommes tous dans la douleur.
+                           <p xml:id="d176602230501">
+                              <lb/>Je n'ai rien de plus à vous dire sur l'etat du <rs type="person" ref="#stanislas">roy</rs>,
+                              <lb/>que ce que je vous en ai marqué à 8 h. <rs type="person" ref="#stanislas"><choice><abbr>S. M.</abbr><expan>Sa Majesté</expan></choice></rs>
+                              <lb/>a donné quelques signes de connoissance
+                              <lb/>mais sa situation est absolument dèserspérées ;
+                              <lb/>Je ne vous parle pas de l'accablement de <orgName ref="#laCour">la
+                                 <lb/>Cour</orgName>. <persName ref="#chapuis">M. Chap<supplied reason="inkBlot">uis</supplied></persName> va faire partir ceci
+                              <lb/>par le messager qui l'a suivi ; je lui ai
+                              <pb facs="B543956101M00863_06_0122_2R" n="119"/><fw type="pageNum" n="119" place="topRight">119</fw>conseille de ne partir lui même que ce soir.
+                              <lb/>Nous sommes tous dans la douleur.
+                           </p>
                         </quote>
                         <p xml:id="d1766022306" ana="#stan">
                            <rs type="person" ref="#durivalJean">Mon frere</rs> ajoute séparément.
@@ -4592,17 +4594,19 @@
                         </p>
                         <quote type="report" xml:id="d1766022309" ana="#stan">
                            <seg type="dateline"><placeName ref="#luneville">Lunèville</placeName> <date when="1766-02-23T16:15:00">23 <choice><abbr>f<hi rend="super">er</hi>.</abbr><expan>février</expan></choice> 4 h<hi rend="super">1</hi>/<hi rend="sub">4</hi></date></seg>
-                           <lb/><persName ref="#chapuis">M. Chapuis</persName> va vous annoncer la perte que
-                           <lb/>nous venons de faire du <rs type="person" ref="#stanislas">meilleur des rois</rs>. Je
-                           <lb/>vous attens demain dans la matinée. 
-                           <add place="marginLeft">
-                              <seg type="event">
-                                 Il expira
-                                 <lb/>à <date when="1766-02-23T16:00:00">4 h. et
-                                 <lb/>quelques minuttes
-                                 <lb/>du soir</date>
-                              </seg>.
-                           </add>
+                           <p xml:id="d176602230901">
+                              <lb/><persName ref="#chapuis">M. Chapuis</persName> va vous annoncer la perte que
+                              <lb/>nous venons de faire du <rs type="person" ref="#stanislas">meilleur des rois</rs>. Je
+                              <lb/>vous attens demain dans la matinée. 
+                              <add place="marginLeft">
+                                 <seg type="event">
+                                    Il expira
+                                    <lb/>à <date when="1766-02-23T16:00:00">4 h. et
+                                       <lb/>quelques minuttes
+                                       <lb/>du soir</date>
+                                 </seg>.
+                              </add>
+                           </p>
                         </quote>
                         <p xml:id="d1766022310" ana="#stan">
                            <persName ref="#chapuis">M. Chapuis</persName> a ajouté de bouche beaucoup de
@@ -7990,7 +7994,7 @@
                                  <lb/>obeissant serviteur.
                               </seg>
                               <seg type="signed">
-                                 <lb/><persName ref="#dHermondClery">D’Hermond de Clery</persName>,<choice><abbr>av.</abbr><expan>avocat</expan></choice>
+                                 <lb/><persName ref="#dHermondClery">D’Hermond de Clery</persName>, <choice><abbr>av.</abbr><expan>avocat</expan></choice>
                                  <lb/>au <choice><abbr>p<hi rend="super">t</hi>.</abbr><expan>parlement</expan></choice> et ès conseils du
                                  <lb/>roy, 
                               </seg>
@@ -8161,7 +8165,7 @@
                   </div>
                   <div type="month" xml:id="d176611">
                      <pb facs="B543956101M00863_06_0156_2R" n="153"/>
-                     <fw type="runningHead"><seg type="print">Jours du mois.</seg> <date when="1766-10">mois de Novembre 1766</date></fw>
+                     <fw type="runningHead"><seg type="print">Jours du mois.</seg> <date when="1766-11">mois de Novembre 1766</date></fw>
                      <fw type="pageNum" n="153" place="topRight">153</fw>
                      <div type="day" xml:id="d17661101">
                         <dateline><date type="entry" when="1766-11-01">1<hi rend="super">er</hi>.</date></dateline>
@@ -8329,7 +8333,7 @@
                   </div>
                   <div type="month" xml:id="d176612">
                      <pb facs="B543956101M00863_06_0158_1L" n="154v"/>
-                     <fw type="runningHead"><seg type="print">Jours du mois.</seg> <date when="1766-10">mois de Décembre 1766</date></fw>                  
+                     <fw type="runningHead"><seg type="print">Jours du mois.</seg> <date when="1766-12">mois de Décembre 1766</date></fw>                  
                      <div type="day" xml:id="d17661201">
                         <dateline><date type="entry" when="1766-12-01">1<hi rend="super">er</hi>.</date></dateline>
                         <p xml:id="d1766120101" ana="#bio">                           
