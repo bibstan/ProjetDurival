@@ -9,110 +9,188 @@
 <xsl:output method="text" indent="no" omit-xml-declaration="no" encoding="UTF-8"/>
 
 <xsl:template match="/">
-\documentclass[12pt,a4paper,oneside]{book} % ou article, memoir, report, etc.
-    
-%usepackage permet d'utiliser un module complémentaire.
-    
-% Marges, retraits et espacement
-\usepackage[margin=2.5cm]{geometry}
-%espacement des lignes
-\usepackage{setspace}
-\onehalfspacing
-\setlength\parindent{1cm}
-    
-%Le package Babel permet de gérer différentes normes linguistiques et typographiques
-\usepackage[english,italian,french]{babel}
-    
-    
-%Nouvelle syntaxe ici: une commande avec une option entre []
-\usepackage[utf8]{inputenc}
-    
-%Gérer l'encodage des caractères en sortie
-\usepackage[T1]{fontenc}
-    
-%Changer la fonte de caractère
-\usepackage{lmodern}
-%\usepackage{charter}
-%Pour les maniaques du Times \usepackage{txfonts}
-%Palatino \usepackage{mathpazo}
-    
-%Métadonnées du document
-%Auteur
-\author{}
-\title{}
-%La commande date est optionnelle
-%\date{2 janvier 1950}
-\date{Version du \today}
-    
-    
-%Écrire les mots inconnus du dictionnaire pour la césure/l'hyphénation
-%\hyphenation{Ajou-t-ons}
-%Autres modules complémentaires
-\usepackage{lettrine}
-\usepackage[pdftex]{graphicx}
-    
-%pour le mode paysage je dois utiliser deux packages
-%\usepackage{lscape}%pour le mode paysage
-%\usepackage{pdflscape}%pour l'indiquer dans les métadonnées du pdf.
-    
-%pour le dessin
-\usepackage{tikz}%pour le dessin
-\usepackage{tikz-qtree}%pour les arbres 
-    
-\usepackage{caption}%pour ne pas numéroter les figures (on ajoute une étoile après caption)
-    
-%pour créer un Index
-\usepackage{makeidx}
-%pour activer la création de l'index.
-\makeindex 
-    
-%Appeller le package pour les bibliographies
-%\usepackage[backend=biber, sorting=nyt, style=inha]{biblatex}
-%appel de la ressource bibliographique.
-%\addbibresource{•}
-%pour les guillemets
-\usepackage[babel]{csquotes}
-    
-\begin{document}
-<xsl:apply-templates/>  
-\end{document}    
+    <xsl:apply-templates/>  
 </xsl:template>    
 
     <xsl:template match="//tei:div[@type='year']">
-        <xsl:text>\part{</xsl:text><xsl:apply-templates select="tei:head"></xsl:apply-templates><xsl:text>}</xsl:text>
+        <xsl:text>\part*{</xsl:text><xsl:apply-templates select="tei:head"></xsl:apply-templates><xsl:text>}</xsl:text>
+        <xsl:text>\addcontentsline{toc}{part}{</xsl:text><xsl:apply-templates select="tei:head"></xsl:apply-templates><xsl:text>}</xsl:text>
         <xsl:apply-templates select="tei:div[@type='month']"/>
     </xsl:template>
 
     <xsl:template match="//tei:div[@type='month']">
-        <xsl:text>\chapter{</xsl:text><xsl:apply-templates select="tei:fw[@type='runningHead']"></xsl:apply-templates><xsl:text>}</xsl:text>
-        <xsl:apply-templates select="tei:div[@type='day']"/>
+        <xsl:variable name="monthDate" select="concat(./tei:fw[@type='runningHead']/tei:date/@when,'-01')"/>
+        <xsl:variable name="test"><xsl:value-of select="$monthDate"/></xsl:variable>
+        <xsl:text>\chapter*{</xsl:text><xsl:value-of select="format-date($test,'[MNn] [Y0001]')"/><xsl:text>}</xsl:text>
+        <xsl:text>\addcontentsline{toc}{chapter}{</xsl:text><xsl:value-of select="format-date($test,'[MNn] [Y0001]')"/><xsl:text>}</xsl:text>
+        <xsl:apply-templates/>
     </xsl:template>
 
     <xsl:template match="//tei:div[@type='day']">
-        <xsl:text>\section*{</xsl:text><xsl:apply-templates select=".//tei:date[@type='entry']" mode="date"></xsl:apply-templates><xsl:text>}</xsl:text>
-        <xsl:for-each select="tei:p">
-            <xsl:apply-templates select="."/>
-            <xsl:text>\bigskip</xsl:text>
-            <xsl:text>
-        
-            </xsl:text>
-        </xsl:for-each>
+        <xsl:text>\begin{diary}{</xsl:text><xsl:apply-templates select=".//tei:date[@type='entry']" mode="date"></xsl:apply-templates><xsl:text>}{}</xsl:text>
+        <xsl:apply-templates/>        
+        <xsl:text>\end{diary}</xsl:text>
+    </xsl:template>
+    
+    <xsl:template match="//tei:div[@type='insert']">
+        <xsl:choose>
+            <xsl:when test="tei:div[@type='letter']">
+                <xsl:text>\begin{diary}{Encart}{}</xsl:text>
+                <xsl:apply-templates select="tei:div[@type='letter']/tei:dateline"/>
+                <xsl:text>\bigskip
+                
+                </xsl:text>
+                <xsl:for-each select="tei:div[@type='letter']/tei:p">
+                    <xsl:apply-templates select="."/>
+                </xsl:for-each>
+                
+                <xsl:apply-templates select="tei:div[@type='letter']/tei:closer/tei:salute"/>
+                <xsl:text>\bigskip
+                
+                </xsl:text>
+                <xsl:text>\begin{flushright}</xsl:text>
+                <xsl:apply-templates select="tei:div[@type='letter']/tei:closer/tei:signed"/>
+                <xsl:text>\end{flushright}</xsl:text>
+                <xsl:text>\end{diary}</xsl:text>
+            </xsl:when>
+            <xsl:when test="tei:div[@type='verse']">
+                <xsl:text>\begin{diary}{Encart}{}</xsl:text>
+                <xsl:for-each select="./tei:div[@type='verse']">
+                    <xsl:if test="tei:head">
+                        <xsl:text>\begin{Large}</xsl:text>
+                        <xsl:apply-templates select="tei:head"/>
+                        <xsl:text>\end{Large}</xsl:text>
+                        <xsl:text>\bigskip
+                
+                        </xsl:text>                        
+                    </xsl:if>
+                    <xsl:for-each select="tei:p | tei:lg | tei:quote">
+                        <xsl:apply-templates select="."/>
+                    </xsl:for-each>
+                </xsl:for-each>
+                <xsl:text>\end{diary}</xsl:text>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:text>\begin{diary}{Encart}{}</xsl:text>
+                <xsl:apply-templates select=".//tei:p"/>
+                <xsl:text>\end{diary}</xsl:text>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     
     <xsl:template match="tei:date[@type='entry']"/>
     <xsl:template match="tei:date[@type='entry']" mode="date">
         <xsl:choose>
             <xsl:when test="@when">
-                <xsl:value-of select="format-date(@when,'[D01] [Mn,*-3] [Y0001]', 'fr', (), ())"/>        
+                <xsl:value-of select="format-date(@when,'[D01] [MNn] [Y0001]', 'fr', (), ())"/>        
             </xsl:when>
             <xsl:when test="@from and @to">
                 <xsl:value-of select="format-date(@from,'[D01]', 'fr', (), ())"/>
                 <xsl:text> - </xsl:text>
-                <xsl:value-of select="format-date(@to,'[D01] [Mn,*-3] [Y0001]', 'fr', (), ())"/>
+                <xsl:value-of select="format-date(@to,'[D01] [MNn] [Y0001]', 'fr', (), ())"/>
             </xsl:when>
         </xsl:choose>        
     </xsl:template>
     
-    <xsl:template match="tei:abbr"/>
+    <xsl:template match="tei:p">
+        <xsl:apply-templates/>
+        <xsl:text>\bigskip</xsl:text>
+        <xsl:text>
+        
+        </xsl:text>
+    </xsl:template>
+    <!-- todo fusionner la gestion des quote et q pour n'avoir qu'une seule instruction -->
+    <xsl:template match="//tei:p/tei:quote[not(@rend='underline')] | //tei:p/tei:q"><xsl:text>\og </xsl:text><xsl:apply-templates/><xsl:text> \fg{}</xsl:text></xsl:template>
+    <xsl:template match="tei:div[@type='day']/tei:q | tei:div[@type='day']/tei:quote">
+        <xsl:choose>
+            <xsl:when test="@type='report'">
+                <xsl:text>\begin{quote}</xsl:text>
+                <xsl:text>\begin{flushright}</xsl:text><xsl:apply-templates select="tei:seg[@type='dateline']"/><xsl:text>\end{flushright}</xsl:text>
+                <xsl:apply-templates select="tei:p"/>
+                <xsl:text>\end{quote}</xsl:text>
+            </xsl:when>
+            <xsl:when test="@type='letter'">
+                <xsl:text>\begin{quote}</xsl:text>
+                <xsl:if test="tei:seg[@type='opener']/tei:seg[@type='dateline']">
+                    <xsl:text>\begin{flushright}</xsl:text><xsl:apply-templates select="tei:seg[@type='opener']/tei:seg[@type='dateline']"/><xsl:text>\end{flushright}</xsl:text>
+                    <xsl:text>\bigskip
+                    
+                    </xsl:text>
+                </xsl:if>
+                <xsl:if test="tei:seg[@type='opener']/tei:seg[@type='salute']">
+                    <xsl:apply-templates select="tei:seg[@type='opener']/tei:seg[@type='salute']"/>
+                    <xsl:text>\bigskip
+                    
+                    </xsl:text>
+                </xsl:if>
+                <xsl:apply-templates select="tei:p"/>
+                <xsl:if test="tei:seg[@type='closer']/tei:seg[@type='salute']">
+                    <xsl:apply-templates select="tei:seg[@type='closer']/tei:seg[@type='salute']"/>
+                </xsl:if>
+                <xsl:if test="tei:seg[@type='closer']/tei:seg[@type='signed']">
+                    <xsl:text>\begin{flushright}</xsl:text><xsl:apply-templates select="tei:seg[@type='closer']/tei:seg[@type='signed']"/><xsl:text>\end{flushright}</xsl:text>
+                </xsl:if>
+                <xsl:if test="tei:seg[@type='closer']/tei:seg[@type='dateline']">
+                    <xsl:apply-templates select="tei:seg[@type='closer']/tei:seg[@type='dateline']"/>
+                </xsl:if>
+                <xsl:text>\end{quote}</xsl:text>                
+            </xsl:when>
+            <xsl:when test="@type='verse'">
+                <xsl:text>\begin{quote}</xsl:text>
+                <xsl:apply-templates select="tei:lg"/>
+                <xsl:text>\end{quote}</xsl:text>
+            </xsl:when>
+        </xsl:choose>    
+    </xsl:template>
+    
+    <xsl:template match="tei:lg">
+        <xsl:text>\begin{verse}</xsl:text>
+        <xsl:for-each select="tei:l">
+            <xsl:apply-templates select="."/><xsl:text>\\</xsl:text>
+        </xsl:for-each>
+        <xsl:text>\end{verse}
+        </xsl:text>
+        <xsl:text>\bigskip</xsl:text>
+        <xsl:text>
+        
+        </xsl:text>
+    </xsl:template>        
+        
+    <xsl:template match="tei:subst">
+        <xsl:choose>
+            <xsl:when test="tei:del[@rend='overwritten']">
+                <xsl:apply-templates select="tei:add"/>        
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:text>\sout{</xsl:text><xsl:apply-templates select="tei:del"/><xsl:text>} </xsl:text><xsl:apply-templates select="tei:add"/>
+            </xsl:otherwise>
+        </xsl:choose>        
+    </xsl:template>
+    
+    <xsl:template match="tei:del[not(parent::tei:subst)]"><xsl:text>\sout{</xsl:text><xsl:apply-templates/><xsl:text>}</xsl:text></xsl:template>
 
+    <xsl:template match="tei:abbr"/>
+    <xsl:template match="//tei:teiHeader"/>
+    <xsl:template match="//tei:div[@type='index']"/>
+    <xsl:template match="//tei:fw"/>
+    
+    <xsl:template match="tei:hi">
+        <xsl:for-each select=".">
+            <xsl:choose>
+                <xsl:when test="@rend='super'"><xsl:text>\up{</xsl:text><xsl:apply-templates/><xsl:text>}</xsl:text></xsl:when>
+                <xsl:when test="@rend='sub'"><xsl:text>\textsubscript{</xsl:text><xsl:apply-templates/><xsl:text>}</xsl:text></xsl:when>
+                <xsl:otherwise><xsl:apply-templates/></xsl:otherwise>
+            </xsl:choose>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template match="tei:div[@type='transcription']//tei:list">
+        <xsl:text>\begin{itemize}</xsl:text>
+        <xsl:for-each select="tei:item">
+            <xsl:text>\item </xsl:text><xsl:apply-templates select="."/>
+        </xsl:for-each>
+        <xsl:text>\end{itemize}</xsl:text>
+    </xsl:template>
+    
+    <xsl:template match="//*[@rend='underline'] | //tei:title"><xsl:text>\emph{</xsl:text><xsl:apply-templates/><xsl:text>}</xsl:text></xsl:template>    
 </xsl:stylesheet>
