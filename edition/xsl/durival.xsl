@@ -78,6 +78,8 @@
                             </nav>
                         </header>
                         <div class="row">
+                            <h1><xsl:value-of select="tei:fw[@type='runningHead']/tei:date"/></h1>
+                            <label><input type="checkbox" class="checkbox_abbr" value="abbr" />Abbr</label>
                             <div class="large-12 center">                            
                                 <div class="owl-carousel">
                                     <xsl:apply-templates/>
@@ -88,7 +90,9 @@
                         <script src="../js/foundation.min.js">/*Pour transformation xslt*/</script>
                         
                         <script src="../js/owl-carousel/owl.js"></script>                        
-                        <script src="../js/owl-carousel/owlConfig.js"></script>                        
+                        <script src="../js/owl-carousel/owlConfig.js"></script>
+
+                        <script src="../js/modernisation/modernisation.js"></script>
                         <script>$(document).foundation();</script>
                     </body>
                 </html>
@@ -109,7 +113,7 @@
         <div class="item" data-hash="{$id}">
             <div class="row">
                 <div class="large-4 columns"><xsl:apply-templates select="tei:dateline/tei:date[@type='entry']" mode="date"/></div>
-                <div class="large-8 columns">                                                            
+                <div class="large-8 columns" style="min-height:300px;">                                                            
                     <xsl:apply-templates/>
                 </div>
             </div>
