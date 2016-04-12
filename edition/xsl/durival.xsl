@@ -59,7 +59,7 @@
                         <script src="../js/js/jquery.js">/*Pour transformation xslt*/</script>
                         <script src="../js/vendor/modernizr.js">/*xslt*/</script>                         
                     </head>
-                    <body>
+                    <body class="text-justify">
                         <header class="row border-top">
                             <nav class="top-bar" data-topbar="yes" role="navigation">
                                 <section class="top-bar-section">                            
@@ -78,7 +78,7 @@
                             </nav>
                         </header>
                         <div class="row">
-                            <h1><xsl:value-of select="tei:fw[@type='runningHead']/tei:date"/></h1>
+                            <h1><xsl:value-of select="concat(upper-case(substring(tei:fw[@type='runningHead']/tei:date,1,1)),lower-case(substring(tei:fw[@type='runningHead']/tei:date, 2)),' '[not(last())])"/></h1>
                             <label><input type="checkbox" class="checkbox_abbr" value="abbr" />Abbr</label>
                             <div class="large-12 center">                            
                                 <div class="owl-carousel">
@@ -112,7 +112,14 @@
         <xsl:variable name="id" select="@xml:id"/>
         <div class="item" data-hash="{$id}">
             <div class="row">
-                <div class="large-4 columns"><xsl:apply-templates select="tei:dateline/tei:date[@type='entry']" mode="date"/></div>
+                <div class="large-4 columns">
+                    <h2><xsl:apply-templates select="tei:dateline/tei:date[@type='entry']" mode="date"/></h2>
+                    <xsl:for-each select=".//tei:ref[@type='note']">
+                        <xsl:variable name="id" select="substring-after(@target,'#')"/>
+                        <xsl:variable name="number"><xsl:number select="." level="any" from="tei:div[@type='day']"/></xsl:variable>
+                        <p class="note"><sup>[<xsl:value-of select="$number"/>]</sup> <xsl:apply-templates select="//tei:back//tei:note[@xml:id=$id]/tei:p"/></p>
+                    </xsl:for-each>
+                </div>
                 <div class="large-8 columns" style="min-height:300px;">                                                            
                     <xsl:apply-templates/>
                 </div>
@@ -126,7 +133,14 @@
             <div class="row">
                 <xsl:choose>
                     <xsl:when test="tei:div[@type='letter']"><!-- todo Vérifier si besoin d'ajouter des @class pour les <p> -->
-                        <div class="large-4 columns"><p>Encart : lettre</p></div>
+                        <div class="large-4 columns">
+                            <h2>Encart : lettre</h2>
+                            <xsl:for-each select=".//tei:ref[@type='note']">
+                                <xsl:variable name="id" select="substring-after(@target,'#')"/>
+                                <xsl:variable name="number"><xsl:number select="." level="any" from="tei:div[@type='day']"/></xsl:variable>
+                                <p class="note"><sup>[<xsl:value-of select="$number"/>]</sup> <xsl:apply-templates select="//tei:back//tei:note[@xml:id=$id]/tei:p"/></p>
+                            </xsl:for-each>
+                        </div>
                         <div class="large-8 columns">
                             <p><xsl:apply-templates select="tei:div[@type='letter']/tei:dateline"/></p>
                             <xsl:for-each select="tei:div[@type='letter']/tei:p">
@@ -138,7 +152,14 @@
                     </xsl:when>
                     <xsl:when test="tei:div[@type='verse']">
                         <xsl:for-each select="./tei:div[@type='verse']">
-                            <div class="large-4 columns"><p>Encart : vers</p></div>
+                            <div class="large-4 columns">
+                                <h2>Encart : vers</h2>
+                                <xsl:for-each select=".//tei:ref[@type='note']">
+                                    <xsl:variable name="id" select="substring-after(@target,'#')"/>
+                                    <xsl:variable name="number"><xsl:number select="." level="any" from="tei:div[@type='day']"/></xsl:variable>
+                                    <p class="note"><sup>[<xsl:value-of select="$number"/>]</sup> <xsl:apply-templates select="//tei:back//tei:note[@xml:id=$id]/tei:p"/></p>
+                                </xsl:for-each>
+                            </div>
                             <div class="large-8 columns">
                                 <xsl:if test="tei:head">
                                     <h3><xsl:apply-templates select="tei:head"/></h3>
@@ -150,7 +171,14 @@
                         </xsl:for-each>
                     </xsl:when>
                     <xsl:otherwise>
-                        <div class="large-4 columns"><p>Encart</p></div>
+                        <div class="large-4 columns">
+                            <h2>Encart</h2>
+                            <xsl:for-each select=".//tei:ref[@type='note']">
+                                <xsl:variable name="id" select="substring-after(@target,'#')"/>
+                                <xsl:variable name="number"><xsl:number select="." level="any" from="tei:div[@type='day']"/></xsl:variable>
+                                <p class="note"><sup>[<xsl:value-of select="$number"/>]</sup> <xsl:apply-templates select="//tei:back//tei:note[@xml:id=$id]/tei:p"/></p>
+                            </xsl:for-each>
+                        </div>
                         <div class="large-8 columns">
                             <xsl:apply-templates select=".//tei:p"/>
                         </div>
@@ -174,7 +202,7 @@
         </xsl:choose>        
     </xsl:template>
     
-    <xsl:template match="tei:p"><!-- todo besoin des id pour les p ? -->
+    <xsl:template match="tei:p[ancestor::tei:div[@type='transcription']]"><!-- todo besoin des id pour les p ? -->
         <!--<xsl:variable name="id" select="@xml:id"/>-->
         <p><xsl:apply-templates/></p>
     </xsl:template>
@@ -240,7 +268,7 @@
     </xsl:template>
         
     <xsl:template match="tei:sic">
-        <xsl:apply-templates/><i>(sic)</i>
+        <xsl:apply-templates/><xsl:text>&#160;</xsl:text><i>(sic)</i>
     </xsl:template>
     
     <xsl:template match="tei:hi">
@@ -272,6 +300,13 @@
     </xsl:template>
     
     <xsl:template match="tei:fw"/>
+    
+    <xsl:template match="tei:ref[@type='note']">
+        <xsl:for-each select=".">
+            <xsl:variable name="number"><xsl:number select="." level="any" from="tei:div[@type='day']"/></xsl:variable>
+            <sup>[<xsl:value-of select="$number"/>]</sup>
+        </xsl:for-each>
+    </xsl:template>
     
     <!-- ********** INDEX ********** -->
     <xsl:template match="//tei:div[@type='index']">

@@ -1,37 +1,3 @@
-.date
-    {
-        margin-left: 10px;
-    }
-.text
-    {
-        padding-left:100px; 
-    }
-    
-.identPers
-    {
-        color:blue;
-    }
-    
-.identPlace
-    {
-        color:green;
-    }
-    
-.identRef
-    {
-        color:red;
-    }
-
-.identDate
-    {
-        color:brown;
-    }
-    
-.identOrg
-    {
-        color:purple;
-    }
-
-.large-10{
-    background-color:red;
+.note {
+    font-size:small;
 }

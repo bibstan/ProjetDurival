@@ -272,7 +272,7 @@
                            <lb/>prix ne s'est point trouvé. <persName ref="#simonin">Le P. Simonin</persName> <choice><abbr>Jes.</abbr><expan>jésuite</expan></choice> de
                            <lb/><placeName ref="#pontamousson">Pont a Mousson</placeName> en est l'auteur. C'est <persName ref="#bergier">M. Bergier</persName>
                            <lb/>de <placeName ref="#darney">Darney</placeName>, curé au diocèse de <placeName ref="#besancon">Besançon</placeName> qui
-                           <lb/>a traduit <bibl><title ref="#bib31">la Théogonie<ref type="note" target="#d1e125"/></title> d'<persName type="author">Hésiode</persName></bibl><!-- todo entrée hésiode -->
+                           <lb/>a traduit <bibl><title ref="#bib31">la Théogonie</title><ref type="note" target="#d1e125"/> d'<persName type="author">Hésiode</persName></bibl><!-- todo entrée hésiode -->
                         </p>
                      </div>
                      <div type="day" xml:id="d17650110">
