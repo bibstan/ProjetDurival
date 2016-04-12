@@ -504,7 +504,7 @@
             </classSpec>
             <!--Checking module core-->
             <moduleRef key="core"
-                       include="p hi quote q desc term sic choice gap add del rs address addrLine measure date abbr expan list item head pb lb cb author respStmt resp title publisher pubPlace bibl listBibl l lg note ref teiCorpus foreign"/>
+                       include="p ref hi quote q desc term sic choice gap add del rs address addrLine measure date abbr expan list item head pb lb cb author respStmt resp title publisher pubPlace bibl listBibl l lg note ref teiCorpus foreign"/>
             <elementSpec ident="p" mode="change">
                <attList>
                   <attDef ident="facs" mode="delete"/>
@@ -571,7 +571,7 @@
                   <attDef ident="place" mode="delete"/>
                   <attDef ident="type" mode="delete"/>
                   <attDef ident="subtype" mode="delete"/>
-                  <attDef ident="xml:lang" mode="delete"/>                  
+                  <attDef ident="xml:lang" mode="delete"/>                   
                </attList>
             </elementSpec>
             <elementSpec ident="hi" mode="change">
@@ -1345,6 +1345,9 @@
                         <valItem ident="month">
                            <desc>La valeur "day" indique chaque nouveau mois du Journal.</desc>
                         </valItem>
+                        <valItem ident="note">
+                           <desc>La valeur "day" indique chaque nouveau mois du Journal.</desc>
+                        </valItem>
                         <valItem ident="transcription">
                            <desc>La valeur "transcription" doit être unique. Elle contient l'ensemble du texte édité.</desc>
                         </valItem>
@@ -1366,6 +1369,7 @@
                         </valItem>
                      </valList>
                   </attDef>
+                  <attDef ident="xml:base"/><!-- pour xInclude -->
                </attList>
             </elementSpec>
             <elementSpec ident="dateline" mode="change">
