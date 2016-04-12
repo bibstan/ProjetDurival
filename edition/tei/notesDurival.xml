@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/oddDurival.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <div xml:id="notesDurival">               
+            <note xml:id="d1e125">
+               Théogonie [cité le 09/01/65] :  
+               <p>
+                  de grec théos = dieu, et gennao = engendrer. Théogonie d’Hésiode : œuvre poétique grecque écrite par de Hésiode (8e avt n.e.) enhexamètres dactyliques (6 mesures de 3 syllabes : 1 syllabe longuesuivie de 2 brèves), qui fixera les règles du récit mythologique sur lesorigines divines.
+               </p>
+            </note>
+            <note xml:id="d1e148">
+               Syndic [cité le 17/01/65] :  
+               <p>
+                  choisi et élu parmi les Maîtres imprimeurs tous les 2 ans. Office chargé « de regarder qu’il nes’imprime aucun livre ou libelle diffamatoire ouhérétique, &amp; que les impressions […] soient bien convenablement faites, correctement &amp; en bon papier, bons caractères, qui ne soient pas trop usés. » ( Code de lalibrairie et imprimerie de Paris ou Conférence durèglement […] du 24 mars 1744 ; repris àl’identique dans traité des droits d’auteur dans la littérature, les sciences et les beaux-arts, par Augustin-CharlesRenouard ; 1838)
+               </p>
+            </note>
+            <note xml:id="d1e194">
+               Ardoisière [cité le 18/01/65] :  
+               <p>
+                  carrière d’ardoise. celle de Nancy ??? (Dictionnairehistorique des ordonnances, et des tribunaux de laLorraine et du Barrois. Dédié à monseigneur lemarquis de Miromenil, chevalier, garde des sceaux de France, par M. Pierre-Dominique Guillaume de Rogéville, chevalier,conseiller au Parlement de Nancy A Nancy, Chezla veuve Leclerc, Chez Nicolas Gervois,1777)
+               </p>
+            </note>
+            <note xml:id="d1e233">
+               Friponnerie au Brelan [cité le 22/01/65] :  
+               <p>
+                  acte malhonnête ou vol, commis par ruse lors d’une partie de jeu à 3cartes.
+               </p>
+            </note>
+            <note xml:id="d1e247">
+               Ballons [cité le 22/01/65] :  
+               <p>
+                  Nom donné à la quantité de papier équivalant à peu près à une rameou deux porses lorsqu’on le donne au collage(Bibliogaphie Bertrand : Op. cit., art. papier. LeNormand : Op. cit., Vocabulaire).
+               </p>
+            </note>
+            <note xml:id="d1e269">
+               Académie / jetons [cité le 23/01/65] :  
+               <p>
+                  Société Royale des Sciences et Belles-Lettres de Nancy fondée àNancy le 28 décembre 1750 par le roi dePologne, duc de Lorraine et de Bar, StanislasLeszczynski, qui prendra, à partir de 1852, le nom définitif d’Académie de Stanislas. Des jetons sont remis auxmembres titulaires lors de chaque séance, etils doivent en rendre treize à la fin de l’annéepour justifier de leur assiduité.
+               </p>
+            </note>
+            <note xml:id="d1e308">
+               Conseil aulique [cité le 24/01/65] :  
+               <p>
+                  du grec aulicos = cour.Conseil de la cour, à valeur de tribunal juridique.
+               </p>
+            </note>
+            <note xml:id="d1e322">
+               Econome séquestre [cité le 24/01/65] :  
+               <p>
+                  régisseur de biens mis sous séquestre.
+               </p>
+            </note>
+            <note xml:id="d1e333">
+               Mémoires de l’académie [cité le 06/02/65] :  
+               <p>
+                  la collection desMémoires, formée de huit sériesdistinctes, a débuté en 1754.
+               </p>
+            </note>
+            <note xml:id="d1e349">
+               Glacière de la vénerie [cité le 08 &amp; 09 février 1765] :  
+               <p>
+                  grand creux fait en terre, ordinairement maçonné, voûté et recouvertde terre ou de paille, garni de glace ou deneige, destiné à conserver les aliments, notammentles gibiers tués lors de la vénerie, ou chasse à courre.
+               </p>
+            </note>
+            <note xml:id="d1e373">
+               Subdélégation de Nancy [cité le 28/02/65] :  
+               <p>
+                  la généralité de Nancy est une circonscription administrative crééeen 1737, dont la charge incombe à un intendantreprésentant le pouvoir central. Son ressortconcernait la Lorraine et le Barrois. Elle se composait de 36 bailliages et de 29 subdélégations.
+               </p>
+            </note>
+            <note xml:id="d1e397">
+               Arrêt interlocutoire [cité le 02/03/65] :  
+               <p>
+                  appelé aussi jugement mixte, catégorie de jugement qui tranche une partiedu fond et ordonne une mesure complémentaire sur le surplus.
+               </p>
+            </note>
+            <note xml:id="d1e416">
+               Evêque in partibus [cité le 22/03/66] :  
+               <p>
+                  évêque nommé à titre honorifique,titulaire d’un ancien siège épiscopal, n’ayant pas de diocèse propreà gouverner. Terme utilisé pour in partibus infidelium (dans les contrées des infidèles), issu de lalocalisation de ce siège dans des parties géographiques éloignées.
+               </p>
+            </note>
+            <note xml:id="d1e435">
+               Troubles en Bretagne [cité le 31/03/65] :  
+               <p>
+                  le parlement de Bretagne avaitdéfendu, sous des peines sévères, la perception d'impôtsétablis par le roi, mais non consentis par les Etats. Le 11 août1964, le parlement avait adopté des remontrances « au sujet desatteintes portées aux droits, franchises et immunités de laBretagne, des corvées dont cette province est accablée, et desimputations qui ont attiré à ce parlement des ordres et desreproches de la part du roi ». La session des États se poursuit dansla difficulté jusqu’au 1er avril 1765, tandisque le parlement résiste aux volontés du roi. Cette situation,débutée en hiver 1763, trouve sa cause dans un impôt supplémentaireexigé afin de rétablir les finances royales très éprouvées par laguerre de Sept Ans, close en février 1763. Après convocations,démissions, procès, condamnations, le calme ne sera rétabli que dansle courant de l’année 1774. Pendant cette décennie, cette affaire,largement reprise dans par des documents imprimés, sera devenue« l’Affaire de Bretagne ».
+               </p>
+            </note>
+            <note xml:id="d1e479">
+               M. l’Intendant [cité le 1eravril 1765] :  
+               <p>
+                  Antoine de Chaumont de La Galaizière (1697-1783), marquis de LaGalaizière,chancelier de Stanislas, intendantdes troupes françaises en Lorraine(1737-1768).
+               </p>
+            </note>
+            <note xml:id="d1e506">
+               Taxe de la viande. [cité le 05/04/65] :  
+               <p>
+                  depuis la fin du XVIème siècle, la viande est taxée, suivant untarif particulier à chaque morceau. Cettetaxation méticuleuse engendre maintes contestationsentre le public et les commerçants, et maints conflits entre ceux-ci et les municipalités.
+               </p>
+            </note>
+            <note xml:id="d1e530">
+               Lettres patentes [cité le 09/04/65] :  
+               <p>
+                  du latin patens,-tis = ouvert, car n'ayant qu'unsimplerepli au bas, qui n'empêche pas d’en lire le contenu (à ladifférence des lettres closes ou de cachet). Il s’agit de lettresémanées du roi, scellées du grand sceau et contresignées par unsecrétaire. 
+               </p>
+            </note>
+            <note xml:id="d1e552">
+               Minute [cité le 11/04/65] :  
+               <p>
+                  nom donné à l'original d'un document émanant d'unejuridiction ou d'un officierpublic.
+               </p>
+            </note>
+            <note xml:id="d1e570">
+               Mandement [cité le 12/04/65] :  
+               <p>
+                  du latin mandamentum, ordre écrit qu'on fait tenir àquelqu'un.
+               </p>
+            </note>
+            <note xml:id="d1e588">
+               Girandoles [cité le 28 avril1765] :  
+               <p>
+                  candélabre ou chandelier à plusieurs branches orné de pendeloques decristal.
+               </p>
+            </note>
+            <note xml:id="d1e602">
+               Panégyrique [cité le 08/05/65] :  
+               <p>
+                  du grec panéguris = assemblée de tout le peuple, élogepublic.
+               </p>
+            </note>
+            <note xml:id="d1e620">
+               Sa dernière fondation [cité le 08/05/65] :  
+               <p>
+                  « secours gratuits, dans les cas de revers de fortune, en faveur deshabitants de Nancy […] » ???(Dictionnaire géographique, historique etpolitique des Gaules et de la France / Jean-Joseph Expilly ; PP 445).
+               </p>
+            </note>
+            <note xml:id="d1e644">
+               Maître des basses œuvres [cité le 13/05/65] :  
+               <p>
+                  cureur de retrait, vidangeur Les basses œuvres étaient destâches d'intérêt général commel'équarrissage des charognes, le curage deslatrines, le nettoyage des rues, la vidange des eaux usées, la mise des chiens en fourrière, l'abattage deschiens errants,… Ces tâches étaient souventconfiées au bourreau, qui portait alors le titre demaître des hautes et basses œuvres.
+               </p>
+            </note>
+            <note xml:id="d1e685">
+               Contrôleur général [cité le 22/05/65] :  
+               <p>
+                  sous l'Ancien Régime, il s’agitdu responsable ministériel chargé d'administrer les financesroyales en France, après la suppression de la charge de surintendantdes finances en 1661. A l’origine, chargé ducontre-rôle (=contrôle), ou registre d’enregistrement, des actes destrésoriers.
+               </p>
+            </note>
+            <note xml:id="d1e708">
+               Suffragant [cité le 26/05/65] :  
+               <p>
+                  évêque placé sous l'autorité d'un archevêque métropolitain.
+               </p>
+            </note>
+            <note xml:id="d1e721">
+               Etuve des blés [cité le 29 mai 10765] :  
+               <p>
+                  la conservation des blés germés est rendue très difficile parl’échauffement et l’humidité, favorisant lafermentation et les attaques insectivores. De plusce blé devient impropre à la consommation, tant animale qu’humaine. « Quelques provinces sont assez sujettesà l’accident de la germination. Sur dix années il yen a quelquefois quatre où le blé se récolte germé.Combien il serait à désirer que, dans cesProvinces-là, le Seigneur, le Fermier ou la Communauté eussent uneétuve commune, comme il y a un pressoir, oùchacun pût aller étuver son grain, moyennant unelégère redevance ! […] Cet établissement, d’une bienfaisance éclairée, serait bien préférable au secours momentané quele charité donne à l’indigent […]. »(Observations sur la physique, sur l'histoirenaturelle et sur les arts ..., par M. l’Abbé Rozier, juillet 1782. Volume 20)
+               </p>
+            </note>
+            <note xml:id="d1e792">
+               Pied [cité le 29/05/65] :  
+               <p>
+                  en Lorraine, jusqu’à la fin du XVIIIe siècle,  mesure linéaireéquivalent à 29,2 cm.
+               </p>
+            </note>
+            <note xml:id="d1e806">
+               Pouce [cité le 29/05/65] :  
+               <p>
+                  en Lorraine, jusqu’à la fin du XVIIIe siècle,  mesure linéaireéquivalent à 2,70 cm.
+               </p>
+            </note>
+            <note xml:id="d1e820">
+               Resaux de blé [cité le 29/05/65] :  
+               <p>
+                  mesure de capacité de grain (au singulier, réal). « Le résal deNancy pesait en blé 180 livres et se divisait en 4bichets de chacun 12 pots ». (Une seigneurie lorraine sous l’ancienrégime / A. Denis ; Bibliothèque de l’école deschartes/numerisation/tires-a-part).
+               </p>
+            </note>
+            <note xml:id="d1e841">
+               Bichet [cité le 29/05/65] :  
+               <p>
+                  jusqu’à la fin de l’Ancien Régime, mesure de capacité degrain équivalente à 0,96 l. (Généalogie / LéoJourniaux)
+               </p>
+            </note>
+            <note xml:id="d1e859">
+               Chandelier [cité le 29/05/65] :  
+               <p>
+                  fabricant et marchand de chandelles « demeurant ci-devant prochel’Eglise Primatiale de cette Ville, àl’Enseigne de la Renommée, […] réside […] à laPorte St. Nicolas, dans le bâtiment qu’il a construit, […], pour servir de Fonderie générale des Suifs desVilles et Faubourgs de Nancy. […] très belles &amp;bonnes Chandelles en façon de bougie, &amp; unit àce commerce celui de Suif fondu. Ceux quien auront besoin, pourront s’adresser à lui, par Lettre ou autrement ; il leur en fera un prix raisonnable. (LaClef du Cabinet des Princes de l’Europe ; ALuxembourg… ; septembre 1751).
+               </p>
+            </note>
+            <note xml:id="d1e913">
+               Passé par les courroyes [cité le 1erjuin 1765] :  
+               <p>
+                  ici, synonyme de mise aux arrêts.
+               </p>
+            </note>
+            <note xml:id="d1e929">
+               Grenadiers [cité le 1erjuin 1765] :  
+               <p>
+                  appartenant à une unité d’assaut d’infanterie ou de cavalerie, àl’origine (XVIe siècle) spécialiséedans les attaques à la grenade, lors de sièges.A partir du XVIIIe siècle, désigneront des soldats appartenant à une unité d’élite.
+               </p>
+            </note>
+            <note xml:id="d1e960">
+               Chanoines réguliers [cité le 1erjuin 1765] :  
+               <p>
+                  clercs qui vivent en communauté non cloitrée et exercent un apostolat (missions sacerdotales ou d’enseignement)selon les principes d'une règle.« Les Chanoines Réguliers de Lorraine [prétendaient], en vertu d’une Bulle du Pape benoît XIV, avoir droitde posséder tous les Bénéfices séculiers, mêmeBénéfices simples. […] » (Collection desprocès-verbaux des assemblées générales du clergé de France… Depuis l’année 1560 … autorisé par les Assemblées de 1762&amp; 1765).
+               </p>
+            </note>
+            <note xml:id="d1e1006">
+               Fête-dieu [cité le 05/06/65] :  
+               <p>
+                  fête religieusecatholiquePâquesEucharistieostensoirdaissoixante jours après pendant laquelle le prêtre portaitl’ dans un au milieu des rues et des places richementpavoisées de draperies et de guirlandes. Le Saint-Sacrement étaitporté sous un par quatre notables.
+               </p>
+            </note>
+            <note xml:id="d1e1041">
+               Corps de ville [cité le 05/06/65] :  
+               <p>
+                  « On dit aussi le corps de ville pour dire, les officiers de laville qui sont le prévôt des marchands, leséchevins et les conseillers de ville et leprocureur du Roi. » ( Dictionnaire Universel contenant… / Antoine Furetière ; 1690).
+               </p>
+            </note>
+            <note xml:id="d1e1065">
+               Corps de judicature [cité le 06/06/65] :  
+               <p>
+                  Compagnie de ceux qui ont charge, fonction, dignité de juge, detoute personne ayant l'administration dela Justice.
+               </p>
+            </note>
+            <note xml:id="d1e1082">
+               Bureau de l’aumône publique [cité le 14/06/65] :  
+               <p>
+                  ou bureau des pauvres, organisme politique à but social, né de lanécessité de faire face à des situationsdifficiles, après guerres et épidémies, enregroupant les efforts de tous. Institution municipale, il ne dépasse pas les murs de la cité, à la différence desbureaux de charité (diocèse ou région). Les bureauxétaient généralement administrés par lesreprésentants des corps politiques de la cité. Pourlever la taxe des pauvres, on s'appuyait, comme pour les autres impôts municipaux, sur l'organisation de lamilice en quartiers et dizaines. Chaque responsablede quartier avait ainsi la charge de la recette del'aumône. (Bureaux des pauvres et confrériesde charité en Champagne méridionale / Georges Viard).
+               </p>
+            </note>
+            <note xml:id="d1e1147">
+               Arrérages [cité le 14/06/65] :  
+               <p>
+                  somme d'argent échue ou à échoir versée périodiquement aucréancier d'une rente ou d'unepension.
+               </p>
+            </note>
+            <note xml:id="d1e1164">
+               Inoculée [cité le 26/06/65] :  
+               <p>
+                  pratiquée essentiellement en Europe au XVIIIe siècle,l’inoculationBiographie universelle, ancienne et moderne; ou,Histoire, ...Joseph Fr. MichaudLouis Gabriel Michaud(du latin inoculare,greffer, enter) du virus de la variole, ou petit vérole, consiste enl’insertion dans un corps sain de matière organique contaminée, dans unsiècle où la maladie sévit par cycles réguliers (1723-1724, 1732,1754,…). « L’année d’après, Bagard, médecin des hôpitaux du roi, […],Président du Collège Royal de Médecine, […] lit à l’Académie, enprésence de Stanislas, roi de Pologne, un Discours sur l’inoculation de la petitevérole… » (Les rois aussi en mourraient / CatrionaSeth). + 80 252 (4) / 275 213 + / , ‎ - 1838 -‎Mythology https://books.google.fr/books?id=sIhUAAAAYAAJ
+               </p>
+            </note>
+            <note xml:id="d1e1202">
+               Ecolâtre [cité le 27/06/65] :  
+               <p>
+                  maître de l’école monastique école cathédrale ou de l’.
+               </p>
+            </note>
+            <note xml:id="d1e1222">
+               Canonicat [cité le 27/06/65] :  
+               <p>
+                  bénéfice ( = charge) de chanoine dans une église cathédrale, une collégiale ; anciennement, chanoinie.
+               </p>
+            </note>
+            <note xml:id="d1e1238">
+               Sol [cité le 07/07/65] :  
+               <p>
+                  vv
+               </p>
+            </note>
+            <note xml:id="d1e1249">
+               Denier [cité le 07/07/65] :  
+               <p>
+                  le système monétaire des 17ème et www.coutumes-et-traditions.fr 18ème siècles était basé sur un système duodécimal de monnaie decompte (système de numération en base 12). Les unités de base étaient la livre, le sol et le denier, ces deux dernières étant des subdivisions de la livre : 20 sols équivalent à une livre, 12 deniers font un sol (donc 1 livre = 20 sols = 240 deniers). D’autres pièces ont existé, comme l’écu ou le louis, mais celles-cire présentaient toujours une somme en livres et subdivisions. Ces monnaies de métal fin voyaient leur cours fluctuer au fil des ans :un louis d’or de 1720 avait une valeur différente d’un louis d’or de1722. () Le maître-ouvrier, vers 1787, peut s’offrirpour 16 sols et 9 deniers par jour (60 % de son budget) 1250 grammesde pain (la base de la nourriture), 300 grammes de viande (produitde luxe), une demi-bouteille de vin, du sel, du poivre, du vinaigreet de l’huile (produits de luxe), des fruits, des légumes et unmorceau de fromage. Un autre exemple, celui d’un journalieragricole (classe la plus pauvre des travailleurs) au milieu dusiècle : il est mieux payé à la ville qu’à la campagne (de 20 à 30sous par jour selon les villes, 16 sous à la campagne), mais lalivre de pain de froment coûtant alors 2 sous. En 1771, Voltaireécrit à M. d’Epinay : « Le pain vaut de 4 à 5 sols au cœur du royaume. » (femmesdeslumieres.canalblog.com).
+               </p>
+            </note>
+            <note xml:id="d1e1307">
+               ommées et toises [cité le 09/07/65] :  
+               <p>
+                  Cf E / Diderot
+               </p>
+            </note>
+            <note xml:id="d1e1318">
+               [cité le ] :  
+            </note>                             
+         </div> 
+      </body>
+  </text>
+</TEI>

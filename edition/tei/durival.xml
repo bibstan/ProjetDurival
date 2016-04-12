@@ -8591,7 +8591,10 @@
                   </div>
                </div>
             </div>
-         </body>               
+         </body>
+         <back>
+            <xi:include href="notesDurival.xml" xpointer="notesDurival" parse="xml"/>
+         </back>
       </text>
    </TEI>
    <!-- index -->
