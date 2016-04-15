@@ -7,6 +7,7 @@
     
     <xsl:output method="xhtml" indent="yes" omit-xml-declaration="no" encoding="UTF-8"/>
     <xsl:output method="xhtml" indent="yes" encoding="UTF-8" name="html"/>
+    <xsl:output method="text" indent="yes" encoding="UTF-8" name="frise"/>
     <xsl:template match="/">
         <html>
             <head>
@@ -33,6 +34,7 @@
                 <!-- pour fonction result-document -->
                 <xsl:apply-templates select="//tei:body"/>
                 <xsl:apply-templates select="//tei:div[@type='index']"/>
+                <xsl:apply-templates select="//tei:div[@type='transcription']" mode="frise"/>
             </body>
         </html>
     </xsl:template>
@@ -430,6 +432,25 @@
                 </li>
             </xsl:for-each>
         </ul>
+    </xsl:template>
+    
+    <!-- ********** Frise ********** -->
+    
+    <xsl:template match="//tei:div[@type='transcription']" mode="frise">
+        <xsl:result-document format="frise" encoding="UTF-8" href="frise.csv">
+            <xsl:text>Year@Month@Day@Time@End Year@End Month@End Day@End Time@Display Date@Headline@Text@Media@Media Credit@Media Caption@Media ThumbNail@Type@Group@Background
+                </xsl:text>
+            <xsl:for-each select="//*[@type='report'][descendant::tei:seg[@type='dateline']]">
+                <xsl:variable name="date" select="replace(.//tei:seg[@type='dateline']/tei:date/@when,'-','@')"/>
+                <xsl:variable name="time" select="replace($date,'T','@')"/>
+                
+                <xsl:value-of select="$time"/><xsl:text>@@@@ttt</xsl:text><xsl:text>
+                </xsl:text>
+            </xsl:for-each>
+            <!--<xsl:for-each select=" | tei:seg[@type='event']">
+                
+            </xsl:for-each>-->
+        </xsl:result-document>
     </xsl:template>
     
     <!-- pour vérification d'encodage à supprimer par la suite -->
