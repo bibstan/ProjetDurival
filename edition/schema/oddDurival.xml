@@ -1756,7 +1756,7 @@
                <p>
                   <specList><specDesc key="text"/></specList>
                   Le corps du document sera établi au sein de l'élément <gi>body</gi>. 
-                  Les notes historique et l'apparat critique seront balisés avec l'élément <gi>back</gi>
+                  Les notes historiques et l'apparat critique seront balisés avec l'élément <gi>back</gi>
                </p>
                <div3>
                   <head>Le corps du texte : <gi>body</gi></head>
@@ -2161,7 +2161,7 @@
                      <head>L'encodage des références</head>
                      <p>
                         Tous les cas énumérés ci-dessous, seront complétés par l'attribut <att>ref</att>, afin d'être liés aux index. La valeur de cet attribut
-                        renvoie à la valeur l'<att>xml:id</att> de l'entrée d'index correspondante et précédée du caractère "#".
+                        renvoie à la valeur de l'<att>xml:id</att> de l'entrée d'index correspondante et précédée du caractère "#".
                      </p>
                      <div5>
                         <head>Les noms propres</head>
