@@ -27,9 +27,9 @@
             <text>
                 <body>
                     <div>
-                        <listOrg>
+                        <listPerson>
                             <xsl:apply-templates select="//table:table-row"/>
-                        </listOrg>
+                        </listPerson>
                     </div>
                 </body>
             </text>
@@ -39,7 +39,7 @@
     <xsl:template match="//table:table-row">
         <xsl:for-each select=".">
         <xsl:variable name="xmlId" select="normalize-space(table:table-cell[1])"/>
-            <org xml:id="{$xmlId}"><OrgName><xsl:value-of select="normalize-space(table:table-cell[2])"/></OrgName><!--<xsl:if test="table:table-cell[3]/text:p !='x'"><state><p><xsl:value-of select="normalize-space(table:table-cell[3])"/></p></state></xsl:if>--></org>              
+            <person xml:id="{$xmlId}"><persName><xsl:value-of select="normalize-space(table:table-cell[3])"/></persName><!--<xsl:if test="table:table-cell[3]/text:p !='x'"><state><p><xsl:value-of select="normalize-space(table:table-cell[3])"/></p></state></xsl:if>--></person>              
         </xsl:for-each>
     </xsl:template>
     
