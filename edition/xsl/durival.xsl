@@ -194,12 +194,12 @@
     <xsl:template match="tei:dateline/tei:date[@type='entry']" mode="date">
         <xsl:choose>
             <xsl:when test="@when">
-                <xsl:value-of select="format-date(@when,'[D01] [Mn,*-3] [Y0001]', 'fr', (), ())"/>        
+                <xsl:value-of select="format-date(@when,'[D01] [MNn] [Y0001]', 'fr', (), ())"/>        
             </xsl:when>
             <xsl:when test="@from and @to">
                 <xsl:value-of select="format-date(@from,'[D01]', 'fr', (), ())"/>
                 <xsl:text> - </xsl:text>
-                <xsl:value-of select="format-date(@to,'[D01] [Mn,*-3] [Y0001]', 'fr', (), ())"/>
+                <xsl:value-of select="format-date(@to,'[D01] [MNn] [Y0001]', 'fr', (), ())"/>
             </xsl:when>
         </xsl:choose>        
     </xsl:template>
@@ -435,22 +435,43 @@
     </xsl:template>
     
     <!-- ********** Frise ********** -->
-    
     <xsl:template match="//tei:div[@type='transcription']" mode="frise">
-        <xsl:result-document format="frise" encoding="UTF-8" href="frise.csv">
+        <xsl:result-document format="frise" encoding="UTF-8" href="../csv/frise.csv">
             <xsl:text>Year@Month@Day@Time@End Year@End Month@End Day@End Time@Display Date@Headline@Text@Media@Media Credit@Media Caption@Media ThumbNail@Type@Group@Background
                 </xsl:text>
             <xsl:for-each select="//*[@type='report'][descendant::tei:seg[@type='dateline']]">
-                <xsl:variable name="date" select="replace(.//tei:seg[@type='dateline']/tei:date/@when,'-','@')"/>
-                <xsl:variable name="time" select="replace($date,'T','@')"/>
-                
-                <xsl:value-of select="$time"/><xsl:text>@@@@ttt</xsl:text><xsl:text>
+                <xsl:choose>
+                    <xsl:when test="substring-after(.//tei:seg[@type='dateline']/tei:date/@when,'T')">
+                        <xsl:variable name="date" select="replace(.//tei:seg[@type='dateline']/tei:date/@when,'-','@')"/>
+                        <xsl:variable name="time" select="replace($date,'T','@')"/>
+                        <xsl:value-of select="$time"/><xsl:text>@@@@@@</xsl:text><xsl:apply-templates select=".//tei:seg[@type='dateline']" mode="frise"/><xsl:text>@</xsl:text><xsl:apply-templates select=".//tei:p" mode="frise"/><xsl:text>
+                        </xsl:text>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:variable name="date" select="replace(.//tei:seg[@type='dateline']/tei:date/@when,'-','@')"/>                        
+                        <xsl:value-of select="$date"/><xsl:text>@@@@@@@</xsl:text><xsl:apply-templates select=".//tei:seg[@type='dateline']" mode="frise"/><xsl:text>@</xsl:text><xsl:apply-templates select=".//tei:p" mode="frise"/><xsl:text>
+                        </xsl:text>
+                    </xsl:otherwise>
+                </xsl:choose>                                                
+            </xsl:for-each>
+            <xsl:for-each select="//tei:p[contains(@ana,'#stan')]">
+                <xsl:variable name="date" select="replace(ancestor::tei:div[@type='day']/tei:dateline/tei:date/@when,'-','@')"/>
+                <xsl:value-of select="$date"/><xsl:text>@@@@@@@</xsl:text><xsl:apply-templates select="ancestor::tei:div[@type='day']/tei:dateline/tei:date" mode="date"/><xsl:text>@</xsl:text><xsl:apply-templates select="." mode="frise"/><xsl:text>
                 </xsl:text>
             </xsl:for-each>
             <!--<xsl:for-each select=" | tei:seg[@type='event']">
                 
             </xsl:for-each>-->
         </xsl:result-document>
+    </xsl:template>
+    
+    <xsl:template match="tei:p" mode="frise">
+        <xsl:variable name="p"><xsl:apply-templates mode="frise"/></xsl:variable>
+        <xsl:value-of select="normalize-space($p)"/>
+    </xsl:template>
+    
+    <xsl:template match="tei:choice" mode="frise">
+        <xsl:apply-templates select="tei:expan"/>
     </xsl:template>
     
     <!-- pour vérification d'encodage à supprimer par la suite -->
