@@ -4,6 +4,7 @@ $(document).ready(function() {
         loop: false,
         center: true,
         nav: true,
+        dots:true,
         margin: 10,
         callbacks: true,
         URLhashListener: true,
@@ -11,4 +12,6 @@ $(document).ready(function() {
         /*autoplayHoverPause: true,*/
         startPosition: 'URLHash'
     });
+    
+    /*$owl.trigger('refresh.owl.carousel');*/
 })
