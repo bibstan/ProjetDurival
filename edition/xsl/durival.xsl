@@ -63,6 +63,7 @@
                     </head>
                     <body class="text-justify">
                         <header class="row border-top">
+                            <img src="../images/header/header.jpg" alt="header" />
                             <nav class="top-bar" data-topbar="yes" role="navigation">
                                 <section class="top-bar-section">                            
                                     <ul>                                    
@@ -83,7 +84,7 @@
                             <h1><xsl:value-of select="concat(upper-case(substring(tei:fw[@type='runningHead']/tei:date,1,1)),lower-case(substring(tei:fw[@type='runningHead']/tei:date, 2)),' '[not(last())])"/></h1>
                             <label><input type="checkbox" class="checkbox_abbr" value="abbr" />Abbr</label>
                             <div class="large-12 center">                            
-                                <div class="owl-carousel">
+                                <div class="owl-carousel owl-theme">
                                     <xsl:apply-templates/>
                                 </div> 
                             </div>
@@ -114,16 +115,20 @@
         <xsl:variable name="id" select="@xml:id"/>
         <div class="item" data-hash="{$id}">
             <div class="row">
-                <div class="large-4 columns">
+                <div class="large-12 columns">
                     <h2><xsl:apply-templates select="tei:dateline/tei:date[@type='entry']" mode="date"/></h2>
+                </div>
+            </div>
+            <div class="row">                
+                <div class="large-8 columns" style="min-height:300px;">                                                            
+                    <xsl:apply-templates/>
+                </div>
+                <div class="large-4 columns">                    
                     <xsl:for-each select=".//tei:ref[@type='note']">
                         <xsl:variable name="id" select="substring-after(@target,'#')"/>
                         <xsl:variable name="number"><xsl:number select="." level="any" from="tei:div[@type='day']"/></xsl:variable>
                         <p class="note"><sup>[<xsl:value-of select="$number"/>]</sup> <xsl:apply-templates select="//tei:back//tei:note[@xml:id=$id]/tei:p"/></p>
                     </xsl:for-each>
-                </div>
-                <div class="large-8 columns" style="min-height:300px;">                                                            
-                    <xsl:apply-templates/>
                 </div>
             </div>
         </div>
