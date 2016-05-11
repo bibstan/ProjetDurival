@@ -2069,7 +2069,7 @@
                </state>
             </person>
             <person xml:id="haener">
-               <persName>M. Haener</persName>
+               <persName>M. Hœner</persName>
                <state>
                   <p>imprimeur</p>
                </state>
@@ -2123,7 +2123,9 @@
 
             <!-- encart -->
             <person xml:id="souvPontif">
-               <persName><persName>souverain pontif</persName></persName>
+               <persName>
+                  <persName>souverain pontif</persName>
+               </persName>
             </person>
             <person xml:id="opalinska">
                <persName>Catherine Opalinska</persName>
@@ -2150,63 +2152,107 @@
             </place>
             <place xml:id="nancyPepiniere">
                <placeName>La Pépinière de Nancy</placeName>
+               <location>
+                  <geo>48.69807,6.18542</geo>
+               </location>
+               <desc>Le terrain est attribué à l'établissement de la Pépinière royale par arrêt du
+                  conseil des finance du 26 octobre 1765.</desc>
             </place>
             <place xml:id="bonsecours">
                <placeName>Nancy Bonsecours</placeName>
                <location>
-                  <geo>48.683084,6.191872</geo>
+                  <geo>48.6765536,6.1994878</geo>
                </location>
+               <desc>Construite en 1738 sur l'emplacement de la chapelle Notre-Dame-de-la-Victoire
+                  (1484).</desc>
             </place>
             <place xml:id="nancyFabriques">
                <placeName>Les fabriques de Nancy</placeName>
+               <desc>Ensemble des biens matériels d'une église paroissiale. A VERIFIER LE SENS
+                  ICI</desc>
             </place>
             <place xml:id="nancyJardin">
                <placeName>Jardin Botanique de Nancy</placeName>
                <location>
-                  <geo>48.695183,6.188945</geo>
+                  <geo>48.69476876515408,6.189132928848267</geo>
                </location>
+               <desc>Créé en 1751-52. Jardin Dominique-Alexandre Godron</desc>
             </place>
             <place xml:id="nancyCasernes">
                <placeName>Les Casernes de Nancy</placeName>
                <location>
                   <geo>48.696289,6.18809063321451</geo>
                </location>
+               <desc>Construites à partir de 1764 près de la porte Sainte-Catherine. Avant cette
+                  date l'allusion aux casernes fait référence en particulier aux casernes qui
+                  étaient alors sur le site de l'actuel Rectorat.</desc>
             </place>
             <place xml:id="nancyVenerie">
                <placeName>La vénerie de Nancy</placeName>
+               <location>
+                  <geo>48.69299,6.17653</geo>
+               </location>
+               <desc>Une des glacières de la Ville était à proximité en 1731.</desc>
             </place>
             <place xml:id="nancyManufactureCoton">
                <placeName>La Manufacture de coton de Nancy</placeName>
             </place>
             <place xml:id="nancyCitadelle">
                <placeName>La citadelle de Nancy</placeName>
+               <location>
+                  <geo>48.70013,6.17806</geo>
+               </location>
+               <desc>La construction de la citadelle remonte à 1634 alors que la France occupait
+                  Nancy.</desc>
             </place>
             <place xml:id="nancyPrimatiale">
                <placeName>La primatiale</placeName>
                <location>
                   <geo>48.69142,6.18595</geo>
                </location>
+               <desc>La construction débute en 1607, interrompue puis reprise en 1703, mais c'est à
+                  Stanislas qu'on doit l'achèvemment de ce chantier en 1742. Devient
+                  Cathédrale-Primatiale en 1777.</desc>
             </place>
             <place xml:id="nancyHDV">
                <placeName>Hôtel de ville de Nancy</placeName>
+               <location>
+                  <geo>48.69309,6.18358</geo>
+               </location>
+               <desc>La construction du nouvel Hôtel de Ville débute en 1752 et s'achève en 1755.
+                  L'ancien était près de Saint-Sébastien, entre la rue des Ponts et des Quatres
+                  Églises, il fut démoli en 1752.</desc>
             </place>
             <place xml:id="nancyPlaceRoyale">
                <placeName>La place royale de Nancy</placeName>
                <location>
                   <geo>48.693644,6.183240</geo>
                </location>
+               <desc>En 1752, le programme des travaux destinés à créer une grande place qui
+                  réunirait les deux villes est entériné. La place est achevée avec l'érection de la
+                  statue de Louis XV le 18 novembre 1755.</desc>
             </place>
             <place xml:id="nancyMarche">
                <placeName>la place du marché de la ville neuve</placeName>
+               <location>
+                  <geo>48.68910,6.18200</geo>
+               </location>
+               <desc>Centre de la ville neuve voulue par Charles III, l'ancien Hôtel de ville y
+                  était érigé.</desc>
             </place>
             <place xml:id="nancyMinimes">
                <placeName>Les minimes de Nancy</placeName>
                <location>
                   <geo>48.6916688,6.1792884</geo>
                </location>
+               <desc>Fondé en 1592, reconstruit en 1613, il sera détruit à la Révolution.</desc>
             </place>
             <place xml:id="nancyStRoch">
                <placeName>Église Saint Roch de Nancy</placeName>
+               <location>
+                  <geo>48.69082,6.18222</geo>
+               </location>
+               <desc>Église construite en 1616</desc>
             </place>
             <place xml:id="bonsecoursMinimes">
                <placeName>Les minimes de Bonsecours</placeName>
@@ -2216,129 +2262,238 @@
             </place>
             <place xml:id="nancyCongregation">
                <placeName>La Congrégation</placeName>
+               <location>
+                  <geo>48.69228,6.18666</geo>
+               </location>
+               <desc>Fondé en 1615.</desc>
             </place>
             <place xml:id="nancyArdoisiere">
                <placeName>l'ardoisière de Nancy</placeName>
+               <location>
+                  <geo>48.69305,6.17843</geo>
+               </location>
+               <desc>Le 9 septembre 1764 les officiers municipaux obtiennent l'autorisation
+                  d'exploiter à nouveau une ardoisière dans les fossés près de la Vénerie, on
+                  suppose que c'est à ce site que Durival fait allusion.</desc>
             </place>
             <place xml:id="nancyRueCongregation">
                <placeName>Rue de la congrégation de Nancy</placeName>
+               <location>
+                  <geo>48.69244,6.18550</geo>
+               </location>
+               <desc>Rue percée en 1752.</desc>
             </place>
             <place xml:id="nancyRueJacobins">
                <placeName>Rue des jacobins de Nancy</placeName>
+               <location>
+                  <geo>48.69245296801029,6.183156967163086</geo>
+               </location>
+               <desc>Depuis 1794, rue des Dominicains.</desc>
             </place>
             <place xml:id="nancyStEpvre">
                <placeName>Église Saint Epvre</placeName>
+               <location>
+                  <geo>48.69561,6.1801</geo>
+               </location>
+               <desc>L'ancienne église est rasée et remplacée par l'église actuelle (par Prosper
+                  Morey à la fin du XIXe siècle).</desc>
             </place>
             <place xml:id="nancyPlaceStEpvre">
                <placeName>Place Saint Epvre</placeName>
+               <location>
+                  <geo>48.69609,6.17934</geo>
+               </location>
             </place>
             <place xml:id="nancyStLeopold">
                <placeName>Saint Léopold</placeName>
+               <location>
+                  <geo>48.68732,6.18251</geo>
+               </location>
+               <desc>Église du prieuré des Bénedictins, fondée en 1617, prend le titre d'abbaye en
+                  1718.</desc>
             </place>
             <place xml:id="nancyStSebastien">
                <placeName>Église Saint Sébastien</placeName>
+               <location>
+                  <geo>48.68904,6.18098</geo>
+               </location>
+               <desc>L'église actuelle date de 1720, sa construction s'achève en 1732..</desc>
             </place>
             <place xml:id="nancyDamesStSacrement">
                <placeName>Les dames du saint Sacrement</placeName>
+               <location>
+                  <geo>48.68736,6.18522</geo>
+               </location>
+               <desc>Fondation en 1624 (Notre-Dame de la Consolation)</desc>
             </place>
             <place xml:id="nancyCollegeJesuites">
                <placeName>Collège des jésuites de Nancy</placeName>
+               <location>
+                  <geo>48.6908736324152,6.182100176811218</geo>
+               </location>
+               <desc>Fondé en 1615. Accolé à l'église Saint-Roch, entre la rue des Carmes ou était
+                  son entrée, et la rue Saint-Dizier</desc>
             </place>
-            <place xml:id="nancyCollege">
+            <!-- idem Nancy Collège des Jésuites -->
+            <!--<place xml:id="nancyCollege">
                <placeName>Collège de Nancy</placeName>
-            </place>
+            </place>-->
             <place xml:id="nancyNoviciatJesuites">
                <placeName>Église du Noviciat de Nancy</placeName>
+               <location>
+                  <geo>48.68641,6.18659</geo>
+               </location>
+               <desc>Fondé en 1601. Église de 1604.</desc>
             </place>
             <place xml:id="nancyStPierre">
                <placeName>Église Saint Pierre de Nancy</placeName>
                <location>
-                  <geo>48.683633,6.190936</geo>
+                  <geo>48.683084,6.191872</geo>
                </location>
+               <desc>Église consacrée en 1737.</desc>
             </place>
             <place xml:id="nancyBibliotheque">
                <placeName>Bibliothèque publique</placeName>
                <location>
-                  <geo>48.69683,6.17986</geo>
+                  <geo>48.69318,6.18394</geo>
                </location>
+               <desc>La bibliothèque royale est au premier étage de l'hôtel de Ville depuis 1763,
+                  auparavant elle était dans la galerie des Cerfs au Palais Ducal. Elle intègrera à
+                  son emplacement actuel vers 1797.</desc>
             </place>
             <place xml:id="nancyPetiteCarmelites">
                <placeName>Les petites Carmélites</placeName>
+               <location>
+                  <geo>48.69066,6.17682</geo>
+               </location>
+               <desc>Installé rue Sain-Joseph (rue Chanzy) en 1655.</desc>
             </place>
             <place xml:id="nancyHopitalStCharles">
                <placeName>Hôpital St Charles de Nancy</placeName>
                <location>
                   <geo>48.689356,6.178793</geo>
                </location>
+               <desc>Fondée en 1626 dans l'ancienne batterie de cuivre.</desc>
             </place>
             <place xml:id="nancyHopitalStJulien">
                <placeName>Hôpital saint Julien de Nancy</placeName>
                <location>
                   <geo>48.6921578,6.1848052992915</geo>
                </location>
+               <desc>La fondation pour les orphelins de Stanislas y est installée en 1748. Hôpital
+                  installé en Ville Neuve en 1589. Auparavant Grande-Rue depuis le XIVe
+                  siècle.</desc>
             </place>
             <place xml:id="nancyDominiquains">
                <placeName>Les dominicains de Nancy</placeName>
+               <location>
+                  <geo>48.69146,6.18368</geo>
+               </location>
+               <desc>Fondé en 1640, détruit à la Révolution.</desc>
             </place>
             <place xml:id="nancyVisitation">
                <placeName>La Visitation</placeName>
                <location>
-                  <geo>48.6916688,6.1792884</geo>
+                  <geo>48.69160133692096,6.179393827915192</geo>
                </location>
+               <desc>Le couvent est fondé en 1632, la chapelle subsiste, le lycée Poincaré est
+                  construit sur son emprise et celle des Minimes.</desc>
             </place>
             <place xml:id="nancyPenitentsBlancs">
                <placeName>Église des pénitents blancs de Nancy</placeName>
+               <location>
+                  <geo>48.69609,6.17806</geo>
+               </location>
             </place>
             <place xml:id="nancyTiercelins">
                <placeName>Les tiercelins de Nancy</placeName>
                <location>
                   <geo>48.6902742,6.1875429</geo>
                </location>
+               <desc>Fondé en 1622. Installé en ville-neuve depuis 1656.</desc>
             </place>
             <place xml:id="nancyCarmes">
                <placeName>Les carmes de Nancy</placeName>
                <location>
-                  <geo>48.69192,6.18043</geo>
+                  <geo>48.692132501452924,6.180826127529144</geo>
                </location>
+               <desc>Installé en 1611-1612.</desc>
             </place>
             <place xml:id="nancyCarriere">
                <placeName>Carrière de Nancy</placeName>
+               <location>
+                  <geo>48.69577,6.18180</geo>
+               </location>
             </place>
             <place xml:id="nancyCapucins">
                <placeName>Les capucins de Nancy</placeName>
+               <location>
+                  <geo>48.68694,6.18658</geo>
+               </location>
+               <desc>Fondé en 1592. Église construite en 1604.</desc>
             </place>
             <place xml:id="nancyStNicolas">
                <placeName>Paroisse saint Nicolas</placeName>
+               <location>
+                  <geo>48.68694,6.18658</geo>
+               </location>
             </place>
             <place xml:id="nancyAugustins">
                <placeName>Les Augustins de Nancy</placeName>
                <location>
-                  <geo>48.6891274,6.1805449</geo>
+                  <geo>48.68922,6.18062</geo>
                </location>
+               <desc>Fondé en 1634.</desc>
             </place>
             <place xml:id="nancyCordeliers">
                <placeName>Les Cordeliers de Nancy</placeName>
+               <location>
+                  <geo>48.69786,6.17942</geo>
+               </location>
+               <desc>Fondé sous René II en 1487. La chapelle est terminée en 1608.</desc>
             </place>
-            <place xml:id="nancyTheatre">
+            <!-- voir Nancy Comédie -->
+            <!--<place xml:id="nancyTheatre">
                <placeName>Théâtre de la ville de Nancy</placeName>
-            </place>
+            </place>-->
             <place xml:id="nancyCimetierePorteStJean">
                <placeName>Cimetière extérieur de la porte Saint Jean</placeName>
+               <location>
+                  <geo>48.68900,6.17564</geo>
+               </location>
+               <desc>Emplacement approximatif. Ouvert en 1763.</desc>
             </place>
             <place xml:id="nancySteElisabeth">
                <placeName>Les religieuses sainte Elisabeth</placeName>
+               <location>
+                  <geo>48.68564,6.18638</geo>
+               </location>
+               <desc>Situation approximative. Sur l'emplacement de l'ancien Hôpital Notre-Dame,
+                  Porte Saint-Nicolas.</desc>
             </place>
             <place xml:id="nancyPorteRoyale">
                <placeName>Porte royale de Nancy</placeName>
+               <location>
+                  <geo>48.69441,6.18268</geo>
+               </location>
+               <desc>Louis XIV fait construire la porte royale en 1673. Aujourd'hui Porte
+                  Héré</desc>
             </place>
             <place xml:id="nancyPlaceDames">
                <placeName>Place des dames de Nancy</placeName>
+               <location>
+                  <geo>48.6952,6.1798</geo>
+               </location>
+               <desc>Une des plus anciennes places de Nancy, aujourd'hui Place du Colonel
+                  Fabien.</desc>
             </place>
             <place xml:id="nancyPalais">
                <placeName>Palais de Nancy</placeName>
                <location>
                   <geo>48.69499,6.18286</geo>
                </location>
+               <desc>Palais, ancien Hôtel de Craon construit en 1716 par Boffrand, architecte du duc
+                  Léopold</desc>
             </place>
             <place xml:id="frescati">
                <placeName>Frescati</placeName>
@@ -2351,207 +2506,111 @@
             </place>
             <place xml:id="villeEnVermois">
                <placeName>Ville-en-Vermois</placeName>
-               <location>
-                  <geo>48.613651,6.253280</geo>
-               </location>
             </place>
             <place xml:id="saudrupt">
                <placeName>Saudrupt</placeName>
-               <location>
-                  <geo>48.700091,5.066859</geo>
-               </location>
             </place>
             <place xml:id="remiremont">
                <placeName>Remiremont</placeName>
-               <location>
-                  <geo>48.0158951,6.5912615</geo>
-               </location>
             </place>
             <place xml:id="france">
                <placeName>France</placeName>
             </place>
             <place xml:id="bouxieres">
                <placeName>Bouxieres-aux-Dames</placeName>
-               <location>
-                  <geo>48.7543564,6.1640849</geo>
-               </location>
             </place>
             <place xml:id="sampigny">
                <placeName>Sampigny</placeName>
-               <location>
-                  <geo>48.8261855,5.5104698</geo>
-               </location>
             </place>
             <place xml:id="mescring">
                <placeName>Mécrin</placeName>
-               <location>
-                  <geo>48.82493,5.5325</geo>
-               </location>
             </place>
             <place xml:id="champigneulle">
                <placeName>Champigneulles</placeName>
-               <location>
-                  <geo>48.7342216,6.1651167</geo>
-               </location>
             </place>
             <place xml:id="mirecourt">
                <placeName>Mirecourt</placeName>
-               <location>
-                  <geo>48.3005302,6.1312974</geo>
-               </location>
             </place>
             <place xml:id="compiegne">
                <placeName>Compiègne</placeName>
-               <location>
-                  <geo>49.4179497,2.8263171</geo>
-               </location>
             </place>
             <place xml:id="hotelCommandant">
                <placeName>Hôtel du commandant</placeName>
-               <location>
-                  <geo>48.69701065,6.1809467058308</geo>
-               </location>
             </place>
             <place xml:id="darney">
                <placeName>Darney</placeName>
-               <location>
-                  <geo>48.0851534,6.047483</geo>
-               </location>
             </place>
             <place xml:id="luneville">
                <placeName>Lunéville</placeName>
-               <location>
-                  <geo>48.5894638,6.5013779</geo>
-               </location>
             </place>
             <place xml:id="lunevilleHDV">
                <placeName>Hôtel de ville de Lunéville</placeName>
             </place>
             <place xml:id="lunevilleChateau">
                <placeName>La château de Lunéville</placeName>
-               <location>
-                  <geo>48.5945766,6.49221310705878</geo>
-               </location>
             </place>
             <place xml:id="malgrange">
                <placeName>La Malgrange</placeName>
-               <location>
-                  <geo>48.66340,6.21577</geo>
-               </location>
             </place>
             <place xml:id="paris">
                <placeName>Paris</placeName>
-               <location>
-                  <geo>48.8564915,2.3521562</geo>
-               </location>
             </place>
             <place xml:id="versailles">
                <placeName>Versailles</placeName>
-               <location>
-                  <geo>48.8035403,2.1266886</geo>
-               </location>
             </place>
             <place xml:id="versaillesChateau">
                <placeName>Chateau de Versailles</placeName>
-               <location>
-                  <geo>48.80485745,2.12139858708375</geo>
-               </location>
             </place>
             <place xml:id="pontamousson">
                <placeName>Pont-à-Mousson</placeName>
-               <location>
-                  <geo>48.9025138,6.0521186</geo>
-               </location>
             </place>
             <place xml:id="besancon">
                <placeName>Besançon</placeName>
-               <location>
-                  <geo>47.237953,6.0243246</geo>
-               </location>
             </place>
             <place xml:id="metz">
                <placeName>Metz</placeName>
-               <location>
-                  <geo>49.1196964,6.1763552</geo>
-               </location>
             </place>
             <place xml:id="heudicourtMaison">
                <placeName>La maison d'Heudicourt</placeName>
             </place>
             <place xml:id="commercy">
                <placeName>Commercy</placeName>
-               <location>
-                  <geo>48.763203,5.5914753</geo>
-               </location>
             </place>
             <place xml:id="calais">
                <placeName>Calais</placeName>
-               <location>
-                  <geo>50.9488,1.87468</geo>
-               </location>
             </place>
             <place xml:id="stdiez">
                <placeName>Saint-Dié</placeName>
-               <location>
-                  <geo>48.2844762,6.951128</geo>
-               </location>
             </place>
             <place xml:id="turin">
                <placeName>Turin</placeName>
-               <location>
-                  <geo>45.0709201,7.685972</geo>
-               </location>
             </place>
             <place xml:id="vienne">
                <placeName>Vienne</placeName>
-               <location>
-                  <geo>48.2083537,16.3725042</geo>
-               </location>
             </place>
             <place xml:id="parme">
                <placeName>Parme</placeName>
-               <location>
-                  <geo>44.8011232,10.3285084</geo>
-               </location>
             </place>
             <place xml:id="bordeaux">
                <placeName>Bordeaux</placeName>
-               <location>
-                  <geo>44.841225,-0.5800363</geo>
-               </location>
             </place>
             <place xml:id="bretagne">
                <placeName>Bretagne</placeName>
             </place>
             <place xml:id="lyon">
                <placeName>Lyon</placeName>
-               <location>
-                  <geo>45.7578137,4.8320114</geo>
-               </location>
             </place>
             <place xml:id="toul">
                <placeName>Toul</placeName>
-               <location>
-                  <geo>48.6762624,5.8941759</geo>
-               </location>
             </place>
             <place xml:id="luxeuil">
                <placeName>Luxeuil-les-Bains</placeName>
-               <location>
-                  <geo>47.817177,6.3808865</geo>
-               </location>
             </place>
             <place xml:id="strasbourg">
                <placeName>Strasbourg</placeName>
-               <location>
-                  <geo>48.584614,7.7507127</geo>
-               </location>
             </place>
             <place xml:id="heillecourt">
                <placeName>Heillecourt</placeName>
-               <location>
-                  <geo>48.6507973,6.1976938</geo>
-               </location>
             </place>
             <place xml:id="lorraineDuche">
                <placeName>Le Duché de Lorraine</placeName>
@@ -2564,69 +2623,41 @@
             </place>
             <place xml:id="neuviller">
                <placeName>Neuviller</placeName>
-               <location>
-                  <geo>48.4921993,6.2888812</geo>
-               </location>
             </place>
             <place xml:id="plombieres">
                <placeName>Plombières</placeName>
-               <location>
-                  <geo>47.9641254,6.4564439</geo>
-               </location>
+               <desc>Plombières-les-Bains</desc>
             </place>
             <place xml:id="bar">
                <placeName>Bar-Le-Duc</placeName>
-               <location>
-                  <geo>48.7736785,5.1621546</geo>
-               </location>
             </place>
             <place xml:id="void">
                <placeName>Void</placeName>
-               <location>
-                  <geo>48.688593,5.6188799</geo>
-               </location>
+               <desc>Void-Vacon</desc>
             </place>
             <place xml:id="allemagne">
                <placeName>Allemagne</placeName>
             </place>
             <place xml:id="flavigny">
                <placeName>Flavigny</placeName>
-               <location>
-                  <geo>48.5675895,6.1874642</geo>
-               </location>
             </place>
             <place xml:id="florence">
                <placeName>Florence</placeName>
-               <location>
-                  <geo>43.7698712,11.2555757</geo>
-               </location>
             </place>
             <place xml:id="rome">
                <placeName>Rome</placeName>
-               <location>
-                  <geo>41.8935085,12.4825526</geo>
-               </location>
             </place>
             <place xml:id="saxe">
                <placeName>La Saxe</placeName>
             </place>
             <place xml:id="loisey">
                <placeName>Loisey</placeName>
-               <location>
-                  <geo>48.7650285,5.2845873</geo>
-               </location>
             </place>
             <place xml:id="londres">
                <placeName>Londres</placeName>
-               <location>
-                  <geo>51.5073219,-0.1276473</geo>
-               </location>
             </place>
             <place xml:id="inspruck">
                <placeName>Innsbruck</placeName>
-               <location>
-                  <geo>47.2654296,11.3927685</geo>
-               </location>
             </place>
             <place xml:id="ursulines">
                <placeName>Les Ursulines</placeName>
@@ -2636,36 +2667,21 @@
             </place>
             <place xml:id="fleville">
                <placeName>Fléville-devant-Nancy</placeName>
-               <location>
-                  <geo>48.6266066,6.2066976</geo>
-               </location>
             </place>
             <place xml:id="chateauFleville">
                <placeName>Château de Fléville</placeName>
-               <location>
-                  <geo>48.626437,6.2018272257921</geo>
-               </location>
             </place>
             <place xml:id="choisy">
                <placeName>Choisy</placeName>
             </place>
             <place xml:id="avignon">
                <placeName>Avignon</placeName>
-               <location>
-                  <geo>43.9493143,4.8060329</geo>
-               </location>
             </place>
             <place xml:id="beaucaire">
                <placeName>Beaucaire</placeName>
-               <location>
-                  <geo>43.8085436,4.6392648</geo>
-               </location>
             </place>
             <place xml:id="tarascon">
                <placeName>Tarascon</placeName>
-               <location>
-                  <geo>43.8053654,4.6585115</geo>
-               </location>
             </place>
             <place xml:id="stAubin">
                <placeName>saint Aubin</placeName>
@@ -2678,33 +2694,21 @@
             </place>
             <place xml:id="jolivet">
                <placeName>Jolivet</placeName>
-               <location>
-                  <geo>48.606051,6.5041393</geo>
-               </location>
             </place>
             <place xml:id="leomont">
                <placeName>leomont</placeName>
             </place>
             <place xml:id="sens">
                <placeName>Sens</placeName>
-               <location>
-                  <geo>48.1978559,3.282606</geo>
-               </location>
             </place>
             <place xml:id="stDenis">
                <placeName>Saint Denis</placeName>
-               <location>
-                  <geo>48.935773,2.3580232</geo>
-               </location>
             </place>
             <place xml:id="maisonForce">
                <placeName>Jardin de la maison de force</placeName>
             </place>
             <place xml:id="stuttgart">
                <placeName>Stuttgart</placeName>
-               <location>
-                  <geo>48.7784485,9.1800132</geo>
-               </location>
             </place>
             <place xml:id="coteSteCatherine">
                <placeName>Les bois de la côte Ste Catherine</placeName>
@@ -2714,24 +2718,29 @@
             </place>
             <place xml:id="mareville">
                <placeName>Maréville</placeName>
-               <location>
-                  <geo>48.677826,6.136512</geo>
-               </location>
             </place>
             <place xml:id="leDauphine">
                <placeName>Le Dauphiné</placeName>
             </place>
             <place xml:id="colombey">
                <placeName>Colombey</placeName>
+               <desc>??</desc>
             </place>
             <place xml:id="hotelIntendance">
                <placeName>Hôtel de l'intendance sur la carrière à Nancy</placeName>
+               <location>
+                  <geo>48.69358,6.18417</geo>
+               </location>
+               <desc>Sur la place Royale</desc>
             </place>
             <place xml:id="neufchateau">
                <placeName>Neufchateau</placeName>
             </place>
             <place xml:id="hotelGouvernement">
                <placeName>Hôtel du gouvernement</placeName>
+               <location>
+                  <geo>48.69700,6.18095</geo>
+               </location>
             </place>
             <place xml:id="cantonVarangeville">
                <placeName>canton de Varangeville</placeName>
@@ -2741,9 +2750,6 @@
             </place>
             <place xml:id="malzeville">
                <placeName>Malzéville</placeName>
-               <location>
-                  <geo>48.7114442,6.1859623</geo>
-               </location>
             </place>
             <place xml:id="cantonGondreville">
                <placeName>Canton de Gondreville</placeName>
@@ -2766,11 +2772,16 @@
             <place xml:id="nancyRueEsplannade">
                <placeName>Rue de l'esplanade à Nancy</placeName>
                <location>
-                  <geo>48.6932541,6.1821196</geo>
+                  <geo>48.6918394,6.1793484</geo>
                </location>
+               <desc>Rebaptisée rue Stanislas depuis l'inauguration de la statue du roi en
+                  1831</desc>
             </place>
             <place xml:id="nancySoeursGrises">
                <placeName>Nouvelle église des Sœurs grises</placeName>
+               <location>
+                  <geo>48.68641,6.18659</geo>
+               </location>
             </place>
             <place xml:id="evecheMunster">
                <placeName>évêché de Münster (Westphalie)</placeName>
@@ -2819,6 +2830,9 @@
             </place>
             <place xml:id="nancyNotreDame">
                <placeName>Eglise et paroisse Notre Dame</placeName>
+               <location>
+                  <geo>48.69685,6.17856</geo>
+               </location>
             </place>
             <place xml:id="boucquemont">
                <placeName>Bouquemont</placeName>
@@ -2888,15 +2902,25 @@
                <location>
                   <geo>48.69342745,6.18206770823004</geo>
                </location>
+               <desc>Nouvelle salle inaugurée en 1755. Auparavant une salle était située depuis 1750
+                  derrière la Palais Ducal.</desc>
             </place>
             <place xml:id="nancyRuePoissonnerie">
                <placeName>Rue de la poissonnerie</placeName>
                <location>
-                  <geo>48.6919103,6.17908871817159</geo>
+                  <geo>48.691874002080645,6.179444789886475</geo>
                </location>
+               <desc>Actuelle rue Gambetta (depuis 1883), Le marché au Poissons était à l'angle de
+                  la rue Gambetta et Saint-Dizier, le bâtiment abritera la Comédie jusqu'en 1738
+                  puis une Renfermerie en 1754.</desc>
             </place>
             <place xml:id="garenne">
                <placeName>La Garenne</placeName>
+               <location>
+                  <geo>48.68053,6.17210</geo>
+               </location>
+               <desc>Emplacement approximatif du bois de la Garenne. Concession faite en 1731 pour
+                  forme une promenade publique.</desc>
             </place>
             <place xml:id="etuve">
                <placeName>L'étuve des blés</placeName>
@@ -2907,13 +2931,13 @@
             <place xml:id="nancyPorteStNic">
                <placeName>Porte Saint Nicolas de Nancy</placeName>
                <location>
-                  <geo>48.68471585,6.18842533860056</geo>
+                  <geo>48.68567138976192,6.186193227767944</geo>
                </location>
             </place>
             <place xml:id="nancyPorteStGeorges">
                <placeName>Porte Saint Georges de Nancy</placeName>
                <location>
-                  <geo>48.6917582,6.186497</geo>
+                  <geo>48.692364441540896,6.1884355545043945</geo>
                </location>
             </place>
             <place xml:id="nancyPorteSteCatherine">
@@ -2930,6 +2954,9 @@
             </place>
             <place xml:id="nancySecherie">
                <placeName>la sécherie des lavoirs publics</placeName>
+               <location>
+                  <geo>48.69272,6.18807</geo>
+               </location>
             </place>
             <place xml:id="hotelLeopold">
                <placeName>Hôtel du duc Léopold</placeName>
@@ -2960,15 +2987,28 @@
                <location>
                   <geo>48.69017,6.18791</geo>
                </location>
+               <desc>Fondé en 1715</desc>
             </place>
             <place xml:id="hotelPrimatiale">
                <placeName>l'hotel du grand Doyen de la Primatiale</placeName>
+               <location>
+                  <geo>48.69051,6.18764</geo>
+               </location>
+               <desc>Construit entre 1608 et 1619.</desc>
             </place>
             <place xml:id="conciergerie">
                <placeName>la conciergerie</placeName>
+               <location>
+                  <geo>48.694883844038216,6.183207929134369</geo>
+               </location>
+               <desc>Prison dans le bâtiment du Palais.</desc>
             </place>
             <place xml:id="arsenal">
                <placeName>l’arsenal</placeName>
+               <location>
+                  <geo>48.69671,6.17772</geo>
+               </location>
+               <desc>La construction de l'arsenal remonte à 1550</desc>
             </place>
             <place xml:id="manufactureBains">
                <placeName>la manufacture de bains</placeName>
@@ -2979,8 +3019,17 @@
             <place xml:id="rhone">
                <placeName>Le Rhône</placeName>
             </place>
-            <place xml:id="premontes">
+            <!--<place xml:id="premontes">
+               <placeName>Les Premontés de Nancy</placeName><!-\- todo vérif avec Eric et remplacé par Saint Joseph ? -\->
+            </place>-->
+            <place xml:id="saintJoseph">
                <placeName>Les Premontés de Nancy</placeName>
+            </place>
+            <place xml:id="ancienneSalleAca">
+               <placeName>Ancienne salle de l'Académie</placeName>
+            </place>
+            <place xml:id="maisonPerbal">
+               <placeName>Maison de Perbal rue des champs</placeName>
             </place>
          </listPlace>
 
@@ -3102,111 +3151,317 @@
             <org xml:id="ecoleRoyaleMili">
                <orgName>Ecole royale Militaire</orgName>
             </org>
+            <org xml:id="corpsGrenadiersFr">
+               <orgName>Corps des Grenadiers de France</orgName>
+            </org>
+            <org xml:id="miliceBourgeoise">
+               <orgName>Milice bourgeoise</orgName>
+            </org>
+            <org xml:id="regimentSchomberg">
+               <orgName>regiment de Schomberg</orgName>
+            </org>
+            <org xml:id="regimentCustine">
+               <orgName>regiment de Custine</orgName>
+            </org>
+            <org xml:id="regimentNavarre">
+               <orgName>regiment de Navarre</orgName>
+            </org>
+            <org xml:id="regimentRoi">
+               <orgName>régiment du roi</orgName>
+            </org>
+            <org xml:id="gardesLorraines">
+               <orgName>Régiment Gardes Lorraines</orgName>
+            </org>
+            <org xml:id="hussardsNassau">
+               <orgName>Régiments d'hussards de Nassau</orgName>
+            </org>
+            <org xml:id="bataillonsPicardie">
+               <orgName>Bataillons de Picardie</orgName>
+            </org>
+            <org xml:id="gardesRoi">
+               <orgName>Compagnie des gardes du roi</orgName>
+            </org>
+            <org xml:id="musiqueRoi">
+               <orgName>La musique du roi</orgName>
+            </org>
+            <org xml:id="regimentRoyalItalien">
+               <orgName>regiment royal italien</orgName>
+            </org>
+            <org xml:id="missionsRoyales">
+               <orgName>les missions royales</orgName>
+            </org>
+            <org xml:id="capitainerieChasses">
+               <orgName>la capitainerie des chasses</orgName>
+            </org>
+            <org xml:id="maisonRoi">
+               <orgName>La maison du roi</orgName>
+            </org>
+            <!-- todo vérif intendance/institution ou juste le lieu ? -->
+            <org xml:id="corpsSteCatherine">
+               <orgName>Corps de garde Sainte Catherine</orgName>
+            </org>
          </listOrg>
          <listBibl xml:id="listBibl">
-            <bibl xml:id="bib1"><title>les eaux de Luxeuil</title><author>M. Bagard</author></bibl>
+            <bibl xml:id="bib1">
+               <title>les eaux de Luxeuil</title>
+               <author>M. Bagard</author>
+            </bibl>
             <bibl xml:id="bib2"><title>le discours de reception de M. l'abbé Millot</title>abbé
                Millot<author/></bibl>
-            <bibl xml:id="bib3"><title>Discours de M. du Rouvrois</title><author>du
-                  Rouvrois</author></bibl>
-            <bibl xml:id="bib4"><title>memoire lu par Coster le 12 juin 1765</title></bibl>
-            <bibl xml:id="bib5"><title>Les duchés de Lorraine et de Bar</title><author>Nicolas
-                  Durival</author></bibl>
-            <bibl xml:id="bib6"><title>Discours sur l'agriculture en lorraine lu par
-               Coster</title></bibl>
-            <bibl xml:id="bib7"><title>Discours sur les eaux thermales lu par Bagard le 26/06/1765 -
-                  voir bib1 ?</title></bibl>
-            <bibl xml:id="bib8"><title>Eloge historique</title><author>Dom Remy
-               Cellier</author></bibl>
-            <bibl xml:id="bib9"><title>ouvrage de l'abbé sigorque</title><author>abbé
-                  Sigorque</author></bibl>
-            <bibl xml:id="bib10"><title>Les lettres écrites de la montagne</title><author>J.J.
-                  Rousseau</author></bibl>
-            <bibl xml:id="bib11"><title>ouvrage sur les inconvénients de la
-               litterature</title></bibl>
-            <bibl xml:id="bib12"><title>mémoire militaire (nov. 1765)</title><author>jean
-                  Durival</author></bibl>
-            <bibl xml:id="bib13"><title>Ouvrage sur la manière de tenir les livres de
-                  commerce</title></bibl>
-            <bibl xml:id="bib14"><title>un ouvrage de méchanique pour sonner en volée, brider et
-                  débrider les cloches sans monter au clocher</title></bibl>
-            <bibl xml:id="bib15"><title>un ouvrage sur les fortifications (voir
-               1765-12-27)</title></bibl>
-            <bibl xml:id="bib16"><title>Eloge du roi de
-               Pologne</title><author>Solignac</author></bibl>
-            <bibl xml:id="bib17"><title>ouvrage sur les impots (voir 1766-05-03)</title><author>Jean
-                  Durival</author></bibl>
-            <bibl xml:id="bib18"><title>Mémoire sur les abbayes et prieurés de
-                  Lorraine</title><author>M. Guerre</author></bibl>
-            <bibl xml:id="bib19"><title>dissertation sur les deux odes d'Horace (voir
-                  1766-05-28)</title></bibl>
-            <bibl xml:id="bib20"><title>Memoire "indécent" des messins (voir
-               1766-07-14)</title></bibl>
-            <bibl xml:id="bib21"><title>Memoire de la Cour Souveraine (voir
-               1766-07-14)</title></bibl>
-            <bibl xml:id="bib22"><title>Memoire de 1738 sur la liquidation des dettes de
-                  Lorraine</title></bibl>
-            <bibl xml:id="bib23"><title>Mémoire de la Cour souveraine contre le parlement de
-                  Metz</title></bibl>
-            <bibl xml:id="bib24"><title>Mémoire d'observation sur les deux
-                  parlement</title><author>M. l'intendant de lorraine</author></bibl>
-            <bibl xml:id="bib25"><title>Discours sur la conservation des
-                  grains</title><author>Gandoger</author></bibl>
-            <bibl xml:id="bib26"><title>Discours (voir
-               1766-10-15)</title><author>François</author></bibl>
-            <bibl xml:id="bib27"><title>Héroïde de Charles I</title><author>François</author></bibl>
-            <bibl xml:id="bib28"><title>Histoire romaine (voir 1766-11-05)</title></bibl>
-            <bibl xml:id="bib29"><title>méthode presque géometrique de former
-               l’Ennéagone</title></bibl>
-            <bibl xml:id="bib30"><title>le Dictionnaire philosophique</title></bibl>
-            <bibl xml:id="bib31"><title>la Théogonie</title><author>Hésiode</author></bibl>
-            <bibl xml:id="bib32"><title>Siége de Calais</title></bibl>
-            <bibl xml:id="bib33"><title>Essai sur le luxe</title></bibl>
-            <bibl xml:id="bib34"><title>journal de commerce</title></bibl>
-            <bibl xml:id="bib35"><title>Recueil sur diverses matieres</title></bibl>
-            <bibl xml:id="bib36"><title>ortograf des dames</title></bibl>
-            <bibl xml:id="bib37"><title>Actes de l'assemblée generale du clergé de France de
-                  1765</title></bibl>
-            <bibl xml:id="bib38"><title>Extrait des assertions dangereuses et pernicieuses en tout
-                  genre que les soi-disans jesuites &amp;</title></bibl>
-            <bibl xml:id="bib39"><title>Histoire de Sinal</title></bibl>
-            <bibl xml:id="bib40"><title>Anti-réformateur</title></bibl>
-            <bibl xml:id="bib41"><title>La gazette de France</title></bibl>
-            <bibl xml:id="bib60"><title>Disours sur la théologie</title></bibl>
-            <bibl xml:id="bib61"><title>Discours sur le luxe</title></bibl>
-            <bibl xml:id="bib63"><title>Recueil des batiments du
-               roi</title><author>Héré</author></bibl>
-            <bibl xml:id="bib64"><title>Ouvrage sur la formation des glaces dans les eaux mortes et
-                  rivières</title></bibl>
-            <bibl xml:id="bib65"><title>Eloge au roi de Pologne ou le regne de Thelemaque dans
-                  Itaque</title></bibl>
-            <bibl xml:id="bib66"><title>Discours sur les qualités qui font un bon
-                  citoyen</title><author>Coster</author></bibl>
-            <bibl xml:id="bib68"><title>Manuscrit d'un ouvrage sur la finance</title></bibl>
+            <bibl xml:id="bib3">
+               <title>Discours de M. du Rouvrois</title>
+               <author>du Rouvrois</author>
+            </bibl>
+            <bibl xml:id="bib4">
+               <title>memoire lu par Coster le 12 juin 1765</title>
+            </bibl>
+            <bibl xml:id="bib5">
+               <title>Les duchés de Lorraine et de Bar</title>
+               <author>Nicolas Durival</author>
+            </bibl>
+            <bibl xml:id="bib6">
+               <title>Discours sur l'agriculture en lorraine lu par Coster</title>
+            </bibl>
+            <bibl xml:id="bib7">
+               <title>Discours sur les eaux thermales lu par Bagard le 26/06/1765 - voir bib1
+                  ?</title>
+            </bibl>
+            <bibl xml:id="bib8">
+               <title>Eloge historique</title>
+               <author>Dom Remy Cellier</author>
+            </bibl>
+            <bibl xml:id="bib9">
+               <title>ouvrage de l'abbé sigorque</title>
+               <author>abbé Sigorque</author>
+            </bibl>
+            <bibl xml:id="bib10">
+               <title>Les lettres écrites de la montagne</title>
+               <author>J.J. Rousseau</author>
+            </bibl>
+            <bibl xml:id="bib11">
+               <title>ouvrage sur les inconvénients de la litterature</title>
+            </bibl>
+            <bibl xml:id="bib12">
+               <title>mémoire militaire (nov. 1765)</title>
+               <author>jean Durival</author>
+            </bibl>
+            <bibl xml:id="bib13">
+               <title>Ouvrage sur la manière de tenir les livres de commerce</title>
+            </bibl>
+            <bibl xml:id="bib14">
+               <title>un ouvrage de méchanique pour sonner en volée, brider et débrider les cloches
+                  sans monter au clocher</title>
+            </bibl>
+            <bibl xml:id="bib15">
+               <title>un ouvrage sur les fortifications (voir 1765-12-27)</title>
+            </bibl>
+            <bibl xml:id="bib16">
+               <title>Eloge du roi de Pologne</title>
+               <author>Solignac</author>
+            </bibl>
+            <bibl xml:id="bib17">
+               <title>ouvrage sur les impots (voir 1766-05-03)</title>
+               <author>Jean Durival</author>
+            </bibl>
+            <bibl xml:id="bib18">
+               <title>Mémoire sur les abbayes et prieurés de Lorraine</title>
+               <author>M. Guerre</author>
+            </bibl>
+            <bibl xml:id="bib19">
+               <title>dissertation sur les deux odes d'Horace (voir 1766-05-28)</title>
+            </bibl>
+            <bibl xml:id="bib20">
+               <title>Memoire "indécent" des messins (voir 1766-07-14)</title>
+            </bibl>
+            <bibl xml:id="bib21">
+               <title>Memoire de la Cour Souveraine (voir 1766-07-14)</title>
+            </bibl>
+            <bibl xml:id="bib22">
+               <title>Memoire de 1738 sur la liquidation des dettes de Lorraine</title>
+            </bibl>
+            <bibl xml:id="bib23">
+               <title>Mémoire de la Cour souveraine contre le parlement de Metz</title>
+            </bibl>
+            <bibl xml:id="bib24">
+               <title>Mémoire d'observation sur les deux parlement</title>
+               <author>M. l'intendant de lorraine</author>
+            </bibl>
+            <bibl xml:id="bib25">
+               <title>Discours sur la conservation des grains</title>
+               <author>Gandoger</author>
+            </bibl>
+            <bibl xml:id="bib26">
+               <title>Discours (voir 1766-10-15)</title>
+               <author>François</author>
+            </bibl>
+            <bibl xml:id="bib27">
+               <title>Héroïde de Charles I</title>
+               <author>François</author>
+            </bibl>
+            <bibl xml:id="bib28">
+               <title>Histoire romaine (voir 1766-11-05)</title>
+            </bibl>
+            <bibl xml:id="bib29">
+               <title>méthode presque géometrique de former l’Ennéagone</title>
+            </bibl>
+            <bibl xml:id="bib30">
+               <title>le Dictionnaire philosophique</title>
+            </bibl>
+            <bibl xml:id="bib31">
+               <title>la Théogonie</title>
+               <author>Hésiode</author>
+            </bibl>
+            <bibl xml:id="bib32">
+               <title>Siége de Calais</title>
+            </bibl>
+            <bibl xml:id="bib33">
+               <title>Essai sur le luxe</title>
+            </bibl>
+            <bibl xml:id="bib34">
+               <title>journal de commerce</title>
+            </bibl>
+            <bibl xml:id="bib35">
+               <title>Recueil sur diverses matieres</title>
+            </bibl>
+            <bibl xml:id="bib36">
+               <title>ortograf des dames</title>
+            </bibl>
+            <bibl xml:id="bib37">
+               <title>Actes de l'assemblée generale du clergé de France de 1765</title>
+            </bibl>
+            <bibl xml:id="bib38">
+               <title>Extrait des assertions dangereuses et pernicieuses en tout genre que les
+                  soi-disans jesuites &amp;</title>
+            </bibl>
+            <bibl xml:id="bib39">
+               <title>Histoire de Sinal</title>
+            </bibl>
+            <bibl xml:id="bib40">
+               <title>Anti-réformateur</title>
+            </bibl>
+            <bibl xml:id="bib41">
+               <title>La gazette de France</title>
+            </bibl>
+            <bibl xml:id="bib60">
+               <title>Disours sur la théologie</title>
+            </bibl>
+            <bibl xml:id="bib61">
+               <title>Discours sur le luxe</title>
+            </bibl>
+            <bibl xml:id="bib63">
+               <title>Recueil des batiments du roi</title>
+               <author>Héré</author>
+            </bibl>
+            <bibl xml:id="bib64">
+               <title>Ouvrage sur la formation des glaces dans les eaux mortes et rivières</title>
+            </bibl>
+            <bibl xml:id="bib65">
+               <title>Eloge au roi de Pologne ou le regne de Thelemaque dans Itaque</title>
+            </bibl>
+            <bibl xml:id="bib66">
+               <title>Discours sur les qualités qui font un bon citoyen</title>
+               <author>Coster</author>
+            </bibl>
+            <bibl xml:id="bib68">
+               <title>Manuscrit d'un ouvrage sur la finance</title>
+            </bibl>
             <!-- Pièces de théatre -->
 
-            <bibl xml:id="bib42"><title>Zaïre</title><author>Voltaire</author></bibl>
-            <bibl xml:id="bib43"><title>les Folies amoureuses</title></bibl>
-            <bibl xml:id="bib62"><title>Annette et Lubin</title></bibl>
-            <bibl xml:id="bib44"><title>Alzire</title></bibl>
-            <bibl xml:id="bib45"><title>Le duc de Foix</title></bibl>
-            <bibl xml:id="bib46"><title>Iphigenie en Tauride</title></bibl>
-            <bibl xml:id="bib47"><title>Mitridate</title></bibl>
-            <bibl xml:id="bib48"><title>Philosophe marié</title></bibl>
-            <bibl xml:id="bib67"><title>la jeune indienne</title></bibl>
-            <bibl xml:id="bib49"><title>Misantrope</title></bibl>
-            <bibl xml:id="bib50"><title>Pere de famille</title></bibl>
-            <bibl xml:id="bib51"><title>écossaise</title></bibl>
-            <bibl xml:id="bib52"><title>Légataire</title></bibl>
-            <bibl xml:id="bib53"><title>Crispin médecin</title></bibl>
-            <bibl xml:id="bib54"><title>Crispin Rival de son maitre</title></bibl>
-            <bibl xml:id="bib55"><title>Les menechenes</title></bibl>
-            <bibl xml:id="bib56"><title>Le medecin malgré lui</title></bibl>
-            <bibl xml:id="bib57"><title>Le Philosophe sans le savoir</title></bibl>
-            <bibl xml:id="bib58"><title>Les trois freres rivaux</title></bibl>
-            <bibl xml:id="bib59"><title>Confidences réciproques</title></bibl>
-            <bibl xml:id="bib69"><title>La Partie de chasse de Henri IV</title></bibl>
+            <bibl xml:id="bib42">
+               <title>Zaïre</title>
+               <author>Voltaire</author>
+            </bibl>
+            <bibl xml:id="bib43">
+               <title>les Folies amoureuses</title>
+            </bibl>
+            <bibl xml:id="bib62">
+               <title>Annette et Lubin</title>
+            </bibl>
+            <bibl xml:id="bib44">
+               <title>Alzire</title>
+            </bibl>
+            <bibl xml:id="bib45">
+               <title>Le duc de Foix</title>
+            </bibl>
+            <bibl xml:id="bib46">
+               <title>Iphigenie en Tauride</title>
+            </bibl>
+            <bibl xml:id="bib47">
+               <title>Mitridate</title>
+            </bibl>
+            <bibl xml:id="bib48">
+               <title>Philosophe marié</title>
+            </bibl>
+            <bibl xml:id="bib67">
+               <title>la jeune indienne</title>
+            </bibl>
+            <bibl xml:id="bib49">
+               <title>Misantrope</title>
+            </bibl>
+            <bibl xml:id="bib50">
+               <title>Pere de famille</title>
+            </bibl>
+            <bibl xml:id="bib51">
+               <title>écossaise</title>
+            </bibl>
+            <bibl xml:id="bib52">
+               <title>Légataire</title>
+            </bibl>
+            <bibl xml:id="bib53">
+               <title>Crispin médecin</title>
+            </bibl>
+            <bibl xml:id="bib54">
+               <title>Crispin Rival de son maitre</title>
+            </bibl>
+            <bibl xml:id="bib55">
+               <title>Les menechenes</title>
+            </bibl>
+            <bibl xml:id="bib56">
+               <title>Le medecin malgré lui</title>
+            </bibl>
+            <bibl xml:id="bib57">
+               <title>Le Philosophe sans le savoir</title>
+            </bibl>
+            <bibl xml:id="bib58">
+               <title>Les trois freres rivaux</title>
+            </bibl>
+            <bibl xml:id="bib59">
+               <title>Confidences réciproques</title>
+            </bibl>
+            <bibl xml:id="bib69">
+               <title>La Partie de chasse de Henri IV</title>
+            </bibl>
+            <bibl xml:id="bib70">
+               <title>Rhadamiste</title>
+            </bibl>
+            <bibl xml:id="bib71">
+               <title>Oraison funebre 1 (Elisée)</title>
+            </bibl>
+            <bibl xml:id="bib72">
+               <title>Oraison funebre 2 (Dombasle)</title>
+            </bibl>
+            <bibl xml:id="bib73">
+               <title>Oraison funebre 3 (Coster)</title>
+            </bibl>
+            <bibl xml:id="bib74">
+               <title>Oraison funebre 4 (Clément)</title>
+            </bibl>
+            <bibl xml:id="bib75">
+               <title>Oraison funebre de Stanislas 5 ? (Guyot)</title>
+            </bibl>
+            <bibl xml:id="memoireChComptes">
+               <title>Mémoire attribué à la Chambre des Comptes</title>
+            </bibl>
          </listBibl>
+         <list type="artwork">
+            <item xml:id="estampeCollin">estampe de la construction du quartier roïal des cazernes
+               par Collin</item>
+            <item xml:id="arcTriomphe">estampe de la construction du quartier roïal des cazernes par
+               Collin</item>
+            <item xml:id="sceauxCollin">Sceaux gravés par Collin</item>
+            <item xml:id="piecesMausolee">Les principales pièces du mausolées</item>
+            <item xml:id="estampeCollinMausolee">estampe du mausolée de Stanislas par Collin</item>
+         </list>
       </body>
    </text>
 </TEI>
