@@ -504,7 +504,7 @@
             </classSpec>
             <!--Checking module core-->
             <moduleRef key="core"
-                       include="p ref hi quote q desc term sic choice gap add del rs address addrLine measure date abbr expan list item head pb lb cb author respStmt resp title publisher pubPlace bibl listBibl l lg note ref teiCorpus foreign"/>
+                       include="p unclear ref hi quote q desc term sic choice gap add del rs address addrLine measure date abbr expan list item head pb lb cb author respStmt resp title publisher pubPlace bibl listBibl l lg note ref teiCorpus foreign"/>
             <elementSpec ident="p" mode="change">
                <attList>
                   <attDef ident="facs" mode="delete"/>
@@ -532,6 +532,16 @@
                   <attDef ident="n" mode="delete"/>                                    
                </attList>
             </elementSpec>
+            <elementSpec ident="unclear" mode="change">
+               <attList>
+                  <attDef ident="ana" mode="delete"/>
+                  <attDef ident="facs" mode="delete"/>
+                  <attDef ident="resp" mode="delete"/>                  
+                  <attDef ident="n" mode="delete"/>
+                  <attDef ident="hand" mode="delete"/>
+                  <attDef ident="agent" mode="delete"/>
+               </attList>
+            </elementSpec>
             <elementSpec ident="foreign" mode="change">
                <attList>
                   <attDef ident="ana" mode="delete"/>
@@ -543,7 +553,7 @@
             <elementSpec ident="ref" mode="change">
                <attList>
                   <attDef ident="ana" mode="delete"/>
-                  <attDef ident="facs" mode="delete"/>
+                  <!--<attDef ident="facs" mode="delete"/>-->
                   <attDef ident="resp" mode="delete"/>
                   <attDef ident="rend" mode="delete"/>
                   <attDef ident="xml:lang" mode="delete"/>
@@ -552,6 +562,9 @@
                      <valList mode="add" type="closed">
                         <valItem ident="note">
                            <desc>Identifie un renvoi vers une note.</desc>
+                        </valItem>
+                        <valItem ident="picture">
+                           <desc>Identifie un renvoi vers une illustration.</desc>
                         </valItem>
                      </valList>
                   </attDef>

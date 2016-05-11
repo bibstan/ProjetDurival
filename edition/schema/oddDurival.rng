@@ -5,7 +5,7 @@
          xmlns:teix="http://www.tei-c.org/ns/Examples"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2016-04-20T18:42:03Z. .
+Schema generated from ODD source 2016-05-11T12:05:37Z. .
 TEI Edition: Version 3.0.0. Last updated on
 	29th March 2016, revision 89ba24e
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
@@ -719,6 +719,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
          <ref name="sic"/>
          <ref name="add"/>
          <ref name="del"/>
+         <ref name="unclear"/>
          <ref name="supplied"/>
          <ref name="surplus"/>
       </choice>
@@ -728,6 +729,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
          <ref name="sic"/>
          <ref name="add"/>
          <ref name="del"/>
+         <ref name="unclear"/>
          <ref name="supplied"/>
          <ref name="surplus"/>
       </choice>
@@ -736,6 +738,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
       <ref name="sic"/>
       <ref name="add"/>
       <ref name="del"/>
+      <ref name="unclear"/>
       <ref name="supplied"/>
       <ref name="surplus"/>
    </define>
@@ -748,6 +751,9 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
       </optional>
       <optional>
          <ref name="del"/>
+      </optional>
+      <optional>
+         <ref name="unclear"/>
       </optional>
       <optional>
          <ref name="supplied"/>
@@ -767,6 +773,9 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
          <ref name="del"/>
       </zeroOrMore>
       <zeroOrMore>
+         <ref name="unclear"/>
+      </zeroOrMore>
+      <zeroOrMore>
          <ref name="supplied"/>
       </zeroOrMore>
       <zeroOrMore>
@@ -782,6 +791,9 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
       </oneOrMore>
       <oneOrMore>
          <ref name="del"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="unclear"/>
       </oneOrMore>
       <oneOrMore>
          <ref name="supplied"/>
@@ -1392,6 +1404,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
    <define name="model.choicePart">
       <choice>
          <ref name="sic"/>
+         <ref name="unclear"/>
          <ref name="abbr"/>
          <ref name="expan"/>
          <ref name="seg"/>
@@ -1910,6 +1923,28 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
          <empty/>
       </element>
    </define>
+   <define name="unclear">
+      <element name="unclear">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(incertain) contient un mot, une expression ou bien un passage qui ne peut être transcrit avec certitude parce qu'il est illisible ou inaudible dans la source. [11.3.3.1. Damage, Illegibility, and Supplied Text 3.4.3. Additions, Deletions, and Omissions]</a:documentation>
+         <ref name="macro.paraContent"/>
+         <ref name="att.global.attribute.xmlid"/>
+         <ref name="att.global.attribute.xmllang"/>
+         <ref name="att.global.rendition.attribute.rend"/>
+         <optional>
+            <attribute name="reason">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indique pourquoi il est difficile de transcrire le document</a:documentation>
+               <list>
+                  <oneOrMore>
+                     <data type="token">
+                        <param name="pattern">(\p{L}|\p{N}|\p{P}|\p{S})+</param>
+                     </data>
+                  </oneOrMore>
+               </list>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
    <define name="rs">
       <element name="rs">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(chaîne de référence) contient un nom générique ou une chaîne permettant de s'y référer. [13.2.1. Personal Names 3.5.1. Referring Strings]</a:documentation>
@@ -2081,6 +2116,7 @@ Measures]</a:documentation>
             </rule>
          </pattern>
          <ref name="att.global.attribute.xmlid"/>
+         <ref name="att.global.facs.attribute.facs"/>
          <ref name="att.pointing.attributes"/>
          <optional>
             <attribute name="type">
@@ -2088,6 +2124,8 @@ Measures]</a:documentation>
                <choice>
                   <value>note</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Identifie un renvoi vers une note.</a:documentation>
+                  <value>picture</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Identifie un renvoi vers une illustration.</a:documentation>
                </choice>
             </attribute>
          </optional>
