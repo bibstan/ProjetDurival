@@ -1,3 +1,26 @@
 .note {
     font-size:small;
 }
+
+.border-top {
+    border-top: 1px solid #e6e6e6;
+}
+
+.day {
+    min-height:300px;
+}
+
+#mapid {
+    height : 100%;
+    z-index:1;
+}
+                        
+.full-width {
+    width:100%;                    
+}
+                        
+header {
+    z-index:100;
+    background-color: #e6e6e6;
+}
+                    
