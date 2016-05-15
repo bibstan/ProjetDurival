@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../schema/oddDurival.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../schema/oddDurival.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -2151,7 +2149,7 @@
                <placeName>Nancy</placeName>
             </place>
             <place xml:id="nancyPepiniere">
-               <placeName>La Pépinière de Nancy</placeName>
+               <placeName>La Pépinière</placeName>
                <location>
                   <geo>48.69807,6.18542</geo>
                </location>
@@ -2159,7 +2157,7 @@
                   conseil des finance du 26 octobre 1765.</desc>
             </place>
             <place xml:id="bonsecours">
-               <placeName>Nancy Bonsecours</placeName>
+               <placeName>Église de Bonsecours</placeName>
                <location>
                   <geo>48.6765536,6.1994878</geo>
                </location>
@@ -2172,14 +2170,14 @@
                   ICI</desc>
             </place>
             <place xml:id="nancyJardin">
-               <placeName>Jardin Botanique de Nancy</placeName>
+               <placeName>Jardin Botanique</placeName>
                <location>
                   <geo>48.69476876515408,6.189132928848267</geo>
                </location>
                <desc>Créé en 1751-52. Jardin Dominique-Alexandre Godron</desc>
             </place>
             <place xml:id="nancyCasernes">
-               <placeName>Les Casernes de Nancy</placeName>
+               <placeName>Les Casernes (nouvelles)</placeName>
                <location>
                   <geo>48.696289,6.18809063321451</geo>
                </location>
@@ -2188,17 +2186,17 @@
                   étaient alors sur le site de l'actuel Rectorat.</desc>
             </place>
             <place xml:id="nancyVenerie">
-               <placeName>La vénerie de Nancy</placeName>
+               <placeName>Manufacture de la Vénerie</placeName>
                <location>
                   <geo>48.69299,6.17653</geo>
                </location>
                <desc>Une des glacières de la Ville était à proximité en 1731.</desc>
             </place>
             <place xml:id="nancyManufactureCoton">
-               <placeName>La Manufacture de coton de Nancy</placeName>
+               <placeName>Manufacture de coton</placeName>
             </place>
             <place xml:id="nancyCitadelle">
-               <placeName>La citadelle de Nancy</placeName>
+               <placeName>Citadelle</placeName>
                <location>
                   <geo>48.70013,6.17806</geo>
                </location>
@@ -2206,7 +2204,7 @@
                   Nancy.</desc>
             </place>
             <place xml:id="nancyPrimatiale">
-               <placeName>La primatiale</placeName>
+               <placeName>Primatiale</placeName>
                <location>
                   <geo>48.69142,6.18595</geo>
                </location>
@@ -2215,7 +2213,7 @@
                   Cathédrale-Primatiale en 1777.</desc>
             </place>
             <place xml:id="nancyHDV">
-               <placeName>Hôtel de ville de Nancy</placeName>
+               <placeName>Hôtel de ville</placeName>
                <location>
                   <geo>48.69309,6.18358</geo>
                </location>
@@ -2224,7 +2222,7 @@
                   Églises, il fut démoli en 1752.</desc>
             </place>
             <place xml:id="nancyPlaceRoyale">
-               <placeName>La place royale de Nancy</placeName>
+               <placeName>Place royale</placeName>
                <location>
                   <geo>48.693644,6.183240</geo>
                </location>
@@ -2233,7 +2231,7 @@
                   statue de Louis XV le 18 novembre 1755.</desc>
             </place>
             <place xml:id="nancyMarche">
-               <placeName>la place du marché de la ville neuve</placeName>
+               <placeName>Place du marché de la ville neuve</placeName>
                <location>
                   <geo>48.68910,6.18200</geo>
                </location>
@@ -2241,34 +2239,34 @@
                   était érigé.</desc>
             </place>
             <place xml:id="nancyMinimes">
-               <placeName>Les minimes de Nancy</placeName>
+               <placeName>Couvent des Minimes</placeName>
                <location>
                   <geo>48.6916688,6.1792884</geo>
                </location>
                <desc>Fondé en 1592, reconstruit en 1613, il sera détruit à la Révolution.</desc>
             </place>
             <place xml:id="nancyStRoch">
-               <placeName>Église Saint Roch de Nancy</placeName>
+               <placeName>Église Saint-Roch</placeName>
                <location>
                   <geo>48.69082,6.18222</geo>
                </location>
                <desc>Église construite en 1616</desc>
             </place>
             <place xml:id="bonsecoursMinimes">
-               <placeName>Les minimes de Bonsecours</placeName>
+               <placeName>Couvent des Minimes de Bonsecours</placeName>
             </place>
             <place xml:id="boudonvilleAqueduc">
                <placeName>Aqueduc de Boudonville</placeName>
             </place>
             <place xml:id="nancyCongregation">
-               <placeName>La Congrégation</placeName>
+               <placeName>Religieuses de la Congrégation</placeName>
                <location>
                   <geo>48.69228,6.18666</geo>
                </location>
                <desc>Fondé en 1615.</desc>
             </place>
             <place xml:id="nancyArdoisiere">
-               <placeName>l'ardoisière de Nancy</placeName>
+               <placeName>Ardoisière de Nancy</placeName>
                <location>
                   <geo>48.69305,6.17843</geo>
                </location>
@@ -2277,21 +2275,21 @@
                   suppose que c'est à ce site que Durival fait allusion.</desc>
             </place>
             <place xml:id="nancyRueCongregation">
-               <placeName>Rue de la congrégation de Nancy</placeName>
+               <placeName>Rue de la Congrégation de Nancy</placeName>
                <location>
                   <geo>48.69244,6.18550</geo>
                </location>
                <desc>Rue percée en 1752.</desc>
             </place>
             <place xml:id="nancyRueJacobins">
-               <placeName>Rue des jacobins de Nancy</placeName>
+               <placeName>Rue des Jacobins de Nancy</placeName>
                <location>
                   <geo>48.69245296801029,6.183156967163086</geo>
                </location>
                <desc>Depuis 1794, rue des Dominicains.</desc>
             </place>
             <place xml:id="nancyStEpvre">
-               <placeName>Église Saint Epvre</placeName>
+               <placeName>Église Saint-Èpvre</placeName>
                <location>
                   <geo>48.69561,6.1801</geo>
                </location>
@@ -2299,13 +2297,13 @@
                   Morey à la fin du XIXe siècle).</desc>
             </place>
             <place xml:id="nancyPlaceStEpvre">
-               <placeName>Place Saint Epvre</placeName>
+               <placeName>Place Saint-Èpvre</placeName>
                <location>
                   <geo>48.69609,6.17934</geo>
                </location>
             </place>
             <place xml:id="nancyStLeopold">
-               <placeName>Saint Léopold</placeName>
+               <placeName>Église Saint-Léopold</placeName>
                <location>
                   <geo>48.68732,6.18251</geo>
                </location>
@@ -2313,21 +2311,21 @@
                   1718.</desc>
             </place>
             <place xml:id="nancyStSebastien">
-               <placeName>Église Saint Sébastien</placeName>
+               <placeName>Église Saint-Sébastien</placeName>
                <location>
                   <geo>48.68904,6.18098</geo>
                </location>
                <desc>L'église actuelle date de 1720, sa construction s'achève en 1732..</desc>
             </place>
             <place xml:id="nancyDamesStSacrement">
-               <placeName>Les dames du saint Sacrement</placeName>
+               <placeName>Les Dames du saint-Sacrement</placeName>
                <location>
                   <geo>48.68736,6.18522</geo>
                </location>
                <desc>Fondation en 1624 (Notre-Dame de la Consolation)</desc>
             </place>
             <place xml:id="nancyCollegeJesuites">
-               <placeName>Collège des jésuites de Nancy</placeName>
+               <placeName>Collège des jésuites</placeName>
                <location>
                   <geo>48.6908736324152,6.182100176811218</geo>
                </location>
@@ -2339,21 +2337,21 @@
                <placeName>Collège de Nancy</placeName>
             </place>-->
             <place xml:id="nancyNoviciatJesuites">
-               <placeName>Église du Noviciat de Nancy</placeName>
+               <placeName>Église du Noviciat Jésuite</placeName>
                <location>
                   <geo>48.68641,6.18659</geo>
                </location>
                <desc>Fondé en 1601. Église de 1604.</desc>
             </place>
             <place xml:id="nancyStPierre">
-               <placeName>Église Saint Pierre de Nancy</placeName>
+               <placeName>Église Saint-Pierre</placeName>
                <location>
                   <geo>48.683084,6.191872</geo>
                </location>
                <desc>Église consacrée en 1737.</desc>
             </place>
             <place xml:id="nancyBibliotheque">
-               <placeName>Bibliothèque publique</placeName>
+               <placeName>Bibliothèque Royale</placeName>
                <location>
                   <geo>48.69318,6.18394</geo>
                </location>
@@ -2362,21 +2360,21 @@
                   son emplacement actuel vers 1797.</desc>
             </place>
             <place xml:id="nancyPetiteCarmelites">
-               <placeName>Les petites Carmélites</placeName>
+               <placeName>Couvent des Petites Carmélites</placeName>
                <location>
                   <geo>48.69066,6.17682</geo>
                </location>
                <desc>Installé rue Sain-Joseph (rue Chanzy) en 1655.</desc>
             </place>
             <place xml:id="nancyHopitalStCharles">
-               <placeName>Hôpital St Charles de Nancy</placeName>
+               <placeName>Hôpital Saint-Charles</placeName>
                <location>
                   <geo>48.689356,6.178793</geo>
                </location>
                <desc>Fondée en 1626 dans l'ancienne batterie de cuivre.</desc>
             </place>
             <place xml:id="nancyHopitalStJulien">
-               <placeName>Hôpital saint Julien de Nancy</placeName>
+               <placeName>Hôpital Saint-Julien</placeName>
                <location>
                   <geo>48.6921578,6.1848052992915</geo>
                </location>
@@ -2385,14 +2383,14 @@
                   siècle.</desc>
             </place>
             <place xml:id="nancyDominiquains">
-               <placeName>Les dominicains de Nancy</placeName>
+               <placeName>Couvent des Dominicains</placeName>
                <location>
                   <geo>48.69146,6.18368</geo>
                </location>
                <desc>Fondé en 1640, détruit à la Révolution.</desc>
             </place>
             <place xml:id="nancyVisitation">
-               <placeName>La Visitation</placeName>
+               <placeName>Église de la Visitation</placeName>
                <location>
                   <geo>48.69160133692096,6.179393827915192</geo>
                </location>
@@ -2400,53 +2398,53 @@
                   construit sur son emprise et celle des Minimes.</desc>
             </place>
             <place xml:id="nancyPenitentsBlancs">
-               <placeName>Église des pénitents blancs de Nancy</placeName>
+               <placeName>Église des pénitents blancs</placeName>
                <location>
                   <geo>48.69609,6.17806</geo>
                </location>
             </place>
             <place xml:id="nancyTiercelins">
-               <placeName>Les tiercelins de Nancy</placeName>
+               <placeName>Couvent des Tiercelins</placeName>
                <location>
                   <geo>48.6902742,6.1875429</geo>
                </location>
                <desc>Fondé en 1622. Installé en ville-neuve depuis 1656.</desc>
             </place>
             <place xml:id="nancyCarmes">
-               <placeName>Les carmes de Nancy</placeName>
+               <placeName>Couvent des Carmes</placeName>
                <location>
                   <geo>48.692132501452924,6.180826127529144</geo>
                </location>
                <desc>Installé en 1611-1612.</desc>
             </place>
             <place xml:id="nancyCarriere">
-               <placeName>Carrière de Nancy</placeName>
+               <placeName>Place de la Carrière</placeName>
                <location>
                   <geo>48.69577,6.18180</geo>
                </location>
             </place>
             <place xml:id="nancyCapucins">
-               <placeName>Les capucins de Nancy</placeName>
+               <placeName>Couvent des Capucins</placeName>
                <location>
                   <geo>48.68694,6.18658</geo>
                </location>
                <desc>Fondé en 1592. Église construite en 1604.</desc>
             </place>
             <place xml:id="nancyStNicolas">
-               <placeName>Paroisse saint Nicolas</placeName>
+               <placeName>Paroisse Saint-Nicolas</placeName>
                <location>
                   <geo>48.68694,6.18658</geo>
                </location>
             </place>
             <place xml:id="nancyAugustins">
-               <placeName>Les Augustins de Nancy</placeName>
+               <placeName>Couvent des Augustins</placeName>
                <location>
                   <geo>48.68922,6.18062</geo>
                </location>
                <desc>Fondé en 1634.</desc>
             </place>
             <place xml:id="nancyCordeliers">
-               <placeName>Les Cordeliers de Nancy</placeName>
+               <placeName>Couvent des Cordeliers</placeName>
                <location>
                   <geo>48.69786,6.17942</geo>
                </location>
@@ -2457,14 +2455,14 @@
                <placeName>Théâtre de la ville de Nancy</placeName>
             </place>-->
             <place xml:id="nancyCimetierePorteStJean">
-               <placeName>Cimetière extérieur de la porte Saint Jean</placeName>
+               <placeName>Cimetière extérieur de la porte Saint-Jean</placeName>
                <location>
                   <geo>48.68900,6.17564</geo>
                </location>
                <desc>Emplacement approximatif. Ouvert en 1763.</desc>
             </place>
             <place xml:id="nancySteElisabeth">
-               <placeName>Les religieuses sainte Elisabeth</placeName>
+               <placeName>Couvent Sainte-Elisabeth</placeName>
                <location>
                   <geo>48.68564,6.18638</geo>
                </location>
@@ -2472,7 +2470,7 @@
                   Porte Saint-Nicolas.</desc>
             </place>
             <place xml:id="nancyPorteRoyale">
-               <placeName>Porte royale de Nancy</placeName>
+               <placeName>Porte Royale</placeName>
                <location>
                   <geo>48.69441,6.18268</geo>
                </location>
@@ -2480,7 +2478,7 @@
                   Héré</desc>
             </place>
             <place xml:id="nancyPlaceDames">
-               <placeName>Place des dames de Nancy</placeName>
+               <placeName>Place des Dames</placeName>
                <location>
                   <geo>48.6952,6.1798</geo>
                </location>
@@ -2488,7 +2486,7 @@
                   Fabien.</desc>
             </place>
             <place xml:id="nancyPalais">
-               <placeName>Palais de Nancy</placeName>
+               <placeName>Palais</placeName>
                <location>
                   <geo>48.69499,6.18286</geo>
                </location>
@@ -2639,7 +2637,7 @@
                <placeName>Allemagne</placeName>
             </place>
             <place xml:id="flavigny">
-               <placeName>Flavigny</placeName>
+               <placeName>Flavigny-sur-Moselle</placeName>
             </place>
             <place xml:id="florence">
                <placeName>Florence</placeName>
@@ -2684,25 +2682,25 @@
                <placeName>Tarascon</placeName>
             </place>
             <place xml:id="stAubin">
-               <placeName>saint Aubin</placeName>
+               <placeName>Saint-Aubin</placeName>
             </place>
             <place xml:id="lunevilleParoissiale">
                <placeName>Église paroissiale de Lunéville</placeName>
             </place>
             <place xml:id="chanteheux">
-               <placeName>chanteheux</placeName>
+               <placeName>Chanteheux</placeName>
             </place>
             <place xml:id="jolivet">
                <placeName>Jolivet</placeName>
             </place>
             <place xml:id="leomont">
-               <placeName>leomont</placeName>
+               <placeName>Léomont</placeName>
             </place>
             <place xml:id="sens">
                <placeName>Sens</placeName>
             </place>
             <place xml:id="stDenis">
-               <placeName>Saint Denis</placeName>
+               <placeName>Saint-Denis</placeName>
             </place>
             <place xml:id="maisonForce">
                <placeName>Jardin de la maison de force</placeName>
@@ -2711,10 +2709,10 @@
                <placeName>Stuttgart</placeName>
             </place>
             <place xml:id="coteSteCatherine">
-               <placeName>Les bois de la côte Ste Catherine</placeName>
+               <placeName>Les bois de la côte Sainte-Catherine</placeName>
             </place>
             <place xml:id="chausseeSteCatherine">
-               <placeName>Chaussée sainte Catherine</placeName>
+               <placeName>Chaussée Sainte-Catherine</placeName>
             </place>
             <place xml:id="mareville">
                <placeName>Maréville</placeName>
@@ -2727,26 +2725,26 @@
                <desc>??</desc>
             </place>
             <place xml:id="hotelIntendance">
-               <placeName>Hôtel de l'intendance sur la carrière à Nancy</placeName>
+               <placeName>Hôtel de l'Intendance</placeName>
                <location>
                   <geo>48.69358,6.18417</geo>
                </location>
                <desc>Sur la place Royale</desc>
             </place>
             <place xml:id="neufchateau">
-               <placeName>Neufchateau</placeName>
+               <placeName>Neufchâteau</placeName>
             </place>
             <place xml:id="hotelGouvernement">
-               <placeName>Hôtel du gouvernement</placeName>
+               <placeName>Hôtel du Gouvernement</placeName>
                <location>
                   <geo>48.69700,6.18095</geo>
                </location>
             </place>
             <place xml:id="cantonVarangeville">
-               <placeName>canton de Varangeville</placeName>
+               <placeName>Canton de Varangeville</placeName>
             </place>
             <place xml:id="cantonEncy">
-               <placeName>canton d'Ency</placeName>
+               <placeName>Canton d'Ency</placeName>
             </place>
             <place xml:id="malzeville">
                <placeName>Malzéville</placeName>
@@ -2755,7 +2753,7 @@
                <placeName>Canton de Gondreville</placeName>
             </place>
             <place xml:id="cantonPontStVincent">
-               <placeName>Canton de Pont saint Vincent</placeName>
+               <placeName>Canton de Pont-Saint-Vincent</placeName>
             </place>
             <place xml:id="cantonLupcourt">
                <placeName>Canton de Lupcourt</placeName>
@@ -2764,13 +2762,13 @@
                <placeName>Canton de Flavigny</placeName>
             </place>
             <place xml:id="laGalaiziere">
-               <placeName>La Galaizière</placeName>
+               <placeName>Neuviller, résidence de La Galaizière</placeName>
             </place>
             <place xml:id="stHubert">
-               <placeName>Saint Hubert</placeName>
+               <placeName>Saint-Hubert</placeName>
             </place>
             <place xml:id="nancyRueEsplannade">
-               <placeName>Rue de l'esplanade à Nancy</placeName>
+               <placeName>Rue de l'esplanade</placeName>
                <location>
                   <geo>48.6918394,6.1793484</geo>
                </location>
@@ -2784,13 +2782,13 @@
                </location>
             </place>
             <place xml:id="evecheMunster">
-               <placeName>évêché de Münster (Westphalie)</placeName>
+               <placeName>Evêché de Münster (Westphalie)</placeName>
             </place>
             <place xml:id="NancyfxbrgStPierre">
-               <placeName>Faubourg saint Pierre de Nancy</placeName>
+               <placeName>Faubourg Saint-Pierre de Nancy</placeName>
             </place>
             <place xml:id="stJeanVielAtre">
-               <placeName>Saint Jean du Vieil-Aître</placeName>
+               <placeName>Saint-Jean-du-Vieil-Aître</placeName>
             </place>
             <place xml:id="ligny">
                <placeName>Ligny</placeName>
@@ -2829,7 +2827,7 @@
                <placeName>Corny</placeName>
             </place>
             <place xml:id="nancyNotreDame">
-               <placeName>Eglise et paroisse Notre Dame</placeName>
+               <placeName>Église et paroisse Notre-Dame</placeName>
                <location>
                   <geo>48.69685,6.17856</geo>
                </location>
@@ -2883,7 +2881,7 @@
                <placeName>La bastille</placeName>
             </place>
             <place xml:id="fauxbourgStFiacre">
-               <placeName>Le faubourg saint Fiacre</placeName>
+               <placeName>Le faubourg Saint-Fiacre</placeName>
             </place>
             <place xml:id="alsace">
                <placeName>Alsace</placeName>
@@ -2898,7 +2896,7 @@
                <placeName>Chartreuse de Bosserville</placeName>
             </place>
             <place xml:id="nancyComedie">
-               <placeName>La comédie</placeName>
+               <placeName>Comédie</placeName>
                <location>
                   <geo>48.69342745,6.18206770823004</geo>
                </location>
@@ -2929,31 +2927,31 @@
                <placeName>L'étuve de Duhamel</placeName>
             </place>
             <place xml:id="nancyPorteStNic">
-               <placeName>Porte Saint Nicolas de Nancy</placeName>
+               <placeName>Porte Saint-Nicolas</placeName>
                <location>
                   <geo>48.68567138976192,6.186193227767944</geo>
                </location>
             </place>
             <place xml:id="nancyPorteStGeorges">
-               <placeName>Porte Saint Georges de Nancy</placeName>
+               <placeName>Porte Saint-Georges</placeName>
                <location>
                   <geo>48.692364441540896,6.1884355545043945</geo>
                </location>
             </place>
             <place xml:id="nancyPorteSteCatherine">
-               <placeName>Porte Sainte Catherine</placeName>
+               <placeName>Porte Sainte-Catherine</placeName>
                <location>
                   <geo>48.6955753,6.18996424213749</geo>
                </location>
             </place>
             <place xml:id="nancyPorteStStanislas">
-               <placeName>Porte Saint Stanislas</placeName>
+               <placeName>Porte Saint-Stanislas</placeName>
                <location>
                   <geo>48.691131,6.17550720356153</geo>
                </location>
             </place>
             <place xml:id="nancySecherie">
-               <placeName>la sécherie des lavoirs publics</placeName>
+               <placeName>Sécherie des lavoirs publics</placeName>
                <location>
                   <geo>48.69272,6.18807</geo>
                </location>
@@ -2962,56 +2960,56 @@
                <placeName>Hôtel du duc Léopold</placeName>
             </place>
             <place xml:id="luneManu">
-               <placeName>la manufacture nouvelle à Luneville faubourg de Viller</placeName>
+               <placeName>Manufacture nouvelle à Luneville faubourg de Viller</placeName>
             </place>
             <place xml:id="fontaineRoyale">
-               <placeName>la fontaine roïale</placeName>
+               <placeName>Fontaine royale</placeName>
             </place>
             <place xml:id="commercyChateau">
-               <placeName>Chateau de Commercy</placeName>
+               <placeName>Château de Commercy</placeName>
             </place>
             <place xml:id="stNicolas">
-               <placeName>Saint Nicolas</placeName>
+               <placeName>Saint-Nicolas-de-Port</placeName>
             </place>
             <place xml:id="nancyStFiacre">
-               <placeName>Paroisse Saint Fiacre</placeName>
+               <placeName>Paroisse Saint-Fiacre</placeName>
             </place>
             <place xml:id="barCollege">
-               <placeName>celui de Bar</placeName>
+               <placeName>Collège de Bar</placeName>
             </place>
             <place xml:id="faux">
                <placeName>Canton de Faux</placeName>
             </place>
             <place xml:id="nancyOpheline">
-               <placeName>Orphelines</placeName>
+               <placeName>Couvent des Orphelines</placeName>
                <location>
                   <geo>48.69017,6.18791</geo>
                </location>
                <desc>Fondé en 1715</desc>
             </place>
             <place xml:id="hotelPrimatiale">
-               <placeName>l'hotel du grand Doyen de la Primatiale</placeName>
+               <placeName>Hôtel du grand Doyen de la Primatiale</placeName>
                <location>
                   <geo>48.69051,6.18764</geo>
                </location>
                <desc>Construit entre 1608 et 1619.</desc>
             </place>
             <place xml:id="conciergerie">
-               <placeName>la conciergerie</placeName>
+               <placeName>Conciergerie</placeName>
                <location>
                   <geo>48.694883844038216,6.183207929134369</geo>
                </location>
                <desc>Prison dans le bâtiment du Palais.</desc>
             </place>
             <place xml:id="arsenal">
-               <placeName>l’arsenal</placeName>
+               <placeName>Arsenal</placeName>
                <location>
                   <geo>48.69671,6.17772</geo>
                </location>
                <desc>La construction de l'arsenal remonte à 1550</desc>
             </place>
             <place xml:id="manufactureBains">
-               <placeName>la manufacture de bains</placeName>
+               <placeName>Manufacture des bains</placeName>
             </place>
             <place xml:id="villerFbg">
                <placeName>Faubourg de Viller</placeName>
