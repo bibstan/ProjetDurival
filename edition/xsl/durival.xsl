@@ -100,6 +100,7 @@
     
     <xsl:template match="//tei:body">
         <xsl:for-each select=".//tei:div[@type='month']">
+            <xsl:variable name="year" select="substring(./tei:fw[@type='runningHead']/tei:date/@when,1,4)"/>
             <xsl:result-document format="html" encoding="UTF-8" href="html/{./@xml:id}.html">
                 <html>
                     <head>
@@ -150,14 +151,15 @@
                                 <div class="tabs-panel border-top" id="panel2">
                                     <xsl:for-each select=".//tei:pb/@facs">
                                         <xsl:variable name="facs" select="concat(.,'.jpg')"/>
-                                        <xsl:choose>
+                                        <img src="../images/{$year}/{$facs}" alt="facs" />
+                                        <!--<xsl:choose>
                                             <xsl:when test=".[ancestor::tei:div[@xml:id='d1765']]">
                                                 <img src="../images/1765/{$facs}" alt="facs" />        
                                             </xsl:when>
                                             <xsl:when test=".[ancestor::tei:div[@xml:id='d1766']]">
                                                 <img src="../images/1766/{$facs}" alt="facs" />        
                                             </xsl:when>
-                                        </xsl:choose>                                                                                
+                                        </xsl:choose>-->                                                                                
                                     </xsl:for-each>
                                 </div>
                             </div>
@@ -630,6 +632,7 @@
                                                 <xsl:variable name="when" select="./tei:fw[@type='runningHead']/tei:date/@when"/>
                                                 <xsl:variable name="date"><xsl:value-of select="concat($when,'-01')"/></xsl:variable>
                                                 <xsl:variable name="month" select="@xml:id"/>
+                                                <xsl:variable name="facs" select="tei:pb[1]/@facs"/>
                                                 <dt class="timeline-event" id="{$month}">
                                                     <a><xsl:value-of select="format-date($date,'[MNn]')"/></a>
                                                 </dt>
@@ -637,9 +640,23 @@
                                                     <ul>
                                                         <xsl:for-each select="tei:div[@type='day']">
                                                             <xsl:variable name="day" select="@xml:id"/>
-                                                            <li>
-                                                                <a href="{$month}.html#{$day}"><xsl:apply-templates select="tei:dateline/tei:date[@type='entry']" mode="date"/></a>
-                                                            </li>
+                                                            <xsl:variable name="year" select="substring(./tei:dateline/tei:date/@when | ./tei:dateline/tei:date/@from,1,4)"/>
+                                                            <xsl:choose>
+                                                                <xsl:when test="position()=1">
+                                                                    <li>
+                                                                        <a href="{$month}.html#{$day}"><xsl:apply-templates select="tei:dateline/tei:date[@type='entry']" mode="date"/></a>
+                                                                        <div class="media">
+                                                                            <a href="{$month}.html#{$day}" class="venobox" data-type="iframe" data-overlay="rgba(0,0,0,0.5)">
+                                                                                <img src="../images/{$year}/{$facs}.jpg" alt="Stanislas"/></a>
+                                                                        </div>
+                                                                    </li> 
+                                                                </xsl:when>
+                                                                <xsl:otherwise>
+                                                                    <li>
+                                                                        <a href="{$month}.html#{$day}"><xsl:apply-templates select="tei:dateline/tei:date[@type='entry']" mode="date"/></a>
+                                                                    </li>
+                                                                </xsl:otherwise>
+                                                            </xsl:choose>                                                                                                                        
                                                         </xsl:for-each>
                                                     </ul>
                                                 </dd>
