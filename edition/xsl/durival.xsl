@@ -198,15 +198,7 @@
             </div>
             <div class="row">                
                 <div class="large-8 columns day">                                                            
-                    <xsl:apply-templates/>
-                    <xsl:if test="not(following-sibling::tei:div[@type='day'] or tei:pb or tei:fw or tei:div[@type='insert'])">
-                        <xsl:if test="./following::tei:div[@type='month'][1]/@xml:id">
-                            <xsl:variable name="nextMonth" select="./following::tei:div[@type='month'][1]/@xml:id"/>
-                            <p class="float-right">
-                                <a href="{$nextMonth}.html">Mois suivant</a>
-                            </p>
-                        </xsl:if>                        
-                    </xsl:if>                    
+                    <xsl:apply-templates/>                                        
                 </div>
                 <div class="large-4 columns">                    
                     <xsl:for-each select=".//tei:ref[@type='note']">
@@ -214,6 +206,28 @@
                         <xsl:variable name="number"><xsl:number select="." level="any" from="tei:div[@type='day']"/></xsl:variable>
                         <p class="note"><sup>[<xsl:value-of select="$number"/>]</sup> <xsl:apply-templates select="//tei:back//tei:note[@xml:id=$id]/tei:p"/></p>
                     </xsl:for-each>
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-8 columns">
+                    <xsl:if test="not(
+                        following-sibling::tei:div[@type='day'] 
+                        or following-sibling::tei:pb 
+                        or following-sibling::tei:fw 
+                        or following-sibling::tei:div[@type='insert'])
+                        or not(preceding-sibling::tei:div[@type='day']  
+                        or preceding-sibling::tei:div[@type='insert'])">                        
+                        <p>
+                            <xsl:if test="./preceding::tei:div[@type='month'][1]/@xml:id">
+                                <xsl:variable name="prevMonth" select="./preceding::tei:div[@type='month'][1]/@xml:id"/>
+                                <a href="{$prevMonth}.html">Mois précédent</a>
+                            </xsl:if>
+                            <xsl:if test="./following::tei:div[@type='month'][1]/@xml:id">
+                                <xsl:variable name="nextMonth" select="./following::tei:div[@type='month'][1]/@xml:id"/>
+                                <span class="float-right"><a href="{$nextMonth}.html">Mois suivant</a></span>                                                                
+                            </xsl:if>
+                        </p>                        
+                    </xsl:if>
                 </div>
             </div>
         </div>
