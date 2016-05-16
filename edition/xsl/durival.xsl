@@ -6,7 +6,7 @@
     version="2.0">
     
     <xsl:output method="xhtml" indent="yes" omit-xml-declaration="no" encoding="UTF-8"/>
-    <xsl:output method="xhtml" indent="yes" encoding="UTF-8" name="html"/>
+    <xsl:output method="xhtml" indent="yes" omit-xml-declaration="yes" encoding="UTF-8" name="html"/>
     <xsl:output method="text" indent="yes" encoding="UTF-8" name="frise"/>
     
     <xsl:variable name="header">
