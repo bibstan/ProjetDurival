@@ -3536,7 +3536,7 @@
                         <dateline><date type="entry" when="1765-12-16">16</date></dateline>
                         <p xml:id="d1765121601" ana="#ville">                           
                            <persName ref="#gandoger">M. Gandoger</persName>, commence son cours
-                           <lb/>d'anatomie, dans <placeName ref="ancienneSalleAca">l'ancienne salle de
+                           <lb/>d'anatomie, dans <placeName ref="#ancienneSalleAca">l'ancienne salle de
                            <lb/>l'Académie</placeName>.
                         </p>
                      </div>
@@ -3739,7 +3739,7 @@
                            <lb/>Trois personnes avoient été proposées savoir :
                            <list>
                               <item>
-                                 <lb/><persName ref="#falois">M. Falois</persName> fils de <rs type="person" ref="avocatRequetesPalais">l'avocat du roy aux requêtes du 
+                                 <lb/><persName ref="#falois">M. Falois</persName> fils de <rs type="person" ref="#avocatRequetesPalais">l'avocat du roy aux requêtes du 
                                     <lb/>palais</rs>, il va en <placeName ref="#saxe">Saxe</placeName>, et a <rs type="bibl" ref="#bib15">un ouvrage sur les
                                        <lb/>fortifications</rs> <sic>aprouvé</sic> par <orgName ref="#academieScience">l'<choice><abbr>Acad. des sc</abbr><expan>Académie des sciences</expan></choice></orgName>.
                               </item>
