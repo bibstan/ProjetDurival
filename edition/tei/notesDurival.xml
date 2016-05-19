@@ -16,7 +16,7 @@
   </teiHeader>
   <text>
       <body>
-         <div xml:id="notesDurival">               
+         <div type="note" xml:id="notesDurival">               
             <note xml:id="d1e125">
                Théogonie [cité le 09/01/65] :  
                <p>
