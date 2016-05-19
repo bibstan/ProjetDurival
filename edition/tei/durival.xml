@@ -3789,8 +3789,8 @@
                            Mort de <persName ref="#gigneville">M. de Gignéville</persName>, officier,
                            <lb/>fils du <rs type="person" ref="gignevillePere"><choice><abbr>M<hi rend="super">e</hi>.</abbr><expan>maître</expan></choice> des comptes</rs>.
                         </p>
-                     </div>
-                     <pb facs="B543956101M00863_06_0112_2R" n="110"/>
+                        <pb facs="B543956101M00863_06_0112_2R" n="110"/>
+                     </div>                     
                   </div>
                </div>
                <div type="year" xml:id="d1766">
@@ -4793,13 +4793,13 @@
                            J'ai eû l'après midi les préparatifs de
                            <lb/><placeName ref="#bonsecoursMinimes">l’église de Bonsecours</placeName>. Et <persName ref="#mique">M. Mique</persName> est
                            <lb/>arrivé le soir pour tout préparer, avec
-                           <lb/>le memoire de <persName ref="#choiseul">M. le card<hi rend="super">l</hi>. de Choiseul</persName>,
+                           <lb/>le memoire de <persName ref="#choiseul">M. le <choice><abbr>card<hi rend="super">l</hi>.</abbr><expan>cardinal</expan></choice> de Choiseul</persName>,
                            <lb/>sur l'ordre de la marche et de la
                            <lb/>ceremonie à l’église.
                         </p>
                         <p xml:id="d1766030103" ana="#stan">
                            <rs type="person">Mon frere</rs> ecrit à <persName ref="#coster">M. Coster</persName>, de la part 
-                           <lb/>de <persName>son <choice><abbr>em<hi rend="super">ce</hi></abbr><expan>éminence</expan></choice></persName>. pour se charger de composer
+                           <lb/>de <persName>son <choice><abbr>em<hi rend="super">ce.</hi></abbr><expan>éminence</expan></choice></persName> pour se charger de composer
                            <lb/>la relation de toute la pompe funebre.
                         </p>
                      </div>
@@ -8247,13 +8247,13 @@
                         </p>                     
                      </div>
                      
-                     <div type="day" xml:id="d17661118">
+                     <div type="day" xml:id="d17661118"><!-- todo boulanger la veuve du dernier mort -->
                         <dateline><date type="entry" when="1766-11-18">18</date></dateline>
                         <p xml:id="d1766111801" ana="#ville">                           
                            Assemblée au <orgName ref="#aumonePub">bureau de l’aumône</orgName>, où etoient
                            <lb/>M<hi rend="super">rs</hi>. <persName ref="#rouvrois">du Rouvrois</persName>, <persName ref="#tervenus">de Tervenus</persName>, <persName ref="#bressey">de Bressey</persName>, 
                            <lb/><persName ref="#francoisJeanCharles">François</persName>, <persName ref="#abbeDombasle">de Dombâle</persName>, <persName ref="#maisonneuve">de Maisonneuve</persName> et <persName ref="#durival">moi</persName>.
-                           <lb/>On y a continué pour <rs type="person" ref="#boulanger">Boulanger</rs> la <choice><abbr>v<hi rend="super">ve</hi>.</abbr><expan>veuve</expan></choice> du
+                           <lb/>On y a continué pour Boulanger la <choice><abbr>v<hi rend="super">ve</hi>.</abbr><expan>veuve</expan></choice> du
                            <lb/>dernier mort. Et accordé une réduction de
                            <lb/>près de <measure type="currency" quantity="400" unit="l">400<hi rend="super">#</hi>.</measure> à la caution de celui qui
                            <lb/>tenoit autrefois le jardin.

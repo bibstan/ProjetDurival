@@ -3290,7 +3290,8 @@ table.hover tr:nth-of-type(even):hover {
   z-index: 10;
   top: calc(100% + 0.6495rem);
   max-width: 10rem !important;
-  border-radius: 0; }
+  border-radius: 0;
+  text-align:left;}
   .tooltip::before {
     content: '';
     display: block;
