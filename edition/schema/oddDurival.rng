@@ -5,7 +5,7 @@
          xmlns:teix="http://www.tei-c.org/ns/Examples"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2016-05-11T12:05:37Z. .
+Schema generated from ODD source 2016-05-19T11:09:08Z. .
 TEI Edition: Version 3.0.0. Last updated on
 	29th March 2016, revision 89ba24e
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
@@ -350,6 +350,46 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
    </define>
    <define name="att.naming.attributes">
       <ref name="att.canonical.attributes"/>
+   </define>
+   <define name="att.placement.attributes">
+      <ref name="att.placement.attribute.place"/>
+   </define>
+   <define name="att.placement.attribute.place">
+      <optional>
+         <attribute name="place">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifie où cet item se trouve.
+Les valeurs suggérées comprennent: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6] overleaf; 7] above; 8] end; 9] inline; 10] inspace</a:documentation>
+            <list>
+               <oneOrMore>
+                  <choice>
+                     <value>below</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">au-dessous de la ligne</a:documentation>
+                     <value>bottom</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">dans la marge inférieure</a:documentation>
+                     <value>margin</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">dans la marge (gauche, droite ou les deux en même temps)</a:documentation>
+                     <value>top</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">dans la marge supérieure</a:documentation>
+                     <value>opposite</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">sur la page opposée</a:documentation>
+                     <value>overleaf</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">de l'autre côté de la feuille</a:documentation>
+                     <value>above</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">au-dessus de la ligne</a:documentation>
+                     <value>end</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">à la fin, par exemple d'un chapitre ou d'un volume</a:documentation>
+                     <value>inline</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">dans le corps du texte</a:documentation>
+                     <value>inspace</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">dans un espace prédéfini, par exemple à gauche d'un scripteur précédent</a:documentation>
+                     <data type="token">
+                        <param name="pattern">(\p{L}|\p{N}|\p{P}|\p{S})+</param>
+                     </data>
+                  </choice>
+               </oneOrMore>
+            </list>
+         </attribute>
+      </optional>
    </define>
    <define name="att.typed.attributes">
       <ref name="att.typed.attribute.type"/>
@@ -1538,6 +1578,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
          <ref name="model.milestoneLike"/>
          <ref name="model.noteLike"/>
          <ref name="model.global.edit"/>
+         <ref name="figure"/>
       </choice>
    </define>
    <define name="model.biblPart">
@@ -2557,6 +2598,27 @@ Elements]</a:documentation>
          <empty/>
       </element>
    </define>
+   <define name="figure">
+      <element name="figure">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(figure) regroupe des éléments représentant ou contenant une information graphique comme une illustration ou une figure. [14.4. Specific Elements for Graphic Images]</a:documentation>
+         <zeroOrMore>
+            <choice>
+               <ref name="model.headLike"/>
+               <ref name="model.common"/>
+               <ref name="model.graphicLike"/>
+               <ref name="model.global"/>
+               <ref name="model.divBottom"/>
+            </choice>
+         </zeroOrMore>
+         <ref name="att.global.attribute.xmlid"/>
+         <ref name="att.global.attribute.n"/>
+         <ref name="att.global.attribute.xmllang"/>
+         <ref name="att.global.rendition.attribute.rend"/>
+         <ref name="att.global.facs.attribute.facs"/>
+         <ref name="att.placement.attributes"/>
+         <empty/>
+      </element>
+   </define>
    <define name="orgName">
       <element name="orgName">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(nom d'organisation) contient le nom d'une organisation. [13.2.2. Organizational Names]</a:documentation>
@@ -2954,6 +3016,15 @@ Elements]</a:documentation>
             </zeroOrMore>
          </group>
          <ref name="att.global.attribute.xmlid"/>
+         <optional>
+            <attribute name="type">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">caractérise l'élément en utilisant n'importe quel système ou typologie de classification approprié.</a:documentation>
+               <choice>
+                  <value>religious</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Indique un lieux de type religieux</a:documentation>
+               </choice>
+            </attribute>
+         </optional>
          <empty/>
       </element>
    </define>
@@ -3699,6 +3770,14 @@ On <name/>, either the @marks attribute should be used, or a paragraph of descri
             <zeroOrMore>
                <ref name="model.global"/>
             </zeroOrMore>
+            <optional>
+               <group>
+                  <ref name="front"/>
+                  <zeroOrMore>
+                     <ref name="model.global"/>
+                  </zeroOrMore>
+               </group>
+            </optional>
             <choice>
                <ref name="body"/>
             </choice>
@@ -3919,7 +3998,9 @@ On <name/>, either the @marks attribute should be used, or a paragraph of descri
                   <value>month</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">La valeur "day" indique chaque nouveau mois du Journal.</a:documentation>
                   <value>note</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">La valeur "day" indique chaque nouveau mois du Journal.</a:documentation>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">La valeur "note" doit être utilisée pour la div contenant les notes de bas de page.</a:documentation>
+                  <value>pictures</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">La valeur "pictures" doit être utilisée pour la div contenant les illustrations.</a:documentation>
                   <value>transcription</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">La valeur "transcription" doit être unique. Elle contient l'ensemble du texte édité.</a:documentation>
                   <value>index</value>
@@ -4009,6 +4090,64 @@ On <name/>, either the @marks attribute should be used, or a paragraph of descri
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
          <ref name="att.global.rendition.attribute.rend"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="front">
+      <element name="front">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(texte préliminaire) contient tout ce qui est au début du document, avant le corps du texte : page de titre, dédicaces, préfaces, etc. [4.6. Title Pages 4. Default Text Structure]</a:documentation>
+         <group>
+      
+            <zeroOrMore>
+               <choice>
+                  <ref name="model.frontPart"/>
+                  <ref name="model.pLike"/>
+                  <ref name="model.pLike.front"/>
+                  <ref name="model.global"/>
+               </choice>
+            </zeroOrMore>
+            <optional>
+               <group>
+                  <choice>
+          
+                     <group>
+                        <ref name="model.div1Like"/>
+                        <zeroOrMore>
+                           <choice>
+                              <ref name="model.div1Like"/>
+                              <ref name="model.frontPart"/>
+                              <ref name="model.global"/>
+                           </choice>
+                        </zeroOrMore>
+                     </group>
+          
+                     <group>
+                        <ref name="model.divLike"/>
+                        <zeroOrMore>
+                           <choice>
+                              <ref name="model.divLike"/>
+                              <ref name="model.frontPart"/>
+                              <ref name="model.global"/>
+                           </choice>
+                        </zeroOrMore>
+                     </group>
+                  </choice>
+        
+                  <optional>
+                     <group>
+                        <ref name="model.divBottom"/>
+                        <zeroOrMore>
+                           <choice>
+                              <ref name="model.divBottom"/>
+                              <ref name="model.global"/>
+                           </choice>
+                        </zeroOrMore>
+                     </group>
+                  </optional>
+               </group>
+            </optional>
+         </group>
+         <ref name="att.global.attributes"/>
          <empty/>
       </element>
    </define>

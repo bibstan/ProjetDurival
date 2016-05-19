@@ -105,6 +105,15 @@
                   <attDef ident="style" mode="delete"/>
                </attList>
             </classSpec>
+            <moduleRef key="figures" include="figure"/>
+            <elementSpec ident="figure" mode="change">
+               <attList>
+                  <attDef ident="ana" mode="delete"/>
+                  <attDef ident="resp" mode="delete"/>
+                  <attDef ident="type" mode="delete"/>
+                  <attDef ident="subtype" mode="delete"/>
+               </attList>
+            </elementSpec>
             <moduleRef key="namesdates"
                        include="orgName persName forename genName nameLink roleName placeName country birth death event listOrg listEvent listPerson listPlace org person place state location geo"/>
             <elementSpec ident="orgName" mode="change">
@@ -345,12 +354,18 @@
                <attList>
                   <attDef ident="ana" mode="delete"/>
                   <attDef ident="facs" mode="delete"/>
-                  <attDef ident="resp" mode="delete"/>
-                  <attDef ident="type" mode="delete"/>
+                  <attDef ident="resp" mode="delete"/>                  
                   <attDef ident="subtype" mode="delete"/>
                   <attDef ident="n" mode="delete"/>
                   <attDef ident="rend" mode="delete"/>
                   <attDef ident="xml:lang" mode="delete"/>
+                  <attDef ident="type" mode="change">
+                     <valList mode="add" type="closed">
+                        <valItem ident="religious"><!-- todo voir liste avec Eric -->
+                           <desc>Indique un lieux de type religieux</desc>
+                        </valItem>                        
+                     </valList>
+                  </attDef>
                </attList>
             </elementSpec>
             <elementSpec ident="state" mode="change">
@@ -1314,7 +1329,7 @@
             </elementSpec>
             <!--Checking module textstructure-->
             <moduleRef key="textstructure"
-                       include="TEI text body div dateline closer salute signed back"/>
+                       include="TEI text front body div dateline closer salute signed back"/>
             <elementSpec ident="TEI" mode="change">
                <attList>
                   <attDef ident="version" mode="delete"/>
@@ -1359,7 +1374,10 @@
                            <desc>La valeur "day" indique chaque nouveau mois du Journal.</desc>
                         </valItem>
                         <valItem ident="note">
-                           <desc>La valeur "day" indique chaque nouveau mois du Journal.</desc>
+                           <desc>La valeur "note" doit être utilisée pour la div contenant les notes de bas de page.</desc>
+                        </valItem>
+                        <valItem ident="pictures">
+                           <desc>La valeur "pictures" doit être utilisée pour la div contenant les illustrations.</desc>
                         </valItem>
                         <valItem ident="transcription">
                            <desc>La valeur "transcription" doit être unique. Elle contient l'ensemble du texte édité.</desc>
