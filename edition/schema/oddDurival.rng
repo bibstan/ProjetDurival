@@ -5,7 +5,7 @@
          xmlns:teix="http://www.tei-c.org/ns/Examples"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2016-05-19T11:09:08Z. .
+Schema generated from ODD source 2016-05-20T13:54:30Z. .
 TEI Edition: Version 3.0.0. Last updated on
 	29th March 2016, revision 89ba24e
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
@@ -333,6 +333,18 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
             </choice>
          </attribute>
       </optional>
+   </define>
+   <define name="att.media.attributes">
+      <empty/>
+   </define>
+   <define name="att.resourced.attributes">
+      <ref name="att.resourced.attribute.url"/>
+   </define>
+   <define name="att.resourced.attribute.url">
+      <attribute name="url">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(adresse URL) specifies the URL from which the media concerned may be obtained.</a:documentation>
+         <data type="anyURI"/>
+      </attribute>
    </define>
    <define name="att.measurement.attribute.quantity">
       <optional>
@@ -667,7 +679,9 @@ Les valeurs suggérées comprennent: 1] below; 2] bottom; 3] margin; 4] top; 5] 
       <notAllowed/>
    </define>
    <define name="model.graphicLike">
-      <notAllowed/>
+      <choice>
+         <ref name="graphic"/>
+      </choice>
    </define>
    <define name="model.offsetLike">
       <notAllowed/>
@@ -2291,6 +2305,18 @@ Les valeurs suggérées comprennent: 1] gloss; 2] index; 3] instructions; 4] lit
          <ref name="macro.specialPara"/>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.written.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="graphic">
+      <element name="graphic">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indique l'emplacement d'une image, d'une illustration ou d'un schéma intégrés. [3.9. Graphics and Other Non-textual Components 11.1. Digital Facsimiles]</a:documentation>
+         <zeroOrMore>
+            <ref name="model.descLike"/>
+         </zeroOrMore>
+         <ref name="att.global.attributes"/>
+         <ref name="att.media.attributes"/>
+         <ref name="att.resourced.attributes"/>
          <empty/>
       </element>
    </define>
