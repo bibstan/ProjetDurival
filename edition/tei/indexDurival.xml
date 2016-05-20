@@ -2118,6 +2118,24 @@
             <person xml:id="poniatowski">
                <persName>Le roi de Pologne Poniatowski</persName>
             </person>
+            <person xml:id="thomasHenri">
+               <persName>Henri Thomas</persName>
+            </person>
+            <person xml:id="leseure">
+               <persName>Leseure</persName>
+            </person>
+            <person xml:id="alixThierry">
+               <persName>Thierry Alix</persName>
+            </person>
+            <person xml:id="mercator">
+               <persName>Mercator</persName>
+            </person>
+            <person xml:id="moryDElvange">
+               <persName>Mory d'Elvange</persName>
+            </person>
+            <person xml:id="sonnini">
+               <persName>Sonnini</persName>
+            </person>
 
             <!-- encart -->
             <person xml:id="souvPontif">
@@ -2132,6 +2150,22 @@
                <persName>Madame la Dauphine</persName>
             </person>
             <!--<person xml:id="elzbietaSzydlowska"><persName>La feue reine de Pologne</persName></person>-->
+            <!-- ajouts Bio -->
+            <person xml:id="luton">
+               <persName>Jacques Luton</persName>
+            </person>
+            <person xml:id="favier">
+               <persName>Justin Favier</persName>
+            </person>
+            <person xml:id="abbeGregoire">
+               <persName>l'abbé Grégoire</persName>
+            </person>
+            <person xml:id="dufresneLouisElisabeth">
+               <persName>Louise Elisabeth Dufresne</persName>
+            </person>
+            <person xml:id="beaupre">
+               <persName>Beaupré</persName>
+            </person>
 
          </listPerson>
 
