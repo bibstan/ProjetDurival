@@ -24,8 +24,19 @@ header {
     background-color: #e6e6e6;
 }
 
+.nav {
+width:100%;
+}
 .index li {
     display:inline;
+}
+
+img.thumbnail {
+   display: inline;      
+   margin-bottom: 0;
+   width:75px;
+   border:0;
+   /*text-align:center;*/
 }
 
                     

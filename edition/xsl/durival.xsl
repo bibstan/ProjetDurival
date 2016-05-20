@@ -10,16 +10,17 @@
     <xsl:output method="text" indent="yes" encoding="UTF-8" name="frise"/>
     
     <xsl:variable name="header">
-        <header class="row">
-            <img src="../images/header/header.jpg" alt="header" />
-            <div class="top-bar">
-                <div class="top-bar-left">
-                    <ul class="dropdown menu" data-dropdown-menu="true">
-                        <li><a href="../index.html">Accueil</a></li>                                        
-                        <li>
-                            <a href="#">Le journal</a>
-                            <ul class="menu">
-                                <!--<li><a href="#">Accès par année</a>
+        <header class="row">            
+            <div  data-sticky-container="true">
+                <div class="nav" data-sticky="true" data-options="marginTop:0;">
+                    <div class="top-bar">
+                        <div class="top-bar-left">
+                            <ul class="dropdown menu" data-dropdown-menu="true">
+                                <li><a href="../index.html">Accueil</a></li>                                        
+                                <li>
+                                    <a href="#">Le journal</a>
+                                    <ul class="menu">
+                                        <!--<li><a href="#">Accès par année</a>
                                                     <ul class="menu">
                                                         <xsl:for-each select="//tei:body//tei:div[@type='year']">
                                                             <li>
@@ -35,49 +36,52 @@
                                                         </xsl:for-each>                                                                                                
                                                     </ul>
                                                 </li>-->
-                                <li><a href="calendrier.html">Accès calendaire</a></li>                                                
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Nancy</a>
-                            <ul class="menu">
-                                <li><a target="_blank" href="cartographie.html">Nancy au XVIII<sup>e</sup></a></li>
-                                <li><a target="_blank" href="#">2nd carte</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="galerie.html">Galerie</a></li>
-                        <li>
-                            <a href="#">Ressources</a>
-                            <ul class="menu">
-                                <li>
-                                    <a href="#">Biographies</a>
-                                    <ul class="menu">
-                                        <li><a href="stanislas.html">Stanislas</a></li>
-                                        <li><a href="durival.html">Durival</a></li>
+                                        <li><a href="calendrier.html">Accès calendaire</a></li>                                                
                                     </ul>
-                                </li>                                                
-                                <li><a href="">Bibliographie</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="top-bar-right">
-                    <ul class="dropdown menu" data-dropdown-menu="true">                                                                             
-                        <li>
-                            <a href="#">Index</a>
-                            <ul class="menu">
+                                </li>
                                 <li>
-                                    <a href="listPerson.html">Personnes</a>
-                                    <a href="listPlace.html">Lieux</a>
-                                    <a href="listOrg.html">Institutions</a>                                    
-                                </li>                                                
-                                <li><a href="">Bibliographie</a></li>
+                                    <a href="#">Nancy</a>
+                                    <ul class="menu">
+                                        <li><a target="_blank" href="cartographie.html">Nancy au XVIII<sup>e</sup></a></li>
+                                        <li><a target="_blank" href="#">2nd carte</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="galerie.html">Galerie</a></li>
+                                <li>
+                                    <a href="#">Ressources</a>
+                                    <ul class="menu">
+                                        <li>
+                                            <a href="#">Biographies</a>
+                                            <ul class="menu">
+                                                <li><a href="stanislas.html">Stanislas</a></li>
+                                                <li><a href="durival.html">Durival</a></li>
+                                            </ul>
+                                        </li>                                                
+                                        <li><a href="">Bibliographie</a></li>
+                                    </ul>
+                                </li>
                             </ul>
-                        </li>
-                        <li><a href="apropos.html">À propos</a></li>
-                    </ul>
-                </div>                                
-            </div>                                                                                        
+                        </div>
+                        <div class="top-bar-right">
+                            <ul class="dropdown menu" data-dropdown-menu="true">                                                                             
+                                <li>
+                                    <a href="#">Index</a>
+                                    <ul class="menu">
+                                        <li>
+                                            <a href="listPerson.html">Personnes</a>
+                                            <a href="listPlace.html">Lieux</a>
+                                            <a href="listOrg.html">Institutions</a>                                    
+                                        </li>                                                
+                                        <li><a href="">Bibliographie</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="apropos.html">À propos</a></li>
+                            </ul>
+                        </div>                                
+                    </div>
+                </div>
+            </div>
+            <img src="../images/header/header.jpg" alt="header" />
         </header>
     </xsl:variable>        
     
@@ -146,7 +150,7 @@
                         <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,900,700' rel='stylesheet' type='text/css'/>                     
                         <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'/>
                     </head>
-                    <body class="text-justify">
+                    <body>
                         <xsl:copy-of select="$header"/>                                                                                                                                                                                               
                         <div class="row">                            
                             <div class="large-12 tabs-content" data-tabs-content="example-tabs">
@@ -175,10 +179,13 @@
                                     </div>
                                 </div>
                                 <div class="tabs-panel border-top" id="panel2">
-                                    <xsl:for-each select=".//tei:pb/@facs">
-                                        <xsl:variable name="facs" select="concat(.,'.jpg')"/>
-                                        <img src="../images/{$year}/{$facs}" alt="facs" />
-                                        <!--<xsl:choose>
+                                    <div class="owl-carousel owl-theme">
+                                        <xsl:for-each select=".//tei:pb/@facs">
+                                            <xsl:variable name="facs" select="concat(.,'.jpg')"/>
+                                            <div class="item">
+                                                <img src="../images/{$year}/{$facs}" alt="facs" />
+                                            </div>
+                                            <!--<xsl:choose>
                                             <xsl:when test=".[ancestor::tei:div[@xml:id='d1765']]">
                                                 <img src="../images/1765/{$facs}" alt="facs" />        
                                             </xsl:when>
@@ -186,7 +193,8 @@
                                                 <img src="../images/1766/{$facs}" alt="facs" />        
                                             </xsl:when>
                                         </xsl:choose>-->                                                                                
-                                    </xsl:for-each>
+                                        </xsl:for-each>
+                                    </div>
                                 </div>
                             </div>
                         </div>                
@@ -234,6 +242,20 @@
                         <xsl:variable name="number"><xsl:number select="." level="any" from="tei:div[@type='day']"/></xsl:variable>
                         <p class="note"><sup>[<xsl:value-of select="$number"/>]</sup> <xsl:apply-templates select="//tei:back//tei:note[@xml:id=$id]/tei:p"/></p>
                     </xsl:for-each>
+                    <xsl:if test=".//tei:ref[@type='picture']">                        
+                        <div class="row">
+                            <div class="large-10 large-offset-1 small-10 small-offset-1 text-justify">
+                                <xsl:for-each select=".//tei:ref[@type='picture']">
+                                    <xsl:variable name="ref" select="substring-after(@target,'#')"/>
+                                    <xsl:variable name="picture" select="//tei:back//tei:figure[@xml:id=$ref]//tei:graphic/@url"/>
+                                    <xsl:variable name="cartel" select="//tei:back//tei:figure[@xml:id=$ref]//tei:desc"/>                                    
+                                    <a class="thumbnail" href="../images/illustrations/{$picture}.jpg" data-lightbox="{$id}" data-title="{$cartel}">
+                                        <img src="../images/illustrations/thumbs/{$picture}.jpg" alt="{$cartel}"/>
+                                    </a>
+                                </xsl:for-each>
+                            </div>
+                        </div>
+                    </xsl:if>
                 </div>
             </div>
             <div class="row">
@@ -684,55 +706,59 @@
                                     <xsl:variable name="links" select=" concat('#',@xml:id)"/>
                                     <li id="{$id}">                    
                                         <xsl:apply-templates select="tei:persName"/>
-                                        <ul class="index">
-                                            <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='day'][descendant::*[contains(@ref,$links)]]">
-                                                <xsl:variable name="date">
-                                                    <xsl:apply-templates select="./tei:dateline/tei:date" mode="dateShort"/>
-                                                </xsl:variable>
-                                                <xsl:variable name="links" select="concat(../@xml:id,'.html#',@xml:id)"/>
-                                                <xsl:choose>
-                                                    <xsl:when test="position() = last()">
-                                                        <xsl:choose>
-                                                            <xsl:when test="//tei:div[@type='transcription']//tei:div[@type='insert'][descendant::*[contains(@ref,$id)]]">
-                                                                <li>                                                            
-                                                                    <a href="{$links}"><xsl:value-of select="$date"/></a> -                                                                                             
-                                                                </li>
-                                                            </xsl:when>
-                                                            <xsl:otherwise>
-                                                                <li>                                                            
-                                                                    <a href="{$links}"><xsl:value-of select="$date"/></a>                                                                                             
-                                                                </li>
-                                                            </xsl:otherwise>
-                                                        </xsl:choose>
-                                                    </xsl:when>
-                                                    <xsl:otherwise>
-                                                        <li>
-                                                            <a href="{$links}"><xsl:value-of select="$date"/></a> -                                     
-                                                        </li>
-                                                    </xsl:otherwise>
-                                                </xsl:choose>                                            
-                                            </xsl:for-each>
-                                            <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='insert'][descendant::*[contains(@ref,$links)]]">
-                                                <xsl:variable name="number">
-                                                    <xsl:number count="tei:div[@type='insert']" from="tei:div[@type='transcription']" level="any"/>
-                                                </xsl:variable>
-                                                <xsl:variable name="links" select="concat(../@xml:id,'.html#',@xml:id)"/>
-                                                    
-                                                    <xsl:choose>
-                                                        <xsl:when test="position() = last()">
-                                                            <li>
-                                                                <a href="{$links}">Encart n°<xsl:value-of select="$number"/></a>
-                                                            </li>    
-                                                        </xsl:when>
-                                                        <xsl:otherwise>
-                                                            <li>
-                                                                <a href="{$links}">Encart n°<xsl:value-of select="$number"/></a> - 
-                                                            </li>
-                                                        </xsl:otherwise>
-                                                    </xsl:choose>
-                                                                                                
-                                            </xsl:for-each>
-                                            <!--<xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='day'] | //tei:div[@type='transcription']//tei:div[@type='insert']">
+                                        <ul class="accordion" data-accordion="true" data-allow-all-closed="true">
+                                            <li class="accordion-item" data-accordion-item="true">
+                                                <a href="#" class="accordion-title">Citations</a>
+                                                <div class="accordion-content" data-tab-content="true">
+                                                    <ul class="index">
+                                                        <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='day'][descendant::*[contains(@ref,$links)]]">
+                                                            <xsl:variable name="date">
+                                                                <xsl:apply-templates select="./tei:dateline/tei:date" mode="dateComplete"/>
+                                                            </xsl:variable>
+                                                            <xsl:variable name="links" select="concat(../@xml:id,'.html#',@xml:id)"/>
+                                                            <xsl:choose>
+                                                                <xsl:when test="position() = last()">
+                                                                    <xsl:choose>
+                                                                        <xsl:when test="//tei:div[@type='transcription']//tei:div[@type='insert'][descendant::*[contains(@ref,$id)]]">
+                                                                            <li>                                                            
+                                                                                <a class="index" href="{$links}"><xsl:value-of select="$date"/></a> -                                                                                             
+                                                                            </li>
+                                                                        </xsl:when>
+                                                                        <xsl:otherwise>
+                                                                            <li>                                                            
+                                                                                <a class="index" href="{$links}"><xsl:value-of select="$date"/></a>                                                                                             
+                                                                            </li>
+                                                                        </xsl:otherwise>
+                                                                    </xsl:choose>
+                                                                </xsl:when>
+                                                                <xsl:otherwise>
+                                                                    <li>
+                                                                        <a class="index" href="{$links}"><xsl:value-of select="$date"/></a> -                                     
+                                                                    </li>
+                                                                </xsl:otherwise>
+                                                            </xsl:choose>                                            
+                                                        </xsl:for-each>
+                                                        <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='insert'][descendant::*[contains(@ref,$links)]]">
+                                                            <xsl:variable name="number">
+                                                                <xsl:number count="tei:div[@type='insert']" from="tei:div[@type='transcription']" level="any"/>
+                                                            </xsl:variable>
+                                                            <xsl:variable name="links" select="concat(../@xml:id,'.html#',@xml:id)"/>
+                                                            
+                                                            <xsl:choose>
+                                                                <xsl:when test="position() = last()">
+                                                                    <li>
+                                                                        <a class="index" href="{$links}">Encart n°<xsl:value-of select="$number"/></a>
+                                                                    </li>    
+                                                                </xsl:when>
+                                                                <xsl:otherwise>
+                                                                    <li>
+                                                                        <a class="index" href="{$links}">Encart n°<xsl:value-of select="$number"/></a> - 
+                                                                    </li>
+                                                                </xsl:otherwise>
+                                                            </xsl:choose>
+                                                            
+                                                        </xsl:for-each>
+                                                        <!--<xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='day'] | //tei:div[@type='transcription']//tei:div[@type='insert']">
                                                 <xsl:if test=".//tei:persName[@ref=$links] | .//tei:rs[@type='person' and @ref=$links]">
                                                     <xsl:choose>
                                                         <xsl:when test="@type='day'">
@@ -756,6 +782,9 @@
                                                     </xsl:choose>
                                                 </xsl:if>                                                
                                             </xsl:for-each>-->
+                                                    </ul>
+                                                </div>
+                                            </li>
                                         </ul>
                                     </li>
                                 </xsl:for-each>
@@ -814,49 +843,55 @@
                                     <xsl:variable name="links" select=" concat('#',@xml:id)"/>
                                     <li id="{$id}">                    
                                         <xsl:apply-templates select="tei:placeName"/>
-                                        <ul class="index">
-                                            <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='day'][descendant::*[contains(@ref,$links)]]">
-                                                <xsl:variable name="date"><xsl:apply-templates select="./tei:dateline/tei:date" mode="dateShort"/></xsl:variable>
-                                                <xsl:variable name="links" select="concat(../@xml:id,'.html#',@xml:id)"/>
-                                                <xsl:choose>
-                                                    <xsl:when test="position() = last()">
-                                                        <xsl:choose>
-                                                            <xsl:when test="//tei:div[@type='transcription']//tei:div[@type='insert'][descendant::*[contains(@ref,$id)]]">
-                                                                <li>
-                                                                    <a href="{$links}"><xsl:value-of select="$date"/></a> -                                    
-                                                                </li>                                                                
-                                                            </xsl:when>
-                                                            <xsl:otherwise>
-                                                                <li>
-                                                                    <a href="{$links}"><xsl:value-of select="$date"/></a>                                   
-                                                                </li>
-                                                            </xsl:otherwise>
-                                                        </xsl:choose>
-                                                    </xsl:when>
-                                                    <xsl:otherwise>
-                                                        <li>
-                                                            <a href="{$links}"><xsl:value-of select="$date"/></a> -                                    
-                                                        </li>                                                        
-                                                    </xsl:otherwise>
-                                                </xsl:choose>                                           
-                                            </xsl:for-each>
-                                            <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='insert'][descendant::*[contains(@ref,$links)]]">                                                
-                                                <xsl:variable name="number"><xsl:number count="tei:div[@type='insert']" from="tei:div[@type='transcription']" level="any"/></xsl:variable>
-                                                <xsl:variable name="links" select="concat(../@xml:id,'.html#',@xml:id)"/>
-                                                    <xsl:choose>
-                                                        <xsl:when test="position() = last()">
-                                                            <li>
-                                                                <a href="{$links}">encart n°<xsl:value-of select="$number"/></a>
-                                                            </li>
-                                                        </xsl:when>
-                                                        <xsl:otherwise>
-                                                            <li>
-                                                                <a href="{$links}">encart n°<xsl:value-of select="$number"/></a> -
-                                                            </li>
-                                                        </xsl:otherwise>
-                                                    </xsl:choose>
-                                                                                                
-                                            </xsl:for-each>
+                                        <ul class="accordion" data-accordion="true" data-allow-all-closed="true">
+                                            <li class="accordion-item" data-accordion-item="true">
+                                                <a href="#" class="accordion-title">Citations</a>
+                                                <div class="accordion-content" data-tab-content="true">
+                                                    <ul class="index">
+                                                        <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='day'][descendant::*[contains(@ref,$links)]]">
+                                                            <xsl:variable name="date"><xsl:apply-templates select="./tei:dateline/tei:date" mode="dateComplete"/></xsl:variable>
+                                                            <xsl:variable name="links" select="concat(../@xml:id,'.html#',@xml:id)"/>
+                                                            <xsl:choose>
+                                                                <xsl:when test="position() = last()">
+                                                                    <xsl:choose>
+                                                                        <xsl:when test="//tei:div[@type='transcription']//tei:div[@type='insert'][descendant::*[contains(@ref,$id)]]">
+                                                                            <li>
+                                                                                <a class="index" href="{$links}"><xsl:value-of select="$date"/></a> -                                    
+                                                                            </li>                                                                
+                                                                        </xsl:when>
+                                                                        <xsl:otherwise>
+                                                                            <li>
+                                                                                <a class="index" href="{$links}"><xsl:value-of select="$date"/></a>                                   
+                                                                            </li>
+                                                                        </xsl:otherwise>
+                                                                    </xsl:choose>
+                                                                </xsl:when>
+                                                                <xsl:otherwise>
+                                                                    <li>
+                                                                        <a class="index" href="{$links}"><xsl:value-of select="$date"/></a> -                                    
+                                                                    </li>                                                        
+                                                                </xsl:otherwise>
+                                                            </xsl:choose>                                           
+                                                        </xsl:for-each>
+                                                        <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='insert'][descendant::*[contains(@ref,$links)]]">                                                
+                                                            <xsl:variable name="number"><xsl:number count="tei:div[@type='insert']" from="tei:div[@type='transcription']" level="any"/></xsl:variable>
+                                                            <xsl:variable name="links" select="concat(../@xml:id,'.html#',@xml:id)"/>
+                                                            <xsl:choose>
+                                                                <xsl:when test="position() = last()">
+                                                                    <li>
+                                                                        <a class="index" href="{$links}">encart n°<xsl:value-of select="$number"/></a>
+                                                                    </li>
+                                                                </xsl:when>
+                                                                <xsl:otherwise>
+                                                                    <li>
+                                                                        <a class="index" href="{$links}">encart n°<xsl:value-of select="$number"/></a> -
+                                                                    </li>
+                                                                </xsl:otherwise>
+                                                            </xsl:choose>                                                                                                
+                                                        </xsl:for-each>
+                                                    </ul>
+                                                </div>
+                                            </li>
                                         </ul>
                                     </li>
                                 </xsl:for-each>
@@ -914,52 +949,57 @@
                                     <xsl:variable name="links" select="concat('#',@xml:id)"/>
                                     <li id="{$id}">                    
                                         <xsl:apply-templates select="tei:orgName"/>
-                                        <ul class="index">
-                                            <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='day'][descendant::*[contains(@ref,$links)]]">
-                                                <xsl:variable name="date"><xsl:apply-templates select="./tei:dateline/tei:date" mode="dateShort"/></xsl:variable>
-                                                <xsl:variable name="links" select="concat(../@xml:id,'.html#',@xml:id)"/>
-                                                <xsl:choose>
-                                                    <xsl:when test="position() = last()">
-                                                        <xsl:choose>
-                                                            <xsl:when test="//tei:div[@type='transcription']//tei:div[@type='insert'][descendant::*[contains(@ref,$id)]]">
-                                                                <li>
-                                                                    <a href="{$links}"><xsl:value-of select="$date"/></a> -                                    
-                                                                </li>
-                                                            </xsl:when>
-                                                            <xsl:otherwise>
-                                                                <li>
-                                                                    <a href="{$links}"><xsl:value-of select="$date"/></a>                                    
-                                                                </li>
-                                                            </xsl:otherwise>
-                                                        </xsl:choose>
-                                                    </xsl:when>
-                                                    <xsl:otherwise>
-                                                        <li>
-                                                            <a href="{$links}"><xsl:value-of select="$date"/></a> -                                    
-                                                        </li>
-                                                    </xsl:otherwise>
-                                                </xsl:choose>                                            
-                                            </xsl:for-each>
-                                            <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='insert'][descendant::*[contains(@ref,$links)]]">
-                                                <xsl:variable name="number">
-                                                    <xsl:number count="tei:div[@type='insert']" from="tei:div[@type='transcription']" level="any"/>
-                                                </xsl:variable>
-                                                <xsl:variable name="links" select="concat(../@xml:id,'.html#',@xml:id)"/>
-                                                <xsl:choose>
-                                                    <xsl:when test="position() = last()">
-                                                        <li>
-                                                            <a href="{$links}">encart n°<xsl:value-of select="$number"/></a>
-                                                        </li>
-                                                    </xsl:when>
-                                                    <xsl:otherwise>                                                        
-                                                        <li>
-                                                            <a href="{$links}">encart n°<xsl:value-of select="$number"/></a> -
-                                                        </li>
-                                                    </xsl:otherwise>
-                                                </xsl:choose>
-                                                    
-                                                                                                
-                                            </xsl:for-each>
+                                        <ul class="accordion" data-accordion="true" data-allow-all-closed="true">
+                                            <li class="accordion-item" data-accordion-item="true">
+                                                <a href="#" class="accordion-title">Citations</a>
+                                                <div class="accordion-content" data-tab-content="true">
+                                                    <ul class="index">
+                                                        <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='day'][descendant::*[contains(@ref,$links)]]">
+                                                            <xsl:variable name="date"><xsl:apply-templates select="./tei:dateline/tei:date" mode="dateComplete"/></xsl:variable>
+                                                            <xsl:variable name="links" select="concat(../@xml:id,'.html#',@xml:id)"/>
+                                                            <xsl:choose>
+                                                                <xsl:when test="position() = last()">
+                                                                    <xsl:choose>
+                                                                        <xsl:when test="//tei:div[@type='transcription']//tei:div[@type='insert'][descendant::*[contains(@ref,$id)]]">
+                                                                            <li>
+                                                                                <a class="index" href="{$links}"><xsl:value-of select="$date"/></a> -                                    
+                                                                            </li>
+                                                                        </xsl:when>
+                                                                        <xsl:otherwise>
+                                                                            <li>
+                                                                                <a class="index" href="{$links}"><xsl:value-of select="$date"/></a>                                    
+                                                                            </li>
+                                                                        </xsl:otherwise>
+                                                                    </xsl:choose>
+                                                                </xsl:when>
+                                                                <xsl:otherwise>
+                                                                    <li>
+                                                                        <a class="index" href="{$links}"><xsl:value-of select="$date"/></a> -                                    
+                                                                    </li>
+                                                                </xsl:otherwise>
+                                                            </xsl:choose>                                            
+                                                        </xsl:for-each>
+                                                        <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='insert'][descendant::*[contains(@ref,$links)]]">
+                                                            <xsl:variable name="number">
+                                                                <xsl:number count="tei:div[@type='insert']" from="tei:div[@type='transcription']" level="any"/>
+                                                            </xsl:variable>
+                                                            <xsl:variable name="links" select="concat(../@xml:id,'.html#',@xml:id)"/>
+                                                            <xsl:choose>
+                                                                <xsl:when test="position() = last()">
+                                                                    <li>
+                                                                        <a class="index" href="{$links}">encart n°<xsl:value-of select="$number"/></a>
+                                                                    </li>
+                                                                </xsl:when>
+                                                                <xsl:otherwise>                                                        
+                                                                    <li>
+                                                                        <a class="index" href="{$links}">encart n°<xsl:value-of select="$number"/></a> -
+                                                                    </li>
+                                                                </xsl:otherwise>
+                                                            </xsl:choose>                                                                                                                        
+                                                        </xsl:for-each>
+                                                    </ul>
+                                                </div>
+                                            </li>
                                         </ul>
                                     </li>
                                 </xsl:for-each>
@@ -994,7 +1034,7 @@
                             <xsl:if test=".//tei:title[@ref=$id] or .//tei:rs[@type='bibl' and @ref=$id]">
                                 <xsl:variable name="id" select="concat(../@xml:id,'.html#',@xml:id)"/>
                                 <li>
-                                    <a href="{$id}"><xsl:value-of select="@xml:id"/></a>                                    
+                                    <a class="index" href="{$id}"><xsl:value-of select="@xml:id"/></a>                                    
                                 </li>
                             </xsl:if>
                         </xsl:for-each>
@@ -1192,30 +1232,68 @@
                         <div class="top-bar full-width sticky" data-sticky="true" data-margin-top="0">
                             <div class="top-bar-left">
                                 <ul class="dropdown menu" data-dropdown-menu="true">
-                                    <li><a href="../index.html">Accueil</a></li>
-                                    <li><a href="#">Le journal</a><ul class="menu">
-                                        <li><a href="calendrier.html">Accès calendaire</a></li>
-                                    </ul>
-                                    </li>
-                                    <li><a href="cartographie.html">Nancy au XVIII<sup>e</sup></a></li>
-                                    <li><a href="galerie.html">Galerie</a></li>
-                                    <li><a href="#">Ressources</a><ul class="menu">
-                                        <li><a href="#">Biographies</a><ul class="menu">
-                                            <li><a href="stanislas.html">Stanislas</a></li>
-                                            <li><a href="durival.html">Durival</a></li>
+                                    <li><a href="../index.html">Accueil</a></li>                                        
+                                    <li>
+                                        <a href="#">Le journal</a>
+                                        <ul class="menu">
+                                            <!--<li><a href="#">Accès par année</a>
+                                                    <ul class="menu">
+                                                        <xsl:for-each select="//tei:body//tei:div[@type='year']">
+                                                            <li>
+                                                                <a href="#"><xsl:value-of select="./tei:head"/></a>
+                                                                <ul class="menu">
+                                                                    <xsl:for-each select=".//tei:div[@type='month']">
+                                                                        <xsl:variable name="when" select="./tei:fw[@type='runningHead']/tei:date/@when"/>
+                                                                        <xsl:variable name="date"><xsl:value-of select="concat($when,'-01')"/></xsl:variable>                                                                
+                                                                        <li><a href="{./@xml:id}.html"><xsl:value-of select="format-date($date,'[Mn] [Y0001]')"/></a></li>                                                                 
+                                                                    </xsl:for-each>
+                                                                </ul>
+                                                            </li>
+                                                        </xsl:for-each>                                                                                                
+                                                    </ul>
+                                                </li>-->
+                                            <li><a href="calendrier.html">Accès calendaire</a></li>                                                
                                         </ul>
-                                        </li>
-                                        <li><a href="">Bibliographie</a></li>
-                                    </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Nancy</a>
+                                        <ul class="menu">
+                                            <li><a target="_blank" href="cartographie.html">Nancy au XVIII<sup>e</sup></a></li>
+                                            <li><a target="_blank" href="#">2nd carte</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="galerie.html">Galerie</a></li>
+                                    <li>
+                                        <a href="#">Ressources</a>
+                                        <ul class="menu">
+                                            <li>
+                                                <a href="#">Biographies</a>
+                                                <ul class="menu">
+                                                    <li><a href="stanislas.html">Stanislas</a></li>
+                                                    <li><a href="durival.html">Durival</a></li>
+                                                </ul>
+                                            </li>                                                
+                                            <li><a href="">Bibliographie</a></li>
+                                        </ul>
                                     </li>
                                 </ul>
                             </div>
                             <div class="top-bar-right">
-                                <ul class="dropdown menu" data-dropdown-menu="true">
-                                    <li><a href="list.html">Index</a></li>
+                                <ul class="dropdown menu" data-dropdown-menu="true">                                                                             
+                                    <li>
+                                        <a href="#">Index</a>
+                                        <ul class="menu">
+                                            <li>
+                                                <a href="listPerson.html">Personnes</a>
+                                                <a href="listPlace.html">Lieux</a>
+                                                <a href="listOrg.html">Institutions</a>                                    
+                                            </li>                                                
+                                            <li><a href="">Bibliographie</a></li>
+                                        </ul>
+                                    </li>
                                     <li><a href="apropos.html">À propos</a></li>
                                 </ul>
-                            </div>
+                            </div>                                                        
                         </div>
                     </header>
                     <div id="mapid"></div>
@@ -1225,12 +1303,19 @@
                         var mymap = L.map('mapid').setView([48.692054, 6.184417], 15);
                         //http://mapwarper.net/maps/tile/13564/{z}/{x}/{y}.png
                         //https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpandmbXliNDBjZWd2M2x6bDk3c2ZtOTkifQ._QA7i5Mpkd_m30IGElHziw
-                        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpandmbXliNDBjZWd2M2x6bDk3c2ZtOTkifQ._QA7i5Mpkd_m30IGElHziw', {
-                        maxZoom: 20, attribution: 'Map data &#169;; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
-                        '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-                        'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+                        var base1 = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpandmbXliNDBjZWd2M2x6bDk3c2ZtOTkifQ._QA7i5Mpkd_m30IGElHziw', {
+                        maxZoom: 20, attribution: 'Map data ©; OpenStreetMap contributors, ' +
+                        'CC-BY-SA, ' +
+                        'Imagery © Mapbox',
                         id: 'mapbox.streets'
                         }).addTo(mymap);
+                        
+                        var base2 = L.tileLayer('http://mapwarper.net/maps/tile/13564/{z}/{x}/{y}.png', {
+                        maxZoom: 20, attribution: 'Map data ©; OpenStreetMap contributors, ' +
+                        'CC-BY-SA, ' +
+                        'Imagery © Mapbox',
+                        id: 'mapbox.streets'
+                        })/*.addTo(mymap)*/;
                         
                         
                         var polygon = L.polygon(
@@ -1426,6 +1511,12 @@
                         </xsl:for-each>   
                         
                         var baseLayers = null;
+                        var baseLayers = {
+                        'OSM': base1,
+                        'estampe': base2
+                        };
+                        
+                        //var baseLayers = null;
                         
                         var overlayMaps = {
                         "religieux": religious,

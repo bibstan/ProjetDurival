@@ -205,70 +205,90 @@
          <front>
             <div>
                <div>
-                  <head n="1">Nicolas Durival (Commercy, 12 novembre 1713 - Heillecourt, 21 décembre 1795)</head>
+                  <head n="1">
+                     <persName ref="#durival">Nicolas Durival</persName> 
+                     (<placeName ref="#commercy">Commercy</placeName>, 
+                     <date when="1713-11-12">12 novembre 1713</date> - 
+                     <placeName ref="#heillecourt">Heillecourt</placeName>, 
+                     <date when="1795-12-21">21 décembre 1795</date>)</head>
                   <p>
-                     Fils d'un valet de garde-robe du duc Léopold, Jacques Luton, Nicolas Durival met sa carrière au service du 
-                     nouveau souverain, Stanislas Leszczynski, roi de Pologne, dès l'arrivée de celui-ci dans le duché de Lorraine. 
-                     Homme de confiance du duc, il exerce différentes fonctions au plus près de la cour de Lunéville avant de devenir 
-                     lieutenant général de police de la ville de Nancy. Il mène parallèlement une activité de statisticien et 
-                     d'historien, son Mémoire sur la Lorraine et le Barrois étant unanimement salué dès sa parution.
+                     Fils d'un valet de garde-robe du <persName ref="#ducLeopold">duc Léopold</persName>, 
+                     <persName ref="#luton">Jacques Luton</persName>, <persName ref="#durival">Nicolas Durival</persName> met sa carrière au service du 
+                     nouveau souverain, <persName ref="#stanislas">Stanislas Leszczynski</persName>, roi de Pologne, dès l'arrivée de celui-ci dans le duché de Lorraine. 
+                     Homme de confiance du duc, il exerce différentes fonctions au plus près de <orgName ref="#courSouveraine">la cour de Lunéville</orgName> avant de devenir 
+                     lieutenant général de police de <placeName ref="#nancy">la ville de Nancy</placeName>. Il mène parallèlement une activité de statisticien et 
+                     d'historien, son <bibl><title>Mémoire sur la Lorraine et le Barrois</title></bibl> étant unanimement salué dès sa parution.
                   </p>
                   <div>
                      <head n="2">Durival et sa famille</head>
                      <p>
-                        Nicolas Luton Durival est le fils aîné de Jacques Luton, originaire de Normandie, fils d'un ancien valet de 
-                        la Maison de Louis XIV et lui-même valet de garde-robe du duc Léopold. Avec son épouse Marie Anne Humblot, 
+                        <persName ref="#durival">Nicolas Luton Durival</persName> est le fils aîné de 
+                        <persName ref="#luton">Jacques Luton</persName>, originaire de Normandie, fils d'un ancien valet de 
+                        la Maison de Louis XIV et lui-même valet de garde-robe du 
+                        <persName ref="#ducLeopold">duc Léopold</persName>. Avec son épouse <persName ref="#durivalMere">Marie Anne Humblot</persName>, 
                         il a plusieurs enfants dont trois fils qui ont une carrière dans l'administration lorraine et 
-                        française : Nicolas, Jean-Baptiste et Claude. Retraité à Saint-Aubin-sur-Aire (Meuse), Jacques Luton en 
-                        devient le maire en 1729. Toujours en fonction en 1737, il fait partie de ceux qui viennent accueillir le 
-                        nouveau duc à son arrivée. En 1760, Jacques Luton est anobli, pour lui et ses descendants, et prend le nom 
+                        française : <persName ref="#durival">Nicolas</persName>, <persName ref="#durivalJean">Jean-Baptiste</persName> 
+                        et <persName ref="#durivalClaude">Claude</persName>. Retraité à <placeName ref="#stAubin">Saint-Aubin-sur-Aire</placeName> (Meuse), 
+                        <persName ref="#luton">Jacques Luton</persName> en 
+                        devient le maire en <date when="1729">1729</date>. Toujours en fonction en <date when="1737">1737</date>, il fait partie de ceux qui viennent accueillir le 
+                        nouveau duc à son arrivée. En <date when="1760">1760</date>, <persName ref="#luton">Jacques Luton</persName> est anobli, pour lui et ses descendants, et prend le nom 
                         de Durival.
                      </p>
                      <p>
-                        Nicolas naît le 12 novembre 1713 à Commercy, comme il en informe Dom Calmet dans une lettre. 
+                        <persName ref="#durival">Nicolas</persName> naît le <date when="1713-11-12">12 novembre 1713</date> à 
+                        <placeName ref="#commercy">Commercy</placeName>, comme il en informe <persName ref="#calmet">Dom Calmet</persName> dans une lettre. 
                         Il apprend le rudiment avec le curé de Saint-Aubin- : ses aptitudes l'autorisent à envisager 
                         une bonne carrière dans l'administration. 
                      </p>
                      <p>
                         Il ne fonde pas de famille, mais son journal montre une grande proximité avec ses jeunes frères. 
-                        Propriétaire d'une ferme à Heillecourt, où il passe volontiers du temps, c'est là qu'il se retire, sans 
-                        beaucoup de moyens financiers, à l'issue de sa carrière civile en 1769. Privé de sa pension municipale en 
-                        1791 afin qu'il en porte la demande "auprès de la patrie" (soit le département de la Meurthe), il ne recouvre 
+                        Propriétaire d'une ferme à <placeName ref="#heillecourt">Heillecourt</placeName>, où il passe volontiers du temps, c'est là qu'il se retire, sans 
+                        beaucoup de moyens financiers, à l'issue de sa carrière civile en <date when="1769">1769</date>. Privé de sa pension municipale en 
+                        <date when="1791">1791</date> afin qu'il en porte la demande "auprès de la patrie" (soit le département de la Meurthe), il ne recouvre 
                         une somme de 3 000 livres, à peine suffisante pour le faire vivre, que peu de temps avant sa mort 
-                        le 21 décembre 1795. Justin Favier y voit certainement l'oeuvre de l'abbé Grégoire, éminent conventionnel 
+                        le <date when="1795-12-21">21 décembre 1795</date>. <persName ref="#favier">Justin Favier</persName> y voit certainement 
+                        l'oeuvre de <persName ref="#abbeGregoire">l'abbé Grégoire</persName>, éminent 
+                        conventionnel 
                         vosgien. Paralysé des deux jambes par la goutte, il n'en continuait pas moins à tenir son journal 
                         régulièrement.
                      </p>
                      <div>
-                        <head n="3">Jean-Baptiste Durival</head>                    
+                        <head n="3"><persName ref="#durivalJean">Jean-Baptiste Durival</persName></head>                    
                         <p>
-                           Jean-Baptiste (4 juillet 1725-14 février 1810) est le second fils de Jacques Luton. 
-                           Il entame une carrière administrative à la suite de son frère. La mort de Stanislas le fait accéder 
+                           <persName ref="#durivalJean">Jean-Baptiste (<date when="1725-07-04">4 juillet 1725</date>-<date when="1810-02-14">14 février 1810</date>)</persName> 
+                           est le second fils de <persName ref="#luton">Jacques Luton</persName>. 
+                           Il entame une carrière administrative à la suite de son frère. La mort de <persName ref="#stanislas">Stanislas</persName> le fait accéder 
                            à de hautes fonctions dans l'administration du ministère des Affaires étrangères français, alors 
-                           gouverné par le duc de Choiseul : premier secrétaire du département des Affaires étrangères, 
+                           gouverné par <persName ref="#choiseul">le duc de Choiseul<!-- todo vérif ident ? --></persName> : premier secrétaire du département des Affaires étrangères, 
                            ambassadeur en Hollande.
                         </p>                    
                         <p>
-                           Il est marié à Louise Elisabeth Dufresne, amie d'enfance des jeunes La Galaizière, 
-                           proche de Mme de Graffigny et de la coterie du château de Fléville, mais ils n'ont pas d'enfants.
+                           Il est marié à <persName ref="#dufresneLouisElisabeth">Louise Elisabeth Dufresne<!-- todo vérif pas déjà présente --></persName>, 
+                           amie d'enfance des jeunes La Galaizière, 
+                           proche de <persName ref="#graffigny">Mme de Graffigny</persName> et de <orgName ref="#coterieFleville">la coterie du château de Fléville</orgName>, mais ils n'ont pas d'enfants.
                         </p>                    
                         <p>
-                           Membre de l'Académie des Sciences et Belles-Lettres de Nancy, il est un connaisseur de l'art 
-                           militaire, publiant quelques ouvrages sur le sujet (Détails militaires, 1758 ; 
-                           Essai sur l'infanterie française, 1760 ; Le Point d'honneur), ce qui lui vaut de participer à 
-                           l'Encyclopédie méthodique pour cette question.
+                           Membre de l'<orgName ref="#academie">Académie des Sciences et Belles-Lettres de Nancy</orgName>, 
+                           il est un connaisseur de l'art militaire, publiant quelques ouvrages sur le sujet 
+                           (<bibl><title>Détails militaires</title>, <date when="1758">1758</date></bibl> ; 
+                           <bibl><title>Essai sur l'infanterie française</title>, <date when="1760">1760</date></bibl> ; 
+                           <bibl><title>Le Point d'honneur</title></bibl>), ce qui lui vaut de participer à 
+                           <bibl>l'<title>Encyclopédie méthodique</title></bibl> pour cette question.
                         </p>
                      </div>
                      <div>
-                        <head n="3">Claude Durival</head>                    
+                        <head n="3"><persName ref="#durivalClaude">Claude Durival</persName></head>                    
                         <p>
-                           Dernier des frères Durival, Claude (1728-1805) suit les traces de ses aînés en 
-                           succédant à l'un comme secrétaire-greffier des Conseils du roi de Pologne, et à 
+                           Dernier des frères Durival, <persName ref="#durivalClaude">Claude (<date when="1728">1728</date>-<date when="1805">1805</date>)</persName> 
+                           suit les traces de ses aînés en 
+                           succédant à l'un comme secrétaire-greffier des Conseils du <rs type="person" ref="#stanislas">roi de Pologne</rs>, et à 
                            l'autre comme économe séquestre des bénéfices de Lorraine et du Barrois.
                         </p>                    
                         <p>
-                           Célibataire, il vit avec Nicolas à Heillecourt et se consacre à 
-                           l'agronomie en publiant des opuscules sur les tarifs des grains (1757), la culture de la vigne (1776) 
+                           Célibataire, il vit avec <persName ref="#durival">Nicolas</persName> à 
+                           <placeName ref="#heillecourt">Heillecourt</placeName> et se consacre à 
+                           l'agronomie en publiant des opuscules sur les tarifs des grains (<date when="1757">1757</date>), 
+                           la culture de la vigne (<date when="1776">1776</date>) 
                            ou les salines de Lorraine.
                         </p>
                      </div>
@@ -278,22 +298,26 @@
                      <div>
                         <head n="3">Au service de La Galaizière et du roi Stanislas</head>                    
                         <p>
-                           Nicolas Durival commence sa carrière comme secrétaire au service du 
-                           chancelier français Chaumont de La Galaizière dès l'arrivée de celui-ci 
-                           en Lorraine en 1737. Il reste par la suite proche de la famille du chancelier 
-                           et de son fils l'intendant de Lorraine, dont il suit avec intérêt les déplacements. 
-                           En 1751, il devient greffier en chef du Conseil d'Etat et des Finances du roi de Pologne, 
-                           ce qui l'introduit dans l'entourage de Stanislas. Il cumule dès lors cette fonction 
+                           <persName ref="#durival">Nicolas Durival</persName> commence sa carrière comme secrétaire 
+                           au service du chancelier français <persName ref="#chancelier">Chaumont de La Galaizière</persName> dès l'arrivée de celui-ci 
+                           en Lorraine en <date when="1737">1737</date>. Il reste par la suite proche de la 
+                           famille du chancelier 
+                           et de son fils <rs type="person" ref="#intendant">l'intendant de Lorraine</rs>, dont il suit avec intérêt les déplacements. 
+                           En <date when="1751">1751</date>, il devient greffier en chef du 
+                           <orgName ref="#conseilEtat">Conseil d'Etat et des Finances du roi de Pologne</orgName>, 
+                           ce qui l'introduit dans l'entourage de <persName ref="#stanislas">Stanislas</persName>. 
+                           Il cumule dès lors cette fonction 
                            avec d'autres charges : économe séquestre des bénéfices de Lorraine et Barrois 
-                           (1754-1760 ; chargé d'administrer les biens ecclésiastiques qui n'ont pas d'attributaire), 
-                           subdélégué de l'intendance de Lorraine (substitut de La Galaizière).
+                           (<date from="1754" to="1760">1754-1760</date> ; chargé d'administrer les biens ecclésiastiques qui n'ont pas d'attributaire), 
+                           subdélégué de <orgName ref="#intendance">l'intendance de Lorraine</orgName> (substitut de <persName ref="#intendant">La Galaizière</persName>).
                         </p>
                      </div>
                      <div>
                         <head n="3">Lieutenant de police de Nancy</head>                    
                         <p>
-                           En 1760, il résigne ces charges au profit de la lieutenance générale 
-                           de police de la ville de Nancy, cet office lui prenant tout son temps. 
+                           En <date when="1760">1760</date>, il résigne ces charges au profit de la lieutenance générale 
+                           de police de la ville de <placeName ref="#nancy">Nancy</placeName>, cet office lui 
+                           prenant tout son temps. 
                            L'achat en est très coûteux : 12 500 livres de Lorraine, auxquelles 
                            s'ajoutent 450 livres, 9 sous et 6 deniers de frais divers. Cette fonction 
                            va bien au-delà du maintien de l'ordre. Il intervient tout autant dans 
@@ -303,14 +327,16 @@
                            l'ordonnancement des nombreuses processions et cérémonies, et 
                            tout ce qui, en règle générale, concourt à la paix civile. 
                            À ce titre, il participe tout à fait régulièrement aux réunions du 
-                           conseil municipal et a de nombreuses relations tant avec la Cour souveraine 
-                           qu'avec celle, plus mondaine, de Lunéville. Il tient aussi des statistiques 
+                           <orgName ref="#conseil">conseil municipal<!-- todo vérif ou hotel de ville --></orgName> 
+                           et a de nombreuses relations tant avec <orgName ref="#courSouveraine">la Cour souveraine</orgName> 
+                           qu'avec celle, plus mondaine, de <placeName ref="#luneville">Lunéville</placeName>. Il tient aussi des statistiques 
                            précises des naissances, mariages et décès de la ville.
                         </p>                    
                         <p>
-                           C'est en 1769 qu'il demande à être relevé de ses fonctions ; il semblerait que 
+                           C'est en <date when="1769">1769</date> qu'il demande à être relevé de ses fonctions ; 
+                           il semblerait que 
                            l'administration française lui paraisse à ce moment intenable, à moins que 
-                           l'âge et la fatigue ne commencent à se faire sentir. L'intendance lui octroie 
+                           l'âge et la fatigue ne commencent à se faire sentir. <orgName ref="#intendance">L'intendance</orgName> lui octroie 
                            alors une pension de 1 000 livres, des "lettres de vétérance" et le titre de 
                            lieutenant de police honoraire, de sorte qu'il exerce encore à titre de 
                            conseil dans les années suivantes.
@@ -320,24 +346,27 @@
                   <div>
                      <head n="2">Durival historien</head>
                      <div>
-                        <head n="3">Le Mémoire sur la Lorraine et le Barrois</head>                    
+                        <head n="3"><bibl>Le <title>Mémoire sur la Lorraine et le Barrois</title></bibl></head>                    
                         <p>
-                           Selon les historiens, s'appuyant sur les échanges entre Durival et Dom Calmet,
-                           Nicolas Durival considère, en bon administrateur de son temps, qu'il est 
+                           Selon les historiens, s'appuyant sur les échanges entre 
+                           <persName ref="#durival">Durival</persName> et <persName ref="#calmet">Dom Calmet</persName>,
+                           <persName ref="#durival">Nicolas Durival</persName> considère, en bon administrateur de son temps, qu'il est 
                            impossible de gouverner sans la statistique, la géographie, et la connaissance 
                            de l'histoire de sa province. C'est pourquoi il fait publier à titre anonyme dès 
-                           1748 une Table alphabétique des villes, bourgs etc. de la Lorraine et du 
-                           Barrois (182 p.), qui connaît deux rééditions et enrichissements en 1749 et 1766. 
+                           <date when="1748">1748</date> une <bibl><title>Table alphabétique des villes, bourgs etc. de la Lorraine et du 
+                           Barrois</title> (182 p.)</bibl>, qui connaît deux rééditions et enrichissements en 
+                           <date when="1749">1749</date> et <date when="1766">1766</date>. 
                            Les pages sont divisées en deux colonnes : le toponyme et la juridiction dont la 
                            localité relève. Les mises à jour tiennent compte de l'actualisation des limites 
                            des bailliages.
                         </p>                    
                         <p>
-                           Son Mémoire sur la Lorraine et le Barrois, de plus grande ampleur (604 p.), 
-                           paraît en 1753 chez Henri Thomas à Nancy. Il est aussitôt salué par 
-                           le Journal de Trévoux, et le géographe Expilly entame avec Durival 
+                           Son <bibl><title>Mémoire sur la Lorraine et le Barrois</title></bibl>, de plus grande ampleur (604 p.), 
+                           paraît en <date when="1753">1753</date> chez <persName ref="#thomasHenri">Henri Thomas</persName> 
+                           à <placeName ref="#nancy">Nancy</placeName>. Il est aussitôt salué par 
+                           <bibl>le <title>Journal de Trévoux</title></bibl>, et le géographe <persName ref="#abbeExpilly">Expilly</persName> entame avec <persName ref="#durival">Durival</persName> 
                            des échanges épistolaires visant à mieux intégrer la géographie et 
-                           l'histoire de la Lorraine à celles de la France. Il se divise en trois parties :
+                           l'histoire de <persName ref="#lorraine">la Lorraine</persName> à celles de la <placeName ref="#france">France</placeName>. Il se divise en trois parties :
                            <list>
                               <item>une introduction générale sur la géographie, les habitants, les monnaies, les divisions administratives, les rivières et ruisseaux...</item>
                               <item>une étude de chaque ville, quartier et principaux monuments, divisée par bailliage</item>
@@ -346,24 +375,25 @@
                         </p>                                            
                      </div>                 
                      <div>
-                        <head n="3">La Description de la Lorraine et du Barrois</head>                    
+                        <head n="3"><bibl>La <title>Description de la Lorraine et du Barrois</title></bibl></head>                    
                         <p>
-                           Cet ouvrage est publié en 4 volumes chez Leclerc à Nancy entre 
-                           1779 et 1783, le quatrième volume composé d'ajouts et d'annexes 
+                           Cet ouvrage est publié en 4 volumes chez <persName ref="#leClerc">Leclerc</persName> à <placeName ref="#nancy">Nancy</placeName> entre 
+                           <date when="1779">1779</date> et <date when="1783">1783</date>, le quatrième volume composé d'ajouts et d'annexes 
                            étant mis gracieusement à disposition des possesseurs des trois 
-                           premiers chez le libraire Leseure.
+                           premiers chez le libraire <persName ref="#leseure">Leseure</persName>.
                         </p>                    
                         <p>
-                           Dans l'avertissement, Durival fait remonter la genèse de son projet à 
-                           1760 et se place dans la droite ligne des géographes et historiens des 
-                           siècles précédents, rendant notamment hommage à Thierry Alix et à Mercator.
+                           Dans l'avertissement, <persName ref="#durival">Durival</persName> fait remonter la genèse de son projet à 
+                           <date when="1760">1760</date> et se place dans la droite ligne des géographes et historiens des 
+                           siècles précédents, rendant notamment hommage à <persName ref="#alixThierry">Thierry Alix</persName> et 
+                           à <persName ref="#mercator">Mercator</persName>.
                         </p>
                         
                         <p>
-                           Le tome I est paru précédemment en 1774 sous une forme abrégée. Il comprend 
+                           Le tome I est paru précédemment en <date when="1774">1774</date> sous une forme abrégée. Il comprend 
                            une histoire des duchés depuis le Xe siècle, allant jusqu'à la fin du règne 
-                           de Stanislas (l'introduction du Mémoire se terminait à la fin du règne de Léopold), 
-                           une géographie extrêmement complète et une carte dépliante. Durival y mentionne 
+                           de <persName ref="#stanislas">Stanislas</persName> (l'introduction du Mémoire se terminait à la fin du règne de <persName ref="#ducLeopold">Léopold</persName>), 
+                           une géographie extrêmement complète et une carte dépliante. <persName ref="#durival">Durival</persName> y mentionne 
                            les rivières, lacs et autres eaux courantes et stagnantes, les plantes cultivées, 
                            les vignes, des statistiques de température, les ressources naturelles 
                            (bois, pêche, fossiles, mines), les habitants et leur notoriété, les 
@@ -373,7 +403,7 @@
                         </p>                    
                         <p>
                            Le tome II développe considérablement la description des bailliages. 
-                           Il consacre ainsi 52 pages à la ville de Nancy, passant en revue les 
+                           Il consacre ainsi 52 pages à la ville de <placeName ref="#nancy">Nancy</placeName>, passant en revue les 
                            paroisses, les faubourgs, les fontaines comme les hommes illustres et 
                            les ressources naturelles.
                         </p>                    
@@ -384,67 +414,102 @@
                      </div>
                      <div>
                         <head n="3">L'académicien</head>                    
-                        <p>Durival est reçu le 15 avril 1760 à l'Académie royale des Sciences, 
-                           lettres et arts de Nancy sur demande pressante du fondateur de celle-ci, 
-                           le roi Stanislas. Sur l'insistance du roi, il en devient le sous-directeur deux ans plus tard. Son Journal le montre assidu aux séances ordinaires, soucieux de rendre compte des débats et de l'usage de la bibliothèque associée.</p>                    
-                        <p>Il ne se jugeait pas digne d'être un académicien, se présentant comme un 
+                        <p>
+                           <persName ref="#durival">Durival</persName> est reçu le <date when="1760-04-15">15 avril 1760</date> à 
+                           <orgName ref="#academie">l'Académie royale des Sciences, 
+                              lettres et arts de Nancy</orgName> sur demande pressante du fondateur de celle-ci, 
+                           <persName ref="#stanislas">le roi Stanislas</persName>. Sur l'insistance du roi, il en devient 
+                           le sous-directeur deux ans plus tard. Son <bibl><title>Journal</title></bibl> le montre assidu aux séances ordinaires, 
+                           soucieux de rendre compte des débats et de l'usage de la bibliothèque associée.
+                        </p>                    
+                        <p>
+                           Il ne se jugeait pas digne d'être un académicien, se présentant comme un 
                            administrateur autodidacte plutôt qu'un érudit. Cependant, ses échanges 
-                           avec des personnalités scientifiques de l'époque (Dom Calmet, Expilly) 
+                           avec des personnalités scientifiques de l'époque 
+                           (<persName ref="#calmet">Dom Calmet</persName>, <persName ref="#abbeExpilly">Expilly</persName>) 
                            montre qu'il est tenu par eux en haute estime et qu'il a toutes les capacités 
                            intellectuelles pour argumenter et apporter avec méthode des réponses à des 
                            questions d'histoire, de géographie et d'économie.
                         </p>                    
                         <p>
-                           Il présente régulièrement devant l'Académie royale des mémoires et rapports 
+                           Il présente régulièrement devant <orgName ref="#academie">l'Académie royale</orgName> des mémoires et rapports 
                            témoignant de son activité scientifique :                    
                            <list>
-                              <item>1763 : un mémoire sur la clôture des héritages (biens immobiliers), le vain pâturage et le parcours (circulation du bétail) en Lorraine</item>
-                              <item>1765 : une bibliographie des ouvrages imprimés et manuscrits sur la province de Lorraine, conduite à la demande de l'intendant pour abonder la Bibliothèque historique de la France du père Lelong</item>
-                              <item>1779 : l'Académie le charge de terminer les travaux du père Leslie sur l'histoire du duché de Lorraine. Il ne semble pas cependant que cette demande ait été suivie d'effet car, les papiers du père Leslie lui étant réclamés quelques années plus tard par Mory d'Elvange, Durival assure qu'il ne les a jamais eus en sa possession.</item>
-                              <item>1790 : Sonnini commence à publier, dans le Journal du département de la Meurthe, diverses études d'économie rurale, portant principalement sur la construction et l'entretien des routes lorraines, présentées devant l'Académie. Un deuxième recueil sera publié, toujours par Sonnini, dans la Bibliothèque économique de 1809.</item>
+                              <item>
+                                 <date when="1763">1763</date> : un mémoire sur la clôture des héritages 
+                                 (biens immobiliers), le vain pâturage et le parcours (circulation du bétail) 
+                                 en <placeName ref="#lorraine">Lorraine</placeName>
+                              </item>
+                              <item>
+                                 <date when="1765">1765</date> : une bibliographie des ouvrages imprimés 
+                                 et manuscrits sur la province de <placeName ref="#lorraine">Lorraine</placeName>, 
+                                 conduite à la demande de <persName ref="#intendant">l'intendant</persName> pour abonder 
+                                 la <hi rend="italic">Bibliothèque historique de la France</hi> du <persName ref="#lelong">père Lelong</persName></item>
+                              <item>
+                                 <date when="1779">1779</date> : <orgName ref="#academie">l'Académie</orgName> le charge de terminer 
+                                 les travaux du <persName ref="#leslie">père Leslie</persName> sur l'histoire du duché de Lorraine. 
+                                 Il ne semble pas cependant que cette demande ait été suivie d'effet car, les papiers du 
+                                 <persName ref="#leslie">père Leslie</persName> lui étant réclamés quelques années plus tard par 
+                                 <persName ref="#moryDElvange">Mory d'Elvange</persName>, 
+                                 <persName ref="#durival">Durival</persName> assure qu'il ne les a jamais eus en sa possession.
+                              </item>
+                              <item>
+                                 <date when="1790">1790</date> : <persName ref="#sonnini">Sonnini</persName> 
+                                 commence à publier, dans <bibl>le <title>Journal du département de la Meurthe</title></bibl>, 
+                                 diverses études d'économie rurale, portant principalement sur la construction et l'entretien des 
+                                 routes lorraines, présentées devant <orgName ref="#academie">l'Académie</orgName>. 
+                                 Un deuxième recueil sera publié, toujours par <persName ref="#sonnini">Sonnini</persName>, 
+                                 dans <bibl><title>la Bibliothèque économique</title> de 1809</bibl>.</item>
                            </list>
                         </p>
                      </div>                 
                      <div>
-                        <head n="3">Le Journal</head>                    
+                        <head n="3"><bibl>Le <title>Journal</title></bibl></head>                    
                         <p>
-                           Tenu de 1737 au 18 décembre 1795, soit 3 jours avant la mort de son 
-                           rédacteur, le Journal de Nicolas Durival n'est pas tant un écrit intime 
+                           Tenu de <date from="1737" to="1795-12-18">1737 au 18 décembre 1795</date>, soit 3 jours avant la mort 
+                           de son rédacteur, <bibl>le <title>Journal</title> de <persName type="author" ref="#durival">Nicolas Durival</persName></bibl> 
+                           n'est pas tant un écrit intime 
                            qu'un outil de suivi des événements urbains et politiques sous le règne 
-                           de Stanislas, et de préparation des différentes publications projetées par l'auteur.
+                           de <persName ref="#stanislas">Stanislas</persName>, et de préparation des 
+                           différentes publications projetées par l'auteur.
                         </p>                    
                         <p>
-                           Il se compose de 14 volumes in-quarto, écrits à la main. Ceux-ci sont 
-                           truffés parfois de copies de lettres et de billets, voire d'originaux, 
-                           mais aussi de billets imprimés, de programmes, prospectus, invitations, 
-                           ou coupures de presse. Il n'a certainement pas été tenu au jour le jour, 
+                           Il se compose de 14 volumes <term type="format" subtype="in-quarto">in-quarto</term>, 
+                           écrits à la main. Ceux-ci sont truffés parfois de copies de lettres et de billets, 
+                           voire d'originaux, mais aussi de billets imprimés, de programmes, prospectus, 
+                           invitations, ou coupures de presse. Il n'a certainement pas été tenu au jour le jour, 
                            du moins au début où les notations sont très sommaires. Il est possible 
-                           par exemple que la relation de l'agonie et de la mort de Stanislas a pu 
+                           par exemple que la relation de l'agonie et de la mort de <persName ref="#stanislas">Stanislas</persName> a pu 
                            être reconstruite quelque temps (quelques jours ?) après l'événement à 
                            partir de notes ou d'un brouillon de journal qui n'a pas été conservé, 
                            ou en tous cas reprise par la suite pour y ajouter des mentions d'horaire précis.
                         </p>                    
                         <p>
-                           Des lacunes existent pour les années 1767-1771, 1781 et 1788-1791, soit que Durival 
-                           n'ait pas tenu de relation de ces périodes, soit qu'elle ait été perdu. 
-                           De 1792 à 1795, il se borne à effectuer des notations météorologiques 
-                           quasi-quotidiennes sans se préoccuper vraiment de noter les événements en cours.
+                           Des lacunes existent pour les années <date from="1767" to="1771">1767-1771</date>, 
+                           <date when="1781">1781</date> et <date from="1788" to="1791">1788-1791</date>, 
+                           soit que <persName ref="#durival">Durival</persName> n'ait pas tenu de relation de 
+                           ces périodes, soit qu'elle ait été perdu. De <date from="1792" to="1795">1792 à 1795</date>, 
+                           il se borne à effectuer des notations météorologiques quasi-quotidiennes sans se 
+                           préoccuper vraiment de noter les événements en cours.
                         </p>
                      </div>
                   </div>
                   <div>
-                     <head n="2">Durival et la bibliothèque de Nancy</head>                 
+                     <head n="2"><persName ref="#durival">Durival</persName> et <orgName ref="#bibliotheque">la bibliothèque de Nancy</orgName></head>                 
                      <p>
-                        De son vivant, et sans doute à cause de ses fonctions à l'Académie royale, 
-                        Durival avait fait don à la bibliothèque de plusieurs ouvrages dont Justin 
-                        Favier avait pu retrouver la trace grâce à un ex-libris manuscrit portant 
-                        "ex dono D[omi]ni Durival aedil[is] praes[idio]", quand un ex-libris gravé 
-                        sur cuivre par Jean-Charles François (1717-1769) est attesté (base des ex-libris, D1884). 
-                        Or, après la mort sans héritier de son frère Jean-Baptiste, la bibliothèque et les 
-                        papiers de Durival ont été vendus au poids sur la place du Marché à Nancy, de sorte 
-                        que nombre de ses livres se sont perdus. C'est peut-être à l'issue de cette vente 
-                        que le Journal est entré à la bibliothèque de Nancy au XIXe siècle, par le biais 
-                        du célèbre collectionneur lotharingiste Beaupré.
+                        De son vivant, et sans doute à cause de ses fonctions à <orgName ref="#academie">l'Académie royale</orgName>, 
+                        <persName ref="#durival">Durival</persName> avait fait don à 
+                        <orgName ref="#bibliotheque">la bibliothèque</orgName> de plusieurs ouvrages dont <persName ref="#favier">Justin 
+                        Favier</persName> avait pu retrouver la trace grâce à un ex-libris manuscrit portant 
+                        "<foreign xml:lang="lat">ex dono D[omi]ni Durival aedil[is] praes[idio]</foreign>", quand un ex-libris gravé 
+                        sur cuivre par <persName ref="#francoisJeanCharles">Jean-Charles François 
+                           (<date when="1717">1717</date>-<date when="1769">1769</date>)</persName> est attesté (base des ex-libris, D1884). 
+                        Or, après la mort sans héritier de son frère <persName ref="#durivalJean">Jean-Baptiste</persName>, 
+                        la bibliothèque et les papiers de <persName ref="#durival">Durival</persName> ont été 
+                        vendus au poids sur <placeName ref="#nancyMarche">la place du Marché à Nancy</placeName>, 
+                        de sorte que nombre de ses livres se sont perdus. C'est peut-être à l'issue de cette vente 
+                        que <bibl>le <title>Journal</title></bibl> est entré à <orgName ref="#bibliotheque">la bibliothèque de Nancy</orgName> 
+                        au XIXe siècle, par le biais du célèbre collectionneur lotharingiste <persName ref="#beaupre">Beaupré</persName>.
                      </p> 
                   </div>
                   <div>
@@ -471,7 +536,7 @@
                         <p xml:id="d1765010102" ana="#ville">
                            <placeName ref="#nancyHDV">L'hotel de ville de Nancy</placeName> aiant fait graver par
                            <lb/><persName ref="#collin">Collin</persName> <rs type="artwork" ref="#estampeCollin">l'estampe de la construction <placeName ref="#nancyCasernes">du quartier
-                              <lb/>roïal des cazernes</placeName></rs>. Elle a été presentée ce matin
+                              <lb/>roïal des cazernes</placeName></rs><ref type="picture" target="#pic01"/>. Elle a été presentée ce matin
                            <lb/>au <rs type="person" ref="#stanislas">roy de Pologne</rs> à <placeName ref="#luneville">Lunéville</placeName>. <rs type="person" ref="#stanislas"><choice><abbr>S. M.</abbr><expan>Sa Majesté</expan></choice></rs> en a été contente.
                         </p>
                      </div>
@@ -648,7 +713,7 @@
                      <div type="day" xml:id="d17650131">
                         <dateline><date type="entry" when="1765-01-31">31</date></dateline>
                         <p xml:id="d1765013101" ana="#cour">                                                
-                           <lb/><rs ref="#stanislas">Le roy de Pologne</rs> vient à <placeName ref="#malgrange">la <choice><abbr>Malg</abbr><expan>Malgrange</expan></choice></placeName>.
+                           <lb/><rs type="person" ref="#stanislas">Le roy de Pologne</rs> vient à <placeName ref="#malgrange">la <choice><abbr>Malg</abbr><expan>Malgrange</expan></choice></placeName>.
                         </p>
                      </div>
                   </div>
