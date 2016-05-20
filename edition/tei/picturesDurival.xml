@@ -17,8 +17,10 @@
     <text>
         <body>
             <div type="pictures" xml:id="picturesDurival">
-                <figure>
-                    <desc>                        
+                <figure xml:id="pic01">
+                    <graphic url="B543956101_TS21_COLLIN_0015"/>                    
+                    <desc>
+                        Dominique Collin, Construction du quartier royal des casernes de Nancy.
                     </desc>
                 </figure>
             </div> 
