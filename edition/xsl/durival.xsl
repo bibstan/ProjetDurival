@@ -17,38 +17,18 @@
                         <div class="top-bar-left">
                             <ul class="dropdown menu" data-dropdown-menu="true">
                                 <li><a href="../index.html">Accueil</a></li>                                        
+                                <li><a href="calendrier.html">Le journal</a></li>
                                 <li>
-                                    <a href="#">Le journal</a>
+                                    <a href="carte.html">Cartes</a>
                                     <ul class="menu">
-                                        <!--<li><a href="#">Accès par année</a>
-                                                    <ul class="menu">
-                                                        <xsl:for-each select="//tei:body//tei:div[@type='year']">
-                                                            <li>
-                                                                <a href="#"><xsl:value-of select="./tei:head"/></a>
-                                                                <ul class="menu">
-                                                                    <xsl:for-each select=".//tei:div[@type='month']">
-                                                                        <xsl:variable name="when" select="./tei:fw[@type='runningHead']/tei:date/@when"/>
-                                                                        <xsl:variable name="date"><xsl:value-of select="concat($when,'-01')"/></xsl:variable>                                                                
-                                                                        <li><a href="{./@xml:id}.html"><xsl:value-of select="format-date($date,'[Mn] [Y0001]')"/></a></li>                                                                 
-                                                                    </xsl:for-each>
-                                                                </ul>
-                                                            </li>
-                                                        </xsl:for-each>                                                                                                
-                                                    </ul>
-                                                </li>-->
-                                        <li><a href="calendrier.html">Accès calendaire</a></li>                                                
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">Nancy</a>
-                                    <ul class="menu">
-                                        <li><a target="_blank" href="cartographie.html">Nancy au XVIII<sup>e</sup></a></li>
-                                        <li><a target="_blank" href="#">2nd carte</a></li>
+                                        <li><a target="_blank" href="belprey.html">Nancy en 1754</a></li>
+                                        <li><a target="_blank" href="mique.html">Nancy en 1778</a></li>
+                                        <li><a target="_blank" href="cartographie.html">Nancy aujourd'hui</a></li>                                        
                                     </ul>
                                 </li>
                                 <li><a href="galerie.html">Galerie</a></li>
                                 <li>
-                                    <a href="#">Ressources</a>
+                                    <a href="focus.html">Focus</a>
                                     <ul class="menu">
                                         <li>
                                             <a href="#">Biographies</a>
@@ -56,8 +36,7 @@
                                                 <li><a href="stanislas.html">Stanislas</a></li>
                                                 <li><a href="durival.html">Durival</a></li>
                                             </ul>
-                                        </li>                                                
-                                        <li><a href="">Bibliographie</a></li>
+                                        </li>                                                                                        
                                     </ul>
                                 </li>
                             </ul>
@@ -67,12 +46,11 @@
                                 <li>
                                     <a href="#">Index</a>
                                     <ul class="menu">
-                                        <li>
-                                            <a href="listPerson.html">Personnes</a>
-                                            <a href="listPlace.html">Lieux</a>
-                                            <a href="listOrg.html">Institutions</a>                                    
-                                        </li>                                                
-                                        <li><a href="">Bibliographie</a></li>
+                                        <li><a href="listPerson.html">Personnes</a></li>
+                                        <li><a href="listPlace.html">Lieux</a></li>
+                                        <li><a href="listOrg.html">Institutions</a></li>
+                                        <li><a href="listbib.html">Œuvres citées</a></li>
+                                        <li><a href="bibliographie.html">Bibliographie générale</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="apropos.html">À propos</a></li>
@@ -841,7 +819,7 @@
                         <div class="large-12">
                             <ul class="no-bullet">
                                 <xsl:for-each select="tei:place">
-                                    <xsl:sort select="tei:placeName" order="ascending" case-order="upper-first"/>
+                                    <xsl:sort select="tei:placeName[not(@type='today')]" order="ascending" case-order="upper-first"/>
                                     <xsl:variable name="id" select="@xml:id"/>
                                     <xsl:variable name="links" select=" concat('#',@xml:id)"/>
                                     <li id="{$id}">                    
@@ -1477,7 +1455,7 @@
                         <!--var popup = L.popup();-->
                         <xsl:for-each select="tei:place[descendant::tei:location]">
                             <xsl:variable name="id" select="@xml:id"/>
-                            <xsl:variable name="href">&lt;a href='listPlace.html<xsl:value-of select="concat('#',$id)"/>'&gt;<xsl:value-of select="normalize-space(tei:placeName)"/>&lt;/a&gt;</xsl:variable>
+                            <xsl:variable name="href">&lt;a href='listPlace.html<xsl:value-of select="concat('#',$id)"/>'&gt;<xsl:value-of select="normalize-space(tei:placeName[not(@type='today')])"/>&lt;/a&gt;</xsl:variable>
                             <xsl:choose>
                                 <xsl:when test="@type='religious'">
                                     <xsl:text>L.marker([</xsl:text>                                
