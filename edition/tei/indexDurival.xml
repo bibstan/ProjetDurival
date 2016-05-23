@@ -2118,6 +2118,24 @@
             <person xml:id="poniatowski">
                <persName>Le roi de Pologne Poniatowski</persName>
             </person>
+            <person xml:id="thomasHenri">
+               <persName>Henri Thomas</persName>
+            </person>
+            <person xml:id="leseure">
+               <persName>Leseure</persName>
+            </person>
+            <person xml:id="alixThierry">
+               <persName>Thierry Alix</persName>
+            </person>
+            <person xml:id="mercator">
+               <persName>Mercator</persName>
+            </person>
+            <person xml:id="moryDElvange">
+               <persName>Mory d'Elvange</persName>
+            </person>
+            <person xml:id="sonnini">
+               <persName>Sonnini</persName>
+            </person>
 
             <!-- encart -->
             <person xml:id="souvPontif">
@@ -2132,6 +2150,22 @@
                <persName>Madame la Dauphine</persName>
             </person>
             <!--<person xml:id="elzbietaSzydlowska"><persName>La feue reine de Pologne</persName></person>-->
+            <!-- ajouts Bio -->
+            <person xml:id="luton">
+               <persName>Jacques Luton</persName>
+            </person>
+            <person xml:id="favier">
+               <persName>Justin Favier</persName>
+            </person>
+            <person xml:id="abbeGregoire">
+               <persName>l'abbé Grégoire</persName>
+            </person>
+            <person xml:id="dufresneLouisElisabeth">
+               <persName>Louise Elisabeth Dufresne</persName>
+            </person>
+            <person xml:id="beaupre">
+               <persName>Beaupré</persName>
+            </person>
 
          </listPerson>
 
@@ -2156,7 +2190,7 @@
                <desc>Le terrain est attribué à l'établissement de la Pépinière royale par arrêt du
                   conseil des finance du 26 octobre 1765.</desc>
             </place>
-            <place xml:id="bonsecours">
+            <place xml:id="bonsecours" type="religious">
                <placeName>Église de Bonsecours</placeName>
                <location>
                   <geo>48.6765536,6.1994878</geo>
@@ -2203,7 +2237,7 @@
                <desc>La construction de la citadelle remonte à 1634 alors que la France occupait
                   Nancy.</desc>
             </place>
-            <place xml:id="nancyPrimatiale">
+            <place xml:id="nancyPrimatiale" type="religious">
                <placeName>Primatiale</placeName>
                <location>
                   <geo>48.69142,6.18595</geo>
@@ -2238,27 +2272,27 @@
                <desc>Centre de la ville neuve voulue par Charles III, l'ancien Hôtel de ville y
                   était érigé.</desc>
             </place>
-            <place xml:id="nancyMinimes">
+            <place xml:id="nancyMinimes" type="religious">
                <placeName>Couvent des Minimes</placeName>
                <location>
                   <geo>48.6916688,6.1792884</geo>
                </location>
                <desc>Fondé en 1592, reconstruit en 1613, il sera détruit à la Révolution.</desc>
             </place>
-            <place xml:id="nancyStRoch">
+            <place xml:id="nancyStRoch" type="religious">
                <placeName>Église Saint-Roch</placeName>
                <location>
                   <geo>48.69082,6.18222</geo>
                </location>
                <desc>Église construite en 1616</desc>
             </place>
-            <place xml:id="bonsecoursMinimes">
+            <place xml:id="bonsecoursMinimes" type="religious">
                <placeName>Couvent des Minimes de Bonsecours</placeName>
             </place>
             <place xml:id="boudonvilleAqueduc">
                <placeName>Aqueduc de Boudonville</placeName>
             </place>
-            <place xml:id="nancyCongregation">
+            <place xml:id="nancyCongregation" type="religious">
                <placeName>Religieuses de la Congrégation</placeName>
                <location>
                   <geo>48.69228,6.18666</geo>
@@ -2288,7 +2322,7 @@
                </location>
                <desc>Depuis 1794, rue des Dominicains.</desc>
             </place>
-            <place xml:id="nancyStEpvre">
+            <place xml:id="nancyStEpvre" type="religious">
                <placeName>Église Saint-Èpvre</placeName>
                <location>
                   <geo>48.69561,6.1801</geo>
@@ -2302,7 +2336,7 @@
                   <geo>48.69609,6.17934</geo>
                </location>
             </place>
-            <place xml:id="nancyStLeopold">
+            <place xml:id="nancyStLeopold" type="religious">
                <placeName>Église Saint-Léopold</placeName>
                <location>
                   <geo>48.68732,6.18251</geo>
@@ -2310,21 +2344,21 @@
                <desc>Église du prieuré des Bénedictins, fondée en 1617, prend le titre d'abbaye en
                   1718.</desc>
             </place>
-            <place xml:id="nancyStSebastien">
+            <place xml:id="nancyStSebastien" type="religious">
                <placeName>Église Saint-Sébastien</placeName>
                <location>
                   <geo>48.68904,6.18098</geo>
                </location>
                <desc>L'église actuelle date de 1720, sa construction s'achève en 1732..</desc>
             </place>
-            <place xml:id="nancyDamesStSacrement">
+            <place xml:id="nancyDamesStSacrement" type="religious">
                <placeName>Les Dames du saint-Sacrement</placeName>
                <location>
                   <geo>48.68736,6.18522</geo>
                </location>
                <desc>Fondation en 1624 (Notre-Dame de la Consolation)</desc>
             </place>
-            <place xml:id="nancyCollegeJesuites">
+            <place xml:id="nancyCollegeJesuites" type="religious">
                <placeName>Collège des jésuites</placeName>
                <location>
                   <geo>48.6908736324152,6.182100176811218</geo>
@@ -2336,14 +2370,14 @@
             <!--<place xml:id="nancyCollege">
                <placeName>Collège de Nancy</placeName>
             </place>-->
-            <place xml:id="nancyNoviciatJesuites">
+            <place xml:id="nancyNoviciatJesuites" type="religious">
                <placeName>Église du Noviciat Jésuite</placeName>
                <location>
                   <geo>48.68641,6.18659</geo>
                </location>
                <desc>Fondé en 1601. Église de 1604.</desc>
             </place>
-            <place xml:id="nancyStPierre">
+            <place xml:id="nancyStPierre" type="religious">
                <placeName>Église Saint-Pierre</placeName>
                <location>
                   <geo>48.683084,6.191872</geo>
@@ -2359,7 +2393,7 @@
                   auparavant elle était dans la galerie des Cerfs au Palais Ducal. Elle intègrera à
                   son emplacement actuel vers 1797.</desc>
             </place>
-            <place xml:id="nancyPetiteCarmelites">
+            <place xml:id="nancyPetiteCarmelites" type="religious">
                <placeName>Couvent des Petites Carmélites</placeName>
                <location>
                   <geo>48.69066,6.17682</geo>
@@ -2382,14 +2416,14 @@
                   installé en Ville Neuve en 1589. Auparavant Grande-Rue depuis le XIVe
                   siècle.</desc>
             </place>
-            <place xml:id="nancyDominiquains">
+            <place xml:id="nancyDominiquains" type="religious">
                <placeName>Couvent des Dominicains</placeName>
                <location>
                   <geo>48.69146,6.18368</geo>
                </location>
                <desc>Fondé en 1640, détruit à la Révolution.</desc>
             </place>
-            <place xml:id="nancyVisitation">
+            <place xml:id="nancyVisitation" type="religious">
                <placeName>Église de la Visitation</placeName>
                <location>
                   <geo>48.69160133692096,6.179393827915192</geo>
@@ -2397,20 +2431,20 @@
                <desc>Le couvent est fondé en 1632, la chapelle subsiste, le lycée Poincaré est
                   construit sur son emprise et celle des Minimes.</desc>
             </place>
-            <place xml:id="nancyPenitentsBlancs">
+            <place xml:id="nancyPenitentsBlancs" type="religious">
                <placeName>Église des pénitents blancs</placeName>
                <location>
                   <geo>48.69609,6.17806</geo>
                </location>
             </place>
-            <place xml:id="nancyTiercelins">
+            <place xml:id="nancyTiercelins" type="religious">
                <placeName>Couvent des Tiercelins</placeName>
                <location>
                   <geo>48.6902742,6.1875429</geo>
                </location>
                <desc>Fondé en 1622. Installé en ville-neuve depuis 1656.</desc>
             </place>
-            <place xml:id="nancyCarmes">
+            <place xml:id="nancyCarmes" type="religious">
                <placeName>Couvent des Carmes</placeName>
                <location>
                   <geo>48.692132501452924,6.180826127529144</geo>
@@ -2423,7 +2457,7 @@
                   <geo>48.69577,6.18180</geo>
                </location>
             </place>
-            <place xml:id="nancyCapucins">
+            <place xml:id="nancyCapucins" type="religious">
                <placeName>Couvent des Capucins</placeName>
                <location>
                   <geo>48.68694,6.18658</geo>
@@ -2436,14 +2470,14 @@
                   <geo>48.68694,6.18658</geo>
                </location>
             </place>
-            <place xml:id="nancyAugustins">
+            <place xml:id="nancyAugustins" type="religious">
                <placeName>Couvent des Augustins</placeName>
                <location>
                   <geo>48.68922,6.18062</geo>
                </location>
                <desc>Fondé en 1634.</desc>
             </place>
-            <place xml:id="nancyCordeliers">
+            <place xml:id="nancyCordeliers" type="religious">
                <placeName>Couvent des Cordeliers</placeName>
                <location>
                   <geo>48.69786,6.17942</geo>
@@ -2461,7 +2495,7 @@
                </location>
                <desc>Emplacement approximatif. Ouvert en 1763.</desc>
             </place>
-            <place xml:id="nancySteElisabeth">
+            <place xml:id="nancySteElisabeth" type="religious">
                <placeName>Couvent Sainte-Elisabeth</placeName>
                <location>
                   <geo>48.68564,6.18638</geo>
@@ -3254,17 +3288,17 @@
                <title>un ouvrage sur les fortifications (voir 1765-12-27)</title>
             </bibl>
             <bibl xml:id="bib16">
-             
-                     <title>Eloge historique de Stanislas I. Roi de Pologne... Prononcé le 11 mai
-                        1766... l'Académie Royale des Sciences</title>
-                     <author><forename>Pierre-Joseph de</forename><surname>Solignac</surname></author>
-                    
-                        <pubPlace>Nancy</pubPlace>
-                        <publisher>Leseure, Veuve d'Antoine ; Leseure, Claude</publisher>
-                        <date>1766</date>
-                <idno type="callNumber">BM Nancy 50 279 (f) ou 702 031 (16)</idno>
-           
-           
+               
+               <title>Eloge historique de Stanislas I. Roi de Pologne... Prononcé le 11 mai
+                  1766... l'Académie Royale des Sciences</title>
+               <author><forename>Pierre-Joseph de</forename><surname>Solignac</surname></author>
+               
+               <pubPlace>Nancy</pubPlace>
+               <publisher>Leseure, Veuve d'Antoine ; Leseure, Claude</publisher>
+               <date>1766</date>
+               <idno type="callNumber">BM Nancy 50 279 (f) ou 702 031 (16)</idno>
+               
+               
             </bibl>
             <bibl xml:id="bib17">
                <title>ouvrage sur les impots (voir 1766-05-03)</title>
@@ -3378,7 +3412,7 @@
                <title>Manuscrit d'un ouvrage sur la finance</title>
             </bibl>
             <!-- Pièces de théatre -->
-
+            
             <bibl xml:id="bib42">
                <title>Zaïre</title>
                <author>Voltaire</author>
@@ -3454,20 +3488,20 @@
                   12 mai 1766...</title>
                <author><forename>Abbé de</forename><surname>Dombasle</surname></author>
                
-                  <pubPlace>Nancy</pubPlace>
-                  <publisher>Leclerc, Jean-Baptiste-Hyacinthe</publisher>
-                  <date>1766</date>
-           
+               <pubPlace>Nancy</pubPlace>
+               <publisher>Leclerc, Jean-Baptiste-Hyacinthe</publisher>
+               <date>1766</date>
+               
                <idno type="callNumber">BM Nancy 50 279 (g)</idno>            
             </bibl>
             <bibl xml:id="bib73">
                <title>Oraison funèbre de Stanislas... prononcée dans l'Eglise du Collège,...
                   le 15 may 1766,...</title>
                <author><forename>Sigisbert-Etienne</forename><surname>Coster</surname></author>
-         
-                  <pubPlace>Nancy</pubPlace>
-                  <publisher>Leseure, Veuve d'Antoine ; Leseure, Claude</publisher>
-                  <date>1766</date>
+               
+               <pubPlace>Nancy</pubPlace>
+               <publisher>Leseure, Veuve d'Antoine ; Leseure, Claude</publisher>
+               <date>1766</date>
                
                <idno type="callNumber">BM cote 50 279 (h)</idno>
             </bibl>
@@ -3475,22 +3509,22 @@
                <title>Oraison funèbre de... Stanislas I,... , prononcée en l'église
                   paroissiale de St-Roch de Nancy..., le 26 may 1766...</title>
                <author><forename>Denis-Xavier</forename><surname>Clément</surname></author>
-           
-                  <pubPlace>Paris</pubPlace>
-                  <publisher>Delatour, Louis-François</publisher>
-                  <date>1766</date>
-             
+               
+               <pubPlace>Paris</pubPlace>
+               <publisher>Delatour, Louis-François</publisher>
+               <date>1766</date>
+               
                <idno type="callNumber">BM Nancy 50 279 (j)</idno>            </bibl>
             <bibl xml:id="bib75">
                <title>Oraison funèbre de Stanislas 1er,... prononcée le 10 juin
                   1766...</title>
                <author><forename>Guillaume-Germain</forename><surname>Guyot</surname></author>
-            
-                  <pubPlace>Nancy</pubPlace><title level="m">Oraison funèbre de Stanislas 1er,... prononcée le 10 juin
-                     1766...</title>/pubPlace>
-                     <publisher>Leseure, Veuve d'Antoine ; Leseure, Claude</publisher>
-                     <date>1766</date>
-             
+               
+               <pubPlace>Nancy</pubPlace><title level="m">Oraison funèbre de Stanislas 1er,... prononcée le 10 juin
+                  1766...</title>/pubPlace>
+               <publisher>Leseure, Veuve d'Antoine ; Leseure, Claude</publisher>
+               <date>1766</date>
+               
                <idno type="callNumber">BM Nancy 50 279 (k)</idno>
             </bibl>
             <bibl xml:id="memoireChComptes">
