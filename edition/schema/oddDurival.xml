@@ -115,7 +115,7 @@
                </attList>
             </elementSpec>
             <moduleRef key="namesdates"
-                       include="orgName persName forename genName nameLink roleName placeName country birth death event listOrg listEvent listPerson listPlace org person place state location geo"/>
+               include="orgName persName forename surname roleName genName nameLink roleName placeName country birth death event district listOrg listEvent listPerson listPlace org person place state location geo"/>
             <elementSpec ident="orgName" mode="change">
                <attList>
                   <attDef ident="ana" mode="delete"/>                  
@@ -1363,6 +1363,9 @@
                      <valList mode="add" type="closed">
                         <valItem ident="day">
                            <desc>La valeur "day" indique chaque nouvelle entrée du Journal.</desc>
+                        </valItem>
+                        <valItem ident="bio">
+                           <desc>La valeur "bio" indique une biographie.</desc>
                         </valItem>
                         <valItem ident="insert">
                            <desc>La valeur "insert" indique un encart.</desc>

@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../schema/oddDurival.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/oddDurival.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,11 +101,21 @@
                <persName>M. l'archevêque de Cambray</persName>
             </person>
             <person xml:id="armentieres">
-               <persName>Louis-Gabriel de Brienne de Conflans- marquis d'Armentières</persName>
-               <state>
-                  <p>1711-1774 - commandant des Trois-Evêchés (1761-) - gouverneur de Metz
-                     (1766-1771)</p>
-               </state>
+               <persName>                  
+                  <surname>Brienne de Conflans</surname>
+                  <forename>Louis-Gabriel de</forename>
+                  <roleName>marquis d'Armentières</roleName>
+               </persName>
+               <birth when="1711"/>
+               <death when="1774"/>
+               <listEvent>
+                  <event>
+                     <p>commandant des Trois-Evêchés (1761-)</p>
+                  </event>
+                  <event>
+                     <p>gouverneur de Metz (1766-1771)</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="aufresne">
                <persName>M. Aufresne</persName>
@@ -151,7 +163,10 @@
                </state>
             </person>
             <person xml:id="bartMis">
-               <persName>M. le marquis de Bart</persName>
+               <persName>
+                  <surname>de Bart</surname>
+                  <roleName>marquis de Bart</roleName>
+               </persName>
             </person>
             <person xml:id="batonnier">
                <persName>Le bâtonnier</persName>
@@ -170,13 +185,41 @@
                </state>
             </person>
             <person xml:id="beauvau">
-               <persName>M. le prince de Beauvau</persName>
+               <persName>
+                  <surname>Beauvau</surname>
+                  <forename>Charles-Juste de</forename>
+                  <roleName>Prince de Beauvau</roleName>
+               </persName>
+               <birth when="1720"/>
+               <death when="1793"/>
+               <listEvent>
+                  <event>
+                     <p>frère de la marquise de Boufflers</p>
+                  </event>
+                  <event>
+                     <p>colonel des Gardes Lorraines</p>
+                  </event>
+                  <event>
+                     <p>gouverneur du Languedoc</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="beauvauMis">
-               <persName>M. de Beauvau</persName>
-               <state>
-                  <p>marquis</p>
-               </state>
+               <persName>
+                  <surname>Beauvau</surname>
+                  <forename>Louis-Charles-Antoine de</forename>
+                  <roleName>marquis de Beauvau</roleName>
+               </persName>
+               <birth when="1715"/>
+               <death when="1744"/>
+               <listEvent>
+                  <event>
+                     <p>marquis tué au siège d'Ypres</p>
+                  </event>
+                  <event>
+                     <p>frère de Anne de Beauvau (madame des Armoises)</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="bechet">
                <persName>M Bechet</persName>
@@ -197,10 +240,27 @@
                </state>
             </person>
             <person xml:id="bercheni">
-               <persName>François-Antoine-Ladislas de Berchény</persName>
+               <persName>
+                  <surname>Berchény</surname>
+                  <forename>Ladislas-Ignace de</forename>
+                  <roleName>comte de Berchény</roleName>
+               </persName>
                <state>
-                  <p>1744-1811 - 1er gentilhomme de la chambre de Stanislas (1762-1766)</p>
+                  <p>Maréchal de France</p>
                </state>
+               <birth when="1689"/>
+               <death when="1778"/>
+               <listEvent>
+                  <event>
+                     <p>grand écuyer de Lorraine (1738)</p>
+                  </event>
+                  <event>
+                     <p>gouverneur des ville et château de Commercy (1748)</p>
+                  </event>
+                  <event>
+                     <p>conseiller-chevalier d'honneur de la Cour souveraine de Lorraine (1738)</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="bergier">
                <persName>M. Bergier</persName>
@@ -233,23 +293,51 @@
                </state>
             </person>
             <person xml:id="boufflersMis">
-               <persName>M. de Boufflers</persName>
-               <state>
-                  <p>marquis</p>
-               </state>
+               <persName>
+                  <surname>de Boufflers</surname>
+               </persName>
+               <listEvent>
+                  <event>
+                     <p>marquis</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="boufflersStanislas">
-               <persName>Stanislas Jean de Boufflers</persName>
-               <state>
-                  <p>1738-1815 - chevalier de Malte - militaire - poète et littérateur</p>
-               </state>
+               <persName>
+                  <surname>Boufflers</surname>
+                  <forename>Stanislas-Jean de</forename>
+                  <roleName>marquis de Remiencourt</roleName>
+               </persName>
+               <birth when="1738"/>
+               <death when="1815"/>
+               <listEvent>
+                  <event>
+                     <p>chevalier de Malte - militaire - poète et littérateur</p>
+                  </event>
+                  <event>
+                     <p>Fils de la marquise de Boufflers-Remiencourt</p>
+                  </event>
+                  <event>
+                     <p>Filleul et protégé de Stanislas</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="bouflersMme">
-               <persName>Marie-Catherine de Beauvau-Craon- marquise de
-                  Boufflers-Remiencourt</persName>
-               <state>
-                  <p>1711-1786 - maîtresse de Stanislas à partir de 1747</p>
-               </state>
+               <persName>
+                  <surname>Beauvau-Craon</surname>
+                  <forename>Marie Françoise Catherine de</forename>
+                  <roleName>marquise de Boufflers-Remiencourt</roleName>
+               </persName>
+               <birth when="1711"/>
+               <death when="1786"/>
+               <listEvent>
+                  <event>
+                     <p>maîtresse de Stanislas à partir de 1747</p>
+                  </event>
+                  <event>
+                     <p>dame de compagnie de la reine Catherine</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="bourcierDeTheyLeopold">
                <persName>M. Leopold de Bourcier de They</persName>
@@ -258,16 +346,22 @@
                </state>
             </person>
             <person xml:id="bray">
-               <persName>M. de Bray</persName>
+               <persName>
+                  <surname>de Bray</surname>
+               </persName>
             </person>
             <person xml:id="bremon">
                <persName>M. Bremon</persName>
             </person>
             <person xml:id="bremont">
-               <persName>le père Brémont</persName>
-               <state>
-                  <p>attaché au secrétariat du roi de Pologne</p>
-               </state>
+               <persName>
+                  <surname>le père Brémont</surname>
+               </persName>
+               <listEvent>
+                  <event>
+                     <p>attaché au secrétariat du roi de Pologne</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="bressey">
                <persName>l'abbé de Bressey</persName>
@@ -306,7 +400,25 @@
                <persName>M. le baron de Burkana</persName>
             </person>
             <person xml:id="busquetDeCaumontDuch">
-               <persName>Mme la duchesse Busquet de Caumont</persName>
+               <persName>
+                  <surname>Bertout de Forbany</surname>
+                  <forename>Marie Elisabeth</forename>
+                  <roleName>duchesse de Busquet de Caumont</roleName>
+               </persName>
+               <birth when="1715"/>
+               <death when="1766"/>
+               <listEvent>
+                  <event>
+                     <p>fille d'un conseiller au Parlement</p>
+                  </event>
+                  <event>
+                     <p>Une fille de son premier mariage habitait Nancy</p>
+                  </event>
+                  <event>
+                     <p>son mari, Nicolas Isambart Busquet de Caumont, est conseiller au parlement
+                        de Normandie</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="calandre">
                <persName>Le nommé Calandre</persName>
@@ -329,7 +441,18 @@
                </state>
             </person>
             <person xml:id="castriesMis">
-               <persName>M. le marquis de Castries</persName>
+               <persName>
+                  <surname>Castries</surname>
+                  <forename>Charles Eugène Gabriel de la Croix</forename>
+                  <roleName>marquis de Castries</roleName>
+               </persName>
+               <birth when="1727"/>
+               <death when="1801"/>
+               <listEvent>
+                  <event>
+                     <p>lieutenant général du Barrois à partir de 1766</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="catalde">
                <persName>Mme Catalde</persName>
@@ -338,7 +461,9 @@
                </state>
             </person>
             <person xml:id="chabot">
-               <persName>M. de Chabot</persName>
+               <persName>
+                  <surname>de Chabot</surname>
+               </persName>
             </person>
             <person xml:id="chancelier">
                <persName>Antoine-Martin Chaumont de La Galaizière</persName>
@@ -377,13 +502,40 @@
                </state>
             </person>
             <person xml:id="charlottePrincesse">
-               <persName>Mme. la princesse Charlotte</persName>
+               <persName>
+                  <surname>Lorraine</surname>
+                  <forename>Anne Charlotte de</forename>
+               </persName>
+               <birth when="1714"/>
+               <death when="1773"/>
+               <listEvent>
+                  <event>
+                     <p>fille cadette du duc Léopold Ier</p>
+                  </event>
+                  <event>
+                     <p>abbesse de l'abbaye de Remiremont en 1738</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="charvet">
                <persName>M. Charvet</persName>
             </person>
             <person xml:id="chasteletMis">
-               <persName>M. le marquis du Chastelet</persName>
+               <persName>
+                  <surname>Chastelet</surname>
+                  <forename>Florent Claude du</forename>
+                  <roleName>marquis du Chastelet</roleName>
+               </persName>
+               <birth when="1695"/>
+               <death when="1765"/>
+               <listEvent>
+                  <event>
+                     <p>lieutenant général des armées du roi</p>
+                  </event>
+                  <event>
+                     <p>gouverneur de Toul en 1763</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="chasteletMisFrere">
                <persName>Frère du marquis du Chastelet</persName>
@@ -415,13 +567,36 @@
                </state>
             </person>
             <person xml:id="choiseulCdl">
-               <persName>M. le cardinal de Choiseul</persName>
+               <persName>
+                  <surname>Choiseul-Beaupré</surname>
+                  <forename>Antoine Clériade de</forename>
+               </persName>
+               <state>
+                  <p>cardinal</p>
+               </state>
+               <birth when="1707"/>
+               <death when="1774"/>
+               <listEvent>
+                  <event>
+                     <p>cardinal de Lorraine à partir de 1761</p>
+                  </event>
+                  <event>
+                     <p>grand aumônier du roi du Pologne</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="choiseulMis">
-               <persName>César Gabriel de Choiseul-Chevigny</persName>
-               <state>
-                  <p>marquis</p>
-               </state>
+               <persName>
+                  <surname>Choiseul-Chevigny</surname>
+                  <forename>César-Gabriel de</forename>
+               </persName>
+               <birth when="1712"/>
+               <death when="1785"/>
+               <listEvent>
+                  <event>
+                     <p>marquis</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="choiseulMme">
                <persName>Mme de Choiseul</persName>
@@ -430,11 +605,23 @@
                </state>
             </person>
             <person xml:id="christineSaxe">
-               <persName>Christine de Saxe</persName>
-               <state>
-                  <p>princesse et comtesse d'Henneberg- chanoinesse puis abbesse de Remiremont- sœur
-                     de la dauphine de France Marie-Josèphe de Saxe</p>
-               </state>
+               <persName>
+                  <surname>Saxe</surname>
+                  <forename>Christine de</forename>
+               </persName>
+               <birth when="1735"/>
+               <death when="1782"/>
+               <listEvent>
+                  <event>
+                     <p>princesse et comtesse d'Henneberg</p>
+                  </event>
+                  <event>
+                     <p>chanoinesse puis abbesse de Remiremont</p>
+                  </event>
+                  <event>
+                     <p>sœur de la dauphine de France Marie-Josèphe de Saxe</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="claudon">
                <persName>Claudon</persName>
@@ -474,7 +661,21 @@
                </state>
             </person>
             <person xml:id="contade">
-               <persName>Le maréchal de Contade</persName>
+               <persName>
+                  <surname>Contade</surname>
+                  <forename>Louis Georges Érasme de</forename>
+                  <roleName>maréchal de France</roleName>
+               </persName>
+               <birth when="1704"/>
+               <death when="1795"/>
+               <listEvent>
+                  <event>
+                     <p>commandant en chef en Alsace 1763</p>
+                  </event>
+                  <event>
+                     <p>gouverneur de Lorraine en 1788</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="controleurGeneral">
                <persName>M. le contrôleur général</persName>
@@ -492,10 +693,14 @@
                <persName>M. l'abbé Crédo</persName>
             </person>
             <person xml:id="croismare">
-               <persName>M. de Croismare</persName>
-               <state>
-                  <p>Louis-Eugène- marquis de Croismare- mort en 1788 ?</p>
-               </state>
+               <persName>
+                  <surname>de Croismare</surname>
+               </persName>
+               <listEvent>
+                  <event>
+                     <p>Louis-Eugène- marquis de Croismare- mort en 1788 ?</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="cumberlandWilliam">
                <persName>William Augustus duc de Cumberland</persName>
@@ -567,16 +772,33 @@
                </state>
             </person>
             <person xml:id="deCambis">
-               <persName>M. de Cambis</persName>
+               <persName>
+                  <surname>de Cambis</surname>
+               </persName>
             </person>
             <person xml:id="deFaremont">
-               <persName>M. de Farémont</persName>
-               <state>
-                  <p>gentilhomme du Barrois et époux de Mlle Dureteste</p>
-               </state>
+               <persName>
+                  <surname>Bugnot de Farémont</surname>
+                  <forename>François-Alexandre</forename>
+               </persName>
+               <birth when="1739"/>
+               <death when="1832"/>
+               <listEvent>
+                  <event>
+                     <p>gentilhomme du Barrois et époux de Mlle Dureteste</p>
+                  </event>
+                  <event>
+                     <p>Lieutenant au régiment des gardes de Lorraine</p>
+                  </event>
+                  <event>
+                     <p>directeur des postes à Nancy (après la Révolution Française)</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="deJevaincourtMlle">
-               <persName>Mlle de Jevaincourt</persName>
+               <persName>
+                  <surname>de Jevaincourt</surname>
+               </persName>
             </person>
             <person xml:id="deLaFargue">
                <persName>M. de La Fargue</persName>
@@ -621,7 +843,21 @@
                </state>
             </person>
             <person xml:id="deMontesquiou">
-               <persName>M. de Montesquiou</persName>
+               <persName>
+                  <surname>Montesquiou Fézensac</surname>
+                  <forename>Anne Pierre de</forename>
+                  <roleName>marquis de Monstesquiou</roleName>
+               </persName>
+               <birth when="1739"/>
+               <death when="1798"/>
+               <listEvent>
+                  <event>
+                     <p>Brigadier des armées du roi en 1768</p>
+                  </event>
+                  <event>
+                     <p>Chevalier de l'ordre de Saint Louis en 1763</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="deMortal">
                <persName>M. de Mortal</persName>
@@ -649,7 +885,22 @@
                </state>
             </person>
             <person xml:id="desarmoisesMme">
-               <persName>Mme beauvau marquise Dèsarmoises</persName>
+               <persName>
+                  <surname>beauvau</surname>
+                  <forename>Anne de</forename>
+                  <roleName>marquise des Armoises</roleName>
+               </persName>
+               <birth when="1710"/>
+               <death when="1766"/>
+               <listEvent>
+                  <event>
+                     <p>fille du maréchal de Lorraine Louis marquis de Beauvau</p>
+                  </event>
+                  <event>
+                     <p>épouse de Antoine Bernard des Armoises (officier général au service de
+                        l'Empereur</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="deSartine">
                <persName>M. de Sartine</persName>
@@ -685,7 +936,9 @@
                </state>
             </person>
             <person xml:id="deTillyMlle">
-               <persName>Mlle de Tilly</persName>
+               <persName>
+                  <surname>de Tilly</surname>
+               </persName>
             </person>
             <person xml:id="deVassimont">
                <persName>M. de Vassimont</persName>
@@ -694,10 +947,24 @@
                </state>
             </person>
             <person xml:id="devaux">
-               <persName>M. Devaux</persName>
-               <state>
-                  <p>Panpan Devaux ?</p>
-               </state>
+               <persName>
+                  <surname>Devaux</surname>
+                  <forename>François-Antoine</forename>
+                  <roleName>dit "Panpan"</roleName>
+               </persName>
+               <birth when="1712"/>
+               <death when="1796"/>
+               <listEvent>
+                  <event>
+                     <p>poète lorrain</p>
+                  </event>
+                  <event>
+                     <p>lecteur du roi de Pologne</p>
+                  </event>
+                  <event>
+                     <p>membre de l'Acédémie de Nancy</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="dheguerti">
                <persName>M. Dheguerti</persName>
@@ -751,7 +1018,9 @@
                </state>
             </person>
             <person xml:id="duhautoy">
-               <persName>M. Duhautoy</persName>
+               <persName>
+                  <surname>Duhautoy</surname>
+               </persName>
             </person>
             <person xml:id="dujardVeuve">
                <persName>La jeune veuve Dujard</persName>
@@ -766,13 +1035,32 @@
                </state>
             </person>
             <person xml:id="durasDuchesse">
-               <persName>Mme la duchesse de Duras</persName>
+               <persName>
+                  <surname>Coëtquen</surname>
+                  <forename>Louise Françoise Maclovie Céleste de</forename>
+                  <roleName>duchesse de Duras</roleName>
+               </persName>
+               <birth when="1724"/>
+               <death when="1802"/>
+               <listEvent>
+                  <event>
+                     <p>épouse d'Emmanuel Félicité de Durfort de Duras</p>
+                  </event>
+                  <event>
+                     <p>la mére de sa bru est dame d'honneur de Marie Leczinska</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="duretesteMlle">
-               <persName>Mlle Dureteste</persName>
-               <state>
-                  <p>épouse de M. de Farémont et gentilhomme du Barrois</p>
-               </state>
+               <persName>
+                  <surname>Dureteste</surname>
+                  <forename>Marie-Agnès</forename>
+               </persName>
+               <listEvent>
+                  <event>
+                     <p>épouse de M. de Farémont et gentilhomme du Barrois</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="durival">
                <persName>Durival Nicolas</persName>
@@ -859,7 +1147,9 @@
                </state>
             </person>
             <person xml:id="fontelle">
-               <persName>M. de Fontelle</persName>
+               <persName>
+                  <surname>de Fontelle</surname>
+               </persName>
             </person>
             <person xml:id="fontet">
                <persName>M. de Fontet</persName>
@@ -906,13 +1196,20 @@
                <persName>M. l'abbé Gautier</persName>
             </person>
             <person xml:id="gautierGigneville">
-               <persName>M. de Gigneville</persName>
-               <state>
-                  <p>chevalier de saint Louis</p>
-               </state>
+               <persName>
+                  <surname>de Gigneville</surname>
+               </persName>
+               <listEvent>
+                  <event>
+                     <p>chevalier de saint Louis</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="gautierGignevilleJB">
-               <persName>J.B. Thimothée de Gautier de Gignéville</persName>
+               <persName>
+                  <surname>Gautier de Gignéville</surname>
+                  <forename>J.B. Thimothée de</forename>
+               </persName>
             </person>
             <person xml:id="gauvinVe">
                <persName>La veuve Gauvin</persName>
@@ -936,16 +1233,40 @@
                </state>
             </person>
             <person xml:id="gerardDeVietAnneCatherine">
-               <persName>Mme Anne-Catherine Gerard de Viet</persName>
-               <state>
-                  <p>maréchale de Bercheny</p>
-               </state>
+               <persName>
+                  <surname>Wiet</surname>
+                  <forename>Anne-Catherine-Girard de</forename>
+               </persName>
+               <birth when="1702"/>
+               <death when="1766"/>
+               <listEvent>
+                  <event>
+                     <p>maréchale de Bercheny</p>
+                  </event>
+                  <event>
+                     <p>épouse de Ladislas Ignace de Bercheny</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="gerbevillerMis">
-               <persName>M. de Gerbéviller</persName>
-               <state>
-                  <p>marquis</p>
-               </state>
+               <persName>
+                  <surname>Lambertye</surname>
+                  <forename>Camille de</forename>
+                  <roleName>marquis de Gerbeviller</roleName>
+               </persName>
+               <birth when="1714"/>
+               <death when="1770"/>
+               <listEvent>
+                  <event>
+                     <p>marquis de Gerbeviller</p>
+                  </event>
+                  <event>
+                     <p>Chambellan de l'empereur</p>
+                  </event>
+                  <event>
+                     <p>grand louvetier du roi de Pologne</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="gigneville">
                <persName>M. de Gignéville</persName>
@@ -981,7 +1302,24 @@
                </state>
             </person>
             <person xml:id="grammontDuchesse">
-               <persName>Béatrix de Choiseul-Stainville duchesse de Gramont</persName>
+               <persName>
+                  <surname>Choiseul-Stainville</surname>
+                  <forename>Béatrix de</forename>
+                  <roleName>duchesse de Gramont</roleName>
+               </persName>
+               <birth when="1730"/>
+               <death when="1794"/>
+               <listEvent>
+                  <event>
+                     <p>soeur du ministre Choiseul</p>
+                  </event>
+                  <event>
+                     <p>chanoinesse de Remiremont</p>
+                  </event>
+                  <event>
+                     <p>salonnière</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="grandjean">
                <persName>M Grandjean</persName>
@@ -996,7 +1334,9 @@
                </state>
             </person>
             <person xml:id="granvilleMme">
-               <persName>Mme de Grandville</persName>
+               <persName>
+                  <surname>de Grandville</surname>
+               </persName>
             </person>
             <person xml:id="gronierMlle">
                <persName>Mlle Gronier</persName>
@@ -1011,7 +1351,18 @@
                </state>
             </person>
             <person xml:id="guerchyComte">
-               <persName>Le comte de Guerchi</persName>
+               <persName>
+                  <surname>Régnier</surname>
+                  <forename>Claude Louis François</forename>
+                  <roleName>comte de Guerchy, marqui de Nangis</roleName>
+               </persName>
+               <birth when="1715"/>
+               <death when="1767"/>
+               <listEvent>
+                  <event>
+                     <p>ambassadeur de France à Londres</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="guerre">
                <persName>M. Guerre</persName>
@@ -1078,7 +1429,9 @@
                <persName>Clément Hogard</persName>
             </person>
             <person xml:id="huart">
-               <persName>S. Huart (dit Desruisseaux de Commercy)</persName>
+               <persName>
+                  <surname>S. Huart (dit Desruisseaux de Commercy)</surname>
+               </persName>
             </person>
             <person xml:id="huguetDeMontaran">
                <persName>M. Pierre François Huguet de Montaran</persName>
@@ -1099,10 +1452,21 @@
                </state>
             </person>
             <person xml:id="intendantMme">
-               <persName>???</persName>
-               <state>
-                  <p>Épouse d'Antoine Chaumont de La Galaizière</p>
-               </state>
+               <persName>
+                  <surname>Maussion de la Courtaujay</surname>
+                  <forename>Geneviève-Perrine</forename>
+               </persName>
+               <birth when="1741"/>
+               <death when="1799"/>
+               <listEvent>
+                  <event>
+                     <p>Épouse d'Antoine Chaumont de La Galaizière</p>
+                  </event>
+                  <event>
+                     <p>Les derniers maîtres des requêtes de l'Ancien Régime (1771-1789 ) Sylvie
+                        Nicolas</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="jacob">
                <persName>Mme Jacob</persName>
@@ -1130,7 +1494,9 @@
                <persName>M. l'abbé journu</persName>
             </person>
             <person xml:id="laChataigneraye">
-               <persName>M. de La Chataigneraye</persName>
+               <persName>
+                  <surname>M. de La Chataigneraye</surname>
+               </persName>
             </person>
             <person xml:id="laCoste">
                <persName>La Coste</persName>
@@ -1146,10 +1512,23 @@
                </state>
             </person>
             <person xml:id="laGalaiziereBarth">
-               <persName>Barthélemy Chaumont de La Galaizière</persName>
-               <state>
-                  <p>Abbé de Saint-Mihiel- fils du chancelier</p>
-               </state>
+               <persName>
+                  <surname>Chaumont de La Galaizière</surname>
+                  <forename>Barthélemy-Louis-Martin de</forename>
+               </persName>
+               <birth when="1737"/>
+               <death when="1808"/>
+               <listEvent>
+                  <event>
+                     <p>fils du chancelier de Lorraine</p>
+                  </event>
+                  <event>
+                     <p>abbé de Saint-Mihiel</p>
+                  </event>
+                  <event>
+                     <p>évêque de Saint-Dié (1777)</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="laKafouse">
                <persName>La Kafouse</persName>
@@ -1179,13 +1558,42 @@
                </state>
             </person>
             <person xml:id="laMilliereMlle">
-               <persName>Mlle de La Milliere</persName>
+               <persName>
+                  <surname>Mlle de La Milliere</surname>
+               </persName>
             </person>
             <person xml:id="laMilliereMme">
-               <persName>Mme de La Milliere</persName>
+               <persName>
+                  <surname>Héron de Villefosse</surname>
+                  <forename>Charlotte Elisabeth</forename>
+                  <roleName>madame de Chaumont de la Milliére</roleName>
+               </persName>
+               <birth when="1720"><!-- todo v 1720 => @ cert ? --></birth>
+               <death when="1771"/>
+               <listEvent>
+                  <event>
+                     <p>famille par alliance d'Antoine Martin Chaumont de la Galaizière (chancelier
+                        de Lorraine)</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="langalleriMise">
-               <persName>La marquise de Langalleri</persName>
+               <persName>
+                  <surname>Constant de Rebecque</surname>
+                  <forename>Angélique</forename>
+                  <roleName>marquise de Langallerie</roleName>
+               </persName>
+               <birth when="1731"/>
+               <death when="1772"/>
+               <listEvent>
+                  <event>
+                     <p>épouse du marquis Gentil de Langallerie</p>
+                  </event>
+                  <event>
+                     <p>son époux est passé au service de roi de Pologne après avoir été au service
+                        de l'Empereur</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="laPierre">
                <persName>M. La Pierre</persName>
@@ -1269,7 +1677,9 @@
                <persName>le P. l'Enfant</persName>
             </person>
             <person xml:id="lenoncourt">
-               <persName>M. de Lenoncourt</persName>
+               <persName>
+                  <surname>de Lenoncourt</surname>
+               </persName>
             </person>
             <person xml:id="lePelletier">
                <persName>M. le Pelletier de Beauprés</persName>
@@ -1296,11 +1706,17 @@
                </state>
             </person>
             <person xml:id="leTexierElisabeth">
-               <persName>Mme Elisabeth-Henriette le Texier</persName>
-               <state>
-                  <p>épouse de M. Leopold de Bourcier de They et lieutenant colonel des Gardes du
-                     duc Leopold</p>
-               </state>
+               <persName>
+                  <surname>Le Texier</surname>
+                  <forename>Elisabeth-Henriette</forename>
+               </persName>
+               <death when="1766"/>
+               <listEvent>
+                  <event>
+                     <p>épouse de M. Leopold de Bourcier de They, lieutenant colonel des Gardes du
+                        duc Leopold</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="levy">
                <persName>M. de Levy</persName>
@@ -1321,7 +1737,18 @@
                <persName>M. l'abbé comte de Lignéville</persName>
             </person>
             <person xml:id="lomont">
-               <persName>M. de Lomont</persName>
+               <persName>
+                  <surname>Chastelet</surname>
+                  <forename>Florent Louis Marie du</forename>
+                  <roleName>comte de Lomont</roleName>
+               </persName>
+               <birth when="1727"/>
+               <death when="1793"/>
+               <listEvent>
+                  <event>
+                     <p>ambassadeur auprès de l'Empereur d'Allemagne</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="lorinJeanAdolpheNicolas">
                <persName>Jean-Adolphe-Nicolas Lorin</persName>
@@ -1361,7 +1788,10 @@
                </state>
             </person>
             <person xml:id="lupcourtComte">
-               <persName>Le comte de Lupcourt</persName>
+               <persName>
+                  <surname>de Lupcourt</surname>
+                  <roleName>comte</roleName>
+               </persName>
             </person>
             <person xml:id="maisonneuve">
                <persName>M. de Maisonneuve</persName>
@@ -1382,10 +1812,17 @@
                </state>
             </person>
             <person xml:id="mareil">
-               <persName>Dieudonné Chaumont de Mareil</persName>
-               <state>
-                  <p>1708-1768 - évêque in partibus de Sion - frère du chancelier La Galaizière</p>
-               </state>
+               <persName>
+                  <surname>Dieudonné Chaumont de Mareil</surname>
+               </persName>
+               <birth when="1708"/>
+               <death when="1768"/>
+               <listEvent>
+                  <event>
+                     <p>1708-1768 - évêque in partibus de Sion - frère du chancelier La
+                        Galaizière</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="marin">
                <persName>M. Marin</persName>
@@ -1510,7 +1947,9 @@
                </state>
             </person>
             <person xml:id="moret">
-               <persName>M. de Moret</persName>
+               <persName>
+                  <surname>de Moret</surname>
+               </persName>
             </person>
             <person xml:id="morey">
                <persName>Joli de Morey</persName>
@@ -1534,10 +1973,36 @@
                </state>
             </person>
             <person xml:id="najac">
-               <persName>M. de Najac</persName>
+               <persName>
+                  <surname>Najac</surname>
+                  <forename>Jean de</forename>
+               </persName>
+               <birth when="1696"/>
+               <death when="1782"/>
+               <listEvent>
+                  <event>
+                     <p>contrôleur ordinaire de la maison de la Reine de France</p>
+                  </event>
+                  <event>
+                     <p>ex-contrôleur ordinaire de la maison de la reine de Pologne</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="najacMme">
-               <persName>Mme de Najac</persName>
+               <persName>
+                  <surname>Macalla de Dampierre</surname>
+                  <forename>Marie Thérèse</forename>
+               </persName>
+               <birth when="1714"/>
+               <death when="1794"/>
+               <listEvent>
+                  <event>
+                     <p>femme de chambre de Marie Antoinette</p>
+                  </event>
+                  <event>
+                     <p>ex femme de chambre de la reine Marie Leszczynska</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="nanon">
                <persName>Nanon</persName>
@@ -1564,7 +2029,18 @@
                <persName>M. Nicolas</persName>
             </person>
             <person xml:id="noaillesMme">
-               <persName>Mme la comtesse de Noailles</persName>
+               <persName>
+                  <surname>Arpajon</surname>
+                  <forename>Anne Claude Louise d'</forename>
+                  <roleName>comtesse de Noailles</roleName>
+               </persName>
+               <birth when="1729"/>
+               <death when="1794"/>
+               <listEvent>
+                  <event>
+                     <p>première dame d'honneur de Marie Leszczynska</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="noelVe">
                <persName>la veuve Noël</persName>
@@ -1600,7 +2076,10 @@
                <persName>M. Petit Jean</persName>
             </person>
             <person xml:id="philibertBaron">
-               <persName>M. baron de Philibert</persName>
+               <persName>
+                  <surname>de Philibert</surname>
+                  <roleName>baron</roleName>
+               </persName>
             </person>
             <person xml:id="philippeInfant">
                <persName>L'infant Dom Philippe</persName>
@@ -1666,10 +2145,20 @@
                <persName>Fille de Mme Prevost</persName>
             </person>
             <person xml:id="prevostMme">
-               <persName>Mme Prevost</persName>
-               <state>
-                  <p>propriétaire du château de Montaigu</p>
-               </state>
+               <persName>
+                  <surname>Le Maistre</surname>
+                  <forename>Marie</forename>
+               </persName>
+               <birth when="1717"/>
+               <death when="1795"/>
+               <listEvent>
+                  <event>
+                     <p>propriétaire du château de Montaigu</p>
+                  </event>
+                  <event>
+                     <p>épouse de Bon Prevost, receveur général des fermes de Lorraine</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="princeBrunswic">
                <persName>M. le prince héréditaire de Brunswic</persName>
@@ -1748,7 +2237,19 @@
                </state>
             </person>
             <person xml:id="riocourtMme">
-               <persName>Mme de Riocourt</persName>
+               <persName>
+                  <surname>d'Hosselise</surname>
+                  <forename>N</forename>
+               </persName>
+               <listEvent>
+                  <event>
+                     <p>épouse de Nicolas François de Riocourt ( premier président de la chambre des
+                        comptes de Lorraine</p>
+                  </event>
+                  <event>
+                     <p>https://books.google.fr/books?id=lVdr2U-XtN0C&amp;pg=PA212&amp;lpg=PA212&amp;dq=antoine+francois+de+riocourt+president+chambre+des+comptes&amp;source=bl&amp;ots=wGj9kr2RjX&amp;sig=RBQPMbAt4lfqhpLtNhvaTwy42Ps&amp;hl=fr&amp;sa=X&amp;ved=0ahUKEwi_69Wb3-rMAhUB7hoKHdtvAFYQ6AEIHjAA#v=onepage&amp;q=antoine%20francois%20de%20riocourt%20president%20chambre%20des%20comptes&amp;f=false</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="robinetPierre">
                <persName>Pierre Robinet</persName>
@@ -1778,10 +2279,19 @@
                </state>
             </person>
             <person xml:id="rorteMme">
-               <persName>Mme Rorté</persName>
-               <state>
-                  <p>Mère du marquis Dessalles</p>
-               </state>
+               <persName>
+                  <surname>Aucy de Vioncourt</surname>
+                  <forename>Marie d'</forename>
+               </persName>
+               <death when="1765"/>
+               <listEvent>
+                  <event>
+                     <p>Mère du marquis Des Salles</p>
+                  </event>
+                  <event>
+                     <p>Epouse de baron de Rorté, François des Salles</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="rouvrois">
                <persName>du Rouvrois</persName>
@@ -1808,10 +2318,14 @@
                <persName>Mme Sanlaville</persName>
             </person>
             <person xml:id="saulxMis">
-               <persName>M. de Saulx</persName>
-               <state>
-                  <p>marquis</p>
-               </state>
+               <persName>
+                  <surname>de Saulx</surname>
+               </persName>
+               <listEvent>
+                  <event>
+                     <p>marquis</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="schmidt">
                <persName>M. Schmidt</persName>
@@ -1857,10 +2371,14 @@
                </state>
             </person>
             <person xml:id="sion">
-               <persName>M. de Sion</persName>
-               <state>
-                  <p>oncle de M. l'Intendant</p>
-               </state>
+               <persName>
+                  <surname>de Sion</surname>
+               </persName>
+               <listEvent>
+                  <event>
+                     <p>oncle de M. l'Intendant</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="sirejean">
                <persName>M. Sirejean</persName>
@@ -1875,10 +2393,39 @@
                </state>
             </person>
             <person xml:id="solignac">
-               <persName>M. de Solignac</persName>
+               <persName>
+                  <surname>Solignac</surname>
+                  <forename>Pierre Joseph de</forename>
+               </persName>
+               <state>
+                  <p>chevalier</p>
+               </state>
+               <birth notBefore="1684" notAfter="1687"/><!-- todo pour le xsl -->
+               <death when="1773"/>
+               <listEvent>
+                  <event>
+                     <p>secrétaire perpétuel de l'Académie</p>
+                  </event>
+                  <event>
+                     <p>secrétaire du roi de Pologne</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="sommievre">
-               <persName>M. de Sommievre</persName>
+               <persName>
+                  <surname>Sommyévre</surname>
+                  <forename>Gaspard de</forename>
+               </persName>
+               <birth when="1723"/>
+               <death when="1804"/>
+               <listEvent>
+                  <event>
+                     <p>chambellan de Stanislas</p>
+                  </event>
+                  <event>
+                     <p>capitaine des gendarmes du duc de Berry (1758)</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="sontkenJeanJoseph">
                <persName>Jean-Joseph Sontken de Coesfeld</persName>
@@ -1893,19 +2440,56 @@
                </state>
             </person>
             <person xml:id="stadler">
-               <persName>M. Stadler</persName>
-               <state>
-                  <p>écuyer de M. le comte de Stainville</p>
-               </state>
+               <persName>
+                  <surname>Stadler</surname>
+               </persName>
+               <listEvent>
+                  <event>
+                     <p>écuyer de M. le comte de Stainville</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="stainville">
-               <persName>M. le comte de Stainville</persName>
+               <persName>
+                  <surname>Choiseul Stainville</surname>
+                  <forename>Jacques Philippe de</forename>
+                  <roleName>comte (puis duc)</roleName>
+               </persName>
+               <birth when="1727"/>
+               <death when="1789"/>
+               <listEvent>
+                  <event>
+                     <p>commandant en chef dans les villes et provinces de Lorraine</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="stainvilleFrere">
-               <persName>Frere du comte de Stainville</persName>
+               <persName>
+                  <surname>Choiseul Stainville</surname>
+                  <forename>Etienne François de</forename>
+                  <roleName>comte (puis duc)</roleName>
+               </persName>
+               <birth when="1719"/>
+               <death when="1785"/>
+               <listEvent>
+                  <event>
+                     <p>1766-1770: secrétaire d'Etat aux affaires étrangères</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="stainvilleMme">
-               <persName>Mme la comtesse de Stainville</persName>
+               <persName>
+                  <surname>Clermont d'Amboise</surname>
+                  <forename>Thomasse Thérèse</forename>
+                  <roleName>comtesse de Stainville</roleName>
+               </persName>
+               <birth when="1746"/>
+               <death when="1789"/>
+               <listEvent>
+                  <event>
+                     <p>épouse de Jacques Philippe de Stainville</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="stanislas">
                <persName>Stanislas Leszczynski</persName>
@@ -1917,19 +2501,32 @@
                <persName>le coadjuteur de S. Dié</persName>
             </person>
             <person xml:id="stDiezComte">
-               <persName>Le comte de saint Diez</persName>
+               <persName>
+                  <surname>Le comte de saint Diez</surname>
+               </persName>
             </person>
             <person xml:id="steinbockComte">
-               <persName>Le comte de Steinbock</persName>
+               <persName>
+                  <surname>Le comte de Steinbock</surname>
+                  <roleName>comte de Steinbock</roleName>
+               </persName>
             </person>
             <person xml:id="stFlorentinComte">
-               <persName>Le comte de saint Florentin</persName>
+               <persName>
+                  <surname>de Saint-Florentin</surname>
+                  <roleName>comte de Saint-Florentin</roleName>
+               </persName>
             </person>
             <person xml:id="stLambertMere">
-               <persName>Mme de saint Lambert</persName>
-               <state>
-                  <p>Mère de Monsieur de Saint Lambert</p>
-               </state>
+               <persName>
+                  <surname>de Saint-Lambert</surname>
+               </persName>
+               <listEvent>
+                  <event>
+                     <p>Mère de Jean François de Saint Lambert (amant de la marquise de
+                        Boufflers)</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="stLouisMetzAbbesse">
                <persName>L'abbesse de S. Louis de Metz</persName>
@@ -1941,7 +2538,9 @@
                <persName>M. le vicaire de saint Roch</persName>
             </person>
             <person xml:id="stSimon">
-               <persName>M. de S. Simon</persName>
+               <persName>
+                  <surname>de S. Simon</surname>
+               </persName>
             </person>
             <person xml:id="suffraBesancon">
                <persName>le Suffragant de Besançon</persName>
@@ -1989,7 +2588,9 @@
                <persName>M. l'abbé de Turique</persName>
             </person>
             <person xml:id="ubexi">
-               <persName>M. d'Ubexi</persName>
+               <persName>
+                  <surname>d'Ubexi</surname>
+               </persName>
             </person>
             <person xml:id="uriot">
                <persName>M. Uriot</persName>
@@ -2004,7 +2605,9 @@
                </state>
             </person>
             <person xml:id="viceChancelier">
-               <persName>M. le vice Chancelier</persName>
+               <persName>
+                  <surname>M. le vice Chancelier</surname>
+               </persName>
             </person>
             <person xml:id="vigneron">
                <persName>M. de Vigneron</persName>
@@ -2019,10 +2622,15 @@
                </state>
             </person>
             <person xml:id="vigneronMme">
-               <persName>Mme la présidente Vigneron</persName>
+               <persName>
+                  <surname>présidente Vigneron</surname>
+               </persName>
             </person>
             <person xml:id="villarsDuchesse">
-               <persName>Mme la duchesse de Villars</persName>
+               <persName>
+                  <surname>de Villars</surname>
+                  <roleName>duchesse de Villars</roleName>
+               </persName>
             </person>
             <person xml:id="viot">
                <persName>M. Viot</persName>
@@ -2037,13 +2645,19 @@
                </state>
             </person>
             <person xml:id="vissemberg">
-               <persName>M. de Vissemberg</persName>
-               <state>
-                  <p>chevalier de Saint Louis</p>
-               </state>
+               <persName>
+                  <surname>de Vissemberg</surname>
+               </persName>
+               <listEvent>
+                  <event>
+                     <p>chevalier de Saint Louis</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="vissembergMarianne">
-               <persName>Marianne Legal de Vissemberg</persName>
+               <persName>
+                  <surname>Marianne Legal de Vissemberg</surname>
+               </persName>
             </person>
             <person xml:id="voltaire">
                <persName>M. de Voltaire</persName>
@@ -2058,13 +2672,26 @@
                <persName>M. l'abbé Joseph-Bernard de Willemin</persName>
             </person>
             <person xml:id="zuilyComte">
-               <persName>Le comte de Zuily</persName>
+               <persName>
+                  <surname>de Zuily</surname>
+                  <roleName>comte de Zuily</roleName>
+               </persName>
             </person>
             <person xml:id="deMalleloy">
-               <persName>Monsieur de Malleloy</persName>
-               <state>
-                  <p>Chambellan du duc Léopold</p>
-               </state>
+               <persName>
+                  <surname>Collignon de Malleloy</surname>
+                  <forename>Léopold</forename>
+                  <roleName>comte de Malleloy</roleName>
+               </persName>
+               <listEvent>
+                  <event>
+                     <p>Chambellan du duc Léopold</p>
+                  </event>
+                  <event>
+                     <p>Nobiliaire ou armorial général de la Lorraine et du Barrois; Ambroise
+                        Pelletier</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="haener">
                <persName>M. Hœner</persName>
@@ -2100,10 +2727,21 @@
                <persName>La fille de Thouvenin (huilier)</persName>
             </person>
             <person xml:id="auroyMise">
-               <persName>Anne-Françoise de Foucoult-St.Germain-Beaupré</persName>
-               <state>
-                  <p>marquise d’Auroy</p>
-               </state>
+               <persName>
+                  <surname>Foucault</surname>
+                  <forename>Anne-Françoise de</forename>
+                  <roleName>marquise de Saint-Germain Beaupré</roleName>
+               </persName>
+               <birth when="1718"/>
+               <death when="1766"/>
+               <listEvent>
+                  <event>
+                     <p>marquise d’Auroy</p>
+                  </event>
+                  <event>
+                     <p>épouse d'Alexandre Auguste de Grivel marquis d'Auroy</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="cureHeillecourt">
                <persName>le curé d’Heillecourt</persName>
@@ -2183,37 +2821,44 @@
                <placeName>Nancy</placeName>
             </place>
             <place xml:id="nancyPepiniere">
-               <placeName>La Pépinière</placeName>
+               <placeName>Pépinière royale</placeName>
                <location>
                   <geo>48.69807,6.18542</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>Le terrain est attribué à l'établissement de la Pépinière royale par arrêt du
-                  conseil des finance du 26 octobre 1765.</desc>
+                  conseil des finances du 26 octobre 1765.</desc>
             </place>
-            <place xml:id="bonsecours" type="religious">
+            <place xml:id="bonsecours">
                <placeName>Église de Bonsecours</placeName>
                <location>
                   <geo>48.6765536,6.1994878</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>Construite en 1738 sur l'emplacement de la chapelle Notre-Dame-de-la-Victoire
                   (1484).</desc>
             </place>
             <place xml:id="nancyFabriques">
-               <placeName>Les fabriques de Nancy</placeName>
+               <placeName>Fabriques de Nancy</placeName>
+               <location>
+                  <district type="city">Nancy</district>
+               </location>
                <desc>Ensemble des biens matériels d'une église paroissiale. A VERIFIER LE SENS
                   ICI</desc>
             </place>
             <place xml:id="nancyJardin">
                <placeName>Jardin Botanique</placeName>
                <location>
-                  <geo>48.69476876515408,6.189132928848267</geo>
+                  <geo>48.69454214750552,6.188459694385529</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>Créé en 1751-52. Jardin Dominique-Alexandre Godron</desc>
             </place>
             <place xml:id="nancyCasernes">
-               <placeName>Les Casernes (nouvelles)</placeName>
+               <placeName>Casernes (les nouvelles)</placeName>
                <location>
                   <geo>48.696289,6.18809063321451</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>Construites à partir de 1764 près de la porte Sainte-Catherine. Avant cette
                   date l'allusion aux casernes fait référence en particulier aux casernes qui
@@ -2223,24 +2868,31 @@
                <placeName>Manufacture de la Vénerie</placeName>
                <location>
                   <geo>48.69299,6.17653</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>Une des glacières de la Ville était à proximité en 1731.</desc>
             </place>
             <place xml:id="nancyManufactureCoton">
                <placeName>Manufacture de coton</placeName>
+               <location>
+                  <district type="city">Nancy</district>
+               </location>
+               <desc>Nancy</desc>
             </place>
             <place xml:id="nancyCitadelle">
                <placeName>Citadelle</placeName>
                <location>
                   <geo>48.70013,6.17806</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>La construction de la citadelle remonte à 1634 alors que la France occupait
                   Nancy.</desc>
             </place>
-            <place xml:id="nancyPrimatiale" type="religious">
+            <place xml:id="nancyPrimatiale">
                <placeName>Primatiale</placeName>
                <location>
                   <geo>48.69142,6.18595</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>La construction débute en 1607, interrompue puis reprise en 1703, mais c'est à
                   Stanislas qu'on doit l'achèvemment de ce chantier en 1742. Devient
@@ -2250,15 +2902,17 @@
                <placeName>Hôtel de ville</placeName>
                <location>
                   <geo>48.69309,6.18358</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>La construction du nouvel Hôtel de Ville débute en 1752 et s'achève en 1755.
-                  L'ancien était près de Saint-Sébastien, entre la rue des Ponts et des Quatres
-                  Églises, il fut démoli en 1752.</desc>
+                  L'ancien était près de Saint-Sébastien, entre la rue des Ponts et des
+                  Quatres-Églises, il fut démoli en 1752.</desc>
             </place>
             <place xml:id="nancyPlaceRoyale">
                <placeName>Place royale</placeName>
                <location>
                   <geo>48.693644,6.183240</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>En 1752, le programme des travaux destinés à créer une grande place qui
                   réunirait les deux villes est entériné. La place est achevée avec l'érection de la
@@ -2268,34 +2922,51 @@
                <placeName>Place du marché de la ville neuve</placeName>
                <location>
                   <geo>48.68910,6.18200</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>Centre de la ville neuve voulue par Charles III, l'ancien Hôtel de ville y
                   était érigé.</desc>
             </place>
-            <place xml:id="nancyMinimes" type="religious">
+            <place xml:id="nancyMinimes">
                <placeName>Couvent des Minimes</placeName>
                <location>
-                  <geo>48.6916688,6.1792884</geo>
+                  <geo>48.69101704946378,6.177754998207091</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>Fondé en 1592, reconstruit en 1613, il sera détruit à la Révolution.</desc>
             </place>
-            <place xml:id="nancyStRoch" type="religious">
+            <place xml:id="nancyStRoch">
                <placeName>Église Saint-Roch</placeName>
                <location>
                   <geo>48.69082,6.18222</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>Église construite en 1616</desc>
             </place>
-            <place xml:id="bonsecoursMinimes" type="religious">
+            <place xml:id="bonsecoursMinimes">
                <placeName>Couvent des Minimes de Bonsecours</placeName>
+               <location>
+                  <geo>48.67650684045987,6.198976635932922</geo>
+                  <district type="city">Nancy</district>
+               </location>
+               <desc>Établi en 1611, près de la chapelle de Notre-Dame-de-la-Victoire, Stanislas le
+                  fait reconstruire après l'édification de la nouvelle église de Bonsecours en
+                  1738.</desc>
             </place>
             <place xml:id="boudonvilleAqueduc">
                <placeName>Aqueduc de Boudonville</placeName>
+               <location>
+                  <geo>48.69588944524845,6.176145672798157</geo>
+                  <district type="city">Nancy</district>
+               </location>
+               <desc>Un aqueduc amenait l'eau des pentes de Boudonville et passait approximativement
+                  entre le Bastion de Salm et de Danemark pour aller rue de la Source.</desc>
             </place>
-            <place xml:id="nancyCongregation" type="religious">
-               <placeName>Religieuses de la Congrégation</placeName>
+            <place xml:id="nancyCongregation">
+               <placeName>Congrégation (Religieuses de la)</placeName>
                <location>
                   <geo>48.69228,6.18666</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>Fondé en 1615.</desc>
             </place>
@@ -2303,29 +2974,34 @@
                <placeName>Ardoisière de Nancy</placeName>
                <location>
                   <geo>48.69305,6.17843</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>Le 9 septembre 1764 les officiers municipaux obtiennent l'autorisation
                   d'exploiter à nouveau une ardoisière dans les fossés près de la Vénerie, on
                   suppose que c'est à ce site que Durival fait allusion.</desc>
             </place>
             <place xml:id="nancyRueCongregation">
-               <placeName>Rue de la Congrégation de Nancy</placeName>
+               <placeName>Rue de la Congrégation</placeName>
                <location>
                   <geo>48.69244,6.18550</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>Rue percée en 1752.</desc>
             </place>
             <place xml:id="nancyRueJacobins">
-               <placeName>Rue des Jacobins de Nancy</placeName>
+               <placeName>Rue des Jacobins</placeName>
+               <placeName type="today">rue Pierre Fourier</placeName>
                <location>
                   <geo>48.69245296801029,6.183156967163086</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>Depuis 1794, rue des Dominicains.</desc>
             </place>
-            <place xml:id="nancyStEpvre" type="religious">
+            <place xml:id="nancyStEpvre">
                <placeName>Église Saint-Èpvre</placeName>
                <location>
                   <geo>48.69561,6.1801</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>L'ancienne église est rasée et remplacée par l'église actuelle (par Prosper
                   Morey à la fin du XIXe siècle).</desc>
@@ -2334,34 +3010,39 @@
                <placeName>Place Saint-Èpvre</placeName>
                <location>
                   <geo>48.69609,6.17934</geo>
+                  <district type="city">Nancy</district>
                </location>
             </place>
-            <place xml:id="nancyStLeopold" type="religious">
+            <place xml:id="nancyStLeopold">
                <placeName>Église Saint-Léopold</placeName>
                <location>
                   <geo>48.68732,6.18251</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>Église du prieuré des Bénedictins, fondée en 1617, prend le titre d'abbaye en
                   1718.</desc>
             </place>
-            <place xml:id="nancyStSebastien" type="religious">
+            <place xml:id="nancyStSebastien">
                <placeName>Église Saint-Sébastien</placeName>
                <location>
                   <geo>48.68904,6.18098</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>L'église actuelle date de 1720, sa construction s'achève en 1732..</desc>
             </place>
-            <place xml:id="nancyDamesStSacrement" type="religious">
-               <placeName>Les Dames du saint-Sacrement</placeName>
+            <place xml:id="nancyDamesStSacrement">
+               <placeName>Dames du Saint-Sacrement</placeName>
                <location>
                   <geo>48.68736,6.18522</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>Fondation en 1624 (Notre-Dame de la Consolation)</desc>
             </place>
-            <place xml:id="nancyCollegeJesuites" type="religious">
+            <place xml:id="nancyCollegeJesuites">
                <placeName>Collège des jésuites</placeName>
                <location>
                   <geo>48.6908736324152,6.182100176811218</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>Fondé en 1615. Accolé à l'église Saint-Roch, entre la rue des Carmes ou était
                   son entrée, et la rue Saint-Dizier</desc>
@@ -2370,17 +3051,19 @@
             <!--<place xml:id="nancyCollege">
                <placeName>Collège de Nancy</placeName>
             </place>-->
-            <place xml:id="nancyNoviciatJesuites" type="religious">
+            <place xml:id="nancyNoviciatJesuites">
                <placeName>Église du Noviciat Jésuite</placeName>
                <location>
                   <geo>48.68641,6.18659</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>Fondé en 1601. Église de 1604.</desc>
             </place>
-            <place xml:id="nancyStPierre" type="religious">
+            <place xml:id="nancyStPierre">
                <placeName>Église Saint-Pierre</placeName>
                <location>
                   <geo>48.683084,6.191872</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>Église consacrée en 1737.</desc>
             </place>
@@ -2388,15 +3071,17 @@
                <placeName>Bibliothèque Royale</placeName>
                <location>
                   <geo>48.69318,6.18394</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>La bibliothèque royale est au premier étage de l'hôtel de Ville depuis 1763,
                   auparavant elle était dans la galerie des Cerfs au Palais Ducal. Elle intègrera à
                   son emplacement actuel vers 1797.</desc>
             </place>
-            <place xml:id="nancyPetiteCarmelites" type="religious">
+            <place xml:id="nancyPetiteCarmelites">
                <placeName>Couvent des Petites Carmélites</placeName>
                <location>
                   <geo>48.69066,6.17682</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>Installé rue Sain-Joseph (rue Chanzy) en 1655.</desc>
             </place>
@@ -2404,6 +3089,7 @@
                <placeName>Hôpital Saint-Charles</placeName>
                <location>
                   <geo>48.689356,6.178793</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>Fondée en 1626 dans l'ancienne batterie de cuivre.</desc>
             </place>
@@ -2411,43 +3097,52 @@
                <placeName>Hôpital Saint-Julien</placeName>
                <location>
                   <geo>48.6921578,6.1848052992915</geo>
+                  <district type="city">Nancy</district>
                </location>
-               <desc>La fondation pour les orphelins de Stanislas y est installée en 1748. Hôpital
-                  installé en Ville Neuve en 1589. Auparavant Grande-Rue depuis le XIVe
-                  siècle.</desc>
+               <desc> La fondation pour les orphelins de Stanislas y est installée en 1748. Hôpital
+                  installé en Ville Neuve en 1589. Auparavant Grande-Rue depuis le
+                  XIV&lt;sup&gt;e&lt;/sup&gt; siècle. </desc>
+               <!-- todo les entités -->
             </place>
-            <place xml:id="nancyDominiquains" type="religious">
+            <place xml:id="nancyDominiquains">
                <placeName>Couvent des Dominicains</placeName>
                <location>
                   <geo>48.69146,6.18368</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>Fondé en 1640, détruit à la Révolution.</desc>
             </place>
-            <place xml:id="nancyVisitation" type="religious">
+            <place xml:id="nancyVisitation">
                <placeName>Église de la Visitation</placeName>
                <location>
                   <geo>48.69160133692096,6.179393827915192</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>Le couvent est fondé en 1632, la chapelle subsiste, le lycée Poincaré est
                   construit sur son emprise et celle des Minimes.</desc>
             </place>
-            <place xml:id="nancyPenitentsBlancs" type="religious">
-               <placeName>Église des pénitents blancs</placeName>
+            <place xml:id="nancyPenitentsBlancs">
+               <placeName>Église des Pénitents blancs</placeName>
                <location>
                   <geo>48.69609,6.17806</geo>
+                  <district type="city">Nancy</district>
                </location>
+               <desc>La confrérie des Pénitents blancs est fondée en 1633. Leur église, Saint-Michel
+                  sera détruite en 1793.</desc>
             </place>
-            <place xml:id="nancyTiercelins" type="religious">
+            <place xml:id="nancyTiercelins">
                <placeName>Couvent des Tiercelins</placeName>
                <location>
                   <geo>48.6902742,6.1875429</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>Fondé en 1622. Installé en ville-neuve depuis 1656.</desc>
             </place>
-            <place xml:id="nancyCarmes" type="religious">
+            <place xml:id="nancyCarmes">
                <placeName>Couvent des Carmes</placeName>
                <location>
                   <geo>48.692132501452924,6.180826127529144</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>Installé en 1611-1612.</desc>
             </place>
@@ -2455,12 +3150,14 @@
                <placeName>Place de la Carrière</placeName>
                <location>
                   <geo>48.69577,6.18180</geo>
+                  <district type="city">Nancy</district>
                </location>
             </place>
-            <place xml:id="nancyCapucins" type="religious">
+            <place xml:id="nancyCapucins">
                <placeName>Couvent des Capucins</placeName>
                <location>
                   <geo>48.68694,6.18658</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>Fondé en 1592. Église construite en 1604.</desc>
             </place>
@@ -2468,19 +3165,22 @@
                <placeName>Paroisse Saint-Nicolas</placeName>
                <location>
                   <geo>48.68694,6.18658</geo>
+                  <district type="city">Nancy</district>
                </location>
             </place>
-            <place xml:id="nancyAugustins" type="religious">
+            <place xml:id="nancyAugustins">
                <placeName>Couvent des Augustins</placeName>
                <location>
                   <geo>48.68922,6.18062</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>Fondé en 1634.</desc>
             </place>
-            <place xml:id="nancyCordeliers" type="religious">
+            <place xml:id="nancyCordeliers">
                <placeName>Couvent des Cordeliers</placeName>
                <location>
                   <geo>48.69786,6.17942</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>Fondé sous René II en 1487. La chapelle est terminée en 1608.</desc>
             </place>
@@ -2492,29 +3192,35 @@
                <placeName>Cimetière extérieur de la porte Saint-Jean</placeName>
                <location>
                   <geo>48.68900,6.17564</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>Emplacement approximatif. Ouvert en 1763.</desc>
             </place>
-            <place xml:id="nancySteElisabeth" type="religious">
-               <placeName>Couvent Sainte-Elisabeth</placeName>
+            <place xml:id="nancySteElisabeth">
+               <placeName>Couvent Sainte-Élisabeth</placeName>
                <location>
                   <geo>48.68564,6.18638</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>Situation approximative. Sur l'emplacement de l'ancien Hôpital Notre-Dame,
                   Porte Saint-Nicolas.</desc>
             </place>
             <place xml:id="nancyPorteRoyale">
                <placeName>Porte Royale</placeName>
+               <placeName type="today">Porte Héré</placeName>
                <location>
                   <geo>48.69441,6.18268</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>Louis XIV fait construire la porte royale en 1673. Aujourd'hui Porte
                   Héré</desc>
             </place>
             <place xml:id="nancyPlaceDames">
                <placeName>Place des Dames</placeName>
+               <placeName type="today">place du Colonel Fabien</placeName>
                <location>
                   <geo>48.6952,6.1798</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>Une des plus anciennes places de Nancy, aujourd'hui Place du Colonel
                   Fabien.</desc>
@@ -2523,6 +3229,7 @@
                <placeName>Palais</placeName>
                <location>
                   <geo>48.69499,6.18286</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>Palais, ancien Hôtel de Craon construit en 1716 par Boffrand, architecte du duc
                   Léopold</desc>
@@ -2568,6 +3275,12 @@
             </place>
             <place xml:id="hotelCommandant">
                <placeName>Hôtel du commandant</placeName>
+               <location>
+                  <geo>48.700155945275355,6.178084909915924</geo>
+                  <district type="city">Nancy</district>
+               </location>
+               <desc>À priori logement du commandant de la place militaire, dans la
+                  citadelle.</desc>
             </place>
             <place xml:id="darney">
                <placeName>Darney</placeName>
@@ -2579,10 +3292,11 @@
                <placeName>Hôtel de ville de Lunéville</placeName>
             </place>
             <place xml:id="lunevilleChateau">
-               <placeName>La château de Lunéville</placeName>
+               <placeName>Château de Lunéville</placeName>
             </place>
             <place xml:id="malgrange">
                <placeName>La Malgrange</placeName>
+               <desc>L'une des résidences de Stanislas</desc>
             </place>
             <place xml:id="paris">
                <placeName>Paris</placeName>
@@ -2591,7 +3305,7 @@
                <placeName>Versailles</placeName>
             </place>
             <place xml:id="versaillesChateau">
-               <placeName>Chateau de Versailles</placeName>
+               <placeName>Château de Versailles</placeName>
             </place>
             <place xml:id="pontamousson">
                <placeName>Pont-à-Mousson</placeName>
@@ -2603,7 +3317,7 @@
                <placeName>Metz</placeName>
             </place>
             <place xml:id="heudicourtMaison">
-               <placeName>La maison d'Heudicourt</placeName>
+               <placeName>Maison d'Heudicourt</placeName>
             </place>
             <place xml:id="commercy">
                <placeName>Commercy</placeName>
@@ -2645,19 +3359,20 @@
                <placeName>Heillecourt</placeName>
             </place>
             <place xml:id="lorraineDuche">
-               <placeName>Le Duché de Lorraine</placeName>
+               <placeName>Duché de Lorraine</placeName>
             </place>
             <place xml:id="lorraine">
-               <placeName>La Lorraine</placeName>
+               <placeName>Lorraine</placeName>
             </place>
             <place xml:id="barrois">
-               <placeName>Le Barrois</placeName>
+               <placeName>Barrois</placeName>
             </place>
             <place xml:id="neuviller">
                <placeName>Neuviller</placeName>
             </place>
             <place xml:id="plombieres">
                <placeName>Plombières</placeName>
+               <placeName type="today">Plombières-les-Bains</placeName>
                <desc>Plombières-les-Bains</desc>
             </place>
             <place xml:id="bar">
@@ -2665,6 +3380,7 @@
             </place>
             <place xml:id="void">
                <placeName>Void</placeName>
+               <placeName type="today">Void-Vacon</placeName>
                <desc>Void-Vacon</desc>
             </place>
             <place xml:id="allemagne">
@@ -2680,7 +3396,7 @@
                <placeName>Rome</placeName>
             </place>
             <place xml:id="saxe">
-               <placeName>La Saxe</placeName>
+               <placeName>Saxe</placeName>
             </place>
             <place xml:id="loisey">
                <placeName>Loisey</placeName>
@@ -2692,7 +3408,7 @@
                <placeName>Innsbruck</placeName>
             </place>
             <place xml:id="ursulines">
-               <placeName>Les Ursulines</placeName>
+               <placeName>Couvent des Ursulines</placeName>
             </place>
             <place xml:id="angleterre">
                <placeName>Angleterre</placeName>
@@ -2723,9 +3439,11 @@
             </place>
             <place xml:id="chanteheux">
                <placeName>Chanteheux</placeName>
+               <desc>L'une des résidences de Stanislas</desc>
             </place>
             <place xml:id="jolivet">
                <placeName>Jolivet</placeName>
+               <desc>L'une des résidences de Stanislas</desc>
             </place>
             <place xml:id="leomont">
                <placeName>Léomont</placeName>
@@ -2738,12 +3456,18 @@
             </place>
             <place xml:id="maisonForce">
                <placeName>Jardin de la maison de force</placeName>
+               <location>
+                  <geo>48.69886895202777,6.177661120891571</geo>
+                  <district type="city">Nancy</district>
+               </location>
+               <desc> On peut supposer que Durival évoque la prison militaire de la Tour Notre-Dame
+                  (actuelle Porte de la Craffe) </desc>
             </place>
             <place xml:id="stuttgart">
                <placeName>Stuttgart</placeName>
             </place>
             <place xml:id="coteSteCatherine">
-               <placeName>Les bois de la côte Sainte-Catherine</placeName>
+               <placeName>Bois de la côte Sainte-Catherine</placeName>
             </place>
             <place xml:id="chausseeSteCatherine">
                <placeName>Chaussée Sainte-Catherine</placeName>
@@ -2752,16 +3476,16 @@
                <placeName>Maréville</placeName>
             </place>
             <place xml:id="leDauphine">
-               <placeName>Le Dauphiné</placeName>
+               <placeName>Dauphiné</placeName>
             </place>
             <place xml:id="colombey">
                <placeName>Colombey</placeName>
-               <desc>??</desc>
             </place>
             <place xml:id="hotelIntendance">
                <placeName>Hôtel de l'Intendance</placeName>
                <location>
                   <geo>48.69358,6.18417</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>Sur la place Royale</desc>
             </place>
@@ -2772,7 +3496,9 @@
                <placeName>Hôtel du Gouvernement</placeName>
                <location>
                   <geo>48.69700,6.18095</geo>
+                  <district type="city">Nancy</district>
                </location>
+               <desc>Sur la Carrière</desc>
             </place>
             <place xml:id="cantonVarangeville">
                <placeName>Canton de Varangeville</placeName>
@@ -2805,6 +3531,7 @@
                <placeName>Rue de l'esplanade</placeName>
                <location>
                   <geo>48.6918394,6.1793484</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>Rebaptisée rue Stanislas depuis l'inauguration de la statue du roi en
                   1831</desc>
@@ -2812,14 +3539,20 @@
             <place xml:id="nancySoeursGrises">
                <placeName>Nouvelle église des Sœurs grises</placeName>
                <location>
-                  <geo>48.68641,6.18659</geo>
+                  <geo>48.692470673285484,6.182971894741058</geo>
+                  <district type="city">Nancy</district>
                </location>
+               <desc>Auparavant faubourg Saint-Nicolas.</desc>
             </place>
             <place xml:id="evecheMunster">
                <placeName>Evêché de Münster (Westphalie)</placeName>
             </place>
             <place xml:id="NancyfxbrgStPierre">
-               <placeName>Faubourg Saint-Pierre de Nancy</placeName>
+               <placeName>Faubourg Saint-Pierre</placeName>
+               <location>
+                  <geo>48.68355527958379,6.191176772117615</geo>
+                  <district type="city">Nancy</district>
+               </location>
             </place>
             <place xml:id="stJeanVielAtre">
                <placeName>Saint-Jean-du-Vieil-Aître</placeName>
@@ -2846,7 +3579,7 @@
                <placeName>Manoncourt-sur-Seille</placeName>
             </place>
             <place xml:id="meurthe">
-               <placeName>La Meurthe</placeName>
+               <placeName>Meurthe (rivière)</placeName>
             </place>
             <place xml:id="troyes">
                <placeName>Troyes</placeName>
@@ -2855,7 +3588,7 @@
                <placeName>Champagne</placeName>
             </place>
             <place xml:id="moselle">
-               <placeName>Moselle</placeName>
+               <placeName>Moselle (rivère)</placeName>
             </place>
             <place xml:id="corny">
                <placeName>Corny</placeName>
@@ -2863,7 +3596,8 @@
             <place xml:id="nancyNotreDame">
                <placeName>Église et paroisse Notre-Dame</placeName>
                <location>
-                  <geo>48.69685,6.17856</geo>
+                  <geo>48.69694990786246,6.17757260799408</geo>
+                  <district type="city">Nancy</district>
                </location>
             </place>
             <place xml:id="boucquemont">
@@ -2882,7 +3616,7 @@
                <placeName>Ubexi</placeName>
             </place>
             <place xml:id="soisson">
-               <placeName>le camp de Soissons</placeName>
+               <placeName>Camp de Soissons</placeName>
             </place>
             <place xml:id="joui">
                <placeName>Jouy</placeName>
@@ -2891,7 +3625,7 @@
                <placeName>Briançon en Dauphiné</placeName>
             </place>
             <place xml:id="chambiereCasernes">
-               <placeName>Casernes de Chambiere</placeName>
+               <placeName>Casernes de Chambieèe</placeName>
             </place>
             <place xml:id="moreyVille">
                <placeName>Morey</placeName>
@@ -2903,7 +3637,7 @@
                <placeName>Montigny</placeName>
             </place>
             <place xml:id="verreriePorcieux">
-               <placeName>La verrerie de Porcieux</placeName>
+               <placeName>Verrerie de Porcieux</placeName>
             </place>
             <place xml:id="ypres">
                <placeName>Ypres</placeName>
@@ -2912,10 +3646,18 @@
                <placeName>Auberge des dames de France</placeName>
             </place>
             <place xml:id="bastille">
-               <placeName>La bastille</placeName>
+               <placeName>Bastille</placeName>
+               <location>
+                  <district type="city">Paris</district>
+               </location>
+               <desc>Paris</desc>
             </place>
             <place xml:id="fauxbourgStFiacre">
-               <placeName>Le faubourg Saint-Fiacre</placeName>
+               <placeName>Faubourg Saint-Fiacre</placeName>
+               <location>
+                  <geo>48.701265,6.171790</geo>
+                  <district type="city">Nancy</district>
+               </location>
             </place>
             <place xml:id="alsace">
                <placeName>Alsace</placeName>
@@ -2933,14 +3675,17 @@
                <placeName>Comédie</placeName>
                <location>
                   <geo>48.69342745,6.18206770823004</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>Nouvelle salle inaugurée en 1755. Auparavant une salle était située depuis 1750
                   derrière la Palais Ducal.</desc>
             </place>
             <place xml:id="nancyRuePoissonnerie">
                <placeName>Rue de la poissonnerie</placeName>
+               <placeName type="today">rue Gambetta</placeName>
                <location>
-                  <geo>48.691874002080645,6.179444789886475</geo>
+                  <geo>48.692001481389006,6.179801523685455</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>Actuelle rue Gambetta (depuis 1883), Le marché au Poissons était à l'angle de
                   la rue Gambetta et Saint-Dizier, le bâtiment abritera la Comédie jusqu'en 1738
@@ -2950,48 +3695,71 @@
                <placeName>La Garenne</placeName>
                <location>
                   <geo>48.68053,6.17210</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>Emplacement approximatif du bois de la Garenne. Concession faite en 1731 pour
                   forme une promenade publique.</desc>
             </place>
             <place xml:id="etuve">
                <placeName>L'étuve des blés</placeName>
+               <location>
+                  <district type="city">Nancy</district>
+               </location>
             </place>
             <place xml:id="etuveDuhamel">
                <placeName>L'étuve de Duhamel</placeName>
+               <location>
+                  <district type="city">Nancy</district>
+               </location>
             </place>
             <place xml:id="nancyPorteStNic">
                <placeName>Porte Saint-Nicolas</placeName>
                <location>
                   <geo>48.68567138976192,6.186193227767944</geo>
+                  <district type="city">Nancy</district>
                </location>
+               <desc>Porte élevée entre 1603 et 1608. Remaniée pour la visite des filles de Louis XV
+                  en 1761.</desc>
             </place>
             <place xml:id="nancyPorteStGeorges">
                <placeName>Porte Saint-Georges</placeName>
                <location>
                   <geo>48.692364441540896,6.1884355545043945</geo>
+                  <district type="city">Nancy</district>
                </location>
+               <desc>Sa construction débute en 1606 pour s'achever en 1619.</desc>
             </place>
             <place xml:id="nancyPorteSteCatherine">
                <placeName>Porte Sainte-Catherine</placeName>
                <location>
-                  <geo>48.6955753,6.18996424213749</geo>
+                  <geo>48.69491925287271,6.187834739685059</geo>
+                  <district type="city">Nancy</district>
                </location>
+               <desc>Construite en 1761 sur les plans de Richard Mique, en l'honneur de Catherine
+                  Opalinska, épouse de Stanislas, elle sera démontée et reculée des quelques
+                  centaines de mètres en 1768 lors de la construction des casernes.</desc>
             </place>
             <place xml:id="nancyPorteStStanislas">
                <placeName>Porte Saint-Stanislas</placeName>
+               <placeName type="today">Porte Stanislas</placeName>
                <location>
                   <geo>48.691131,6.17550720356153</geo>
+                  <district type="city">Nancy</district>
                </location>
+               <desc>Construite en 1761 sur les plans de Richard Mique.</desc>
             </place>
             <place xml:id="nancySecherie">
                <placeName>Sécherie des lavoirs publics</placeName>
                <location>
                   <geo>48.69272,6.18807</geo>
+                  <district type="city">Nancy</district>
                </location>
             </place>
             <place xml:id="hotelLeopold">
                <placeName>Hôtel du duc Léopold</placeName>
+               <location>
+                  <district type="city">Nancy</district>
+               </location>
             </place>
             <place xml:id="luneManu">
                <placeName>Manufacture nouvelle à Luneville faubourg de Viller</placeName>
@@ -3001,12 +3769,16 @@
             </place>
             <place xml:id="commercyChateau">
                <placeName>Château de Commercy</placeName>
+               <desc>L'une des résidences de Stanislas</desc>
             </place>
             <place xml:id="stNicolas">
                <placeName>Saint-Nicolas-de-Port</placeName>
             </place>
             <place xml:id="nancyStFiacre">
                <placeName>Paroisse Saint-Fiacre</placeName>
+               <location>
+                  <district type="city">Nancy</district>
+               </location>
             </place>
             <place xml:id="barCollege">
                <placeName>Collège de Bar</placeName>
@@ -3018,6 +3790,7 @@
                <placeName>Couvent des Orphelines</placeName>
                <location>
                   <geo>48.69017,6.18791</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>Fondé en 1715</desc>
             </place>
@@ -3025,6 +3798,7 @@
                <placeName>Hôtel du grand Doyen de la Primatiale</placeName>
                <location>
                   <geo>48.69051,6.18764</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>Construit entre 1608 et 1619.</desc>
             </place>
@@ -3032,24 +3806,29 @@
                <placeName>Conciergerie</placeName>
                <location>
                   <geo>48.694883844038216,6.183207929134369</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>Prison dans le bâtiment du Palais.</desc>
             </place>
             <place xml:id="arsenal">
                <placeName>Arsenal</placeName>
                <location>
-                  <geo>48.69671,6.17772</geo>
+                  <geo>48.69666487753538,6.177446544170379</geo>
+                  <district type="city">Nancy</district>
                </location>
                <desc>La construction de l'arsenal remonte à 1550</desc>
             </place>
             <place xml:id="manufactureBains">
                <placeName>Manufacture des bains</placeName>
+               <location>
+                  <district type="city">Nancy</district>
+               </location>
             </place>
             <place xml:id="villerFbg">
                <placeName>Faubourg de Viller</placeName>
             </place>
             <place xml:id="rhone">
-               <placeName>Le Rhône</placeName>
+               <placeName>Rhône (fleuve)</placeName>
             </place>
             <!--<place xml:id="premontes">
                <placeName>Les Premontés de Nancy</placeName><!-\- todo vérif avec Eric et remplacé par Saint Joseph ? -\->
@@ -3067,118 +3846,258 @@
 
          <listOrg xml:id="listOrg">
             <org xml:id="academie">
-               <orgName>Académie</orgName>
+               <orgName>Académie Royale des Sciences et Belles-Lettres</orgName>
+               <location>
+                  <placeName>Nancy</placeName>
+                  <geo>48.692107713899404,6.178988814353943</geo>
+               </location>
+               <desc> Académie Royale des Sciences et Belles-Lettres de Nancy créé le 28 décembre
+                  1750. Aujourd'hui Académie Stanislas, elle est installée dans la salle de
+                  l'académie de la bibliothèque Stanislas. </desc>
             </org>
             <org xml:id="conseilFrance">
                <orgName>Conseil de France</orgName>
+               <location>
+                  <placeName>Paris</placeName>
+               </location>
             </org>
             <org xml:id="parlementRouen">
                <orgName>Parlement de Rouen</orgName>
+               <location>
+                  <placeName>Rouen</placeName>
+               </location>
             </org>
             <org xml:id="courSouveraine">
-               <orgName>Cour Souveraine</orgName>
+               <orgName>Cour Souveraine de Lorraine et de Barrois</orgName>
+               <location>
+                  <placeName>Lunéville</placeName>
+               </location>
+               <desc>Créé entre 1698 et 1702.</desc>
             </org>
             <org xml:id="ecoleFilleBonsecours">
-               <orgName>Ecole des filles de Bonsecours</orgName>
+               <orgName>École des filles de Bonsecours</orgName>
+               <location>
+                  <placeName>Nancy</placeName>
+               </location>
             </org>
             <org xml:id="ordreAvocats">
-               <orgName>Ordre des avocats</orgName>
+               <orgName>Ordre des avocats de Nancy</orgName>
+               <location>
+                  <placeName>Nancy</placeName>
+               </location>
             </org>
             <org xml:id="conseilEtat">
                <orgName>Conseil d'État</orgName>
+               <location>
+                  <placeName>Nancy</placeName>
+               </location>
+               <desc>Créé entre 1698 et 1702.</desc>
             </org>
             <org xml:id="parlement">
-               <orgName>le Parlement</orgName>
+               <orgName>Parlement</orgName>
+               <location>
+                  <placeName>Nancy</placeName>
+               </location>
             </org>
             <org xml:id="parlementBretagne">
-               <orgName>Le parlement de Bretagne</orgName>
+               <orgName>Parlement de Rennes</orgName>
+               <location>
+                  <placeName>Rennes (1554-1790)</placeName>
+               </location>
             </org>
             <org xml:id="parlementParis">
-               <orgName>Le Parlement de Paris</orgName>
+               <orgName>Parlement de Paris</orgName>
+               <location>
+                  <placeName>Paris</placeName>
+               </location>
             </org>
             <org xml:id="chambreComptes">
-               <orgName>La Chambre des Comptes</orgName>
+               <orgName>Chambre des Comptes</orgName>
+               <location>
+                  <placeName>Nancy</placeName>
+               </location>
+               <desc>Créé entre 1698 et 1702.</desc>
             </org>
             <org xml:id="academieLyon">
-               <orgName>L'Académie de Lyon</orgName>
+               <orgName>Académie des sciences, belles-lettres et arts de Lyon</orgName>
+               <location>
+                  <placeName>Lyon</placeName>
+               </location>
             </org>
             <org xml:id="academieScience">
-               <orgName>L'Académie des Sciences</orgName>
+               <orgName>Académie des Sciences de Paris</orgName>
+               <location>
+                  <placeName>Paris</placeName>
+               </location>
+               <desc>Créée en 1666 par Jean-Baptiste Colbert.</desc>
             </org>
             <org xml:id="maitriseEauxForets">
-               <orgName>La maitrise des E. et F.</orgName>
+               <orgName>Eaux et forêts, maîtrise des</orgName>
+               <location>
+                  <placeName>Nancy</placeName>
+               </location>
             </org>
             <org xml:id="baillage">
-               <orgName>Le baillage</orgName>
+               <orgName>Baillage</orgName>
+               <location>
+                  <placeName>Nancy</placeName>
+               </location>
             </org>
             <org xml:id="benedictin">
-               <orgName>Benedictins</orgName>
+               <orgName>Benedictins, ordre des</orgName>
+               <location>
+                  <placeName>Nancy</placeName>
+               </location>
             </org>
             <org xml:id="laCour">
-               <orgName>La cour</orgName>
+               <orgName>Cour Souveraine de Lorraine et de Barrois</orgName>
+               <location>
+                  <placeName>Nancy</placeName>
+               </location>
             </org>
             <org xml:id="intendance">
-               <orgName>L'intendance</orgName>
+               <orgName>Intendance, Hôtel de l'</orgName>
+               <location>
+                  <placeName>Nancy</placeName>
+               </location>
+               <desc>Place royale.</desc>
             </org>
             <org xml:id="jesuitesPontamousson">
-               <orgName>Les jésuites de P-à-M</orgName>
+               <orgName>Ordre des Jésuites de Pont-à-Mousson</orgName>
+               <location>
+                  <placeName>Pont-à-Mousson</placeName>
+               </location>
             </org>
             <org xml:id="chancellerie">
-               <orgName>La Chancellerie</orgName>
+               <orgName>Chancellerie</orgName>
+               <location>
+                  <placeName>Nancy</placeName>
+               </location>
             </org>
             <org xml:id="jesuite">
-               <orgName>Les Jésuites</orgName>
+               <orgName>Jésuites, ordre des</orgName>
+               <location>
+                  <placeName>Nancy</placeName>
+               </location>
             </org>
             <org xml:id="academieFrancaise">
-               <orgName>L'Académie Française</orgName>
+               <orgName>Académie Française</orgName>
+               <location>
+                  <placeName>Paris</placeName>
+               </location>
             </org>
             <org xml:id="gouvernement">
-               <orgName>Le Gouvernement</orgName>
+               <orgName>Gouvernement, Hôtel du</orgName>
+               <location>
+                  <placeName>Nancy</placeName>
+               </location>
+               <desc>Place de la Carrière.</desc>
             </org>
             <org xml:id="parlementMetz">
-               <orgName>Le parlement de Metz</orgName>
+               <orgName>Parlement de Metz</orgName>
+               <location>
+                  <placeName>Metz</placeName>
+               </location>
             </org>
             <org xml:id="magPoisson">
-               <orgName>magasin de la poissonnerie</orgName>
+               <orgName>Magasin de blé</orgName>
+               <location>
+                  <placeName>Nancy</placeName>
+               </location>
+               <desc>Rue de la Poissonnerie (aujourd'hui Gambetta).</desc>
             </org>
             <org xml:id="HDV">
-               <orgName>Hôtel de Ville de Nancy</orgName>
+               <orgName>Hôtel de Ville</orgName>
+               <location>
+                  <placeName>Nancy</placeName>
+               </location>
             </org>
             <org xml:id="bibliotheque">
-               <orgName>Bibliothèque</orgName>
+               <orgName>Bibliothèque royale</orgName>
+               <location>
+                  <placeName>Nancy</placeName>
+               </location>
+               <desc>La bibliothèque royale est au premier étage de l'hôtel de Ville depuis 1763,
+                  auparavant elle était dans la galerie des Cerfs au Palais Ducal. Elle intègrera
+                  son emplacement actuel vers 1797.</desc>
             </org>
             <org xml:id="aumonePub">
-               <orgName>Bureau de l'aumône publique</orgName>
+               <orgName>Aumône publique, Bureau de l'</orgName>
+               <location>
+                  <placeName>Nancy</placeName>
+               </location>
+               <desc>L'aumône publique est crée vers 1595 pour aider les pauvres de la ville, elle
+                  est alimentée par des quêtes et une contribution des bourgeois.</desc>
             </org>
             <org xml:id="ancChpStGeorges">
-               <orgName>l'ancien chapitre de S. Georges</orgName>
+               <orgName>Chapitre de Saint-Georges (ancien)</orgName>
+               <location>
+                  <placeName>Nancy</placeName>
+               </location>
             </org>
             <org xml:id="fondationI">
-               <orgName>Dernière fonction de Stanislas</orgName>
+               <orgName>Pépinière royale</orgName>
+               <location>
+                  <placeName>Nancy</placeName>
+               </location>
+               <desc>Une des dernières fondations de Stanislas en 1765.</desc>
             </org>
             <org xml:id="fondationII">
-               <orgName>Fondation de l'abbé Bousey</orgName>
+               <orgName>Orphelins, fondation pour les</orgName>
+               <location>
+                  <placeName>Nancy</placeName>
+                  <geo>48.69189170755945,6.184414923191071</geo>
+               </location>
+               <desc>Fondation de Stanislas en 1747, sise dans l'hôpital Saint-Julien, rue de
+                  l'Hopital (actuel parking Stanislas).</desc>
             </org>
             <org xml:id="conseilAulique">
-               <orgName>Le Conseil aulique</orgName>
+               <orgName>Conseil aulique</orgName>
+               <location>
+                  <placeName>Nancy</placeName>
+               </location>
             </org>
             <org xml:id="conseil">
-               <orgName>Le conseil</orgName>
+               <orgName>Conseil</orgName>
+               <location>
+                  <placeName>Lunéville</placeName>
+               </location>
             </org>
             <org xml:id="cafeRoyal">
-               <orgName>caffé roïal</orgName>
+               <orgName>Café Royal</orgName>
+               <location>
+                  <placeName>Nancy</placeName>
+               </location>
+               <desc>Un des premiers café de Nancy,</desc>
             </org>
             <org xml:id="collegeRoyalMedecins">
                <orgName>Collège royale de médecine</orgName>
+               <location>
+                  <placeName>Nancy</placeName>
+               </location>
+               <desc> Fondation de Stanislas en 1752 (bâtiment de l'actuel Musée des Beaux-Arts).
+               </desc>
             </org>
             <org xml:id="comedie">
-               <orgName>La comédie</orgName>
+               <orgName>Théâtre de Nancy</orgName>
+               <location>
+                  <placeName>Nancy</placeName>
+               </location>
+               <desc> La troupe du théâtre de Nancy, dont le directeur est Fleury (1758 à 1767)
+                  théâtre construit en 1755. </desc>
             </org>
             <org xml:id="HDVLuneville">
-               <orgName>l'hotel de ville de Luneville</orgName>
+               <orgName>Hôtel de ville</orgName>
+               <location>
+                  <placeName>Lunéville</placeName>
+               </location>
             </org>
             <org xml:id="fondationMaladieEpi">
-               <orgName>la fondation des maladies épidémiques</orgName>
+               <orgName>Maladies épidémiques, fondation des</orgName>
+               <location>
+                  <placeName>Nancy</placeName>
+               </location>
+               <desc>Fondation de Stanislas en 1748.</desc>
             </org>
             <org xml:id="ecoleRoyaleMili">
                <orgName>Ecole royale Militaire</orgName>
