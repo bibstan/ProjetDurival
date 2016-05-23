@@ -37,8 +37,8 @@
     <xsl:template match="//table:table-row">
         <xsl:for-each select=".">
         <xsl:variable name="xmlId" select="normalize-space(table:table-cell[2])"/>
-            <note xml:id="{$xmlId}">
-                <ref type="note" target="#{$xmlId}"/>
+            <note xml:id="note{$xmlId}">
+                <ref type="note" target="#note{$xmlId}"/>
                 <xsl:comment><xsl:value-of select="normalize-space(table:table-cell[1])"/><xsl:text> </xsl:text><xsl:value-of select="normalize-space(table:table-cell[3])"/></xsl:comment>
                 <p>
                     <xsl:value-of select="normalize-space(table:table-cell[4])"/>

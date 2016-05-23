@@ -723,19 +723,19 @@
                                                                     <xsl:choose>
                                                                         <xsl:when test="//tei:div[@type='transcription']//tei:div[@type='insert'][descendant::*[contains(@ref,$id)]]">
                                                                             <li>                                                            
-                                                                                <a class="index" href="{$links}"><xsl:value-of select="$date"/></a> -                                                                                             
+                                                                                <a class="index" href="{$links}"><small><xsl:value-of select="$date"/></small></a> -                                                                                             
                                                                             </li>
                                                                         </xsl:when>
                                                                         <xsl:otherwise>
                                                                             <li>                                                            
-                                                                                <a class="index" href="{$links}"><xsl:value-of select="$date"/></a>                                                                                             
+                                                                                <a class="index" href="{$links}"><small><xsl:value-of select="$date"/></small></a>                                                                                             
                                                                             </li>
                                                                         </xsl:otherwise>
                                                                     </xsl:choose>
                                                                 </xsl:when>
                                                                 <xsl:otherwise>
                                                                     <li>
-                                                                        <a class="index" href="{$links}"><xsl:value-of select="$date"/></a> -                                     
+                                                                        <a class="index" href="{$links}"><small><xsl:value-of select="$date"/></small></a> -                                     
                                                                     </li>
                                                                 </xsl:otherwise>
                                                             </xsl:choose>                                            
@@ -749,12 +749,12 @@
                                                             <xsl:choose>
                                                                 <xsl:when test="position() = last()">
                                                                     <li>
-                                                                        <a class="index" href="{$links}">Encart n°<xsl:value-of select="$number"/></a>
+                                                                        <a class="index" href="{$links}"><small>encart n°<xsl:value-of select="$number"/></small></a>
                                                                     </li>    
                                                                 </xsl:when>
                                                                 <xsl:otherwise>
                                                                     <li>
-                                                                        <a class="index" href="{$links}">Encart n°<xsl:value-of select="$number"/></a> - 
+                                                                        <a class="index" href="{$links}"><small>encart n°<xsl:value-of select="$number"/></small></a> - 
                                                                     </li>
                                                                 </xsl:otherwise>
                                                             </xsl:choose>
@@ -859,19 +859,19 @@
                                                                     <xsl:choose>
                                                                         <xsl:when test="//tei:div[@type='transcription']//tei:div[@type='insert'][descendant::*[contains(@ref,$id)]]">
                                                                             <li>
-                                                                                <a class="index" href="{$links}"><xsl:value-of select="$date"/></a> -                                    
+                                                                                <a class="index" href="{$links}"><small><xsl:value-of select="$date"/></small></a> -                                    
                                                                             </li>                                                                
                                                                         </xsl:when>
                                                                         <xsl:otherwise>
                                                                             <li>
-                                                                                <a class="index" href="{$links}"><xsl:value-of select="$date"/></a>                                   
+                                                                                <a class="index" href="{$links}"><small><xsl:value-of select="$date"/></small></a>                                   
                                                                             </li>
                                                                         </xsl:otherwise>
                                                                     </xsl:choose>
                                                                 </xsl:when>
                                                                 <xsl:otherwise>
                                                                     <li>
-                                                                        <a class="index" href="{$links}"><xsl:value-of select="$date"/></a> -                                    
+                                                                        <a class="index" href="{$links}"><small><xsl:value-of select="$date"/></small></a> -                                    
                                                                     </li>                                                        
                                                                 </xsl:otherwise>
                                                             </xsl:choose>                                           
@@ -882,12 +882,12 @@
                                                             <xsl:choose>
                                                                 <xsl:when test="position() = last()">
                                                                     <li>
-                                                                        <a class="index" href="{$links}">encart n°<xsl:value-of select="$number"/></a>
+                                                                        <a class="index" href="{$links}"><small>encart n°<xsl:value-of select="$number"/></small></a>
                                                                     </li>
                                                                 </xsl:when>
                                                                 <xsl:otherwise>
                                                                     <li>
-                                                                        <a class="index" href="{$links}">encart n°<xsl:value-of select="$number"/></a> -
+                                                                        <a class="index" href="{$links}"><small>encart n°<xsl:value-of select="$number"/></small></a> -
                                                                     </li>
                                                                 </xsl:otherwise>
                                                             </xsl:choose>                                                                                                
@@ -966,19 +966,19 @@
                                                                     <xsl:choose>
                                                                         <xsl:when test="//tei:div[@type='transcription']//tei:div[@type='insert'][descendant::*[contains(@ref,$id)]]">
                                                                             <li>
-                                                                                <a class="index" href="{$links}"><xsl:value-of select="$date"/></a> -                                    
+                                                                                <a class="index" href="{$links}"><small><xsl:value-of select="$date"/></small></a> -                                    
                                                                             </li>
                                                                         </xsl:when>
                                                                         <xsl:otherwise>
                                                                             <li>
-                                                                                <a class="index" href="{$links}"><xsl:value-of select="$date"/></a>                                    
+                                                                                <a class="index" href="{$links}"><small><xsl:value-of select="$date"/></small></a>                                    
                                                                             </li>
                                                                         </xsl:otherwise>
                                                                     </xsl:choose>
                                                                 </xsl:when>
                                                                 <xsl:otherwise>
                                                                     <li>
-                                                                        <a class="index" href="{$links}"><xsl:value-of select="$date"/></a> -                                    
+                                                                        <a class="index" href="{$links}"><small><xsl:value-of select="$date"/></small></a> -                                    
                                                                     </li>
                                                                 </xsl:otherwise>
                                                             </xsl:choose>                                            
@@ -991,12 +991,12 @@
                                                             <xsl:choose>
                                                                 <xsl:when test="position() = last()">
                                                                     <li>
-                                                                        <a class="index" href="{$links}">encart n°<xsl:value-of select="$number"/></a>
+                                                                        <a class="index" href="{$links}"><small>encart n°<xsl:value-of select="$number"/></small></a>
                                                                     </li>
                                                                 </xsl:when>
                                                                 <xsl:otherwise>                                                        
                                                                     <li>
-                                                                        <a class="index" href="{$links}">encart n°<xsl:value-of select="$number"/></a> -
+                                                                        <a class="index" href="{$links}"><small><small>encart n°<xsl:value-of select="$number"/></small></small></a> -
                                                                     </li>
                                                                 </xsl:otherwise>
                                                             </xsl:choose>                                                                                                                        
