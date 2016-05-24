@@ -4207,8 +4207,17 @@
                <title>un ouvrage sur les fortifications (voir 1765-12-27)</title>
             </bibl>
             <bibl xml:id="bib16">
-               <title>Eloge du roi de Pologne</title>
-               <author>Solignac</author>
+               
+               <title>Eloge historique de Stanislas I. Roi de Pologne... Prononcé le 11 mai
+                  1766... l'Académie Royale des Sciences</title>
+               <author><forename>Pierre-Joseph de</forename><surname>Solignac</surname></author>
+               
+               <pubPlace>Nancy</pubPlace>
+               <publisher>Leseure, Veuve d'Antoine ; Leseure, Claude</publisher>
+               <date>1766</date>
+               <idno type="callNumber">BM Nancy 50 279 (f) ou 702 031 (16)</idno>
+               
+               
             </bibl>
             <bibl xml:id="bib17">
                <title>ouvrage sur les impots (voir 1766-05-03)</title>
@@ -4275,7 +4284,11 @@
                <title>Recueil sur diverses matieres</title>
             </bibl>
             <bibl xml:id="bib36">
-               <title>ortograf des dames</title>
+               <title>Ortografe des Dames pour aprandre à écrire et 
+                  à lire corectemant en tres peu de temps.</title>
+               <pubPlace>Nancy</pubPlace>
+               <publisher>Haenner</publisher>
+               <date>1766</date>
             </bibl>
             <bibl xml:id="bib37">
                <title>Actes de l'assemblée generale du clergé de France de 1765</title>
@@ -4300,8 +4313,13 @@
                <title>Discours sur le luxe</title>
             </bibl>
             <bibl xml:id="bib63">
-               <title>Recueil des batiments du roi</title>
-               <author>Héré</author>
+               <title>Recueil des plans, élévations et coupes tant géométrales qu'en perspective des châteaux, jardins et dépendances 
+                  que le roy de Pologne occupe en Lorraine y compris les bâtimens qu'il a fait élever, ainsi que les changemens considérables, les décorations et autres enrichissemens, 
+                  qu'il a fait faire à ceux qui étoient déjà construire le tout dirigé et dedié à sa Majesté par M. Héré, son premier architecte.</title>
+               <author><forename>Emmanuel</forename><surname>Héré</surname></author>
+               <pubPlace>Paris</pubPlace>
+               <publisher>François</publisher>
+               <date>1753-1756</date>
             </bibl>
             <bibl xml:id="bib64">
                <title>Ouvrage sur la formation des glaces dans les eaux mortes et rivières</title>
@@ -4317,7 +4335,7 @@
                <title>Manuscrit d'un ouvrage sur la finance</title>
             </bibl>
             <!-- Pièces de théatre -->
-
+            
             <bibl xml:id="bib42">
                <title>Zaïre</title>
                <author>Voltaire</author>
@@ -4389,16 +4407,48 @@
                <title>Oraison funebre 1 (Elisée)</title>
             </bibl>
             <bibl xml:id="bib72">
-               <title>Oraison funebre 2 (Dombasle)</title>
+               <title>Oraison funèbre de... Stanislas 1er,... duc de Lorraine... prononcée le
+                  12 mai 1766...</title>
+               <author><forename>Abbé de</forename><surname>Dombasle</surname></author>
+               
+               <pubPlace>Nancy</pubPlace>
+               <publisher>Leclerc, Jean-Baptiste-Hyacinthe</publisher>
+               <date>1766</date>
+               
+               <idno type="callNumber">BM Nancy 50 279 (g)</idno>            
             </bibl>
             <bibl xml:id="bib73">
-               <title>Oraison funebre 3 (Coster)</title>
+               <title>Oraison funèbre de Stanislas... prononcée dans l'Eglise du Collège,...
+                  le 15 may 1766,...</title>
+               <author><forename>Sigisbert-Etienne</forename><surname>Coster</surname></author>
+               
+               <pubPlace>Nancy</pubPlace>
+               <publisher>Leseure, Veuve d'Antoine ; Leseure, Claude</publisher>
+               <date>1766</date>
+               
+               <idno type="callNumber">BM cote 50 279 (h)</idno>
             </bibl>
             <bibl xml:id="bib74">
-               <title>Oraison funebre 4 (Clément)</title>
-            </bibl>
+               <title>Oraison funèbre de... Stanislas I,... , prononcée en l'église
+                  paroissiale de St-Roch de Nancy..., le 26 may 1766...</title>
+               <author><forename>Denis-Xavier</forename><surname>Clément</surname></author>
+               
+               <pubPlace>Paris</pubPlace>
+               <publisher>Delatour, Louis-François</publisher>
+               <date>1766</date>
+               
+               <idno type="callNumber">BM Nancy 50 279 (j)</idno>            </bibl>
             <bibl xml:id="bib75">
-               <title>Oraison funebre de Stanislas 5 ? (Guyot)</title>
+               <title>Oraison funèbre de Stanislas 1er,... prononcée le 10 juin
+                  1766...</title>
+               <author><forename>Guillaume-Germain</forename><surname>Guyot</surname></author>
+               
+               <pubPlace>Nancy</pubPlace><title level="m">Oraison funèbre de Stanislas 1er,... prononcée le 10 juin
+                  1766...</title>/pubPlace>
+               <publisher>Leseure, Veuve d'Antoine ; Leseure, Claude</publisher>
+               <date>1766</date>
+               
+               <idno type="callNumber">BM Nancy 50 279 (k)</idno>
             </bibl>
             <bibl xml:id="memoireChComptes">
                <title>Mémoire attribué à la Chambre des Comptes</title>
