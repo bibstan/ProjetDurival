@@ -115,7 +115,7 @@
                </attList>
             </elementSpec>
             <moduleRef key="namesdates"
-               include="orgName persName forename surname roleName genName nameLink roleName placeName country birth death event district listOrg listEvent listPerson listPlace org person place state location geo"/>
+               include="orgName persName addName forename surname roleName genName nameLink roleName placeName country birth death event district listOrg listEvent listPerson listPlace org person place state location geo"/>
             <elementSpec ident="orgName" mode="change">
                <attList>
                   <attDef ident="ana" mode="delete"/>                  
