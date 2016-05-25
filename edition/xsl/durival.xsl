@@ -498,12 +498,92 @@
         </p>        
     </xsl:template>
     
+    <xsl:template match="tei:persName[ancestor::tei:person and ancestor::tei:persName] | tei:surname[ancestor::tei:person] | tei:roleName[ancestor::tei:person]">
+        <xsl:choose>
+            <xsl:when test="
+                following-sibling::tei:roleName[1] |
+                following-sibling::tei:forename[1] |
+                following-sibling::tei:surname[1] |
+                following-sibling::tei:addName[1] | 
+                following-sibling::tei:persName[1]">
+                <xsl:apply-templates/><xsl:text>, </xsl:text>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:apply-templates/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template match="tei:forename[ancestor::tei:person]">
+        <xsl:choose>
+            <xsl:when test="following-sibling::tei:surname[1]">
+                <xsl:apply-templates/>
+            </xsl:when>
+            <xsl:when test="
+                following-sibling::tei:roleName[1] |
+                following-sibling::tei:forename[1] |
+                following-sibling::tei:addName[1] |                
+                following-sibling::tei:persName[1]">
+                <xsl:apply-templates/><xsl:text>, </xsl:text>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:apply-templates/><xsl:if test="ancestor::tei:persName[@ref]"><xsl:text>,</xsl:text></xsl:if>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template match="tei:addName"><!-- todo prévoir pour les femmes -->
+        <xsl:text>dit </xsl:text><xsl:apply-templates/>
+    </xsl:template>
+    
+    <xsl:template match="tei:birth | tei:death">
+        <xsl:choose>
+            <xsl:when test="@when">
+                <xsl:apply-templates select="@when"/>
+            </xsl:when>
+            <xsl:when test="@notBefore and @notAfter">
+                <xsl:variable name="notBefore" select="@notBefore"/>
+                <xsl:variable name="notAfter" select="substring(@notAfter,3)"/>
+                <xsl:value-of select="concat($notBefore,'/',$notAfter)"/>
+            </xsl:when>
+        </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template match="tei:person" mode="tooltip">
+        <xsl:for-each select="tei:persName">
+            <xsl:choose>
+                <xsl:when test="tei:persName | tei:surname | tei:forename | tei:roleName">
+                    <xsl:apply-templates select="."/>
+                </xsl:when>                
+                <xsl:otherwise>
+                    <xsl:apply-templates select="."/>
+                </xsl:otherwise>
+            </xsl:choose>            
+        </xsl:for-each>
+        <xsl:choose>
+            <xsl:when test="tei:birth | tei:death">
+                <xsl:text> (</xsl:text>
+                <xsl:apply-templates select="tei:birth"/><xsl:text>-</xsl:text><xsl:apply-templates select="tei:death"/>
+                <xsl:text>)</xsl:text>
+            </xsl:when>
+        </xsl:choose>
+        <xsl:if test="tei:persName[@ref]">
+            <xsl:variable name="href" select="tei:persName/@ref"/>
+            <xsl:variable name="renvoi">
+                <xsl:variable name="id" select="substring-after($href,'#')"/>
+                <xsl:value-of select="//tei:person[@xml:id=$id]/tei:persName/tei:persName"/><!-- todo vérif qu'on a toujours un persName dans ce cas -->
+            </xsl:variable>
+            <xsl:text>voir </xsl:text><a href="{$href}"><xsl:value-of select="$renvoi"/></a>
+        </xsl:if>
+    </xsl:template>
+    
     <xsl:template match="tei:div[@type='transcription']//tei:persName | tei:div[@type='transcription']//tei:rs[@type='person']">
         <xsl:variable name="ref" select="@ref"/><!-- todo @type=groupPerson -->
         <xsl:variable name="id" select="substring-after(@ref,'#')"/>
         <xsl:variable name="tooltip">
             <xsl:if test="//tei:div[@type='index']//tei:person[@xml:id=$id]">
-                <xsl:value-of select="//tei:div[@type='index']//tei:person[@xml:id=$id]/tei:persName"/>
+                <xsl:apply-templates select="//tei:div[@type='index']//tei:person[@xml:id=$id]" mode="tooltip"/>
+                <!--<xsl:value-of select="//tei:div[@type='index']//tei:person[@xml:id=$id]/tei:persName"/>-->
             </xsl:if>
         </xsl:variable>
         <span data-tooltip='true' aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="{$tooltip}"><a class="person" href="listPerson.html{$ref}"><xsl:apply-templates/></a></span>
@@ -685,60 +765,62 @@
                                     <xsl:variable name="id" select="@xml:id"/>
                                     <xsl:variable name="links" select=" concat('#',@xml:id)"/>
                                     <li id="{$id}">                    
-                                        <xsl:apply-templates select="tei:persName"/>
-                                        <ul class="accordion" data-accordion="true" data-allow-all-closed="true">
-                                            <li class="accordion-item" data-accordion-item="true">
-                                                <a href="#" class="accordion-title">Citations</a>
-                                                <div class="accordion-content" data-tab-content="true">
-                                                    <ul class="index">
-                                                        <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='day'][descendant::*[contains(@ref,$links)]]">
-                                                            <xsl:variable name="date">
-                                                                <xsl:apply-templates select="./tei:dateline/tei:date" mode="dateComplete"/>
-                                                            </xsl:variable>
-                                                            <xsl:variable name="links" select="concat(../@xml:id,'.html#',@xml:id)"/>
-                                                            <xsl:choose>
-                                                                <xsl:when test="position() = last()">
-                                                                    <xsl:choose>
-                                                                        <xsl:when test="//tei:div[@type='transcription']//tei:div[@type='insert'][descendant::*[contains(@ref,$id)]]">
-                                                                            <li>                                                            
-                                                                                <a class="index" href="{$links}"><small><xsl:value-of select="$date"/></small></a> -                                                                                             
-                                                                            </li>
-                                                                        </xsl:when>
-                                                                        <xsl:otherwise>
-                                                                            <li>                                                            
-                                                                                <a class="index" href="{$links}"><small><xsl:value-of select="$date"/></small></a>                                                                                             
-                                                                            </li>
-                                                                        </xsl:otherwise>
-                                                                    </xsl:choose>
-                                                                </xsl:when>
-                                                                <xsl:otherwise>
-                                                                    <li>
-                                                                        <a class="index" href="{$links}"><small><xsl:value-of select="$date"/></small></a> -                                     
-                                                                    </li>
-                                                                </xsl:otherwise>
-                                                            </xsl:choose>                                            
-                                                        </xsl:for-each>
-                                                        <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='insert'][descendant::*[contains(@ref,$links)]]">
-                                                            <xsl:variable name="number">
-                                                                <xsl:number count="tei:div[@type='insert']" from="tei:div[@type='transcription']" level="any"/>
-                                                            </xsl:variable>
-                                                            <xsl:variable name="links" select="concat(../@xml:id,'.html#',@xml:id)"/>
-                                                            
-                                                            <xsl:choose>
-                                                                <xsl:when test="position() = last()">
-                                                                    <li>
-                                                                        <a class="index" href="{$links}"><small>encart n°<xsl:value-of select="$number"/></small></a>
-                                                                    </li>    
-                                                                </xsl:when>
-                                                                <xsl:otherwise>
-                                                                    <li>
-                                                                        <a class="index" href="{$links}"><small>encart n°<xsl:value-of select="$number"/></small></a> - 
-                                                                    </li>
-                                                                </xsl:otherwise>
-                                                            </xsl:choose>
-                                                            
-                                                        </xsl:for-each>
-                                                        <!--<xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='day'] | //tei:div[@type='transcription']//tei:div[@type='insert']">
+                                        <xsl:apply-templates select="." mode="tooltip"/>
+                                        <!--<xsl:apply-templates select="tei:persName"/>-->
+                                        <xsl:if test="//tei:div[@type='transcription'][descendant::*[contains(@ref,$links)]]">
+                                            <ul class="accordion" data-accordion="true" data-allow-all-closed="true">
+                                                <li class="accordion-item" data-accordion-item="true">
+                                                    <a href="#" class="accordion-title">Citations</a>
+                                                    <div class="accordion-content" data-tab-content="true">
+                                                        <ul class="index">
+                                                            <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='day'][descendant::*[contains(@ref,$links)]]">
+                                                                <xsl:variable name="date">
+                                                                    <xsl:apply-templates select="./tei:dateline/tei:date" mode="dateComplete"/>
+                                                                </xsl:variable>
+                                                                <xsl:variable name="links" select="concat(../@xml:id,'.html#',@xml:id)"/>
+                                                                <xsl:choose>
+                                                                    <xsl:when test="position() = last()">
+                                                                        <xsl:choose>
+                                                                            <xsl:when test="//tei:div[@type='transcription']//tei:div[@type='insert'][descendant::*[contains(@ref,$id)]]">
+                                                                                <li>                                                            
+                                                                                    <a class="index" href="{$links}"><small><xsl:value-of select="$date"/></small></a> -                                                                                             
+                                                                                </li>
+                                                                            </xsl:when>
+                                                                            <xsl:otherwise>
+                                                                                <li>                                                            
+                                                                                    <a class="index" href="{$links}"><small><xsl:value-of select="$date"/></small></a>                                                                                             
+                                                                                </li>
+                                                                            </xsl:otherwise>
+                                                                        </xsl:choose>
+                                                                    </xsl:when>
+                                                                    <xsl:otherwise>
+                                                                        <li>
+                                                                            <a class="index" href="{$links}"><small><xsl:value-of select="$date"/></small></a> -                                     
+                                                                        </li>
+                                                                    </xsl:otherwise>
+                                                                </xsl:choose>                                            
+                                                            </xsl:for-each>
+                                                            <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='insert'][descendant::*[contains(@ref,$links)]]">
+                                                                <xsl:variable name="number">
+                                                                    <xsl:number count="tei:div[@type='insert']" from="tei:div[@type='transcription']" level="any"/>
+                                                                </xsl:variable>
+                                                                <xsl:variable name="links" select="concat(../@xml:id,'.html#',@xml:id)"/>
+                                                                
+                                                                <xsl:choose>
+                                                                    <xsl:when test="position() = last()">
+                                                                        <li>
+                                                                            <a class="index" href="{$links}"><small>encart n°<xsl:value-of select="$number"/></small></a>
+                                                                        </li>    
+                                                                    </xsl:when>
+                                                                    <xsl:otherwise>
+                                                                        <li>
+                                                                            <a class="index" href="{$links}"><small>encart n°<xsl:value-of select="$number"/></small></a> - 
+                                                                        </li>
+                                                                    </xsl:otherwise>
+                                                                </xsl:choose>
+                                                                
+                                                            </xsl:for-each>
+                                                            <!--<xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='day'] | //tei:div[@type='transcription']//tei:div[@type='insert']">
                                                 <xsl:if test=".//tei:persName[@ref=$links] | .//tei:rs[@type='person' and @ref=$links]">
                                                     <xsl:choose>
                                                         <xsl:when test="@type='day'">
@@ -762,10 +844,11 @@
                                                     </xsl:choose>
                                                 </xsl:if>                                                
                                             </xsl:for-each>-->
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </xsl:if>
                                     </li>
                                 </xsl:for-each>
                             </ul>

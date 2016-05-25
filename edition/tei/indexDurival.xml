@@ -100,12 +100,19 @@
             <person xml:id="archCambray">
                <persName>M. l'archevêque de Cambray</persName>
             </person>
-            <person xml:id="armentieres">
-               <persName>                  
+            <person xml:id="brienneConflans">
+               <persName ref="#armentieres">
                   <surname>Brienne de Conflans</surname>
                   <forename>Louis-Gabriel de</forename>
-                  <roleName>marquis d'Armentières</roleName>
                </persName>
+            </person>
+            <person xml:id="armentieres">
+               <persName>
+                  <persName>Armentières</persName>
+                  <forename>Louis-Gabriel de</forename>
+                  <surname>Brienne de Conflans</surname>                  
+                  <roleName>marquis d'</roleName>
+               </persName>               
                <birth when="1711"/>
                <death when="1774"/>
                <listEvent>
@@ -187,8 +194,8 @@
             <person xml:id="beauvau">
                <persName>
                   <surname>Beauvau</surname>
-                  <forename>Charles-Juste de</forename>
-                  <roleName>Prince de Beauvau</roleName>
+                  <forename>Charles-Juste</forename>
+                  <roleName>Prince de</roleName>
                </persName>
                <birth when="1720"/>
                <death when="1793"/>
@@ -207,8 +214,8 @@
             <person xml:id="beauvauMis">
                <persName>
                   <surname>Beauvau</surname>
-                  <forename>Louis-Charles-Antoine de</forename>
-                  <roleName>marquis de Beauvau</roleName>
+                  <forename>Louis-Charles-Antoine</forename>
+                  <roleName>marquis de</roleName>
                </persName>
                <birth when="1715"/>
                <death when="1744"/>
@@ -242,8 +249,8 @@
             <person xml:id="bercheni">
                <persName>
                   <surname>Berchény</surname>
-                  <forename>Ladislas-Ignace de</forename>
-                  <roleName>comte de Berchény</roleName>
+                  <forename>Ladislas-Ignace</forename>
+                  <roleName>comte de</roleName>
                </persName>
                <state>
                   <p>Maréchal de France</p>
@@ -302,11 +309,18 @@
                   </event>
                </listEvent>
             </person>
+            <person xml:id="boufflersStanislas2"><!-- renvoi -->
+               <persName ref="#boufflersStanislas">
+                  <surname>Boufflers</surname>
+                  <forename>Stanislas-Jean de</forename>                  
+               </persName>
+            </person>
             <person xml:id="boufflersStanislas">
                <persName>
-                  <surname>Boufflers</surname>
+                  <persName>Remiencourt</persName>
                   <forename>Stanislas-Jean de</forename>
-                  <roleName>marquis de Remiencourt</roleName>
+                  <surname>Boufflers</surname>                  
+                  <roleName>marquis de </roleName>
                </persName>
                <birth when="1738"/>
                <death when="1815"/>
@@ -321,11 +335,11 @@
                      <p>Filleul et protégé de Stanislas</p>
                   </event>
                </listEvent>
-            </person>
+            </person>            
             <person xml:id="bouflersMme">
-               <persName>
+               <persName>                  
                   <surname>Beauvau-Craon</surname>
-                  <forename>Marie Françoise Catherine de</forename>
+                  <forename>Marie Françoise Catherine de</forename>                                    
                   <roleName>marquise de Boufflers-Remiencourt</roleName>
                </persName>
                <birth when="1711"/>
@@ -398,11 +412,11 @@
             </person>
             <person xml:id="burkanaBaron">
                <persName>M. le baron de Burkana</persName>
-            </person>
+            </person>            
             <person xml:id="busquetDeCaumontDuch">
-               <persName>
+               <persName>                  
                   <surname>Bertout de Forbany</surname>
-                  <forename>Marie Elisabeth</forename>
+                  <forename>Marie Elisabeth</forename>                                   
                   <roleName>duchesse de Busquet de Caumont</roleName>
                </persName>
                <birth when="1715"/>
@@ -444,7 +458,7 @@
                <persName>
                   <surname>Castries</surname>
                   <forename>Charles Eugène Gabriel de la Croix</forename>
-                  <roleName>marquis de Castries</roleName>
+                  <roleName>marquis de</roleName>
                </persName>
                <birth when="1727"/>
                <death when="1801"/>
@@ -523,8 +537,8 @@
             <person xml:id="chasteletMis">
                <persName>
                   <surname>Chastelet</surname>
-                  <forename>Florent Claude du</forename>
-                  <roleName>marquis du Chastelet</roleName>
+                  <forename>Florent Claude</forename>
+                  <roleName>marquis du</roleName>
                </persName>
                <birth when="1695"/>
                <death when="1765"/>
@@ -663,11 +677,13 @@
             <person xml:id="contade">
                <persName>
                   <surname>Contade</surname>
-                  <forename>Louis Georges Érasme de</forename>
-                  <roleName>maréchal de France</roleName>
+                  <forename>Louis Georges Érasme de</forename>                  
                </persName>
                <birth when="1704"/>
                <death when="1795"/>
+               <state>
+                  <p><roleName>maréchal de France</roleName></p>
+               </state>
                <listEvent>
                   <event>
                      <p>commandant en chef en Alsace 1763</p>
@@ -844,9 +860,10 @@
             </person>
             <person xml:id="deMontesquiou">
                <persName>
-                  <surname>Montesquiou Fézensac</surname>
+                  <persName>Monstesquiou</persName>                  
                   <forename>Anne Pierre de</forename>
-                  <roleName>marquis de Monstesquiou</roleName>
+                  <surname>Montesquiou Fézensac</surname>
+                  <roleName>marquis de</roleName>
                </persName>
                <birth when="1739"/>
                <death when="1798"/>
@@ -883,12 +900,12 @@
                   <p>Antoine-Bernard- marquis Des Armoises- lieutenant général de François Ier -
                      mort à Nancy en 1768 ?</p>
                </state>
-            </person>
+            </person>            
             <person xml:id="desarmoisesMme">
-               <persName>
-                  <surname>beauvau</surname>
-                  <forename>Anne de</forename>
-                  <roleName>marquise des Armoises</roleName>
+               <persName>                  
+                  <surname>Beauvau</surname>
+                  <forename>Anne de</forename>                                    
+                  <roleName>marquise Des Armoises</roleName>
                </persName>
                <birth when="1710"/>
                <death when="1766"/>
@@ -897,7 +914,7 @@
                      <p>fille du maréchal de Lorraine Louis marquis de Beauvau</p>
                   </event>
                   <event>
-                     <p>épouse de Antoine Bernard des Armoises (officier général au service de
+                     <p>épouse de Antoine Bernard Des Armoises (officier général au service de
                         l'Empereur</p>
                   </event>
                </listEvent>
@@ -947,10 +964,10 @@
                </state>
             </person>
             <person xml:id="devaux">
-               <persName>
+               <persName>                  
                   <surname>Devaux</surname>
-                  <forename>François-Antoine</forename>
-                  <roleName>dit "Panpan"</roleName>
+                  <forename>François-Antoine</forename>                  
+                  <addName>Panpan</addName>
                </persName>
                <birth when="1712"/>
                <death when="1796"/>
@@ -1033,11 +1050,11 @@
                <state>
                   <p>correspondant de Durival</p>
                </state>
-            </person>
+            </person>            
             <person xml:id="durasDuchesse">
-               <persName>
+               <persName>                  
                   <surname>Coëtquen</surname>
-                  <forename>Louise Françoise Maclovie Céleste de</forename>
+                  <forename>Louise Françoise Maclovie Céleste de</forename>                                    
                   <roleName>duchesse de Duras</roleName>
                </persName>
                <birth when="1724"/>
@@ -1248,11 +1265,18 @@
                   </event>
                </listEvent>
             </person>
+            <person xml:id="gerbevillerMis2">
+               <persName ref="#gerbevillerMis">
+                  <surname>Lambertye</surname>
+                  <forename>Camille de</forename>                  
+               </persName>
+            </person>
             <person xml:id="gerbevillerMis">
                <persName>
-                  <surname>Lambertye</surname>
+                  <persName>Gerbeviller</persName>
                   <forename>Camille de</forename>
-                  <roleName>marquis de Gerbeviller</roleName>
+                  <surname>Lambertye</surname>                  
+                  <roleName>marquis de</roleName>
                </persName>
                <birth when="1714"/>
                <death when="1770"/>
@@ -1301,10 +1325,11 @@
                   <p>Médecin ordinaire du roi- mort le 11/09/1765</p>
                </state>
             </person>
+            
             <person xml:id="grammontDuchesse">
-               <persName>
+               <persName>                  
                   <surname>Choiseul-Stainville</surname>
-                  <forename>Béatrix de</forename>
+                  <forename>Béatrix de</forename>                                    
                   <roleName>duchesse de Gramont</roleName>
                </persName>
                <birth when="1730"/>
@@ -1350,11 +1375,11 @@
                   <p>Comédienne</p>
                </state>
             </person>
-            <person xml:id="guerchyComte">
+            <person xml:id="guerchyComte"><!-- todo ? -->
                <persName>
                   <surname>Régnier</surname>
                   <forename>Claude Louis François</forename>
-                  <roleName>comte de Guerchy, marqui de Nangis</roleName>
+                  <roleName>comte de Guerchy, marquis de Nangis</roleName>
                </persName>
                <birth when="1715"/>
                <death when="1767"/>
@@ -1566,7 +1591,7 @@
                <persName>
                   <surname>Héron de Villefosse</surname>
                   <forename>Charlotte Elisabeth</forename>
-                  <roleName>madame de Chaumont de la Milliére</roleName>
+                  <roleName>madame de Chaumont de la Milliére</roleName><!-- todo épouse -->
                </persName>
                <birth when="1720"><!-- todo v 1720 => @ cert ? --></birth>
                <death when="1771"/>
@@ -1736,11 +1761,18 @@
             <person xml:id="ligneville">
                <persName>M. l'abbé comte de Lignéville</persName>
             </person>
-            <person xml:id="lomont">
-               <persName>
+            <person xml:id="lomont2">
+               <persName ref="#lomont">
                   <surname>Chastelet</surname>
+                  <forename>Florent Louis Marie du</forename>                  
+               </persName>
+            </person>
+            <person xml:id="lomont">
+               <persName>                  
+                  <persName>Lomont</persName>
                   <forename>Florent Louis Marie du</forename>
-                  <roleName>comte de Lomont</roleName>
+                  <surname>Chastelet</surname>                  
+                  <roleName>comte de</roleName>
                </persName>
                <birth when="1727"/>
                <death when="1793"/>
@@ -2027,11 +2059,11 @@
             </person>
             <person xml:id="nicolas">
                <persName>M. Nicolas</persName>
-            </person>
+            </person>            
             <person xml:id="noaillesMme">
-               <persName>
+               <persName>                  
                   <surname>Arpajon</surname>
-                  <forename>Anne Claude Louise d'</forename>
+                  <forename>Anne Claude Louise d'</forename>                                    
                   <roleName>comtesse de Noailles</roleName>
                </persName>
                <birth when="1729"/>
@@ -2452,8 +2484,8 @@
             <person xml:id="stainville">
                <persName>
                   <surname>Choiseul Stainville</surname>
-                  <forename>Jacques Philippe de</forename>
-                  <roleName>comte (puis duc)</roleName>
+                  <forename>Jacques Philippe</forename>
+                  <roleName>comte puis duc de</roleName>
                </persName>
                <birth when="1727"/>
                <death when="1789"/>
@@ -2466,8 +2498,8 @@
             <person xml:id="stainvilleFrere">
                <persName>
                   <surname>Choiseul Stainville</surname>
-                  <forename>Etienne François de</forename>
-                  <roleName>comte (puis duc)</roleName>
+                  <forename>Etienne François</forename>
+                  <roleName>comte puis duc de</roleName>
                </persName>
                <birth when="1719"/>
                <death when="1785"/>
@@ -2679,9 +2711,9 @@
             </person>
             <person xml:id="deMalleloy">
                <persName>
-                  <surname>Collignon de Malleloy</surname>
-                  <forename>Léopold</forename>
-                  <roleName>comte de Malleloy</roleName>
+                  <surname>Malleloy</surname>
+                  <forename>Léopold Collignon</forename>
+                  <roleName>comte</roleName>
                </persName>
                <listEvent>
                   <event>
@@ -2728,9 +2760,9 @@
             </person>
             <person xml:id="auroyMise">
                <persName>
-                  <surname>Foucault</surname>
+                  <surname>Foucault de Saint-Germain Beaupré</surname>
                   <forename>Anne-Françoise de</forename>
-                  <roleName>marquise de Saint-Germain Beaupré</roleName>
+                  <roleName>marquise d'Auroy</roleName><!-- todo épouse -->
                </persName>
                <birth when="1718"/>
                <death when="1766"/>
