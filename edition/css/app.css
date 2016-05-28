@@ -25,7 +25,9 @@ header {
 }
 
 .nav {
-width:100%;
+    width:100%;
+    /*position:relative !important;/\*position et z-index pour le menu responsive*\/*/
+    z-index:1000 !important;
 }
 .index li {
     display:inline;
@@ -38,5 +40,15 @@ img.thumbnail {
    border:0;
    /*text-align:center;*/
 }
+li.vedette:before {
+    display: block; 
+    content: " "; 
+    margin-top: -75px; 
+    height: 75px; 
+    visibility: hidden;
+}  
 
-                    
+.tabs-title {
+    border-bottom: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
+}

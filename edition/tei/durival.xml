@@ -733,7 +733,7 @@
                         <p xml:id="d1765020101" ana="#ville #cour">                           
                            J'ai fait ma cour au <rs type="person" ref="#stanislas">roy</rs>, et vû <rs type="person" ref="#chancelier">M.
                               <lb/>le Chancelier</rs> sur l'arrêt <placeName ref="#nancyFabriques">des fabriques
-                                 <lb/>de Nancy</placeName>. <rs type="person" ref="#stanislas"><choice><abbr>S. M. Pol.</abbr></choice><expan>Sa Majesté Polonaise</expan></rs> vient à <placeName ref="#nancy">Nancy</placeName>
+                                 <lb/>de Nancy</placeName>. <rs type="person" ref="#stanislas"><choice><abbr>S. M. Pol.</abbr><expan>Sa Majesté Polonaise</expan></choice></rs> vient à <placeName ref="#nancy">Nancy</placeName>
                            <lb/>voir <persName ref="#choiseul">le <choice><abbr>card<hi rend="super">l</hi>.</abbr><expan>cardinal</expan></choice> de Choiseul</persName>, et <persName ref="#desarmoisesMme">M<hi rend="super">e</hi>. Desarmoises</persName>.
                         </p>
                      </div>                  
@@ -8786,7 +8786,7 @@
                         <p xml:id="d1766121701" ana="#ville">                           
                            Deliberation pour échanger <orgName ref="#corpsSteCatherine">le corps de garde
                            <lb/>S<hi rend="super">te</hi>. Catherine</orgName>, contre <placeName ref="#maisonPerbal">la maison de Perbal rüe
-                           <lb/>des champs</placeName>, pour une entrée au <placeName ref="#nancyJardin">jardin de <choice><abbr>botan.</abbr></choice><expan>botanique</expan></placeName>
+                              <lb/>des champs</placeName>, pour une entrée au <placeName ref="#nancyJardin">jardin de <choice><abbr>botan.</abbr><expan>botanique</expan></choice></placeName>
                         </p>
                         <p xml:id="d1766121702">
                            Arrêt de <orgName ref="#courSouveraine">la <choice><abbr>C. S<hi rend="super">ne</hi>.</abbr><expan>Cour souveraine</expan></choice></orgName> qui surseoit l’<choice><abbr>ex<hi rend="super">on</hi>.</abbr><expan>exécution</expan></choice> des

@@ -11,16 +11,20 @@
     
     <xsl:variable name="header">
         <header class="row">            
-            <div  data-sticky-container="true">
+            <div data-sticky-container="true">
                 <div class="nav" data-sticky="true" data-options="marginTop:0;">
-                    <div class="top-bar">
+                    <div class="title-bar" data-responsive-toggle="menu-responsive" data-hide-for="medium">
+                        <button class="menu-icon" type="button" data-toggle="true"><xsl:comment>button pour foundation responsive</xsl:comment></button>
+                        <div class="title-bar-title">Menu</div>
+                    </div>
+                    <div class="top-bar" id="menu-responsive">
                         <div class="top-bar-left">
-                            <ul class="dropdown menu" data-dropdown-menu="true">
+                            <ul class="vertical medium-horizontal menu" data-responsive-menu="drilldown medium-dropdown">
                                 <li><a href="../index.html">Accueil</a></li>                                        
                                 <li><a href="calendrier.html">Le journal</a></li>
                                 <li>
                                     <a href="carte.html">Cartes</a>
-                                    <ul class="menu">
+                                    <ul class="vertical menu">
                                         <li><a target="_blank" href="belprey.html">Nancy en 1754</a></li>
                                         <li><a target="_blank" href="mique.html">Nancy en 1778</a></li>
                                         <li><a target="_blank" href="cartographie.html">Nancy aujourd'hui</a></li>                                        
@@ -29,10 +33,10 @@
                                 <li><a href="galerie.html">Galerie</a></li>
                                 <li>
                                     <a href="focus.html">Focus</a>
-                                    <ul class="menu">
+                                    <ul class="vertical menu">
                                         <li>
                                             <a href="#">Biographies</a>
-                                            <ul class="menu">
+                                            <ul class="vertical menu">
                                                 <li><a href="stanislas.html">Stanislas</a></li>
                                                 <li><a href="durival.html">Durival</a></li>
                                             </ul>
@@ -42,10 +46,10 @@
                             </ul>
                         </div>
                         <div class="top-bar-right">
-                            <ul class="dropdown menu" data-dropdown-menu="true">                                                                             
+                            <ul class="vertical medium-horizontal menu" data-responsive-menu="drilldown medium-dropdown">                                                                             
                                 <li>
                                     <a href="#">Index</a>
-                                    <ul class="menu">
+                                    <ul class="vertical menu">
                                         <li><a href="listPerson.html">Personnes</a></li>
                                         <li><a href="listPlace.html">Lieux</a></li>
                                         <li><a href="listOrg.html">Institutions</a></li>
@@ -133,18 +137,16 @@
                         <xsl:copy-of select="$header"/>                                                                                                                                                                                               
                         <div class="row">                            
                             <div class="large-12 tabs-content" data-tabs-content="example-tabs">
-                                <div class="row">
-                                    <div class="large-2 columns">
-                                        <label><input type="checkbox" class="checkbox_abbr" value="abbr" />Abbr</label>
-                                    </div>
-                                    <div class="large-10 columns clearfix">
+                                <div class="row">                                    
+                                    <div class="large-10 large-offset-2 columns clearfix">
                                         <ul class="tabs float-right" data-tabs="true" id="example-tabs">                                
                                             <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">transcriptions</a></li>
                                             <li class="tabs-title"><a href="#panel2">facsimilés</a></li>
+                                            <li class="tabs-title"><a href="#panel3">options</a></li>
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="tabs-panel is-active border-top" id="panel1">         
+                                <div class="tabs-panel is-active" id="panel1">         
                                     <!--<h1>
                                         <xsl:variable name="when" select="concat(tei:fw[@type='runningHead']/tei:date/@when,'-01')"/>
                                         <xsl:variable name="date"><xsl:value-of select="$when"/></xsl:variable>
@@ -157,7 +159,7 @@
                                         </div> 
                                     </div>
                                 </div>
-                                <div class="tabs-panel border-top" id="panel2">
+                                <div class="tabs-panel" id="panel2">
                                     <div class="owl-carousel owl-theme">
                                         <xsl:for-each select=".//tei:pb/@facs">
                                             <xsl:variable name="facs" select="concat(.,'.jpg')"/>
@@ -173,6 +175,15 @@
                                             </xsl:when>
                                         </xsl:choose>-->                                                                                
                                         </xsl:for-each>
+                                    </div>
+                                </div>
+                                <div class="tabs-panel" id="panel3">
+                                    <div class="row">
+                                        <div class="large-12">
+                                            <div class="large-2 columns">
+                                                <label><input type="checkbox" class="checkbox_abbr" value="abbr" />Abbr</label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -764,7 +775,7 @@
                                     <xsl:sort select="tei:persName" order="ascending" case-order="upper-first"/>
                                     <xsl:variable name="id" select="@xml:id"/>
                                     <xsl:variable name="links" select=" concat('#',@xml:id)"/>
-                                    <li id="{$id}">                    
+                                    <li class="vedette" id="{$id}">                    
                                         <xsl:apply-templates select="." mode="tooltip"/>
                                         <!--<xsl:apply-templates select="tei:persName"/>-->
                                         <xsl:if test="//tei:div[@type='transcription'][descendant::*[contains(@ref,$links)]]">
@@ -1293,53 +1304,63 @@
                     <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'/>
                 </head>
                 <body>
-                    <header data-sticky-container="true">
-                        <div class="top-bar full-width sticky" data-sticky="true" data-margin-top="0">
-                            <div class="top-bar-left">
-                                <ul class="dropdown menu" data-dropdown-menu="true">
-                                    <li><a href="../index.html">Accueil</a></li>                                        
-                                    <li><a href="calendrier.html">Le journal</a></li>
-                                    <li>
-                                        <a href="carte.html">Cartes</a>
-                                        <ul class="menu">
-                                            <li><a target="_blank" href="belprey.html">Nancy en 1754</a></li>
-                                            <li><a target="_blank" href="mique.html">Nancy en 1778</a></li>
-                                            <li><a target="_blank" href="cartographie.html">Nancy aujourd'hui</a></li>                                        
-                                        </ul>
-                                    </li>
-                                    <li><a href="galerie.html">Galerie</a></li>
-                                    <li>
-                                        <a href="focus.html">Focus</a>
-                                        <ul class="menu">
+                    <header data-sticky-container="true">            
+                        <div class="full-width sticky" data-sticky="true" data-options="marginTop:0;">
+                            <div class="nav">
+                                <div class="title-bar" data-responsive-toggle="menu-responsive" data-hide-for="medium">
+                                    <button class="menu-icon" type="button" data-toggle="true"><xsl:comment>button pour foundation responsive</xsl:comment></button>
+                                    <div class="title-bar-title">Menu</div>
+                                </div>
+                                <div class="top-bar" id="menu-responsive">
+                                    <div class="top-bar-left">
+                                        <ul class="vertical medium-horizontal menu" data-responsive-menu="drilldown medium-dropdown">
+                                            <li><a href="../index.html">Accueil</a></li>                                        
+                                            <li><a href="calendrier.html">Le journal</a></li>
                                             <li>
-                                                <a href="#">Biographies</a>
-                                                <ul class="menu">
-                                                    <li><a href="stanislas.html">Stanislas</a></li>
-                                                    <li><a href="durival.html">Durival</a></li>
+                                                <a href="carte.html">Cartes</a>
+                                                <ul class="vertical menu">
+                                                    <li><a target="_blank" href="belprey.html">Nancy en 1754</a></li>
+                                                    <li><a target="_blank" href="mique.html">Nancy en 1778</a></li>
+                                                    <li><a target="_blank" href="cartographie.html">Nancy aujourd'hui</a></li>                                        
                                                 </ul>
-                                            </li>                                                                                        
+                                            </li>
+                                            <li><a href="galerie.html">Galerie</a></li>
+                                            <li>
+                                                <a href="focus.html">Focus</a>
+                                                <ul class="vertical menu">
+                                                    <li>
+                                                        <a href="#">Biographies</a>
+                                                        <ul class="vertical menu">
+                                                            <li><a href="stanislas.html">Stanislas</a></li>
+                                                            <li><a href="durival.html">Durival</a></li>
+                                                        </ul>
+                                                    </li>                                                                                        
+                                                </ul>
+                                            </li>
                                         </ul>
-                                    </li>
-                                </ul>
+                                    </div>
+                                    <div class="top-bar-right">
+                                        <ul class="vertical medium-horizontal menu" data-responsive-menu="drilldown medium-dropdown">                                                                             
+                                            <li>
+                                                <a href="#">Index</a>
+                                                <ul class="vertical menu">
+                                                    <li><a href="listPerson.html">Personnes</a></li>
+                                                    <li><a href="listPlace.html">Lieux</a></li>
+                                                    <li><a href="listOrg.html">Institutions</a></li>
+                                                    <li><a href="listbib.html">Œuvres citées</a></li>
+                                                    <li><a href="bibliographie.html">Bibliographie générale</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="apropos.html">À propos</a></li>
+                                        </ul>
+                                    </div>                                
+                                </div>
                             </div>
-                            <div class="top-bar-right">
-                                <ul class="dropdown menu" data-dropdown-menu="true">                                                                             
-                                    <li>
-                                        <a href="#">Index</a>
-                                        <ul class="menu">
-                                            <li><a href="listPerson.html">Personnes</a></li>
-                                            <li><a href="listPlace.html">Lieux</a></li>
-                                            <li><a href="listOrg.html">Institutions</a></li>
-                                            <li><a href="listbib.html">Œuvres citées</a></li>
-                                            <li><a href="bibliographie.html">Bibliographie générale</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="apropos.html">À propos</a></li>
-                                </ul>
-                            </div>                                                        
                         </div>
-                    </header>
-                    <div id="mapid"></div>
+                    </header>                    
+                    <div id="mapid">
+                        <xsl:comment>carte OSM</xsl:comment>
+                    </div>
                     <script src="../js/leaflet/leaflet.js"></script>
                     <script src="../js/cartographie/cartographie.js"></script>
                     <xsl:result-document format="frise" href="js/cartographie/cartographie.js">
@@ -1514,7 +1535,7 @@
                         var civil = new L.LayerGroup().addTo(mymap);
                         
                         <!--var popup = L.popup();-->
-                        <xsl:for-each select="tei:place[descendant::tei:location]">
+                        <xsl:for-each select="tei:place[descendant::tei:geo]">
                             <xsl:variable name="id" select="@xml:id"/>
                             <xsl:variable name="href">&lt;a href='listPlace.html<xsl:value-of select="concat('#',$id)"/>'&gt;<xsl:value-of select="normalize-space(tei:placeName[not(@type='today')])"/>&lt;/a&gt;</xsl:variable>
                             <xsl:choose>
