@@ -1,10 +1,51 @@
+body/*, .row, .tabs-panel, .tabs-content*/{
+    background-image: url("../images/fonds/fond1.png")
+}
+
+@font-face{
+	/*src: url('../fonts/Butler_Regular.otf');*/
+	/*src: url('../fonts/goudy_bookletter_1911-webfont.woff');*/
+    /*src: url('../fonts/Playfair-Display/PlayfairDisplay-Black.ttf');
+    src: url('../fonts/Playfair-Display/PlayfairDisplay-Bold.ttf');
+    src: url('../fonts/Playfair-Display/PlayfairDisplay-Regular.ttf');
+    src: url('../fonts/Playfair-Display/PlayfairDisplay-Italic.ttf');*/
+}
+
+p {
+    font-family: 'Playfair Display', serif;
+    
+}
+
+/*style p de la page d'accueil*/
+.edito, .lead{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+.edito2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+/*reprise h2, h3 plus géré par foundation.css*/
+h2, h3{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #cc6600;
+}
+a {
+font-weight: normal;
+
+}
+
+
+
 .note {
-    font-size:small;
+    font-size:0.8em;
 }
 
 .border-top {
-    border-top: 1px solid #e6e6e6;
-}
+/*    border-top: 1px solid #e6e6e6;
+*/}
 
 .day {
     min-height:300px;
@@ -23,7 +64,6 @@ header {
     z-index:100;
     background-color: #e6e6e6;
 }
-
 .nav {
     width:100%;
     /*position:relative !important;/\*position et z-index pour le menu responsive*\/*/
@@ -48,7 +88,65 @@ li.vedette:before {
     visibility: hidden;
 }  
 
-.tabs-title {
+/*.tabs-title {
     border-bottom: 1px solid #e6e6e6;
     border-left: 1px solid #e6e6e6;
+}*/
+
+/*Pour les illustrations dans un bloc de texte*/
+.float-left {
+    padding: 0 10 0 0px;
 }
+.tabs-title{
+    background-color: #dfdac5;
+}
+
+.footer{
+    
+    background-image: url("../images/fonds/fond2.png");
+
+    color: #cc6600;
+    padding:25 10 10 0px;
+}
+/**/
+
+.nav {
+width:100%;
+}
+.index li {
+    display:inline;
+}
+
+
+/*.thumbnail  {
+
+  display: inline-block;
+  line-height: 0;
+  max-width: 100%;
+  transition: box-shadow 200ms ease-out;
+  border-radius: 500px;
+  margin-bottom: 1rem; }
+
+  .thumbnail:hover, .thumbnail:focus {
+    box-shadow: 0 0 6px 1px rgba(255, 102, 0, 1.0); }*/
+
+
+.has-tip {
+
+    border-bottom: 1px dotted #cc6600;
+}
+
+.has-tip a {
+    color: #333333;
+    border-bottom: 1px dotted #cc6600;
+}
+
+.has-tip a:hover {
+    color: #cc6600
+}
+
+cite, a.cite  {
+    font-style: normal;
+color: #996600
+}
+
