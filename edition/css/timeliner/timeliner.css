@@ -5,7 +5,7 @@
   width: 1000px;
 }
 .timeline-toggle {
-  background: #ccc;
+/*  background: #A59E82; */
   border-color: #161616;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -21,27 +21,29 @@
 .timeline-wrapper {
   clear: left;
   float: left;
-  margin: 0 0 12px;
-  width: 900px;
+  margin: 0 0 10px;
+  width: 1000px;
 }
 .timeline-wrapper h2 {
 /*  background: url(../images/timeline_century_tick.gif) left center no-repeat;
-*/  font-family: Palatino, "Times New Roman", Times, serif;
+*/  
+/*font-family: Palatino, "Times New Roman", Times, serif;*/
   cursor: pointer;
-  font-size: 2em;
+  font-size: 1.6em;
   font-weight: 400;
   margin: 0 0 10px;
-  padding: 4px 4px 4px 20px;
+  padding: 4px 4px 4px 6px;
 }
 .timeline-wrapper h2 span {
-  background: #999;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
+
+/*  background: #A59E82; 
+*/  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
   color: #131313;
   letter-spacing: 0.1em;
-  line-height: 1.7em;
-  padding: 3px 5px 1px;
+  line-height: 1em;
+  padding: 5px 5px 1px;
 }
 .timeline-series {
   clear: left;
@@ -49,42 +51,43 @@
   margin: 0 12px 0 0;
   padding: 4px 4px 4px 0;
   position: relative;
-  width: 880px;
+  width: 1000px;
 }
 .timeline-series dt {
 /*  background: url(../images/timeline_decade_tick.gif) left center no-repeat;
 */  clear: left;
-  font-size: 1.6em;
+  font-size: 1.4em;
   list-style-type: none;
-  line-height: 1.2em;
+  line-height: 0.8em;
   margin: 0 0 12px;
-  padding: 0 0 0 24px;
+  padding: 0 0 0 14px;
   white-space: nowrap;
 }
 .timeline-series dt a {
-  color: #999;
+  /*color: #999;*/
   cursor: pointer;
 }
 .timeline-series dt a .closed {
-  color: #999;
+  color: #A59E82; 
+  
   font-size: 1em;
   margin-left: 0;
 }
 .timeline-series dt a .open {
-  color: #7DBADF;
+  color: #A59E82; 
 }
 .timeline-series dt a:hover {
-  color: #7DBADF;
+  color: #A59E82; 
 }
 .timeline-series dd {
-  padding-left: 24px;
+  padding-left: 14px;
   width: 100%;
 }
 .timeline-series dd h3 {
   color: #FFF;
   clear: both;
   float: left;
-  font-size: 1.5em;
+  font-size: 1.3em;
   margin: 0;
   white-space: nowrap;
 }
@@ -92,11 +95,16 @@
   display: none;
 }
 .timeline-event-content p {
+font-family: 'Lato', sans-serif;
+    font-weight: 300;
   clear: left;
   float: left;
   line-height: 1.5em;
   margin: 6px 20px 10px;
-  width: 500px;
+/*  width: 500px;
+*/
+  width: 700px;
+
 }
 .timeline-event-content h4 {
   clear: left;
@@ -122,7 +130,7 @@
 .timeline-event-content .media {
   float: right;
   padding: 0 0 12px;
-  width: 300px;
+  width: 200px;
 }
 .timeline-event-content .media img {
   border: 2px solid #000;
@@ -138,7 +146,11 @@
   color: #ab221b;
 }
 .timeline-event-content .media a:hover {
-  color: #7DBADF;
+  color: #A59E82; 
 }
 
 /*PERSO*/
+.timeline-time {
+  font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}

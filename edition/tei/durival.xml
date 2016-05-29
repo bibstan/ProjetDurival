@@ -542,8 +542,8 @@
                         </p>
                         <p xml:id="d1765010102" ana="#ville">
                            <placeName ref="#nancyHDV">L'hotel de ville de Nancy</placeName> aiant fait graver par
-                           <lb/><persName ref="#collin">Collin</persName> <rs type="artwork" ref="#estampeCollin">l'estampe de la construction <placeName ref="#nancyCasernes">du quartier
-                              <lb/>roïal des cazernes</placeName></rs><ref type="picture" target="#pic01"/>. Elle a été presentée ce matin
+                           <lb/><persName ref="#collin">Collin</persName> l'estampe de la <title ref="#estampeCollin">construction du quartier
+                              <lb/>roïal des cazernes</title><ref type="picture" target="#pic01"/>. Elle a été presentée ce matin
                            <lb/>au <rs type="person" ref="#stanislas">roy de Pologne</rs> à <placeName ref="#luneville">Lunéville</placeName>. <rs type="person" ref="#stanislas"><choice><abbr>S. M.</abbr><expan>Sa Majesté</expan></choice></rs> en a été contente.
                         </p>
                      </div>
