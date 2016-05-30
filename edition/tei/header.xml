@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/oddDurival.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="../xsl/durival.xsl"?>
+<teiCorpus xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+
+                <title>Edition augmentée du Journal de Nicolas Durival (1765-1766)</title>
+                <respStmt>
+                    <resp>édité et encodé en XML-TEI par </resp>
+                    <persName xml:id="CH">Claire Haquet</persName>
+                    <persName xml:id="EN">Éric Nunes</persName>
+                    <persName xml:id="JM">Josselin Morvan</persName>
+                </respStmt>
+                <funder>Ville de Nancy</funder>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Bibliothèques de Nancy</publisher>
+                <pubPlace>Bibliothèque Stanislas</pubPlace>
+                <address>
+                    <addrLine>43, rue Stanislas, 54 000 Nancy</addrLine>
+                </address>
+                <date when="2016">2016</date>
+                <availability>
+                    <p>Licence ouverte Etalab</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <country>France</country>
+                        <institution>Bibliothèque municipale classée de Nancy</institution>
+                        <repository>Bibliothèque Stanislas</repository>
+                        <idno>ms. 863</idno>
+                        <altIdentifier>
+                            <idno>ancienne cote : catalogue Favier 1315</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+                    <msContents>
+                        <p><!--Description intellectuelle du manuscrit / dates / sujet--></p>
+                    </msContents>
+                    <physDesc>
+                        <p> Manuscrit autographe en 14 volumes. Dont 2 de suppléments </p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>
+                    <note>La publication du <title>journal de durival 1765-1766</title> est la
+                        première étape d'un projet qui vise à l'édition complète, sur plusieurs
+                        années, des 14 volumes de Nicolas Durival (la rédaction s'étend entre
+                        1737-1795). Nous proposons l'édition annotée et agrémentée d'index,
+                        d'illustrations issues essentiellement des fonds iconographiques des <orgn>Bibliothèques de Nancy</orgn> (mais
+                        aussi des collections de nos partenaires), de bibliographies et de
+                        ressources complémentaires tels que cartes anciennes ou cartes actuelles
+                        annotées ainsi que de notices biographiques ou historiques visant à éclairer
+                        le contexte de rédaction du Journal.
+                        <lb/> Équipe
+                        <lb/> Coordination technique et scientifique, maquette (réalisation des CSS)
+                        : <persName>Éric Nunes</persName>
+                        <lb/> Transcription, encodage (1765-1766), feuilles de styles XSLT :
+                            <persName>Josselin Morvan</persName> (diplômé du master "technologies
+                        némriques appliquées à l'histoire" de l'École des Chartes)
+                        <lb/>Index et bibliographies : équipe du patrimoine des Bibliothèques de
+                        Nancy, étudiants de M. <persName>Jalabert</persName> de
+                            l'<orgName>Université Lorraine</orgName> (<persName>Élodie Réot</persName> ,
+                            <persName>Louise Engler</persName>, <persName>Jules Rawolle</persName>,
+                        <persName>Gaëtan Barbier</persName>, <persName>Alexandre Brignon</persName>, <persName>Pierre
+                            Valentin</persName>), une partie des notes historiques a été réalisée
+                        par <persName>Sara Nadal</persName>.
+                        <lb/> Remerciements : M. <persName>Christian Hénard</persName>, "précurseur"
+                        dans l'étude et la transcription du <title>Journal</title> dont les conseils
+                        avisés et les notes nous ont été d'une grande aide.
+                        <lb/> Techniques
+                        <lb/> Le site repose sur la transformation des fichiers TEI en multiples
+                        fichiers HTML par le biais de plusieurs feuilles de style XSLT. Il est conçu
+                        sur la base du framework Foundation 6 (personnalisé).
+                        <lb/>Plusieurs bibliothèques javascript sont utilisées : <list>
+                            <item>OWLcarousel.js pour le slider du journal;</item>
+                            <item>Timeliner.js pour certaines biographies et l'accès
+                                calendaire;</item>
+                            <item>Lightbox.js pour la visualisation des illustrations;</item>
+                            <item>leaflet.js pour la carte.</item>
+                        </list>
+                        <lb/> Sources du projet
+                        <lb/> Les sources du projet (texte, index, manuel d'encodage, schéma ODD,
+                        feuilles de styles XSLT et CSS) sont disponibles sur le github de la
+                        bibliothèque. Des bibliographies complémentaires sont disponibles sur le
+                        Zotero de la bibliothèque.
+                        <lb/> Propriété intellectuelle.
+                        <lb/> Sauf mention contraire, tous les éléments du site sont sous
+                        Licence Ouverte Etalab (pour les images) et sous licence CC0 (pour les productions scientifiques). </note>
+                </p>
+            </projectDesc>
+            <editorialDecl>
+                <!-- todo symbole pour la livre => # -->
+                <normalization method="silent">
+                    <p> Lors de la transcription, l'emploi des majuscules et des minuscules a été
+                        modernisé. Si les mots agglutinés ont été séparés conformément à la graphie
+                        moderne, les termes aujourd'hui réunis n'ont pas été soudés. La ponctuation
+                        a été mintenue, en revanche, les signes de ponctuation double (;-:-?-!) sont
+                        précédés d'un espace. </p>
+                </normalization>
+                <normalization method="markup">
+                    <p> Les éléments <gi>choice</gi>, <gi>abbr</gi> et <gi>expan</gi> ont été
+                        utilisés pour le développement des abréviations. La graphie n'ayant pas été
+                        modernisée, les termes dont l'orthographe peut sembler douteuse, ont été
+                        encodés avec l'élément <gi>sic</gi>. Les coupures de mot en fin de ligne
+                        sont maintenues ; elles sont balisées au moyen des éléments <gi>w</gi> et
+                            <gi>lb</gi>. Les omissions et blancs laissés vacants par l'auteur, sont
+                        encodés respectivement avec les balises <gi>gap</gi> et <gi>space</gi>. Les
+                        titres courants sont encodés lors de leur première apparition à l'aide de
+                        l'élément <gi>fw</gi>. </p>
+                </normalization>
+                <quotation>
+                    <p> Les guillemets n'ont pas été conservés. En lieu et place de ces marques de
+                        citation, nous avons utilisé l'élément <gi>q</gi>. Lorsque les citations
+                        n'ont pas été retranscrites avec des guillemets par l'auteur, nous avons
+                        employé la balise <gi>quote</gi>. </p>
+                </quotation>
+                <interpretation>
+                    <p>
+                        <interpGrp type="theme">
+                            <interp xml:id="meteo"> météo <desc> Entrées concernant les conditions
+                                    météorologiques et leurs conséquences sur l'agriculture et la
+                                    vie quotidienne </desc>
+                            </interp>
+                            <interp xml:id="aca"> Académie <desc> Entrées relatant les séances ou
+                                    rencontres des membres de l'Académie Royale des Sciences, Arts
+                                    et Belles-Lettres de Nancy </desc>
+                            </interp>
+                            <interp xml:id="theatre"> représentation théâtrale <desc> Entrées
+                                    concernant les représentations théâtrales données à Nancy et
+                                    devant le roi Stanislas </desc>
+                            </interp>
+                            <interp xml:id="cour"> Stanislas et la Cour <desc>Entrées relatant la
+                                    vie du roi Stanislas et de sa cour, la plupart du temps à
+                                    Lunéville </desc>
+                            </interp>
+                            <interp xml:id="ville"> administration de la ville <desc> Entrées
+                                    relatant les événements du quotidien et la gestion de la ville
+                                    de Nancy par Nicolas Durival </desc>
+                            </interp>
+                            <interp xml:id="bio"> éléments biographiques <desc> Entrées concernant
+                                    des événements de la vie personnelle de Durival et de sa famille
+                                </desc>
+                            </interp>
+                            <interp xml:id="armee"> armées <desc> Entrées relatant les mouvements et
+                                    exercices des régiments stationnés à Nancy et dans la région
+                                </desc>
+                            </interp>
+                            <interp xml:id="fetes"> fêtes et cérémonies <desc> Entrées relatant les
+                                    différentes manifestations civiles ou religieuses </desc>
+                            </interp>
+                            <interp xml:id="necro"> décès <desc> Entrées relatant les décès </desc>
+                            </interp>
+                            <interp xml:id="stan">
+                                <desc> Entrées relatant l'accident et la mort du </desc>
+                            </interp>
+                        </interpGrp>
+                    </p>
+                </interpretation>
+            </editorialDecl>
+        </encodingDesc>
+    </teiHeader>
+    <TEI>
+
+        <teiHeader>
+            <fileDesc>
+                <titleStmt>
+                    <title/>
+                </titleStmt>
+                <publicationStmt>
+                    <p>header</p>
+                </publicationStmt>
+                <sourceDesc>
+                    <p>header</p>
+                </sourceDesc>
+            </fileDesc>
+        </teiHeader>
+        <text>
+            <body>
+                <div/>
+            </body>
+        </text>
+    </TEI>
+</teiCorpus>
