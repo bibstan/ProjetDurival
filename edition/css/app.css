@@ -1,121 +1,150 @@
-body/*, .row, .tabs-panel, .tabs-content*/{
-    background-image: url("../images/fonds/fond1.png")
+body{
+  background-image: url("../images/fonds/fond1.png")
 }
 
-@font-face{
-	/*src: url('../fonts/Butler_Regular.otf');*/
-	/*src: url('../fonts/goudy_bookletter_1911-webfont.woff');*/
-    /*src: url('../fonts/Playfair-Display/PlayfairDisplay-Black.ttf');
-    src: url('../fonts/Playfair-Display/PlayfairDisplay-Bold.ttf');
-    src: url('../fonts/Playfair-Display/PlayfairDisplay-Regular.ttf');
-    src: url('../fonts/Playfair-Display/PlayfairDisplay-Italic.ttf');*/
+
+
+a {
+  font-weight: normal;
 }
 
-p {
-    font-family: 'Playfair Display', serif;
-    
-}
+/*notes historiques*/
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\PARTIES EDITORIALES\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+/*web font Lato*/
+
 
 /*style p de la page d'accueil*/
-.edito, .lead{
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    font-size: 18px;
+.edito, .lead {
+  font-family: 'Lato', Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
 }
 .edito2 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 900;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
 }
 /*reprise h2, h3 plus géré par foundation.css*/
 h2, h3{
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
-    color: #cc6600;
-}
-a {
-font-weight: normal;
-
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #cc6600;
 }
 
 
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\PARTIES EDITON\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
-.note {
-    font-size:0.8em;
+/*font pour le texte de l'édition*/
+p {
+  font-family: 'Playfair Display', Georgia, Times, serif;
 }
 
-.border-top {
+cite, a.cite  {
+  font-style: normal;
+  color: #996600
+}
+
+p.note {             
+  font-family: 'Lato', Helvetica, Roboto, Arial, sans-serif;
+  color: #555555;    font-size:0.8em;
+}
+
+/*.note {
+    font-size:1em;
+    }*/
+
+    .border-top {
 /*    border-top: 1px solid #e6e6e6;
 */}
 
 .day {
-    min-height:300px;
+  min-height:300px;
 }
 
-#mapid {
-    height : 100%;
-    z-index:1;
+
+
+.has-tip {
+
+  border-bottom: 1px dotted #cc6600;
 }
-                        
-.full-width {
-    width:100%;                    
+
+.has-tip a {
+  color: #333333;
+  border-bottom: 1px dotted #cc6600;
 }
-                        
+
+.has-tip a:hover {
+  color: #cc6600
+}
+
+
+
+
 header {
-    z-index:100;
-    background-color: #e6e6e6;
-}
-.nav {
-    width:100%;
-    /*position:relative !important;/\*position et z-index pour le menu responsive*\/*/
-    z-index:1000 !important;
-}
-.index li {
+  z-index:100;
+  background-color: #e6e6e6;
+  }
+  .index li {
     display:inline;
-}
+  }
 
-img.thumbnail {
-   display: inline;      
-   margin-bottom: 0;
-   width:75px;
-   border:0;
-   /*text-align:center;*/
-}
-li.vedette:before {
+
+
+  li.vedette:before {
     display: block; 
     content: " "; 
     margin-top: -75px; 
     height: 75px; 
     visibility: hidden;
-}  
+  }  
 
 /*.tabs-title {
     border-bottom: 1px solid #e6e6e6;
     border-left: 1px solid #e6e6e6;
-}*/
+    }*/
 
-/*Pour les illustrations dans un bloc de texte*/
-.float-left {
-    padding: 0 10 0 0px;
-}
-.tabs-title{
-    background-color: #dfdac5;
+    /*Pour les illustrations dans un bloc de texte*/
+    .float-left {
+      padding: 0 10 0 0px;
+    }
+    .tabs-title{
+      background-color: #dfdac5;
+    }
+    .tabs-title > a {
+      font-family: 'Lato', Helvetica, Roboto, Arial, sans-serif;
+      font-variant: small-caps;
+
+    }
+
+
+    /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\PARTIES CARTES\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+
+
+
+
+#mapid {
+  height : 100%;
+  z-index:1;
 }
 
-.footer{
-    
-    background-image: url("../images/fonds/fond2.png");
-
-    color: #cc6600;
-    padding:25 10 10 0px;
+.full-width {
+  width:100%;                    
 }
-/**/
 
-.nav {
-width:100%;
-}
-.index li {
+  .nav {
+    width:100%;
+    /*position:relative !important;/\*position et z-index pour le menu responsive*\/*/
+    z-index:1000 !important;
+  }
+
+  .nav {
+    width:100%;
+  }
+  .index li {
     display:inline;
-}
+  }
 
 
 /*.thumbnail  {
@@ -130,23 +159,54 @@ width:100%;
   .thumbnail:hover, .thumbnail:focus {
     box-shadow: 0 0 6px 1px rgba(255, 102, 0, 1.0); }*/
 
+    /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\PARTIES INDEX\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/*voir .accordion-title foundation*/
 
-.has-tip {
-
-    border-bottom: 1px dotted #cc6600;
+a.accordion-title {
+  color: #333333
 }
 
-.has-tip a {
-    color: #333333;
-    border-bottom: 1px dotted #cc6600;
-}
 
-.has-tip a:hover {
-    color: #cc6600
-}
+    /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\GESTION ILLUSTRATIONS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
-cite, a.cite  {
-    font-style: normal;
-color: #996600
-}
+    img.thumbnail {
+     display: inline;      
+     margin-bottom: 0;
+     width:75px;
+     border:0;
+     /*text-align:center;*/
+   }
 
+ /*Pour les illustrations dans un bloc de texte*/
+   .float-left {              
+    padding: 0 10 0 0px;
+  }
+
+/*images en vignettes en marge du texte*/
+  a.miniatures { 
+    display: inline-block;
+    line-height: 0;
+    max-width: 100%;
+    transition: box-shadow 200ms ease-out;
+    border-radius: 500px;
+    margin-bottom: 1rem;    
+    width:75px;
+  }
+
+  a.miniatures:hover, a.miniatures:focus {
+    border-radius: 500px;
+    box-shadow: 0 0 20px px rgba(255, 102, 0, 1.0); 
+  }
+
+  a img:hover, a img:focus { /*images cliquables rondes*/
+    border-radius: 500px;
+    box-shadow: 0 0 20px 1px rgba(255, 102, 0, 1.0); }
+
+    /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\FOOTER\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+
+    .footer {
+      /*    background-image: url("../images/fonds/fond2.png");*/
+      color: #cc6600;
+      padding:25 10 10 0px;
+    }
