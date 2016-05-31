@@ -65,7 +65,39 @@
             </div>
             <img src="../images/header/header.jpg" alt="header" />
         </header>
-    </xsl:variable>        
+    </xsl:variable>
+    
+    <xsl:variable name="footer">
+        <div class="row footer edito">
+            <div class="large-12 columns">
+                <div class="large-4 columns">
+                    <img src="../images/logo/BN-logo-blanc-fond or-B55mm-55x85mm.jpg" width="300px" /> 
+                    <br />
+                    <br />Bibliothèques de Nancy
+                    <br />43, rue Stanislas
+                    <br />54 700 Nancy
+                </div>
+                <div class="large-4 columns">
+                    <a href="calendrier.html">Le journal</a>
+                    <br />
+                    <a href="cartes.html">Les cartes</a>
+                    <br />
+                    <a href="galerie.html">Les illustrations</a>
+                    <br />
+                    <a href="ressources.html">Les focus</a>
+                    <br />
+                    <a href="listPerson.html">Index des personnes</a>
+                    <br />
+                    <a href="listPlace.html">Index des lieux</a>
+                    <br />
+                    <a href="listOrg.html">Index des institutions</a>                                                                
+                </div>
+                <div class="large-4 columns">
+                    <a href="html/apropos.html">À propos</a>
+                </div>                                                        
+            </div>                        
+        </div>
+    </xsl:variable>
     
     <xsl:template match="/">
         <html>
@@ -103,10 +135,13 @@
                 <!--<xsl:apply-templates select="//tei:listPlace[@xml:id='listPlace']" mode="cartographie"/>-->
                 <xsl:apply-templates select="//tei:div[@type='index'][descendant::tei:listPlace[@xml:id='listPlace']][descendant::tei:listOrg[@xml:id='listOrg']]" mode="cartographie"/>
                 <xsl:apply-templates select="//tei:front/tei:div[@type='bio']" mode="bio"/>
+                <xsl:apply-templates select="/" mode="mique"/>
+                <xsl:apply-templates select="/" mode="belprey"/>
+                <xsl:apply-templates select="/" mode="carte"/>
                 <script src="js/vendor/modernizr.js">/*pour transformation XSL*/</script>
             </body>
         </html>
-    </xsl:template>
+    </xsl:template>    
     
     <xsl:template match="//tei:body">
         <xsl:for-each select=".//tei:div[@type='month']">
@@ -183,12 +218,15 @@
                                         <div class="large-12">
                                             <div class="large-2 columns">
                                                 <label><input type="checkbox" class="checkbox_abbr" value="abbr" />Abbr</label>
+                                                <label><input type="checkbox" class="checkbox_orig" value="orig" />Orig</label>
+                                                <label><input type="checkbox" class="checkbox_sic" value="sic" />sic</label>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>                
+                        </div>
+                        <xsl:copy-of select="$footer"/>
                         <script src="../js/vendor/jquery.js">/*Pour transformation xslt*/</script>                        
                         
                         <script src="../js/foundation.min.js"></script>
@@ -231,7 +269,7 @@
                     <xsl:for-each select=".//tei:ref[@type='note']">
                         <xsl:variable name="id" select="substring-after(@target,'#')"/>
                         <xsl:variable name="number"><xsl:number select="." level="any" from="tei:div[@type='day']"/></xsl:variable>
-                        <p class="note"><sup><xsl:value-of select="$number"/></sup> <xsl:apply-templates select="//tei:back//tei:note[@xml:id=$id]/tei:p"/></p>
+                        <p class="note"><xsl:value-of select="$number"/><xsl:text>. </xsl:text><xsl:apply-templates select="//tei:back//tei:note[@xml:id=$id]/tei:p"/></p>
                     </xsl:for-each>
                     <xsl:if test=".//tei:ref[@type='picture']">                        
                         <div class="row">
@@ -660,11 +698,7 @@
         
     <xsl:template match="tei:w">
         <xsl:value-of select="replace(.,'-','')"/>        
-    </xsl:template>
-        
-    <xsl:template match="tei:sic">
-        <xsl:apply-templates/><xsl:text>&#160;</xsl:text><i>(sic)</i>
-    </xsl:template>
+    </xsl:template>            
     
     <xsl:template match="tei:hi">
         <xsl:choose>
@@ -684,7 +718,20 @@
     </xsl:template>
     
     <xsl:template match="tei:choice">
-        <span class="abbr"><xsl:apply-templates select="tei:abbr"/></span><span class="expan"><xsl:apply-templates select="tei:expan"/></span>
+        <xsl:choose>
+            <xsl:when test="tei:abbr and tei:expan">
+                <span class="abbr"><xsl:apply-templates select="tei:abbr"/></span><span class="expan"><xsl:apply-templates select="tei:expan"/></span>
+            </xsl:when>
+            <xsl:when test="tei:orig and tei:reg">
+                <span class="orig"><xsl:apply-templates select="tei:orig"/></span><span class="reg"><xsl:apply-templates select="tei:reg"/></span>
+            </xsl:when>
+            <xsl:when test="tei:sic and tei:corr">
+                <span class="sic"><xsl:apply-templates select="tei:sic"/><xsl:text>&#160;</xsl:text><i>(sic)</i></span><span class="corr"><xsl:apply-templates select="tei:corr"/></span>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:apply-templates/>
+            </xsl:otherwise>
+        </xsl:choose>        
     </xsl:template>    
     
     <xsl:template match="tei:div[@type='transcription']//tei:list">
@@ -884,14 +931,15 @@
                                                 <!--</xsl:if>-->
                                             </xsl:when>
                                             <xsl:otherwise>
-                                                <span class="vedette"><xsl:apply-templates select="." mode="tooltip"/></span>
+                                                <span class="vedette"><xsl:text>&#x2013;&#160;&#160;</xsl:text><xsl:apply-templates select="." mode="tooltip"/></span>
                                             </xsl:otherwise>
                                         </xsl:choose>
                                     </li>
                                 </xsl:for-each>
                             </ul>
                         </div>
-                    </div>                
+                    </div>   
+                    <xsl:value-of select="$footer"/>
                     <script src="../js/vendor/jquery.js">/*Pour transformation xslt*/</script>                        
                     
                     <script src="../js/foundation.min.js"></script>
@@ -1002,7 +1050,8 @@
                                 </xsl:for-each>
                             </ul>
                         </div>
-                    </div>                
+                    </div> 
+                    <xsl:copy-of select="$footer"/>
                     <script src="../js/vendor/jquery.js">/*Pour transformation xslt*/</script>                        
                     
                     <script src="../js/foundation.min.js"></script>
@@ -1114,7 +1163,8 @@
                                 </xsl:for-each>
                             </ul>
                         </div>
-                    </div>                
+                    </div>  
+                    <xsl:copy-of select="$footer"/>
                     <script src="../js/vendor/jquery.js">/*Pour transformation xslt*/</script>                        
                     
                     <script src="../js/foundation.min.js"></script>
@@ -1302,6 +1352,7 @@
                             </div><!-- /#timeline -->                           
                         </div>
                     </div>
+                    <xsl:copy-of select="$footer"/>
                     <script src="../js/vendor/jquery.js">/*Pour transformation xslt*/</script>
                     <script src="../js/vendor/modernizr.js">/*Pour transformation xslt*/</script>
                     <script src="../js/foundation.min.js">/*Pour transformation xslt*/</script>                                                                                                         
@@ -1414,6 +1465,22 @@
                         'Imagery © Mapbox',
                         id: 'mapbox.streets'
                         })/*.addTo(mymap)*/;
+                        
+                        //todo besoin de cette ligne ?
+                        var baseLayers = null;
+                        
+                        // ICONES SUPPLEMENTAIRES
+                        var iconA = L.icon({
+                        iconUrl: '../js/leaflet/images/marker-icon-A.png',
+                        iconSize: [32, 37],
+                        iconAnchor:[16,36]
+                        });
+                        
+                        var iconB = L.icon({
+                        iconUrl: '../js/leaflet/images/marker-icon-B.png',
+                        iconSize: [32, 37],
+                        iconAnchor:[16,36]
+                        });
                         
                         
                         var polygon = L.polygon(
@@ -1567,6 +1634,7 @@
                         
                         var religious = new L.LayerGroup().addTo(mymap);
                         var civil = new L.LayerGroup().addTo(mymap);
+                        var military = new L.LayerGroup().addTo(mymap);
                         
                         <xsl:for-each select="//tei:org[descendant::tei:geo]">
                             <xsl:variable name="id" select="@xml:id"/>
@@ -1575,7 +1643,7 @@
                                 <xsl:when test="@type='religious'">
                                     <xsl:text>L.marker([</xsl:text>                                
                                     <xsl:value-of select="normalize-space(.//tei:geo)"/>
-                                    <xsl:text>])</xsl:text>
+                                    <xsl:text>], {icon:iconB})</xsl:text>
                                     <xsl:text>.bindPopup("</xsl:text><xsl:value-of select="$href"/>                            
                                     <xsl:choose>
                                         <xsl:when test="tei:desc">                                        
@@ -1585,6 +1653,22 @@
                                         </xsl:when>
                                         <xsl:otherwise>
                                             <xsl:text>").addTo(religious); </xsl:text>
+                                        </xsl:otherwise>
+                                    </xsl:choose>
+                                </xsl:when>
+                                <xsl:when test="@type='military'">
+                                    <xsl:text>L.marker([</xsl:text>                                
+                                    <xsl:value-of select="normalize-space(.//tei:geo)"/>
+                                    <xsl:text>], {icon:iconA})</xsl:text>
+                                    <xsl:text>.bindPopup("</xsl:text><xsl:value-of select="$href"/>                            
+                                    <xsl:choose>
+                                        <xsl:when test="tei:desc">                                        
+                                            <xsl:text>&lt;br /&gt;</xsl:text>                                      
+                                            <xsl:value-of select="normalize-space(tei:desc)"/>                                    
+                                            <xsl:text>").addTo(military); </xsl:text>                                        
+                                        </xsl:when>
+                                        <xsl:otherwise>
+                                            <xsl:text>").addTo(military); </xsl:text>
                                         </xsl:otherwise>
                                     </xsl:choose>
                                 </xsl:when>
@@ -1615,7 +1699,7 @@
                                 <xsl:when test="@type='religious'">
                                     <xsl:text>L.marker([</xsl:text>                                
                                     <xsl:value-of select="normalize-space(.//tei:geo)"/>
-                                    <xsl:text>])</xsl:text>
+                                    <xsl:text>], {icon:iconB})</xsl:text>
                                     <xsl:text>.bindPopup("</xsl:text><xsl:value-of select="$href"/>                            
                                     <xsl:choose>
                                         <xsl:when test="tei:desc">                                        
@@ -1625,6 +1709,22 @@
                                         </xsl:when>
                                         <xsl:otherwise>
                                             <xsl:text>").addTo(religious); </xsl:text>
+                                        </xsl:otherwise>
+                                    </xsl:choose>
+                                </xsl:when>
+                                <xsl:when test="@type='military'">
+                                    <xsl:text>L.marker([</xsl:text>                                
+                                    <xsl:value-of select="normalize-space(.//tei:geo)"/>
+                                    <xsl:text>], {icon:iconA})</xsl:text>
+                                    <xsl:text>.bindPopup("</xsl:text><xsl:value-of select="$href"/>                            
+                                    <xsl:choose>
+                                        <xsl:when test="tei:desc">                                        
+                                            <xsl:text>&lt;br /&gt;</xsl:text>                                      
+                                            <xsl:value-of select="normalize-space(tei:desc)"/>                                    
+                                            <xsl:text>").addTo(military); </xsl:text>                                        
+                                        </xsl:when>
+                                        <xsl:otherwise>
+                                            <xsl:text>").addTo(military); </xsl:text>
                                         </xsl:otherwise>
                                     </xsl:choose>
                                 </xsl:when>
@@ -1646,20 +1746,22 @@
                                 </xsl:otherwise>
                             </xsl:choose>                                                                        
                         </xsl:for-each>
-                                                                        
+                        
                         var baseLayers = null;
                         var baseLayers = {
-                        'OSM': base1,
-                        'estampe': base2
+                            'Fond de carte contemporain': base1,
+                            'Carte ancienne': base2
                         };
                         
                         //var baseLayers = null;
                         
                         var overlayMaps = {
-                        "religieux": religious,
-                        "civil": civil,
-                        "limites de Nancy": polygon
+                        "Établissements religieux": religious,
+                        "Établissements civils": civil,
+                        "Établissements militaires": military,
+                        "Limites de la ville en 1766": polygon
                         };
+                        
                                                                                                                                                 
                         L.control.layers(baseLayers, overlayMaps).addTo(mymap);
                         
@@ -1769,6 +1871,7 @@
                                 </div>                           
                             </div>
                         </div>
+                        <xsl:copy-of select="$footer"/>
                         <script src="../js/vendor/jquery.js">/*Pour transformation xslt*/</script>
                         <script src="../js/vendor/modernizr.js">/*Pour transformation xslt*/</script>
                         <script src="../js/foundation.min.js">/*Pour transformation xslt*/</script>                                                                                                         
@@ -1784,6 +1887,145 @@
                 </html> 
             </xsl:result-document>
         </xsl:for-each>
+    </xsl:template>
+    
+    <!-- *********** Autres pages Web ***********-->
+    <xsl:template match="/" mode="belprey">
+        <xsl:result-document format="html" encoding="UTF-8" href="html/belprey.html">
+            <html xmlns="http://www.w3.org/1999/xhtml">
+                <head>
+                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+                    <title>Édition du journal de Nicolas Durival ß</title>
+                    <meta charset="utf-8" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                    <link rel="stylesheet" href="../css/foundation.css" />
+                    <link rel="stylesheet" href="../css/app.css" />
+                    <link rel="stylesheet" href="../js/leaflet/leaflet.css" />
+                </head>
+                <body>
+                    <xsl:copy-of select="$header"/>
+                    <div id="mapid"></div>
+                    <script src="../js/leaflet/leaflet.js"></script>
+                    <script src="../js/cartographie/belprey.js"></script>
+                    <script src="../js/vendor/jquery.js"></script>
+                    <script src="../js/foundation.min.js"></script>
+                    <script src="../js/vendor/modernizr.js"></script>
+                    <script src="../js/modernisation/modernisation.js"></script>
+                    <script>$(document).foundation();</script>
+                </body>
+            </html>
+        </xsl:result-document> 
+    </xsl:template>
+    
+    <xsl:template match="/" mode="mique">
+        <xsl:result-document format="html" encoding="UTF-8" href="html/mique.html">
+            <html xmlns="http://www.w3.org/1999/xhtml">
+                <head>
+                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+                    <title>Édition du journal de Nicolas Durival ß</title>
+                    <meta charset="utf-8" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                    <link rel="stylesheet" href="../css/foundation.css" />
+                    <link rel="stylesheet" href="../css/app.css" />
+                    <link rel="stylesheet" href="../js/leaflet/leaflet.css" />
+                </head>
+                <body>
+                    <xsl:copy-of select="$header"/>
+                    <div id="mapid"></div>
+                    <script src="../js/leaflet/leaflet.js"></script>
+                    <script src="../js/cartographie/mique.js"></script>
+                    <script src="../js/vendor/jquery.js"></script>
+                    <script src="../js/foundation.min.js"></script>
+                    <script src="../js/vendor/modernizr.js"></script>
+                    <script src="../js/modernisation/modernisation.js"></script>
+                    <script>$(document).foundation();</script>
+                </body>
+            </html>
+        </xsl:result-document> 
+    </xsl:template>
+    
+    <xsl:template match="/" mode="carte">
+        <xsl:result-document format="html" encoding="UTF-8" href="html/cartes.html">
+            <html>
+                <head>
+                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+                    <title>Édition du journal de Nicolas Durival ß</title>
+                    <meta charset="utf-8" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                    <link rel="stylesheet" href="../css/app.css" />
+                    <link rel="stylesheet" href="../css/foundation.css" />
+                    <link rel="stylesheet" href="../css/timeliner/timeliner.css" type="text/css" media="screen" />
+                    <link rel="stylesheet" href="../js/timeliner/vendor/venobox/venobox.css" type="text/css" media="screen" />
+                    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,900,700" rel="stylesheet" type="text/css" />
+                    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900,300" rel="stylesheet" type="text/css" />
+                </head>
+                <body>
+                    <xsl:copy-of select="$header"/>
+                    <div class="row">
+                        <div class="large-12">
+                            <h2 class="text-center edito2">Les cartes</h2>
+                            <p class="edito">
+                                
+                            </p>
+                            <div class="large-4 columns">
+                                <div><!-- <h3 class="text-center edito2">Nancy en 1754</h3> --><br/></div>
+                                <a href="belprey.html" target="blank"><img src="../images/vignettes/vignetteBelprey.png"/></a><h3 class="text-center edito2">Le plan Belprey : 1754</h3>
+                            <br/>
+                                <h4 class="edito">Thomas Belprey (1713-1786).</h4>
+                                <cite class="edito">Plan général des deux villes de Nancy et des nouveaux édifices que sa Majesté le roy de Pologne, duc de Lorraine et de Bar etc. y a fait construire. levé par Belprey, l'un des brigadiers de sa garde en 1754.</cite>
+                                <br />
+                                <p class="edito">Ce plan présente une vue en perspective de la ville en 1754, soit avant l'achèvement de tous les travaux projetés par Stanislas. Il comporte douze vignettes qui représentent les principaux nouveaux bâtiments de la ville.
+                                </p></div> 
+                            
+                            <div class="large-4 columns">
+                                <div>
+                                    <!-- <h3 class="text-center edito2">Nancy hier / aujourd'hui</h3> -->
+                                    <br />
+                                    
+                                    <a href="mique.html" target="blank"><img src="../images/vignettes/vignetteB543956101_H_FG_ES_00014.png"/></a></div>
+                                <h3 class="text-center edito2">Le plan Mique : 1778</h3>
+                                <br />
+                                <h4 class="edito">Claude Mique.</h4>
+                                <cite class="edito">Plan des villes, citadelle et faubourgs de Nancy, dédié à la Reine par son très humble et très obéissant serviteur C. Mique, architecte de feu Roi de Pologne à Nancy.</cite>
+                                <p class="edito">Sur ce plan, toutes les réalisations voulues par Stanislas ont été réalisées. On peut y voir la nouvelle université (actuelle bibliothèque Stanislas), et le début de la destruction des bastions. Celui des Michotte a déjà disparu, laissant place à la nouvelle place de Grève.</p>
+                            </div>
+                            <div class="large-4 columns">
+                                <div>
+                                    
+                                    <!--   <h3 class="text-center edito2">Galerie</h3> -->
+                                    
+                                    <br />
+                                    
+                                    
+                                    <a href="cartographie.html" target="blank"><img src="../images/vignettes/vignetteCarte.png"/></a>
+                                    <h3 class="text-center edito2">Nancy aujourd'hui</h3>
+                                    <br />
+                                    <p class="edito">
+                                        Sur cette carte contemporaine, retrouvez les lieux évoqués par Durival. Cette superposition redessine la ville telle que Durival l'a parcouru, vous donnant accès à des informations sur des lieux qui sont toujours visibvles, ont été transformés ou qui parfois ont disparus. 
+                                    </p>
+                                </div>
+                            </div>                             
+                            <br />
+                        </div>
+                        <!-- <p class="text-center"><img src="../accolade2.png"></p> -->
+                                                
+                    </div> 
+                    <xsl:copy-of select="$footer"/>
+                    <!-- FOOTER -->                    
+                    <script src="../js/vendor/jquery.js">/*Pour transformation xslt*/</script>
+                    <script src="../js/vendor/modernizr.js">/*Pour transformation xslt*/</script>
+                    <script src="../js/foundation.min.js">/*Pour transformation xslt*/</script>
+                    <script type="text/javascript" src="../js/timeliner/timeliner.min.js"></script>
+                    <script type="text/javascript" src="../js/timeliner/vendor/venobox/venobox.min.js"></script>
+                    <script>$(document).foundation();</script>
+                    <script>
+                        $(document).ready(function() {
+                        $.timeliner({});
+                        });
+                    </script>
+                </body>
+            </html>
+        </xsl:result-document> 
     </xsl:template>
     
     <!-- pour vérification d'encodage à supprimer par la suite -->

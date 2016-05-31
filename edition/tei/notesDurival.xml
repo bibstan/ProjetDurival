@@ -82,11 +82,20 @@
                         à un intendant représentant le pouvoir central. Son ressort concernait la
                         Lorraine et le Barrois. Elle se composait de 36 bailliages et de 29
                         subdélégations. </p>
+<<<<<<< HEAD
                 </note><!--
                 <note xml:id="note17650302A"> Arrêt interlocutoire [cité le 02/03/65] : --> 
                     <p> Appelé aussi jugement mixte, catégorie de jugement qui tranche une partie du
                     fond et ordonne une mesure complémentaire sur le surplus. </p>
-                <!--</note>-->
+                </note>
+=======
+                </note>
+                <!--
+                note xml:id="note17650302A"> Arrêt interlocutoire [cité le 02/03/65] : 
+                    <p> Appelé aussi jugement mixte, catégorie de jugement qui tranche une partie du
+                    fond et ordonne une mesure complémentaire sur le surplus. </p>
+                </note>-->
+>>>>>>> bibstan/master
                 <note xml:id="note17650322A">
                     <!--Evêque in partibus [cité le 22/03/65] :  -->
                     <p> Évêque nommé à titre honorifique,titulaire d’un ancien siège épiscopal,
