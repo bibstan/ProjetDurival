@@ -519,7 +519,7 @@
             </classSpec>
             <!--Checking module core-->
             <moduleRef key="core"
-                       include="p graphic unclear ref hi quote q desc term sic choice gap add del rs address addrLine measure date abbr expan list item head pb lb cb author respStmt resp title publisher pubPlace bibl listBibl l lg note ref teiCorpus foreign"/>
+                       include="p graphic unclear ref hi quote q desc term sic choice gap add del rs address addrLine measure date abbr expan corr reg orig list item head pb lb cb author respStmt resp title publisher pubPlace bibl listBibl l lg note ref teiCorpus foreign"/>
             <elementSpec ident="p" mode="change">
                <attList>
                   <attDef ident="facs" mode="delete"/>

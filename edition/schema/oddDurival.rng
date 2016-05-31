@@ -5,7 +5,7 @@
          xmlns:teix="http://www.tei-c.org/ns/Examples"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2016-05-25T16:16:27Z. .
+Schema generated from ODD source 2016-05-31T10:13:23Z. .
 TEI Edition: Version 3.0.0. Last updated on
 	29th March 2016, revision 89ba24e
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
@@ -771,6 +771,9 @@ Les valeurs suggérées comprennent: 1] below; 2] bottom; 3] margin; 4] top; 5] 
    <define name="model.pPart.transcriptional">
       <choice>
          <ref name="sic"/>
+         <ref name="corr"/>
+         <ref name="reg"/>
+         <ref name="orig"/>
          <ref name="add"/>
          <ref name="del"/>
          <ref name="unclear"/>
@@ -781,6 +784,9 @@ Les valeurs suggérées comprennent: 1] below; 2] bottom; 3] margin; 4] top; 5] 
    <define name="model.pPart.transcriptional_alternation">
       <choice>
          <ref name="sic"/>
+         <ref name="corr"/>
+         <ref name="reg"/>
+         <ref name="orig"/>
          <ref name="add"/>
          <ref name="del"/>
          <ref name="unclear"/>
@@ -790,6 +796,9 @@ Les valeurs suggérées comprennent: 1] below; 2] bottom; 3] margin; 4] top; 5] 
    </define>
    <define name="model.pPart.transcriptional_sequence">
       <ref name="sic"/>
+      <ref name="corr"/>
+      <ref name="reg"/>
+      <ref name="orig"/>
       <ref name="add"/>
       <ref name="del"/>
       <ref name="unclear"/>
@@ -799,6 +808,15 @@ Les valeurs suggérées comprennent: 1] below; 2] bottom; 3] margin; 4] top; 5] 
    <define name="model.pPart.transcriptional_sequenceOptional">
       <optional>
          <ref name="sic"/>
+      </optional>
+      <optional>
+         <ref name="corr"/>
+      </optional>
+      <optional>
+         <ref name="reg"/>
+      </optional>
+      <optional>
+         <ref name="orig"/>
       </optional>
       <optional>
          <ref name="add"/>
@@ -821,6 +839,15 @@ Les valeurs suggérées comprennent: 1] below; 2] bottom; 3] margin; 4] top; 5] 
          <ref name="sic"/>
       </zeroOrMore>
       <zeroOrMore>
+         <ref name="corr"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="reg"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="orig"/>
+      </zeroOrMore>
+      <zeroOrMore>
          <ref name="add"/>
       </zeroOrMore>
       <zeroOrMore>
@@ -839,6 +866,15 @@ Les valeurs suggérées comprennent: 1] below; 2] bottom; 3] margin; 4] top; 5] 
    <define name="model.pPart.transcriptional_sequenceRepeatable">
       <oneOrMore>
          <ref name="sic"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="corr"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="reg"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="orig"/>
       </oneOrMore>
       <oneOrMore>
          <ref name="add"/>
@@ -1470,6 +1506,9 @@ Les valeurs suggérées comprennent: 1] below; 2] bottom; 3] margin; 4] top; 5] 
    <define name="model.choicePart">
       <choice>
          <ref name="sic"/>
+         <ref name="corr"/>
+         <ref name="reg"/>
+         <ref name="orig"/>
          <ref name="unclear"/>
          <ref name="abbr"/>
          <ref name="expan"/>
@@ -1901,6 +1940,15 @@ Les valeurs suggérées comprennent: 1] below; 2] bottom; 3] margin; 4] top; 5] 
          <empty/>
       </element>
    </define>
+   <define name="corr">
+      <element name="corr">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(correction) contient la forme correcte d'un passage qui est considéré erroné dans la copie du texte. [3.4.1. Apparent Errors]</a:documentation>
+         <ref name="macro.paraContent"/>
+         <ref name="att.global.attributes"/>
+         <ref name="att.typed.attributes"/>
+         <empty/>
+      </element>
+   </define>
    <define name="choice">
       <element name="choice">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(choix) regroupe un certain nombre de balisages alternatifs possibles pour un même endroit dans un texte. [3.4. Simple Editorial Changes]</a:documentation>
@@ -1914,6 +1962,25 @@ Les valeurs suggérées comprennent: 1] below; 2] bottom; 3] margin; 4] top; 5] 
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
          <ref name="att.global.rendition.attribute.rend"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="reg">
+      <element name="reg">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(régularisation) contient une partie qui a été régularisée ou normalisée de façon quelconque [3.4.2. Regularization and
+Normalization 12. Critical Apparatus]</a:documentation>
+         <ref name="macro.paraContent"/>
+         <ref name="att.global.attributes"/>
+         <ref name="att.typed.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="orig">
+      <element name="orig">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(forme originale) contient une partie notée comme étant fidèle à l'original et non pas normalisée ou corrigée. [3.4.2. Regularization and
+Normalization 12. Critical Apparatus]</a:documentation>
+         <ref name="macro.paraContent"/>
+         <ref name="att.global.attributes"/>
          <empty/>
       </element>
    </define>
