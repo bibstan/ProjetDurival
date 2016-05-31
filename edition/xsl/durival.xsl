@@ -218,6 +218,8 @@
                                         <div class="large-12">
                                             <div class="large-2 columns">
                                                 <label><input type="checkbox" class="checkbox_abbr" value="abbr" />Abbr</label>
+                                                <label><input type="checkbox" class="checkbox_orig" value="orig" />Orig</label>
+                                                <label><input type="checkbox" class="checkbox_sic" value="sic" />sic</label>
                                             </div>
                                         </div>
                                     </div>
@@ -696,11 +698,7 @@
         
     <xsl:template match="tei:w">
         <xsl:value-of select="replace(.,'-','')"/>        
-    </xsl:template>
-        
-    <xsl:template match="tei:sic">
-        <xsl:apply-templates/><xsl:text>&#160;</xsl:text><i>(sic)</i>
-    </xsl:template>
+    </xsl:template>            
     
     <xsl:template match="tei:hi">
         <xsl:choose>
@@ -725,10 +723,10 @@
                 <span class="abbr"><xsl:apply-templates select="tei:abbr"/></span><span class="expan"><xsl:apply-templates select="tei:expan"/></span>
             </xsl:when>
             <xsl:when test="tei:orig and tei:reg">
-                <span class="abbr"><xsl:apply-templates select="tei:orig"/></span><span class="expan"><xsl:apply-templates select="tei:reg"/></span>
+                <span class="orig"><xsl:apply-templates select="tei:orig"/></span><span class="reg"><xsl:apply-templates select="tei:reg"/></span>
             </xsl:when>
             <xsl:when test="tei:sic and tei:corr">
-                <span class="abbr"><xsl:apply-templates select="tei:sic"/></span><span class="expan"><xsl:apply-templates select="tei:corr"/></span>
+                <span class="sic"><xsl:apply-templates select="tei:sic"/><xsl:text>&#160;</xsl:text><i>(sic)</i></span><span class="corr"><xsl:apply-templates select="tei:corr"/></span>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:apply-templates/>
@@ -1468,6 +1466,22 @@
                         id: 'mapbox.streets'
                         })/*.addTo(mymap)*/;
                         
+                        //todo besoin de cette ligne ?
+                        var baseLayers = null;
+                        
+                        // ICONES SUPPLEMENTAIRES
+                        var iconA = L.icon({
+                        iconUrl: '../js/leaflet/images/marker-icon-A.png',
+                        iconSize: [32, 37],
+                        iconAnchor:[16,36]
+                        });
+                        
+                        var iconB = L.icon({
+                        iconUrl: '../js/leaflet/images/marker-icon-B.png',
+                        iconSize: [32, 37],
+                        iconAnchor:[16,36]
+                        });
+                        
                         
                         var polygon = L.polygon(
                         [
@@ -1620,6 +1634,7 @@
                         
                         var religious = new L.LayerGroup().addTo(mymap);
                         var civil = new L.LayerGroup().addTo(mymap);
+                        var military = new L.LayerGroup().addTo(mymap);
                         
                         <xsl:for-each select="//tei:org[descendant::tei:geo]">
                             <xsl:variable name="id" select="@xml:id"/>
@@ -1628,7 +1643,7 @@
                                 <xsl:when test="@type='religious'">
                                     <xsl:text>L.marker([</xsl:text>                                
                                     <xsl:value-of select="normalize-space(.//tei:geo)"/>
-                                    <xsl:text>])</xsl:text>
+                                    <xsl:text>], {icon:iconB})</xsl:text>
                                     <xsl:text>.bindPopup("</xsl:text><xsl:value-of select="$href"/>                            
                                     <xsl:choose>
                                         <xsl:when test="tei:desc">                                        
@@ -1638,6 +1653,22 @@
                                         </xsl:when>
                                         <xsl:otherwise>
                                             <xsl:text>").addTo(religious); </xsl:text>
+                                        </xsl:otherwise>
+                                    </xsl:choose>
+                                </xsl:when>
+                                <xsl:when test="@type='military'">
+                                    <xsl:text>L.marker([</xsl:text>                                
+                                    <xsl:value-of select="normalize-space(.//tei:geo)"/>
+                                    <xsl:text>], {icon:iconA})</xsl:text>
+                                    <xsl:text>.bindPopup("</xsl:text><xsl:value-of select="$href"/>                            
+                                    <xsl:choose>
+                                        <xsl:when test="tei:desc">                                        
+                                            <xsl:text>&lt;br /&gt;</xsl:text>                                      
+                                            <xsl:value-of select="normalize-space(tei:desc)"/>                                    
+                                            <xsl:text>").addTo(military); </xsl:text>                                        
+                                        </xsl:when>
+                                        <xsl:otherwise>
+                                            <xsl:text>").addTo(military); </xsl:text>
                                         </xsl:otherwise>
                                     </xsl:choose>
                                 </xsl:when>
@@ -1668,7 +1699,7 @@
                                 <xsl:when test="@type='religious'">
                                     <xsl:text>L.marker([</xsl:text>                                
                                     <xsl:value-of select="normalize-space(.//tei:geo)"/>
-                                    <xsl:text>])</xsl:text>
+                                    <xsl:text>], {icon:iconB})</xsl:text>
                                     <xsl:text>.bindPopup("</xsl:text><xsl:value-of select="$href"/>                            
                                     <xsl:choose>
                                         <xsl:when test="tei:desc">                                        
@@ -1678,6 +1709,22 @@
                                         </xsl:when>
                                         <xsl:otherwise>
                                             <xsl:text>").addTo(religious); </xsl:text>
+                                        </xsl:otherwise>
+                                    </xsl:choose>
+                                </xsl:when>
+                                <xsl:when test="@type='military'">
+                                    <xsl:text>L.marker([</xsl:text>                                
+                                    <xsl:value-of select="normalize-space(.//tei:geo)"/>
+                                    <xsl:text>], {icon:iconA})</xsl:text>
+                                    <xsl:text>.bindPopup("</xsl:text><xsl:value-of select="$href"/>                            
+                                    <xsl:choose>
+                                        <xsl:when test="tei:desc">                                        
+                                            <xsl:text>&lt;br /&gt;</xsl:text>                                      
+                                            <xsl:value-of select="normalize-space(tei:desc)"/>                                    
+                                            <xsl:text>").addTo(military); </xsl:text>                                        
+                                        </xsl:when>
+                                        <xsl:otherwise>
+                                            <xsl:text>").addTo(military); </xsl:text>
                                         </xsl:otherwise>
                                     </xsl:choose>
                                 </xsl:when>
@@ -1699,20 +1746,22 @@
                                 </xsl:otherwise>
                             </xsl:choose>                                                                        
                         </xsl:for-each>
-                                                                        
+                        
                         var baseLayers = null;
                         var baseLayers = {
-                        'OSM': base1,
-                        'estampe': base2
+                            'Fond de carte contemporain': base1,
+                            'Carte ancienne': base2
                         };
                         
                         //var baseLayers = null;
                         
                         var overlayMaps = {
-                        "religieux": religious,
-                        "civil": civil,
-                        "limites de Nancy": polygon
+                        "Établissements religieux": religious,
+                        "Établissements civils": civil,
+                        "Établissements militaires": military,
+                        "Limites de la ville en 1766": polygon
                         };
+                        
                                                                                                                                                 
                         L.control.layers(baseLayers, overlayMaps).addTo(mymap);
                         
