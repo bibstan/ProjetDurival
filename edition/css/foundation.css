@@ -12,7 +12,7 @@
    *    without disabling user zoom.
    */
 html {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', Georgia, Times, serif;
   font-family: sans-serif;
   /* 1 */
   -ms-text-size-adjust: 100%;
@@ -24,7 +24,8 @@ html {
    * Remove default margin.
    */
 body {
-  margin: 0; }
+  margin: 0; 
+}
 
 /* HTML5 display definitions
      ========================================================================== */
@@ -374,10 +375,11 @@ html {
 *::after {
   box-sizing: inherit; }
 
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\MODIF POUR DURIVAL/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 body {
   padding: 0;
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Lato", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
   color: #0a0a0a;
@@ -1186,7 +1188,7 @@ td {
   padding: 0; }
 
 p {
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 1.6;
   margin-bottom: 1rem;
   text-rendering: optimizeLegibility; }
@@ -1202,23 +1204,43 @@ b {
   line-height: inherit; }
 
 small {
-  font-size: 80%;
+  font-size: 100%;
   line-height: inherit; }
 
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\MODIF POUR DURIVAL/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+p.note {             
+      font-family: 'Lato', Helvetica, Roboto, Arial, sans-serif;
+color: #555555;    font-size:0.8em;
+}
+
 h1,
-/*h2,*/
-/*h3,*/
+h2,
+h3,
 h4,
 h5,
 h6 {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Playfair Display", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
-  color: inherit;
+ color: #cc6600;
   text-rendering: optimizeLegibility;
   margin-top: 0;
   margin-bottom: 0.5rem;
   line-height: 1.4; }
+  
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\MODIF POUR DURIVAL/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+ /* PARTIES EDITORIALES*/
+.edito, .lead, h2.edito {
+      font-family: 'Lato', Helvetica, Roboto, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+.edito2, h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
   h1 small,
   h2 small,
   h3 small,
@@ -1317,7 +1339,7 @@ blockquote {
   blockquote, blockquote p {
     line-height: 1.6;
     color: #8a8a8a; }
-/*PERSO POUR DURIVAL*/
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\MODIF POUR DURIVAL/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 /*cite {
   display: block;
   font-size: 0.8125rem;
@@ -1791,7 +1813,7 @@ select {
   .form-error.is-visible {
     display: block; }
 
-/*MODIF POUR DURIVAL*/
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\MODIF POUR DURIVAL/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
 .accordion {
   list-style-type: none;
@@ -1801,13 +1823,15 @@ select {
   border-radius: 0;
   margin-left: 0; }
 
-/*MODIF POUR DURIVAL*/
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\MODIF POUR DURIVAL/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
-.accordion-title {
+.accordion-title, span.vedette {
+    font-family: 'Lato', Helvetica, Roboto, Arial, sans-serif;
+   
   display: block;
   padding: 0.8rem 1rem;
-  line-height: 0.8;
-  font-size: 0.75rem;
+  line-height: 1em;
+  font-size: 1.2rem;
   /*color: #2199e8;*/
   position: relative;
   /*border-bottom: 1px solid #e6e6e6;*/ }
@@ -2266,7 +2290,8 @@ select {
 .dropdown.menu > li.is-dropdown-submenu-parent > a {
   padding-right: 1.5rem;
   position: relative; }
-/*MODIF POUR DURIVAL*/
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\MODIF POUR DURIVAL/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
   content: '';
   display: block;
@@ -3168,7 +3193,9 @@ table.hover tr:nth-of-type(even):hover {
   overflow-x: auto; }
   .table-scroll table {
     width: auto; }
-/*MODIF POUR DURIVAL*/
+
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\MODIF POUR DURIVAL/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 .tabs {
   margin: 0;
   list-style-type: none;
@@ -3197,25 +3224,28 @@ table.hover tr:nth-of-type(even):hover {
     color: #fefefe; }
     .tabs.primary > li > a:hover, .tabs.primary > li > a:focus {
       background: #1893e4; }
-
+      
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\MODIF POUR DURIVAL/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 .tabs-title {
   float: left; }
   .tabs-title > a {
     display: block;
     padding: 1.25rem 1.5rem;
     line-height: 1;
-    font-size: 0.75rem; }
+    font-size: 1rem; }
 
-/*MODIF POUR DURIVAL*/
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\MODIF POUR DURIVAL/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
     .tabs-title > a:hover {
     /*  background: #fefefe; */
   background-image: url("../images/fonds/fond2.png");
   }
-/*MODIF POUR DURIVAL*/
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\MODIF POUR DURIVAL/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
     .tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
      background-image: url("../images/fonds/fond2.png");
      }
 
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\MODIF POUR DURIVAL/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 .tabs-content {
 /*  background: #fefefe;*/ 
  transition: all 0.5s ease;
@@ -3231,10 +3261,11 @@ table.hover tr:nth-of-type(even):hover {
   padding: 1rem; }
   .tabs-panel.is-active {
     display: block; }
-/*MODIF POUR DURIVAL*/
-    /*.thumbnail dans app.css*/
 
-.thumbnail {
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\MODIF POUR DURIVAL/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/    
+/*.thumbnail dans app.css*/
+
+/*.thumbnail {
   border: solid 4px #fefefe;
   box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
   display: inline-block;
@@ -3244,7 +3275,7 @@ table.hover tr:nth-of-type(even):hover {
   border-radius: 0;
   margin-bottom: 1rem; }
   .thumbnail:hover, .thumbnail:focus {
-    box-shadow: 0 0 6px 1px rgba(33, 153, 232, 0.5); }
+    box-shadow: 0 0 6px 1px rgba(33, 153, 232, 0.5); }*/
 
 .title-bar {
    background-image: url("../images/fonds/fond2.png");
@@ -3298,8 +3329,8 @@ table.hover tr:nth-of-type(even):hover {
   position: relative;
   display: inline-block;
   cursor: help; }*/
-  
-/*MODIFICATION DURIVAL*/
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\MODIF POUR DURIVAL/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 .tooltip {
   background-color: #fefefe;
   color: 0a0a0a;
@@ -3311,6 +3342,7 @@ table.hover tr:nth-of-type(even):hover {
 /*  max-width: 10rem !important;*/
   max-width: 20rem !important;
   border-radius: 1px; }
+
   .tooltip::before {
     content: '';
     display: block;
@@ -3369,7 +3401,7 @@ table.hover tr:nth-of-type(even):hover {
         -ms-transform: translateY(-50%);
             transform: translateY(-50%); }
 
-/*MODIF POUR DURIVAL*/
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\MODIF POUR DURIVAL/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 .top-bar {
   padding: 0.5rem; }
   .top-bar::before, .top-bar::after {
@@ -3382,6 +3414,8 @@ table.hover tr:nth-of-type(even):hover {
     background-color: #000000; 
 background-image: url("../images/fonds/fond2.png");
   }
+
+
   .top-bar input {
     max-width: 200px;
     margin-right: 1rem; }

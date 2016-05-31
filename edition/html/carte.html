@@ -6,8 +6,9 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="stylesheet" href="../css/app.css" />
       <link rel="stylesheet" href="../css/foundation.css" />
-      <link rel="stylesheet" href="../css/timeliner/timeliner.css" type="text/css" media="screen" />
-      <link rel="stylesheet" href="../js/timeliner/vendor/venobox/venobox.css" type="text/css" media="screen" />
+      <link rel="stylesheet" href="../css/owl-carousel/owl.carousel.css" />
+      <link rel="stylesheet" href="../css/owl-carousel/owl.theme.default.css" />
+      <link href="../css/lightbox/lightbox.css" rel="stylesheet" />
       <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,900,700" rel="stylesheet" type="text/css" />
       <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900,300" rel="stylesheet" type="text/css" />
    </head>
@@ -15,40 +16,39 @@
       <header class="row">
          <div data-sticky-container="true">
             <div class="nav" data-sticky="true" data-options="marginTop:0;">
-               <div class="top-bar">
+               <div class="title-bar" data-responsive-toggle="menu-responsive" data-hide-for="medium"><button class="menu-icon" type="button" data-toggle="true">
+                     <!--button pour foundation responsive--></button><div class="title-bar-title">Menu</div>
+               </div>
+               <div class="top-bar" id="menu-responsive">
                   <div class="top-bar-left">
-                     <ul class="dropdown menu" data-dropdown-menu="true">
+                     <ul class="vertical medium-horizontal menu" data-responsive-menu="drilldown medium-dropdown">
                         <li><a href="../index.html">Accueil</a></li>
-                        <li><a href="calendrier.html">Journal</a>
-                  
-                
-                        </li>
-                        <li><a href="cartes.html">Cartes</a><ul class="menu">
-                           <li><a target="_blank" href="belprey.html">Nancy en 1754</a></li>
-                           <li><a target="_blank" href="mique.html">Nancy en 1778</a></li>
+                        <li><a href="calendrier.html">Le journal</a></li>
+                        <li><a href="carte.html">Cartes</a><ul class="vertical menu">
+                              <li><a target="_blank" href="belprey.html">Nancy en 1754</a></li>
+                              <li><a target="_blank" href="mique.html">Nancy en 1778</a></li>
                               <li><a target="_blank" href="cartographie.html">Nancy aujourd'hui</a></li>
-                              
                            </ul>
                         </li>
                         <li><a href="galerie.html">Galerie</a></li>
-                        <li><a href="#">Focus</a><ul class="menu">
-                              
-                                
-                                    <li><a href="durival.html">Nicolas Durival</a></li>   
-                                     <li><a href="stanislas.html">Stanislas</a></li>
+                        <li><a href="focus.html">Focus</a><ul class="vertical menu">
+                              <li><a href="#">Biographies</a><ul class="vertical menu">
+                                    <li><a href="stanislas.html">Stanislas</a></li>
+                                    <li><a href="durival.html">Durival</a></li>
                                  </ul>
-                        
-                              
+                              </li>
                            </ul>
                         </li>
                      </ul>
                   </div>
                   <div class="top-bar-right">
-                     <ul class="dropdown menu" data-dropdown-menu="true">
-                        <li><a href="#">Index</a><ul class="menu">
-                              <li><a href="listPerson.html">Personnes</a><a href="listPlace.html">Lieux</a><a href="listOrg.html">Institutions</a></li>
-                              <li><a href="">Oeuvres citées</a></li>
-                              <li><a href="">Bibliographie générale</a></li>
+                     <ul class="vertical medium-horizontal menu" data-responsive-menu="drilldown medium-dropdown">
+                        <li><a href="#">Index</a><ul class="vertical menu">
+                              <li><a href="listPerson.html">Personnes</a></li>
+                              <li><a href="listPlace.html">Lieux</a></li>
+                              <li><a href="listOrg.html">Institutions</a></li>
+                              <li><a href="listbib.html">Œuvres citées</a></li>
+                              <li><a href="bibliographie.html">Bibliographie générale</a></li>
                            </ul>
                         </li>
                         <li><a href="apropos.html">À propos</a></li>
@@ -56,8 +56,7 @@
                   </div>
                </div>
             </div>
-         </div><img src="../images/header/header.jpg" alt="header" />
-      </header>
+         </div><img src="../images/header/header.jpg" alt="header" /></header>
       <div class="row">
          <div class="large-12">
             <h2 class="text-center edito2">Les cartes</h2>
@@ -67,7 +66,7 @@
            <!-- <h3 class="text-center edito2">Nancy en 1754</h3> -->
            </br>
         
-   </div><a href="belprey.html" target="blank"><img src="../images/vignettes/vignetteBelprey.png"/></a><h3 class="text-center edito2">Le plan Belprey : 1754</h3>
+   </div><a href="belprey.html" target="blank"><img src="../images/vignettes/vignetteBelprey.gif"/></a><h3 class="text-center edito2">Le plan Belprey : 1754</h3>
 </br>
    <h4 class="edito">Thomas Belprey (1713-1786).</h4>
 <cite class="edito">Plan général des deux villes de Nancy et des nouveaux édifices que sa Majesté le roy de Pologne, duc de Lorraine et de Bar etc. y a fait construire. levé par Belprey, l'un des brigadiers de sa garde en 1754.</cite>
@@ -80,7 +79,7 @@
         <!-- <h3 class="text-center edito2">Nancy hier / aujourd'hui</h3> -->
         </br>
         
-   <a href="mique.html" target="blank"><img src="../images/vignettes/vignetteB543956101_H_FG_ES_00014.png"/></a></div>
+   <a href="mique.html" target="blank"><img src="../images/vignettes/vignetteB543956101_H_FG_ES_00014.gif"/></a></div>
  <h3 class="text-center edito2">Le plan Mique : 1778</h3>
  </br>
    <h4 class="edito">Claude Mique.</h4>
@@ -95,7 +94,7 @@
            </br>
         
    
-   <a href="cartographie.html" target="blank"><img src="../images/vignettes/vignetteCarte.png"/></a>
+   <a href="cartographie.html" target="blank"><img src="../images/vignettes/vignetteCarte.gif"/></a>
 <h3 class="text-center edito2">Nancy aujourd'hui</h3>
  </br>
 <p class="edito">

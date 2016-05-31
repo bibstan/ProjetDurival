@@ -37,7 +37,7 @@
 }
 
 .timeline-wrapper h2 span {
-    background: #9E8A4D; 
+    background: #cc9900; 
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 50px;
@@ -45,7 +45,8 @@
   letter-spacing: 0.1em;
   line-height: 1em;
   padding: 3px 400px 1px;
-
+  font-family: 'Lato', sans-serif;
+    font-weight: 300;
 }
 .timeline-series {
   clear: left;
@@ -66,7 +67,7 @@
   white-space: nowrap;
 }
 .timeline-series dt a {
-  color: #999;
+  color: #333;
   cursor: pointer;
 }
 .timeline-series dt a .closed {
@@ -75,10 +76,10 @@
   margin-left: 0;
 }
 .timeline-series dt a .open {
-  color: #A59E82; 
+  color: #cc9900 
 }
 .timeline-series dt a:hover {
-  color: #A59E82; 
+  color: #cc9900; 
 }
 .timeline-series dd {
   padding-left: 200px;

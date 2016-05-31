@@ -10,14 +10,14 @@
     font-size: 14px;
     margin: 5px;
     padding: 4px 7px;
-    background: #D6D6D6;
+    background: #cc6600;
     display: inline-block;
     cursor: pointer;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px; }
     .owl-theme .owl-nav [class*='owl-']:hover {
-      background: #869791;
+      background: #ff9900;
       color: #FFF;
       text-decoration: none; }
   .owl-theme .owl-nav .disabled {
@@ -36,7 +36,7 @@
       width: 10px;
       height: 10px;
       margin: 5px 7px;
-      background: #D6D6D6;
+      background: #cc6600;
       display: block;
       -webkit-backface-visibility: visible;
       -webkit-transition: opacity 200ms ease;
@@ -48,4 +48,4 @@
       -moz-border-radius: 30px;
       border-radius: 30px; }
     .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-      background: #869791; }
+      background: #663300; }
