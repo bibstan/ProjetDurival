@@ -14,6 +14,7 @@
 <!ENTITY éê '<choice><orig>é</orig><reg>ê</reg></choice>'>
 <!ENTITY ëe '<choice><orig>ë</orig><reg>e</reg></choice>'>
 <!ENTITY aà '<choice><orig>a</orig><reg>à</reg></choice>'>
+<!ENTITY aâ '<choice><orig>a</orig><reg>â</reg></choice>'>
 <!ENTITY oa '<choice><orig>o</orig><reg>a</reg></choice>'>
 <!ENTITY oô '<choice><orig>o</orig><reg>ô</reg></choice>'>
 <!ENTITY iî '<choice><orig>i</orig><reg>î</reg></choice>'>
@@ -1133,9 +1134,9 @@
                         <dateline><date type="entry" when="1765-04-01">1</date></dateline>
                         <p xml:id="d1765040101" ana="#ville #theatre">                           
                            <rs type="person" ref="#intendant">M. l'Intendant</rs> accorde à <persName ref="#nicetti">Nicetti</persName> le remboursement
-                           <lb/>sur la ville des <measure type="currency" quantity="500">500<hi rend="super">#</hi></measure>. de débit de <persName ref="#gronierMlle">M<hi rend="super">lle</hi>. Gronier</persName>,
-                           <lb/>et que les <measure type="currency" quantity="354">354<hi rend="super">#</hi></measure>. qui revenoient à <persName ref="#brisson">Brisson</persName> soient
-                           <lb/>employés au <choice><abbr>payem<hi rend="super">t</hi>.</abbr><expan>payement</expan></choice> des frais de la comédie,
+                           <lb/>sur la ville des <measure type="currency" quantity="500">500<hi rend="super">#</hi></measure>. de débit de <persName ref="#gronierMlle">M.<hi rend="super">lle</hi> Gronier</persName>,
+                           <lb/>et que les <measure type="currency" quantity="354">354<hi rend="super">#</hi></measure>. qui reven&oa;ient à <persName ref="#brisson">Brisson</persName> soient
+                           <lb/>employés au <choice><abbr>payem.<hi rend="super">t</hi></abbr><expan>payement</expan></choice> des frais de la comédie,
                            <lb/>attendu l'insuffisance des recettes depuis la
                            <lb/>séparation des deux troupes.
                         </p>
@@ -1143,16 +1144,16 @@
                      <div type="day" xml:id="d17650405">
                         <dateline><date type="entry" when="1765-04-05">5</date></dateline>
                         <p xml:id="d1765040501" ana="#ville">                           
-                           Nous nous sommes assemblés à <orgName ref="#HDV">l'hotel-de
-                              <lb/>ville</orgName> aujourdhui vendredi Saint. On n'a pas
+                           Nous nous sommes assemblés à <orgName ref="#HDV">l'<choice><orig>hotel-de</orig><reg>hôtel de</reg></choice>
+                              <lb/>ville</orgName> aujourd'hui Vendredi saint. On n'a pas
                            <lb/>jugé à propos de toucher à la taxe de la
-                           <lb/>viande<ref type="note" target="#note17650405A"/>. Nous avons signé 3 déliberations :
-                           <lb/>une pour <placeName ref="#nancyPepiniere">la grande pépiniere</placeName> a former ;
+                           <lb/>viande<ref type="note" target="#note17650405A"/>. Nous avons signé 3 délib&eé;rations :
+                           <lb/>une pour <placeName ref="#nancyPepiniere">la grande pépini&eè;re</placeName> &aà; former ;
                            <lb/>une pour disposer d'une partie des terrains
                            <lb/>pour <placeName ref="#nancyJardin">le jardin de botanique</placeName>, pour <placeName ref="#nancySecherie">la sécherie
                               <lb/>des linges</placeName> près des lavoirs publics ; la
-                           <lb/>3<hi rend="super">e</hi>. Pour accorder aux <choice><abbr>comm<hi rend="super">res</hi>.</abbr><expan>commissaires</expan></choice> de police 2<hi rend="super">ds</hi>.
-                           <lb/>par livre du 20<hi rend="super">e</hi>. d'abonnement.
+                           <lb/>3.<hi rend="super">e</hi> Pour accorder aux <choice><abbr>comm.<hi rend="super">res</hi></abbr><expan>commissaires</expan></choice> de police 2.<hi rend="super">ds</hi>
+                           <lb/>par livre du 20.<hi rend="super">e</hi> d'abonnement.
                         </p>
                      </div>
                      
@@ -1169,22 +1170,22 @@
                         <p xml:id="d1765040901" ana="#ville">                           
                            Aujourdhui à 6 h. <hi rend="super">1</hi>/<hi rend="sub">2</hi> du matin <rs type="person" ref="#intendant">M. l'<choice><abbr>Intend<hi rend="super">t</hi>.</abbr><expan>Intendant</expan></choice></rs>
                            <lb/>m'a fait avertir de partir à 7 <hi rend="super">1</hi>/<hi rend="sub">2</hi> avec lui
-                           <lb/>pour <placeName ref="#luneville">Lunéville</placeName>, où <rs type="person" ref="#stanislas">le roi</rs> nous mandoit, pour
+                           <lb/>pour <placeName ref="#luneville">Lunéville</placeName>, où <rs type="person" ref="#stanislas">le roi</rs> nous mand&oa;it, pour
                            <lb/>consommer un dernier bienfait pour la ville 
                            <lb/>de <placeName ref="#nancy">Nancy</placeName>. L'après midi dans le cabinet
-                           <lb/>du roy, où etoient <rs type="person" ref="#chancelier">M. le Chancelier</rs>, <rs type="person" ref="#intendant">M.
-                              <lb/>l'Intendant</rs> et <persName ref="#durival">moi</persName> ; <rs type="person" ref="#stanislas">le roy</rs> fait relire son
+                           <lb/>du &roy;, où &eé;t&oa;ient <rs type="person" ref="#chancelier">M. le Chancelier</rs>, <rs type="person" ref="#intendant">M.
+                              <lb/>l'Intendant</rs> et <persName ref="#durival">moi</persName> ; <rs type="person" ref="#stanislas">le &roy;</rs> fait relire son
                            <pb facs="B543956101M00863_06_0079_1L" n="76v"/>projet, explique ses intentions ; tout est
                            <lb/>discuté, <rs type="person" ref="#chancelier">M. le Chancelier</rs> chargé de former
                            <lb/>les lettres patentes<ref type="note" target="#note17650409A"/>. <rs type="person" ref="#intendant">M. l'Intendant</rs> retourne
-                           <lb/>à <placeName ref="#nancy">Nancy</placeName>. <rs type="person" ref="#stanislas">Le roy</rs> m'ordonne de rester à <placeName ref="#luneville">Lunèville</placeName>.
+                           <lb/>à <placeName ref="#nancy">Nancy</placeName>. <rs type="person" ref="#stanislas">Le &roy;</rs> m'ordonne de rester à <placeName ref="#luneville">Lun&èé;ville</placeName>.
                         </p>
                      </div>
                      
                      <div type="day" xml:id="d17650411">
                         <dateline><date type="entry" when="1765-04-11">1<subst><del rend="overwritten">2</del><add rend="superimposed">1</add></subst></date></dateline>
                         <p xml:id="d1765041101" ana="#ville">                           
-                           Le lendemain <rs type="person" ref="#chancelier">M. le <choice><abbr>Ch.</abbr><expan>Chancelier</expan></choice></rs> fait la <sic>minutte<ref type="note" target="#note17650411A"/></sic>
+                           Le lendemain <rs type="person" ref="#chancelier">M. le <choice><abbr>Ch.</abbr><expan>Chancelier</expan></choice></rs> fait la <choice><sic>minutte</sic><corr>minute</corr></choice><ref type="note" target="#note17650411A"/>
                            <lb/>des lettres patentes.
                         </p>
                      </div>
@@ -1193,23 +1194,23 @@
                         <dateline><date type="entry" when="1765-04-12">1<subst><del rend="overwritten">3</del><add rend="superimposed">2</add></subst></date></dateline>
                         <p xml:id="d1765041201" ana="#ville">                                                  
                            Aujourdhui elles ont été mises sur le
-                           <lb/>parchemin, <sic>aprouvées</sic> et <sic>aplaudies</sic>
-                           <lb/>par <rs type="person" ref="#stanislas">le roy</rs>, scellées l'après midi. <rs type="person" ref="#stanislas"><choice><abbr>S. M.</abbr><expan>Sa Majesté</expan></choice></rs>
+                           <lb/>parchemin, <choice><sic>aprouvées</sic><corr>approuvées</corr></choice> et <choice><sic>aplaudies</sic><corr>applaudies</corr></choice>
+                           <lb/>par <rs type="person" ref="#stanislas">le &roy;</rs>, scellées l'après midi. <rs type="person" ref="#stanislas"><choice><abbr>S. M.</abbr><expan>Sa Majesté</expan></choice></rs>
                            <lb/>fait don de <measure type="currency" quantity="100000" unit="lF">cent milles livres de France</measure>
-                           <lb/>à la ville, (pour employer par les <choice><abbr>off<hi rend="super">rs</hi>.</abbr><expan>officiers</expan></choice>
-                           <lb/>municipaux avec l'<sic>aprobation</sic> de <rs type="person" ref="#intendant">M.
+                           <lb/>à la ville, (pour employer par les <choice><abbr>off.<hi rend="super">rs</hi></abbr><expan>officiers</expan></choice>
+                           <lb/>municipaux avec l'<choice><sic>aprobation</sic><corr>approbation</corr></choice> de <rs type="person" ref="#intendant">M.
                               <lb/>l'Intendant</rs>, la vente de <measure type="currency" quantity="5000">5000<hi rend="super">#</hi></measure>. à soulager
-                           <lb/>les habitans de <placeName ref="#nancy">Nancy</placeName>, nobles, rentiers
+                           <lb/>les <choice><orig>habitans</orig><reg>habitants</reg></choice> de <placeName ref="#nancy">Nancy</placeName>, nobles, rentiers
                            <lb/>artisans, journalier, de l'un et l'autre
                            <lb/><gap reason="illegible"/>, dans leurs besoins causés par des                       
-                           <lb/>malheurs imprévûs &amp;. <persName ref="#alliot">M. Alliot</persName> me                        
-                           <lb/>donne le <choice><abbr>mandem<hi rend="super">t</hi>.</abbr><expan>mandement</expan></choice><ref type="note" target="#note17650412A"/> pour toucher par <rs type="person" ref="#tresorierNancy">le
-                              <lb/>tresorier de la ville</rs> <measure type="currency" quantity="100000" unit="lF">les cent mille livres</measure>
-                           <lb/>sur <rs type="person" ref="#receveurGeneral">le <choice><abbr>recev. g<hi rend="super">l</hi>.</abbr><expan>receveur général</expan></choice> des fermes</rs>.
+                           <lb/>malheurs imprév&ûu;s &amp;. <persName ref="#alliot">M. Alliot</persName> me                        
+                           <lb/>donne le <choice><abbr>mandem.<hi rend="super">t</hi></abbr><expan>mandement</expan></choice><ref type="note" target="#note17650412A"/> pour toucher par <rs type="person" ref="#tresorierNancy">le
+                              <lb/>tr&eé;sorier de la ville</rs> <measure type="currency" quantity="100000" unit="lF">les cent mille livres</measure>
+                           <lb/>sur <rs type="person" ref="#receveurGeneral">le <choice><abbr>recev. g.<hi rend="super">l</hi></abbr><expan>receveur général</expan></choice> des fermes</rs>.
                         </p>
                         <p xml:id="d1765041202" ana="#ville">
                            Je visite l'après midi <placeName ref="#luneManu">la manufacture
-                           <lb/>nouvelle</placeName> etablie à <placeName ref="#luneville">Luneville</placeName> au <placeName ref="#villerFbg">fauxbourg
+                           <lb/>nouvelle</placeName> &eé;tablie à <placeName ref="#luneville">Lun&eé;ville</placeName> au <placeName ref="#villerFbg"><choice><orig>fauxbourg</orig><reg>faubourg</reg></choice>
                            <lb/>de Viller</placeName>
                         </p>
                         <p xml:id="d1765041203" ana="#ville">
@@ -1222,17 +1223,17 @@
                      <div type="day" xml:id="d17650413">
                         <dateline><date type="entry" when="1765-04-13">13</date></dateline>
                         <p xml:id="d1765041301" ana="#ville">                           
-                           Le samedi assemblée de <orgName ref="#HDV">l'hotel de ville</orgName>. Nous
+                           Le samedi assemblée de <orgName ref="#HDV">l'h&oô;tel de ville</orgName>. Nous
                            <lb/>faisons, la distribution de cette somme. <persName ref="#mique">M.
                               <lb/>Mique</persName> y est pour <measure type="currency" quantity="57000" unit="lL">57000<hi rend="super">#</hi> de Lorraine</measure>
-                           <lb/>qui complettent les <measure type="currency" quantity="120000" unit="lF">120000<hi rend="super">#</hi>. de France</measure>
-                           <lb/>dont la ville contribuë aux <placeName ref="#nancyCasernes">casernes</placeName>.
+                           <lb/>qui <choice><orig>complettent</orig><reg>complètent</reg></choice> les <measure type="currency" quantity="120000" unit="lF">120000<hi rend="super">#</hi>. de France</measure>
+                           <lb/>dont la ville contribu&ëe; aux <placeName ref="#nancyCasernes">casernes</placeName>.
                         </p>
                         <p xml:id="d1765041302">
-                           Le soir fort tard <persName ref="#stainville #stainvilleMme">M. et M<hi rend="super">e</hi>.de Stainville</persName>
-                           <lb/>arrivent de <placeName ref="#metz">Mets</placeName> et logent à <placeName ref="#hotelCommandant">l'hotel du
+                           Le soir fort tard <persName ref="#stainville #stainvilleMme">M. et M.<hi rend="super">e</hi> de Stainville</persName>
+                           <lb/>arrivent de <placeName ref="#metz"><choice><orig>Mets</orig><reg>Metz</reg></choice></placeName> et logent à <placeName ref="#hotelCommandant">l'h&oô;tel du
                               <lb/>commandant</placeName>, où le nouvel ameublement
-                           <lb/>etoit préparé.
+                           <lb/>&eé;t&oa;it préparé.
                         </p>
                      </div>
                      
@@ -1251,24 +1252,24 @@
                               </seg>
                            </seg>
                            <p>                                                                        
-                              <lb/>Je ne pourrai vous exprimer que tres <choice><abbr>imparfaitem</abbr><expan>imparfaitement</expan></choice>
-                              <lb/>les sentimens d'admiration, d'<subst><del rend="strikethrough">atendrisse</del> <add place="above"><choice><abbr>attendrissem<hi rend="super">t</hi></abbr><expan>attendrissement</expan></choice></add></subst> et
+                              <lb/>Je ne pourrai vous exprimer que tr&eè;s <choice><abbr>imparfaitem</abbr><expan>imparfaitement</expan></choice>
+                              <lb/>les <choice><orig>sentimens</orig><reg>sentiments</reg></choice> d'admiration, d'<subst><del rend="strikethrough">atendrisse</del> <add place="above"><choice><abbr>attendrissem<hi rend="super">t</hi></abbr><expan>attendrissement</expan></choice></add></subst> et
                               <lb/>d'amour dont tous les cœurs ont été pénétrés
-                              <lb/>en <sic>aprenant</sic> les dernieres graces que <rs type="person" ref="#stanislas">le roy</rs>
+                              <lb/>en <choice><sic>aprenant</sic><corr>apprenant</corr></choice> les derni&eè;res gr&aâ;ces que <rs type="person" ref="#stanislas">le &roy;</rs>
                               <lb/>a <del rend="strikethrough">bien voulu</del> <add place="above">daigné</add> répandre sur <placeName ref="#nancy">la ville de Nancy</placeName>.
                               <lb/>Le corps municipal infiniment honoré des
                               <lb/>marques <add place="above">si</add> distinguées de la confiance que
-                              <lb/><rs type="person" ref="#stanislas"><choice><abbr>S. M.</abbr><expan>Sa Majesté</expan></choice></rs> veut bien avoir en lui imaginoit
+                              <lb/><rs type="person" ref="#stanislas"><choice><abbr>S. M.</abbr><expan>Sa Majesté</expan></choice></rs> veut bien avoir en lui imagin&oa;it
                               <lb/>toutes sortes de choses pour en témoigner sa
-                              <lb/>vive reconnoissance. Il a été besoin d'<sic>arrêt</sic>
-                              <lb/>des mouvemens si naturels <add place="above"><choice><abbr>cepend<hi rend="super">t</hi>.</abbr><expan>cependant</expan></choice></add> et si justes, pour
-                              <lb/>se <sic>raprocher</sic> des intentions du <rs type="person" ref="#stanislas">1<hi rend="super">er</hi> prince</rs> dont
+                              <lb/>vive reconn&oa;issance. Il a été besoin d'arrêt
+                              <lb/>des <choice><orig>mouvemens</orig><reg>mouvements</reg></choice> si naturels <add place="above"><choice><abbr>cepend.<hi rend="super">t</hi></abbr><expan>cependant</expan></choice></add> et si justes, pour
+                              <lb/>se <choice><sic>raprocher</sic><corr>rapprocher</corr></choice> des intentions du <rs type="person" ref="#stanislas">1<hi rend="super">er</hi> prince</rs> dont
                               <lb/>la bienfaisance et les bontés sont sans bornes.
-                              <lb/>La memoire <add place="above">en</add> passera d'âge en âge et ne
+                              <lb/>La m&eé;moire <add place="above">en</add> passera d'âge en âge et ne
                               <lb/>s'effacera jamais. Je me suis chargé, Mgr,
                               <lb/>de vous suplier très humblement de nous
-                              <pb facs="B543956101M00863_06_0080_1L" n="77v"/>mettre aux piés de <rs type="person" ref="#stanislas"><choice><abbr>S. M.</abbr><expan>Sa Majesté</expan></choice></rs> avec tous les
-                              <lb/>habitans de <placeName ref="#nancy">Nancy</placeName>, qui ne cesseront
+                              <pb facs="B543956101M00863_06_0080_1L" n="77v"/>mettre aux <choice><orig>piés</orig><reg>pieds</reg></choice> de <rs type="person" ref="#stanislas"><choice><abbr>S. M.</abbr><expan>Sa Majesté</expan></choice></rs> avec tous les
+                              <lb/><choice><orig>habitans</orig><reg>habitants</reg></choice> de <placeName ref="#nancy">Nancy</placeName>, qui ne cesseront
                               <lb/><del rend="strikethrough">jamais</del> de la bénir, et de faire les vœux
                               <lb/>les plus ardents pour que le ciel daigne
                               <lb/><del rend="strikethrough">nous le</del> conserver <rs type="person" ref="#stanislas">le roi</rs> qu'il nous a
@@ -1291,31 +1292,31 @@
                         <dateline><date type="entry" when="1765-04-16">16</date></dateline>
                         <p xml:id="d1765041601" ana="#bio">                           
                            Je pars de <placeName ref="#nancy">Nancy</placeName> <date when="1765-04-16">le mardi 16</date> pour <placeName ref="#stAubin">S<hi rend="super">t</hi>.
-                              <lb/>Aubun</placeName>, où je trouve <persName ref="#durivalMere">ma mere</persName> fort malade.
+                              <lb/>Aubun</placeName>, où je trouve <persName ref="#durivalMere">ma m&eè;re</persName> fort malade.
                         </p>
                      </div>
                      
                      <div type="day" xml:id="d17650419">
                         <dateline><date type="entry" when="1765-04-19">19</date></dateline>
                         <p xml:id="d1765041901" ana="#cour">                           
-                           De retour à <placeName ref="#nancy">Nancy</placeName> <date when="1765-04-19">le 19</date>. Il y avoit outre
-                           <lb/><persName ref="#stainville">M. de Stainville</persName>, <persName ref="#anhalt">M. le <choice><abbr>P<hi rend="super">ce</hi>.</abbr><expan>prince</expan></choice> d'Anhalt</persName> et <persName ref="#armentieres">M.
-                              <lb/>le <choice><abbr>m<hi rend="super">i</hi>.</abbr><expan>marquis</expan></choice> d'Armentieres</persName>. Ils avoient mangé
-                           <lb/>plusieurs fois <sic>chès</sic> <rs type="person" ref="#intendant">M. l'Intendant</rs>.
+                           De retour à <placeName ref="#nancy">Nancy</placeName> <date when="1765-04-19">le 19</date>. Il y av&oa;it outre
+                           <lb/><persName ref="#stainville">M. de Stainville</persName>, <persName ref="#anhalt">M. le <choice><abbr>p.<hi rend="super">ce</hi></abbr><expan>prince</expan></choice> d'Anhalt</persName> et <persName ref="#armentieres">M.
+                              <lb/>le <choice><abbr>m.<hi rend="super">is</hi></abbr><expan>marquis</expan></choice> d'Armenti&eè;res</persName>. Ils av&oa;ient mangé
+                           <lb/>plusieurs fois <choice><sic>chès</sic><corr>chez</corr></choice> <rs type="person" ref="#intendant">M. l'Intendant</rs>.
                         </p>
                      </div>
                      
                      <div type="day" xml:id="d17650420">
                         <dateline><date type="entry" when="1765-04-20">20</date></dateline>
                         <p xml:id="d1765042001" ana="#fetes">                           
-                           Grand concert <sic>chès</sic> <persName ref="#stainvilleMme">M<hi rend="super">e</hi>. de Stainville</persName>.
+                           Grand concert <choice><sic>chès</sic><corr>chez</corr></choice> <persName ref="#stainvilleMme"><choice><abbr>M.<hi rend="super">e</hi></abbr><expan>madame</expan></choice> de Stainville</persName>.
                         </p>
                      </div>
                      
                      <div type="day" xml:id="d17650421">
                         <dateline><date type="entry" when="1765-04-21">21</date></dateline>
                         <p xml:id="d1765042101" ana="#fetes">                           
-                           Concert à <placeName ref="#nancyComedie">la comédie</placeName> au profit des s<hi rend="super">rs</hi>.
+                           Concert à <placeName ref="#nancyComedie">la comédie</placeName> au profit des S.<hi rend="super">rs</hi>
                            <lb/><space/>musiciens de <rs type="person" ref="#anhalt">M. le <choice><abbr>p<hi rend="super">ce</hi></abbr><expan>prince</expan></choice></rs>.
                         </p>
                      </div>
@@ -1323,8 +1324,8 @@
                      <div type="day" xml:id="d17650424">
                         <dateline><date type="entry" when="1765-04-24">24</date></dateline>
                         <p xml:id="d1765042401" ana="#ville">                           
-                           Redoute. <orgName ref="#HDV">L'hotel de ville</orgName> a signé le contrat
-                           <lb/>de vente de la maison derriere celle de <placeName ref="#nancyStSebastien">la
+                           Redoute. <orgName ref="#HDV">L'h&oô;tel de ville</orgName> a signé le contrat
+                           <lb/>de vente de la maison derri&eè;re celle de <placeName ref="#nancyStSebastien">la
                               <lb/>cure de S. Sebastien</placeName>, à <measure type="currency" quantity="9000">9000<hi rend="super">#</hi></measure> au <persName ref="#brouck">S. Brouck</persName>
                            <lb/>pour y etablir une manufacture
                         </p>
@@ -1342,8 +1343,8 @@
                      <div type="day" xml:id="d17650425">
                         <dateline><date type="entry" when="1765-04-25">25</date></dateline>
                         <p xml:id="d1765042501" ana="#meteo #theatre">                           
-                           Pluye douce. Second concert à <placeName ref="#nancyComedie">la comédie</placeName>
-                           <lb/>par deux excellens musiciens, les <persName ref="#provere">S<hi rend="super">rs</hi>.
+                           <choice><orig>Pluye</orig><reg>Pluie</reg></choice> douce. Second concert à <placeName ref="#nancyComedie">la comédie</placeName>
+                           <lb/>par deux <choice><orig>excellens</orig><reg>excellents</reg></choice> musiciens, les <persName ref="#provere">S.<hi rend="super">rs</hi>
                               <lb/>Provére</persName> et <space/>
                         </p>
                      </div>
@@ -1357,8 +1358,8 @@
                         </p>
                         <p xml:id="d1765042602">
                            La seconde <choice><abbr>éd.</abbr><expan>édition</expan></choice> de l'<title ref="#bib33">Essai sur le luxe</title> de
-                           <lb/><persName type="author" ref="#lambert">M. de S. Lambert</persName>, avec des changemens de
-                           <lb/>l'auteur paroît chès <persName ref="#leClerc">le Clerc</persName> à <placeName ref="#nancy">Nancy</placeName>.
+                           <lb/><persName type="author" ref="#lambert">M. de S. Lambert</persName>, avec des <choice><orig>changemens</orig><reg>changements</reg></choice> de
+                           <lb/>l'auteur par&oa;ît <choice><sic>chès</sic><corr>chez</corr></choice> <persName ref="#leClerc">Le Clerc</persName> à <placeName ref="#nancy">Nancy</placeName>.
                         </p>
                      </div>
                      
@@ -1366,8 +1367,8 @@
                         <dateline><date type="entry" when="1765-04-28">28</date></dateline>
                         <p xml:id="d1765042801" ana="#fetes">                                                   
                            <rs type="person" ref="#intendant">M. l'Intendant</rs> donne une fête brillante
-                           <lb/>à <persName ref="#stainvilleMme">M<hi rend="super">e</hi>. la comtesse de Stainville</persName>, grand souper,
-                           <lb/>grand bal ; le salon de l'intendance etoit
+                           <lb/>à <persName ref="#stainvilleMme"><choice><abbr>M.<hi rend="super">e</hi></abbr><expan>madame</expan></choice> la comtesse de Stainville</persName>, grand souper,
+                           <lb/>grand bal ; le salon de l'intendance &eé;t&oa;it
                            <lb/>éclairé de cinq lustres et de girandoles<ref type="note" target="#note17650428A"/>.
                         </p>
                      </div>
@@ -1375,8 +1376,8 @@
                      <div type="day" xml:id="d17650430">
                         <dateline><date type="entry" when="1765-04-30">30</date></dateline>
                         <p xml:id="d1765043001" ana="#cour">                           
-                           <rs type="person" ref="#stanislas">Le roy de <choice><abbr>P.</abbr><expan>Pologne</expan></choice></rs> arrive à <placeName ref="#malgrange">la Malgrange</placeName> aujourd'hui
-                           <lb/>mardi vers 5 heures du Soir.
+                           <rs type="person" ref="#stanislas">Le &roy; de <choice><abbr>P.</abbr><expan>Pologne</expan></choice></rs> arrive à <placeName ref="#malgrange">la Malgrange</placeName> aujourd'hui
+                           <lb/>mardi vers 5 heures du soir.
                         </p>
                      </div>                  
                   </div>
@@ -1388,79 +1389,79 @@
                      <div type="day" xml:id="d17650501">
                         <dateline><date type="entry" when="1765-05-01">1<hi rend="super">er</hi>.</date></dateline>
                         <p xml:id="d1765050101" ana="#cour">                           
-                           J'ai vû aujourd'hui <rs type="person" ref="#stanislas"><choice><abbr>S. M. Pol.</abbr><expan>Sa Majesté Polonaise</expan></choice></rs> <persName ref="#stainvilleMme">la comtesse
-                           <lb/>de Stainville</persName> &amp;. a dîné à <placeName ref="#malgrange">la <choice><abbr>Malg</abbr><expan>Malgrange</expan></choice></placeName>.
+                           J'ai v&ûu; aujourd'hui <rs type="person" ref="#stanislas"><choice><abbr>S. M. Pol.</abbr><expan>Sa Majesté Polonaise</expan></choice></rs> <persName ref="#stainvilleMme">la comtesse
+                           <lb/>de Stainville</persName> &etc;. a dîné à <placeName ref="#malgrange">la <choice><abbr>Malg</abbr><expan>Malgrange</expan></choice></placeName>.
                         </p>
                      </div>
                      
                      <div type="day" xml:id="d17650502">
                         <dateline><date type="entry" when="1765-05-02">2</date></dateline>
                         <p xml:id="d1765050201" ana="#cour">                           
-                           <rs type="person" ref="#stanislas">Le roy de <choice><abbr>P.</abbr><expan>Pologne</expan></choice></rs> vient à <placeName ref="#nancy">Nancy</placeName> à onze heures
-                           <lb/>du matin et dîne à midi <sic>chès</sic> <persName ref="#stainville">M. le comte
-                           <lb/>de Stainville</persName>, où il y avait une table de
-                           <lb/>24 couverts <add place="above">la garde avoit pour la 1<hi rend="super">re</hi>. fois, son <choice><abbr>habillemt</abbr><expan>habillement</expan></choice> neuf.</add>. On avoit posé une face
+                           <rs type="person" ref="#stanislas">Le &roy; de <choice><abbr>P.</abbr><expan>Pologne</expan></choice></rs> vient à <placeName ref="#nancy">Nancy</placeName> à onze heures
+                           <lb/>du matin et dîne à midi <choice><sic>chès</sic><corr>chez</corr></choice> <persName ref="#stainville">M. le comte
+                           <lb/>de Stainville</persName>, où il y av&oa;it une table de
+                           <lb/>24 couverts <add place="above">la garde av&oa;it pour la 1.<hi rend="super">re</hi> fois, son <choice><abbr>habillemt</abbr><expan>habillement</expan></choice> neuf.</add>. On av&oa;it posé une face
                            <lb/>de la décoration du feu d'artifice qui sera
-                           <lb/>tiré autour de <rs type="artwork">la statuë de <choice><abbr>L.</abbr><expan>Louis</expan></choice> XV</rs> le
-                           <lb/>jour de S<hi rend="super">t</hi>. Stanislas.
+                           <lb/>tiré autour de <rs type="artwork">la statu&ëe; de <choice><abbr>L.</abbr><expan>Louis</expan></choice> XV</rs> le
+                           <lb/>jour de S.<hi rend="super">t</hi> Stanislas.
                         </p>
                         <p xml:id="d1765050202" ana="#aca">
-                           Assemblée particuliere de <orgName ref="#academie">l'Academie</orgName>, où
-                           <lb/>étoient M<hi rend="super">rs</hi>. <persName ref="#rouvrois">du Rouvrois</persName>, <persName ref="#sivry">de Sivry</persName>, <persName ref="#solignac">de
+                           Assemblée particuli&eè;re de <orgName ref="#academie">l'Acad&eé;mie</orgName>, où
+                           <lb/>ét&oa;ient M.<hi rend="super">rs</hi> <persName ref="#rouvrois">du Rouvrois</persName>, <persName ref="#sivry">de Sivry</persName>, <persName ref="#solignac">de
                            <lb/>Solignac</persName>, <persName ref="#leslie">P. Leslie</persName>, <persName ref="#tervenus">abbé de Tervenus</persName>, <persName ref="#andre">André</persName>
-                           <lb/><persName ref="#thibault">Thibault</persName>, <persName ref="#bagard">Bagard</persName>, <persName ref="#durival">Durival l'ainé</persName>, <persName ref="#durivalJean">Durival
+                           <lb/><persName ref="#thibault">Thibault</persName>, <persName ref="#bagard">Bagard</persName>, <persName ref="#durival">Durival l'a&iî;né</persName>, <persName ref="#durivalJean">Durival
                            <lb/>cadet</persName>, <persName ref="#niceville">de Nicéville</persName>.
                         </p>
                         <p xml:id="d1765050203" ana="#aca">
-                           <persName ref="#solignac">M. de Solignac</persName> a lû ce qui a été écrit
-                           <lb/>de la séance du <date when="1765-04-17">17 avril</date>, où on avoit
+                           <persName ref="#solignac">M. de Solignac</persName> a l&ûu; ce qui a été écrit
+                           <lb/>de la séance du <date when="1765-04-17">17 avril</date>, où on av&oa;it
                            <lb/>refusé d'admettre <persName ref="#uriot">le S. Uriot</persName>, parce qu'il
-                           <lb/>avoit été comédien. <persName ref="#rouvrois">M. du Rouvrois</persName> le
-                           <lb/>discours <choice><abbr>q<hi rend="super">l</hi>.</abbr><expan>qu'il</expan></choice> prononcera comme directeur
-                           <lb/>le jour de S. Stanislas. <persName ref="#leslie">Le P. Leslie</persName> a lû
-                           <lb/><rs type="bibl" ref="#bib1">le discours de reception de <persName type="author" ref="#millot">M. l'abbé Millot</persName></rs>
-                           <lb/>un academicien de <placeName ref="#lyon">Lyon</placeName>, couronné par <choice><abbr>plus<hi rend="super">s</hi>.</abbr><expan>plusieurs</expan></choice>
+                           <lb/>av&oa;it été comédien. <persName ref="#rouvrois">M. du Rouvrois</persName> le
+                           <lb/>discours <choice><abbr>q.<hi rend="super">l</hi></abbr><expan>qu'il</expan></choice> prononcera comme directeur
+                           <lb/>le jour de S. Stanislas. <persName ref="#leslie">Le P. Leslie</persName> a l&ûu;
+                           <lb/><rs type="bibl" ref="#bib1">le discours de r&eé;ception de <persName type="author" ref="#millot">M. l'abbé Millot</persName></rs>
+                           <lb/>un acad&eé;micien de <placeName ref="#lyon">Lyon</placeName>, couronné par <choice><abbr>plus.<hi rend="super">s</hi></abbr><expan>plusieurs</expan></choice>
                            <lb/>academies. <persName ref="#solignac">M. de Solignac</persName> l'éloge de feu
-                           <lb/><persName ref="#henry">M. Henry</persName> <choice><abbr>P<hi rend="super">r</hi>.</abbr><expan>procureur</expan></choice> du roy à <placeName ref="#toul">Toul</placeName>, academicien
+                           <lb/><persName ref="#henry">M. Henry</persName> <choice><abbr>p.<hi rend="super">r</hi></abbr><expan>procureur</expan></choice> du &roy; à <placeName ref="#toul">Toul</placeName>, acad&eé;micien
                            <lb/>on a déterminé que la séance publique
-                           <lb/>commenceroit par la lecture de cet ouvrage
-                           <pb facs="B543956101M00863_06_0081_2R"/><fw type="pageNum" n="79" place="topRight">79</fw>qu'ensuite <persName ref="#bagard">M. Bagard</persName> liroit ce qu'il a fait
+                           <lb/>commencer&oa;it par la lecture de cet ouvrage
+                           <pb facs="B543956101M00863_06_0081_2R"/><fw type="pageNum" n="79" place="topRight">79</fw>qu'ensuite <persName ref="#bagard">M. Bagard</persName> lir&oa;it ce qu'il a fait
                            <lb/>sur <rs type="bibl" ref="#bib1">les eaux de <placeName ref="#luxeuil">Luxeuil</placeName></rs>. Puis <rs type="bibl" ref="#bib2">le discours
                            <lb/>de <persName type="author" ref="#millot">M. l'abbé Millot</persName></rs>, après <persName ref="#rouvrois">M. du Rouvrois</persName>
-                           <lb/>prononceroit <rs type="bibl" ref="#bib3">le sien</rs>. On avoit <sic>renouvellé</sic>
-                           <lb/>la prétention que les academiciens qui sont
-                           <lb/>de <placeName ref="#nancy">Nancy</placeName> viendroient à <orgName ref="#academie">l'Academie</orgName> et
-                           <lb/>travailleroient, ou seroient rayés du tableau
-                           <lb/>mais on s'en est tenu à ce qui avoit été
+                           <lb/>prononcer&oa;it <rs type="bibl" ref="#bib3">le sien</rs>. On av&oa;it <choice><orig><sic>renouvellé</sic></orig><corr>renouvelé</corr></choice>
+                           <lb/>la prétention que les acad&eé;miciens qui sont
+                           <lb/>de <placeName ref="#nancy">Nancy</placeName> viendr&oa;ient à <orgName ref="#academie">l'Acad&eé;mie</orgName> et
+                           <lb/>travailler&oa;ient, ou ser&oa;ient rayés du tableau
+                           <lb/>mais on s'en est tenu à ce qui av&oa;it été
                            <lb/>réglé auparavant, en faveur de la liberté.
                            <lb/><persName ref="#leBas">M. Le Bas</persName>, qui a écrit en faveur des
                            <lb/>naissances tardives a été proposé pour
-                           <lb/>academicien associé, sur quoi j'ai representé
-                           <lb/>l'abus d'admettre à <orgName ref="#academie">l'Academie</orgName> tous ceux qui
-                           <lb/>feroient imprimer &amp;.
+                           <lb/>acad&eé;micien associé, sur quoi j'ai repr&eé;senté
+                           <lb/>l'abus d'admettre à <orgName ref="#academie">l'Acad&eé;mie</orgName> tous ceux qui
+                           <lb/>fer&oa;ient imprimer &etc;.
                         </p>                     
                      </div>
                      
                      <div type="day" xml:id="d17650505">
                         <dateline><date type="entry" when="1765-05-05">5</date></dateline>
                         <p xml:id="d1765050501" ana="#ville">                            
-                           <rs type="person" ref="#stanislas">Le roy de <choice><abbr>Pol.</abbr><expan>Pologne</expan></choice></rs> vient vers 3 h <hi rend="super">1</hi>/<hi rend="sub">2</hi> après midi
-                           <lb/>voir <placeName ref="#nancyCasernes">les casernes</placeName>. Il y avoit dans sa voiture
+                           <rs type="person" ref="#stanislas">Le &roy; de <choice><abbr>Pol.</abbr><expan>Pologne</expan></choice></rs> vient vers 3 h <hi rend="super">1</hi>/<hi rend="sub">2</hi> après midi
+                           <lb/>voir <placeName ref="#nancyCasernes">les casernes</placeName>. Il y av&oa;it dans sa voiture
                            <lb/><rs type="person" ref="#chancelier">M. le Chancelier</rs>, <persName ref="#stainville">M. le comte de Stainville</persName>
-                           <lb/>et <persName ref="#sommievre">M. de Sommievre</persName>. Après avoir vû le plus
-                           <lb/>près possible les bâtimens il est entré au
+                           <lb/>et <persName ref="#sommievre">M. de Sommievre</persName>. Après avoir v&ûu; le plus
+                           <lb/>près possible les <choice><orig>bâtimens</orig><reg>bâtiments</reg></choice> il est entré au
                            <lb/><placeName ref="#nancyJardin">jardin de botanique</placeName>. On a beaucoup crié
-                           <lb/><quote><hi rend="underline">vive le Roy</hi></quote>
+                           <lb/><quote><hi rend="underline">vive le &roy;</hi></quote>
                         </p>
                         <p xml:id="d1765050502" ana="#necro">
                            Hier mourrut <space/> <persName ref="#mestivier">Mestivier</persName>, fameux
-                           <lb/>dans le <sic>controlle</sic> des actes
+                           <lb/>dans le <choice><sic>controlle</sic><corr>contrôle</corr></choice> des actes
                         </p>
                      </div>
                      <div type="day" xml:id="d17650506">
                         <dateline><date type="entry" when="1765-05-06">6</date></dateline>
                         <p xml:id="d1765050601" ana="#cour">                           
-                           <rs type="person" ref="#stanislas">Le roy</rs> est parti aujourdhui de <placeName ref="#malgrange">la Malgrange</placeName>
+                           <rs type="person" ref="#stanislas">Le &roy;</rs> est parti aujourd'hui de <placeName ref="#malgrange">la Malgrange</placeName>
                            <lb/>après son dîner.
                         </p>
                      </div>
@@ -1476,72 +1477,72 @@
                      <div type="day" xml:id="d17650508">
                         <dateline><date type="entry" when="1765-05-08">8</date></dateline>
                         <p xml:id="d1765050801" ana="#aca">                           
-                           <orgName ref="#academie">L'Academie</orgName> s'est assemblée à dix heures du
-                           <lb/>matin <sic>chès</sic> <persName ref="#rouvrois">M. du Rouvrois</persName> <choice><abbr>P. Prés</abbr><expan>premier président</expan></choice>. De là
+                           <orgName ref="#academie">L'Acad&eé;mie</orgName> s'est assemblée à dix heures du
+                           <lb/>matin <choice><sic>chès</sic><corr>chez</corr></choice> <persName ref="#rouvrois">M. du Rouvrois</persName> <choice><abbr>p. prés</abbr><expan>premier président</expan></choice>. De là
                            <lb/>on est allé à la messe aux <placeName ref="#nancyCordeliers">Cordeliers</placeName>. <persName ref="#gautier">Le P.
-                              <lb/>Gautier</persName> <choice><abbr>jes.</abbr><expan>jésuite</expan></choice> a prononcé le panegyrique<ref type="note" target="#note17650508A"/> de
+                              <lb/>Gautier</persName> <choice><abbr>jes.</abbr><expan>jésuite</expan></choice> a prononcé le pan&eé;gyrique<ref type="note" target="#note17650508A"/> de
                            <lb/>S. Stanislas. On est sorti à midi, et <rs type="person" ref="#rouvrois">M.
                               <lb/>le premier</rs> a donné un grand dîner. À
                            <lb/>trois après midi l'assemblée publique dans
-                           <lb/><placeName ref="#nancyHDV">le grand salon de l'hotel de ville</placeName>, où etoient
-                           <lb/>M<hi rend="super">rs</hi>. <persName ref="#rouvrois">du Rouvrois</persName>, <choice><abbr>direct.</abbr><expan>directeur</expan></choice>, <persName ref="#sivry">de Sivry</persName>, <choice><abbr>sousdir.</abbr><expan>sous directeur</expan></choice>
-                           <lb/><persName ref="#solignac">de Solignac</persName> <choice><abbr>sec<hi rend="super">re</hi>.</abbr><expan>secrétaire</expan></choice> <persName ref="#andre">André</persName>, <persName ref="#tervenus">Tervenus</persName>, <persName ref="#leslie">P. Leslie</persName>
+                           <lb/><placeName ref="#nancyHDV">le grand salon de l'h&oô;tel de ville</placeName>, où &eé;t&oa;ient
+                           <lb/>M.<hi rend="super">rs</hi> <persName ref="#rouvrois">du Rouvrois</persName>, <choice><abbr>direct.</abbr><expan>directeur</expan></choice>, <persName ref="#sivry">de Sivry</persName>, <choice><abbr>sousdir.</abbr><expan>sous directeur</expan></choice>
+                           <lb/><persName ref="#solignac">de Solignac</persName> <choice><abbr>sec.<hi rend="super">re</hi></abbr><expan>secrétaire</expan></choice> <persName ref="#andre">André</persName>, <persName ref="#tervenus">Tervenus</persName>, <persName ref="#leslie">P. Leslie</persName>
                            <lb/><persName ref="#husson">P. Husson</persName>, <persName ref="#bagard">Bagard</persName>, <persName ref="#harmant">Harmant</persName>, <persName ref="#cupers">Cupers</persName>,
                            <lb/><persName ref="#beauchamps">de Beauchamp</persName>, <persName ref="#sozzi">de Sozzi</persName>, <persName ref="#plaid">Plaid</persName>,
-                           <lb/><persName ref="#durival">Durival l'ainé</persName>.
+                           <lb/><persName ref="#durival">Durival l'a&iî;né</persName>.
                         </p>
                         <p xml:id="d1765050802" ana="#aca">
                            <persName ref="#solignac">M. de Solignac</persName> a ouvert la séance par
-                           <lb/>l'éloge de <persName ref="#henry">M. Henry</persName> <choice><abbr>P<hi rend="super">r</hi>.</abbr><expan>procureur</expan></choice> du roy à <placeName ref="#toul">Toul</placeName>,
-                           <lb/>academicien mort au <date when="1765-01">mois de <choice><abbr>jan<hi rend="super">er</hi>.</abbr><expan>janvier</expan></choice> dernier</date>
-                           <lb/>et qui avoit été reçu il y a un an le <date when="1764-05-08">8. mai</date>.
-                           <lb/>Ensuite <persName ref="#coster">le S. Joseph Coster</persName> dont la reception
-                           <lb/>avoit été différée a enfin été reçu. Il a
+                           <lb/>l'éloge de <persName ref="#henry">M. Henry</persName> <choice><abbr>p.<hi rend="super">r</hi></abbr><expan>procureur</expan></choice> du &roy; à <placeName ref="#toul">Toul</placeName>,
+                           <lb/>acad&eé;micien mort au <date when="1765-01">mois de <choice><abbr>jan.<hi rend="super">er</hi></abbr><expan>janvier</expan></choice> dernier</date>
+                           <lb/>et qui av&oa;it été reçu il y a un an le <date when="1764-05-08">8. mai</date>.
+                           <lb/>Ensuite <persName ref="#coster">le S. Joseph Coster</persName> dont la r&eé;ception
+                           <lb/>av&oa;it été différée a enfin été reçu. Il a
                            <lb/>traité dans <rs type="bibl" ref="#bib66">son discours</rs> des qualités qui font
-                           <lb/>de bon citoyen. <persName ref="#sozzi">M. de Sozzi</persName> a lû <rs type="bibl" ref="#bib2">le discours
-                              <lb/>de reception de <persName type="author" ref="#millot">M. l'abbé Millot</persName></rs> de <orgName ref="#academieLyon">l'<choice><abbr>Acad.</abbr><expan>Académie</expan></choice>
+                           <lb/>de bon citoyen. <persName ref="#sozzi">M. de Sozzi</persName> a l&ûu; <rs type="bibl" ref="#bib2">le discours
+                              <lb/>de reception de <persName type="author" ref="#millot">M. l'abbé Millot</persName></rs> de <orgName ref="#academieLyon">l'<choice><abbr>acad.</abbr><expan>académie</expan></choice>
                                  <lb/>de Lyon</orgName>, il y est traité, lequel est plus difficile
                            <lb/>d'éclairer les hommes que de les gouverner.
-                           <lb/>La seance a été terminée par un fort
+                           <lb/>La s&eé;ance a été terminée par un fort
                            <lb/>bon discours de <rs type="person" ref="#rouvrois">M. le directeur</rs>, où il a fait 
                            <pb facs="B543956101M00863_06_0082_2R" n="80"/><fw type="pageNum" n="80" place="topRight">80</fw>entrer fort adroitement l'éloge du <rs type="person" ref="#stanislas">roy de <choice><abbr>P.</abbr><expan>Pologne</expan></choice></rs>
                            <lb/>et parlé de <rs type="org" ref="#fondationI">sa derniere fondation</rs><ref type="note" target="#note17650508B"/>. Il n'a
-                           <lb/>pû par faiblesse de poitrine lire que le <choice><abbr>commencem</abbr><expan>commencement</expan></choice>.
+                           <lb/>p&ûu; par faiblesse de poitrine lire que le <choice><abbr>commencem</abbr><expan>commencement</expan></choice>.
                            <lb/>La lecture a été faite par <persName ref="#sivry">M. de Sivry</persName> qui
-                           <lb/>etoit à côté de lui. Il y avoit beaucoup de
-                           <lb/>monde, et en general la séance a bien été.
+                           <lb/>&eé;t&oa;it à côté de lui. Il y av&oa;it beaucoup de
+                           <lb/>monde, et en g&eé;n&eé;ral la séance a bien été.
                         </p>     
                         <p xml:id="d1765050803" ana="#fetes">
-                           L'usage etoit de faire un feu de joye chaque
+                           L'usage &eé;t&oa;it de faire un feu de <choice><orig>joye</orig><reg>joie</reg></choice> chaque
                            <lb/>année le jour de S. Stanislas sur <placeName ref="#nancyMarche">la place du
-                              <lb/>marché de la ville neuve</placeName>. Dès l'année <choice><abbr>dern<hi rend="super">re</hi>.</abbr><expan>dernière</expan></choice>
-                           <lb/><orgName ref="#HDV">l'hotel de ville</orgName> prit la résolution de <sic>suprimer</sic>
-                           <lb/>ce feu de joye qui inquiétoit les proprietaires
+                              <lb/>marché de la ville neuve</placeName>. Dès l'année <choice><abbr>dern.<hi rend="super">re</hi></abbr><expan>dernière</expan></choice>
+                           <lb/><orgName ref="#HDV">l'h&oô;tel de ville</orgName> prit la résolution de <choice><sic>suprimer</sic><corr>supprimer</corr></choice>
+                           <lb/>ce feu de <choice><orig>joye</orig><reg>joie</reg></choice> qui inquiét&oa;it les propri&eé;taires
                            <lb/>de maisons ; et de faire éxécuter en place
-                           <lb/>un feu d'artifice sur <placeName ref="#nancyPlaceRoyale">la place roïale</placeName>.
-                           <lb/>Ce qui a eu lieu pour la premiere fois cette
-                           <lb/>année. Tout etoit préparé par une
+                           <lb/>un feu d'artifice sur <placeName ref="#nancyPlaceRoyale">la place <choice><orig>roïale</orig><reg>royale</reg></choice></placeName>.
+                           <lb/>Ce qui a eu lieu pour la premi&eè;re fois cette
+                           <lb/>année. Tout &eé;t&oa;it préparé par une
                            <lb/>décoration de boiserie peinte par <persName ref="#claudon">Claudon</persName>
-                           <lb/>et qui ornoit en dedans de la grille les
-                           <lb/>4 faces du <sic>pié d'estal</sic> de la statue de <persName ref="#louisXV"><choice><abbr>L.</abbr><expan>Louis</expan></choice> XV</persName>.<!--  TODO ill statue de Louis XV ? -->
-                           <lb/>Des transparans en bleu clair laissoient
-                           <lb/>voir à jour les chiffres du <rs type="person" ref="#stanislas">roy de Pologne</rs>
+                           <lb/>et qui orn&oa;it en dedans de la grille les
+                           <lb/>4 faces du <choice><sic>pié d'estal</sic><corr>piédestal</corr></choice> de la statue de <persName ref="#louisXV"><choice><abbr>L.</abbr><expan>Louis</expan></choice> XV</persName>.<!--  TODO ill statue de Louis XV ? -->
+                           <lb/>Des <choice><sic>transparans</sic><corr>transparents</corr></choice> en bleu clair laiss&oa;ient
+                           <lb/>voir à jour les chiffres du <rs type="person" ref="#stanislas">&roy; de Pologne</rs>
                            <lb/>et ces mots : <quote rend="underline">vive Stanislas le bienfaisant</quote>.
-                           <lb/>Toutes les croisées de la place étoient
+                           <lb/>Toutes les croisées de la place ét&oa;ient
                            <lb/>remplies du plus beau monde, et la place
                            <lb/>de tout le peuple. À nuit fermée vers
                            <lb/>neuf heures du soir, on fit faire un grand
-                           <lb/>cercle à environ 25 pas de distance de la grille, et <persName ref="#francoisJeanCharles">le S. François</persName>, <choice><abbr>con<hi rend="super">er</hi>.</abbr><expan>conseiller</expan></choice> en <placeName ref="#nancyHDV">l'hotel
+                           <lb/>cercle à environ 25 pas de distance de la grille, et <persName ref="#francoisJeanCharles">le S. François</persName>, <choice><abbr>con.<hi rend="super">er</hi></abbr><expan>conseiller</expan></choice> en <placeName ref="#nancyHDV">l'h&oô;tel
                               <lb/>de ville</placeName>, qui a tout conduit, fit partir les
                            <lb/>artifices des 4 faces successivement, ce qui
                            <lb/>dura un peu plus de demi-heure et fit
-                           <pb facs="B543956101M00863_06_0083_1L" n="80v"/>grand plaisir, la nuit fut assès noire,
-                           <lb/>et l'air très calme et <sic>san</sic> pluye. Le
+                           <pb facs="B543956101M00863_06_0083_1L" n="80v"/>grand plaisir, la nuit fut <choice><orig>assès</orig><reg>assez</reg></choice> noire,
+                           <lb/>et l'air très calme et <choice><sic>san</sic><corr>sans</corr></choice> <choice><orig>pluye</orig><reg>pluie</reg></choice>. Le
                            <lb/>peuple a crié <quote rend="underline">vive le roy</quote> à differentes
                            <lb/>reprises et de bon cœur.
                         </p>
                         <p xml:id="d1765050804" ana="#cour">
-                           <persName ref="#stainville #stainvilleMme">M. et M<hi rend="super">e</hi>. de Stainville</persName> etoient partis
+                           <persName ref="#stainville #stainvilleMme">M. et <choice><abbr>M.<hi rend="super">e</hi></abbr><expan>madame</expan></choice> de Stainville</persName> etoient partis
                            <lb/>de la ville pour <placeName ref="#luneville">Lunéville</placeName>, où ils
                            <lb/>reviendront seulement demain.
                         </p>
@@ -1549,7 +1550,7 @@
                      <div type="day" xml:id="d17650511">
                         <dateline><date type="entry" when="1765-05-11">11</date></dateline>
                         <p xml:id="d1765051101" ana="#aca">                           
-                           <persName ref="#taylor">Le chevalier Taylor</persName>, anglois, fameux <sic>oculiste</sic>,
+                           <persName ref="#taylor">Le chevalier Taylor</persName>, anglois, fameux oculiste,
                            <lb/>a prononcé à 8 h. du soir dans la salle des
                            <lb/>redoutes, un discours sur son art, et à fait
                            <lb/>des démonstrations sur l'œil.
@@ -1558,7 +1559,7 @@
                      <div type="day" xml:id="d17650512">
                         <dateline><date type="entry" when="1765-05-12">12</date></dateline>
                         <p xml:id="d1765051201" ana="#armee">                           
-                           Revûë à 8 h. du matin à <placeName ref="#garenne">la garenne</placeName>, des
+                           Rev&ûu;&ëe; à 8 h. du matin à <placeName ref="#garenne">la garenne</placeName>, des
                            <lb/>4 brigades du corps des grenadiers de France,
                            <lb/>tous avec l'habillement neuf.
                         </p>
@@ -1567,7 +1568,7 @@
                         <dateline><date type="entry" when="1765-05-13">13</date></dateline>
                         <p xml:id="d1765051301" ana="#ville">                           
                            Un gros chien enragé, sans en être, en a mordu
-                           <lb/>plusieurs dans <placeName ref="#nancy">les ruës de Nancy</placeName> ce matin,
+                           <lb/>plusieurs dans <placeName ref="#nancy">les ru&ëe;s de Nancy</placeName> ce matin,
                            <lb/>et un enfant de deux ans dans une allée ;
                            <lb/>le peuple l'a poursuivi, un grenadier lui a
                            <lb/>donné un coup de sabre sur le dos
@@ -1575,16 +1576,16 @@
                         <p xml:id="d1765051302" ana="#ville">
                            Ordonnance de police de tenir pendant huit
                            <lb/>jours les chiens enfermés, de livrer ceux qui
-                           <lb/>ont été mordus ou qui seroient soupçonnés au
-                           <lb/><rs type="person" ref="#maitreBasseOeuvres">maitre des basses œuvres</rs><ref type="note" target="#note17650513A"/> qui a ordre de faire
+                           <lb/>ont été mordus ou qui ser&oa;ient soupçonnés au
+                           <lb/><rs type="person" ref="#maitreBasseOeuvres">ma&iî;tre des basses œuvres</rs><ref type="note" target="#note17650513A"/> qui a ordre de faire
                            <lb/>ses tournées après l'avertissement.
                         </p>
                      </div>
                      <div type="day" xml:id="d17650514">
                         <dateline><date type="entry" when="1765-05-14">14</date></dateline>
                         <p xml:id="d1765051401" ana="#cour">                           
-                           On m'ecrit d'hier de <placeName ref="#luneville">Lunéville</placeName> : <quote><persName ref="#bresson">M. Bresson</persName> (<choice><abbr>sub<hi rend="super">é</hi>.</abbr><expan>subdélégué</expan></choice>
-                              <lb/>à <placeName ref="#darney">Darney</placeName>) a des lettres de reconnoissance de noblesse</quote>.
+                           On m'&eé;crit d'hier de <placeName ref="#luneville">Lunéville</placeName> : <quote><persName ref="#bresson">M. Bresson</persName> (<choice><abbr>sub.<hi rend="super">é</hi></abbr><expan>subdélégué</expan></choice>
+                              <lb/>à <placeName ref="#darney">Darney</placeName>) a des lettres de reconn&oa;issance de noblesse</quote>.
                         </p>
                      </div>
                      <pb facs="B543956101M00863_06_0083_2R" n="81"/><fw type="pageNum" n="81" place="topRight">81</fw>
@@ -1598,12 +1599,12 @@
                         <dateline><date type="entry" when="1765-05-20">20</date></dateline>
                         <p xml:id="d1765052001">                                                  
                            <persName ref="#contade">Le <choice><abbr>maâl</abbr><expan>maréchal</expan></choice> de Contade</persName> passe l'après midi allant
-                           <lb/>à <placeName ref="#strasbourg">Strasbourg</placeName>. <persName ref="#stainville">M. de Stainville</persName> avoit fait laisser
+                           <lb/>à <placeName ref="#strasbourg">Strasbourg</placeName>. <persName ref="#stainville">M. de Stainville</persName> av&oa;it fait laisser
                            <lb/>la garde sous les armes jusques passé une heure.
-                           <lb/>Il comptoit donner à diner au maréchal mais
-                           <lb/>il ne s'est point arrêté et ils ne se sont point vûs.
+                           <lb/>Il comptoit donner à d&iî;ner au maréchal mais
+                           <lb/>il ne s'est point arrêté et ils ne se sont point v&ûu;s.
                            <lb/>Le soir arrivent <persName ref="#archCambray">M. l'archevêque de Cambray</persName>,
-                           <lb/><persName ref="#abbesseStLouis">mad. l'abbesse de S. Louis</persName>, M<hi rend="super">rs</hi>. <persName ref="#armentieres">d'Armentieres</persName>, <persName ref="#anhalt"><choice><abbr>P<hi rend="super">ce</hi>.</abbr><expan>prince</expan></choice>
+                           <lb/><persName ref="#abbesseStLouis"><choice><abbr>mad.</abbr><expan>madame</expan></choice> l'abbesse de S. Louis</persName>, M.<hi rend="super">rs</hi> <persName ref="#armentieres">d'Armenti&eè;res</persName>, <persName ref="#anhalt"><choice><abbr>p.<hi rend="super">ce</hi></abbr><expan>prince</expan></choice>
                               <lb/>d'Anhalt</persName>, <persName ref="#chabot">de Chabot</persName>.
                         </p>
                      </div>
@@ -1611,72 +1612,72 @@
                         <dateline><date type="entry" when="1765-05-21">21</date></dateline>
                         <p xml:id="d1765052101" ana="#armee #meteo">                           
                            À dix heures du matin les 4 brigades du
-                           <lb/><orgName ref="#corpsGrenadiersFr">corps des grenadiers de France</orgName> etoient sur le
-                           <lb/>pré, dans une meme ligne. On a exercé
-                           <lb/>au feu, <persName ref="#ducDeuxPonts">le <choice><abbr>P<hi rend="super">ce</hi>.</abbr><expan>prince</expan></choice> duc des Deux Ponts</persName>, est arrivé
+                           <lb/><orgName ref="#corpsGrenadiersFr">corps des grenadiers de France</orgName> &eé;t&oa;ient sur le
+                           <lb/>pré, dans une m&eê;me ligne. On a exercé
+                           <lb/>au feu, <persName ref="#ducDeuxPonts">le <choice><abbr>p.<hi rend="super">ce</hi></abbr><expan>prince</expan></choice> duc des Deux Ponts</persName>, est arrivé
                            <lb/>de <placeName ref="#luneville">Lunéville</placeName> allant à <placeName ref="#paris">Paris</placeName> et a été présent
-                           <lb/>jusqu'à la fin, c'est lui qu'on a salüé en
+                           <lb/>jusqu'à la fin, c'est lui qu'on a sal&üu;é en
                            <lb/>défilant. On a d'abord tiré par compagnie
                            <lb/>par deux, par trois compagnies, par
                            <lb/>brigade ; ensuite le feu de billaude. Tout
-                           <lb/>etoit fini à onze heures et demie. Le tems
-                           <lb/>etoit clair et le vent un peu à l'Est.
+                           <lb/>&eé;t&oa;it fini à onze heures et demie. Le <choice><orig>tems</orig><reg>temps</reg></choice>
+                           <lb/>&eé;t&oa;it clair et le vent un peu à l'Est.
                         </p>
                      </div>
                      <div type="day" xml:id="d17650522">
                         <dateline><date type="entry" when="1765-05-22">22</date></dateline>
                         <p xml:id="d1765052201" ana="#aca">                           
-                           Assemblée particulière de <orgName ref="#academie">l'Academie</orgName>, où etoient
-                           <lb/>M<hi rend="super">rs</hi>. <persName ref="#rouvrois">du Rouvrois</persName>, <persName ref="#sivry">de Sivry</persName>, <persName ref="#solignac">de Solignac</persName>, <persName ref="#tervenus">de
-                              <lb/>Tervenus</persName>, <persName ref="#andre">André</persName>, <persName ref="#durival">Durival lainé</persName>, et pour
-                           <lb/>la premiere fois <persName ref="#coster">M. Coster</persName>. <persName ref="#rouvrois">M. du Rouvrois</persName>
-                           <lb/>directeur a lû une lettre ecrite à <orgName ref="#academie">l'Academie</orgName>
-                           <lb/>par <persName ref="#laverdy">M. de Laverdy</persName>, <choice><abbr>contr. g<hi rend="super">l.</hi>.</abbr><expan>contrôleur général</expan></choice><ref type="note" target="#note17650522A"/> pour inviter
+                           Assemblée particulière de <orgName ref="#academie">l'Acad&eé;mie</orgName>, où &eé;toient
+                           <lb/>M.<hi rend="super">rs</hi> <persName ref="#rouvrois">du Rouvrois</persName>, <persName ref="#sivry">de Sivry</persName>, <persName ref="#solignac">de Solignac</persName>, <persName ref="#tervenus">de
+                              <lb/>Tervenus</persName>, <persName ref="#andre">André</persName>, <persName ref="#durival">Durival l'a&iî;né</persName>, et pour
+                           <lb/>la premi&eè;re fois <persName ref="#coster">M. Coster</persName>. <persName ref="#rouvrois">M. du Rouvrois</persName>
+                           <lb/>directeur a l&ûu; une lettre &eé;crite à <orgName ref="#academie">l'Acad&eé;mie</orgName>
+                           <lb/>par <persName ref="#laverdy">M. de Laverdy</persName>, <choice><abbr>contr. g.<hi rend="super">l</hi></abbr><expan>contrôleur général</expan></choice><ref type="note" target="#note17650522A"/> pour inviter
                            <pb facs="B543956101M00863_06_0084_1L" n="81v"/><orgName ref="#academie">l'Academie</orgName> à concourir au succès du <title ref="#bib34">Journal
                               <lb/>de commerce</title> (ou gazette.) et de lui faire part
-                           <lb/>directement de toutes les lumieres qui lui
-                           <lb/>viendroient là dessus ; sur quoi <persName ref="#coster">M. Coster</persName> s'est
-                           <lb/>engagé de lire chaque quinzaine à <orgName ref="#academie">l'Academie</orgName>
+                           <lb/>directement de toutes les lumi&eè;res qui lui
+                           <lb/>viendr&oa;ient là dessus ; sur quoi <persName ref="#coster">M. Coster</persName> s'est
+                           <lb/>engagé de lire chaque quinzaine à <orgName ref="#academie">l'Acad&eé;mie</orgName>
                            <lb/>quelque chose sur cet objet. Le reste de la
-                           <lb/>seance a été employé à differens <choice><abbr>raisonnem<hi rend="super">ts</hi></abbr><expan>raisonnements</expan></choice>
-                           <lb/>sur l'agriculture &amp;.
+                           <lb/>seance a été employé à <choice><orig>differens</orig><reg>différents</reg></choice> <choice><abbr>raisonnem<hi rend="super">ts</hi></abbr><expan>raisonnements</expan></choice>
+                           <lb/>sur l'agriculture &etc;.
                         </p>
                      </div>
                      <div type="day" xml:id="d17650524">
                         <dateline><date type="entry" when="1765-05-24">24</date></dateline>
                         <p xml:id="d1765052401" ana="#armee">                           
                            Grande rumeur parmi les grenadiers, à
-                           <lb/>l'occasion de <measure type="currency" quantity="3">3<hi rend="super">#</hi>. 10<hi rend="super">S</hi>.</measure> qu'on vouloit leur retenir sur
+                           <lb/>l'occasion de <measure type="currency" quantity="3">3<hi rend="super">#</hi>. 10<hi rend="super">s</hi>.</measure> qu'on voul&oa;it leur retenir sur
                            <lb/>leur décompte ; menaces, lettre insolente écrite
                            <lb/>à <persName ref="#stainville">M. de Stainville</persName> qu'ils ont plus d'amis que lui
-                           <lb/>à la cour de <choice><abbr>F<hi rend="super">ce</hi></abbr><expan>France</expan></choice>. Ils avoient mis à quelques
+                           <lb/>à la Cour de <choice><abbr>F<hi rend="super">ce</hi></abbr><expan>France</expan></choice>. Ils av&oa;ient mis à quelques
                            <lb/>casernes, <hi rend="underline">maison à louer</hi>, et le coup de la
-                           <lb/>retraite etoit pour eux le signal de la générale.
-                           <lb/>La retenuë n'a pas eu lieu.
+                           <lb/>retraite &eé;t&oa;it pour eux le signal de la générale.
+                           <lb/>La retenu&ëe; n'a pas eu lieu.
                         </p>
                      </div>
                      <div type="day" xml:id="d17650525">
                         <dateline><date type="entry" when="1765-05-25">25</date></dateline>
                         <p xml:id="d1765052501" ana="#bio">                           
-                           J'ai diné <sic>chès</sic> <persName ref="#eveqToul">M. l'Eveque de Toul</persName> à sa maison
+                           J'ai d&iî;né <choice><sic>chès</sic><corr>chez</corr></choice> <persName ref="#eveqToul">M. l'&eé;veque de Toul</persName> à sa maison
                            <lb/>de <placeName ref="#nancy">Nancy</placeName>.
                         </p>
                         <p xml:id="d1765052502" ana="#meteo">
-                           Il a plu <date from="1765-05-23" to="1765-05-24">la nuit <subst><del rend="strikethrough">derniere</del> <add place="above">du 23 au 24</add></subst></date> après une assès longue
-                           <lb/>secheresse, qui faisoit souffrir les prés.
+                           Il a plu <date from="1765-05-23" to="1765-05-24">la nuit <subst><del rend="strikethrough">derni&eè;re</del> <add place="above">du 23 au 24</add></subst></date> après une <choice><orig>assès</orig><reg>assez</reg></choice> longue
+                           <lb/>s&eé;cheresse, qui fais&oa;it souffrir les pr&èé;s.
                         </p>
                      </div>
                      <div type="day" xml:id="d17650526">
                         <dateline><date type="entry" when="1765-05-26">26</date></dateline>
                         <p xml:id="d1765052601" ana="#fetes">                           
                            Aujourd'hui, fête de la Pentecôte, <persName ref="#mareil">M. l'abbé
-                              <lb/>de Mareil</persName>, a été sacré Evêque de Sion,
-                           <lb/>par <persName ref="#archBesancon">M. l'archevêque de Besançon</persName>, <persName ref="#eveqMetz">M. l'eveque
-                              <lb/>de Mets</persName>, et <rs type="person" ref="#suffraBesancon">le suffragant de Besançon</rs><ref type="note" target="#note17650526A"/>, dans
-                           <lb/>la chapelle du roy à <placeName ref="#luneville">Lunéville</placeName>, avec
-                           <lb/>beaucoup d'eclat et un grand concours
-                           <lb/>de spectateurs, qui s'y etoient rendus de
-                           <lb/>toutes parts et de tous Etats.
+                              <lb/>de Mareil</persName>, a été sacré &eé;vêque de Sion,
+                           <lb/>par <persName ref="#archBesancon">M. l'archevêque de Besançon</persName>, <persName ref="#eveqMetz">M. l'&eé;v&eê;que
+                              <lb/>de <choice><orig>Mets</orig><reg>Metz</reg></choice></persName>, et <rs type="person" ref="#suffraBesancon">le suffragant de Besançon</rs><ref type="note" target="#note17650526A"/>, dans
+                           <lb/>la chapelle du &roy; à <placeName ref="#luneville">Lunéville</placeName>, avec
+                           <lb/>beaucoup d'&eé;clat et un grand concours
+                           <lb/>de spectateurs, qui s'y &eé;t&oa;ient rendus de
+                           <lb/>toutes parts et de tous &eé;tats.
                         </p>
                      </div>
                      <pb facs="B543956101M00863_06_0084_2R" n="82"/><fw type="pageNum" n="82" place="topRight">82</fw>
@@ -1696,23 +1697,23 @@
                      <div type="day" xml:id="d17650529">
                         <dateline><date type="entry" when="1765-05-29">29</date></dateline>
                         <p xml:id="d1765052901" ana="#ville">                           
-                           <persName ref="#sion">M. de Sion</persName> part pour <placeName ref="#metz">Mets</placeName>. <persName ref="#lePelletier">M. Le Pelletier
+                           <persName ref="#sion">M. de Sion</persName> part pour <placeName ref="#metz"><choice><orig>Mets</orig><reg>Metz</reg></choice></placeName>. <persName ref="#lePelletier">M. Le Pelletier
                               <lb/>de Beauprés</persName> passe et voit <rs type="person" ref="#intendant">M. l'Intendant</rs>.
                            <lb/>Peu après passe aussi <persName ref="#blair">M. de Blair</persName>
                            <lb/>nouvel intendant de <placeName ref="#strasbourg">Strasbourg</placeName>.
                         </p>
                         <p xml:id="d1765052902" ana="#aca">
-                           Assemblée particuliere de <orgName ref="#academie">l'Academie</orgName> pour
-                           <lb/>examiner un ouvrage imprimé chès <persName ref="#leSeure">le Seure</persName>,
-                           <lb/>sous le tître de <hi rend="underline"><title ref="#bib35">Recueil sur diverses matieres</title></hi>.
-                           <lb/><persName ref="#solignac">M. de Solignac</persName> l'avoit adressé à <persName ref="#rouvrois">M. du Rouvrois</persName>
-                           <lb/>comme l'ouvrage d'un jeune homme qui avoit
-                           <lb/>des talens et le desir d'etre de <orgName ref="#academie">l'Academie</orgName>. On
-                           <lb/>n'a pas été longtems sans reconnoître dans ce
-                           <lb/>pretendu jeune homme <rs type="person" ref="#stainville">un roy de 88 ans</rs>.
-                           <lb/>Il y avoit à l'assemblée M<hi rend="super">rs</hi>. <persName ref="#rouvrois">du Rouvrois</persName>,
-                           <lb/><persName ref="#sivry">de Sivry</persName>, <persName ref="#thibault">Thibault</persName>, <persName ref="#eveqToul">eveque de Toul</persName>, <persName ref="#niceville">de Niceville</persName>
-                           <lb/><persName ref="#bagard">Bagard</persName>, <persName ref="#harmant">Harmant</persName>, <persName ref="#cupers">Cupers</persName>, <persName ref="#durival">Durival l'ainé</persName>,
+                           Assemblée particuli&eè;re de <orgName ref="#academie">l'Acad&eé;mie</orgName> pour
+                           <lb/>examiner un ouvrage imprimé <choice><sic>chès</sic><corr>chez</corr></choice> <persName ref="#leSeure">Le Seure</persName>,
+                           <lb/>sous le <choice><orig>tître</orig><reg>titre</reg></choice> de <hi rend="underline"><title ref="#bib35">Recueil sur diverses mati&eè;res</title></hi>.
+                           <lb/><persName ref="#solignac">M. de Solignac</persName> l'av&oa;it adressé à <persName ref="#rouvrois">M. du Rouvrois</persName>
+                           <lb/>comme l'ouvrage d'un jeune homme qui av&oa;it
+                           <lb/>des <choice><orig>talens</orig><reg>talents</reg></choice> et le d&eé;sir d'&eê;tre de <orgName ref="#academie">l'Acad&eé;mie</orgName>. On
+                           <lb/>n'a pas été <choice><orig>longtems</orig><reg>longtemps</reg></choice> sans reconn&oa;ître dans ce
+                           <lb/>pr&eé;tendu jeune homme <rs type="person" ref="#stainville">un &roy; de 88 ans</rs>.
+                           <lb/>Il y av&oa;it à l'assemblée M.<hi rend="super">rs</hi> <persName ref="#rouvrois">du Rouvrois</persName>,
+                           <lb/><persName ref="#sivry">de Sivry</persName>, <persName ref="#thibault">Thibault</persName>, <persName ref="#eveqToul">&eé;v&eê;que de Toul</persName>, <persName ref="#niceville">de Niceville</persName>
+                           <lb/><persName ref="#bagard">Bagard</persName>, <persName ref="#harmant">Harmant</persName>, <persName ref="#cupers">Cupers</persName>, <persName ref="#durival">Durival l'a&iî;né</persName>,
                            <lb/><persName ref="#andre">Andre</persName>, PP. <persName ref="#leslie">Leslie</persName> et <persName ref="#husson">Husson</persName>, <persName ref="#coster">Coster</persName>
                         </p>
                         <p xml:id="d1765052903" ana="#ville">
@@ -1720,28 +1721,28 @@
                            <lb/>quelques chapitres pour aller à <placeName ref="#etuve">l'étuve des
                               <lb/>blés</placeName><ref type="note" target="#note17650529A"/>. J'y ai verifié que le magasin de
                            <lb/>conservation a 6 pi. 1 po.<ref type="note" target="#note17650529C"/> de hauteur, sur
-                           <lb/>sept piés<ref type="note" target="#note17650529B"/> de large dans un sens, et 5 pi. 6 po.
+                           <lb/>sept <choice><orig>piés</orig><reg>pieds</reg></choice><ref type="note" target="#note17650529B"/> de large dans un sens, et 5 pi. 6 po.
                            <lb/>dans l'autre.
                         </p>
                         <p xml:id="d1765052904" ana="#ville">
                            3 resaux de blés<ref type="note" target="#note17650529D"/> tirés du <orgName ref="#magPoisson">magasin de la
-                              <lb/>poissonnerie</orgName> pesoient chacun 180<hi rend="super">L</hi>. déduction,
+                              <lb/>poissonnerie</orgName> pes&oa;ient chacun 180<hi rend="super">l</hi>. déduction,
                            <pb facs="B543956101M00863_06_0085_1L" n="82v"/>faite du poids des sacs. Les 3 mesurés,
-                           <lb/>dans un bichet<ref type="note" target="#note17650529E"/> d'un pié cube ont donné
+                           <lb/>dans un bichet<ref type="note" target="#note17650529E"/> d'un <choice><orig>pié</orig><reg>pied</reg></choice> cube ont donné
                            <lb/>10 pi <hi rend="super">1</hi>/<hi rend="sub">2</hi> en sorte que le resal de <placeName ref="#nancy">Nancy</placeName> a
-                           <lb/>trois piés et demi cubes.
+                           <lb/>trois <choice><orig>piés</orig><reg>pieds</reg></choice> et demi cubes.
                         </p>
                         <p xml:id="d1765052905" ana="#necro">
                            Hier mourut <persName ref="#menginArnould">le S. Mengin Arnould</persName>,
-                           <lb/>chancelier<ref type="note" target="#note17650529F"/>, <choice><abbr>cap<hi rend="super">e</hi>.</abbr><expan>capitaine</expan></choice> de <orgName ref="#miliceBourgeoise">la milice bourgeoise</orgName>.
+                           <lb/>chancelier<ref type="note" target="#note17650529F"/>, <choice><abbr>cap.<hi rend="super">e</hi></abbr><expan>capitaine</expan></choice> de <orgName ref="#miliceBourgeoise">la milice bourgeoise</orgName>.
                            <lb/><persName ref="#stainville">M. de Stainville</persName> n'a pas voulu permettre
-                           <lb/>qu'on lui rendit les honneurs militaires <choice><abbr>suiv<hi rend="super">t</hi>.</abbr><expan>suivant</expan></choice>
+                           <lb/>qu'on lui rendit les honneurs militaires <choice><abbr>suiv.<hi rend="super">t</hi></abbr><expan>suivant</expan></choice>
                            <lb/>l'usage.
                         </p>
                         <p xml:id="d1765052906" ana="#armee">
                            Hier matin il deserta deux grenadiers ;
-                           <lb/>cette nuit autant. Le <choice><abbr>mécontentem<hi rend="super">t</hi>.</abbr><expan>mécontentement</expan></choice> subsiste,
-                           <lb/>toute la maréchaussée et plusieurs détachemens
+                           <lb/>cette nuit autant. Le <choice><abbr>mécontentem.<hi rend="super">t</hi></abbr><expan>mécontentement</expan></choice> subsiste,
+                           <lb/>toute la maréchaussée et plusieurs <choice><orig>détachemens</orig><reg>détachements</reg></choice>
                            <lb/>sont aux environs et le tout en vain.
                         </p>
                      </div>
@@ -1749,7 +1750,7 @@
                         <dateline><date type="entry" when="1765-05-30">30</date></dateline>
                         <p xml:id="d1765053001" ana="#ville">                                                   
                            <rs type="person" ref="#intendant">M. l'Intendant</rs> part pour <placeName ref="#neuviller">Neuviller</placeName>, après
-                           <lb/>avoir vû mettre le blé à l'étuve, et visité
+                           <lb/>avoir v&ûu; mettre le blé à l'étuve, et visité
                            <lb/><placeName ref="#nancyCasernes">les casernes</placeName>. On pose les bois de toiture
                            <lb/>d'un pavillon. On maçonne à la fois aux
                            <lb/>deux aîles, et on commence à éléver les
