@@ -111,6 +111,15 @@
                 <!-- Font -->
                 <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,900,700' rel='stylesheet' type='text/css'/>                     
                 <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'/>
+                <script>
+                    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                    
+                    ga('create', 'UA-78667211-1', 'auto');
+                    ga('send', 'pageview');                    
+                </script>
             </head>
             <body>
                 <div class="row">
@@ -168,6 +177,15 @@
                         <!-- Font -->
                         <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,900,700' rel='stylesheet' type='text/css'/>                     
                         <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'/>
+                        <script>
+                            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                            
+                            ga('create', 'UA-78667211-1', 'auto');
+                            ga('send', 'pageview');                            
+                        </script>
                     </head>
                     <body>
                         <xsl:copy-of select="$header"/>                                                                                                                                                                                               
@@ -220,6 +238,7 @@
                                                 <label><input type="checkbox" class="checkbox_abbr" value="abbr" />Abbr</label>
                                                 <label><input type="checkbox" class="checkbox_orig" value="orig" />Orig</label>
                                                 <label><input type="checkbox" class="checkbox_sic" value="sic" />sic</label>
+                                                <label><input type="checkbox" class="checkbox_lb" value="lb" />lb</label>
                                             </div>
                                         </div>
                                     </div>
@@ -732,7 +751,11 @@
                 <xsl:apply-templates/>
             </xsl:otherwise>
         </xsl:choose>        
-    </xsl:template>    
+    </xsl:template>
+    
+    <xsl:template match="tei:lb">
+        <br class="lb" />    
+    </xsl:template>
     
     <xsl:template match="tei:div[@type='transcription']//tei:list">
         <ul>
@@ -817,6 +840,15 @@
                     <!-- Font -->
                     <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,900,700' rel='stylesheet' type='text/css'/>                     
                     <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'/>
+                    <script>
+                        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                        
+                        ga('create', 'UA-78667211-1', 'auto');
+                        ga('send', 'pageview');                            
+                    </script>
                 </head>
                 <body class="text-justify">
                     <xsl:copy-of select="$header"/>                                                                                                                                                                                               
@@ -981,6 +1013,15 @@
                     <!-- Font -->
                     <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,900,700' rel='stylesheet' type='text/css'/>                     
                     <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'/>
+                    <script>
+                        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                        
+                        ga('create', 'UA-78667211-1', 'auto');
+                        ga('send', 'pageview');                            
+                    </script>
                 </head>
                 <body class="text-justify">
                     <xsl:copy-of select="$header"/>                                                                                                                                                                                               
@@ -1092,6 +1133,15 @@
                     <!-- Font -->
                     <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,900,700' rel='stylesheet' type='text/css'/>                     
                     <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'/>
+                    <script>
+                        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                        
+                        ga('create', 'UA-78667211-1', 'auto');
+                        ga('send', 'pageview');                            
+                    </script>
                 </head>
                 <body class="text-justify">
                     <xsl:copy-of select="$header"/>                                                                                                                                                                                               
@@ -1262,6 +1312,15 @@
                     <!-- Font -->
                     <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,900,700' rel='stylesheet' type='text/css'/>                     
                     <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'/>
+                    <script>
+                        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                        
+                        ga('create', 'UA-78667211-1', 'auto');
+                        ga('send', 'pageview');                            
+                    </script>
                 </head>
                 <body>
                     <xsl:copy-of select="$header"/>
@@ -1387,6 +1446,15 @@
                     <!-- Font -->
                     <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,900,700' rel='stylesheet' type='text/css'/>                     
                     <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'/>
+                    <script>
+                        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                        
+                        ga('create', 'UA-78667211-1', 'auto');
+                        ga('send', 'pageview');                            
+                    </script>
                 </head>
                 <body>
                     <header data-sticky-container="true">            
@@ -1472,14 +1540,18 @@
                         // ICONES SUPPLEMENTAIRES
                         var iconA = L.icon({
                         iconUrl: '../js/leaflet/images/marker-icon-A.png',
+                        iconRetinaUrl: '../js/leaflet/images/marker-icon-A2x.png',
                         iconSize: [32, 37],
-                        iconAnchor:[16,36]
+                        iconAnchor:[16,36],
+                        popupAnchor: [-3, -30]
                         });
                         
                         var iconB = L.icon({
                         iconUrl: '../js/leaflet/images/marker-icon-B.png',
+                        iconRetinaUrl: '../js/leaflet/images/marker-icon-B2x.png',
                         iconSize: [32, 37],
-                        iconAnchor:[16,36]
+                        iconAnchor:[16,36],
+                        popupAnchor: [-3, -30]
                         });
                         
                         
@@ -1629,7 +1701,7 @@
                         
                         48.700336511159286,6.178371906280517
                         ]
-                        ],{color:'black', opacity:0.5}
+                        ],{color:'#fc0', opacity:0.5}
                         ).bindPopup('<b>Limites approximatives de la ville en 1766</b>').addTo(mymap);
                         
                         var religious = new L.LayerGroup().addTo(mymap);
@@ -1809,6 +1881,15 @@
                         <!-- Font -->
                         <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,900,700' rel='stylesheet' type='text/css'/>                     
                         <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'/>
+                        <script>
+                            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                            
+                            ga('create', 'UA-78667211-1', 'auto');
+                            ga('send', 'pageview');                            
+                        </script>
                     </head>
                     <body>
                         <xsl:copy-of select="$header"/>
@@ -1901,6 +1982,15 @@
                     <link rel="stylesheet" href="../css/foundation.css" />
                     <link rel="stylesheet" href="../css/app.css" />
                     <link rel="stylesheet" href="../js/leaflet/leaflet.css" />
+                    <script>
+                        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                        
+                        ga('create', 'UA-78667211-1', 'auto');
+                        ga('send', 'pageview');                            
+                    </script>
                 </head>
                 <body>
                     <xsl:copy-of select="$header"/>
@@ -1928,6 +2018,15 @@
                     <link rel="stylesheet" href="../css/foundation.css" />
                     <link rel="stylesheet" href="../css/app.css" />
                     <link rel="stylesheet" href="../js/leaflet/leaflet.css" />
+                    <script>
+                        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                        
+                        ga('create', 'UA-78667211-1', 'auto');
+                        ga('send', 'pageview');                            
+                    </script>
                 </head>
                 <body>
                     <xsl:copy-of select="$header"/>
@@ -1958,6 +2057,15 @@
                     <link rel="stylesheet" href="../js/timeliner/vendor/venobox/venobox.css" type="text/css" media="screen" />
                     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,900,700" rel="stylesheet" type="text/css" />
                     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900,300" rel="stylesheet" type="text/css" />
+                    <script>
+                        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                        
+                        ga('create', 'UA-78667211-1', 'auto');
+                        ga('send', 'pageview');                            
+                    </script>
                 </head>
                 <body>
                     <xsl:copy-of select="$header"/>

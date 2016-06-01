@@ -30,3 +30,12 @@ $(".checkbox_sic").click(function () {
         $(".corr").show();
     }
 });
+
+$(".lb").hide();
+$(".checkbox_lb").click(function () {
+    if ($(this).is(":checked")) {
+        $(".lb").show();        
+    } else {
+        $(".lb").hide();        
+    }
+});
