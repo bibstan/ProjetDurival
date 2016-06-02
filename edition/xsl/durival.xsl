@@ -1029,7 +1029,8 @@
                         <div class="large-12">
                             <ul class="no-bullet">
                                 <xsl:for-each select="tei:place">
-                                    <xsl:sort select="tei:placeName[not(@type='today')]" order="ascending" case-order="upper-first"/>
+                                    <xsl:sort select="tei:placeName[1]" order="ascending" case-order="upper-first"/>
+                                    <xsl:sort select="tei:placeName[2][not(@type='today')]" order="ascending" case-order="upper-first"/>
                                     <xsl:variable name="id" select="@xml:id"/>
                                     <xsl:variable name="links" select=" concat('#',@xml:id)"/>
                                     <xsl:choose>
@@ -1766,7 +1767,7 @@
                         <!--var popup = L.popup();-->
                         <xsl:for-each select="//tei:place[descendant::tei:geo]">
                             <xsl:variable name="id" select="@xml:id"/>
-                            <xsl:variable name="href">&lt;a href='listPlace.html<xsl:value-of select="concat('#',$id)"/>'&gt;<xsl:value-of select="normalize-space(tei:placeName[not(@type='today')])"/>&lt;/a&gt;</xsl:variable>
+                            <xsl:variable name="href">&lt;a href='listPlace.html<xsl:value-of select="concat('#',$id)"/>'&gt;<xsl:value-of select="normalize-space(tei:placeName[2][not(@type='today')])"/>&lt;/a&gt;</xsl:variable>
                             <xsl:choose>
                                 <xsl:when test="@type='religious'">
                                     <xsl:text>L.marker([</xsl:text>                                
