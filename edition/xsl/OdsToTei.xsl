@@ -36,12 +36,12 @@
     
     <xsl:template match="//table:table-row">
         <xsl:for-each select=".">
-        <xsl:variable name="xmlId" select="normalize-space(table:table-cell[2])"/>
-            <note xml:id="note{$xmlId}">
-                <ref type="note" target="#note{$xmlId}"/>
-                <xsl:comment><xsl:value-of select="normalize-space(table:table-cell[1])"/><xsl:text> </xsl:text><xsl:value-of select="normalize-space(table:table-cell[3])"/></xsl:comment>
+        <xsl:variable name="xmlId" select="normalize-space(table:table-cell[1])"/>
+            <note xml:id="note{$xmlId}A">
+                <ref type="note" target="#note{$xmlId}A"/>
+                <xsl:comment><xsl:value-of select="normalize-space(table:table-cell[2])"/><xsl:text> </xsl:text><xsl:value-of select="normalize-space(table:table-cell[4])"/></xsl:comment>
                 <p>
-                    <xsl:value-of select="normalize-space(table:table-cell[4])"/>
+                    <xsl:value-of select="normalize-space(table:table-cell[3])"/>
                 </p>
             </note>                          
         </xsl:for-each>
