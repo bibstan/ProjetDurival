@@ -191,12 +191,37 @@
                         <xsl:copy-of select="$header"/>                                                                                                                                                                                               
                         <div class="row">                            
                             <div class="large-12 tabs-content" data-tabs-content="example-tabs">
-                                <div class="row">                                    
-                                    <div class="large-10 large-offset-2 columns clearfix">
+                                <div class="row">   
+                                    <div class="large-3 columns">
+                                        <div class="control">
+                                            <span>Forme originale : </span>
+                                            <div class="switch tiny">                                                        
+                                                <input class="switch-input checkbox_modern" id="modern" checked="checked" type="checkbox" name="modern"/>
+                                                <label class="switch-paddle" for="modern">                                                                
+                                                    <!--<span>Modernisation</span>-->
+                                                    <span class="switch-active" aria-hidden="true">&#160;I</span>
+                                                    <span class="switch-inactive" aria-hidden="true">O</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="large-3 columns">
+                                        <div class="control">
+                                            <span>Retours à la ligne : </span>                                        
+                                            <div class="switch tiny">                                                        
+                                                <input class="switch-input checkbox_lb" id="lb" type="checkbox" checked="checked" name="lb"/>
+                                                <label class="switch-paddle" for="lb">                                                            
+                                                    <span class="switch-active" aria-hidden="true">&#160;I</span>
+                                                    <span class="switch-inactive" aria-hidden="true">O</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="large-6 columns clearfix">
                                         <ul class="tabs float-right" data-tabs="true" id="example-tabs">                                
                                             <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">transcriptions</a></li>
                                             <li class="tabs-title"><a href="#panel2">facsimilés</a></li>
-                                            <li class="tabs-title"><a href="#panel3">options</a></li>
+                                            <!--<li class="tabs-title"><a href="#panel3">options</a></li>-->
                                         </ul>
                                     </div>
                                 </div>
@@ -231,18 +256,41 @@
                                         </xsl:for-each>
                                     </div>
                                 </div>
-                                <div class="tabs-panel" id="panel3">
+                                <!--<div class="tabs-panel" id="panel3">
                                     <div class="row">
                                         <div class="large-12">
-                                            <div class="large-2 columns">
-                                                <label><input type="checkbox" class="checkbox_abbr" value="abbr" />Abbr</label>
+                                            <dl>
+                                                <dt>Forme originale</dt>
+                                                <dd>
+                                                    <div class="switch small">                                                        
+                                                        <input class="switch-input checkbox_modern" id="modern" type="checkbox" name="modern"/>
+                                                        <label class="switch-paddle" for="modern">                                                                
+                                                            <!-\-<span>Modernisation</span>-\->
+                                                            <span class="switch-active" aria-hidden="true">I</span>
+                                                            <span class="switch-inactive" aria-hidden="true">O</span>
+                                                        </label>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Retours à la ligne</dt>
+                                                <dd>
+                                                    <div class="switch small">                                                        
+                                                        <input class="switch-input checkbox_lb" id="lb" type="checkbox" name="lb"/>
+                                                        <label class="switch-paddle" for="lb">                                                            
+                                                            <span class="switch-active" aria-hidden="true">I</span>
+                                                            <span class="switch-inactive" aria-hidden="true">O</span>
+                                                        </label>
+                                                    </div>
+                                                </dd>
+                                            </dl>                                                                                                                                        
+                                                <!-\-<label><input type="checkbox" class="checkbox_abbr" value="abbr" />Abbr</label>
                                                 <label><input type="checkbox" class="checkbox_orig" value="orig" />Orig</label>
-                                                <label><input type="checkbox" class="checkbox_sic" value="sic" />sic</label>
-                                                <label><input type="checkbox" class="checkbox_lb" value="lb" />lb</label>
-                                            </div>
+                                                <label><input type="checkbox" class="checkbox_sic" value="sic" />sic</label>-\->
+                                                <!-\-<label><input type="checkbox" class="checkbox_lb" value="lb" />lb</label>-\->                                            
                                         </div>
                                     </div>
-                                </div>
+                                </div>-->
                             </div>
                         </div>
                         <xsl:copy-of select="$footer"/>
@@ -753,7 +801,7 @@
         </xsl:choose>        
     </xsl:template>
     
-    <xsl:template match="tei:lb">
+    <xsl:template match="tei:lb | tei:pb[ancestor::tei:p]">
         <br class="lb" />    
     </xsl:template>
     
