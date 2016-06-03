@@ -210,3 +210,15 @@ a.accordion-title {
       color: #cc6600;
       padding:25 10 10 0px;
     }
+
+.control {
+    padding:5px;
+}
+
+.control span {
+    vertical-align: top;
+}
+
+.switch {
+    display:inline;    
+}
