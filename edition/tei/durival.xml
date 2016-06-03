@@ -674,7 +674,7 @@
                         </p>
                         <p xml:id="d1765012202" ana="#ville">
                            On m'&eé;criv&oa;it de <placeName ref="#metz"><choice><orig>Mets</orig><reg>Metz</reg></choice></placeName> <date when="1765-01-17">le 17</date> qu'un <choice><abbr>con.<hi rend="super">er</hi></abbr><expan>conseiller</expan></choice>
-                           <lb/><orgName ref="#parlementMetz">du parlement</orgName> (<del rend="strikethrough"><supplied reason="illegible">Viar</supplied></del> de la Cour) av&oa;it été
+                           <lb/>du <orgName ref="#parlementMetz">parlement</orgName> (<del rend="strikethrough"><supplied reason="illegible">Viar</supplied></del> de la Cour) av&oa;it été
                            <pb facs="B543956101M00863_06_0073_2R" n="71"/><fw place="topRight" n="71">71</fw>obligé de donner sa démission, pour friponnerie
                            <lb/>au berlan<ref type="note" target="#note17650122A"/> faite il y a 18 mois ; l'avocat dans
                            <lb/>la maison de qui on av&oa;it joué (<persName ref="#deschampsdeVillers">Deschamps
@@ -865,8 +865,8 @@
                         <p xml:id="d1765030201" ana="#ville">                           
                            Après beaucoup de séances sur l'affaire
                            <lb/>de M.<hi rend="super">rs</hi> <persName ref="#duhautoy">Duhautoy</persName>, <persName ref="#coster">Coster</persName>, <persName ref="#sozzi">Sozzi</persName> &amp;<hi rend="super">a</hi>. <orgName ref="#conseil">le conseil</orgName>
-                           <lb/>a rendu aujourdhui un arrêt interlocutoire<ref type="note" target="#note17650302A"/>,
-                           <lb/>qui charge <persName ref="#coster">le S. Coster</persName> de prouver que les <choice><abbr>so<hi rend="super">es</hi>.</abbr><expan>sommes</expan></choice>
+                           <lb/>a rendu aujourdhui un arrêt interlocutoire<!--<ref type="note" target="#note17650302A"/>-->,
+                           <lb/>qui charge <persName ref="#coster">le S. Coster</persName> de prouver que les <choice><abbr>so.<hi rend="super">es</hi></abbr><expan>sommes</expan></choice>
                            <lb/>dont il s'agit ont été versées dans <placeName ref="#heudicourtMaison">la maison
                               <lb/>d'Heudicourt</placeName>. Dès cet après midi on av&oa;it
                            <lb/>répandu à <placeName ref="#nancy">Nancy</placeName> que <persName ref="#duhautoy">M. Duhautoy</persName> av&oa;it
@@ -1734,7 +1734,7 @@
                         </p>
                         <p xml:id="d1765052905" ana="#necro">
                            Hier mourut <persName ref="#menginArnould">le S. Mengin Arnould</persName>,
-                           <lb/>chancelier<ref type="note" target="#note17650529F"/>, <choice><abbr>cap.<hi rend="super">e</hi></abbr><expan>capitaine</expan></choice> de <orgName ref="#miliceBourgeoise">la milice bourgeoise</orgName>.
+                           <lb/>chancelier, <choice><abbr>cap.<hi rend="super">e</hi></abbr><expan>capitaine</expan></choice> de <orgName ref="#miliceBourgeoise">la milice bourgeoise</orgName>.
                            <lb/><persName ref="#stainville">M. de Stainville</persName> n'a pas voulu permettre
                            <lb/>qu'on lui rendit les honneurs militaires <choice><abbr>suiv.<hi rend="super">t</hi></abbr><expan>suivant</expan></choice>
                            <lb/>l'usage.
@@ -2112,7 +2112,7 @@
                      <div type="day" xml:id="d17650707">
                         <dateline><date type="entry" when="1765-07-07">7</date></dateline>
                         <p xml:id="d1765070701" ana="#ville">                           
-                           Hier le pain blanc fut taxé 2<hi rend="super">s.</hi><ref type="note" target="#note17650707A"/> la <choice><abbr>liv.</abbr><expan>livre</expan></choice>
+                           Hier le pain blanc fut taxé 2<hi rend="super">s.</hi><!--<ref type="note" target="#note17650707A"/>--> la <choice><abbr>liv.</abbr><expan>livre</expan></choice>
                            <lb/>le bis à 1<hi rend="super">s.</hi> 4<hi rend="super">d</hi><ref type="note" target="#note17650707B"/> <hi rend="super">1</hi>/<hi rend="sub">2</hi> à commencer d'aujourd'hui.
                         </p>
                      </div>
@@ -2141,7 +2141,7 @@
                            J'ai en vertu d'un arrêt du <orgName ref="#conseil">conseil</orgName>
                            <lb/>fait faire la livraison du jardin de
                            <lb/><persName ref="#grandpair">l'abbé Grandpair</persName>, près <placeName ref="#nancyPorteStGeorges">la porte S. Georges</placeName>.
-                           <lb/>Il contient 5 jours 2 ommées 2 <choice><abbr>t.</abbr><expan>toises</expan></choice><ref type="note" target="#note17650709A"/> 14 <choice><abbr>pi.</abbr><expan>pieds</expan></choice> 2 <choice><abbr>po.</abbr><expan>pouces</expan></choice> de <choice><abbr>L.<hi rend="super">ne</hi></abbr><expan>Lorraine</expan></choice>
+                           <lb/>Il contient 5 jours 2 ommées 2 <choice><abbr>t.</abbr><expan>toises</expan></choice><!--<ref type="note" target="#note17650709A"/>--> 14 <choice><abbr>pi.</abbr><expan>pieds</expan></choice> 2 <choice><abbr>po.</abbr><expan>pouces</expan></choice> de <choice><abbr>L.<hi rend="super">ne</hi></abbr><expan>Lorraine</expan></choice>
                         </p>
                      </div>
                   
@@ -2729,7 +2729,7 @@
                            <lb/>pendant le dîner.
                         </p>
                         <p xml:id="d1765082503">
-                           <persName ref="#hogardClement">Clement Hogard</persName><ref type="note" target="#note17650825B"/> incendié à <placeName ref="#villeEnVermois">Ville en Vermois</placeName>, 22 <choice><abbr>ch.<hi rend="super">x</hi></abbr><expan>chevaux</expan></choice> brulés &etc;.
+                           <persName ref="#hogardClement">Clement Hogard</persName><!--<ref type="note" target="#note17650825B"/>--> incendié à <placeName ref="#villeEnVermois">Ville en Vermois</placeName>, 22 <choice><abbr>ch.<hi rend="super">x</hi></abbr><expan>chevaux</expan></choice> brulés &etc;.
                         </p>
                      </div>
                   
@@ -2850,7 +2850,7 @@
                            <lb/><choice><abbr>con.<hi rend="super">er</hi></abbr><expan>conseiller</expan></choice> pour la noblesse et <persName ref="#richer">Richer</persName> tr&eé;sorier de
                            <lb/><orgName ref="#HDV">l'h&oô;tel de ville</orgName>. Nous allâmes le soir m&eê;me
                            <lb/>à <placeName ref="#fontaineRoyale">la fontaine <choice><orig>roïale</orig><reg>royale</reg></choice></placeName>, que <rs type="person" ref="#stanislas">le roi</rs> a fort
-                           <pb facs="B543956101M00863_06_0097_1L" n="94v"/>embellie. <persName ref="#girardet">Girardet</persName> l'a peint en perspective<ref type="note" target="#note17650905A"/>
+                           <pb facs="B543956101M00863_06_0097_1L" n="94v"/>embellie. <persName ref="#girardet">Girardet</persName> l'a peint en perspective<!--<ref type="note" target="#note17650905A"/>-->
                            <lb/>et le tableau sera mis demain dans l'<choice><abbr>apartem.<hi rend="super">t</hi></abbr><expan>appartement</expan></choice>
                            <lb/>de <rs type="person" ref="#leszczynskaMarie">la reine</rs>, qui veut en faire aussi le dessin.
                         </p>
@@ -3332,7 +3332,7 @@
                            <lb/>pour la maison du reclu <choice><abbr>q.<hi rend="super">l</hi></abbr><expan>qu'il</expan></choice> a acheté de <placeName ref="#nancyHopitalStJulien">l'h&oô;pital 
                               <lb/>S. Julien</placeName> ; <choice><orig>aiant</orig><reg>ayant</reg></choice> prouvé par une ancienne file
                            <lb/>encore existante que cette maison en tir&oa;it
-                           <lb/>anciennement du bouge des princes<ref type="note" target="#note17651019A"/> qui en est
+                           <lb/>anciennement du bouge des princes<!--<ref type="note" target="#note17651019A"/>--> qui en est
                            <lb/>très à portée. Cela n'eut pas lieu alors par
                            <lb/>la faute de <persName ref="#sirejean">M. Sirejean</persName>.
                         </p>
@@ -3571,7 +3571,7 @@
                         <dateline><date type="entry" when="1765-11-20">20</date></dateline>
                         <p xml:id="d1765112001" ana="#fetes">                           
                            Service aux <placeName ref="#nancyCordeliers">Cordeliers</placeName> par les pensionnaires
-                           <lb/>de <rs type="person" ref="#francoisIEmpereur">l'empereur</rs><ref type="note" target="#note17651120A"/>.
+                           <lb/>de <rs type="person" ref="#francoisIEmpereur">l'empereur</rs><!--<ref type="note" target="#note17651120A"/>-->.
                         </p>
                         <p xml:id="d1765112002">
                            Les nouvelles de la <unclear>porte</unclear> sur <rs type="person" ref="#louisDeFrance">M. le Dauphin</rs>
