@@ -67,6 +67,63 @@
         </header>
     </xsl:variable>
     
+    <xsl:variable name="mapHeader">
+        <header data-sticky-container="true">            
+            <div class="full-width sticky" data-sticky="true" data-options="marginTop:0;">
+                <div class="nav">
+                    <div class="title-bar" data-responsive-toggle="menu-responsive" data-hide-for="medium">
+                        <button class="menu-icon" type="button" data-toggle="true"><xsl:comment>button pour foundation responsive</xsl:comment></button>
+                        <div class="title-bar-title">Menu</div>
+                    </div>
+                    <div class="top-bar" id="menu-responsive">
+                        <div class="top-bar-left">
+                            <ul class="vertical medium-horizontal menu" data-responsive-menu="drilldown medium-dropdown">
+                                <li><a href="../index.html">Accueil</a></li>                                        
+                                <li><a href="calendrier.html">Le journal</a></li>
+                                <li>
+                                    <a href="carte.html">Cartes</a>
+                                    <ul class="vertical menu">
+                                        <li><a target="_blank" href="belprey.html">Nancy en 1754</a></li>
+                                        <li><a target="_blank" href="mique.html">Nancy en 1778</a></li>
+                                        <li><a target="_blank" href="cartographie.html">Nancy aujourd'hui</a></li>                                        
+                                    </ul>
+                                </li>
+                                <li><a href="galerie.html">Galerie</a></li>
+                                <li>
+                                    <a href="focus.html">Focus</a>
+                                    <ul class="vertical menu">
+                                        <li>
+                                            <a href="#">Biographies</a>
+                                            <ul class="vertical menu">
+                                                <li><a href="stanislas.html">Stanislas</a></li>
+                                                <li><a href="durival.html">Durival</a></li>
+                                            </ul>
+                                        </li>                                                                                        
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="top-bar-right">
+                            <ul class="vertical medium-horizontal menu" data-responsive-menu="drilldown medium-dropdown">                                                                             
+                                <li>
+                                    <a href="#">Index</a>
+                                    <ul class="vertical menu">
+                                        <li><a href="listPerson.html">Personnes</a></li>
+                                        <li><a href="listPlace.html">Lieux</a></li>
+                                        <li><a href="listOrg.html">Institutions</a></li>
+                                        <li><a href="listbib.html">Œuvres citées</a></li>
+                                        <li><a href="bibliographie.html">Bibliographie générale</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="apropos.html">À propos</a></li>
+                            </ul>
+                        </div>                                
+                    </div>
+                </div>
+            </div>
+        </header>
+    </xsl:variable>
+    
     <xsl:variable name="footer">
         <div class="row footer edito">
             <div class="large-12 columns">
@@ -1506,60 +1563,7 @@
                     </script>
                 </head>
                 <body>
-                    <header data-sticky-container="true">            
-                        <div class="full-width sticky" data-sticky="true" data-options="marginTop:0;">
-                            <div class="nav">
-                                <div class="title-bar" data-responsive-toggle="menu-responsive" data-hide-for="medium">
-                                    <button class="menu-icon" type="button" data-toggle="true"><xsl:comment>button pour foundation responsive</xsl:comment></button>
-                                    <div class="title-bar-title">Menu</div>
-                                </div>
-                                <div class="top-bar" id="menu-responsive">
-                                    <div class="top-bar-left">
-                                        <ul class="vertical medium-horizontal menu" data-responsive-menu="drilldown medium-dropdown">
-                                            <li><a href="../index.html">Accueil</a></li>                                        
-                                            <li><a href="calendrier.html">Le journal</a></li>
-                                            <li>
-                                                <a href="carte.html">Cartes</a>
-                                                <ul class="vertical menu">
-                                                    <li><a target="_blank" href="belprey.html">Nancy en 1754</a></li>
-                                                    <li><a target="_blank" href="mique.html">Nancy en 1778</a></li>
-                                                    <li><a target="_blank" href="cartographie.html">Nancy aujourd'hui</a></li>                                        
-                                                </ul>
-                                            </li>
-                                            <li><a href="galerie.html">Galerie</a></li>
-                                            <li>
-                                                <a href="focus.html">Focus</a>
-                                                <ul class="vertical menu">
-                                                    <li>
-                                                        <a href="#">Biographies</a>
-                                                        <ul class="vertical menu">
-                                                            <li><a href="stanislas.html">Stanislas</a></li>
-                                                            <li><a href="durival.html">Durival</a></li>
-                                                        </ul>
-                                                    </li>                                                                                        
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="top-bar-right">
-                                        <ul class="vertical medium-horizontal menu" data-responsive-menu="drilldown medium-dropdown">                                                                             
-                                            <li>
-                                                <a href="#">Index</a>
-                                                <ul class="vertical menu">
-                                                    <li><a href="listPerson.html">Personnes</a></li>
-                                                    <li><a href="listPlace.html">Lieux</a></li>
-                                                    <li><a href="listOrg.html">Institutions</a></li>
-                                                    <li><a href="listbib.html">Œuvres citées</a></li>
-                                                    <li><a href="bibliographie.html">Bibliographie générale</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="apropos.html">À propos</a></li>
-                                        </ul>
-                                    </div>                                
-                                </div>
-                            </div>
-                        </div>
-                    </header>                    
+                    <xsl:copy-of select="$mapHeader"/>                    
                     <div id="mapid">
                         <xsl:comment>carte OSM</xsl:comment>
                     </div>
@@ -2042,7 +2046,7 @@
                     </script>
                 </head>
                 <body>
-                    <xsl:copy-of select="$header"/>
+                    <xsl:copy-of select="$mapHeader"/>
                     <div id="mapid"></div>
                     <script src="../js/leaflet/leaflet.js"></script>
                     <script src="../js/cartographie/belprey.js"></script>
@@ -2078,7 +2082,7 @@
                     </script>
                 </head>
                 <body>
-                    <xsl:copy-of select="$header"/>
+                    <xsl:copy-of select="$mapHeader"/>
                     <div id="mapid"></div>
                     <script src="../js/leaflet/leaflet.js"></script>
                     <script src="../js/cartographie/mique.js"></script>
