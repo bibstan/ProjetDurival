@@ -969,9 +969,9 @@
         </xsl:choose>        
     </xsl:template>
     
-    <xsl:template match="tei:lb | tei:pb[ancestor::tei:p]">
+    <!--<xsl:template match="tei:lb | tei:pb[ancestor::tei:p]">
         <br class="lb" />    
-    </xsl:template>
+    </xsl:template>-->
     
     <xsl:template match="tei:div[@type='transcription']//tei:list">
         <ul>
