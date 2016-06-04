@@ -361,8 +361,14 @@
                   <attDef ident="xml:lang" mode="delete"/>
                   <attDef ident="type" mode="change">
                      <valList mode="add" type="closed">
-                        <valItem ident="religious"><!-- todo voir liste avec Eric -->
-                           <desc>Indique un lieux de type religieux</desc>
+                        <valItem ident="religious">
+                           <desc>Indique un lieux de type religieux (utiliser uniquement dans l'index)</desc>
+                        </valItem>
+                        <valItem ident="civil">
+                           <desc>Indique un lieux de type civil (utiliser uniquement dans l'index)</desc>
+                        </valItem>
+                        <valItem ident="military">
+                           <desc>Indique un lieux de type militaire (utiliser uniquement dans l'index)</desc>
                         </valItem>                        
                      </valList>
                   </attDef>
@@ -928,7 +934,13 @@
             </elementSpec>
             <elementSpec ident="title" mode="change">
                <attList>
-                  <attDef ident="level" mode="delete"/>
+                  <attDef ident="level" mode="change">
+                     <valList>
+                        <valItem ident="m">
+                           <!-- todo voir définition avec Éric ? -->
+                        </valItem>
+                     </valList>
+                  </attDef>
                   <attDef ident="type" mode="delete"/>
                   <attDef ident="ana" mode="delete"/>
                   <attDef ident="facs" mode="delete"/>
