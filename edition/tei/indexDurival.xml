@@ -4506,6 +4506,7 @@
             <bibl xml:id="memoireChComptes">
                <title>Mémoire attribué à la Chambre des Comptes</title>
             </bibl>
+            <bibl xml:id="catalogueBibiliotheque"><title>catalogue des livres de la bibliothèque</title></bibl>
          </listBibl>
          <list type="artwork">
             <item xml:id="estampeCollin">estampe de la construction du quartier roïal des cazernes
