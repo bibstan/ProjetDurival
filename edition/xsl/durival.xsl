@@ -393,13 +393,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="tabs-panel is-active" id="panel1">         
-                                    <!--<h1>
-                                        <xsl:variable name="when" select="concat(tei:fw[@type='runningHead']/tei:date/@when,'-01')"/>
-                                        <xsl:variable name="date"><xsl:value-of select="$when"/></xsl:variable>
-                                        <xsl:value-of select="format-date($date,'[MNn] [Y0001]')"/>
-                                        <!-\-<xsl:value-of select="concat(upper-case(substring(tei:fw[@type='runningHead']/tei:date,1,1)),lower-case(substring(tei:fw[@type='runningHead']/tei:date, 2)),' '[not(last())])"/>-\->
-                                    </h1>-->                                    
+                                <div class="tabs-panel is-active" id="panel1">                                                                                 
                                     <div class="large-12 center">                            
                                         <div class="owl-carousel owl-theme">
                                             <xsl:apply-templates/>
@@ -412,15 +406,7 @@
                                             <xsl:variable name="facs" select="concat(.,'.jpg')"/>
                                             <div class="item">
                                                 <img src="../images/{$year}/{$facs}" alt="facs" />
-                                            </div>
-                                            <!--<xsl:choose>
-                                            <xsl:when test=".[ancestor::tei:div[@xml:id='d1765']]">
-                                                <img src="../images/1765/{$facs}" alt="facs" />        
-                                            </xsl:when>
-                                            <xsl:when test=".[ancestor::tei:div[@xml:id='d1766']]">
-                                                <img src="../images/1766/{$facs}" alt="facs" />        
-                                            </xsl:when>
-                                        </xsl:choose>-->                                                                                
+                                            </div>                                                                                                                            
                                         </xsl:for-each>
                                     </div>
                                 </div>
@@ -1147,31 +1133,7 @@
                                                                                 </li>
                                                                             </xsl:otherwise>
                                                                         </xsl:choose>                                                                        
-                                                                    </xsl:for-each>
-                                                                    <!--<xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='day'] | //tei:div[@type='transcription']//tei:div[@type='insert']">
-                                                <xsl:if test=".//tei:persName[@ref=$links] | .//tei:rs[@type='person' and @ref=$links]">
-                                                    <xsl:choose>
-                                                        <xsl:when test="@type='day'">
-                                                            <xsl:variable name="date">
-                                                                <xsl:apply-templates select="./tei:dateline/tei:date" mode="dateShort"/>
-                                                            </xsl:variable>
-                                                            <xsl:variable name="links" select="concat(../@xml:id,'.html#',@xml:id)"/>
-                                                            <li>
-                                                                <a href="{$links}"><xsl:value-of select="$date"/><!-\-<xsl:text> </xsl:text><xsl:value-of select="@xml:id"/>-\-></a>                                    
-                                                            </li>
-                                                        </xsl:when>
-                                                        <xsl:when test="@type='insert'">
-                                                            <xsl:variable name="number">
-                                                                <xsl:number count="tei:div[@type='insert']" from="tei:div[@type='transcription']" level="any"/>
-                                                            </xsl:variable>
-                                                            <xsl:variable name="links" select="concat(../@xml:id,'.html#',@xml:id)"/>
-                                                            <li>
-                                                                <a href="{$links}">Encart n°<xsl:value-of select="$number"/></a>
-                                                            </li>
-                                                        </xsl:when>
-                                                    </xsl:choose>
-                                                </xsl:if>                                                
-                                            </xsl:for-each>-->
+                                                                    </xsl:for-each>                                                                    
                                                                 </ul>
                                                             </div>
                                                         </li>
@@ -1592,40 +1554,9 @@
                                         </dl>
                                     </div>
                                     <br class="clear" />
-                                </xsl:for-each>
-                                <!--<div class="timeline-wrapper">
-                                    <h2 class="timeline-time"><span>2000</span></h2>
-                                    <dl class="timeline-series">                        
-                                        <dt class="timeline-event" id="event01"><a>Robots</a></dt>                        
-                                        <dd class="timeline-event-content" id="event01EX">                                                      
-                                            <blockquote>
-                                                <p>The world is very different ever since the robotic uprising of the mid-nineties. There is no more unhappiness.</p>
-                                                <p>Affirmative.</p>
-                                                <p>We no longer say yes, instead we say affirmative.</p>
-                                                <p>Yes, affirmative.</p>
-                                                <p>Unless its a more colloquial situation with a few robo friends.</p>
-                                                <p>There is only one type of dance, the robot.</p>
-                                                <p>And the robo-boogie.</p>
-                                                <p>Oh yes, two kinds of dances.</p>
-                                            </blockquote>                           
-                                            <br class="clear" />
-                                        </dd><!-\- /.timeline-event-content -\->                                                
-                                    </dl><!-\- /.timeline-series -\->
-                                    <dl class="timeline-series">                        
-                                        <dt class="timeline-event" id="event02"><a>ciborg</a></dt>                        
-                                        <dd class="timeline-event-content" id="event02EX">                                                      
-                                            <blockquote>
-                                                <p>
-                                                    lorem ipsum
-                                                </p>
-                                            </blockquote>                           
-                                            <br class="clear" />
-                                        </dd><!-\- /.timeline-event-content -\->                                                
-                                    </dl>
-                                </div>--><!-- /.timeline-wrapper -->
-                                <!--<button class="timeline-toggle">+ expand all</button>-->                  
+                                </xsl:for-each>                                                                                  
                                 <br class="clear" />                  
-                            </div><!-- /#timeline -->                           
+                            </div>                           
                         </div>
                     </div>
                     <xsl:copy-of select="$footer"/>
@@ -2088,27 +2019,7 @@
                                                             </xsl:for-each>
                                                             <br class="clear" />
                                                         </dd>
-                                                    </xsl:for-each>
-                                                    <!--<span class="tick tick-before"></span>
-                                                    <dt id="robots" class="timeline-event"><a>Robots</a></dt>
-                                                    <span class="tick tick-after"></span>
-                                                    <dd class="timeline-event-content" id="robotsEX">
-                                                        <div class="media">
-                                                            <a href="https://player.vimeo.com/video/626679" class="venobox" data-type="vimeo" data-overlay="rgba(0,0,0,0.5)"><img src="img/event-robots.jpg" alt="singing robots"></a>
-                                                            <p><a href="https://player.vimeo.com/video/626679" class="venobox" data-type="vimeo" data-overlay="rgba(0,0,0,0.5)">Listen</a></p>
-                                                        </div> 
-                                                        <blockquote>
-                                                            <p>The world is very different ever since the robotic uprising of the mid-nineties. There is no more unhappiness.</p>
-                                                            <p>Affirmative.</p>
-                                                            <p>We no longer say yes, instead we say affirmative.</p>
-                                                            <p>Yes, affirmative.</p>
-                                                            <p>Unless its a more colloquial situation with a few robo friends.</p>
-                                                            <p>There is only one type of dance, the robot.</p>
-                                                            <p>And the robo-boogie.</p>
-                                                            <p>Oh yes, two kinds of dances.</p>
-                                                        </blockquote>
-                                                        <br class="clear">
-                                                    </dd>--> 
+                                                    </xsl:for-each>                                                     
                                                 </dl> 
                                             </div> 
                                         </xsl:for-each>
