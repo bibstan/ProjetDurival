@@ -82,7 +82,9 @@
                         à un intendant représentant le pouvoir central. Son ressort concernait la
                         Lorraine et le Barrois. Elle se composait de 36 bailliages et de 29
                         subdélégations. </p>
-      </note>
+
+                </note>
+
                 <!--
                 note xml:id="note17650302A"> Arrêt interlocutoire [cité le 02/03/65] : 
                     <p> Appelé aussi jugement mixte, catégorie de jugement qui tranche une partie du
@@ -204,18 +206,9 @@
                 </note>
                 <note xml:id="note17650529E"> Bichet [cité le 29/05/65] :   <p> Jusqu’à la fin de
                         l’Ancien Régime, mesure de capacité de grain équivalente à 0,96 l. </p>
-                </note>
-                <!-- ERREUR TERME <note xml:id="note17650529F"> Chandelier [cité le 29/05/65] :   <p> fabricant et
-                        marchand de chandelles « demeurant ci-devant proche l’Eglise Primatiale de
-                        cette Ville, àl’Enseigne de la Renommée, […] réside […] à la Porte St.
-                        Nicolas, dans le bâtiment qu’il a construit, […], pour servir de Fonderie
-                        générale des Suifs desVilles et Faubourgs de Nancy. […] très belles
-                        &amp;bonnes Chandelles en façon de bougie, &amp; unit àce commerce celui de
-                        Suif fondu. Ceux quien auront besoin, pourront s’adresser à lui, par Lettre
-                        ou autrement ; il leur en fera un prix raisonnable. (LaClef du Cabinet des
-                        Princes de l’Europe ; ALuxembourg… ; septembre 1751). </p>
-                </note>-->
-                <!--EN A SUPPR-->
+
+                </note>                                
+
                 <note xml:id="note17650601A">
                     <!--Passé par les courroyes [cité le 1erjuin 1765] : -->  <p> ici, synonyme de
                         mise aux arrêts. </p>
@@ -232,13 +225,7 @@
                         communauté non cloitrée et exercent un apostolat (missions sacerdotales ou
                         d’enseignement) selon les principes d'une règle. </p>
                 </note>
-                <!--            EN    A SUPPR-->
-                <!-- <note xml:id="note17650605A"> <!-\-Fête-dieu [cité le 05/06/65] :-\->   <!-\-Sara pas trouvé -\->
-                    <p> Fête religieuse catholique soixante jours après Pâques pendant laquelle le
-                        prêtre portait l’Eucharistie dans un ostensoir au milieu des rues et des
-                        places richement pavoisées de draperies et de guirlandes. Le Saint-Sacrement
-                        était porté sous un dais par quatre notables. </p>
-                </note>-->
+
                 <note xml:id="note17650605B">
                     <!--Corps de ville [cité le 05/06/65] :-->   <p> « On dit aussi le corps de
                         ville pour dire, les officiers de la ville qui sont le prévôt des marchands,
@@ -261,12 +248,9 @@
                         pour les autres impôts municipaux, sur l'organisation de la milice en
                         quartiers et dizaines. Chaque responsablede quartier avait ainsi la charge
                         de la recette de l'aumône. </p>
-                </note>
-                <!--            EN    A SUPPR-->
-                <!-- <note xml:id="note17650614B"> <!-\-Arrérages [cité le 14/06/65] :-\->  <!-\- Sara pas trouvé -\->
-                    <p> Somme d'argent échue ou à échoir versée périodiquement au créancier d'une
-                        rente ou d'une pension. </p>
-                </note>-->
+
+                </note>                
+
                 <note xml:id="note17650626A">
                     <!--Inoculée [cité le 26/06/65] :  -->
                     <p> Pratiquée essentiellement en Europe au XVIII<hi rend="super">e</hi>
@@ -281,20 +265,8 @@
                     <!--Canonicat [cité le 27/06/65] : -->  <p> Bénéfice ( charge) de chanoine dans
                         une église cathédrale, une collégiale ; anciennement, chanoinie. </p>
                 </note>
-                <!--   <note xml:id="note17650707A"> Sol [cité le 07/07/65] :   <p> vv </p>
-                </note>-->
-                <note xml:id="note17650707B">
-                    <!--Denier [cité le 07/07/65] :-->   <p> Le système monétaire des XVII<hi
-                            rend="super">e</hi> et XVIII<hi rend="super">e</hi> siècles était basé
-                        sur un système duodécimal de monnaie de compte (système de numération en
-                        base 12). Les unités de base étaient la livre, le sol et le denier, ces deux
-                        dernières étant des subdivisions de la livre : 20 sols équivalent à une
-                        livre, 12 deniers font un sol (donc 1 livre = 20 sols = 240 deniers). </p>
-                    <!--EN A REVOIR-->
-                </note>
-                <!--<note xml:id="note17650709A"> ommées et toises [cité le 09/07/65] :   <p> Cf E /
-                        Diderot </p>EN A REVOIR
-                </note>-->
+
+ 
                 <note xml:id="note17650712A">
                     <!--passe par les verges 12 juillet 1765-->
                     <p>Issu du langage militaire. Passer par les verges signifie faire passer un
@@ -416,13 +388,7 @@
                             française d'histoire de la médecine.</title> - 1903, n° 02) : premier
                         médecin de la Reine, médecin des enfants, médecins ordinaires</p>
                 </note>
-                <!--<note xml:id="note17650905A"><!-\- todo Attention peint en perspectice !!!!!! ERREUR -\->
-                    <!-\-peint en prospection 05 septembre 1765-\->
-                    <p>Terme didactique. Manière de regarder un objet (Dictionnaire Littré) : "Le
-                        simple aspect est une opération naturelle ; et ce que je nomme prospect[ion]
-                        est un office de raison qui dépend de trois choses : de l'œil, du rayon
-                        visuel et de la distance de l'œil à l'objet", [Poussin, Lettres, p. 91]</p>
-                </note>-->
+
                 <note xml:id="note17650916A">
                     <!--in 4° 16 septembre 1765-->
                     <p>Se dit du format déterminé par le pliage d'une feuille d'impression en 4
@@ -617,6 +583,229 @@
                         livres pour la bière et le cidre, 15 pour l'eau-de-vie. Le droit de courtage
                         est perçu à chaque vente et est le double du droit de jauge.</p>
                 </note>
+
+                <note xml:id="note17660103A">                    
+                    <!--Procession de cordons bleus (Nolhac, Pierre de, Histoire du Château de Versailles : Versailles au XVIII e siècle , Émile-Paul, Paris, 1018, p. 4. ; Pinoteau, Hervé, L’État de l’ordre du Saint-Esprit En 1830 et la survivance des ordres du roi , Nouvelles éditions latines, Paris, 1983, p. 15.)-->
+                    <p>L'ordre du Saint Esprit, ancêtre de l'actuelle Légion d'Honneur, était
+                        composé d'une croix de Malte à quatre branches, suspendue à un large ruban
+                        de couleur bleu moiré. Le surnom de cordon bleu était ainsi donné aux
+                        chevaliers qui la portaient. Traditionnellement, c'est au jour de l'an
+                        qu'une procession de « cordons bleus » précédait le roi pour se rendre à la
+                        Chapelle du Château de Versailles.</p>
+                </note>
+                <note xml:id="note17660103B">
+                    
+                    <!--Point non plus de révérence -->
+                    <p>Profond respect, vénération, déférence envers une personne.</p>
+                </note>
+                <note xml:id="note17660103C">                    
+                    <!--Les glacières de Nancy (Cayon, Jean, Histoire physique, civile, morale et politique de Nancy, ancienne capitale de la Lorraine, depuis son origine jusqu'à nos jours : avec nombre de figures et de plans, Cayon-Liébault, Nancy, 1846, p. 237.)-->
+                    <p>La glace a été un produit utilisé et commercialisé depuis l'Antiquité, en
+                        premier lieu pour rafraîchir les boissons. Son commerce a connu un essor
+                        exponentiel entre la seconde moitié du XVIIème siècle et le début du XXème
+                        siècle. Produit de luxe, on pouvait l'acheter à prix d'or durant les
+                        canicules estivales. C'est en 1736 qu'une première glacière a été établie à
+                        Nancy, près de la Vènerie et mise à la disposition des habitants.</p>
+                </note>
+                <note xml:id="note17660109A">
+                    
+                    <!--Un éloge funèbre (Source : Centre National de Ressources Textuelles et Lexicales)-->
+                    <p>Discours prononcé ou écrit en l'hommage d'un défunt, louant ses mérites et
+                        ses vertus.</p>
+                </note>
+                <note xml:id="note17660117A">
+                    
+                    <!--Un service (Source : Centre National de Ressources Textuelles et Lexicales)-->
+                    <p>Dans la religion chrétienne, un service correspond à l'ensemble des rites
+                        institués pour honorer Dieu. Ici, le service est entendu comme une cérémonie
+                        religieuse célébrée pour honorer la mémoire d'un défunt, en l'occurence
+                        Louis Ferdinand de France, dauphin de France et petit fils de Stanislas,
+                        mort le 20 décembre 1765 au château de Fontainebleau.</p>
+                </note>
+                <note xml:id="note17660127A">
+                    
+                    <!--Des lettres de cachet (Barbiche, Bernard, Les institutions de la monarchie française à l'époque moderne, Presses Universitaires de France, Paris, 2001.)-->
+                    <p>De manière générale, il s'agit de lettres servant à transmettre une demande
+                        ou un ordre du roi. Le cachet royal refermait cette missive qui pouvait
+                        avoir pour objectif de convoquer des corps politiques ou judiciaires, voire
+                        même régler l'organisation de cérémonies. A partir du XVIIe siècle, la
+                        lettre de cachet emprunta communément l'idée d'un ordre parfois arbitraire
+                        visant à éloigner une personne, en l'incarcérant par exemple.</p>
+                </note>
+                <note xml:id="note17660128A">
+                    
+                    <!--les lettres patentes (Barbiche, Bernard, Les institutions de la monarchie française à l'époque moderne, Presses Universitaires de France, Paris, 2001.)-->
+                    <p>Les lettres patentes étaient revêtues du grand sceau de l'état que le roi
+                        adressait « ouvertes » aux parlements, rendant ainsi public un droit, un
+                        statut ou un privilège. Elles s'opposent aux lettres de cachet, lettres
+                        « fermées » d'un cachet du roi.</p>
+                </note>
+                <note xml:id="note17660203A">
+                    
+                    <!--Gardes du Corps (Labourdette, Jean-François, « La Compagnie écossaise des gardes du corps du roi au XVIIIème siècle : recrutement et carrière », Histoire, économie et société, 1984, 3e année, n°1, p. 95-122.)-->
+                    <p>Il s'agit d'un corps de cavalerie, à l'origine nommée garde écossaise car
+                        elle a été créée par le roi Charles VII vers 1423. Dans la Maison militaire
+                        du roi de France, les gardes du corps occupent le premier rang, et se
+                        distinguent par le privilège d'être placés au plus près du roi.</p>
+                </note>
+                <note xml:id="note17660203B">
+                    
+                    <!--catafalque (Source : Centre National de Ressources Textuelles et Lexicales)-->
+                    <p>Provisoire ou définitif, le catafalque est une construction réalisée pour
+                        recevoir le cercueil pendant la cérémonie funèbre ou bien symboliser
+                        celui-ci, s'il s'agit d'une cérémonie commémorative.</p>
+                </note>
+                <note xml:id="note17660217A">                    
+                    <!--le quinquina -->
+                    <p>Il s'agit d'un petit arbuste originaire de l'Equateur. Son écorce est
+                        utilisée en vue de soigner certaines maladies, fièvres et autres plaies. En
+                        1649, Louis XIV a par exemple été soigné par le fameux remède longtemps
+                        resté secret de l'anglais Robert Talbor, qui savait doser l'écorce sans
+                        obtenir d'effets secondaires. Mais c'est en 1735, grâce à Charles Marie de
+                        la Condamine, que les vertus du quinquina ont été considérées par la Science
+                        et connu des botanistes européens.</p>
+                </note>
+                <note xml:id="note17660227A">                    
+                    <!--Des lettres de cachet (Barbiche, Bernard, Les institutions de la monarchie française à l'époque moderne, Presses Universitaires de France, Paris, 2001.)-->
+                    <p>De manière générale, il s'agit de lettres servant à transmettre une demande
+                        ou un ordre du roi. Le cachet royal refermait cette missive qui pouvait
+                        avoir pour objectif de convoquer des corps politiques ou judiciaires, voire
+                        même Régler l'organisation de cérémonies. A partir du XVIIe siècle, la
+                        lettre de cachet emprunta communément l'idée d'un ordre parfois arbitraire
+                        visant à éloigner une personne, en l'incarcérant par exemple.</p>
+                </note>
+                <note xml:id="note17660228A">                    
+                    <!--un stafette (Source : Centre National de Ressources Textuelles et Lexicales)-->
+                    <p>Ici, l'estafette est un courrier dont le but est de porter une nouvelle d'une
+                        poste à une autre par cheval ou par voiture.</p>
+                </note>
+                <note xml:id="note17660301A">                    
+                    <!--casaques (Source : Centre National de Ressources Textuelles et Lexicales)-->
+                    <p>Il s'agit d'une veste d'homme aux larges manches.</p>
+                </note>
+                <note xml:id="note17660302A">                    
+                    <!--la députation (Source : Centre National de Ressources Textuelles et Lexicales)-->
+                    <p>Une députation peut à la fois désigner un ensemble de représentants d'une
+                        collectivité, et l'action d'envoyer ces personnes en mission officielle.</p>
+                </note>
+                <note xml:id="note17660317A">                    
+                    <!--la livrée (Lafabrié, François, « L'habit de livrée dans la Maison civile du roi : entre prestige et servitude », Bulletin du Centre de recherche du Château de Versailles (En ligne), 2011.)-->
+                    <p>La livrée était à l'origine un habit livré régulièrement au gens de service
+                        de la Maison civile du roi, ici de Pologne. Selon la qualité de l'étoffe,
+                        les galons et les couleurs, régnait une hiérarchie entre les porteurs de cet
+                        habit. Dans l'acceptation commune, le terme s'est peu à peu étendu pour
+                        désigner les gens de service.</p>
+                </note>
+                <note xml:id="note17660319A">                    
+                    <!--apointements (Source : Centre National de Ressources Textuelles et Lexicales)-->
+                    <p>Au sens large, l'appointement correspond à une rémunération octroyée à un
+                        employé de manière fixe et périodique.</p>
+                </note>
+                <note xml:id="note17660319B">                    
+                    <!--cadets (Source : Centre National de Ressources Textuelles et Lexicales)-->
+                    <p>Dans le langage militaire, le cadet est généralement un jeune noble servant
+                        en premier lieu comme simple soldat, avant de devenir officier dans un corps
+                        à part entier.</p>
+                </note>
+                <note xml:id="note17660320A">                    
+                    <!--la cassette (Source : Centre National de Ressources Textuelles et Lexicales. Catalogue de vente ADER Nordman Lettres & manuscrits autographes, Paris, 14 Avril 2015, lot n° 392)-->
+                    <p>Ici, la cassette correspond aux revenus personnels du roi. Le 20 mars 1766,
+                        l'inventaire de la cassette du feu roi de Pologne a été rédigé et signé par
+                        l'Intendant du palais François-Antoine Alliot, commissaire général de la
+                        Maison du roi et par Antoine-Martin Chaumont, marquis de La Galaizières. La
+                        cassette du bon roi Stanislas s'élevait alors à 581 200 livres.</p>
+                </note>
+                <note xml:id="note17660324A">                    
+                    <!--apointements (Source : Centre National de Ressources Textuelles et Lexicales)-->
+                    <p>Au sens large, l'appointement correspond à une rémunération octroyée à un
+                        employé de manière fixe et périodique.</p>
+                </note>
+                <note xml:id="note17660330A">                    
+                    <!--une garde bourgeoise -->
+                    <p>Particulièrement utilisée en Belgique, la garde bourgeoise s'instaure dans le
+                        royaume de France dès le XV ème siècle lors d'occasions exceptionnelles. Il
+                        s'agissait d'une milice de civiles qui protégeait et gardait les biens et
+                        les personnes.</p>
+                </note>
+                <note xml:id="note17660508A">                    
+                    <!--des archers de la connétablie (Source : Centre National de Ressources Textuelles et Lexicales)-->
+                    <p>La connétablie était la juridiction du connétable dont le rôle était de juger
+                        les crimes et les délits des gens de guerre afin d'éviter les duels. Les
+                        archers de la connétablie faisait ainsi partie du personnel et disposaient,
+                        comme le lieutenant, d'attributions d'ordre judiciaire.</p>
+                </note>
+                <note xml:id="note17660512A">                    
+                    <!--chapitre -->
+                    <p>Dans la tradition catholique, le chapitre d'une congrégation religieuse ou
+                        d'un ordre correspond à l'assemblée des religieuse ou Religieuses, qui se
+                        réunissent pour des raisons et dans des conditions bien définies.</p>
+                </note>
+                <note xml:id="note17660526A">                    
+                    <!--catafalque (Source : Centre National de Ressources Textuelles et Lexicales)-->
+                    <p>Provisoire ou définitif, le catafalque est une construction réalisée pour
+                        recevoir le cercueil pendant la cérémonie funèbre ou bien symboliser
+                        celui-ci s'il s'agit d'une cérémonie commémorative</p>
+                </note>
+                <note xml:id="note17660527A">                    
+                    <!--mausolée (Source : Centre National de Ressources Textuelles et Lexicales)-->
+                    <p>Grandiose et richement décoré, le mausolée est un monument funéraire de
+                        grandes dimensions, destiné à recevoir le corps d'une personnalité
+                        importante et parfois de sa famille.</p>
+                </note>
+                <note xml:id="note17660604A">                    
+                    <!--catafalque (Source : Centre National de Ressources Textuelles et Lexicales)-->
+                    <p>Provisoire ou définitif, le catafalque est une construction réalisée pour
+                        recevoir le cercueil pendant la cérémonie funèbre ou bien symboliser
+                        celui-ci s'il s'agit d'une cérémonie commémorative</p>
+                </note>
+                <note xml:id="note17660625A">                    
+                    <!--le ban des fenaisons sur le finage de Nancy (Nicod, Jean, « Problèmes de structure agraire en Lorraine », Annale de Géographie, 1951, t. 60, n° 322, p. 337-348.)-->
+                    <p>Dans les régions rurales de champs ouverts, telles que les communes
+                        lorraines, le ban se compose de deux éléments ; le village placé au centre
+                        et autour le finage, puis d'autres terrains accessibles aux troupeaux. Dans
+                        le monde agricole, la fenaison est le stade optimal pour couper et récolter
+                        les graminées. Le finage correspond quant à lui à la délimitation d'un
+                        territoire villageois ou urbain.</p>
+                </note>
+                <note xml:id="note17660707A">                    
+                    <!--apoplexie (Source : Centre National de Ressources Textuelles et Lexicales)-->
+                    <p>Dans le domaine médical, l'apoplexie correspond à un arrêt complet ou partiel
+                        de toutes les fonctions cérébrales. Ceci peut provoquer une simple perte de
+                        connaissance ou dans les cas les plus graves, une paralysie partielle ou
+                        totale de la circulation sanguine et de la respiration.</p>
+                </note>
+                <note xml:id="note17660825A">                    
+                    <!--deux salves de monsqueterie à feu roulant (Source : Centre National de Ressources Textuelles et Lexicales)-->
+                    <p>Plusieurs coups de décharge simultanée (ou feu roulant) de mousquets, c'est à
+                        dire des armes à feu portative à canon long et Crosse d'épaule.</p>
+                </note>
+                <note xml:id="note17661004A">                    
+                    <!--des douleurs de gravelle (Source : Centre National de Ressources Textuelles et Lexicales)-->
+                    <p>La gravelle est un trouble causé par la formation de petites pierres ou
+                        concrétions granuleuses dans le conduit rénal et urinaire, de taille plus
+                        petite que les calculs, provoquant de vives douleurs, parfois fatales.</p>
+                </note>
+                <note xml:id="note17661026A">                    
+                    <!--une sentinelle (Source : Centre National de Ressources Textuelles et Lexicales)-->
+                    <p>Dans le langage militaire, une sentinelle est un soldat armé et chargé de
+                        monter la garde d'un lieu occupé par l'armé, d'un poste militaire, ou un
+                        endroit stratégique et particulier. Si deux soldats font le guet ensemble,
+                        on parle alors de sentinelle Double.</p>
+                </note>
+                <note xml:id="note17661027A">                    
+                    <!--les arrérages (Source : Centre National de Ressources Textuelles et Lexicales)-->
+                    <p>Le verbe arrérager signifie ce qui est resté dû après échéance ; autrement
+                        dit les arrérages correspondent à ce qui est dû ou Échu (rentes, loyers,
+                        sommes d'argent…)</p>
+                </note>
+                <note xml:id="note17661217A">                    
+                    <!--des lettres patentes (Barbiche, Bernard, Les institutions de la monarchie française à l'époque moderne, Presses Universitaires de France, Paris, 2001.)-->
+                    <p>Les lettres patentes étaient revêtues du grand sceau de l'état que le roi
+                        adressait « ouvertes » aux parlements, rendant ainsi public un droit, un
+                        statut ou un privilège. Elles s'opposent aux lettres de cachet, lettres
+                        « fermées » d'un cachet du roi.</p>
+                </note>
+
             </div>
         </body>
     </text>

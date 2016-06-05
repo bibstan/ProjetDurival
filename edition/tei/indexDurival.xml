@@ -110,9 +110,9 @@
                <persName>
                   <persName>Armentières</persName>
                   <forename>Louis-Gabriel de</forename>
-                  <surname>Brienne de Conflans</surname>                  
+                  <surname>Brienne de Conflans</surname>
                   <roleName>marquis d'</roleName>
-               </persName>               
+               </persName>
                <birth when="1711"/>
                <death when="1774"/>
                <listEvent>
@@ -309,17 +309,18 @@
                   </event>
                </listEvent>
             </person>
-            <person xml:id="boufflersStanislas2"><!-- renvoi -->
+            <person xml:id="boufflersStanislas2">
+               <!-- renvoi -->
                <persName ref="#boufflersStanislas">
                   <surname>Boufflers</surname>
-                  <forename>Stanislas-Jean de</forename>                  
+                  <forename>Stanislas-Jean de</forename>
                </persName>
             </person>
             <person xml:id="boufflersStanislas">
                <persName>
                   <persName>Remiencourt</persName>
                   <forename>Stanislas-Jean de</forename>
-                  <surname>Boufflers</surname>                  
+                  <surname>Boufflers</surname>
                   <roleName>marquis de </roleName>
                </persName>
                <birth when="1738"/>
@@ -335,11 +336,11 @@
                      <p>Filleul et protégé de Stanislas</p>
                   </event>
                </listEvent>
-            </person>            
+            </person>
             <person xml:id="bouflersMme">
-               <persName>                  
+               <persName>
                   <surname>Beauvau-Craon</surname>
-                  <forename>Marie Françoise Catherine de</forename>                                    
+                  <forename>Marie Françoise Catherine de</forename>
                   <roleName>marquise de Boufflers-Remiencourt</roleName>
                </persName>
                <birth when="1711"/>
@@ -412,11 +413,11 @@
             </person>
             <person xml:id="burkanaBaron">
                <persName>M. le baron de Burkana</persName>
-            </person>            
+            </person>
             <person xml:id="busquetDeCaumontDuch">
-               <persName>                  
+               <persName>
                   <surname>Bertout de Forbany</surname>
-                  <forename>Marie Elisabeth</forename>                                   
+                  <forename>Marie Elisabeth</forename>
                   <roleName>duchesse de Busquet de Caumont</roleName>
                </persName>
                <birth when="1715"/>
@@ -677,12 +678,14 @@
             <person xml:id="contade">
                <persName>
                   <surname>Contade</surname>
-                  <forename>Louis Georges Érasme de</forename>                  
+                  <forename>Louis Georges Érasme de</forename>
                </persName>
                <birth when="1704"/>
                <death when="1795"/>
                <state>
-                  <p><roleName>maréchal de France</roleName></p>
+                  <p>
+                     <roleName>maréchal de France</roleName>
+                  </p>
                </state>
                <listEvent>
                   <event>
@@ -860,7 +863,7 @@
             </person>
             <person xml:id="deMontesquiou">
                <persName>
-                  <persName>Monstesquiou</persName>                  
+                  <persName>Monstesquiou</persName>
                   <forename>Anne Pierre de</forename>
                   <surname>Montesquiou Fézensac</surname>
                   <roleName>marquis de</roleName>
@@ -900,11 +903,11 @@
                   <p>Antoine-Bernard- marquis Des Armoises- lieutenant général de François Ier -
                      mort à Nancy en 1768 ?</p>
                </state>
-            </person>            
+            </person>
             <person xml:id="desarmoisesMme">
-               <persName>                  
+               <persName>
                   <surname>Beauvau</surname>
-                  <forename>Anne de</forename>                                    
+                  <forename>Anne de</forename>
                   <roleName>marquise Des Armoises</roleName>
                </persName>
                <birth when="1710"/>
@@ -964,9 +967,9 @@
                </state>
             </person>
             <person xml:id="devaux">
-               <persName>                  
+               <persName>
                   <surname>Devaux</surname>
-                  <forename>François-Antoine</forename>                  
+                  <forename>François-Antoine</forename>
                   <addName>Panpan</addName>
                </persName>
                <birth when="1712"/>
@@ -1050,11 +1053,11 @@
                <state>
                   <p>correspondant de Durival</p>
                </state>
-            </person>            
+            </person>
             <person xml:id="durasDuchesse">
-               <persName>                  
+               <persName>
                   <surname>Coëtquen</surname>
-                  <forename>Louise Françoise Maclovie Céleste de</forename>                                    
+                  <forename>Louise Françoise Maclovie Céleste de</forename>
                   <roleName>duchesse de Duras</roleName>
                </persName>
                <birth when="1724"/>
@@ -1268,14 +1271,14 @@
             <person xml:id="gerbevillerMis2">
                <persName ref="#gerbevillerMis">
                   <surname>Lambertye</surname>
-                  <forename>Camille de</forename>                  
+                  <forename>Camille de</forename>
                </persName>
             </person>
             <person xml:id="gerbevillerMis">
                <persName>
                   <persName>Gerbeviller</persName>
                   <forename>Camille de</forename>
-                  <surname>Lambertye</surname>                  
+                  <surname>Lambertye</surname>
                   <roleName>marquis de</roleName>
                </persName>
                <birth when="1714"/>
@@ -1325,11 +1328,11 @@
                   <p>Médecin ordinaire du roi- mort le 11/09/1765</p>
                </state>
             </person>
-            
+
             <person xml:id="grammontDuchesse">
-               <persName>                  
+               <persName>
                   <surname>Choiseul-Stainville</surname>
-                  <forename>Béatrix de</forename>                                    
+                  <forename>Béatrix de</forename>
                   <roleName>duchesse de Gramont</roleName>
                </persName>
                <birth when="1730"/>
@@ -1375,7 +1378,8 @@
                   <p>Comédienne</p>
                </state>
             </person>
-            <person xml:id="guerchyComte"><!-- todo ? -->
+            <person xml:id="guerchyComte">
+               <!-- todo ? -->
                <persName>
                   <surname>Régnier</surname>
                   <forename>Claude Louis François</forename>
@@ -1591,7 +1595,8 @@
                <persName>
                   <surname>Héron de Villefosse</surname>
                   <forename>Charlotte Elisabeth</forename>
-                  <roleName>madame de Chaumont de la Milliére</roleName><!-- todo épouse -->
+                  <roleName>madame de Chaumont de la Milliére</roleName>
+                  <!-- todo épouse -->
                </persName>
                <birth when="1720"><!-- todo v 1720 => @ cert ? --></birth>
                <death when="1771"/>
@@ -1764,14 +1769,14 @@
             <person xml:id="lomont2">
                <persName ref="#lomont">
                   <surname>Chastelet</surname>
-                  <forename>Florent Louis Marie du</forename>                  
+                  <forename>Florent Louis Marie du</forename>
                </persName>
             </person>
             <person xml:id="lomont">
-               <persName>                  
+               <persName>
                   <persName>Lomont</persName>
                   <forename>Florent Louis Marie du</forename>
-                  <surname>Chastelet</surname>                  
+                  <surname>Chastelet</surname>
                   <roleName>comte de</roleName>
                </persName>
                <birth when="1727"/>
@@ -2059,11 +2064,11 @@
             </person>
             <person xml:id="nicolas">
                <persName>M. Nicolas</persName>
-            </person>            
+            </person>
             <person xml:id="noaillesMme">
-               <persName>                  
+               <persName>
                   <surname>Arpajon</surname>
-                  <forename>Anne Claude Louise d'</forename>                                    
+                  <forename>Anne Claude Louise d'</forename>
                   <roleName>comtesse de Noailles</roleName>
                </persName>
                <birth when="1729"/>
@@ -2432,7 +2437,8 @@
                <state>
                   <p>chevalier</p>
                </state>
-               <birth notBefore="1684" notAfter="1687"/><!-- todo pour le xsl -->
+               <birth notBefore="1684" notAfter="1687"/>
+               <!-- todo pour le xsl -->
                <death when="1773"/>
                <listEvent>
                   <event>
@@ -2762,7 +2768,8 @@
                <persName>
                   <surname>Foucault de Saint-Germain Beaupré</surname>
                   <forename>Anne-Françoise de</forename>
-                  <roleName>marquise d'Auroy</roleName><!-- todo épouse -->
+                  <roleName>marquise d'Auroy</roleName>
+                  <!-- todo épouse -->
                </persName>
                <birth when="1718"/>
                <death when="1766"/>
@@ -2841,7 +2848,8 @@
 
          <listPlace xml:id="listPlace">
             <place xml:id="smirne">
-               <placeName>Smyrne (auj. Izmir)</placeName>
+               <placeName>Smyrne</placeName>
+               <placeName type="today">Smyrne</placeName>
             </place>
             <place xml:id="fontainebleau">
                <placeName>Fontainebleau</placeName>
@@ -2852,229 +2860,224 @@
             <place xml:id="nancy">
                <placeName>Nancy</placeName>
             </place>
-            <place xml:id="nancyPepiniere">
+            <place xml:id="nancyPepiniere" type="civil">
+               <placeName>Nancy</placeName>
                <placeName>Pépinière royale</placeName>
                <location>
                   <geo>48.69807,6.18542</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Le terrain est attribué à l'établissement de la Pépinière royale par arrêt du
                   conseil des finances du 26 octobre 1765.</desc>
             </place>
-            <place xml:id="bonsecours">
+            <place xml:id="bonsecours" type="religious">
+               <placeName>Nancy</placeName>
                <placeName>Église de Bonsecours</placeName>
                <location>
                   <geo>48.6765536,6.1994878</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Construite en 1738 sur l'emplacement de la chapelle Notre-Dame-de-la-Victoire
                   (1484).</desc>
             </place>
             <place xml:id="nancyFabriques">
+               <placeName>Nancy</placeName>
                <placeName>Fabriques de Nancy</placeName>
-               <location>
-                  <district type="city">Nancy</district>
-               </location>
                <desc>Ensemble des biens matériels d'une église paroissiale. A VERIFIER LE SENS
                   ICI</desc>
             </place>
-            <place xml:id="nancyJardin">
+            <place xml:id="nancyJardin" type="civil">
+               <placeName>Nancy</placeName>
                <placeName>Jardin Botanique</placeName>
                <location>
                   <geo>48.69454214750552,6.188459694385529</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Créé en 1751-52. Jardin Dominique-Alexandre Godron</desc>
             </place>
-            <place xml:id="nancyCasernes">
+            <place xml:id="nancyCasernes" type="military">
+               <placeName>Nancy</placeName>
                <placeName>Casernes (les nouvelles)</placeName>
                <location>
                   <geo>48.696289,6.18809063321451</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Construites à partir de 1764 près de la porte Sainte-Catherine. Avant cette
                   date l'allusion aux casernes fait référence en particulier aux casernes qui
                   étaient alors sur le site de l'actuel Rectorat.</desc>
             </place>
             <place xml:id="nancyVenerie">
+               <placeName>Nancy</placeName>
                <placeName>Manufacture de la Vénerie</placeName>
                <location>
                   <geo>48.69299,6.17653</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Une des glacières de la Ville était à proximité en 1731.</desc>
             </place>
             <place xml:id="nancyManufactureCoton">
+               <placeName>Nancy</placeName>
                <placeName>Manufacture de coton</placeName>
-               <location>
-                  <district type="city">Nancy</district>
-               </location>
-               <desc>Nancy</desc>
             </place>
-            <place xml:id="nancyCitadelle">
+            <place xml:id="nancyCitadelle" type="military">
+               <placeName>Nancy</placeName>
                <placeName>Citadelle</placeName>
                <location>
                   <geo>48.70013,6.17806</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>La construction de la citadelle remonte à 1634 alors que la France occupait
                   Nancy.</desc>
             </place>
-            <place xml:id="nancyPrimatiale">
+            <place xml:id="nancyPrimatiale" type="religious">
+               <placeName>Nancy</placeName>
                <placeName>Primatiale</placeName>
                <location>
-                  <geo>48.69142,6.18595</geo>
-                  <district type="city">Nancy</district>
+                  <geo>48.69142, 6.18595</geo>
                </location>
                <desc>La construction débute en 1607, interrompue puis reprise en 1703, mais c'est à
                   Stanislas qu'on doit l'achèvemment de ce chantier en 1742. Devient
                   Cathédrale-Primatiale en 1777.</desc>
             </place>
-            <place xml:id="nancyHDV">
+            <place xml:id="nancyHDV" type="civil">
+               <placeName>Nancy</placeName>
                <placeName>Hôtel de ville</placeName>
                <location>
                   <geo>48.69309,6.18358</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>La construction du nouvel Hôtel de Ville débute en 1752 et s'achève en 1755.
                   L'ancien était près de Saint-Sébastien, entre la rue des Ponts et des
                   Quatres-Églises, il fut démoli en 1752.</desc>
             </place>
-            <place xml:id="nancyPlaceRoyale">
+            <place xml:id="nancyPlaceRoyale" type="civil">
+               <placeName>Nancy</placeName>
                <placeName>Place royale</placeName>
                <location>
-                  <geo>48.693644,6.183240</geo>
-                  <district type="city">Nancy</district>
+                  <geo>48.693644, 6.183240</geo>
                </location>
                <desc>En 1752, le programme des travaux destinés à créer une grande place qui
                   réunirait les deux villes est entériné. La place est achevée avec l'érection de la
                   statue de Louis XV le 18 novembre 1755.</desc>
             </place>
-            <place xml:id="nancyMarche">
+            <place xml:id="nancyMarche" type="civil">
+               <placeName>Nancy</placeName>
                <placeName>Place du marché de la ville neuve</placeName>
                <location>
                   <geo>48.68910,6.18200</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Centre de la ville neuve voulue par Charles III, l'ancien Hôtel de ville y
                   était érigé.</desc>
             </place>
-            <place xml:id="nancyMinimes">
+            <place xml:id="nancyMinimes" type="religious">
+               <placeName>Nancy</placeName>
                <placeName>Couvent des Minimes</placeName>
                <location>
                   <geo>48.69101704946378,6.177754998207091</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Fondé en 1592, reconstruit en 1613, il sera détruit à la Révolution.</desc>
             </place>
-            <place xml:id="nancyStRoch">
+            <place xml:id="nancyStRoch" type="religious">
+               <placeName>Nancy</placeName>
                <placeName>Église Saint-Roch</placeName>
                <location>
                   <geo>48.69082,6.18222</geo>
-                  <district type="city">Nancy</district>
                </location>
-               <desc>Église construite en 1616</desc>
+               <desc>Église construite en 1616.</desc>
             </place>
-            <place xml:id="bonsecoursMinimes">
+            <place xml:id="bonsecoursMinimes" type="religious">
+               <placeName>Nancy</placeName>
                <placeName>Couvent des Minimes de Bonsecours</placeName>
                <location>
                   <geo>48.67650684045987,6.198976635932922</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Établi en 1611, près de la chapelle de Notre-Dame-de-la-Victoire, Stanislas le
                   fait reconstruire après l'édification de la nouvelle église de Bonsecours en
                   1738.</desc>
             </place>
-            <place xml:id="boudonvilleAqueduc">
+            <place xml:id="boudonvilleAqueduc" type="civil">
+               <placeName>Nancy</placeName>
                <placeName>Aqueduc de Boudonville</placeName>
                <location>
                   <geo>48.69588944524845,6.176145672798157</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Un aqueduc amenait l'eau des pentes de Boudonville et passait approximativement
                   entre le Bastion de Salm et de Danemark pour aller rue de la Source.</desc>
             </place>
-            <place xml:id="nancyCongregation">
+            <place xml:id="nancyCongregation" type="religious">
+               <placeName>Nancy</placeName>
                <placeName>Congrégation (Religieuses de la)</placeName>
                <location>
                   <geo>48.69228,6.18666</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Fondé en 1615.</desc>
             </place>
-            <place xml:id="nancyArdoisiere">
+            <place xml:id="nancyArdoisiere" type="civil">
+               <placeName>Nancy</placeName>
                <placeName>Ardoisière de Nancy</placeName>
                <location>
                   <geo>48.69305,6.17843</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Le 9 septembre 1764 les officiers municipaux obtiennent l'autorisation
                   d'exploiter à nouveau une ardoisière dans les fossés près de la Vénerie, on
                   suppose que c'est à ce site que Durival fait allusion.</desc>
             </place>
-            <place xml:id="nancyRueCongregation">
+            <place xml:id="nancyRueCongregation" type="civil">
+               <placeName>Nancy</placeName>
                <placeName>Rue de la Congrégation</placeName>
                <location>
                   <geo>48.69244,6.18550</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Rue percée en 1752.</desc>
             </place>
-            <place xml:id="nancyRueJacobins">
+            <place xml:id="nancyRueJacobins" type="civil">
+               <placeName>Nancy</placeName>
                <placeName>Rue des Jacobins</placeName>
-               <placeName type="today">rue Pierre Fourier</placeName>
+               <placeName type="today">Rue des Jacobins</placeName>
                <location>
                   <geo>48.69245296801029,6.183156967163086</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Depuis 1794, rue des Dominicains.</desc>
             </place>
-            <place xml:id="nancyStEpvre">
+            <place xml:id="nancyStEpvre" type="religious">
+               <placeName>Nancy</placeName>
                <placeName>Église Saint-Èpvre</placeName>
                <location>
                   <geo>48.69561,6.1801</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>L'ancienne église est rasée et remplacée par l'église actuelle (par Prosper
                   Morey à la fin du XIXe siècle).</desc>
             </place>
-            <place xml:id="nancyPlaceStEpvre">
+            <place xml:id="nancyPlaceStEpvre" type="civil">
+               <placeName>Nancy</placeName>
                <placeName>Place Saint-Èpvre</placeName>
                <location>
                   <geo>48.69609,6.17934</geo>
-                  <district type="city">Nancy</district>
                </location>
             </place>
-            <place xml:id="nancyStLeopold">
+            <place xml:id="nancyStLeopold" type="religious">
+               <placeName>Nancy</placeName>
                <placeName>Église Saint-Léopold</placeName>
                <location>
                   <geo>48.68732,6.18251</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Église du prieuré des Bénedictins, fondée en 1617, prend le titre d'abbaye en
                   1718.</desc>
             </place>
-            <place xml:id="nancyStSebastien">
+            <place xml:id="nancyStSebastien" type="religious">
+               <placeName>Nancy</placeName>
                <placeName>Église Saint-Sébastien</placeName>
                <location>
                   <geo>48.68904,6.18098</geo>
-                  <district type="city">Nancy</district>
                </location>
-               <desc>L'église actuelle date de 1720, sa construction s'achève en 1732..</desc>
+               <desc>L'église actuelle date de 1720, sa construction s'achève en 1732.</desc>
             </place>
-            <place xml:id="nancyDamesStSacrement">
+            <place xml:id="nancyDamesStSacrement" type="religious">
+               <placeName>Nancy</placeName>
                <placeName>Dames du Saint-Sacrement</placeName>
                <location>
                   <geo>48.68736,6.18522</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Fondation en 1624 (Notre-Dame de la Consolation)</desc>
             </place>
-            <place xml:id="nancyCollegeJesuites">
+            <place xml:id="nancyCollegeJesuites" type="religious">
+               <placeName>Nancy</placeName>
                <placeName>Collège des jésuites</placeName>
                <location>
                   <geo>48.6908736324152,6.182100176811218</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Fondé en 1615. Accolé à l'église Saint-Roch, entre la rue des Carmes ou était
                   son entrée, et la rue Saint-Dizier</desc>
@@ -3083,136 +3086,137 @@
             <!--<place xml:id="nancyCollege">
                <placeName>Collège de Nancy</placeName>
             </place>-->
-            <place xml:id="nancyNoviciatJesuites">
+            <place xml:id="nancyNoviciatJesuites" type="religious">
+               <placeName>Nancy</placeName>
                <placeName>Église du Noviciat Jésuite</placeName>
                <location>
                   <geo>48.68641,6.18659</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Fondé en 1601. Église de 1604.</desc>
             </place>
-            <place xml:id="nancyStPierre">
+            <place xml:id="nancyStPierre" type="religious">
+               <placeName>Nancy</placeName>
                <placeName>Église Saint-Pierre</placeName>
                <location>
-                  <geo>48.683084,6.191872</geo>
-                  <district type="city">Nancy</district>
+                  <geo>48.681738364255395,6.192228198051453</geo>
                </location>
-               <desc>Église consacrée en 1737.</desc>
+               <desc>Église consacrée en 1737. La nouvelle église Saint-Pierre sera construite en
+                  1855.</desc>
             </place>
-            <place xml:id="nancyBibliotheque">
+            <place xml:id="nancyBibliotheque" type="civil">
+               <placeName>Nancy</placeName>
                <placeName>Bibliothèque Royale</placeName>
                <location>
                   <geo>48.69318,6.18394</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>La bibliothèque royale est au premier étage de l'hôtel de Ville depuis 1763,
                   auparavant elle était dans la galerie des Cerfs au Palais Ducal. Elle intègrera à
                   son emplacement actuel vers 1797.</desc>
             </place>
-            <place xml:id="nancyPetiteCarmelites">
+            <place xml:id="nancyPetiteCarmelites" type="religious">
+               <placeName>Nancy</placeName>
                <placeName>Couvent des Petites Carmélites</placeName>
                <location>
                   <geo>48.69066,6.17682</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Installé rue Sain-Joseph (rue Chanzy) en 1655.</desc>
             </place>
-            <place xml:id="nancyHopitalStCharles">
+            <place xml:id="nancyHopitalStCharles" type="religious">
+               <placeName>Nancy</placeName>
                <placeName>Hôpital Saint-Charles</placeName>
                <location>
                   <geo>48.689356,6.178793</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Fondée en 1626 dans l'ancienne batterie de cuivre.</desc>
             </place>
-            <place xml:id="nancyHopitalStJulien">
+            <place xml:id="nancyHopitalStJulien" type="religious">
+               <placeName>Nancy</placeName>
                <placeName>Hôpital Saint-Julien</placeName>
                <location>
                   <geo>48.6921578,6.1848052992915</geo>
-                  <district type="city">Nancy</district>
                </location>
-               <desc> La fondation pour les orphelins de Stanislas y est installée en 1748. Hôpital
-                  installé en Ville Neuve en 1589. Auparavant Grande-Rue depuis le
-                  XIV&lt;sup&gt;e&lt;/sup&gt; siècle. </desc>
-               <!-- todo les entités -->
+               <desc>La fondation pour les orphelins de Stanislas y est installée en 1748. Hôpital
+                  installé en Ville Neuve en 1589. Auparavant Grande-Rue depuis le XIVe
+                  siècle.</desc>
             </place>
-            <place xml:id="nancyDominiquains">
+            <place xml:id="nancyDominiquains" type="religious">
+               <placeName>Nancy</placeName>
                <placeName>Couvent des Dominicains</placeName>
                <location>
                   <geo>48.69146,6.18368</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Fondé en 1640, détruit à la Révolution.</desc>
             </place>
-            <place xml:id="nancyVisitation">
+            <place xml:id="nancyVisitation" type="religious">
+               <placeName>Nancy</placeName>
                <placeName>Église de la Visitation</placeName>
                <location>
                   <geo>48.69160133692096,6.179393827915192</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Le couvent est fondé en 1632, la chapelle subsiste, le lycée Poincaré est
                   construit sur son emprise et celle des Minimes.</desc>
             </place>
-            <place xml:id="nancyPenitentsBlancs">
+            <place xml:id="nancyPenitentsBlancs" type="religious">
+               <placeName>Nancy</placeName>
                <placeName>Église des Pénitents blancs</placeName>
                <location>
                   <geo>48.69609,6.17806</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>La confrérie des Pénitents blancs est fondée en 1633. Leur église, Saint-Michel
                   sera détruite en 1793.</desc>
             </place>
-            <place xml:id="nancyTiercelins">
+            <place xml:id="nancyTiercelins" type="religious">
+               <placeName>Nancy</placeName>
                <placeName>Couvent des Tiercelins</placeName>
                <location>
                   <geo>48.6902742,6.1875429</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Fondé en 1622. Installé en ville-neuve depuis 1656.</desc>
             </place>
-            <place xml:id="nancyCarmes">
+            <place xml:id="nancyCarmes" type="religious">
+               <placeName>Nancy</placeName>
                <placeName>Couvent des Carmes</placeName>
                <location>
                   <geo>48.692132501452924,6.180826127529144</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Installé en 1611-1612.</desc>
             </place>
-            <place xml:id="nancyCarriere">
+            <place xml:id="nancyCarriere" type="civil">
+               <placeName>Nancy</placeName>
                <placeName>Place de la Carrière</placeName>
                <location>
                   <geo>48.69577,6.18180</geo>
-                  <district type="city">Nancy</district>
                </location>
+               <desc/>
             </place>
-            <place xml:id="nancyCapucins">
+            <place xml:id="nancyCapucins" type="religious">
+               <placeName>Nancy</placeName>
                <placeName>Couvent des Capucins</placeName>
                <location>
                   <geo>48.68694,6.18658</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Fondé en 1592. Église construite en 1604.</desc>
             </place>
-            <place xml:id="nancyStNicolas">
+            <place xml:id="nancyStNicolas" type="religious">
+               <placeName>Nancy</placeName>
                <placeName>Paroisse Saint-Nicolas</placeName>
                <location>
                   <geo>48.68694,6.18658</geo>
-                  <district type="city">Nancy</district>
                </location>
             </place>
-            <place xml:id="nancyAugustins">
+            <place xml:id="nancyAugustins" type="religious">
+               <placeName>Nancy</placeName>
                <placeName>Couvent des Augustins</placeName>
                <location>
                   <geo>48.68922,6.18062</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Fondé en 1634.</desc>
             </place>
-            <place xml:id="nancyCordeliers">
+            <place xml:id="nancyCordeliers" type="religious">
+               <placeName>Nancy</placeName>
                <placeName>Couvent des Cordeliers</placeName>
                <location>
-                  <geo>48.69786,6.17942</geo>
-                  <district type="city">Nancy</district>
+                  <geo>48.69786, 6.17942</geo>
                </location>
                <desc>Fondé sous René II en 1487. La chapelle est terminée en 1608.</desc>
             </place>
@@ -3220,48 +3224,48 @@
             <!--<place xml:id="nancyTheatre">
                <placeName>Théâtre de la ville de Nancy</placeName>
             </place>-->
-            <place xml:id="nancyCimetierePorteStJean">
+            <place xml:id="nancyCimetierePorteStJean" type="religious">
+               <placeName>Nancy</placeName>
                <placeName>Cimetière extérieur de la porte Saint-Jean</placeName>
                <location>
                   <geo>48.68900,6.17564</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Emplacement approximatif. Ouvert en 1763.</desc>
             </place>
-            <place xml:id="nancySteElisabeth">
+            <place xml:id="nancySteElisabeth" type="religious">
+               <placeName>Nancy</placeName>
                <placeName>Couvent Sainte-Élisabeth</placeName>
                <location>
                   <geo>48.68564,6.18638</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Situation approximative. Sur l'emplacement de l'ancien Hôpital Notre-Dame,
                   Porte Saint-Nicolas.</desc>
             </place>
-            <place xml:id="nancyPorteRoyale">
+            <place xml:id="nancyPorteRoyale" type="military">
+               <placeName>Nancy</placeName>
                <placeName>Porte Royale</placeName>
-               <placeName type="today">Porte Héré</placeName>
+               <placeName type="today">Porte Royale</placeName>
                <location>
                   <geo>48.69441,6.18268</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Louis XIV fait construire la porte royale en 1673. Aujourd'hui Porte
                   Héré</desc>
             </place>
-            <place xml:id="nancyPlaceDames">
+            <place xml:id="nancyPlaceDames" type="civil">
+               <placeName>Nancy</placeName>
                <placeName>Place des Dames</placeName>
-               <placeName type="today">place du Colonel Fabien</placeName>
+               <placeName type="today">Place des Dames</placeName>
                <location>
                   <geo>48.6952,6.1798</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Une des plus anciennes places de Nancy, aujourd'hui Place du Colonel
                   Fabien.</desc>
             </place>
-            <place xml:id="nancyPalais">
+            <place xml:id="nancyPalais" type="civil">
+               <placeName>Nancy</placeName>
                <placeName>Palais</placeName>
                <location>
                   <geo>48.69499,6.18286</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Palais, ancien Hôtel de Craon construit en 1716 par Boffrand, architecte du duc
                   Léopold</desc>
@@ -3305,11 +3309,11 @@
             <place xml:id="compiegne">
                <placeName>Compiègne</placeName>
             </place>
-            <place xml:id="hotelCommandant">
+            <place xml:id="hotelCommandant" type="military">
+               <placeName>Nancy</placeName>
                <placeName>Hôtel du commandant</placeName>
                <location>
                   <geo>48.700155945275355,6.178084909915924</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>À priori logement du commandant de la place militaire, dans la
                   citadelle.</desc>
@@ -3320,11 +3324,13 @@
             <place xml:id="luneville">
                <placeName>Lunéville</placeName>
             </place>
-            <place xml:id="lunevilleHDV">
-               <placeName>Hôtel de ville de Lunéville</placeName>
+            <place xml:id="lunevilleHDV" type="civil">
+               <placeName>Lunéville</placeName>
+               <placeName>Hôtel de ville</placeName>
             </place>
             <place xml:id="lunevilleChateau">
-               <placeName>Château de Lunéville</placeName>
+               <placeName>Lunéville</placeName>
+               <placeName>Château</placeName>
             </place>
             <place xml:id="malgrange">
                <placeName>La Malgrange</placeName>
@@ -3337,7 +3343,8 @@
                <placeName>Versailles</placeName>
             </place>
             <place xml:id="versaillesChateau">
-               <placeName>Château de Versailles</placeName>
+               <placeName>Versailles</placeName>
+               <placeName>Château</placeName>
             </place>
             <place xml:id="pontamousson">
                <placeName>Pont-à-Mousson</placeName>
@@ -3404,16 +3411,14 @@
             </place>
             <place xml:id="plombieres">
                <placeName>Plombières</placeName>
-               <placeName type="today">Plombières-les-Bains</placeName>
-               <desc>Plombières-les-Bains</desc>
+               <placeName type="today">Plombières</placeName>
             </place>
             <place xml:id="bar">
                <placeName>Bar-Le-Duc</placeName>
             </place>
             <place xml:id="void">
                <placeName>Void</placeName>
-               <placeName type="today">Void-Vacon</placeName>
-               <desc>Void-Vacon</desc>
+               <placeName type="today">Void</placeName>
             </place>
             <place xml:id="allemagne">
                <placeName>Allemagne</placeName>
@@ -3449,7 +3454,8 @@
                <placeName>Fléville-devant-Nancy</placeName>
             </place>
             <place xml:id="chateauFleville">
-               <placeName>Château de Fléville</placeName>
+               <placeName>Fléville</placeName>
+               <placeName>Château</placeName>
             </place>
             <place xml:id="choisy">
                <placeName>Choisy</placeName>
@@ -3466,8 +3472,9 @@
             <place xml:id="stAubin">
                <placeName>Saint-Aubin</placeName>
             </place>
-            <place xml:id="lunevilleParoissiale">
-               <placeName>Église paroissiale de Lunéville</placeName>
+            <place xml:id="lunevilleParoissiale" type="religious">
+               <placeName>Lunéville</placeName>
+               <placeName>Église paroissiale</placeName>
             </place>
             <place xml:id="chanteheux">
                <placeName>Chanteheux</placeName>
@@ -3486,14 +3493,14 @@
             <place xml:id="stDenis">
                <placeName>Saint-Denis</placeName>
             </place>
-            <place xml:id="maisonForce">
+            <place xml:id="maisonForce" type="civil">
+               <placeName>Nancy</placeName>
                <placeName>Jardin de la maison de force</placeName>
                <location>
                   <geo>48.69886895202777,6.177661120891571</geo>
-                  <district type="city">Nancy</district>
                </location>
-               <desc> On peut supposer que Durival évoque la prison militaire de la Tour Notre-Dame
-                  (actuelle Porte de la Craffe) </desc>
+               <desc>On peut supposer que Durival évoque la prison militaire de la Tour Notre-Dame
+                  (actuelle Porte de la Craffe)</desc>
             </place>
             <place xml:id="stuttgart">
                <placeName>Stuttgart</placeName>
@@ -3513,77 +3520,78 @@
             <place xml:id="colombey">
                <placeName>Colombey</placeName>
             </place>
-            <place xml:id="hotelIntendance">
+            <place xml:id="hotelIntendance" type="civil">
+               <placeName>Nancy</placeName>
                <placeName>Hôtel de l'Intendance</placeName>
                <location>
                   <geo>48.69358,6.18417</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Sur la place Royale</desc>
             </place>
             <place xml:id="neufchateau">
                <placeName>Neufchâteau</placeName>
             </place>
-            <place xml:id="hotelGouvernement">
+            <place xml:id="hotelGouvernement" type="civil">
+               <placeName>Nancy</placeName>
                <placeName>Hôtel du Gouvernement</placeName>
                <location>
                   <geo>48.69700,6.18095</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Sur la Carrière</desc>
             </place>
             <place xml:id="cantonVarangeville">
-               <placeName>Canton de Varangeville</placeName>
+               <placeName>Varangeville (canton de)</placeName>
             </place>
             <place xml:id="cantonEncy">
-               <placeName>Canton d'Ency</placeName>
+               <placeName>Ency (canton d')</placeName>
             </place>
             <place xml:id="malzeville">
                <placeName>Malzéville</placeName>
             </place>
             <place xml:id="cantonGondreville">
-               <placeName>Canton de Gondreville</placeName>
+               <placeName>Gondreville (canton de)</placeName>
             </place>
             <place xml:id="cantonPontStVincent">
-               <placeName>Canton de Pont-Saint-Vincent</placeName>
+               <placeName>Pont-Saint-Vincent (canton de)</placeName>
             </place>
             <place xml:id="cantonLupcourt">
-               <placeName>Canton de Lupcourt</placeName>
+               <placeName>Lupcourt (canton de)</placeName>
             </place>
             <place xml:id="cantonFlavigny">
-               <placeName>Canton de Flavigny</placeName>
+               <placeName>Flavigny (canton de)</placeName>
             </place>
             <place xml:id="laGalaiziere">
-               <placeName>Neuviller, résidence de La Galaizière</placeName>
+               <placeName>Neuviller (résidence de La Galaizière)</placeName>
             </place>
             <place xml:id="stHubert">
                <placeName>Saint-Hubert</placeName>
             </place>
-            <place xml:id="nancyRueEsplannade">
+            <place xml:id="nancyRueEsplannade" type="civil">
+               <placeName>Nancy</placeName>
                <placeName>Rue de l'esplanade</placeName>
                <location>
                   <geo>48.6918394,6.1793484</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Rebaptisée rue Stanislas depuis l'inauguration de la statue du roi en
                   1831</desc>
             </place>
-            <place xml:id="nancySoeursGrises">
+            <place xml:id="nancySoeursGrises" type="religious">
+               <placeName>Nancy</placeName>
                <placeName>Nouvelle église des Sœurs grises</placeName>
                <location>
                   <geo>48.692470673285484,6.182971894741058</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Auparavant faubourg Saint-Nicolas.</desc>
             </place>
             <place xml:id="evecheMunster">
-               <placeName>Evêché de Münster (Westphalie)</placeName>
+               <placeName>Münster (Westphalie)</placeName>
+               <placeName>Evêché</placeName>
             </place>
-            <place xml:id="NancyfxbrgStPierre">
+            <place xml:id="NancyfxbrgStPierre" type="civil">
+               <placeName>Nancy</placeName>
                <placeName>Faubourg Saint-Pierre</placeName>
                <location>
                   <geo>48.68355527958379,6.191176772117615</geo>
-                  <district type="city">Nancy</district>
                </location>
             </place>
             <place xml:id="stJeanVielAtre">
@@ -3603,6 +3611,9 @@
             </place>
             <place xml:id="duhautoyVille">
                <placeName>Duhautoy</placeName>
+               <placeName type="today">Duhautoy</placeName>
+               <desc>Par arrêt du conseil d'état (24 novembre 1760) le village de Duhautoy devient
+                  Clémery et est rattaché au baillage de Pont-à-Mousson.</desc>
             </place>
             <place xml:id="clemery">
                <placeName>Clemery</placeName>
@@ -3625,11 +3636,11 @@
             <place xml:id="corny">
                <placeName>Corny</placeName>
             </place>
-            <place xml:id="nancyNotreDame">
+            <place xml:id="nancyNotreDame" type="religious">
+               <placeName>Nancy</placeName>
                <placeName>Église et paroisse Notre-Dame</placeName>
                <location>
                   <geo>48.69694990786246,6.17757260799408</geo>
-                  <district type="city">Nancy</district>
                </location>
             </place>
             <place xml:id="boucquemont">
@@ -3654,10 +3665,11 @@
                <placeName>Jouy</placeName>
             </place>
             <place xml:id="briancon">
-               <placeName>Briançon en Dauphiné</placeName>
+               <placeName>Briançon</placeName>
             </place>
             <place xml:id="chambiereCasernes">
-               <placeName>Casernes de Chambieèe</placeName>
+               <placeName>Metz</placeName>
+               <placeName>Casernes de Chambière</placeName>
             </place>
             <place xml:id="moreyVille">
                <placeName>Morey</placeName>
@@ -3669,7 +3681,8 @@
                <placeName>Montigny</placeName>
             </place>
             <place xml:id="verreriePorcieux">
-               <placeName>Verrerie de Porcieux</placeName>
+               <placeName>Porcieux</placeName>
+               <placeName>Verrerie</placeName>
             </place>
             <place xml:id="ypres">
                <placeName>Ypres</placeName>
@@ -3678,17 +3691,14 @@
                <placeName>Auberge des dames de France</placeName>
             </place>
             <place xml:id="bastille">
+               <placeName>Paris</placeName>
                <placeName>Bastille</placeName>
-               <location>
-                  <district type="city">Paris</district>
-               </location>
-               <desc>Paris</desc>
             </place>
             <place xml:id="fauxbourgStFiacre">
+               <placeName>Nancy</placeName>
                <placeName>Faubourg Saint-Fiacre</placeName>
                <location>
-                  <geo>48.701265,6.171790</geo>
-                  <district type="city">Nancy</district>
+                  <geo>48.701265, 6.171790</geo>
                </location>
             </place>
             <place xml:id="alsace">
@@ -3701,160 +3711,155 @@
                <placeName>Languedoc</placeName>
             </place>
             <place xml:id="bosservilleChartreuse">
-               <placeName>Chartreuse de Bosserville</placeName>
+               <placeName>Bosserville</placeName>
+               <placeName>Chartreuse</placeName>
             </place>
-            <place xml:id="nancyComedie">
+            <place xml:id="nancyComedie" type="civil">
+               <placeName>Nancy</placeName>
                <placeName>Comédie</placeName>
                <location>
                   <geo>48.69342745,6.18206770823004</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Nouvelle salle inaugurée en 1755. Auparavant une salle était située depuis 1750
                   derrière la Palais Ducal.</desc>
             </place>
-            <place xml:id="nancyRuePoissonnerie">
+            <place xml:id="nancyRuePoissonnerie" type="civil">
+               <placeName>Nancy</placeName>
                <placeName>Rue de la poissonnerie</placeName>
-               <placeName type="today">rue Gambetta</placeName>
+               <placeName type="today">Rue de la poissonnerie</placeName>
                <location>
                   <geo>48.692001481389006,6.179801523685455</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Actuelle rue Gambetta (depuis 1883), Le marché au Poissons était à l'angle de
                   la rue Gambetta et Saint-Dizier, le bâtiment abritera la Comédie jusqu'en 1738
                   puis une Renfermerie en 1754.</desc>
             </place>
-            <place xml:id="garenne">
+            <place xml:id="garenne" type="civil">
+               <placeName>Nancy</placeName>
                <placeName>La Garenne</placeName>
                <location>
                   <geo>48.68053,6.17210</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Emplacement approximatif du bois de la Garenne. Concession faite en 1731 pour
                   forme une promenade publique.</desc>
             </place>
-            <place xml:id="etuve">
+            <place xml:id="etuve" type="civil">
+               <placeName>Nancy</placeName>
                <placeName>L'étuve des blés</placeName>
-               <location>
-                  <district type="city">Nancy</district>
-               </location>
             </place>
-            <place xml:id="etuveDuhamel">
+            <place xml:id="etuveDuhamel" type="civil">
+               <placeName>Nancy</placeName>
                <placeName>L'étuve de Duhamel</placeName>
-               <location>
-                  <district type="city">Nancy</district>
-               </location>
             </place>
-            <place xml:id="nancyPorteStNic">
+            <place xml:id="nancyPorteStNic" type="military">
+               <placeName>Nancy</placeName>
                <placeName>Porte Saint-Nicolas</placeName>
                <location>
                   <geo>48.68567138976192,6.186193227767944</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Porte élevée entre 1603 et 1608. Remaniée pour la visite des filles de Louis XV
                   en 1761.</desc>
             </place>
-            <place xml:id="nancyPorteStGeorges">
+            <place xml:id="nancyPorteStGeorges" type="military">
+               <placeName>Nancy</placeName>
                <placeName>Porte Saint-Georges</placeName>
                <location>
                   <geo>48.692364441540896,6.1884355545043945</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Sa construction débute en 1606 pour s'achever en 1619.</desc>
             </place>
-            <place xml:id="nancyPorteSteCatherine">
+            <place xml:id="nancyPorteSteCatherine" type="military">
+               <placeName>Nancy</placeName>
                <placeName>Porte Sainte-Catherine</placeName>
                <location>
                   <geo>48.69491925287271,6.187834739685059</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Construite en 1761 sur les plans de Richard Mique, en l'honneur de Catherine
                   Opalinska, épouse de Stanislas, elle sera démontée et reculée des quelques
                   centaines de mètres en 1768 lors de la construction des casernes.</desc>
             </place>
-            <place xml:id="nancyPorteStStanislas">
+            <place xml:id="nancyPorteStStanislas" type="military">
+               <placeName>Nancy</placeName>
                <placeName>Porte Saint-Stanislas</placeName>
-               <placeName type="today">Porte Stanislas</placeName>
+               <placeName type="today">Porte Saint-Stanislas</placeName>
                <location>
                   <geo>48.691131,6.17550720356153</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Construite en 1761 sur les plans de Richard Mique.</desc>
             </place>
-            <place xml:id="nancySecherie">
+            <place xml:id="nancySecherie" type="civil">
+               <placeName>Nancy</placeName>
                <placeName>Sécherie des lavoirs publics</placeName>
                <location>
                   <geo>48.69272,6.18807</geo>
-                  <district type="city">Nancy</district>
                </location>
+               <desc/>
             </place>
-            <place xml:id="hotelLeopold">
+            <place xml:id="hotelLeopold" type="civil">
+               <placeName>Nancy</placeName>
                <placeName>Hôtel du duc Léopold</placeName>
-               <location>
-                  <district type="city">Nancy</district>
-               </location>
             </place>
             <place xml:id="luneManu">
-               <placeName>Manufacture nouvelle à Luneville faubourg de Viller</placeName>
+               <placeName>Luneville</placeName>
+               <placeName>Manufacture nouvelle faubourg de Viller</placeName>
             </place>
             <place xml:id="fontaineRoyale">
+               <placeName>Commercy</placeName>
                <placeName>Fontaine royale</placeName>
             </place>
             <place xml:id="commercyChateau">
-               <placeName>Château de Commercy</placeName>
+               <placeName>Commercy</placeName>
+               <placeName>Château</placeName>
                <desc>L'une des résidences de Stanislas</desc>
             </place>
             <place xml:id="stNicolas">
                <placeName>Saint-Nicolas-de-Port</placeName>
             </place>
-            <place xml:id="nancyStFiacre">
+            <place xml:id="nancyStFiacre" type="religious">
+               <placeName>Nancy</placeName>
                <placeName>Paroisse Saint-Fiacre</placeName>
-               <location>
-                  <district type="city">Nancy</district>
-               </location>
             </place>
             <place xml:id="barCollege">
                <placeName>Collège de Bar</placeName>
             </place>
             <place xml:id="faux">
-               <placeName>Canton de Faux</placeName>
+               <placeName>Faux (canton de)</placeName>
             </place>
-            <place xml:id="nancyOpheline">
+            <place xml:id="nancyOpheline" type="religious">
+               <placeName>Nancy</placeName>
                <placeName>Couvent des Orphelines</placeName>
                <location>
                   <geo>48.69017,6.18791</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Fondé en 1715</desc>
             </place>
-            <place xml:id="hotelPrimatiale">
+            <place xml:id="hotelPrimatiale" type="religious">
+               <placeName>Nancy</placeName>
                <placeName>Hôtel du grand Doyen de la Primatiale</placeName>
                <location>
                   <geo>48.69051,6.18764</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Construit entre 1608 et 1619.</desc>
             </place>
-            <place xml:id="conciergerie">
+            <place xml:id="conciergerie" type="civil">
+               <placeName>Nancy</placeName>
                <placeName>Conciergerie</placeName>
                <location>
                   <geo>48.694883844038216,6.183207929134369</geo>
-                  <district type="city">Nancy</district>
                </location>
                <desc>Prison dans le bâtiment du Palais.</desc>
             </place>
-            <place xml:id="arsenal">
+            <place xml:id="arsenal" type="military">
+               <placeName>Nancy</placeName>
                <placeName>Arsenal</placeName>
                <location>
                   <geo>48.69666487753538,6.177446544170379</geo>
-                  <district type="city">Nancy</district>
                </location>
-               <desc>La construction de l'arsenal remonte à 1550</desc>
+               <desc>La construction de l'arsenal remonte à 1550.</desc>
             </place>
             <place xml:id="manufactureBains">
+               <placeName>Nancy</placeName>
                <placeName>Manufacture des bains</placeName>
-               <location>
-                  <district type="city">Nancy</district>
-               </location>
             </place>
             <place xml:id="villerFbg">
                <placeName>Faubourg de Viller</placeName>
@@ -4239,17 +4244,20 @@
                <title>un ouvrage sur les fortifications (voir 1765-12-27)</title>
             </bibl>
             <bibl xml:id="bib16">
-               
-               <title>Eloge historique de Stanislas I. Roi de Pologne... Prononcé le 11 mai
-                  1766... l'Académie Royale des Sciences</title>
-               <author><forename>Pierre-Joseph de</forename><surname>Solignac</surname></author>
-               
+
+               <title>Eloge historique de Stanislas I. Roi de Pologne... Prononcé le 11 mai 1766...
+                  l'Académie Royale des Sciences</title>
+               <author>
+                  <forename>Pierre-Joseph de</forename>
+                  <surname>Solignac</surname>
+               </author>
+
                <pubPlace>Nancy</pubPlace>
                <publisher>Leseure, Veuve d'Antoine ; Leseure, Claude</publisher>
                <date>1766</date>
                <idno type="callNumber">BM Nancy 50 279 (f) ou 702 031 (16)</idno>
-               
-               
+
+
             </bibl>
             <bibl xml:id="bib17">
                <title>ouvrage sur les impots (voir 1766-05-03)</title>
@@ -4316,8 +4324,8 @@
                <title>Recueil sur diverses matieres</title>
             </bibl>
             <bibl xml:id="bib36">
-               <title>Ortografe des Dames pour aprandre à écrire et 
-                  à lire corectemant en tres peu de temps.</title>
+               <title>Ortografe des Dames pour aprandre à écrire et à lire corectemant en tres peu
+                  de temps.</title>
                <pubPlace>Nancy</pubPlace>
                <publisher>Haenner</publisher>
                <date>1766</date>
@@ -4345,10 +4353,16 @@
                <title>Discours sur le luxe</title>
             </bibl>
             <bibl xml:id="bib63">
-               <title>Recueil des plans, élévations et coupes tant géométrales qu'en perspective des châteaux, jardins et dépendances 
-                  que le roy de Pologne occupe en Lorraine y compris les bâtimens qu'il a fait élever, ainsi que les changemens considérables, les décorations et autres enrichissemens, 
-                  qu'il a fait faire à ceux qui étoient déjà construire le tout dirigé et dedié à sa Majesté par M. Héré, son premier architecte.</title>
-               <author><forename>Emmanuel</forename><surname>Héré</surname></author>
+               <title>Recueil des plans, élévations et coupes tant géométrales qu'en perspective des
+                  châteaux, jardins et dépendances que le roy de Pologne occupe en Lorraine y
+                  compris les bâtimens qu'il a fait élever, ainsi que les changemens considérables,
+                  les décorations et autres enrichissemens, qu'il a fait faire à ceux qui étoient
+                  déjà construire le tout dirigé et dedié à sa Majesté par M. Héré, son premier
+                  architecte.</title>
+               <author>
+                  <forename>Emmanuel</forename>
+                  <surname>Héré</surname>
+               </author>
                <pubPlace>Paris</pubPlace>
                <publisher>François</publisher>
                <date>1753-1756</date>
@@ -4367,7 +4381,7 @@
                <title>Manuscrit d'un ouvrage sur la finance</title>
             </bibl>
             <!-- Pièces de théatre -->
-            
+
             <bibl xml:id="bib42">
                <title>Zaïre</title>
                <author>Voltaire</author>
@@ -4439,52 +4453,60 @@
                <title>Oraison funebre 1 (Elisée)</title>
             </bibl>
             <bibl xml:id="bib72">
-               <title>Oraison funèbre de... Stanislas 1er,... duc de Lorraine... prononcée le
-                  12 mai 1766...</title>
-               <author><forename>Abbé de</forename><surname>Dombasle</surname></author>
-               
+               <title>Oraison funèbre de... Stanislas 1er,... duc de Lorraine... prononcée le 12 mai
+                  1766...</title>
+               <author>
+                  <forename>Abbé de</forename>
+                  <surname>Dombasle</surname>
+               </author>
+
                <pubPlace>Nancy</pubPlace>
                <publisher>Leclerc, Jean-Baptiste-Hyacinthe</publisher>
                <date>1766</date>
-               
-               <idno type="callNumber">BM Nancy 50 279 (g)</idno>            
+
+               <idno type="callNumber">BM Nancy 50 279 (g)</idno>
             </bibl>
             <bibl xml:id="bib73">
-               <title>Oraison funèbre de Stanislas... prononcée dans l'Eglise du Collège,...
-                  le 15 may 1766,...</title>
-               <author><forename>Sigisbert-Etienne</forename><surname>Coster</surname></author>
-               
+               <title>Oraison funèbre de Stanislas... prononcée dans l'Eglise du Collège,... le 15
+                  may 1766,...</title>
+               <author>
+                  <forename>Sigisbert-Etienne</forename>
+                  <surname>Coster</surname>
+               </author>
+
                <pubPlace>Nancy</pubPlace>
                <publisher>Leseure, Veuve d'Antoine ; Leseure, Claude</publisher>
                <date>1766</date>
-               
+
                <idno type="callNumber">BM cote 50 279 (h)</idno>
             </bibl>
             <bibl xml:id="bib74">
-               <title>Oraison funèbre de... Stanislas I,... , prononcée en l'église
-                  paroissiale de St-Roch de Nancy..., le 26 may 1766...</title>
-               <author><forename>Denis-Xavier</forename><surname>Clément</surname></author>
-               
+               <title>Oraison funèbre de... Stanislas I,... , prononcée en l'église paroissiale de
+                  St-Roch de Nancy..., le 26 may 1766...</title>
+               <author>
+                  <forename>Denis-Xavier</forename>
+                  <surname>Clément</surname>
+               </author>
+
                <pubPlace>Paris</pubPlace>
                <publisher>Delatour, Louis-François</publisher>
                <date>1766</date>
-               
-               <idno type="callNumber">BM Nancy 50 279 (j)</idno>            </bibl>
+
+               <idno type="callNumber">BM Nancy 50 279 (j)</idno>
+            </bibl>
             <bibl xml:id="bib75">
-               <title>Oraison funèbre de Stanislas 1er,... prononcée le 10 juin
-                  1766...</title>
+               <title>Oraison funèbre de Stanislas 1er,... prononcée le 10 juin 1766...</title>
                <author><forename>Guillaume-Germain</forename><surname>Guyot</surname></author>
-               
-               <pubPlace>Nancy</pubPlace><title level="m">Oraison funèbre de Stanislas 1er,... prononcée le 10 juin
-                  1766...</title>/pubPlace>
-               <publisher>Leseure, Veuve d'Antoine ; Leseure, Claude</publisher>
+               <pubPlace>Nancy</pubPlace><title level="m">Oraison funèbre de Stanislas 1er,...
+                  prononcée le 10 juin 1766...</title>/pubPlace&gt; <publisher>Leseure, Veuve
+                  d'Antoine ; Leseure, Claude</publisher>
                <date>1766</date>
-               
                <idno type="callNumber">BM Nancy 50 279 (k)</idno>
             </bibl>
             <bibl xml:id="memoireChComptes">
                <title>Mémoire attribué à la Chambre des Comptes</title>
             </bibl>
+            <bibl xml:id="catalogueBibiliotheque"><title>catalogue des livres de la bibliothèque</title></bibl>
          </listBibl>
          <list type="artwork">
             <item xml:id="estampeCollin">estampe de la construction du quartier roïal des cazernes
