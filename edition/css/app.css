@@ -40,6 +40,7 @@ p {
   font-family: 'Playfair Display', Georgia, Times, serif;
 }
 
+
 cite, a.cite  {
   font-style: normal;
   color: #996600
@@ -168,6 +169,7 @@ a.accordion-title {
 
 
     /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\GESTION ILLUSTRATIONS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
 
     img.thumbnail {
      display: inline;      

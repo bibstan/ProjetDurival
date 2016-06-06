@@ -67,6 +67,7 @@
         </header>
     </xsl:variable>
     
+
     <xsl:variable name="mapHeader">
         <header data-sticky-container="true">            
             <div class="full-width sticky" data-sticky="true" data-options="marginTop:0;">
@@ -123,7 +124,7 @@
             </div>
         </header>
     </xsl:variable>
-    
+
     <xsl:variable name="footer">
         <div class="row footer edito">
             <div class="large-12 columns">
@@ -150,7 +151,9 @@
                     <a href="listOrg.html">Index des institutions</a>                                                                
                 </div>
                 <div class="large-4 columns">
+
                     <a href="apropos.html">À propos</a>
+
                 </div>                                                        
             </div>                        
         </div>
@@ -309,6 +312,7 @@
                         </div>                                                        
                     </div>                        
                 </div>
+
                 <script src="js/vendor/jquery.js">/*Pour transformation xslt*/</script>
                 <script src="js/foundation.min.js">/*Pour transformation xslt*/</script>
                 <script src="js/modernisation/modernisation.js">                    
@@ -330,6 +334,7 @@
         <xsl:apply-templates select="/" mode="belprey"/>
         <xsl:apply-templates select="/" mode="carte"/>
         <xsl:apply-templates select="/" mode="focus"/>
+
     </xsl:template>    
     
     <xsl:template match="//tei:body">
@@ -413,6 +418,7 @@
                                 <!--<div class="tabs-panel" id="panel3">
                                     <div class="row">
                                         <div class="large-12">
+
                                             <dl>
                                                 <dt>Forme originale</dt>
                                                 <dd>
@@ -442,6 +448,7 @@
                                                 <label><input type="checkbox" class="checkbox_orig" value="orig" />Orig</label>
                                                 <label><input type="checkbox" class="checkbox_sic" value="sic" />sic</label>-\->
                                                 <!-\-<label><input type="checkbox" class="checkbox_lb" value="lb" />lb</label>-\->                                            
+
                                         </div>
                                     </div>
                                 </div>-->
@@ -953,11 +960,13 @@
                 <xsl:apply-templates/>
             </xsl:otherwise>
         </xsl:choose>        
+
     </xsl:template>
     
     <!--<xsl:template match="tei:lb | tei:pb[ancestor::tei:p]">
         <br class="lb" />    
     </xsl:template>-->
+
     
     <xsl:template match="tei:div[@type='transcription']//tei:list">
         <ul>
@@ -1635,18 +1644,22 @@
                         // ICONES SUPPLEMENTAIRES
                         var iconA = L.icon({
                         iconUrl: '../js/leaflet/images/marker-icon-A.png',
+
                         iconRetinaUrl: '../js/leaflet/images/marker-icon-A2x.png',
                         iconSize: [32, 37],
                         iconAnchor:[16,36],
                         popupAnchor: [-3, -30]
+
                         });
                         
                         var iconB = L.icon({
                         iconUrl: '../js/leaflet/images/marker-icon-B.png',
+
                         iconRetinaUrl: '../js/leaflet/images/marker-icon-B2x.png',
                         iconSize: [32, 37],
                         iconAnchor:[16,36],
                         popupAnchor: [-3, -30]
+
                         });
                         
                         
@@ -2057,6 +2070,7 @@
                     <link rel="stylesheet" href="../css/foundation.css" />
                     <link rel="stylesheet" href="../css/app.css" />
                     <link rel="stylesheet" href="../js/leaflet/leaflet.css" />
+
                     <script>
                         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -2069,6 +2083,7 @@
                 </head>
                 <body>
                     <xsl:copy-of select="$mapHeader"/>
+
                     <div id="mapid"></div>
                     <script src="../js/leaflet/leaflet.js"></script>
                     <script src="../js/cartographie/belprey.js"></script>
@@ -2080,6 +2095,8 @@
                 </body>
             </html>
         </xsl:result-document> 
+
+
     </xsl:template>
     
     <xsl:template match="/" mode="mique">
