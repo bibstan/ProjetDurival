@@ -804,7 +804,7 @@
     </xsl:template>
     
     <xsl:template match="tei:addName[@type='say']"><!-- todo prévoir pour les femmes -->
-        <xsl:text>dit </xsl:text><xsl:apply-templates/>
+        <xsl:text>dit &#171;</xsl:text><xsl:apply-templates/><xsl:text>&#187;</xsl:text>
     </xsl:template>
     
     <xsl:template match="tei:birth | tei:death">
@@ -851,6 +851,23 @@
         </xsl:if>
     </xsl:template>
     
+    <xsl:template match="tei:placeName[@type='today']">
+        <i><xsl:text>auj. </xsl:text><xsl:apply-templates/></i>
+    </xsl:template>
+    
+    <xsl:template match="tei:place" mode="tooltip">
+        <xsl:for-each select=".">
+            <xsl:for-each select="tei:placeName">
+                <xsl:choose>
+                    <xsl:when test="position() != last()">
+                        <xsl:apply-templates select="."/><xsl:text>, </xsl:text>
+                    </xsl:when>
+                    <xsl:otherwise><xsl:apply-templates select="."/></xsl:otherwise>
+                </xsl:choose>
+            </xsl:for-each>
+        </xsl:for-each>
+    </xsl:template>
+    
     <xsl:template match="tei:div[@type='transcription']//tei:persName | tei:div[@type='transcription']//tei:rs[@type='person']">
         <xsl:variable name="ref" select="@ref"/><!-- todo @type=groupPerson -->
         <xsl:variable name="id" select="substring-after(@ref,'#')"/>
@@ -892,7 +909,7 @@
         <xsl:variable name="id" select="substring-after(@ref,'#')"/>
         <xsl:variable name="tooltip">
             <xsl:if test="//tei:div[@type='index']//tei:place[@xml:id=$id]">
-                <xsl:value-of select="//tei:div[@type='index']//tei:place[@xml:id=$id]/tei:placeName"/>
+                <xsl:apply-templates select="//tei:div[@type='index']//tei:place[@xml:id=$id]" mode="tooltip"/>
             </xsl:if>
         </xsl:variable>
         <span data-tooltip='true' aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="{$tooltip}"><a class="person" href="listPlace.html{$ref}"><xsl:apply-templates/></a></span>
@@ -925,6 +942,7 @@
         <xsl:choose>
             <xsl:when test="@rend='super'"><sup><xsl:apply-templates/></sup></xsl:when>
             <xsl:when test="@rend='sub'"><sub><xsl:apply-templates/></sub></xsl:when>
+            <xsl:when test="@rend='italic' and ancestor::tei:person"><i><xsl:apply-templates/></i></xsl:when>
             <xsl:otherwise><xsl:apply-templates/></xsl:otherwise>
         </xsl:choose>
     </xsl:template>
@@ -955,7 +973,7 @@
         </xsl:choose>        
     </xsl:template>
     
-    <xsl:template match="tei:stace">
+    <xsl:template match="tei:space">
         <i>(blanc)</i>
     </xsl:template>
     
@@ -982,49 +1000,7 @@
     
     
     
-    <!-- ********** INDEX ********** -->
-    <!--<xsl:template match="//tei:div[@type='index']">
-        <xsl:result-document format="html" encoding="UTF-8" href="html/list.html">
-            <html>
-                <head>
-                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-                    <title>Édition du journal de Nicolas Durival ß</title>
-                    <meta charset="utf-8" />
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                    <link rel="stylesheet" href="../css/app.css" />
-                    <link rel="stylesheet" href="../css/foundation.css" />                                
-                </head>
-                <body>
-                    <xsl:copy-of select="$header"/>
-                    <div class="row">
-                        <div class="large-10 center">                            
-                            <xsl:apply-templates select="tei:listPerson"/> 
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="large-10 center">                            
-                            <xsl:apply-templates select="tei:listplace"/> 
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="large-10 center">                            
-                            <xsl:apply-templates select="tei:listOrg"/> 
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="large-10 center">                            
-                            <xsl:apply-templates select="tei:listBibl"/> 
-                        </div>
-                    </div> 
-                    <script src="../js/vendor/jquery.js">/*Pour transformation xslt*/</script>
-                    <script src="../js/vendor/modernizr.js">/*Pour transformation xslt*/</script>                                        
-                    <script src="../js/foundation.min.js">/*Pour transformation xslt*/</script>                                
-                    <script>$(document).foundation();</script>
-                </body>
-            </html>
-        </xsl:result-document>        
-    </xsl:template>-->
-    
+    <!-- ********** INDEX ********** -->        
     <xsl:template match="//tei:div[@type='index']/tei:listPerson" mode="index">
         <xsl:result-document format="html" encoding="UTF-8" href="html/listPerson.html">
             <html>
@@ -1222,7 +1198,7 @@
                                             <li class="vedette" id="{$id}">                                                            
                                                 <ul class="accordion" data-accordion="true" data-allow-all-closed="true">
                                                     <li class="accordion-item" data-accordion-item="true">
-                                                        <a href="#" class="accordion-title vedette"><xsl:apply-templates select="tei:placeName"/></a>
+                                                        <a href="#" class="accordion-title vedette"><xsl:apply-templates select="." mode="tooltip"/></a>
                                                         <div class="accordion-content" data-tab-content="true">
                                                             <ul class="index">
                                                                 <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='day'][descendant::*[contains(@ref,$links)]]">
