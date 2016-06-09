@@ -908,7 +908,7 @@
                </listEvent>
             </person>
             <person xml:id="desarmoisesMme">
-               <persName><surname>Beauvau</surname><forename>Anne de</forename><roleName>marquise des Armoises</roleName></persName>
+               <persName><surname>Beauvau</surname><forename>Anne de</forename><roleName>marquise Des Armoises</roleName></persName>
                <birth when="1710"/>
                <death when="1766"/>
                <listEvent>
@@ -1030,6 +1030,11 @@
             </person>
             <person xml:id="ducLeopold">
                <persName><surname>Léopold Ier</surname><roleName>duc</roleName></persName>
+               <birth when="1679"/>
+               <death when="1729"/>
+               <listEvent>
+                  <event><p>Avant-dernier duc de la Maison de Lorraine</p></event>
+               </listEvent>
             </person>
             <person xml:id="ducOrleans">
                <persName><surname>Orléans</surname><forename>Louis-Philippe</forename><roleName>duc d'</roleName></persName>
@@ -1037,7 +1042,7 @@
                <death when="1785"/>
                <listEvent>
                   <event><p>Duc de Chartes (1725-1752)</p></event>
-                  <event><p>duc d'Orléans de 1725 à 1785</p></event>
+                  <event><p>d'Orléans (1725-1785)</p></event>
                   <event><p>de Valois, de Nemours et de Montpensier (1752-1785)</p></event>
                </listEvent>
             </person>
@@ -1148,8 +1153,11 @@
                <listEvent><event><p>pensionnaire au refuge de la fondation de l'abbé de Bousey pour l'année 1767</p></event></listEvent>
             </person>
             <person xml:id="ferdinantPrince">
-               <persName><surname>Ferdinand</surname><roleName>Prince</roleName></persName>
+               <persName><forename>Ferdinand des</forename><surname>Deux-Siciles</surname><roleName>prince</roleName></persName>
                <state><p>infant d'Espagne</p></state>
+               <listEvent>
+                  <event><p>Fils de Charles III d'Espagne, infant d'Espagne et roi des Deux-Siciles à l'âge de neuf ans</p></event>
+               </listEvent>
             </person>
             <person xml:id="feriet">
                <persName><surname>Feriet</surname><addName>M.</addName></persName>   
@@ -1707,12 +1715,11 @@
                   <event><p>épouse Marie Leszczynska fille de Stanislas en 1725</p></event>
                </listEvent>
             </person>
-            <person xml:id="louisXVI">
-               <persName><surname>Louis XVI</surname></persName>
-               <state><p>roi de France</p></state>
+            <person xml:id="louisXVI"><!-- todo garder cette dénomination ou simplifier en Louis XVI (mais il ne l'est pas encore) ? -->
+               <persName><forename>Louis-Auguste</forename><surname>de France</surname><roleName>duc de Berry</roleName></persName>               
                <birth when="1754"/>
                <death when="1793"/>
-               <listEvent><event><p>Roi de France de 1775 à 1791</p></event></listEvent>
+               <listEvent><event><p>Louis XVI, roi de France de 1774 à 1791</p></event></listEvent>
             </person>
             <person xml:id="luceComte"><!-- todo faire un renvoi ? -->
                <persName><surname>Chaumont</surname><forename>Jean Baptiste</forename><roleName>comte de Lucé</roleName></persName>
@@ -1985,8 +1992,8 @@
                <persName><surname>Philibert</surname><roleName>baron de</roleName></persName>
             </person>
             <person xml:id="philippeInfant">
-               <persName><forename>Philippe Ier de</forename><surname>Parme</surname></persName>
-               <state><p>infant d'Espagne</p></state>
+               <persName><forename>Philippe d'</forename><surname>Espagne</surname><roleName>duc de Parme</roleName></persName>
+               <state><p>infant d'Espagne puis duc de Parme</p></state>
             </person>
             <person xml:id="pierre">
                <persName><surname>Pierre</surname><addName>M.</addName></persName>
@@ -2319,6 +2326,12 @@
             <person xml:id="stanislas">
                <persName><surname>Leszczynski</surname><forename>Stanislas</forename></persName>
                <state><p>roi de Pologne</p></state>
+               <birth when="1677"/>
+               <death when="1766"/>
+               <listEvent>
+                  <event><p>Roi de Pologne et grand-duc de Lithuanie (1704-1709), puis duc de Lorraine (1737-1766)</p></event>
+                  <event><p>père de la reine de France Marie Leszczynska</p></event>
+               </listEvent>
             </person>
             <person xml:id="stDiezCoadjuteur"><!-- todo -->
                <persName><persName>Coadjuteur de Saint-Dié</persName></persName>
@@ -2408,7 +2421,12 @@
                <persName><persName>Tresorier de Nancy</persName></persName>
             </person>
             <person xml:id="trudaine">
-               <persName><surname>Trudaine</surname><addName>M.</addName></persName>
+               <persName><surname>Trudaine</surname><forename>Daniel-Charles</forename></persName>
+               <birth when="1703"/>
+               <death when="1769"/>
+               <listEvent>
+                  <event><p>Administrateur des Ponts et Chaussées, inspirateur du fameux "Atlas"</p></event>
+               </listEvent>
             </person>
             <person xml:id="turique">
                <persName><surname>Turique</surname><roleName>abbé de</roleName></persName>
@@ -2478,6 +2496,9 @@
                <persName><surname>Arouet</surname><forename>François-Marie</forename><addName type="say">voltaire</addName></persName>               
                <birth when="1694"/>
                <death when="1778"/>
+               <listEvent>
+                  <event><p>Tragédien, philosophe et littérateur emblématique des Lumières françaises</p></event>
+               </listEvent>
             </person>
             <person xml:id="vriot">
                <persName><surname>Vriot</surname><addName>M.</addName></persName>
@@ -2590,8 +2611,7 @@
                <birth when="1731"/>
                <death when="1767"/>
                <listEvent>
-                  <event><p>épouse Louis, fils ainé de Louis XV en 1747</p></event>
-                  <event><p>mère de Louis XVI</p></event>
+                  <event><p>Épouse le dauphin Louis-Ferdinand, fils ainé de Louis XV en 1747</p></event>
                </listEvent>
             </person>
             <!--<person xml:id="elzbietaSzydlowska"><persName>La feue reine de Pologne</persName></person>-->
