@@ -3032,7 +3032,7 @@
                            <lb/><persName ref="#baltazardMarie">Marie-Marthe-Scholastique Baltazard</persName>, où
                            <lb/>j'ai trouvé 4 ouvriers, occupés à un in 4°<ref type="note" target="#note17650916A"/>.
                            <lb/>qui &eé;t&oa;it déjà à la page 416 et dont la
-                           <lb/>Fff &eé;t&oa;it sous presse. C'est la suite de la
+                           <lb/>Fff<ref type="note" target="#note17650916D"/> &eé;t&oa;it sous presse. C'est la suite de la
                            <lb/>troisi&eè;me partie de la <hi rend="underline">r&eé;ponse au livre
                               <lb/>intitulé : <title ref="#bib38">Extrait des assertions dangereuses
                                  <lb/>et pernicieuses en tout genre que les soi-disans
@@ -3047,7 +3047,7 @@
                            <lb/>dit qu'il av&oa;ient permission : sur quoi j'ai
                            <pb facs="B543956101M00863_06_0099_1L" n="96v"/>ordonné de m'<choice><orig>aporter</orig><reg>apporter</reg></choice> les exemplaires de la
                            <lb/>3.<hi rend="super">e</hi> partie, les feuilles de la <choice><orig>suitte</orig><reg>suite</reg></choice>, et la
-                           <lb/>forme qui &eé;t&oa;it sur la presse ; ce que <persName ref="#baltazardMarie">la D.<hi rend="super">lle</hi>
+                           <lb/>forme qui &eé;t&oa;it sur la presse<ref type="note" target="#note17650916C"/> ; ce que <persName ref="#baltazardMarie">la D.<hi rend="super">lle</hi>
                               <lb/>Baltazar</persName> a éxécuté elle m&eê;me, mais la
                            <lb/>forme s'est rompu&ëe; en sortant de la maison.
                            <lb/>C'est <persName ref="#figean">le P. Figean</persName> qui corrige les &eé;preuves.
@@ -5833,7 +5833,7 @@
                         </p>
                         <p xml:id="d17660317_0202">
                            Un huissier pour les Leonis, commence
-                           <lb/>à saisir <choice><orig>chès</orig><reg>chez</reg></choice> <orgName ref="#jesuite">les J&eé;suites de Lorraine</orgName>.
+                           <lb/>à saisir <choice><orig>chès</orig><reg>chez</reg></choice> <orgName ref="#jesuite">les J&eé;suites de Lorraine</orgName><ref type="note" target="#note17660317B"/>.
                         </p>
                      </div>
                   
