@@ -5270,7 +5270,7 @@
                            <lg><!-- todo vérifier sur facs huitains, car ici 24 vers  -->
                               <l>Venez vous en fidèles Lorrains,</l>
                               <l>Soyons tous en tristesses ;</l>
-                              <l>De voir que <rs ref="#stanislas">notre souverain</rs>,</l>
+                              <l>De voir que <rs type="person" ref="#stanislas">notre souverain</rs>,</l>
                               <l>Par sa mort nous délaisse :</l>
                               <l>Une maladie de dix-neuf jours,</l>
                               <l>Souffrant dans l’espérance ;</l>
