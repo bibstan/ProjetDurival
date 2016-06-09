@@ -788,7 +788,7 @@
     <xsl:template match="tei:forename[ancestor::tei:person]">
         <xsl:choose>
             <xsl:when test="following-sibling::tei:surname[1]">
-                <xsl:apply-templates/>
+                <xsl:apply-templates/><xsl:text> </xsl:text>
             </xsl:when>
             <xsl:when test="
                 following-sibling::tei:roleName[1] |
@@ -803,7 +803,7 @@
         </xsl:choose>
     </xsl:template>
     
-    <xsl:template match="tei:addName"><!-- todo prévoir pour les femmes -->
+    <xsl:template match="tei:addName[@type='say']"><!-- todo prévoir pour les femmes -->
         <xsl:text>dit </xsl:text><xsl:apply-templates/>
     </xsl:template>
     
@@ -955,6 +955,10 @@
         </xsl:choose>        
     </xsl:template>
     
+    <xsl:template match="tei:stace">
+        <i>(blanc)</i>
+    </xsl:template>
+    
     <!--<xsl:template match="tei:lb | tei:pb[ancestor::tei:p]">
         <br class="lb" />    
     </xsl:template>-->
@@ -975,6 +979,8 @@
             <sup><xsl:value-of select="$number"/></sup>
         </xsl:for-each>
     </xsl:template>
+    
+    
     
     <!-- ********** INDEX ********** -->
     <!--<xsl:template match="//tei:div[@type='index']">
