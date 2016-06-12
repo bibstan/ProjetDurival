@@ -3693,20 +3693,20 @@
                </location>
             </org>
             <org xml:id="chambreComptes">
-               <orgName>Chambre des Comptes</orgName>
+               <orgName>Chambre des comptes</orgName>
                <location>
                   <placeName>Nancy</placeName>
                </location>
                <desc>Créé entre 1698 et 1702.</desc>
             </org>
             <org xml:id="academieLyon">
-               <orgName>Académie des sciences, belles-lettres et arts de Lyon</orgName>
+               <orgName>Académie des sciences, belles-lettres et arts</orgName>
                <location>
                   <placeName>Lyon</placeName>
                </location>
             </org>
             <org xml:id="academieScience">
-               <orgName>Académie des Sciences<!-- de Paris--></orgName>
+               <orgName>Académie des sciences<!-- de Paris--></orgName>
                <location>
                   <placeName>Paris</placeName>
                </location>
@@ -3763,7 +3763,7 @@
                </location>
             </org>
             <org xml:id="academieFrancaise">
-               <orgName>Académie Française</orgName>
+               <orgName>Académie française</orgName>
                <location>
                   <placeName>Paris</placeName>
                </location>
@@ -3870,17 +3870,17 @@
                </location>
             </org>
             <org xml:id="fondationMaladieEpi">
-               <orgName>Fondation des Maladies épidémiques</orgName>
+               <orgName>Fondation des maladies épidémiques</orgName>
                <location>
                   <placeName>Nancy</placeName>
                </location>
                <desc>Fondation de Stanislas en 1748.</desc>
             </org>
             <org xml:id="ecoleRoyaleMili">
-               <orgName>École royale Militaire</orgName>
+               <orgName>École royale militaire</orgName>
             </org>
             <org xml:id="corpsGrenadiersFr">
-               <orgName>Corps des Grenadiers de France</orgName>
+               <orgName>Corps des grenadiers de France</orgName>
             </org>
             <org xml:id="miliceBourgeoise">
                <orgName>Milice bourgeoise</orgName>
@@ -3898,7 +3898,7 @@
                <orgName>Régiment du roi</orgName>
             </org>
             <org xml:id="gardesLorraines">
-               <orgName>Régiment Gardes Lorraines</orgName>
+               <orgName>Régiment GardesLorraines</orgName>
             </org>
             <org xml:id="hussardsNassau">
                <orgName>Régiments d'hussards de Nassau</orgName>

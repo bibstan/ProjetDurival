@@ -1321,6 +1321,7 @@
                             <ul class="no-bullet">
                                 <xsl:for-each select="tei:org">
                                     <xsl:sort select="tei:orgName" order="ascending" case-order="upper-first"/>
+                                    <xsl:sort select="tei:location" order="ascending" case-order="upper-first"/>
                                     <xsl:variable name="id" select="@xml:id"/>
                                     <xsl:variable name="links" select="concat('#',@xml:id)"/>
                                     <xsl:choose>
