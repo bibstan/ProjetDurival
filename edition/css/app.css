@@ -32,6 +32,28 @@ h2, h3{
   color: #cc6600;
 }
 
+/*Pour la partie a propos*/
+h2.section{
+  font-family: 'Playfair Display', serif;
+  font-size:25px;
+  font-weight: 700;
+  color: #cc6600;
+}
+
+.enum {
+  padding-top :10px;
+  padding-left:25px;
+}
+
+ul > li.enum {
+  text-indent: 5px;
+}
+
+.enum:before {
+  content: "- ";
+  text-indent: 5px;
+}
+
 
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\PARTIES EDITON\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 

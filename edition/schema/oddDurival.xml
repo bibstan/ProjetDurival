@@ -587,6 +587,12 @@
                         <valItem ident="picture">
                            <desc>Identifie un renvoi vers une illustration.</desc>
                         </valItem>
+                        <valItem ident="externalLink">
+                           <desc>Identifie un lien sortant.</desc>
+                        </valItem>
+                        <valItem ident="mailto">
+                           <desc>Identifie une adresse mail.</desc>
+                        </valItem>
                      </valList>
                   </attDef>
                   <attDef ident="subtype" mode="delete"/>

@@ -330,6 +330,7 @@
         <xsl:apply-templates select="/" mode="belprey"/>
         <xsl:apply-templates select="/" mode="carte"/>
         <xsl:apply-templates select="/" mode="focus"/>
+        <xsl:apply-templates select="//tei:projectDesc" mode="projecDesc"/>
     </xsl:template>    
     
     <xsl:template match="//tei:body">
@@ -388,8 +389,7 @@
                                     <div class="large-6 columns clearfix">
                                         <ul class="tabs float-right" data-tabs="true" id="example-tabs">                                
                                             <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">transcriptions</a></li>
-                                            <li class="tabs-title"><a href="#panel2">facsimilés</a></li>
-                                            <!--<li class="tabs-title"><a href="#panel3">options</a></li>-->
+                                            <li class="tabs-title"><a href="#panel2">facsimilés</a></li>                                            
                                         </ul>
                                     </div>
                                 </div>
@@ -409,42 +409,7 @@
                                             </div>                                                                                                                            
                                         </xsl:for-each>
                                     </div>
-                                </div>
-                                <!--<div class="tabs-panel" id="panel3">
-                                    <div class="row">
-                                        <div class="large-12">
-                                            <dl>
-                                                <dt>Forme originale</dt>
-                                                <dd>
-                                                    <div class="switch small">                                                        
-                                                        <input class="switch-input checkbox_modern" id="modern" type="checkbox" name="modern"/>
-                                                        <label class="switch-paddle" for="modern">                                                                
-                                                            <!-\-<span>Modernisation</span>-\->
-                                                            <span class="switch-active" aria-hidden="true">I</span>
-                                                            <span class="switch-inactive" aria-hidden="true">O</span>
-                                                        </label>
-                                                    </div>
-                                                </dd>
-                                            </dl>
-                                            <dl>
-                                                <dt>Retours à la ligne</dt>
-                                                <dd>
-                                                    <div class="switch small">                                                        
-                                                        <input class="switch-input checkbox_lb" id="lb" type="checkbox" name="lb"/>
-                                                        <label class="switch-paddle" for="lb">                                                            
-                                                            <span class="switch-active" aria-hidden="true">I</span>
-                                                            <span class="switch-inactive" aria-hidden="true">O</span>
-                                                        </label>
-                                                    </div>
-                                                </dd>
-                                            </dl>                                                                                                                                        
-                                                <!-\-<label><input type="checkbox" class="checkbox_abbr" value="abbr" />Abbr</label>
-                                                <label><input type="checkbox" class="checkbox_orig" value="orig" />Orig</label>
-                                                <label><input type="checkbox" class="checkbox_sic" value="sic" />sic</label>-\->
-                                                <!-\-<label><input type="checkbox" class="checkbox_lb" value="lb" />lb</label>-\->                                            
-                                        </div>
-                                    </div>
-                                </div>-->
+                                </div>                                
                             </div>
                         </div>
                         <xsl:copy-of select="$footer"/>
@@ -1537,6 +1502,177 @@
     
     <!-- **************** Cartographie **************** -->
     
+    <xsl:template match="/" mode="carte">
+        <xsl:result-document format="html" encoding="UTF-8" href="html/cartes.html">
+            <html>
+                <head>
+                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+                    <title>Édition du journal de Nicolas Durival ß</title>
+                    <meta charset="utf-8" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                    <link rel="stylesheet" href="../css/app.css" />
+                    <link rel="stylesheet" href="../css/foundation.css" />
+                    <link rel="stylesheet" href="../css/timeliner/timeliner.css" type="text/css" media="screen" />
+                    <link rel="stylesheet" href="../js/timeliner/vendor/venobox/venobox.css" type="text/css" media="screen" />
+                    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,900,700" rel="stylesheet" type="text/css" />
+                    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900,300" rel="stylesheet" type="text/css" />
+                    <script>
+                        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                        
+                        ga('create', 'UA-78667211-1', 'auto');
+                        ga('send', 'pageview');                            
+                    </script>
+                </head>
+                <body>
+                    <xsl:copy-of select="$header"/>
+                    <div class="row">
+                        <div class="large-12">
+                            <h2 class="text-center edito2">Les cartes</h2>
+                            <p class="edito"></p>
+                            <div class="large-4 columns">
+                                <div><!-- <h3 class="text-center edito2">Nancy en 1754</h3> --><br/></div>
+                                <a href="belprey.html" target="blank"><img src="../images/vignettes/vignetteBelprey.png"/></a><h3 class="text-center edito2">Le plan Belprey : 1754</h3>
+                                <br/>
+                                <h4 class="edito">Thomas Belprey (1713-1786).</h4>
+                                <cite class="edito">
+                                    Plan général des deux villes de Nancy et des nouveaux édifices que sa Majesté le roy de Pologne, duc de Lorraine et de Bar 
+                                    etc. y a fait construire. levé par Belprey, l'un des brigadiers de sa garde en 1754.
+                                </cite>
+                                <br />
+                                <p class="edito">
+                                    Ce plan présente une vue en perspective de la ville en 1754, soit avant l'achèvement de tous les travaux projetés par Stanislas. 
+                                    Il comporte douze vignettes qui représentent les principaux nouveaux bâtiments de la ville.
+                                </p>
+                            </div>
+                            <div class="large-4 columns">
+                                <div>
+                                    <br />
+                                    <a href="mique.html" target="blank"><img src="../images/vignettes/vignetteB543956101_H_FG_ES_00014.png"/></a>
+                                </div>
+                                <h3 class="text-center edito2">Le plan Mique : 1778</h3>
+                                <br />
+                                <h4 class="edito">Claude Mique.</h4>
+                                <cite class="edito">
+                                    Plan des villes, citadelle et faubourgs de Nancy, dédié à la Reine par son très humble et 
+                                    très obéissant serviteur C. Mique, architecte de feu Roi de Pologne à Nancy.
+                                </cite>
+                                <p class="edito">
+                                    Sur ce plan, toutes les réalisations voulues par Stanislas ont été réalisées. On peut y voir 
+                                    la nouvelle université (actuelle bibliothèque Stanislas), et le début de la destruction des bastions. 
+                                    Celui des Michotte a déjà disparu, laissant place à la nouvelle place de Grève.
+                                </p>
+                            </div>
+                            <div class="large-4 columns">
+                                <div>
+                                    <br />
+                                    <a href="cartographie.html" target="blank"><img src="../images/vignettes/vignetteCarte.png"/></a>
+                                    <h3 class="text-center edito2">Nancy aujourd'hui</h3>
+                                    <br />
+                                    <p class="edito">
+                                        Sur cette carte contemporaine, retrouvez les lieux évoqués par Durival. Cette superposition 
+                                        redessine la ville telle que Durival l'a parcouru, vous donnant accès à des informations sur 
+                                        des lieux qui sont toujours visibvles, ont été transformés ou qui parfois ont disparus. 
+                                    </p>
+                                </div>
+                            </div>                             
+                            <br />
+                        </div>                                                                        
+                    </div> 
+                    <xsl:copy-of select="$footer"/>
+                    <!-- FOOTER -->                    
+                    <script src="../js/vendor/jquery.js">/*Pour transformation xslt*/</script>
+                    <script src="../js/vendor/modernizr.js">/*Pour transformation xslt*/</script>
+                    <script src="../js/foundation.min.js">/*Pour transformation xslt*/</script>
+                    <script type="text/javascript" src="../js/timeliner/timeliner.min.js"></script>
+                    <script type="text/javascript" src="../js/timeliner/vendor/venobox/venobox.min.js"></script>
+                    <script>$(document).foundation();</script>
+                    <script>
+                        $(document).ready(function() {
+                        $.timeliner({});
+                        });
+                    </script>
+                </body>
+            </html>
+        </xsl:result-document> 
+    </xsl:template>
+    
+    <xsl:template match="/" mode="belprey">
+        <xsl:result-document format="html" encoding="UTF-8" href="html/belprey.html">
+            <html xmlns="http://www.w3.org/1999/xhtml">
+                <head>
+                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+                    <title>Édition du journal de Nicolas Durival ß</title>
+                    <meta charset="utf-8" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                    <link rel="stylesheet" href="../css/foundation.css" />
+                    <link rel="stylesheet" href="../css/app.css" />
+                    <link rel="stylesheet" href="../js/leaflet/leaflet.css" />
+                    <script>
+                        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                        
+                        ga('create', 'UA-78667211-1', 'auto');
+                        ga('send', 'pageview');                            
+                    </script>
+                </head>
+                <body class="zoomify">
+                    <xsl:copy-of select="$mapHeader"/>
+                    <div id="photo"></div>
+                    <script src="../js/leaflet/leafletZ.js"></script>
+                    <script type="text/javascript" src="../js/leaflet/L.TileLayer.Zoomify.js"></script>
+                    <script type="text/javascript" src="../js/cartographie/belprey.js"></script>
+                    <script src="../js/vendor/jquery.js"></script>
+                    <script src="../js/foundation.min.js"></script>
+                    <script src="../js/vendor/modernizr.js"></script>
+                    <script src="../js/modernisation/modernisation.js"></script>
+                    <script>$(document).foundation();</script>
+                </body>
+            </html>
+        </xsl:result-document> 
+    </xsl:template>
+    
+    <xsl:template match="/" mode="mique">
+        <xsl:result-document format="html" encoding="UTF-8" href="html/mique.html">
+            <html xmlns="http://www.w3.org/1999/xhtml">
+                <head>
+                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+                    <title>Édition du journal de Nicolas Durival ß</title>
+                    <meta charset="utf-8" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                    <link rel="stylesheet" href="../css/foundation.css" />
+                    <link rel="stylesheet" href="../css/app.css" />
+                    <link rel="stylesheet" href="../js/leaflet/leaflet.css" />
+                    <script>
+                        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                        
+                        ga('create', 'UA-78667211-1', 'auto');
+                        ga('send', 'pageview');                            
+                    </script>
+                </head>
+                <body class="zoomify">
+                    <xsl:copy-of select="$mapHeader"/>
+                    <div id="photo"></div>
+                    <script src="../js/leaflet/leafletZ.js"></script>
+                    <script type="text/javascript" src="../js/leaflet/L.TileLayer.Zoomify.js"></script>
+                    <script src="../js/cartographie/mique.js"></script>
+                    <script src="../js/vendor/jquery.js"></script>
+                    <script src="../js/foundation.min.js"></script>
+                    <script src="../js/vendor/modernizr.js"></script>
+                    <script src="../js/modernisation/modernisation.js"></script>
+                    <script>$(document).foundation();</script>
+                </body>
+            </html>
+        </xsl:result-document> 
+    </xsl:template>        
+    
     <xsl:template match="//tei:div[@type='index'][descendant::tei:listPlace[@xml:id='listPlace']][descendant::tei:listOrg[@xml:id='listOrg']]" mode="cartographie">
         <!--<xsl:template match="//tei:listPlace[@xml:id='listPlace']" mode="cartographie">-->        
         <xsl:result-document format="html" encoding="UTF-8" href="html/cartographie.html">
@@ -2000,176 +2136,7 @@
     </xsl:template>
     
     <!-- *********** Autres pages Web ***********-->
-    <xsl:template match="/" mode="belprey">
-        <xsl:result-document format="html" encoding="UTF-8" href="html/belprey.html">
-            <html xmlns="http://www.w3.org/1999/xhtml">
-                <head>
-                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-                    <title>Édition du journal de Nicolas Durival ß</title>
-                    <meta charset="utf-8" />
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                    <link rel="stylesheet" href="../css/foundation.css" />
-                    <link rel="stylesheet" href="../css/app.css" />
-                    <link rel="stylesheet" href="../js/leaflet/leaflet.css" />
-                    <script>
-                        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-                        
-                        ga('create', 'UA-78667211-1', 'auto');
-                        ga('send', 'pageview');                            
-                    </script>
-                </head>
-                <body class="zoomify">
-                    <xsl:copy-of select="$mapHeader"/>
-                    <div id="photo"></div>
-                    <script src="../js/leaflet/leafletZ.js"></script>
-                    <script type="text/javascript" src="../js/leaflet/L.TileLayer.Zoomify.js"></script>
-                    <script type="text/javascript" src="../js/cartographie/belprey.js"></script>
-                    <script src="../js/vendor/jquery.js"></script>
-                    <script src="../js/foundation.min.js"></script>
-                    <script src="../js/vendor/modernizr.js"></script>
-                    <script src="../js/modernisation/modernisation.js"></script>
-                    <script>$(document).foundation();</script>
-                </body>
-            </html>
-        </xsl:result-document> 
-    </xsl:template>
-    
-    <xsl:template match="/" mode="mique">
-        <xsl:result-document format="html" encoding="UTF-8" href="html/mique.html">
-            <html xmlns="http://www.w3.org/1999/xhtml">
-                <head>
-                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-                    <title>Édition du journal de Nicolas Durival ß</title>
-                    <meta charset="utf-8" />
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                    <link rel="stylesheet" href="../css/foundation.css" />
-                    <link rel="stylesheet" href="../css/app.css" />
-                    <link rel="stylesheet" href="../js/leaflet/leaflet.css" />
-                    <script>
-                        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-                        
-                        ga('create', 'UA-78667211-1', 'auto');
-                        ga('send', 'pageview');                            
-                    </script>
-                </head>
-                <body class="zoomify">
-                    <xsl:copy-of select="$mapHeader"/>
-                    <div id="photo"></div>
-                    <script src="../js/leaflet/leafletZ.js"></script>
-                    <script type="text/javascript" src="../js/leaflet/L.TileLayer.Zoomify.js"></script>
-                    <script src="../js/cartographie/mique.js"></script>
-                    <script src="../js/vendor/jquery.js"></script>
-                    <script src="../js/foundation.min.js"></script>
-                    <script src="../js/vendor/modernizr.js"></script>
-                    <script src="../js/modernisation/modernisation.js"></script>
-                    <script>$(document).foundation();</script>
-                </body>
-            </html>
-        </xsl:result-document> 
-    </xsl:template>
-    
-    <xsl:template match="/" mode="carte">
-        <xsl:result-document format="html" encoding="UTF-8" href="html/cartes.html">
-            <html>
-                <head>
-                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-                    <title>Édition du journal de Nicolas Durival ß</title>
-                    <meta charset="utf-8" />
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                    <link rel="stylesheet" href="../css/app.css" />
-                    <link rel="stylesheet" href="../css/foundation.css" />
-                    <link rel="stylesheet" href="../css/timeliner/timeliner.css" type="text/css" media="screen" />
-                    <link rel="stylesheet" href="../js/timeliner/vendor/venobox/venobox.css" type="text/css" media="screen" />
-                    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,900,700" rel="stylesheet" type="text/css" />
-                    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900,300" rel="stylesheet" type="text/css" />
-                    <script>
-                        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-                        
-                        ga('create', 'UA-78667211-1', 'auto');
-                        ga('send', 'pageview');                            
-                    </script>
-                </head>
-                <body>
-                    <xsl:copy-of select="$header"/>
-                    <div class="row">
-                        <div class="large-12">
-                            <h2 class="text-center edito2">Les cartes</h2>
-                            <p class="edito"></p>
-                            <div class="large-4 columns">
-                                <div><!-- <h3 class="text-center edito2">Nancy en 1754</h3> --><br/></div>
-                                <a href="belprey.html" target="blank"><img src="../images/vignettes/vignetteBelprey.png"/></a><h3 class="text-center edito2">Le plan Belprey : 1754</h3>
-                            <br/>
-                                <h4 class="edito">Thomas Belprey (1713-1786).</h4>
-                                <cite class="edito">
-                                    Plan général des deux villes de Nancy et des nouveaux édifices que sa Majesté le roy de Pologne, duc de Lorraine et de Bar 
-                                    etc. y a fait construire. levé par Belprey, l'un des brigadiers de sa garde en 1754.
-                                </cite>
-                                <br />
-                                <p class="edito">
-                                    Ce plan présente une vue en perspective de la ville en 1754, soit avant l'achèvement de tous les travaux projetés par Stanislas. 
-                                    Il comporte douze vignettes qui représentent les principaux nouveaux bâtiments de la ville.
-                                </p>
-                            </div>
-                            <div class="large-4 columns">
-                                <div>
-                                    <br />
-                                    <a href="mique.html" target="blank"><img src="../images/vignettes/vignetteB543956101_H_FG_ES_00014.png"/></a>
-                                </div>
-                                <h3 class="text-center edito2">Le plan Mique : 1778</h3>
-                                <br />
-                                <h4 class="edito">Claude Mique.</h4>
-                                <cite class="edito">
-                                    Plan des villes, citadelle et faubourgs de Nancy, dédié à la Reine par son très humble et 
-                                    très obéissant serviteur C. Mique, architecte de feu Roi de Pologne à Nancy.
-                                </cite>
-                                <p class="edito">
-                                    Sur ce plan, toutes les réalisations voulues par Stanislas ont été réalisées. On peut y voir 
-                                    la nouvelle université (actuelle bibliothèque Stanislas), et le début de la destruction des bastions. 
-                                    Celui des Michotte a déjà disparu, laissant place à la nouvelle place de Grève.
-                                </p>
-                            </div>
-                            <div class="large-4 columns">
-                                <div>
-                                    <br />
-                                    <a href="cartographie.html" target="blank"><img src="../images/vignettes/vignetteCarte.png"/></a>
-                                    <h3 class="text-center edito2">Nancy aujourd'hui</h3>
-                                    <br />
-                                    <p class="edito">
-                                        Sur cette carte contemporaine, retrouvez les lieux évoqués par Durival. Cette superposition 
-                                        redessine la ville telle que Durival l'a parcouru, vous donnant accès à des informations sur 
-                                        des lieux qui sont toujours visibvles, ont été transformés ou qui parfois ont disparus. 
-                                    </p>
-                                </div>
-                            </div>                             
-                            <br />
-                        </div>                                                                        
-                    </div> 
-                    <xsl:copy-of select="$footer"/>
-                    <!-- FOOTER -->                    
-                    <script src="../js/vendor/jquery.js">/*Pour transformation xslt*/</script>
-                    <script src="../js/vendor/modernizr.js">/*Pour transformation xslt*/</script>
-                    <script src="../js/foundation.min.js">/*Pour transformation xslt*/</script>
-                    <script type="text/javascript" src="../js/timeliner/timeliner.min.js"></script>
-                    <script type="text/javascript" src="../js/timeliner/vendor/venobox/venobox.min.js"></script>
-                    <script>$(document).foundation();</script>
-                    <script>
-                        $(document).ready(function() {
-                        $.timeliner({});
-                        });
-                    </script>
-                </body>
-            </html>
-        </xsl:result-document> 
-    </xsl:template>   
+       
 
     <xsl:template match="/" mode="focus">
         <xsl:result-document format="html" encoding="UTF-8" href="html/focus.html">
@@ -2246,6 +2213,91 @@
                 </body>
             </html>
         </xsl:result-document> 
+    </xsl:template>
+    
+<!--  ************************** A propos *****************************  -->
+    <xsl:template match="tei:projectDesc/tei:p" mode="projecDesc">
+        <p><xsl:apply-templates mode="projecDesc"/></p>
+    </xsl:template>
+    <xsl:template match="tei:projectDesc//tei:lb" mode="projecDesc">
+        <br />
+    </xsl:template>
+    <xsl:template match="tei:projectDesc//tei:ref" mode="projecDesc">
+        <xsl:for-each select=".">
+            <xsl:choose>
+                <xsl:when test="@type='mailto'">
+                    <a href="mailto:{@target}"><xsl:apply-templates mode="projecDesc"></xsl:apply-templates></a>
+                </xsl:when>
+                <xsl:when test="@type='externalLink'">
+                    <a target="_blank" href="{@target}"><xsl:apply-templates mode="projecDesc"></xsl:apply-templates></a>
+                </xsl:when>
+            </xsl:choose>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template match="tei:projectDesc//tei:list" mode="projecDesc">
+        <ul class="no-bullet">
+            <xsl:for-each select="tei:item">
+                <li class="enum"><xsl:apply-templates select="." mode="projecDesc"/></li>
+            </xsl:for-each>
+        </ul>
+    </xsl:template>
+    
+    <xsl:template match="tei:projectDesc//tei:hi" mode="projecDesc">
+        <xsl:for-each select=".">
+            <xsl:choose>
+                <xsl:when test="@rend='super'"><sup><xsl:apply-templates mode="projecDesc"/></sup></xsl:when>
+                <xsl:when test="not(@*)"><h2 class="section"><xsl:apply-templates mode="projecDesc"/></h2></xsl:when>
+            </xsl:choose>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template match="tei:projectDesc" mode="projecDesc">
+        <xsl:result-document format="html" encoding="UTF-8" href="html/apropos.html">
+            <html>
+                <head>
+                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+                    <title>Édition du journal de Nicolas Durival ß</title>
+                    <meta charset="utf-8" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                    <link rel="stylesheet" href="../css/app.css" />
+                    <link rel="stylesheet" href="../css/foundation.css" />                                        
+                    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,900,700" rel="stylesheet" type="text/css" />
+                    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900,300" rel="stylesheet" type="text/css" />
+                    <script>
+                        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                        
+                        ga('create', 'UA-78667211-1', 'auto');
+                        ga('send', 'pageview');                            
+                    </script>
+                </head>
+                <body>
+                    <xsl:copy-of select="$header"/>
+                    <div class="row">
+                        <div class="large-12">
+                            <h1>L'édition du Journal de Durival</h1>
+                            <xsl:apply-templates mode="projecDesc"/>
+                        </div>
+                    </div>
+                    <xsl:copy-of select="$footer"/>
+                    <!-- FOOTER -->                    
+                    <script src="../js/vendor/jquery.js">/*Pour transformation xslt*/</script>
+                    <script src="../js/vendor/modernizr.js">/*Pour transformation xslt*/</script>
+                    <script src="../js/foundation.min.js">/*Pour transformation xslt*/</script>
+                    <script type="text/javascript" src="../js/timeliner/timeliner.min.js"></script>
+                    <script type="text/javascript" src="../js/timeliner/vendor/venobox/venobox.min.js"></script>
+                    <script>$(document).foundation();</script>
+                    <script>
+                        $(document).ready(function() {
+                        $.timeliner({});
+                        });
+                    </script>
+                </body>
+            </html>
+        </xsl:result-document>
     </xsl:template>
     
 </xsl:stylesheet>
