@@ -1594,7 +1594,7 @@
                            <lb/>La s&eé;ance a été terminée par un fort
                            <lb/>bon discours de <rs type="person" ref="#rouvrois">M. le directeur</rs>, où il a fait 
                            <pb facs="B543956101M00863_06_0082_2R" n="80"/><fw type="pageNum" n="80" place="topRight">80</fw>entrer fort adroitement l'éloge du <rs type="person" ref="#stanislas">roy de <choice><abbr>P.</abbr><expan>Pologne</expan></choice></rs>
-                           <lb/>et parlé de <rs type="org" ref="#fondationI">sa derniere fondation</rs><ref type="note" target="#note17650508B"/>. Il n'a
+                           <lb/>et parlé de sa derniere fondation<ref type="note" target="#note17650508B"/>. Il n'a
                            <lb/>p&ûu; par faiblesse de poitrine lire que le <choice><abbr>commencem</abbr><expan>commencement</expan></choice>.
                            <lb/>La lecture a été faite par <persName ref="#sivry">M. de Sivry</persName> qui
                            <lb/>&eé;t&oa;it à côté de lui. Il y av&oa;it beaucoup de
@@ -2098,7 +2098,7 @@
                         </p>
                         <p xml:id="d1765062702" ana="#ville">
                            J'ai v&ûu; <rs type="person" ref="#stanislas">le &roy;</rs>. Il m'a parlé des <placeName ref="#nancyCasernes"><choice><orig>cazernes</orig><reg>casernes</reg></choice></placeName>
-                           <lb/>de <placeName ref="#nancyBibliotheque">la <choice><orig>biblioteque</orig><reg>bibliothèque</reg></choice></placeName>, de <rs type="org" ref="#fondationI">sa derni&eè;re fondation</rs>. Il
+                           <lb/>de <placeName ref="#nancyBibliotheque">la <choice><orig>biblioteque</orig><reg>bibliothèque</reg></choice></placeName>, de sa derni&eè;re fondation. Il
                            <lb/>doit venir demain voir <placeName ref="#nancyBibliotheque">la <choice><orig>biblioteque</orig><reg>bibliothèque</reg></choice> à
                               <lb/>l'h&oô;tel de ville</placeName>.
                         </p>
@@ -5002,8 +5002,8 @@
                               <lb/>que ce que je vous en ai marqué à 8 h. <rs type="person" ref="#stanislas"><choice><abbr>S. M.</abbr><expan>Sa Majesté</expan></choice></rs>
                               <lb/>a donné quelques signes de conn&oa;issance
                               <lb/>mais sa situation est absolument d&èé;sespérée ;
-                              <lb/>Je ne vous parle pas de l'accablement de <orgName ref="#laCour">la
-                                 <lb/>Cour</orgName>. <persName ref="#chapuis">M. Chap<supplied reason="inkBlot">uis</supplied></persName> va faire partir ceci
+                              <lb/>Je ne vous parle pas de l'accablement de la                                 
+                              <lb/>Cour. <persName ref="#chapuis">M. Chap<supplied reason="inkBlot">uis</supplied></persName> va faire partir ceci
                               <lb/>par le messager qui l'a suivi ; je lui ai
                               <pb facs="B543956101M00863_06_0122_2R" n="119"/><fw type="pageNum" n="119" place="topRight">119</fw>conseill&eé; de ne partir lui même que ce soir.
                               <lb/>Nous sommes tous dans la douleur.

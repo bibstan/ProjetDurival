@@ -3643,7 +3643,7 @@
                </location>
             </org>
             <org xml:id="parlementRouen">
-               <orgName>Parlement de Rouen</orgName>
+               <orgName>Parlement<!-- de Rouen--></orgName>
                <location>
                   <placeName>Rouen</placeName>
                </location>
@@ -3662,7 +3662,7 @@
                </location>
             </org>
             <org xml:id="ordreAvocats">
-               <orgName>Ordre des avocats de Nancy</orgName>
+               <orgName>Ordre des avocats<!-- de Nancy--></orgName>
                <location>
                   <placeName>Nancy</placeName>
                </location>
@@ -3681,13 +3681,13 @@
                </location>
             </org>
             <org xml:id="parlementBretagne">
-               <orgName>Parlement de Rennes</orgName>
+               <orgName>Parlement<!-- de Rennes--></orgName>
                <location>
                   <placeName>Rennes (1554-1790)</placeName>
                </location>
             </org>
             <org xml:id="parlementParis">
-               <orgName>Parlement de Paris</orgName>
+               <orgName>Parlement<!-- de Paris--></orgName>
                <location>
                   <placeName>Paris</placeName>
                </location>
@@ -3706,7 +3706,7 @@
                </location>
             </org>
             <org xml:id="academieScience">
-               <orgName>Académie des Sciences de Paris</orgName>
+               <orgName>Académie des Sciences<!-- de Paris--></orgName>
                <location>
                   <placeName>Paris</placeName>
                </location>
@@ -3730,21 +3730,22 @@
                   <placeName>Nancy</placeName>
                </location>
             </org>
-            <org xml:id="laCour">
+            <!--<org xml:id="laCour">
                <orgName>Cour souveraine de Lorraine et de Barrois</orgName>
                <location>
                   <placeName>Nancy</placeName>
                </location>
-            </org>
+               entrée supprimée du d17660223
+            </org>-->
             <org xml:id="intendance">
-               <orgName>Intendance, Hôtel de l'</orgName>
+               <orgName>Hôtel de l'intendance</orgName>
                <location>
                   <placeName>Nancy</placeName>
                </location>
                <desc>Place royale.</desc>
             </org>
             <org xml:id="jesuitesPontamousson">
-               <orgName>Ordre des Jésuites de Pont-à-Mousson</orgName>
+               <orgName>Jésuites de Pont-à-Mousson, ordre des</orgName>
                <location>
                   <placeName>Pont-à-Mousson</placeName>
                </location>
@@ -3768,14 +3769,14 @@
                </location>
             </org>
             <org xml:id="gouvernement">
-               <orgName>Gouvernement, Hôtel du</orgName>
+               <orgName>Hôtel du gouvernement</orgName>
                <location>
                   <placeName>Nancy</placeName>
                </location>
                <desc>Place de la Carrière.</desc>
             </org>
             <org xml:id="parlementMetz">
-               <orgName>Parlement de Metz</orgName>
+               <orgName>Parlement<!-- de Metz--></orgName>
                <location>
                   <placeName>Metz</placeName>
                </location>
@@ -3788,7 +3789,7 @@
                <desc>Rue de la Poissonnerie (aujourd'hui Gambetta).</desc>
             </org>
             <org xml:id="HDV">
-               <orgName>Hôtel de Ville</orgName>
+               <orgName>Hôtel de ville</orgName>
                <location>
                   <placeName>Nancy</placeName>
                </location>
@@ -3801,7 +3802,7 @@
                <desc>La bibliothèque royale est au premier étage de l'hôtel de Ville depuis 1763, auparavant elle était dans la galerie des Cerfs au Palais Ducal. Elle intègrera son emplacement actuel vers 1797.</desc>
             </org>
             <org xml:id="aumonePub">
-               <orgName>Aumône publique, Bureau de l'</orgName>
+               <orgName>Aumône publique, bureau de l'</orgName>
                <location>
                   <placeName>Nancy</placeName>
                </location>
@@ -3813,15 +3814,16 @@
                   <placeName>Nancy</placeName>
                </location>
             </org>
-            <org xml:id="fondationI">
+            <!--<org xml:id="fondationI">
                <orgName>Pépinière royale</orgName>
                <location>
                   <placeName>Nancy</placeName>
                </location>
-               <desc>Une des dernières fondations de Stanislas en 1765.</desc>
-            </org>
+               <desc>Une des dernières fondations de Stanislas en 1765.
+               entrée supprimée voir d1765050802 et d1765062702</desc>
+            </org>-->
             <org xml:id="fondationII">
-               <orgName>Orphelins, fondation pour les</orgName>
+               <orgName>Fondation pour les orphelins</orgName>
                <location>
                   <placeName>Nancy</placeName>
                   <geo>48.69189170755945,6.184414923191071</geo>
@@ -3841,7 +3843,7 @@
                </location>
             </org>
             <org xml:id="cafeRoyal">
-               <orgName>Café Royal</orgName>
+               <orgName>Café royal</orgName>
                <location>
                   <placeName>Nancy</placeName>
                </location>
@@ -3855,7 +3857,7 @@
                <desc> Fondation de Stanislas en 1752 (bâtiment de l'actuel Musée des Beaux-Arts). </desc>
             </org>
             <org xml:id="comedie">
-               <orgName>Théâtre de Nancy</orgName>
+               <orgName>Théâtre<!-- de Nancy--></orgName>
                <location>
                   <placeName>Nancy</placeName>
                </location>
@@ -3868,14 +3870,14 @@
                </location>
             </org>
             <org xml:id="fondationMaladieEpi">
-               <orgName>Maladies épidémiques, fondation des</orgName>
+               <orgName>Fondation des Maladies épidémiques</orgName>
                <location>
                   <placeName>Nancy</placeName>
                </location>
                <desc>Fondation de Stanislas en 1748.</desc>
             </org>
             <org xml:id="ecoleRoyaleMili">
-               <orgName>Ecole royale Militaire</orgName>
+               <orgName>École royale Militaire</orgName>
             </org>
             <org xml:id="corpsGrenadiersFr">
                <orgName>Corps des Grenadiers de France</orgName>
@@ -3884,16 +3886,16 @@
                <orgName>Milice bourgeoise</orgName>
             </org>
             <org xml:id="regimentSchomberg">
-               <orgName>regiment de Schomberg</orgName>
+               <orgName>Régiment de Schomberg</orgName>
             </org>
             <org xml:id="regimentCustine">
-               <orgName>regiment de Custine</orgName>
+               <orgName>Régiment de Custine</orgName>
             </org>
             <org xml:id="regimentNavarre">
-               <orgName>regiment de Navarre</orgName>
+               <orgName>Régiment de Navarre</orgName>
             </org>
             <org xml:id="regimentRoi">
-               <orgName>régiment du roi</orgName>
+               <orgName>Régiment du roi</orgName>
             </org>
             <org xml:id="gardesLorraines">
                <orgName>Régiment Gardes Lorraines</orgName>
@@ -3908,19 +3910,19 @@
                <orgName>Compagnie des gardes du roi</orgName>
             </org>
             <org xml:id="musiqueRoi">
-               <orgName>La musique du roi</orgName>
+               <orgName>Musique du roi</orgName>
             </org>
             <org xml:id="regimentRoyalItalien">
-               <orgName>regiment royal italien</orgName>
+               <orgName>Régiment royal italien</orgName>
             </org>
             <org xml:id="missionsRoyales">
-               <orgName>les missions royales</orgName>
+               <orgName>Missions royales</orgName>
             </org>
             <org xml:id="capitainerieChasses">
-               <orgName>la capitainerie des chasses</orgName>
+               <orgName>Capitainerie des chasses</orgName>
             </org>
             <org xml:id="maisonRoi">
-               <orgName>La maison du roi</orgName>
+               <orgName>Maison du roi</orgName>
             </org>
             <!-- todo vérif intendance/institution ou juste le lieu ? -->
             <org xml:id="corpsSteCatherine">
