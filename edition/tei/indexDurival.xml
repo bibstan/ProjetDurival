@@ -533,19 +533,18 @@
             </person>
             <person xml:id="chancelierLudres"><!-- todo -->
                <persName><surname>Ludres</surname><roleName>M. le chancelier de</roleName></persName>
-            </person>
-            <person xml:id="chapuis">
-               <persName><surname>Chapuis</surname><addName>M.</addName></persName>
-            </person>
+            </person>            
             <person xml:id="chapuisComedien">
                <persName><surname>Chapuis</surname><addName>M.</addName></persName>
                <state><p>Directeur de l'opéra Bouffon</p></state>
             </person>
             <person xml:id="chapuisFils">
-               <persName><surname>Chapuis <hi rend="italic">(fils)</hi></surname></persName>
+               <persName><surname>Chapuis <hi rend="italic">(fils)</hi></surname><forename>Louis-Gabriel</forename></persName>
+               <state><p>avocat à la cour, procureur syndic</p></state>
             </person>
             <person xml:id="chapuisPere">
-               <persName><surname>Chapuis <hi rend="italic">(père)</hi></surname></persName>
+               <persName><surname>Chapuis <hi rend="italic">(père)</hi></surname><forename>Guillaume</forename></persName>
+               <state><p>conseiller de la ville, libraire</p></state>
             </person>
             <person xml:id="charles">
                <persName><surname>Charles</surname></persName>
@@ -731,7 +730,7 @@
                </listEvent>
             </person>
             <person xml:id="cureCommercy">
-               <persName>Le curé de Commercy</persName>
+               <persName><surname>Commercy</surname><roleName>curé de</roleName></persName>
             </person>
             <person xml:id="custine">
                <persName><surname>Custine</surname><addName>M.</addName></persName>
@@ -1621,11 +1620,8 @@
             </person>
             <person xml:id="lePelletier">
                <persName><surname>Le Pelletier de Beauprés</surname><addName>M.</addName></persName>
-            </person>
-            <person xml:id="leSeur">
-               <persName><surname>Le Seur</surname><addName>M.</addName></persName>
-            </person>
-            <person xml:id="leSeure">
+            </person>            
+            <person xml:id="leseure">
                <persName><surname>Leseure</surname><forename>Claude</forename></persName>
                <state><p>maître imprimeur</p></state>
                <birth when="1734"/>
@@ -1635,7 +1631,7 @@
                   <event><p>imprimeur ordinaire du Roi (1757), del'évêque Né en 1733 ou 1734. Chargé des impressions pour l'intendance et la Société royale et littéraire</p></event>
                   <event><p>installé rue Saint-Dizier</p></event>
                </listEvent>
-            </person>
+            </person>            
             <person xml:id="leslie">
                <persName><surname>Leslie</surname><forename>Ernest</forename></persName>
                <birth when="1713"/>
@@ -1667,8 +1663,8 @@
                <persName><surname>Liebault</surname><forename>Jean</forename></persName>
                <listEvent><event><p>membre de l'Académie dès 1755-1756</p></event></listEvent>
             </person>
-            <person xml:id="ligneville"><!-- todo la date donnée ne correspondait pas aux écrits de Durival -->
-               <persName><surname>Lignéville</surname><roleName>abbé et comte de</roleName></persName>
+            <person xml:id="ligneville">
+               <persName><surname>Ligniville</surname><forename>Henri-Honoré</forename><roleName>abbé et comte de</roleName></persName><!-- Pfister histoire de Nancy -->
                <death when="1765"/>
                <state><p>chanoine de Bayeux</p></state>
             </person>
@@ -2582,10 +2578,7 @@
             </person>
             <person xml:id="thomasHenri"><!-- todo quel est le nom du prénom -->
                <persName><surname>Thomas</surname><forename>Henri</forename></persName>
-            </person>
-            <person xml:id="leseure"><!-- todo -->
-               <persName>Leseure</persName>
-            </person>
+            </person>            
             <person xml:id="alixThierry">
                <persName><surname>Alix</surname><forename>Thierry</forename></persName>
             </person>
@@ -2631,6 +2624,13 @@
             </person>
             <person xml:id="beaupre">
                <persName><surname>Beaupré</surname><forename>Jean-Nicolas</forename></persName>
+               <birth when="1795"/>
+               <death when="1869"/>
+               <state><p>magistrat et historien</p></state>
+               <listEvent>
+                  <event><p>Conseiller à la Cour impériale</p></event>
+                  <event><p>Membre correspondant de l'Académie de Strasbourg, de la Société des antiquaires de France et l'un des fondateurs de la Société d'archéologie de Lorraine</p></event>
+               </listEvent>
             </person>
 
          </listPerson>
