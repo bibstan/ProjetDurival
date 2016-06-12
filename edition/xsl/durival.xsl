@@ -466,7 +466,7 @@
                                     <xsl:variable name="picture" select="//tei:back//tei:figure[@xml:id=$ref]//tei:graphic/@url"/>
                                     <xsl:variable name="cartel" select="//tei:back//tei:figure[@xml:id=$ref]//tei:desc"/>                                    
                                     <a class="miniatures" href="../images/illustrations/{$picture}.jpg" data-lightbox="{$id}" data-title="{$cartel}">
-                                        <img src="../images/illustrations/thumbs/{$picture}.jpg" alt="{$cartel}"/>
+                                        <img src="../images/illustrations/thumbs/T{$picture}.png" alt="{$cartel}"/>
                                     </a>
                                 </xsl:for-each>
                             </div>
@@ -2254,6 +2254,11 @@
                                                         <dt class="timeline-event" id="{$id}"><a><xsl:value-of select="tei:head[@n='3']"/></a></dt>
                                                         <span class="tick tick-after" />
                                                         <dd class="timeline-event-content" id="{$id}EX">
+                                                            <xsl:if test=".//tei:graphic">
+                                                                <div class="media">
+                                                                    <a class="focus" href="../images/{.//tei:graphic/@url}.jpg" data-lightbox="#"><img src="../images/{.//tei:graphic/@url}.jpg" alt="Placard"/></a>                                                                    
+                                                                </div><!-- /.media -->
+                                                            </xsl:if>
                                                             <xsl:for-each select="tei:p">
                                                                 <p>
                                                                     <xsl:apply-templates select="."/>

@@ -292,7 +292,7 @@
                </msDesc>
             </sourceDesc>
          </fileDesc>      
-      </teiHeader>
+      </teiHeader>      
       <text>
          <front>
             <div type="bio">
@@ -409,8 +409,9 @@
                         </p>
                      </div>
                      <div>
-                        <head xml:id="durivalBio5" n="3">Lieutenant de police de Nancy</head>                    
+                        <head xml:id="durivalBio5" n="3">Lieutenant de police de Nancy</head>                        
                         <p>
+                           <graphic url="focus/durival/B543956101_098040-7-2"/>
                            En <date when="1760">1760</date>, il résigne ces charges au profit de la lieutenance générale 
                            de police de la ville de <placeName ref="#nancy">Nancy</placeName>, cet office lui 
                            prenant tout son temps. 
@@ -444,6 +445,7 @@
                      <div>
                         <head xml:id="durivalBio6" n="3"><bibl>Le <title>Mémoire sur la Lorraine et le Barrois</title></bibl></head>                    
                         <p>
+                           <graphic url="focus/durival/B543956101_50035_tit"/>                           
                            Selon les historiens, s'appuyant sur les échanges entre 
                            <persName ref="#durival">Durival</persName> et <persName ref="#calmet">Dom Calmet</persName>,
                            <persName ref="#durival">Nicolas Durival</persName> considère, en bon administrateur de son temps, qu'il est 
@@ -473,6 +475,7 @@
                      <div>
                         <head xml:id="durivalBio7" n="3"><bibl>La <title>Description de la Lorraine et du Barrois</title></bibl></head>                    
                         <p>
+                           <graphic url="focus/durival/B543956101_000201-bis_tit"/>                           
                            Cet ouvrage est publié en 4 volumes chez <persName ref="#leClerc">Leclerc</persName> à <placeName ref="#nancy">Nancy</placeName> entre 
                            <date when="1779">1779</date> et <date when="1783">1783</date>, le quatrième volume composé d'ajouts et d'annexes 
                            étant mis gracieusement à disposition des possesseurs des trois 
@@ -562,6 +565,7 @@
                      <div>
                         <head xml:id="durivalBio9" n="3"><bibl>Le <title>Journal</title></bibl></head>                    
                         <p>
+                           <graphic url="focus/durival/B543956101M00863_vues_0004"/>
                            Tenu de <date from="1737" to="1795-12-18">1737 au 18 décembre 1795</date>, soit 3 jours avant la mort 
                            de son rédacteur, <bibl>le <title>Journal</title> de <persName type="author" ref="#durival">Nicolas Durival</persName></bibl> 
                            n'est pas tant un écrit intime 
