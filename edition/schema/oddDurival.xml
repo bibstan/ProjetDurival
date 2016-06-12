@@ -1193,7 +1193,7 @@
             </elementSpec>
             <!--Checking module transcr-->
             <classRef key="att.global.facs"/>
-            <moduleRef key="transcr" include="fw space subst supplied surplus"/><!-- todo ajouter les valeurs pour supplied -->
+            <moduleRef key="transcr" include="fw space subst supplied surplus facsimile"/><!-- todo ajouter les valeurs pour supplied -->
             <elementSpec ident="fw" mode="change">
                <attList>
                   <attDef ident="type" mode="change">
