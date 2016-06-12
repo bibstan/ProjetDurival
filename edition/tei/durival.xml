@@ -955,7 +955,7 @@
                            <lb/>qui aura le cornet à sa place.
                         </p>
                         <p xml:id="d1765031802" ana="#necro">                       
-                           <rs type="person" ref="#cureCommercy">Le curé de Commercy</rs> (M.<space/>
+                           <rs type="person" ref="#cureCommercy">Le curé de Commercy</rs> (M. <space/>
                            <lb/>est mort aussi.
                         </p>
                      </div>
@@ -1318,7 +1318,7 @@
                         <dateline><date type="entry" when="1765-04-21">21</date></dateline>
                         <p xml:id="d1765042101" ana="#fetes">                           
                            Concert à <placeName ref="#nancyComedie">la comédie</placeName> au profit des S.<hi rend="super">rs</hi>
-                           <lb/><space/>musiciens de <rs type="person" ref="#anhalt">M. le <choice><abbr>p<hi rend="super">ce</hi></abbr><expan>prince</expan></choice></rs>.
+                           <lb/><space/> musiciens de <rs type="person" ref="#anhalt">M. le <choice><abbr>p<hi rend="super">ce</hi></abbr><expan>prince</expan></choice></rs>.
                         </p>
                      </div>
                      
