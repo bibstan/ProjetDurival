@@ -1080,7 +1080,7 @@
                <persName><surname>Durival</surname><forename>Claude</forename><addName type="say">le jeune</addName></persName>
             </person>
             <person xml:id="durivalJean"><!-- todo vérif -->
-               <persName><surname>Durival</surname><forename>Jean-Baptiste Lutton</forename><addName type="say">commissaire</addName></persName>
+               <persName><surname>Durival</surname><forename>Jean-Baptiste Lutton</forename><addName type="say">le commissaire</addName></persName>
                <birth when="1725"/>
                <death when="1810"/>
                <listEvent>
