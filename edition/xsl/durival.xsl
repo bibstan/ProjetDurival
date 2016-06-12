@@ -804,7 +804,6 @@
     </xsl:template>
     
     <xsl:template match="tei:addName[@type='say']"><!-- todo prévoir pour les femmes -->
-        <xsl:text>dit &#171;</xsl:text><xsl:apply-templates/><xsl:text>&#187;</xsl:text>
     </xsl:template>
     
     <xsl:template match="tei:birth | tei:death">
@@ -847,7 +846,7 @@
                 <xsl:variable name="id" select="substring-after($href,'#')"/>
                 <xsl:value-of select="//tei:person[@xml:id=$id]/tei:persName/tei:persName"/><!-- todo vérif qu'on a toujours un persName dans ce cas -->
             </xsl:variable>
-            <xsl:text>voir </xsl:text><a href="{$href}"><xsl:value-of select="$renvoi"/></a>
+            <xsl:text> voir </xsl:text><a href="{$href}"><xsl:value-of select="$renvoi"/></a>
         </xsl:if>
     </xsl:template>
     
@@ -865,6 +864,12 @@
                     <xsl:otherwise><xsl:apply-templates select="."/></xsl:otherwise>
                 </xsl:choose>
             </xsl:for-each>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template match="tei:org" mode="tooltip">
+        <xsl:for-each select=".">
+            <xsl:apply-templates select="tei:orgName"/><xsl:if test="tei:location/tei:placeName"><xsl:text> - </xsl:text><xsl:apply-templates select="tei:location/tei:placeName"/></xsl:if>
         </xsl:for-each>
     </xsl:template>
     
@@ -920,7 +925,7 @@
         <xsl:variable name="id" select="substring-after(@ref,'#')"/>
         <xsl:variable name="tooltip">
             <xsl:if test="//tei:div[@type='index']//tei:org[@xml:id=$id]">
-                <xsl:value-of select="//tei:div[@type='index']//tei:org[@xml:id=$id]/tei:orgName"/>
+                <xsl:apply-templates select="//tei:div[@type='index']//tei:org[@xml:id=$id]" mode="tooltip"/>
             </xsl:if>
         </xsl:variable>
         <span data-tooltip='true' aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="{$tooltip}"><a class="person" href="listOrg.html{$ref}"><xsl:apply-templates/></a></span>
@@ -1200,6 +1205,11 @@
                                                     <li class="accordion-item" data-accordion-item="true">
                                                         <a href="#" class="accordion-title vedette"><xsl:apply-templates select="." mode="tooltip"/></a>
                                                         <div class="accordion-content" data-tab-content="true">
+                                                            <xsl:if test="./tei:desc">
+                                                                <div class="note">
+                                                                    <xsl:apply-templates select="./tei:desc"/>                                                                        
+                                                                </div>
+                                                            </xsl:if>
                                                             <ul class="index">
                                                                 <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='day'][descendant::*[contains(@ref,$links)]]">
                                                                     <xsl:variable name="date"><xsl:apply-templates select="./tei:dateline/tei:date" mode="dateComplete"/></xsl:variable>
@@ -1318,8 +1328,15 @@
                                             <li class="vedette" id="{$id}">                                                            
                                                 <ul class="accordion" data-accordion="true" data-allow-all-closed="true">
                                                     <li class="accordion-item" data-accordion-item="true">
-                                                        <a href="#" class="accordion-title vedette"><xsl:apply-templates select="tei:orgName"/></a>
+                                                        <a href="#" class="accordion-title vedette">
+                                                            <xsl:apply-templates select="." mode="tooltip"/>
+                                                        </a>
                                                         <div class="accordion-content" data-tab-content="true">
+                                                            <xsl:if test="./tei:desc">
+                                                                <div class="note">
+                                                                    <xsl:apply-templates select="./tei:desc"/>                                                                        
+                                                                </div>
+                                                            </xsl:if>
                                                             <ul class="index">
                                                                 <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='day'][descendant::*[contains(@ref,$links)]]">
                                                                     <xsl:variable name="date"><xsl:apply-templates select="./tei:dateline/tei:date" mode="dateComplete"/></xsl:variable>
@@ -1412,48 +1429,7 @@
                 </li>
             </xsl:for-each>
         </ul>
-    </xsl:template>
-    
-    <!-- ********** Frise ********** -->
-    <!--<xsl:template match="//tei:div[@type='transcription']" mode="frise">
-        <xsl:result-document format="frise" encoding="UTF-8" href="csv/frise.csv">
-            <xsl:text>Year@Month@Day@Time@End Year@End Month@End Day@End Time@Display Date@Headline@Text@Media@Media Credit@Media Caption@Media ThumbNail@Type@Group@Background
-                </xsl:text>
-            <xsl:for-each select="//*[@type='report'][descendant::tei:seg[@type='dateline']]">
-                <xsl:choose>
-                    <xsl:when test="substring-after(.//tei:seg[@type='dateline']/tei:date/@when,'T')">
-                        <xsl:variable name="date" select="replace(.//tei:seg[@type='dateline']/tei:date/@when,'-','@')"/>
-                        <xsl:variable name="time" select="replace($date,'T','@')"/>
-                        <xsl:value-of select="$time"/><xsl:text>@@@@@@</xsl:text><xsl:apply-templates select=".//tei:seg[@type='dateline']" mode="frise"/><xsl:text>@</xsl:text><xsl:apply-templates select=".//tei:p" mode="frise"/><xsl:text>
-                        </xsl:text>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:variable name="date" select="replace(.//tei:seg[@type='dateline']/tei:date/@when,'-','@')"/>                        
-                        <xsl:value-of select="$date"/><xsl:text>@@@@@@@</xsl:text><xsl:apply-templates select=".//tei:seg[@type='dateline']" mode="frise"/><xsl:text>@</xsl:text><xsl:apply-templates select=".//tei:p" mode="frise"/><xsl:text>
-                        </xsl:text>
-                    </xsl:otherwise>
-                </xsl:choose>                                                
-            </xsl:for-each>
-            <xsl:for-each select="//tei:p[contains(@ana,'#stan')]">
-                <xsl:variable name="date" select="replace(ancestor::tei:div[@type='day']/tei:dateline/tei:date/@when,'-','@')"/>
-                <xsl:value-of select="$date"/><xsl:text>@@@@@@@</xsl:text><xsl:apply-templates select="ancestor::tei:div[@type='day']/tei:dateline/tei:date" mode="date"/><xsl:text>@</xsl:text><xsl:apply-templates select="." mode="frise"/><xsl:text>
-                </xsl:text>
-            </xsl:for-each>
-            <!-\-<xsl:for-each select=" | tei:seg[@type='event']">
-                
-            </xsl:for-each>-\->
-        </xsl:result-document>
-    </xsl:template>
-    
-    <xsl:template match="tei:p" mode="frise">
-        <xsl:variable name="p"><xsl:apply-templates mode="frise"/></xsl:variable>
-        <xsl:value-of select="normalize-space($p)"/>
-    </xsl:template>
-    
-    <xsl:template match="tei:choice" mode="frise">
-        <xsl:apply-templates select="tei:expan"/>
-    </xsl:template>-->
-    
+    </xsl:template>        
     
     <!-- *************** Calendrier Timeliner **************** -->
     
@@ -1604,15 +1580,12 @@
                         id: 'mapbox.streets'
                         }).addTo(mymap);
                         
-                        var base2 = L.tileLayer('http://mapwarper.net/maps/tile/13564/{z}/{x}/{y}.png', {
-                        maxZoom: 20, attribution: 'Map data ©; OpenStreetMap contributors, ' +
-                        'CC-BY-SA, ' +
-                        'Imagery © Mapbox',
-                        id: 'mapbox.streets'
-                        })/*.addTo(mymap)*/;
-                        
-                        //todo besoin de cette ligne ?
-                        var baseLayers = null;
+                        //var base2 = L.tileLayer('http://mapwarper.net/maps/tile/13564/{z}/{x}/{y}.png', {
+                        //maxZoom: 20, attribution: 'Map data ©; OpenStreetMap contributors, ' +
+                        //'CC-BY-SA, ' +
+                        //'Imagery © Mapbox',
+                        //id: 'mapbox.streets'
+                        //})/*.addTo(mymap)*/;                                                
                         
                         // ICONES SUPPLEMENTAIRES
                         var iconA = L.icon({
@@ -1897,12 +1870,10 @@
                         </xsl:for-each>
                         
                         var baseLayers = null;
-                        var baseLayers = {
+                        /*var baseLayers = {
                             'Fond de carte contemporain': base1,
                             'Carte ancienne': base2
-                        };
-                        
-                        //var baseLayers = null;
+                        };*/                                                
                         
                         var overlayMaps = {
                         "Établissements religieux": religious,
@@ -2049,11 +2020,12 @@
                         ga('send', 'pageview');                            
                     </script>
                 </head>
-                <body>
+                <body class="zoomify">
                     <xsl:copy-of select="$mapHeader"/>
-                    <div id="mapid"></div>
-                    <script src="../js/leaflet/leaflet.js"></script>
-                    <script src="../js/cartographie/belprey.js"></script>
+                    <div id="photo"></div>
+                    <script src="../js/leaflet/leafletZ.js"></script>
+                    <script type="text/javascript" src="../js/leaflet/L.TileLayer.Zoomify.js"></script>
+                    <script type="text/javascript" src="../js/cartographie/belprey.js"></script>
                     <script src="../js/vendor/jquery.js"></script>
                     <script src="../js/foundation.min.js"></script>
                     <script src="../js/vendor/modernizr.js"></script>
@@ -2085,10 +2057,11 @@
                         ga('send', 'pageview');                            
                     </script>
                 </head>
-                <body>
+                <body class="zoomify">
                     <xsl:copy-of select="$mapHeader"/>
-                    <div id="mapid"></div>
-                    <script src="../js/leaflet/leaflet.js"></script>
+                    <div id="photo"></div>
+                    <script src="../js/leaflet/leafletZ.js"></script>
+                    <script type="text/javascript" src="../js/leaflet/L.TileLayer.Zoomify.js"></script>
                     <script src="../js/cartographie/mique.js"></script>
                     <script src="../js/vendor/jquery.js"></script>
                     <script src="../js/foundation.min.js"></script>
