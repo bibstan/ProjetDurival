@@ -3931,7 +3931,7 @@
          </listOrg>
          <listBibl xml:id="listBibl">
            <bibl xml:id="bib1">
-             <title>Les eaux de Luxeuil</title>
+             <title>Les eaux deLuxeuil</title>
              <author>
                <surname>Bagard</surname>
                <forename>Charles</forename>
@@ -3944,25 +3944,25 @@
                <surname>Millot</surname>
                <forename>Claude François Xavier</forename>
              </author>
-             <note>Discours de récepeption de l'abbé Millot lu le 2 et 8 mai 1765</note>
+             <note>Discours de récepeption de l'abbé MillotLu le 2 et 8 mai 1765</note>
            </bibl>
            <bibl xml:id="bib3">
              <title>Discours de M. du Rouvrois</title>
-             <author>Du Rouvrois</author>
+             <author><surname>Du Rouvrois</surname></author>
            </bibl>
            <bibl xml:id="bib4">
              <title>Mémoire sur la Lorraine</title>
              <author>
                <surname>Coster</surname>
-               <forename>Joseph</forename>
+                <forename>Joseph</forename>
              </author>
-             <note> Lu à l'Académie le 12 juin 1765</note>
+             <note>Lu à l'Académie le 12 juin 1765</note>
            </bibl>
            <bibl xml:id="bib5">
              <title level="m">Mémoire sur la Lorraine et le Barrois, suivi de la table alphabétique et topographique des lieux</title>
-             <author>
-               <forename>Nicolas Luton</forename>
+             <author>               
                <surname>Durival</surname>
+                <forename>NicolasLuton</forename>
              </author>
              <pubPlace>Nancy</pubPlace>
              <publisher>Thomas, Henri</publisher>
@@ -3974,7 +3974,7 @@
                <surname>Coster</surname>
                <forename>Joseph</forename>
              </author>
-             <note> Lu à l'Académie le 26 juin 1765</note>
+             <note>Lu à l'Académie le 26 juin 1765</note>
            </bibl>
            <bibl xml:id="bib7">
              <title>Discours sur les eaux thermales</title>
@@ -3982,7 +3982,7 @@
                <surname>Bagard</surname>
                <forename>Charles</forename>
              </author>
-             <note> Lu à l'Académie le 26 juin 1765</note>
+             <note>Lu à l'Académie le 26 juin 1765</note>
            </bibl>
            <bibl xml:id="bib8">
              <title>Eloge historique</title>
@@ -3990,7 +3990,7 @@
                <surname>Cellier</surname>
                <forename>Rémy</forename>
              </author>
-             <note> Lu à l'Académie le 10 juillet 1765 par Charles François de Tervenus</note>
+             <note>Lu à l'Académie le 10 juillet 1765 par Charles François de Tervenus</note>
            </bibl>
            <bibl xml:id="bib9">
              <title>Les lettres écrites de la Plaine en réponse à celles de la Montagne</title>
@@ -4001,7 +4001,7 @@
              <date>1765</date>
              <pubPlace>Amsterdam</pubPlace>
              <publisher>Faucheux</publisher>
-             <note> Lu à l'Académie le 31 juillet 1765. Par cet ouvrage, Sigorgne s'oppose à Rousseau et ses Lettres écrites de la montagne</note>
+             <note>Lu à l'Académie le 31 juillet 1765. Par cet ouvrage, Sigorgne s'oppose à Rousseau et ses Lettres écrites de la montagne</note>
            </bibl>
            <bibl xml:id="bib10">
              <title>Les lettres écrites de la Montagne</title>
@@ -4015,13 +4015,13 @@
            </bibl>
            <bibl xml:id="bib11">
              <title>Ouvrage sur les inconvénients de la litterature</title>
-             <note> Lu à l'Académie le 13 novembre 1765. L'auteur n'est pas cité, mais l'ouvrage est admis au concours. N'obtiendra pas le prix (11 décembre 1765)</note>
+             <note>Lu à l'Académie le 13 novembre 1765. L'auteur n'est pas cité, mais l'ouvrage est admis au concours. N'obtiendra pas le prix (11 décembre 1765)</note>
            </bibl>
            <bibl xml:id="bib12">
              <title>Mémoire militaire</title>
              <author>
-               <forename>Jean</forename>
-               <surname>Durival</surname>
+                <surname>Durival</surname>
+               <forename>Jean</forename>               
              </author>
              <note>Mémoire adressé à la Cour le 14 novembre 1765</note>
            </bibl>
@@ -4044,8 +4044,8 @@
            <bibl xml:id="bib16">
              <title>Éloge historique de Stanislas I. Roi de Pologne... Prononcé le 11 mai 1766... </title>
              <author>
-               <forename>Pierre-Joseph de</forename>
-               <surname>Solignac</surname>
+                <surname>Solignac</surname>
+               <forename>Pierre-Joseph de</forename>               
              </author>
              <pubPlace>Nancy</pubPlace>
              <publisher>Leseure, Veuve d'Antoine ; Leseure, Claude</publisher>
@@ -4054,21 +4054,24 @@
            </bibl>
            <bibl xml:id="bib17">
              <title>Ouvrage sur les impôts</title>
-             <author>Jean Durival</author>
+             <author>
+                <surname>Durival</surname>
+                <forename>Jean</forename>
+             </author>
              <note>Il semble que Jean Durival ne publiera jamais cet ouvrage.</note>
            </bibl>
            <bibl xml:id="bib18">
              <title>Mémoire sur les abbayes et prieurés de Lorraine</title>
-             <author>Guerre</author>
+             <author><surname>Guerre</surname></author>
              <note>On ne trouve pas trace de cet ouvrage</note>
            </bibl>
            <bibl xml:id="bib19">
              <title>Dissertation sur les deux odes d'Horace</title>
              <author>
                <surname>Sozzi</surname>
-               <forename>Louis François de</forename>
+               <forename>Louis-François de</forename>
              </author>
-             <note> Lu àl'Académie le 28 mai 1766 </note>
+             <note>Lu àl'Académie le 28 mai 1766 </note>
            </bibl>
            <bibl xml:id="bib20">
              <title>Memoire du Parlement de Metz sur son ressort</title>
@@ -4083,7 +4086,7 @@
             </bibl>-->
             <bibl xml:id="bib23">
               <!--TODO rs a attacher aussi à mémoire de la cour le 14-07-66"-->
-              <title> Mémoire présenté par la Cour Souveraine de Lorraine et de Barrois, pour prouver que le Parlement de Metz ne peut à aucun Titre, ni par aucune considération, demander le Ressort de la Cour Souveraine de Lorraine et Barrois</title>
+              <title>Mémoire présenté par la Cour Souveraine de Lorraine et de Barrois, pour prouver que le Parlement de Metz ne peut à aucun Titre, ni par aucune considération, demander le Ressort de la Cour Souveraine de Lorraine et Barrois</title>
               <date>1766</date>
             </bibl>
             <!--  <bibl xml:id="bib24">
@@ -4094,26 +4097,26 @@
               <title>Discours sur la conservation des grains</title>
               <author>
                 <surname>Gandoger de Foigny</surname>
-                <forename>Pierre Louis</forename>
+                <forename>Pierre-Louis</forename>
               </author>
               <date>1766</date>
               <note>Lu à l'Académie le 15 octobre 1766</note>
             </bibl>
             <bibl xml:id="bib26">
               <title>Discours</title>
-              <author>
-                <forename>François de</forename>
-                <surname>Neufchâteau</surname>
+              <author>                
+                 <surname>Neufchâteau</surname>
+                 <forename>François de</forename>
               </author>
               <date>1766</date>
               <note>Lu à l'Académie le 15 octobre 1766</note>
             </bibl>
             <bibl xml:id="bib27">
               <title level="m">Charles 1<hi rend="super">er</hi> Roi d'Angleterre à son fils le Prince de Galles retiré en France</title>
-              <author>
-                <forename>François de</forename>
-                <surname>Neufchâteau</surname>
-              </author>
+               <author>                
+                  <surname>Neufchâteau</surname>
+                  <forename>François de</forename>
+               </author>
               <note>Lu à l'Académie le 15 octobre 1766</note>
               <idno type="callNumber">Bibliothèque de l'Académie Stanislas, manuscrit des séances de 1766</idno>
             </bibl>
@@ -4126,7 +4129,7 @@
             </bibl>
             <bibl xml:id="bib30">
               <title level="m">Dictionnaire philosophique, portatif, ou supplément à l'édition de 1765 . Revu, corrigé &amp; augmenté de XXXVII articles par l'auteur</title>
-              <author>Voltaire</author>
+              <author><surname>Voltaire</surname></author>
               <pubPlace>À Londres [Nancy] [ca 1765]</pubPlace>
               <publisher>[Leclerc]</publisher>
               <date>1765</date>
@@ -4142,8 +4145,8 @@
             <bibl xml:id="bib32">
               <title level="m">Le Siège de Calais</title>
               <author>
-                <forename>Pierre Laurent de</forename>
-                <surname>Belloy</surname>
+                 <surname>Belloy</surname>
+                <forename>Pierre Laurent de</forename>                
               </author>
               <pubPlace>Paris</pubPlace>
               <publisher>Duchesne, Nicolas-Bonaventure</publisher>
@@ -4153,10 +4156,10 @@
               <idno type="callNumber">BM Nancy 313 765 (a)</idno>
             </bibl>
             <bibl xml:id="bib33">
-              <title>Essai sur le luxe</title>
-              <author>
-                <forename>François de</forename>
+              <title>Essai sur leLuxe</title>
+              <author>                
                 <surname>Saint-Lambert</surname>
+                 <forename>François de</forename>
               </author>
               <pubPlace>Nancy</pubPlace>
               <publisher>Leclerc</publisher>
@@ -4217,17 +4220,17 @@
               <note>Lu à l'Académie le 09 janvier 1765.</note>
             </bibl>
             <bibl xml:id="bib61">
-              <title>Discours sur le luxe</title>
+              <title>Discours sur leLuxe</title>
               <author>
-                <forename>François de</forename>
-                <surname>Simonin</surname>
+                 <surname>Simonin</surname>
+                <forename>François de</forename>                
               </author>
             </bibl>
             <bibl xml:id="bib63">
               <title>Recueil des plans, élévations et coupes ... des châteaux, jardins et dépendances que le roy de Pologne occupe en Lorraine y compris les bâtimens qu'il a fait élever, ainsi que les changemens considérables, les décorations et autres enrichissemens, qu'il a fait faire à ceux qui étoient déjà construire</title>
               <author>
-                <forename>Emmanuel</forename>
-                <surname>Héré</surname>
+                 <surname>Héré</surname>
+                <forename>Emmanuel</forename>                
               </author>
               <pubPlace>Paris</pubPlace>
               <publisher>François</publisher>
@@ -4240,8 +4243,8 @@
             <bibl xml:id="bib65">
               <title>Éloge au roi de Pologne ou le regne de Thelemaque dans Itaque</title>
               <author>
-                <surname>Millot</surname>
-                <forename>Claude François Xavier</forename>
+                 <forename>Claude François Xavier</forename>
+                <surname>Millot</surname>                
               </author>
               <note>Lu à l'Académie le 06 février 1765, l'auteur est proposé comme académicien.</note>
             </bibl>
@@ -4255,7 +4258,7 @@
             <!-- Pièces de théatre -->  
             <bibl xml:id="bib42">
               <title level="m">Zaïre</title>
-              <author>Voltaire</author>
+              <author><surname>Voltaire</surname></author>
               <!-- <pubPlace>Kehl</pubPlace>
               <publisher>De l'imprimerie de la société littéraire typographique</publisher>
               <date>1785</date>
@@ -4265,8 +4268,8 @@
             <bibl xml:id="bib43">
               <title level="m">Les folies amoureuses</title>
               <author>
-                <forename>Jean-François</forename>
-                <surname>Regnard</surname>
+                 <surname>Regnard</surname>
+                <forename>Jean-François</forename>                
               </author>
               <!-- <pubPlace>Paris</pubPlace>
               <publisher>Prault fils</publisher>
@@ -4274,10 +4277,10 @@
               <note>Première édition en 1714</note>
             </bibl>
             <bibl xml:id="bib62">
-              <title level="m">Annette Et Lubin. Pastorale.</title>
+              <title level="m">Annette EtLubin. Pastorale.</title>
               <author>
-                <forename>Jean-François</forename>
-                <surname>Marmontel</surname>
+                 <surname>Marmontel</surname>
+                <forename>Jean-François</forename>                
               </author>
               <!-- <publisher>Lesclapart</publisher>
               <date>1762</date>-->
@@ -4295,7 +4298,7 @@
             </bibl>
             <bibl xml:id="bib45">
               <title level="m">Le duc de Foix</title>
-              <author>Voltaire</author>
+              <author><surname>Voltaire</surname></author>
               <!--   <pubPlace>Kehl</pubPlace>
               <publisher>De l'imprimerie de la société littéraire typographique</publisher>
               <date>1785</date>
@@ -4305,8 +4308,8 @@
             <bibl xml:id="bib46">
               <title level="m">Iphigénie en Tauride</title>
               <author>
-                <forename>Emile</forename>
-                <surname>Pessonneaux</surname>
+                 <surname>Pessonneaux</surname>
+                <forename>Emile</forename>                
               </author>
               <!--  <pubPlace>Paris</pubPlace>
               <publisher>Charpentier, Gervais</publisher>
@@ -4316,8 +4319,8 @@
             <bibl xml:id="bib47">
               <title level="m">Mithridate</title>
               <author>
-                <forename>Jean</forename>
-                <surname>Racine</surname>
+                 <surname>Racine</surname>
+                <forename>Jean</forename>                
               </author>
               <!--    <pubPlace>[S.l.]</pubPlace>
               <publisher>[S.n.]</publisher>
@@ -4326,7 +4329,7 @@
             </bibl>
             <bibl xml:id="bib48">
               <title level="m">Le philosophe marié, ou le mari honteux de l'être, comédie en vers, et en cinq actes</title>
-              <author>Nericault-Destouches</author>
+              <author><surname>Nericault-Destouches</surname></author>
               <!--  <pubPlace>Paris</pubPlace>
               <publisher>Aux dépens de la Compagnie</publisher>
               <date>1742</date>-->
@@ -4334,8 +4337,8 @@
             <bibl xml:id="bib67">
               <title level="m">La jeune indienne, comédie en un acte et en vers. </title>
               <author>
-                <forename>Sébastien-Roch-Nicolas de</forename>
-                <surname>Chamfort</surname>
+                 <surname>Chamfort</surname>
+                <forename>Sébastien-Roch-Nicolas de</forename>                
               </author>
               <!-- <publisher>Cailleau</publisher>
               <pubPlace>A Paris, chez Cailleau. M.DCC.LXIV, France</pubPlace>
@@ -4344,7 +4347,7 @@
             </bibl>
             <bibl xml:id="bib49">
               <title level="m">Le misantrope</title>
-              <author>Molière</author>
+              <author><surname>Molière</surname></author>
               <!-- <pubPlace>Paris</pubPlace>
               <date>1667</date>-->
               <note>Première représentation le 4 juin 1666</note>
@@ -4352,8 +4355,8 @@
             <bibl xml:id="bib50">
               <title level="m">Le Père de famille, comédie en 5 actes et en prose</title>
               <author>
-                <forename>Denis</forename>
-                <surname>Diderot</surname>
+                 <surname>Diderot</surname>
+                <forename>Denis</forename>                
               </author>
               <!--   <pubPlace>Amsterdam</pubPlace>
               <publisher>[S.n.]</publisher>
@@ -4363,8 +4366,8 @@
             <bibl xml:id="bib51">
               <title level="m">Le Caffé, ou l'Écossaise, comédie.</title>
               <author>
-                <surname>Hume</surname>
-                <forename>David</forename>
+                 <forename>David</forename>
+                <surname>Hume</surname>                
               </author>
               <!--  <pubPlace>Londres</pubPlace>
               <date>1761</date>-->
@@ -4373,8 +4376,8 @@
             <bibl xml:id="bib52">
               <title level="m">Le Légataire universel: Comédie</title>
               <author>
-                <forename>Jean-François</forename>
-                <surname>Regnard</surname>
+                 <surname>Regnard</surname>
+                <forename>Jean-François</forename>                
               </author>
               <!--  <pubPlace>[S.l.]</pubPlace>
               <publisher>[S.n.]</publisher>
@@ -4384,8 +4387,8 @@
             <bibl xml:id="bib53">
               <title level="m">Crispin médecin. Comédie</title>
               <author>
-                <forename>Noël Lebreton</forename>
-                <surname>Hauteroche</surname>
+                 <surname>Hauteroche</surname>
+                <forename>Noël Lebreton</forename>                
               </author>
               <!--   <pubPlace>Paris</pubPlace>
               <publisher>J. Ribou</publisher>
@@ -4395,8 +4398,8 @@
             <bibl xml:id="bib54">
               <title level="m">Crispin rival de son maitre, comédie en un acte en prose. </title>
               <author>
-                <forename>Alain-René</forename>
-                <surname>Lesage</surname>
+                 <surname>Lesage</surname>
+                <forename>Alain-René</forename>                
               </author>
               <!-- <publisher>Duchesne (veuve)</publisher>
               <pubPlace>Paris</pubPlace>
@@ -4406,8 +4409,8 @@
             <bibl xml:id="bib55">
               <title level="m">Démocrite, Les Folies amoureuses, les Menechmes</title>
               <author>
-                <forename>Jean-François</forename>
-                <surname>Regnard</surname>
+                 <surname>Regnard</surname>
+                <forename>Jean-François</forename>                
               </author>
               <!--  <pubPlace>Amterdam</pubPlace>
               <publisher>Aux dépens de la Compagnie</publisher>
@@ -4416,8 +4419,8 @@
               <note>Représentée pour la première fois à Paris le 12 janvier 1700.</note>
             </bibl>
             <bibl xml:id="bib56">
-              <title level="m">Le medecin malgré lui. Comedie.</title>
-              <author>Molière</author>
+              <title level="m">Le medecin malgréLui. Comedie.</title>
+              <author><surname>Molière</surname></author>
               <!--  <publisher>Ribou</publisher>
               <pubPlace>Paris</pubPlace>
               <date>1667</date>-->
@@ -4426,8 +4429,8 @@
             <bibl xml:id="bib57">
               <title level="m">Le philosophe sans le savoir, comedie en prose et en cinq actes, </title>
               <author>
-                <forename>Michel-Jean</forename>
-                <surname>Sedaine</surname>
+                 <surname>Sedaine</surname>
+                <forename>Michel-Jean</forename>                
               </author>
               <!--  <publisher>Hérissant</publisher>
               <pubPlace>Paris</pubPlace>
@@ -4437,8 +4440,8 @@
             <bibl xml:id="bib58">
               <title level="m">Les Trois frères rivaux, comédie en un acte et en vers.</title>
               <author>
-                <forename>Joseph de</forename>
-                <surname>La Font</surname>
+                 <surname>La Font</surname>
+                <forename>Joseph de</forename>                
               </author>
               <!-- <pubPlace>Paris</pubPlace>
               <publisher>Bélin</publisher>
@@ -4450,8 +4453,8 @@
             <bibl xml:id="bib69">
               <title level="m">La Partie de Chasse de Henri IV, comédie en trois actes et en prose</title>
               <author>
-                <forename>Charles</forename>
-                <surname>Collé</surname>
+                 <surname>Collé</surname>                
+                 <forename>Charles</forename>                
               </author>
               <!--   <pubPlace>Paris</pubPlace>
               <publisher>Duchesne (veuve)</publisher>
@@ -4461,8 +4464,8 @@
             <bibl xml:id="bib70">
               <title level="m">Rhadamiste et Zénobie, tragédie en cinq actes, en vers.</title>
               <author>
-                <forename>Prosper Jolyot de</forename>
-                <surname>Crébillon</surname>
+                 <surname>Crébillon</surname>
+                <forename>Prosper Jolyot de</forename>                
               </author>
               <!-- <publisher>[S.n.]</publisher>
               <pubPlace>[S.l.]</pubPlace>
@@ -4471,7 +4474,7 @@
             </bibl>
             <bibl xml:id="bib71">
               <title level="m">Oraison funèbre de très-haut,... Stanislas I,... Prononcée en l'Eglise Primatiale de Lorraine le 10 du mois de Mai 1766</title>
-              <author>Élisée</author>
+              <author><surname>Élisée</surname></author>
               <pubPlace>Paris</pubPlace>
               <publisher>Lottin, Antoine-Prosper</publisher>
               <date>1766</date>
@@ -4479,8 +4482,8 @@
             <bibl xml:id="bib72">
               <title>Oraison funèbre de... Stanislas 1<hi rend="super">er</hi>,... duc de Lorraine... prononcée le 12 mai 1766...</title>
               <author>
-                <forename>Abbé de</forename>
-                <surname>Dombasle</surname>
+                 <surname>Dombasle</surname>
+                 <!-- prévoir quelque chose pour les abbés ou ne pas en tenir compte  <forename>Abbé de</forename>-->                
               </author>
               <pubPlace>Nancy</pubPlace>
               <publisher>Leclerc, Jean-Baptiste-Hyacinthe</publisher>
@@ -4490,8 +4493,8 @@
             <bibl xml:id="bib73">
               <title>Oraison funèbre de Stanislas... prononcée dans l'Eglise du Collège,... le 15 may 1766,...</title>
               <author>
-                <forename>Sigisbert-Etienne</forename>
-                <surname>Coster</surname>
+                 <surname>Coster</surname>
+                <forename>Sigisbert-Etienne</forename>                
               </author>
               <pubPlace>Nancy</pubPlace>
               <publisher>Leseure, Veuve d'Antoine ; Leseure, Claude</publisher>
@@ -4501,8 +4504,8 @@
             <bibl xml:id="bib74">
               <title>Oraison funèbre de... Stanislas I,... , prononcée en l'église paroissiale de St-Roch de Nancy..., le 26 may 1766...</title>
               <author>
-                <forename>Denis-Xavier</forename>
-                <surname>Clément</surname>
+                 <surname>Clément</surname>                
+                 <forename>Denis-Xavier</forename>                
               </author>
               <pubPlace>Paris</pubPlace>
               <publisher>Delatour, Louis-François</publisher>
@@ -4511,8 +4514,12 @@
             </bibl>
             <bibl xml:id="bib75">
               <title>Oraison funèbre de Stanislas 1<hi rend="super">er</hi>,[...] prononcée le 10 juin 1766...</title>
-              <author><forename>Guillaume-Germain</forename><surname>Guyot</surname></author>
-              <pubPlace>Nancy</pubPlace><title level="m">Oraison funèbre de Stanislas 1er,... prononcée le 10 juin 1766...</title>/pubPlace&gt; <publisher>Leseure, Veuve d'Antoine ; Leseure, Claude</publisher>
+              <author>
+                 <surname>Guyot</surname>
+                 <forename>Guillaume-Germain</forename>
+              </author>
+              <pubPlace>Nancy</pubPlace>
+               <publisher>Leseure, Veuve d'Antoine ; Leseure, Claude</publisher>
               <date>1766</date>
               <idno type="callNumber">BM Nancy 50 279 (k)</idno>
             </bibl>

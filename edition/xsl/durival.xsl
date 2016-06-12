@@ -321,6 +321,7 @@
         <xsl:apply-templates select="//tei:div[@type='index']/tei:listPlace" mode="index"/>
         <xsl:apply-templates select="//tei:div[@type='index']/tei:listPerson" mode="index"/>
         <xsl:apply-templates select="//tei:div[@type='index']/tei:listOrg" mode="index"/>
+        <xsl:apply-templates select="//tei:div[@type='index']/tei:listBibl" mode="index"/>
         <!--<xsl:apply-templates select="//tei:div[@type='transcription']" mode="frise"/>-->
         <xsl:apply-templates select="//tei:div[@type='transcription']" mode="calendrier"/>
         <!--<xsl:apply-templates select="//tei:listPlace[@xml:id='listPlace']" mode="cartographie"/>-->
@@ -732,57 +733,74 @@
                 <br />
             </xsl:for-each>
         </p>        
+    </xsl:template>    
+
+    <xsl:template match="tei:subst">
+        <xsl:apply-templates/>
+    </xsl:template>        
+    
+    <xsl:template match="tei:del">
+        <del><xsl:apply-templates/></del>
     </xsl:template>
     
-    <xsl:template match="tei:persName[ancestor::tei:person and ancestor::tei:persName] | tei:surname[ancestor::tei:person] | tei:roleName[ancestor::tei:person]">
+    <xsl:template match="tei:w">
+        <xsl:value-of select="replace(.,'-','')"/>        
+    </xsl:template>            
+    
+    <xsl:template match="tei:hi">
         <xsl:choose>
-            <xsl:when test="
-                following-sibling::tei:roleName[1] |
-                following-sibling::tei:forename[1] |
-                following-sibling::tei:surname[1] |
-                following-sibling::tei:addName[1] | 
-                following-sibling::tei:persName[1]">
-                <xsl:apply-templates/><xsl:text>, </xsl:text>
+            <xsl:when test="@rend='super'"><sup><xsl:apply-templates/></sup></xsl:when>
+            <xsl:when test="@rend='sub'"><sub><xsl:apply-templates/></sub></xsl:when>
+            <xsl:when test="@rend='italic' and ancestor::tei:person"><i><xsl:apply-templates/></i></xsl:when>
+            <xsl:otherwise><xsl:apply-templates/></xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template match="//*[@rend='underline']">
+        <u><xsl:apply-templates/></u>
+    </xsl:template>        
+    
+    <xsl:template match="tei:choice">
+        <xsl:choose>
+            <xsl:when test="tei:abbr and tei:expan">
+                <span class="abbr"><xsl:apply-templates select="tei:abbr"/></span><span class="expan"><xsl:apply-templates select="tei:expan"/></span>
+            </xsl:when>
+            <xsl:when test="tei:orig and tei:reg">
+                <span class="orig"><xsl:apply-templates select="tei:orig"/></span><span class="reg"><xsl:apply-templates select="tei:reg"/></span>
+            </xsl:when>
+            <xsl:when test="tei:sic and tei:corr">
+                <span class="sic"><xsl:apply-templates select="tei:sic"/><xsl:text>&#160;</xsl:text><i>(sic)</i></span><span class="corr"><xsl:apply-templates select="tei:corr"/></span>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:apply-templates/>
             </xsl:otherwise>
-        </xsl:choose>
+        </xsl:choose>        
     </xsl:template>
     
-    <xsl:template match="tei:forename[ancestor::tei:person]">
-        <xsl:choose>
-            <xsl:when test="following-sibling::tei:surname[1]">
-                <xsl:apply-templates/><xsl:text> </xsl:text>
-            </xsl:when>
-            <xsl:when test="
-                following-sibling::tei:roleName[1] |
-                following-sibling::tei:forename[1] |
-                following-sibling::tei:addName[1] |                
-                following-sibling::tei:persName[1]">
-                <xsl:apply-templates/><xsl:text>, </xsl:text>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:apply-templates/><xsl:if test="ancestor::tei:persName[@ref]"><xsl:text>,</xsl:text></xsl:if>
-            </xsl:otherwise>
-        </xsl:choose>
+    <xsl:template match="tei:space">
+        <i>(blanc)</i>
     </xsl:template>
     
-    <xsl:template match="tei:addName[@type='say']"><!-- todo prévoir pour les femmes -->
+    <!--<xsl:template match="tei:lb | tei:pb[ancestor::tei:p]">
+        <br class="lb" />    
+    </xsl:template>-->
+    
+    <xsl:template match="tei:div[@type='transcription']//tei:list">
+        <ul>
+            <xsl:for-each select="tei:item">
+                <li><xsl:apply-templates select="."/></li>
+            </xsl:for-each>
+        </ul>
     </xsl:template>
     
-    <xsl:template match="tei:birth | tei:death">
-        <xsl:choose>
-            <xsl:when test="@when">
-                <xsl:apply-templates select="@when"/>
-            </xsl:when>
-            <xsl:when test="@notBefore and @notAfter">
-                <xsl:variable name="notBefore" select="@notBefore"/>
-                <xsl:variable name="notAfter" select="substring(@notAfter,3)"/>
-                <xsl:value-of select="concat($notBefore,'/',$notAfter)"/>
-            </xsl:when>
-        </xsl:choose>
-    </xsl:template>
+    <xsl:template match="tei:fw"/>
+    
+    <xsl:template match="tei:ref[@type='note']">
+        <xsl:for-each select=".">
+            <xsl:variable name="number"><xsl:number select="." level="any" from="tei:div[@type='day']"/></xsl:variable>
+            <sup><xsl:value-of select="$number"/></sup>
+        </xsl:for-each>
+    </xsl:template>        
     
     <xsl:template match="tei:person" mode="tooltip">
         <xsl:for-each select="tei:persName">
@@ -837,6 +855,12 @@
             <xsl:apply-templates select="tei:orgName"/><xsl:if test="tei:location/tei:placeName"><xsl:text> - </xsl:text><xsl:apply-templates select="tei:location/tei:placeName"/></xsl:if>
         </xsl:for-each>
     </xsl:template>
+    
+    <xsl:template match="tei:bibl" mode="tooltip">
+        <xsl:for-each select=".">
+            <xsl:apply-templates select="tei:title"/><xsl:if test="tei:author"><xsl:text> (</xsl:text><xsl:if test="tei:author/tei:forename"><xsl:apply-templates select="tei:author/tei:forename"/><xsl:text> </xsl:text></xsl:if><xsl:apply-templates select="tei:author/tei:surname"/><xsl:text>)</xsl:text></xsl:if>
+        </xsl:for-each>
+    </xsl:template>        
     
     <xsl:template match="tei:div[@type='transcription']//tei:persName | tei:div[@type='transcription']//tei:rs[@type='person']">
         <xsl:variable name="ref" select="@ref"/><!-- todo @type=groupPerson -->
@@ -896,81 +920,83 @@
         <span data-tooltip='true' aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="{$tooltip}"><a class="person" href="listOrg.html{$ref}"><xsl:apply-templates/></a></span>
     </xsl:template>
     
-    <xsl:template match="tei:subst">
-        <xsl:apply-templates/>
-    </xsl:template>        
-    
-    <xsl:template match="tei:del">
-        <del><xsl:apply-templates/></del>
-    </xsl:template>
-        
-    <xsl:template match="tei:w">
-        <xsl:value-of select="replace(.,'-','')"/>        
-    </xsl:template>            
-    
-    <xsl:template match="tei:hi">
-        <xsl:choose>
-            <xsl:when test="@rend='super'"><sup><xsl:apply-templates/></sup></xsl:when>
-            <xsl:when test="@rend='sub'"><sub><xsl:apply-templates/></sub></xsl:when>
-            <xsl:when test="@rend='italic' and ancestor::tei:person"><i><xsl:apply-templates/></i></xsl:when>
-            <xsl:otherwise><xsl:apply-templates/></xsl:otherwise>
-        </xsl:choose>
-    </xsl:template>
-    
-    <xsl:template match="//*[@rend='underline']">
-        <u><xsl:apply-templates/></u>
-    </xsl:template>
-    
-    <xsl:template match="tei:title[ancestor::tei:p]">
+    <xsl:template match="tei:div[@type='transcription']//tei:title">
+        <xsl:variable name="ref" select="@ref"/>
+        <xsl:variable name="id" select="substring-after(@ref,'#')"/>
+        <xsl:variable name="tooltip">
+            <xsl:if test="//tei:div[@type='index']//tei:bibl[@xml:id=$id]">
+                <xsl:apply-templates select="//tei:div[@type='index']//tei:bibl[@xml:id=$id]" mode="tooltip"/>
+            </xsl:if>
+        </xsl:variable>
         <!--todo a.cite à la place de cite -->
-        <cite><xsl:apply-templates/></cite>
+        <cite><span data-tooltip='true' aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="{$tooltip}"><a class="person" href="listOrg.html{$ref}"><xsl:apply-templates/></a></span></cite>
     </xsl:template>
     
-    <xsl:template match="tei:choice">
+    <xsl:template match="tei:div[@type='transcription']//tei:rs[@type='bibl']">
+        <xsl:variable name="ref" select="@ref"/>
+        <xsl:variable name="id" select="substring-after(@ref,'#')"/>
+        <xsl:variable name="tooltip">
+            <xsl:if test="//tei:div[@type='index']//tei:bibl[@xml:id=$id]">
+                <xsl:apply-templates select="//tei:div[@type='index']//tei:bibl[@xml:id=$id]" mode="tooltip"/>
+            </xsl:if>
+        </xsl:variable>
+        <!--todo a.cite à la place de cite -->
+        <span data-tooltip='true' aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="{$tooltip}"><a class="person" href="listOrg.html{$ref}"><xsl:apply-templates/></a></span>
+    </xsl:template>
+    
+    <!-- ********** INDEX ********** -->
+    
+    <!-- la normalisation des patronymes impacte également les notes de survole (mode tooltip) -->
+    <xsl:template match="tei:persName[ancestor::tei:person and ancestor::tei:persName] | tei:surname[ancestor::tei:person] | tei:roleName[ancestor::tei:person]">
         <xsl:choose>
-            <xsl:when test="tei:abbr and tei:expan">
-                <span class="abbr"><xsl:apply-templates select="tei:abbr"/></span><span class="expan"><xsl:apply-templates select="tei:expan"/></span>
-            </xsl:when>
-            <xsl:when test="tei:orig and tei:reg">
-                <span class="orig"><xsl:apply-templates select="tei:orig"/></span><span class="reg"><xsl:apply-templates select="tei:reg"/></span>
-            </xsl:when>
-            <xsl:when test="tei:sic and tei:corr">
-                <span class="sic"><xsl:apply-templates select="tei:sic"/><xsl:text>&#160;</xsl:text><i>(sic)</i></span><span class="corr"><xsl:apply-templates select="tei:corr"/></span>
+            <xsl:when test="
+                following-sibling::tei:roleName[1] |
+                following-sibling::tei:forename[1] |
+                following-sibling::tei:surname[1] |
+                following-sibling::tei:addName[1] | 
+                following-sibling::tei:persName[1]">
+                <xsl:apply-templates/><xsl:text>, </xsl:text>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:apply-templates/>
             </xsl:otherwise>
-        </xsl:choose>        
+        </xsl:choose>
     </xsl:template>
     
-    <xsl:template match="tei:space">
-        <i>(blanc)</i>
+    <xsl:template match="tei:forename[ancestor::tei:person]">
+        <xsl:choose>
+            <xsl:when test="following-sibling::tei:surname[1]">
+                <xsl:apply-templates/><xsl:text> </xsl:text>
+            </xsl:when>
+            <xsl:when test="
+                following-sibling::tei:roleName[1] |
+                following-sibling::tei:forename[1] |
+                following-sibling::tei:addName[1] |                
+                following-sibling::tei:persName[1]">
+                <xsl:apply-templates/><xsl:text>, </xsl:text>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:apply-templates/><xsl:if test="ancestor::tei:persName[@ref]"><xsl:text>,</xsl:text></xsl:if>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     
-    <!--<xsl:template match="tei:lb | tei:pb[ancestor::tei:p]">
-        <br class="lb" />    
-    </xsl:template>-->
-    
-    <xsl:template match="tei:div[@type='transcription']//tei:list">
-        <ul>
-            <xsl:for-each select="tei:item">
-                <li><xsl:apply-templates select="."/></li>
-            </xsl:for-each>
-        </ul>
+    <xsl:template match="tei:addName[@type='say']"><!-- todo prévoir pour les femmes -->
     </xsl:template>
     
-    <xsl:template match="tei:fw"/>
-    
-    <xsl:template match="tei:ref[@type='note']">
-        <xsl:for-each select=".">
-            <xsl:variable name="number"><xsl:number select="." level="any" from="tei:div[@type='day']"/></xsl:variable>
-            <sup><xsl:value-of select="$number"/></sup>
-        </xsl:for-each>
+    <xsl:template match="tei:birth | tei:death">
+        <xsl:choose>
+            <xsl:when test="@when">
+                <xsl:apply-templates select="@when"/>
+            </xsl:when>
+            <xsl:when test="@notBefore and @notAfter">
+                <xsl:variable name="notBefore" select="@notBefore"/>
+                <xsl:variable name="notAfter" select="substring(@notAfter,3)"/>
+                <xsl:value-of select="concat($notBefore,'/',$notAfter)"/>
+            </xsl:when>
+        </xsl:choose>
     </xsl:template>
     
-    
-    
-    <!-- ********** INDEX ********** -->        
     <xsl:template match="//tei:div[@type='index']/tei:listPerson" mode="index">
         <xsl:result-document format="html" encoding="UTF-8" href="html/listPerson.html">
             <html>
@@ -1376,8 +1402,134 @@
         </xsl:result-document>
     </xsl:template>
     
-    <xsl:template match="//tei:div[@type='index']/tei:listBibl">
-        <ul>
+    <xsl:template match="//tei:div[@type='index']/tei:listBibl" mode="index">
+        <xsl:result-document format="html" encoding="UTF-8" href="html/listbib.html">           
+            <html>
+                <head>
+                    <title>Édition du journal de Nicolas Durival ß</title>
+                    <meta charset="utf-8"/>
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
+                    
+                    <!-- css Pour personnalisation -->
+                    <link rel="stylesheet" href="../css/app.css"/>
+                    <!-- css Foundation -->
+                    <link rel="stylesheet" href="../css/foundation.css"/>
+                    
+                    <!-- css Owl-Carousel -->
+                    <link rel="stylesheet" href="../css/owl-carousel/owl.carousel.css"/>                         
+                    <link rel="stylesheet" href="../css/owl-carousel/owl.theme.default.css"/>
+                    
+                    <!-- css Lightbox -->                                                
+                    <link href="../css/lightbox/lightbox.css" rel="stylesheet" />   
+                    
+                    <!-- Font -->
+                    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,900,700' rel='stylesheet' type='text/css'/>                     
+                    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'/>
+                    <script>
+                        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                        
+                        ga('create', 'UA-78667211-1', 'auto');
+                        ga('send', 'pageview');                            
+                    </script>
+                </head>
+                <body class="text-justify">
+                    <xsl:copy-of select="$header"/>                                                                                                                                                                                               
+                    <div class="row">                            
+                        <div class="large-12">
+                            <ul class="no-bullet">
+                                <xsl:for-each select="tei:bibl">
+                                    <xsl:sort select="tei:title" order="ascending" case-order="upper-first"/>                                    
+                                    <xsl:variable name="id" select="@xml:id"/>
+                                    <xsl:variable name="links" select="concat('#',@xml:id)"/>
+                                    <xsl:choose>
+                                        <xsl:when test="//tei:div[@type='transcription']//tei:div[@type='day'][descendant::*[contains(@ref,$links)]]"><!-- todo ajout @when quand présent dans introduction -->
+                                            <li class="vedette" id="{$id}">                                                            
+                                                <ul class="accordion" data-accordion="true" data-allow-all-closed="true">
+                                                    <li class="accordion-item" data-accordion-item="true">
+                                                        <a href="#" class="accordion-title vedette">
+                                                            <xsl:apply-templates select="." mode="tooltip"/>
+                                                        </a>
+                                                        <div class="accordion-content" data-tab-content="true">
+                                                            <xsl:if test="./tei:note">
+                                                                <div class="note">
+                                                                    <xsl:apply-templates select="./tei:note"/>                                                                        
+                                                                </div>
+                                                            </xsl:if>
+                                                            <ul class="index">
+                                                                <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='day'][descendant::*[contains(@ref,$links)]]">
+                                                                    <xsl:variable name="date"><xsl:apply-templates select="./tei:dateline/tei:date" mode="dateComplete"/></xsl:variable>
+                                                                    <xsl:variable name="links" select="concat(../@xml:id,'.html#',@xml:id)"/>
+                                                                    <xsl:choose>
+                                                                        <xsl:when test="position() = last()">
+                                                                            <xsl:choose>
+                                                                                <xsl:when test="//tei:div[@type='transcription']//tei:div[@type='insert'][descendant::*[contains(@ref,$id)]]">
+                                                                                    <li>
+                                                                                        <a class="index" href="{$links}"><small><xsl:value-of select="$date"/></small></a> -                                    
+                                                                                    </li>
+                                                                                </xsl:when>
+                                                                                <xsl:otherwise>
+                                                                                    <li>
+                                                                                        <a class="index" href="{$links}"><small><xsl:value-of select="$date"/></small></a>                                    
+                                                                                    </li>
+                                                                                </xsl:otherwise>
+                                                                            </xsl:choose>
+                                                                        </xsl:when>
+                                                                        <xsl:otherwise>
+                                                                            <li>
+                                                                                <a class="index" href="{$links}"><small><xsl:value-of select="$date"/></small></a> -                                    
+                                                                            </li>
+                                                                        </xsl:otherwise>
+                                                                    </xsl:choose>                                            
+                                                                </xsl:for-each>
+                                                                <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='insert'][descendant::*[contains(@ref,$links)]]">
+                                                                    <xsl:variable name="number">
+                                                                        <xsl:number count="tei:div[@type='insert']" from="tei:div[@type='transcription']" level="any"/>
+                                                                    </xsl:variable>
+                                                                    <xsl:variable name="links" select="concat(../@xml:id,'.html#',@xml:id)"/>
+                                                                    <xsl:choose>
+                                                                        <xsl:when test="position() = last()">
+                                                                            <li>
+                                                                                <a class="index" href="{$links}"><small>encart n°<xsl:value-of select="$number"/></small></a>
+                                                                            </li>
+                                                                        </xsl:when>
+                                                                        <xsl:otherwise>                                                        
+                                                                            <li>
+                                                                                <a class="index" href="{$links}"><small><small>encart n°<xsl:value-of select="$number"/></small></small></a> -
+                                                                            </li>
+                                                                        </xsl:otherwise>
+                                                                    </xsl:choose>                                                                                                                        
+                                                                </xsl:for-each>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </xsl:when>
+                                    </xsl:choose>
+                                </xsl:for-each>
+                            </ul>
+                        </div>
+                    </div>  
+                    <xsl:copy-of select="$footer"/>
+                    <script src="../js/vendor/jquery.js">/*Pour transformation xslt*/</script>                        
+                    
+                    <script src="../js/foundation.min.js"></script>
+                    <script src="../js/vendor/modernizr.js"></script>                                                
+                    
+                    <script src="../js/owl-carousel/owl.js"></script>                        
+                    <script src="../js/owl-carousel/owlConfig.js"></script>
+                    
+                    <script src="../js/modernisation/modernisation.js"></script>
+                    
+                    <script src="../js/lightbox/lightbox.js"></script>
+                    <script>$(document).foundation();</script>
+                </body>
+            </html>            
+        </xsl:result-document>
+        <!--<ul>
             <xsl:for-each select="tei:bibl">
                 <xsl:variable name="id" select="concat('#',@xml:id)"/>
                 <li>                    
@@ -1394,7 +1546,7 @@
                     </ul>
                 </li>
             </xsl:for-each>
-        </ul>
+        </ul>-->
     </xsl:template>        
     
     <!-- *************** Calendrier Timeliner **************** -->
