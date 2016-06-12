@@ -32,153 +32,240 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Edition augmentée du Journal de Nicolas Durival (1765-1766)</title>            
+            <title>Edition augmentée du Journal de Nicolas Durival (1765-1766)</title>
             <respStmt>
                <resp>édité et encodé en XML-TEI par </resp>
                <persName xml:id="CH">Claire Haquet</persName>
-               <persName xml:id="EN">Eric Nunes</persName>
+               <persName xml:id="EN">Éric Nunes</persName>
                <persName xml:id="JM">Josselin Morvan</persName>
             </respStmt>
             <funder>Ville de Nancy</funder>
          </titleStmt>
          <publicationStmt>
-            <publisher>Les Bibliothèques de Nancy</publisher>
-            <pubPlace>Nancy, Bibliothèque Stanislas</pubPlace>
+            <publisher>Bibliothèques de Nancy</publisher>
+            <pubPlace>Bibliothèque Stanislas</pubPlace>
             <address>
                <addrLine>43, rue Stanislas, 54 000 Nancy</addrLine>
             </address>
             <date when="2016">2016</date>
             <availability>
                <p>Licence ouverte Etalab</p>
+               <p>Domaine public</p>
             </availability>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <country>France</country>
-                  <institution>Bibliothèque municipale classée de Nancy</institution>                  
+                  <institution>Bibliothèques de Nancy</institution>
                   <repository>Bibliothèque Stanislas</repository>
                   <idno>ms. 863</idno>
                   <altIdentifier>
                      <idno>ancienne cote : catalogue Favier 1315</idno>
-                  </altIdentifier>                  
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <p><!--Description intellectuelle du manuscrit / dates / sujet--></p>
+                  <p>Le <title>Journal</title> et son auteur Nicolas Durival (1713-1795) est
+                     un officier au service du chancelier Chaumont de la Galaizière dès
+                     l'arrivée de Stanislas et des Français en Lorraine en 1737. Il passe
+                     ensuite au Conseil du roi et, à partir de 1760, achète la charge de
+                     lieutenant général de police de Nancy à la demande de son souverain.
+                     Administrateur, statisticien, il est aussi un historien reconnu, auteur
+                     du <title>Mémoire sur la Lorraine et le Barrois</title>, célébré dès son
+                     époque par le vanniste Dom Calmet ou l'abbé Expilly pour sa précision.
+                     C'est certainement pour alimenter ses travaux scientifiques qu'il tient,
+                     dès 1737 et jusqu'à sa mort en 1795 un journal des faits qui se sont
+                     déroulés dans l'entourage ducal et dans la ville de Nancy. Sources de
+                     première importance pour l'histoire de la ville et de la cour, ces 14
+                     volumes manuscrits n'avaient encore jamais fait l'objet d'une édition
+                     complète. C'est le défi que se sont lancées les Bibliothèques de Nancy
+                     pour les années à venir. </p>
                </msContents>
                <physDesc>
-                  <p>
-                     Manuscrit autographe en 14 volumes. Durival utilise un papier imprimé
-                     destiné à la rédaction d'un journal
-                  </p>
-               </physDesc>               
+                  <p> Manuscrit autographe en 14 volumes. </p>
+               </physDesc>
             </msDesc>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
          <projectDesc>
-            <p>L'objectif du projet est de fournir une édition augmentée du Journal blabla</p>
+            <p> Le 18 juin 2016, les Bibliothèques de Nancy mettent en ligne l'édition augmentée
+               du <title>Journal</title> de Nicolas Durival pour les années 1765-1766. Cette
+               réalisation s'inscrit dans le 250<hi rend="super">e</hi> anniversaire du
+               rattachement de la Lorraine à la France, consécutif à la mort du roi Stanislas
+               le 23 février 1766. L'édition repose sur une transcription et un encodage en
+               XML-TEI enrichis de données biographiques, iconographiques, cartographiques et
+               historiques.
+               <lb/> Les objectifs
+               <lb/> Les objectifs en étaient multiples : <list>
+                  <item>tester l'intérêt d'utiliser la TEI pour éditer un document manuscrit
+                     dans une bibliothèque municipale ; </item>
+                  <item>enrichir le document, numérisé depuis quelques années, des éléments de
+                     contextualisation indispensables à sa compréhension par tous types de
+                     publics ; </item>
+                  <item>valoriser les ressources de la bibliothèque par l'accompagnement
+                     d'images issues du fonds iconographique en lien avec les événements
+                     relatés ; </item>
+                  <item>relier l'ensemble au catalogue du fonds ancien, Nicolas Durival étant
+                     amateur de théâtre, de littérature et de par ses fonctions, étroitement
+                     lié à l'Académie royale des Sciences, Arts et Lettres de Nancy et au
+                     commerce de la librairie ; </item>
+                  <item>mettre en place les compétences et la chaîne de traitement nécessaires
+                     à la poursuite du projet dans les années à venir.</item>
+               </list>
+               <lb/> La transcription et l'encodage
+               <lb/> La transcription, l'encodage et la réalisation du site web
+               http://www.journaldedurival.fr ont été confiés à un prestataire issu du master
+               de L’École nationale des Chartes et réalisés en étroite collaboration avec
+               l'équipe du Patrimoine des Bibliothèques de Nancy. Les spécifications techniques
+               ont concerné : <list>
+                  <item>la possibilité de lire en continu le Journal dans son orthographe et
+                     ses abréviations d'époque ou modernisés ;</item>
+                  <item>la navigation par date, voire par heure pour un événement exceptionnel
+                     comme l'agonie du roi ;</item>
+                  <item>l'encodage des noms de personne, pour réalisation un index
+                     biographique ;</item>
+                  <item>l'encodage des noms de lieux, pour naviguer dans le Journal à partir
+                     d'un plan de Nancy ;</item>
+                  <item>l'encodage des titres d’œuvres, à relier au catalogue de la
+                     bibliothèque ou à des ressources externes.</item>
+               </list>
+               <lb/>L'enrichissement
+               <lb/> Les enrichissements - non encore finalisés - ont impliqué plusieurs
+               acteurs. L'équipe de la bibliothèque a réalisé la relecture de la transcription,
+               les recherches bibliographiques, le (re)catalogage des œuvres imprimées et
+               manuscrites de Nicolas Durival et des œuvres citées par lui en 1765-1766, des
+               élucidations lexicales et de faits locaux, la rédaction de fiches thématiques,
+               la recherche iconographique. Le Musée lorrain a apporté son concours à la
+               fourniture d'images. Enfin, une équipe d'étudiants de licence 3 Histoire de
+               l'Université de Lorraine a réalisé le gros des recherches biographiques, en
+               guise d'apprentissage des techniques de la recherche historique.
+               <lb/> Le résultat
+               <lb/> Le site http://www.journaldedurival.fr est le premier résultat tangible de
+               ce travail. Il peut encore être amélioré dans ses fonctionnalités, notamment de
+               recherche textuelle, ce qui viendra dans une seconde phase. Les fichiers source
+               sont préparés dans ce sens. L'équipe de la bibliothèque est en possession d'un
+               modèle ré-utilisable d'édition de texte du 18<hi rend="super">e</hi> siècle et
+               peut s'apprêter à mettre à profit ses compétences développées en XML-TEI pour
+               continuer dans les années qui viennent la transcription, l'encodage et
+               l'enrichissement des 13 volumes restants. À l'heure actuelle, le projet
+               s'achemine vers la combinaison de plusieurs partenariats dont la réutilisation
+               de transcriptions effectuées au fil du temps par des historiens locaux et un
+               partenariat solidifié avec la filière Histoire de l'Université de Lorraine aux
+               niveaux L3 et Master. La phase d'encodage XML-TEI et des développements du site,
+               pourraient également faire l'objet de partenariats futurs. Équipe
+               <lb/> Responsabilité scientifique : <persName>Claire Haquet</persName>,
+               <persName>Malik Diallo</persName>
+               <lb/> Coordination scientifique et technique, maquette (réalisation des CSS) :
+               <persName>Éric Nunes</persName>
+               <lb/> Transcription, encodage (1765-1766), feuilles de styles XSLT :
+               <persName>Josselin Morvan</persName> (diplômé du master "technologies
+               némriques appliquées à l'histoire" de l'École des Chartes)
+               <lb/>Index et bibliographies : équipe du patrimoine des Bibliothèques de Nancy,
+               étudiants de M. <persName>Jalabert</persName> de l'<orgName>Université
+                  Lorraine</orgName> (<persName>Élodie Réot</persName> , <persName>Louise
+                     Engler</persName>, <persName>Jules Rawolle</persName>, <persName>Gaëtan
+                        Barbier</persName>, <persName>Alexandre Brignon</persName>, <persName>Pierre
+                           Valentin</persName>), une partie des notes historiques a été réalisée par
+               <persName>Sara Nadal</persName>.
+               <lb/> Remerciements : M. <persName>Christian Hénard</persName>, "précurseur"
+               dans l'étude et la transcription du <title>Journal</title> dont les conseils
+               avisés et les notes nous ont été d'une grande aide.
+               <lb/> Techniques
+               <lb/> Le site repose sur la transformation des fichiers TEI en multiples
+               fichiers HTML par le biais de plusieurs feuilles de style XSLT. Il est conçu sur
+               la base du framework Foundation 6 (personnalisé).
+               <lb/>Plusieurs bibliothèques javascript sont utilisées : <list><!--a reprendre -->
+                  <item>OWLcarousel.js pour le slider du journal;</item>
+                  <item>Timeliner.js pour certaines biographies et l'accès calendaire;</item>
+                  <item>Lightbox.js pour la visualisation des illustrations;</item>
+                  <item>Leaflet.js pour la carte  annotée.</item>
+                  <item>Leafletjs et Zoomify pour les cartes anciennes (http://www.github.com/</item><!--source -->
+               </list>
+               <lb/> Sources du projet
+               <lb/> Les sources du projet (texte, index, manuel d'encodage, schéma ODD,
+               feuilles de styles XSLT et CSS) sont disponibles sur le github de la
+               bibliothèque (http://www.github.com/bibstan). Des bibliographies complémentaires
+               sont disponibles sur le Zotero de la bibliothèque.
+               <lb/> Propriété intellectuelle.
+               <lb/> Sauf mention contraire, tous les éléments du site sont sous Licence
+               Ouverte Etalab (pour les images) et sous licence CC0 (pour les productions
+               scientifiques).
+               <lb/> Pour toute information complémentaire, vous pouvez contacter :
+               <lb/><list>
+                  <item> Organisation du projet, des recherches, rédactionnels, site : Eric
+                     Nunes (e.nunes@nancy.fr) ou Claire Haquet (c.haquet@nancy.fr) </item>
+                  <item>Encodage XML-TEI (et schéma ODD), feuilles de style XSLT : Josselin
+                     Morvan (morvan.josselin@gmail.com)</item>
+                  <item>Partenariat Université de Lorraine : Laurent Jalabert
+                     (laurent.jalabert@univ-lorraine.fr)</item>
+               </list>
+            </p>
          </projectDesc>
-         <editorialDecl><!-- todo symbole pour la livre => # -->            
-            <normalization method="silent">               
-               <p>
-                  Lors de la transcription, l'emploi des majuscules et des minuscules a été modernisé. 
-                  Si les mots agglutinés ont été séparés conformément à la graphie moderne, les termes aujourd'hui réunis n'ont pas été soudés.
-                  La ponctuation a été mintenue, en revanche, les signes de ponctuation double (;-:-?-!) sont précédés d'un espace.
-               </p>
+         <editorialDecl>
+            <!-- todo symbole pour la livre => # -->
+            <normalization method="silent">
+               <p> Lors de la transcription, l'emploi des majuscules et des minuscules a été
+                  modernisé. Si les mots agglutinés ont été séparés conformément à la graphie
+                  moderne, les termes aujourd'hui réunis n'ont pas été soudés. La ponctuation
+                  a été mintenue, en revanche, les signes de ponctuation double (;-:-?-!) sont
+                  précédés d'un espace. </p>
             </normalization>
             <normalization method="markup">
-               <p>
-                  Les éléments <gi>choice</gi>, <gi>abbr</gi> et <gi>expan</gi> ont été utilisés pour le développement des abréviations.
-                  La graphie n'ayant pas été modernisée, les termes dont l'orthographe peut sembler douteuse, ont été encodés avec l'élément <gi>sic</gi>.
-                  Les coupures de mot en fin de ligne sont maintenues ; elles sont balisées au moyen des éléments <gi>w</gi> et <gi>lb</gi>.
-                  Les omissions et blancs laissés vacants par l'auteur, sont encodés respectivement avec les balises <gi>gap</gi> et <gi>space</gi>.
-                  Les titres courants sont encodés lors de leur première apparition à l'aide de l'élément <gi>fw</gi>.
-               </p>
+               <p> Les éléments <gi>choice</gi>, <gi>abbr</gi> et <gi>expan</gi> ont été
+                  utilisés pour le développement des abréviations. La graphie n'ayant pas été
+                  modernisée, les termes dont l'orthographe peut sembler douteuse, ont été
+                  encodés avec l'élément <gi>sic</gi>. Les coupures de mot en fin de ligne
+                  sont maintenues ; elles sont balisées au moyen des éléments <gi>w</gi> et
+                  <gi>lb</gi>. Les omissions et blancs laissés vacants par l'auteur, sont
+                  encodés respectivement avec les balises <gi>gap</gi> et <gi>space</gi>. Les
+                  titres courants sont encodés lors de leur première apparition à l'aide de
+                  l'élément <gi>fw</gi>. </p>
             </normalization>
             <quotation>
-               <p>
-                  Les guillemets n'ont pas été conservés. En lieu et place de ces marques de citation, nous avons utilisé l'élément <gi>q</gi>.
-                  Lorsque les citations n'ont pas été retranscrites avec des guillemets par l'auteur, nous avons employé la balise <gi>quote</gi>.
-               </p>
-            </quotation>            
-            <interpretation>               
+               <p> Les guillemets n'ont pas été conservés. En lieu et place de ces marques de
+                  citation, nous avons utilisé l'élément <gi>q</gi>. Lorsque les citations
+                  n'ont pas été retranscrites avec des guillemets par l'auteur, nous avons
+                  employé la balise <gi>quote</gi>. </p>
+            </quotation>
+            <interpretation>
                <p>
                   <interpGrp type="theme">
-                     <interp xml:id="meteo">
-                        météo
-                        <desc>
-                           Entrées concernant les conditions
-                           météorologiques et leurs conséquences sur l'agriculture et la
-                           vie quotidienne
-                        </desc>
+                     <interp xml:id="meteo"> météo <desc> Entrées concernant les conditions
+                        météorologiques et leurs conséquences sur l'agriculture et la
+                        vie quotidienne </desc>
                      </interp>
-                     <interp xml:id="aca">
-                        Académie
-                        <desc>
-                           Entrées relatant les séances ou
-                           rencontres des membres de l'Académie Royale des Sciences, Arts
-                           et Belles-Lettres de Nancy
-                        </desc>
+                     <interp xml:id="aca"> Académie <desc> Entrées relatant les séances ou
+                        rencontres des membres de l'Académie Royale des Sciences, Arts
+                        et Belles-Lettres de Nancy </desc>
                      </interp>
-                     <interp xml:id="theatre">
-                        représentation théâtrale
-                        <desc>
-                           Entrées concernant
-                           les représentations théâtrales données à Nancy et devant le roi
-                           Stanislas
-                        </desc>
+                     <interp xml:id="theatre"> représentation théâtrale <desc> Entrées
+                        concernant les représentations théâtrales données à Nancy et
+                        devant le roi Stanislas </desc>
                      </interp>
-                     <interp xml:id="cour">
-                        Stanislas et la Cour
-                        <desc>Entrées relatant la vie du
-                           roi Stanislas et de sa cour, la plupart du temps à
-                           Lunéville
-                        </desc>                        
+                     <interp xml:id="cour"> Stanislas et la Cour <desc>Entrées relatant la
+                        vie du roi Stanislas et de sa cour, la plupart du temps à
+                        Lunéville </desc>
                      </interp>
-                     <interp xml:id="ville">
-                        administration de la ville
-                        <desc>
-                           Entrées relatant les
-                           événements du quotidien et la gestion de la ville de Nancy par
-                           Nicolas Durival
-                        </desc>
+                     <interp xml:id="ville"> administration de la ville <desc> Entrées
+                        relatant les événements du quotidien et la gestion de la ville
+                        de Nancy par Nicolas Durival </desc>
                      </interp>
-                     <interp xml:id="bio">
-                        éléments biographiques
-                        <desc>
-                           Entrées concernant des
-                           événements de la vie personnelle de Durival et de sa
-                           famille
-                        </desc>
+                     <interp xml:id="bio"> éléments biographiques <desc> Entrées concernant
+                        des événements de la vie personnelle de Durival et de sa famille
+                     </desc>
                      </interp>
-                     <interp xml:id="armee">
-                        armées
-                        <desc>
-                           Entrées relatant les mouvements et
-                           exercices des régiments stationnés à Nancy et dans la
-                           région
-                        </desc>
+                     <interp xml:id="armee"> armées <desc> Entrées relatant les mouvements et
+                        exercices des régiments stationnés à Nancy et dans la région
+                     </desc>
                      </interp>
-                     <interp xml:id="fetes">
-                        fêtes et cérémonies
-                        <desc>
-                           Entrées relatant les
-                           différentes manifestations civiles ou
-                           religieuses
-                        </desc>
+                     <interp xml:id="fetes"> fêtes et cérémonies <desc> Entrées relatant les
+                        différentes manifestations civiles ou religieuses </desc>
                      </interp>
-                     <interp xml:id="necro">
-                        décès
-                        <desc>
-                           Entrées relatant les
-                           décès
-                        </desc>
+                     <interp xml:id="necro"> décès <desc> Entrées relatant les décès </desc>
                      </interp>
                      <interp xml:id="stan">
-                        <desc>
-                           Entrées relatant l'accident et la mort du  
-                        </desc>
+                        <desc> Entrées relatant l'accident et la mort du </desc>
                      </interp>
                   </interpGrp>
                </p>
