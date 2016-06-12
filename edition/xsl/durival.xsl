@@ -2211,7 +2211,8 @@
                         <meta charset="utf-8" />
                         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                         <link rel="stylesheet" href="../css/app.css" />
-                        <link rel="stylesheet" href="../css/foundation.css" />            
+                        <link rel="stylesheet" href="../css/foundation.css" />                                                                   
+                        <link href="../css/lightbox/lightbox.css" rel="stylesheet" />
                         <link rel="stylesheet" href="../css/timeliner/timeliner.css" type="text/css" media="screen"/>
                         <link rel="stylesheet" href="../js/timeliner/vendor/venobox/venobox.css" type="text/css" media="screen"/>
                         
@@ -2256,7 +2257,10 @@
                                                         <dd class="timeline-event-content" id="{$id}EX">
                                                             <xsl:if test=".//tei:graphic">
                                                                 <div class="media">
-                                                                    <a class="focus" href="../images/{.//tei:graphic/@url}.jpg" data-lightbox="#"><img src="../images/{.//tei:graphic/@url}.jpg" alt="Placard"/></a>                                                                    
+                                                                    <a class="focus" href="../images/{.//tei:graphic/@url}.jpg" data-lightbox="bio">
+                                                                        <img src="../images/{.//tei:graphic/@url}.jpg" alt="Placard"/>
+                                                                    </a>
+                                                                    <!--<a class="focus" href="../images/{.//tei:graphic/@url}.jpg" data-lightbox="#"><img src="../images/{.//tei:graphic/@url}.jpg" alt="Placard"/></a>-->                                                                    
                                                                 </div><!-- /.media -->
                                                             </xsl:if>
                                                             <xsl:for-each select="tei:p">
@@ -2274,10 +2278,11 @@
                                 </div>                           
                             </div>
                         </div>
-                        <xsl:copy-of select="$footer"/>
+                        <xsl:copy-of select="$footer"/>                        
                         <script src="../js/vendor/jquery.js">/*Pour transformation xslt*/</script>
                         <script src="../js/vendor/modernizr.js">/*Pour transformation xslt*/</script>
-                        <script src="../js/foundation.min.js">/*Pour transformation xslt*/</script>                                                                                                         
+                        <script src="../js/foundation.min.js">/*Pour transformation xslt*/</script>
+                        <script src="../js/lightbox/lightbox.js"></script>
                         <script type="text/javascript" src="../js/timeliner/timeliner.min.js"></script>
                         <script type="text/javascript" src="../js/timeliner/vendor/venobox/venobox.min.js"></script>
                         <script>$(document).foundation();</script>
