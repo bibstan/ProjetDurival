@@ -863,6 +863,17 @@
         </xsl:for-each>
     </xsl:template>        
     
+    <xsl:template match="tei:div[@type='transcription']//tei:rs[@type='artwork']">
+        <xsl:variable name="ref" select="@ref"/>
+        <xsl:variable name="id" select="substring-after(@ref,'#')"/>
+        <xsl:variable name="tooltip">
+            <xsl:if test="//tei:div[@type='index']//tei:item[@xml:id=$id]">
+                <xsl:apply-templates select="//tei:div[@type='index']//tei:item[@xml:id=$id]" mode="tooltip"/>                
+            </xsl:if>
+        </xsl:variable>
+        <span data-tooltip='true' aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="{$tooltip}"><a class="person" href="listPerson.html{$ref}"><xsl:apply-templates/></a></span>
+    </xsl:template>
+    
     <xsl:template match="tei:div[@type='transcription']//tei:persName | tei:div[@type='transcription']//tei:rs[@type='person']">
         <xsl:variable name="ref" select="@ref"/><!-- todo @type=groupPerson -->
         <xsl:variable name="id" select="substring-after(@ref,'#')"/>
