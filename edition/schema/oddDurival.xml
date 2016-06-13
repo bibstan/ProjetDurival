@@ -525,7 +525,10 @@
             </classSpec>
             <!--Checking module core-->
             <moduleRef key="core"
-                       include="p graphic unclear ref hi quote q desc term sic choice gap add del rs address addrLine measure date abbr expan corr reg orig list item head pb lb cb author respStmt resp title publisher pubPlace bibl listBibl l lg note ref teiCorpus foreign"/>
+                       include="
+                       p graphic unclear ref hi quote q desc term sic choice gap add del rs address addrLine measure 
+                       date abbr expan corr reg orig list item head pb lb cb author respStmt resp title publisher pubPlace bibl listBibl l lg note ref teiCorpus foreign
+                       biblStruct imprint monogr biblScope analytic editor"/><!-- todo limiter les attributs de cette dernière ligne -->
             <elementSpec ident="p" mode="change">
                <attList>
                   <attDef ident="facs" mode="delete"/>
@@ -609,7 +612,13 @@
                   <attDef ident="targetEnd" mode="delete"/>
                   <attDef ident="target" mode="delete"/>
                   <attDef ident="place" mode="delete"/>
-                  <attDef ident="type" mode="delete"/>
+                  <attDef ident="type" mode="change">
+                     <valList mode="add" type="closed">                        
+                        <valItem ident="url">
+                           <desc>Identifie un lien extérieur (bibliographie).</desc>
+                        </valItem>
+                     </valList>
+                  </attDef>
                   <attDef ident="subtype" mode="delete"/>
                   <attDef ident="xml:lang" mode="delete"/>                   
                </attList>
@@ -943,15 +952,29 @@
                   <attDef ident="level" mode="change">
                      <valList>
                         <valItem ident="m">
-                           <!-- todo voir définition avec Éric ? -->
+                           <desc>Monographie</desc>
+                        </valItem>
+                        <valItem ident="j">
+                           <desc>Journal</desc>
+                        </valItem>
+                        <valItem ident="a">
+                           <desc>article</desc>
+                        </valItem>
+                        <valItem ident="short">
+                           <desc>titre court</desc>
                         </valItem>
                      </valList>
                   </attDef>
-                  <attDef ident="type" mode="delete"/>
+                  <attDef ident="type" mode="change">
+                     <valList>                        
+                        <valItem ident="short">
+                           <desc>titre court</desc>
+                        </valItem>
+                     </valList>
+                  </attDef>
                   <attDef ident="ana" mode="delete"/>
                   <attDef ident="facs" mode="delete"/>
-                  <attDef ident="resp" mode="delete"/>
-                  <attDef ident="type" mode="delete"/>
+                  <attDef ident="resp" mode="delete"/>                  
                   <attDef ident="subtype" mode="delete"/>
                </attList>
             </elementSpec>
@@ -1014,7 +1037,8 @@
             </elementSpec>
             <!--Checking module header-->
             <moduleRef key="header"
-                       include="teiHeader fileDesc titleStmt funder publicationStmt idno availability sourceDesc encodingDesc projectDesc editorialDecl normalization quotation interpretation"/>
+                       include="teiHeader fileDesc titleStmt funder publicationStmt idno availability sourceDesc encodingDesc projectDesc editorialDecl normalization quotation interpretation edition"/>
+            <!-- todo limiter les attribut de édition -->
             <elementSpec ident="teiHeader" mode="change">
                <attList>
                   <attDef ident="type" mode="change">
@@ -1061,6 +1085,11 @@
                   <attDef ident="ana" mode="delete"/>
                   <attDef ident="facs" mode="delete"/>
                   <attDef ident="resp" mode="delete"/>
+                  <attDef ident="type" mode="change">
+                     <valList mode="add" type="closed">
+                        <valItem ident="callNumber"/>
+                     </valList>
+                  </attDef>
                </attList>
             </elementSpec>
             <elementSpec ident="availability" mode="change">
@@ -1411,6 +1440,9 @@
                         </valItem>
                         <valItem ident="year">
                            <desc>La valeur "year" indique chaque nouvelle année du Journal.</desc>
+                        </valItem>
+                        <valItem ident="bibl">
+                           <desc>La valeur "bibl" doit être utilisée pour la bibliographie générale.</desc>
                         </valItem>
                      </valList>
                   </attDef>
