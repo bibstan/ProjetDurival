@@ -876,7 +876,7 @@
     
     <xsl:template match="tei:div[@type='transcription']//tei:rs[@type='groupPerson']">
         <xsl:variable name="content"><xsl:apply-templates/></xsl:variable>
-        <xsl:variable name="ref" select="@ref"/>
+        <xsl:variable name="ref" select="concat(replace(@ref,' ','-'),'-')"/>
         <xsl:variable name="link">
             <xsl:choose>
                 <xsl:when test="substring-before(@ref,' ')">
@@ -888,13 +888,15 @@
             </xsl:choose>
         </xsl:variable>
         <xsl:variable name="refContent">
-            <xsl:for-each select="//tei:div[@type='index']//tei:person[not(@xml:id='durival')]"><!-- todo contains -->
-                <xsl:variable name="id" select="@xml:id"/>
+            <xsl:for-each select="//tei:div[@type='index']//tei:person"><!-- todo contains -->
+                <!--<xsl:variable name="id" select="@xml:id"/>-->
+                <xsl:variable name="id" select="concat(@xml:id,'-')"/>
                 <xsl:if test="contains($ref,$id)">
-                    <xsl:value-of select="./tei:persName"/><xsl:text> </xsl:text>
+                    <xsl:apply-templates select="." mode="tooltip"/><xsl:text> - </xsl:text>                                        
                 </xsl:if>
             </xsl:for-each>
         </xsl:variable>
+        <xsl:variable name="refContent" select="substring($refContent, 1, string-length($refContent) - 3)"/><!-- supprime le dernier tiret (todo trouver une technique plus propre mais ça fonctionne) -->
         <span data-tooltip='true' aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="{$refContent}"><a class="person" href="listPerson.html{$link}"><xsl:apply-templates/></a></span>
     </xsl:template>
     
@@ -929,7 +931,7 @@
             </xsl:if>
         </xsl:variable>
         <!--todo a.cite à la place de cite -->
-        <cite><span data-tooltip='true' aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="{$tooltip}"><a class="person" href="listOrg.html{$ref}"><xsl:apply-templates/></a></span></cite>
+        <span data-tooltip='true' aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="{$tooltip}"><a class="cite" href="listOrg.html{$ref}"><xsl:apply-templates/></a></span>
     </xsl:template>
     
     <xsl:template match="tei:div[@type='transcription']//tei:rs[@type='bibl']">
@@ -1038,12 +1040,13 @@
                                 <xsl:for-each select="tei:person">
                                     <xsl:sort select="tei:persName" order="ascending" case-order="upper-first"/>
                                     <xsl:variable name="id" select="@xml:id"/>
-                                    <xsl:variable name="links" select=" concat('#',@xml:id)"/>
+                                    <xsl:variable name="links" select="concat('#',@xml:id)"/>
+                                    <xsl:variable name="idref" select="concat($links,'-')"/>
                                     <li class="vedette" id="{$id}">                    
                                         <!--<xsl:apply-templates select="." mode="tooltip"/>-->
                                         <!--<xsl:apply-templates select="tei:persName"/>-->
                                         <xsl:choose>
-                                            <xsl:when test="//tei:div[@type='transcription'][descendant::*[contains(@ref,$links)]]">
+                                            <xsl:when test="//tei:div[@type='transcription'][descendant::*[contains(concat(replace(@ref,' ','-'),'-'),$idref)]]">
                                                 <!--<xsl:if test="//tei:div[@type='transcription'][descendant::*[contains(@ref,$links)]]">-->
                                                     <ul class="accordion" data-accordion="true" data-allow-all-closed="true">
                                                         <li class="accordion-item" data-accordion-item="true">
@@ -1052,8 +1055,8 @@
                                                                 <xsl:if test="./tei:listEvent">
                                                                     <div class="note">
                                                                         <xsl:for-each select="./tei:listEvent/tei:event">                                                                            
-                                                                                <xsl:choose>
-                                                                                    <xsl:when test="position() = 1"><!-- force la capitale pour le premier event, et les minus pour les autres -->                                                                                    
+                                                                                <xsl:choose><!-- force la capitale pour le premier event, et les minus pour les autres -->
+                                                                                    <xsl:when test="position() = 1">                                                                                    
                                                                                         <xsl:value-of select="normalize-space(concat(upper-case(substring(tei:p,1,1)),substring(tei:p, 2),' '[not(last())]))"/><xsl:choose><xsl:when test="following-sibling::tei:event[1]"/><xsl:otherwise><xsl:text>.</xsl:text></xsl:otherwise></xsl:choose>
                                                                                     </xsl:when>
                                                                                     <xsl:when test="position() != last()">
@@ -1067,15 +1070,13 @@
                                                                     </div>
                                                                 </xsl:if>
                                                                 <ul class="index">
-                                                                    <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='day'][descendant::*[contains(@ref,$links)]]">
-                                                                        <xsl:variable name="date">
-                                                                            <xsl:apply-templates select="./tei:dateline/tei:date" mode="dateComplete"/>
-                                                                        </xsl:variable>
+                                                                    <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='day'][descendant::*[contains(concat(replace(@ref,' ','-'),'-'),$idref)]]">                                                                                                                                                
+                                                                        <xsl:variable name="date"><xsl:apply-templates select="./tei:dateline/tei:date" mode="dateComplete"/></xsl:variable>
                                                                         <xsl:variable name="links" select="concat(../@xml:id,'.html#',@xml:id)"/>
                                                                         <xsl:choose>
                                                                             <xsl:when test="position() = last()">
                                                                                 <xsl:choose>
-                                                                                    <xsl:when test="//tei:div[@type='transcription']//tei:div[@type='insert'][descendant::*[contains(@ref,$id)]]">
+                                                                                    <xsl:when test="//tei:div[@type='transcription']//tei:div[@type='insert'][descendant::*[contains(concat(replace(@ref,' ','-'),'-'),$idref)]]">
                                                                                         <li>                                                            
                                                                                             <a class="index" href="{$links}"><small><xsl:value-of select="$date"/></small></a> -                                                                                             
                                                                                         </li>
@@ -1094,7 +1095,7 @@
                                                                             </xsl:otherwise>
                                                                         </xsl:choose>                                            
                                                                     </xsl:for-each>
-                                                                    <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='insert'][descendant::*[contains(@ref,$links)]]">
+                                                                    <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='insert'][descendant::*[contains(concat(replace(@ref,' ','-'),'-'),$idref)]]">
                                                                         <xsl:variable name="number">
                                                                             <xsl:number count="tei:div[@type='insert']" from="tei:div[@type='transcription']" level="any"/>
                                                                         </xsl:variable>
@@ -1189,8 +1190,9 @@
                                     <xsl:sort select="tei:placeName[2][not(@type='today')]" order="ascending" case-order="upper-first"/>
                                     <xsl:variable name="id" select="@xml:id"/>
                                     <xsl:variable name="links" select=" concat('#',@xml:id)"/>
+                                    <xsl:variable name="idref" select="concat($links,'-')"/>
                                     <xsl:choose>
-                                        <xsl:when test="//tei:div[@type='transcription']//tei:div[@type='day'][descendant::*[contains(@ref,$links)]]"><!-- todo ajout @when quand présent dans l'introduction -->
+                                        <xsl:when test="//tei:div[@type='transcription']//tei:div[@type='day'][descendant::*[contains(concat(replace(@ref,' ','-'),'-'),$idref)]]"><!-- todo ajout @when quand présent dans l'introduction -->
                                             <li class="vedette" id="{$id}">                                                            
                                                 <ul class="accordion" data-accordion="true" data-allow-all-closed="true">
                                                     <li class="accordion-item" data-accordion-item="true">
@@ -1202,13 +1204,13 @@
                                                                 </div>
                                                             </xsl:if>
                                                             <ul class="index">
-                                                                <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='day'][descendant::*[contains(@ref,$links)]]">
+                                                                <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='day'][descendant::*[contains(concat(replace(@ref,' ','-'),'-'),$idref)]]">
                                                                     <xsl:variable name="date"><xsl:apply-templates select="./tei:dateline/tei:date" mode="dateComplete"/></xsl:variable>
                                                                     <xsl:variable name="links" select="concat(../@xml:id,'.html#',@xml:id)"/>
                                                                     <xsl:choose>
                                                                         <xsl:when test="position() = last()">
                                                                             <xsl:choose>
-                                                                                <xsl:when test="//tei:div[@type='transcription']//tei:div[@type='insert'][descendant::*[contains(@ref,$id)]]">
+                                                                                <xsl:when test="//tei:div[@type='transcription']//tei:div[@type='insert'][descendant::*[contains(concat(replace(@ref,' ','-'),'-'),$idref)]]">
                                                                                     <li>
                                                                                         <a class="index" href="{$links}"><small><xsl:value-of select="$date"/></small></a> -                                    
                                                                                     </li>                                                                
@@ -1227,7 +1229,7 @@
                                                                         </xsl:otherwise>
                                                                     </xsl:choose>                                           
                                                                 </xsl:for-each>
-                                                                <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='insert'][descendant::*[contains(@ref,$links)]]">                                                
+                                                                <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='insert'][descendant::*[contains(concat(replace(@ref,' ','-'),'-'),$idref)]]">                                                
                                                                     <xsl:variable name="number"><xsl:number count="tei:div[@type='insert']" from="tei:div[@type='transcription']" level="any"/></xsl:variable>
                                                                     <xsl:variable name="links" select="concat(../@xml:id,'.html#',@xml:id)"/>
                                                                     <xsl:choose>
@@ -1315,8 +1317,9 @@
                                     <xsl:sort select="tei:location" order="ascending" case-order="upper-first"/>
                                     <xsl:variable name="id" select="@xml:id"/>
                                     <xsl:variable name="links" select="concat('#',@xml:id)"/>
+                                    <xsl:variable name="idref" select="concat($links,'-')"/>
                                     <xsl:choose>
-                                        <xsl:when test="//tei:div[@type='transcription']//tei:div[@type='day'][descendant::*[contains(@ref,$links)]]"><!-- todo ajout @when quand présent dans introduction -->
+                                        <xsl:when test="//tei:div[@type='transcription']//tei:div[@type='day'][descendant::*[contains(concat(replace(@ref,' ','-'),'-'),$idref)]]"><!-- todo ajout @when quand présent dans introduction -->
                                             <li class="vedette" id="{$id}">                                                            
                                                 <ul class="accordion" data-accordion="true" data-allow-all-closed="true">
                                                     <li class="accordion-item" data-accordion-item="true">
@@ -1330,13 +1333,13 @@
                                                                 </div>
                                                             </xsl:if>
                                                             <ul class="index">
-                                                                <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='day'][descendant::*[contains(@ref,$links)]]">
+                                                                <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='day'][descendant::*[contains(concat(replace(@ref,' ','-'),'-'),$idref)]]">
                                                                     <xsl:variable name="date"><xsl:apply-templates select="./tei:dateline/tei:date" mode="dateComplete"/></xsl:variable>
                                                                     <xsl:variable name="links" select="concat(../@xml:id,'.html#',@xml:id)"/>
                                                                     <xsl:choose>
                                                                         <xsl:when test="position() = last()">
                                                                             <xsl:choose>
-                                                                                <xsl:when test="//tei:div[@type='transcription']//tei:div[@type='insert'][descendant::*[contains(@ref,$id)]]">
+                                                                                <xsl:when test="//tei:div[@type='transcription']//tei:div[@type='insert'][descendant::*[contains(concat(replace(@ref,' ','-'),'-'),$idref)]]">
                                                                                     <li>
                                                                                         <a class="index" href="{$links}"><small><xsl:value-of select="$date"/></small></a> -                                    
                                                                                     </li>
@@ -1355,7 +1358,7 @@
                                                                         </xsl:otherwise>
                                                                     </xsl:choose>                                            
                                                                 </xsl:for-each>
-                                                                <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='insert'][descendant::*[contains(@ref,$links)]]">
+                                                                <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='insert'][descendant::*[contains(concat(replace(@ref,' ','-'),'-'),$idref)]]">
                                                                     <xsl:variable name="number">
                                                                         <xsl:number count="tei:div[@type='insert']" from="tei:div[@type='transcription']" level="any"/>
                                                                     </xsl:variable>
@@ -1444,8 +1447,9 @@
                                     <xsl:sort select="tei:title" order="ascending" case-order="upper-first"/>                                    
                                     <xsl:variable name="id" select="@xml:id"/>
                                     <xsl:variable name="links" select="concat('#',@xml:id)"/>
+                                    <xsl:variable name="idref" select="concat($links,'-')"/>
                                     <xsl:choose>
-                                        <xsl:when test="//tei:div[@type='transcription']//tei:div[@type='day'][descendant::*[contains(@ref,$links)]]"><!-- todo ajout @when quand présent dans introduction -->
+                                        <xsl:when test="//tei:div[@type='transcription']//tei:div[@type='day'][descendant::*[contains(concat(replace(@ref,' ','-'),'-'),$idref)]]"><!-- todo ajout @when quand présent dans introduction -->
                                             <li class="vedette" id="{$id}">                                                            
                                                 <ul class="accordion" data-accordion="true" data-allow-all-closed="true">
                                                     <li class="accordion-item" data-accordion-item="true">
@@ -1459,13 +1463,13 @@
                                                                 </div>
                                                             </xsl:if>
                                                             <ul class="index">
-                                                                <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='day'][descendant::*[contains(@ref,$links)]]">
+                                                                <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='day'][descendant::*[contains(concat(replace(@ref,' ','-'),'-'),$idref)]]">
                                                                     <xsl:variable name="date"><xsl:apply-templates select="./tei:dateline/tei:date" mode="dateComplete"/></xsl:variable>
                                                                     <xsl:variable name="links" select="concat(../@xml:id,'.html#',@xml:id)"/>
                                                                     <xsl:choose>
                                                                         <xsl:when test="position() = last()">
                                                                             <xsl:choose>
-                                                                                <xsl:when test="//tei:div[@type='transcription']//tei:div[@type='insert'][descendant::*[contains(@ref,$id)]]">
+                                                                                <xsl:when test="//tei:div[@type='transcription']//tei:div[@type='insert'][descendant::*[contains(concat(replace(@ref,' ','-'),'-'),$idref)]]">
                                                                                     <li>
                                                                                         <a class="index" href="{$links}"><small><xsl:value-of select="$date"/></small></a> -                                    
                                                                                     </li>
@@ -1484,7 +1488,7 @@
                                                                         </xsl:otherwise>
                                                                     </xsl:choose>                                            
                                                                 </xsl:for-each>
-                                                                <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='insert'][descendant::*[contains(@ref,$links)]]">
+                                                                <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='insert'][descendant::*[contains(concat(replace(@ref,' ','-'),'-'),$idref)]]">
                                                                     <xsl:variable name="number">
                                                                         <xsl:number count="tei:div[@type='insert']" from="tei:div[@type='transcription']" level="any"/>
                                                                     </xsl:variable>
