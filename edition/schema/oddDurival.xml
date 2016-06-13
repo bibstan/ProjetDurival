@@ -587,6 +587,12 @@
                         <valItem ident="picture">
                            <desc>Identifie un renvoi vers une illustration.</desc>
                         </valItem>
+                        <valItem ident="externalLink">
+                           <desc>Identifie un lien sortant.</desc>
+                        </valItem>
+                        <valItem ident="mailto">
+                           <desc>Identifie une adresse mail.</desc>
+                        </valItem>
                      </valList>
                   </attDef>
                   <attDef ident="subtype" mode="delete"/>
@@ -1187,7 +1193,7 @@
             </elementSpec>
             <!--Checking module transcr-->
             <classRef key="att.global.facs"/>
-            <moduleRef key="transcr" include="fw space subst supplied surplus"/><!-- todo ajouter les valeurs pour supplied -->
+            <moduleRef key="transcr" include="fw space subst supplied surplus facsimile"/><!-- todo ajouter les valeurs pour supplied -->
             <elementSpec ident="fw" mode="change">
                <attList>
                   <attDef ident="type" mode="change">

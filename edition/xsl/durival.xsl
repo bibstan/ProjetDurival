@@ -325,6 +325,7 @@
         <xsl:apply-templates select="//tei:div[@type='index']/tei:listPlace" mode="index"/>
         <xsl:apply-templates select="//tei:div[@type='index']/tei:listPerson" mode="index"/>
         <xsl:apply-templates select="//tei:div[@type='index']/tei:listOrg" mode="index"/>
+        <xsl:apply-templates select="//tei:div[@type='index']/tei:listBibl" mode="index"/>
         <!--<xsl:apply-templates select="//tei:div[@type='transcription']" mode="frise"/>-->
         <xsl:apply-templates select="//tei:div[@type='transcription']" mode="calendrier"/>
         <!--<xsl:apply-templates select="//tei:listPlace[@xml:id='listPlace']" mode="cartographie"/>-->
@@ -334,7 +335,7 @@
         <xsl:apply-templates select="/" mode="belprey"/>
         <xsl:apply-templates select="/" mode="carte"/>
         <xsl:apply-templates select="/" mode="focus"/>
-
+        <xsl:apply-templates select="//tei:projectDesc" mode="projecDesc"/>
     </xsl:template>    
     
     <xsl:template match="//tei:body">
@@ -393,8 +394,7 @@
                                     <div class="large-6 columns clearfix">
                                         <ul class="tabs float-right" data-tabs="true" id="example-tabs">                                
                                             <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">transcriptions</a></li>
-                                            <li class="tabs-title"><a href="#panel2">facsimilés</a></li>
-                                            <!--<li class="tabs-title"><a href="#panel3">options</a></li>-->
+                                            <li class="tabs-title"><a href="#panel2">facsimilés</a></li>                                            
                                         </ul>
                                     </div>
                                 </div>
@@ -414,44 +414,9 @@
                                             </div>                                                                                                                            
                                         </xsl:for-each>
                                     </div>
-                                </div>
-                                <!--<div class="tabs-panel" id="panel3">
-                                    <div class="row">
-                                        <div class="large-12">
 
-                                            <dl>
-                                                <dt>Forme originale</dt>
-                                                <dd>
-                                                    <div class="switch small">                                                        
-                                                        <input class="switch-input checkbox_modern" id="modern" type="checkbox" name="modern"/>
-                                                        <label class="switch-paddle" for="modern">                                                                
-                                                            <!-\-<span>Modernisation</span>-\->
-                                                            <span class="switch-active" aria-hidden="true">I</span>
-                                                            <span class="switch-inactive" aria-hidden="true">O</span>
-                                                        </label>
-                                                    </div>
-                                                </dd>
-                                            </dl>
-                                            <dl>
-                                                <dt>Retours à la ligne</dt>
-                                                <dd>
-                                                    <div class="switch small">                                                        
-                                                        <input class="switch-input checkbox_lb" id="lb" type="checkbox" name="lb"/>
-                                                        <label class="switch-paddle" for="lb">                                                            
-                                                            <span class="switch-active" aria-hidden="true">I</span>
-                                                            <span class="switch-inactive" aria-hidden="true">O</span>
-                                                        </label>
-                                                    </div>
-                                                </dd>
-                                            </dl>                                                                                                                                        
-                                                <!-\-<label><input type="checkbox" class="checkbox_abbr" value="abbr" />Abbr</label>
-                                                <label><input type="checkbox" class="checkbox_orig" value="orig" />Orig</label>
-                                                <label><input type="checkbox" class="checkbox_sic" value="sic" />sic</label>-\->
-                                                <!-\-<label><input type="checkbox" class="checkbox_lb" value="lb" />lb</label>-\->                                            
+                                </div>                                
 
-                                        </div>
-                                    </div>
-                                </div>-->
                             </div>
                         </div>
                         <xsl:copy-of select="$footer"/>
@@ -507,7 +472,7 @@
                                     <xsl:variable name="picture" select="//tei:back//tei:figure[@xml:id=$ref]//tei:graphic/@url"/>
                                     <xsl:variable name="cartel" select="//tei:back//tei:figure[@xml:id=$ref]//tei:desc"/>                                    
                                     <a class="miniatures" href="../images/illustrations/{$picture}.jpg" data-lightbox="{$id}" data-title="{$cartel}">
-                                        <img src="../images/illustrations/thumbs/{$picture}.jpg" alt="{$cartel}"/>
+                                        <img src="../images/illustrations/thumbs/T{$picture}.png" alt="{$cartel}"/>
                                     </a>
                                 </xsl:for-each>
                             </div>
@@ -774,58 +739,74 @@
                 <br />
             </xsl:for-each>
         </p>        
+    </xsl:template>    
+
+    <xsl:template match="tei:subst">
+        <xsl:apply-templates/>
+    </xsl:template>        
+    
+    <xsl:template match="tei:del">
+        <del><xsl:apply-templates/></del>
     </xsl:template>
     
-    <xsl:template match="tei:persName[ancestor::tei:person and ancestor::tei:persName] | tei:surname[ancestor::tei:person] | tei:roleName[ancestor::tei:person]">
+    <xsl:template match="tei:w">
+        <xsl:value-of select="replace(.,'-','')"/>        
+    </xsl:template>            
+    
+    <xsl:template match="tei:hi">
         <xsl:choose>
-            <xsl:when test="
-                following-sibling::tei:roleName[1] |
-                following-sibling::tei:forename[1] |
-                following-sibling::tei:surname[1] |
-                following-sibling::tei:addName[1] | 
-                following-sibling::tei:persName[1]">
-                <xsl:apply-templates/><xsl:text>, </xsl:text>
+            <xsl:when test="@rend='super'"><sup><xsl:apply-templates/></sup></xsl:when>
+            <xsl:when test="@rend='sub'"><sub><xsl:apply-templates/></sub></xsl:when>
+            <xsl:when test="@rend='italic' and ancestor::tei:person"><i><xsl:apply-templates/></i></xsl:when>
+            <xsl:otherwise><xsl:apply-templates/></xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template match="//*[@rend='underline']">
+        <u><xsl:apply-templates/></u>
+    </xsl:template>        
+    
+    <xsl:template match="tei:choice">
+        <xsl:choose>
+            <xsl:when test="tei:abbr and tei:expan">
+                <span class="abbr"><xsl:apply-templates select="tei:abbr"/></span><span class="expan"><xsl:apply-templates select="tei:expan"/></span>
+            </xsl:when>
+            <xsl:when test="tei:orig and tei:reg">
+                <span class="orig"><xsl:apply-templates select="tei:orig"/></span><span class="reg"><xsl:apply-templates select="tei:reg"/></span>
+            </xsl:when>
+            <xsl:when test="tei:sic and tei:corr">
+                <span class="sic"><xsl:apply-templates select="tei:sic"/><xsl:text>&#160;</xsl:text><i>(sic)</i></span><span class="corr"><xsl:apply-templates select="tei:corr"/></span>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:apply-templates/>
             </xsl:otherwise>
-        </xsl:choose>
+        </xsl:choose>        
     </xsl:template>
     
-    <xsl:template match="tei:forename[ancestor::tei:person]">
-        <xsl:choose>
-            <xsl:when test="following-sibling::tei:surname[1]">
-                <xsl:apply-templates/><xsl:text> </xsl:text>
-            </xsl:when>
-            <xsl:when test="
-                following-sibling::tei:roleName[1] |
-                following-sibling::tei:forename[1] |
-                following-sibling::tei:addName[1] |                
-                following-sibling::tei:persName[1]">
-                <xsl:apply-templates/><xsl:text>, </xsl:text>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:apply-templates/><xsl:if test="ancestor::tei:persName[@ref]"><xsl:text>,</xsl:text></xsl:if>
-            </xsl:otherwise>
-        </xsl:choose>
+    <xsl:template match="tei:space">
+        <i>(blanc)</i>
     </xsl:template>
     
-    <xsl:template match="tei:addName[@type='say']"><!-- todo prévoir pour les femmes -->
-        <xsl:text>dit &#171;</xsl:text><xsl:apply-templates/><xsl:text>&#187;</xsl:text>
+    <!--<xsl:template match="tei:lb | tei:pb[ancestor::tei:p]">
+        <br class="lb" />    
+    </xsl:template>-->
+    
+    <xsl:template match="tei:div[@type='transcription']//tei:list">
+        <ul>
+            <xsl:for-each select="tei:item">
+                <li><xsl:apply-templates select="."/></li>
+            </xsl:for-each>
+        </ul>
     </xsl:template>
     
-    <xsl:template match="tei:birth | tei:death">
-        <xsl:choose>
-            <xsl:when test="@when">
-                <xsl:apply-templates select="@when"/>
-            </xsl:when>
-            <xsl:when test="@notBefore and @notAfter">
-                <xsl:variable name="notBefore" select="@notBefore"/>
-                <xsl:variable name="notAfter" select="substring(@notAfter,3)"/>
-                <xsl:value-of select="concat($notBefore,'/',$notAfter)"/>
-            </xsl:when>
-        </xsl:choose>
-    </xsl:template>
+    <xsl:template match="tei:fw"/>
+    
+    <xsl:template match="tei:ref[@type='note']">
+        <xsl:for-each select=".">
+            <xsl:variable name="number"><xsl:number select="." level="any" from="tei:div[@type='day']"/></xsl:variable>
+            <sup><xsl:value-of select="$number"/></sup>
+        </xsl:for-each>
+    </xsl:template>        
     
     <xsl:template match="tei:person" mode="tooltip">
         <xsl:for-each select="tei:persName">
@@ -854,7 +835,7 @@
                 <xsl:variable name="id" select="substring-after($href,'#')"/>
                 <xsl:value-of select="//tei:person[@xml:id=$id]/tei:persName/tei:persName"/><!-- todo vérif qu'on a toujours un persName dans ce cas -->
             </xsl:variable>
-            <xsl:text>voir </xsl:text><a href="{$href}"><xsl:value-of select="$renvoi"/></a>
+            <xsl:text> voir </xsl:text><a href="{$href}"><xsl:value-of select="$renvoi"/></a>
         </xsl:if>
     </xsl:template>
     
@@ -874,6 +855,18 @@
             </xsl:for-each>
         </xsl:for-each>
     </xsl:template>
+    
+    <xsl:template match="tei:org" mode="tooltip">
+        <xsl:for-each select=".">
+            <xsl:apply-templates select="tei:orgName"/><xsl:if test="tei:location/tei:placeName"><xsl:text> - </xsl:text><xsl:apply-templates select="tei:location/tei:placeName"/></xsl:if>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template match="tei:bibl" mode="tooltip">
+        <xsl:for-each select=".">
+            <xsl:apply-templates select="tei:title"/><xsl:if test="tei:author"><xsl:text> (</xsl:text><xsl:if test="tei:author/tei:forename"><xsl:apply-templates select="tei:author/tei:forename"/><xsl:text> </xsl:text></xsl:if><xsl:apply-templates select="tei:author/tei:surname"/><xsl:text>)</xsl:text></xsl:if>
+        </xsl:for-each>
+    </xsl:template>        
     
     <xsl:template match="tei:div[@type='transcription']//tei:persName | tei:div[@type='transcription']//tei:rs[@type='person']">
         <xsl:variable name="ref" select="@ref"/><!-- todo @type=groupPerson -->
@@ -927,89 +920,89 @@
         <xsl:variable name="id" select="substring-after(@ref,'#')"/>
         <xsl:variable name="tooltip">
             <xsl:if test="//tei:div[@type='index']//tei:org[@xml:id=$id]">
-                <xsl:value-of select="//tei:div[@type='index']//tei:org[@xml:id=$id]/tei:orgName"/>
+                <xsl:apply-templates select="//tei:div[@type='index']//tei:org[@xml:id=$id]" mode="tooltip"/>
             </xsl:if>
         </xsl:variable>
         <span data-tooltip='true' aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="{$tooltip}"><a class="person" href="listOrg.html{$ref}"><xsl:apply-templates/></a></span>
     </xsl:template>
     
-    <xsl:template match="tei:subst">
-        <xsl:apply-templates/>
-    </xsl:template>        
-    
-    <xsl:template match="tei:del">
-        <del><xsl:apply-templates/></del>
-    </xsl:template>
-        
-    <xsl:template match="tei:w">
-        <xsl:value-of select="replace(.,'-','')"/>        
-    </xsl:template>            
-    
-    <xsl:template match="tei:hi">
-        <xsl:choose>
-            <xsl:when test="@rend='super'"><sup><xsl:apply-templates/></sup></xsl:when>
-            <xsl:when test="@rend='sub'"><sub><xsl:apply-templates/></sub></xsl:when>
-            <xsl:when test="@rend='italic' and ancestor::tei:person"><i><xsl:apply-templates/></i></xsl:when>
-            <xsl:otherwise><xsl:apply-templates/></xsl:otherwise>
-        </xsl:choose>
-    </xsl:template>
-    
-    <xsl:template match="//*[@rend='underline']">
-        <u><xsl:apply-templates/></u>
-    </xsl:template>
-    
-    <xsl:template match="tei:title[ancestor::tei:p]">
+    <xsl:template match="tei:div[@type='transcription']//tei:title">
+        <xsl:variable name="ref" select="@ref"/>
+        <xsl:variable name="id" select="substring-after(@ref,'#')"/>
+        <xsl:variable name="tooltip">
+            <xsl:if test="//tei:div[@type='index']//tei:bibl[@xml:id=$id]">
+                <xsl:apply-templates select="//tei:div[@type='index']//tei:bibl[@xml:id=$id]" mode="tooltip"/>
+            </xsl:if>
+        </xsl:variable>
         <!--todo a.cite à la place de cite -->
-        <cite><xsl:apply-templates/></cite>
+        <cite><span data-tooltip='true' aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="{$tooltip}"><a class="person" href="listOrg.html{$ref}"><xsl:apply-templates/></a></span></cite>
     </xsl:template>
     
-    <xsl:template match="tei:choice">
+    <xsl:template match="tei:div[@type='transcription']//tei:rs[@type='bibl']">
+        <xsl:variable name="ref" select="@ref"/>
+        <xsl:variable name="id" select="substring-after(@ref,'#')"/>
+        <xsl:variable name="tooltip">
+            <xsl:if test="//tei:div[@type='index']//tei:bibl[@xml:id=$id]">
+                <xsl:apply-templates select="//tei:div[@type='index']//tei:bibl[@xml:id=$id]" mode="tooltip"/>
+            </xsl:if>
+        </xsl:variable>
+        <!--todo a.cite à la place de cite -->
+        <span data-tooltip='true' aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="{$tooltip}"><a class="person" href="listOrg.html{$ref}"><xsl:apply-templates/></a></span>
+    </xsl:template>
+    
+    <!-- ********** INDEX ********** -->
+    
+    <!-- la normalisation des patronymes impacte également les notes de survole (mode tooltip) -->
+    <xsl:template match="tei:persName[ancestor::tei:person and ancestor::tei:persName] | tei:surname[ancestor::tei:person] | tei:roleName[ancestor::tei:person]">
         <xsl:choose>
-            <xsl:when test="tei:abbr and tei:expan">
-                <span class="abbr"><xsl:apply-templates select="tei:abbr"/></span><span class="expan"><xsl:apply-templates select="tei:expan"/></span>
-            </xsl:when>
-            <xsl:when test="tei:orig and tei:reg">
-                <span class="orig"><xsl:apply-templates select="tei:orig"/></span><span class="reg"><xsl:apply-templates select="tei:reg"/></span>
-            </xsl:when>
-            <xsl:when test="tei:sic and tei:corr">
-                <span class="sic"><xsl:apply-templates select="tei:sic"/><xsl:text>&#160;</xsl:text><i>(sic)</i></span><span class="corr"><xsl:apply-templates select="tei:corr"/></span>
+            <xsl:when test="
+                following-sibling::tei:roleName[1] |
+                following-sibling::tei:forename[1] |
+                following-sibling::tei:surname[1] |
+                following-sibling::tei:addName[1] | 
+                following-sibling::tei:persName[1]">
+                <xsl:apply-templates/><xsl:text>, </xsl:text>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:apply-templates/>
             </xsl:otherwise>
-        </xsl:choose>        
-
+        </xsl:choose>
     </xsl:template>
     
-    <xsl:template match="tei:space">
-        <i>(blanc)</i>
+    <xsl:template match="tei:forename[ancestor::tei:person]">
+        <xsl:choose>
+            <xsl:when test="following-sibling::tei:surname[1]">
+                <xsl:apply-templates/><xsl:text> </xsl:text>
+            </xsl:when>
+            <xsl:when test="
+                following-sibling::tei:roleName[1] |
+                following-sibling::tei:forename[1] |
+                following-sibling::tei:addName[1] |                
+                following-sibling::tei:persName[1]">
+                <xsl:apply-templates/><xsl:text>, </xsl:text>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:apply-templates/><xsl:if test="ancestor::tei:persName[@ref]"><xsl:text>,</xsl:text></xsl:if>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     
-    <!--<xsl:template match="tei:lb | tei:pb[ancestor::tei:p]">
-        <br class="lb" />    
-    </xsl:template>-->
-
-    
-    <xsl:template match="tei:div[@type='transcription']//tei:list">
-        <ul>
-            <xsl:for-each select="tei:item">
-                <li><xsl:apply-templates select="."/></li>
-            </xsl:for-each>
-        </ul>
+    <xsl:template match="tei:addName[@type='say']"><!-- todo prévoir pour les femmes -->
     </xsl:template>
     
-    <xsl:template match="tei:fw"/>
-    
-    <xsl:template match="tei:ref[@type='note']">
-        <xsl:for-each select=".">
-            <xsl:variable name="number"><xsl:number select="." level="any" from="tei:div[@type='day']"/></xsl:variable>
-            <sup><xsl:value-of select="$number"/></sup>
-        </xsl:for-each>
+    <xsl:template match="tei:birth | tei:death">
+        <xsl:choose>
+            <xsl:when test="@when">
+                <xsl:apply-templates select="@when"/>
+            </xsl:when>
+            <xsl:when test="@notBefore and @notAfter">
+                <xsl:variable name="notBefore" select="@notBefore"/>
+                <xsl:variable name="notAfter" select="substring(@notAfter,3)"/>
+                <xsl:value-of select="concat($notBefore,'/',$notAfter)"/>
+            </xsl:when>
+        </xsl:choose>
     </xsl:template>
     
-    
-    
-    <!-- ********** INDEX ********** -->        
     <xsl:template match="//tei:div[@type='index']/tei:listPerson" mode="index">
         <xsl:result-document format="html" encoding="UTF-8" href="html/listPerson.html">
             <html>
@@ -1209,6 +1202,11 @@
                                                     <li class="accordion-item" data-accordion-item="true">
                                                         <a href="#" class="accordion-title vedette"><xsl:apply-templates select="." mode="tooltip"/></a>
                                                         <div class="accordion-content" data-tab-content="true">
+                                                            <xsl:if test="./tei:desc">
+                                                                <div class="note">
+                                                                    <xsl:apply-templates select="./tei:desc"/>                                                                        
+                                                                </div>
+                                                            </xsl:if>
                                                             <ul class="index">
                                                                 <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='day'][descendant::*[contains(@ref,$links)]]">
                                                                     <xsl:variable name="date"><xsl:apply-templates select="./tei:dateline/tei:date" mode="dateComplete"/></xsl:variable>
@@ -1320,6 +1318,7 @@
                             <ul class="no-bullet">
                                 <xsl:for-each select="tei:org">
                                     <xsl:sort select="tei:orgName" order="ascending" case-order="upper-first"/>
+                                    <xsl:sort select="tei:location" order="ascending" case-order="upper-first"/>
                                     <xsl:variable name="id" select="@xml:id"/>
                                     <xsl:variable name="links" select="concat('#',@xml:id)"/>
                                     <xsl:choose>
@@ -1327,8 +1326,15 @@
                                             <li class="vedette" id="{$id}">                                                            
                                                 <ul class="accordion" data-accordion="true" data-allow-all-closed="true">
                                                     <li class="accordion-item" data-accordion-item="true">
-                                                        <a href="#" class="accordion-title vedette"><xsl:apply-templates select="tei:orgName"/></a>
+                                                        <a href="#" class="accordion-title vedette">
+                                                            <xsl:apply-templates select="." mode="tooltip"/>
+                                                        </a>
                                                         <div class="accordion-content" data-tab-content="true">
+                                                            <xsl:if test="./tei:desc">
+                                                                <div class="note">
+                                                                    <xsl:apply-templates select="./tei:desc"/>                                                                        
+                                                                </div>
+                                                            </xsl:if>
                                                             <ul class="index">
                                                                 <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='day'][descendant::*[contains(@ref,$links)]]">
                                                                     <xsl:variable name="date"><xsl:apply-templates select="./tei:dateline/tei:date" mode="dateComplete"/></xsl:variable>
@@ -1402,8 +1408,134 @@
         </xsl:result-document>
     </xsl:template>
     
-    <xsl:template match="//tei:div[@type='index']/tei:listBibl">
-        <ul>
+    <xsl:template match="//tei:div[@type='index']/tei:listBibl" mode="index">
+        <xsl:result-document format="html" encoding="UTF-8" href="html/listbib.html">           
+            <html>
+                <head>
+                    <title>Édition du journal de Nicolas Durival ß</title>
+                    <meta charset="utf-8"/>
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
+                    
+                    <!-- css Pour personnalisation -->
+                    <link rel="stylesheet" href="../css/app.css"/>
+                    <!-- css Foundation -->
+                    <link rel="stylesheet" href="../css/foundation.css"/>
+                    
+                    <!-- css Owl-Carousel -->
+                    <link rel="stylesheet" href="../css/owl-carousel/owl.carousel.css"/>                         
+                    <link rel="stylesheet" href="../css/owl-carousel/owl.theme.default.css"/>
+                    
+                    <!-- css Lightbox -->                                                
+                    <link href="../css/lightbox/lightbox.css" rel="stylesheet" />   
+                    
+                    <!-- Font -->
+                    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,900,700' rel='stylesheet' type='text/css'/>                     
+                    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'/>
+                    <script>
+                        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                        
+                        ga('create', 'UA-78667211-1', 'auto');
+                        ga('send', 'pageview');                            
+                    </script>
+                </head>
+                <body class="text-justify">
+                    <xsl:copy-of select="$header"/>                                                                                                                                                                                               
+                    <div class="row">                            
+                        <div class="large-12">
+                            <ul class="no-bullet">
+                                <xsl:for-each select="tei:bibl">
+                                    <xsl:sort select="tei:title" order="ascending" case-order="upper-first"/>                                    
+                                    <xsl:variable name="id" select="@xml:id"/>
+                                    <xsl:variable name="links" select="concat('#',@xml:id)"/>
+                                    <xsl:choose>
+                                        <xsl:when test="//tei:div[@type='transcription']//tei:div[@type='day'][descendant::*[contains(@ref,$links)]]"><!-- todo ajout @when quand présent dans introduction -->
+                                            <li class="vedette" id="{$id}">                                                            
+                                                <ul class="accordion" data-accordion="true" data-allow-all-closed="true">
+                                                    <li class="accordion-item" data-accordion-item="true">
+                                                        <a href="#" class="accordion-title vedette">
+                                                            <xsl:apply-templates select="." mode="tooltip"/>
+                                                        </a>
+                                                        <div class="accordion-content" data-tab-content="true">
+                                                            <xsl:if test="./tei:note">
+                                                                <div class="note">
+                                                                    <xsl:apply-templates select="./tei:note"/>                                                                        
+                                                                </div>
+                                                            </xsl:if>
+                                                            <ul class="index">
+                                                                <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='day'][descendant::*[contains(@ref,$links)]]">
+                                                                    <xsl:variable name="date"><xsl:apply-templates select="./tei:dateline/tei:date" mode="dateComplete"/></xsl:variable>
+                                                                    <xsl:variable name="links" select="concat(../@xml:id,'.html#',@xml:id)"/>
+                                                                    <xsl:choose>
+                                                                        <xsl:when test="position() = last()">
+                                                                            <xsl:choose>
+                                                                                <xsl:when test="//tei:div[@type='transcription']//tei:div[@type='insert'][descendant::*[contains(@ref,$id)]]">
+                                                                                    <li>
+                                                                                        <a class="index" href="{$links}"><small><xsl:value-of select="$date"/></small></a> -                                    
+                                                                                    </li>
+                                                                                </xsl:when>
+                                                                                <xsl:otherwise>
+                                                                                    <li>
+                                                                                        <a class="index" href="{$links}"><small><xsl:value-of select="$date"/></small></a>                                    
+                                                                                    </li>
+                                                                                </xsl:otherwise>
+                                                                            </xsl:choose>
+                                                                        </xsl:when>
+                                                                        <xsl:otherwise>
+                                                                            <li>
+                                                                                <a class="index" href="{$links}"><small><xsl:value-of select="$date"/></small></a> -                                    
+                                                                            </li>
+                                                                        </xsl:otherwise>
+                                                                    </xsl:choose>                                            
+                                                                </xsl:for-each>
+                                                                <xsl:for-each select="//tei:div[@type='transcription']//tei:div[@type='insert'][descendant::*[contains(@ref,$links)]]">
+                                                                    <xsl:variable name="number">
+                                                                        <xsl:number count="tei:div[@type='insert']" from="tei:div[@type='transcription']" level="any"/>
+                                                                    </xsl:variable>
+                                                                    <xsl:variable name="links" select="concat(../@xml:id,'.html#',@xml:id)"/>
+                                                                    <xsl:choose>
+                                                                        <xsl:when test="position() = last()">
+                                                                            <li>
+                                                                                <a class="index" href="{$links}"><small>encart n°<xsl:value-of select="$number"/></small></a>
+                                                                            </li>
+                                                                        </xsl:when>
+                                                                        <xsl:otherwise>                                                        
+                                                                            <li>
+                                                                                <a class="index" href="{$links}"><small><small>encart n°<xsl:value-of select="$number"/></small></small></a> -
+                                                                            </li>
+                                                                        </xsl:otherwise>
+                                                                    </xsl:choose>                                                                                                                        
+                                                                </xsl:for-each>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </xsl:when>
+                                    </xsl:choose>
+                                </xsl:for-each>
+                            </ul>
+                        </div>
+                    </div>  
+                    <xsl:copy-of select="$footer"/>
+                    <script src="../js/vendor/jquery.js">/*Pour transformation xslt*/</script>                        
+                    
+                    <script src="../js/foundation.min.js"></script>
+                    <script src="../js/vendor/modernizr.js"></script>                                                
+                    
+                    <script src="../js/owl-carousel/owl.js"></script>                        
+                    <script src="../js/owl-carousel/owlConfig.js"></script>
+                    
+                    <script src="../js/modernisation/modernisation.js"></script>
+                    
+                    <script src="../js/lightbox/lightbox.js"></script>
+                    <script>$(document).foundation();</script>
+                </body>
+            </html>            
+        </xsl:result-document>
+        <!--<ul>
             <xsl:for-each select="tei:bibl">
                 <xsl:variable name="id" select="concat('#',@xml:id)"/>
                 <li>                    
@@ -1420,49 +1552,8 @@
                     </ul>
                 </li>
             </xsl:for-each>
-        </ul>
-    </xsl:template>
-    
-    <!-- ********** Frise ********** -->
-    <!--<xsl:template match="//tei:div[@type='transcription']" mode="frise">
-        <xsl:result-document format="frise" encoding="UTF-8" href="csv/frise.csv">
-            <xsl:text>Year@Month@Day@Time@End Year@End Month@End Day@End Time@Display Date@Headline@Text@Media@Media Credit@Media Caption@Media ThumbNail@Type@Group@Background
-                </xsl:text>
-            <xsl:for-each select="//*[@type='report'][descendant::tei:seg[@type='dateline']]">
-                <xsl:choose>
-                    <xsl:when test="substring-after(.//tei:seg[@type='dateline']/tei:date/@when,'T')">
-                        <xsl:variable name="date" select="replace(.//tei:seg[@type='dateline']/tei:date/@when,'-','@')"/>
-                        <xsl:variable name="time" select="replace($date,'T','@')"/>
-                        <xsl:value-of select="$time"/><xsl:text>@@@@@@</xsl:text><xsl:apply-templates select=".//tei:seg[@type='dateline']" mode="frise"/><xsl:text>@</xsl:text><xsl:apply-templates select=".//tei:p" mode="frise"/><xsl:text>
-                        </xsl:text>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:variable name="date" select="replace(.//tei:seg[@type='dateline']/tei:date/@when,'-','@')"/>                        
-                        <xsl:value-of select="$date"/><xsl:text>@@@@@@@</xsl:text><xsl:apply-templates select=".//tei:seg[@type='dateline']" mode="frise"/><xsl:text>@</xsl:text><xsl:apply-templates select=".//tei:p" mode="frise"/><xsl:text>
-                        </xsl:text>
-                    </xsl:otherwise>
-                </xsl:choose>                                                
-            </xsl:for-each>
-            <xsl:for-each select="//tei:p[contains(@ana,'#stan')]">
-                <xsl:variable name="date" select="replace(ancestor::tei:div[@type='day']/tei:dateline/tei:date/@when,'-','@')"/>
-                <xsl:value-of select="$date"/><xsl:text>@@@@@@@</xsl:text><xsl:apply-templates select="ancestor::tei:div[@type='day']/tei:dateline/tei:date" mode="date"/><xsl:text>@</xsl:text><xsl:apply-templates select="." mode="frise"/><xsl:text>
-                </xsl:text>
-            </xsl:for-each>
-            <!-\-<xsl:for-each select=" | tei:seg[@type='event']">
-                
-            </xsl:for-each>-\->
-        </xsl:result-document>
-    </xsl:template>
-    
-    <xsl:template match="tei:p" mode="frise">
-        <xsl:variable name="p"><xsl:apply-templates mode="frise"/></xsl:variable>
-        <xsl:value-of select="normalize-space($p)"/>
-    </xsl:template>
-    
-    <xsl:template match="tei:choice" mode="frise">
-        <xsl:apply-templates select="tei:expan"/>
-    </xsl:template>-->
-    
+        </ul>-->
+    </xsl:template>        
     
     <!-- *************** Calendrier Timeliner **************** -->
     
@@ -1569,6 +1660,177 @@
     
     <!-- **************** Cartographie **************** -->
     
+    <xsl:template match="/" mode="carte">
+        <xsl:result-document format="html" encoding="UTF-8" href="html/cartes.html">
+            <html>
+                <head>
+                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+                    <title>Édition du journal de Nicolas Durival ß</title>
+                    <meta charset="utf-8" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                    <link rel="stylesheet" href="../css/app.css" />
+                    <link rel="stylesheet" href="../css/foundation.css" />
+                    <link rel="stylesheet" href="../css/timeliner/timeliner.css" type="text/css" media="screen" />
+                    <link rel="stylesheet" href="../js/timeliner/vendor/venobox/venobox.css" type="text/css" media="screen" />
+                    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,900,700" rel="stylesheet" type="text/css" />
+                    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900,300" rel="stylesheet" type="text/css" />
+                    <script>
+                        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                        
+                        ga('create', 'UA-78667211-1', 'auto');
+                        ga('send', 'pageview');                            
+                    </script>
+                </head>
+                <body>
+                    <xsl:copy-of select="$header"/>
+                    <div class="row">
+                        <div class="large-12">
+                            <h2 class="text-center edito2">Les cartes</h2>
+                            <p class="edito"></p>
+                            <div class="large-4 columns">
+                                <div><!-- <h3 class="text-center edito2">Nancy en 1754</h3> --><br/></div>
+                                <a href="belprey.html" target="blank"><img src="../images/vignettes/vignetteBelprey.png"/></a><h3 class="text-center edito2">Le plan Belprey : 1754</h3>
+                                <br/>
+                                <h4 class="edito">Thomas Belprey (1713-1786).</h4>
+                                <cite class="edito">
+                                    Plan général des deux villes de Nancy et des nouveaux édifices que sa Majesté le roy de Pologne, duc de Lorraine et de Bar 
+                                    etc. y a fait construire. levé par Belprey, l'un des brigadiers de sa garde en 1754.
+                                </cite>
+                                <br />
+                                <p class="edito">
+                                    Ce plan présente une vue en perspective de la ville en 1754, soit avant l'achèvement de tous les travaux projetés par Stanislas. 
+                                    Il comporte douze vignettes qui représentent les principaux nouveaux bâtiments de la ville.
+                                </p>
+                            </div>
+                            <div class="large-4 columns">
+                                <div>
+                                    <br />
+                                    <a href="mique.html" target="blank"><img src="../images/vignettes/vignetteB543956101_H_FG_ES_00014.png"/></a>
+                                </div>
+                                <h3 class="text-center edito2">Le plan Mique : 1778</h3>
+                                <br />
+                                <h4 class="edito">Claude Mique.</h4>
+                                <cite class="edito">
+                                    Plan des villes, citadelle et faubourgs de Nancy, dédié à la Reine par son très humble et 
+                                    très obéissant serviteur C. Mique, architecte de feu Roi de Pologne à Nancy.
+                                </cite>
+                                <p class="edito">
+                                    Sur ce plan, toutes les réalisations voulues par Stanislas ont été réalisées. On peut y voir 
+                                    la nouvelle université (actuelle bibliothèque Stanislas), et le début de la destruction des bastions. 
+                                    Celui des Michotte a déjà disparu, laissant place à la nouvelle place de Grève.
+                                </p>
+                            </div>
+                            <div class="large-4 columns">
+                                <div>
+                                    <br />
+                                    <a href="cartographie.html" target="blank"><img src="../images/vignettes/vignetteCarte.png"/></a>
+                                    <h3 class="text-center edito2">Nancy aujourd'hui</h3>
+                                    <br />
+                                    <p class="edito">
+                                        Sur cette carte contemporaine, retrouvez les lieux évoqués par Durival. Cette superposition 
+                                        redessine la ville telle que Durival l'a parcouru, vous donnant accès à des informations sur 
+                                        des lieux qui sont toujours visibvles, ont été transformés ou qui parfois ont disparus. 
+                                    </p>
+                                </div>
+                            </div>                             
+                            <br />
+                        </div>                                                                        
+                    </div> 
+                    <xsl:copy-of select="$footer"/>
+                    <!-- FOOTER -->                    
+                    <script src="../js/vendor/jquery.js">/*Pour transformation xslt*/</script>
+                    <script src="../js/vendor/modernizr.js">/*Pour transformation xslt*/</script>
+                    <script src="../js/foundation.min.js">/*Pour transformation xslt*/</script>
+                    <script type="text/javascript" src="../js/timeliner/timeliner.min.js"></script>
+                    <script type="text/javascript" src="../js/timeliner/vendor/venobox/venobox.min.js"></script>
+                    <script>$(document).foundation();</script>
+                    <script>
+                        $(document).ready(function() {
+                        $.timeliner({});
+                        });
+                    </script>
+                </body>
+            </html>
+        </xsl:result-document> 
+    </xsl:template>
+    
+    <xsl:template match="/" mode="belprey">
+        <xsl:result-document format="html" encoding="UTF-8" href="html/belprey.html">
+            <html xmlns="http://www.w3.org/1999/xhtml">
+                <head>
+                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+                    <title>Édition du journal de Nicolas Durival ß</title>
+                    <meta charset="utf-8" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                    <link rel="stylesheet" href="../css/foundation.css" />
+                    <link rel="stylesheet" href="../css/app.css" />
+                    <link rel="stylesheet" href="../js/leaflet/leaflet.css" />
+                    <script>
+                        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                        
+                        ga('create', 'UA-78667211-1', 'auto');
+                        ga('send', 'pageview');                            
+                    </script>
+                </head>
+                <body class="zoomify">
+                    <xsl:copy-of select="$mapHeader"/>
+                    <div id="photo"></div>
+                    <script src="../js/leaflet/leafletZ.js"></script>
+                    <script type="text/javascript" src="../js/leaflet/L.TileLayer.Zoomify.js"></script>
+                    <script type="text/javascript" src="../js/cartographie/belprey.js"></script>
+                    <script src="../js/vendor/jquery.js"></script>
+                    <script src="../js/foundation.min.js"></script>
+                    <script src="../js/vendor/modernizr.js"></script>
+                    <script src="../js/modernisation/modernisation.js"></script>
+                    <script>$(document).foundation();</script>
+                </body>
+            </html>
+        </xsl:result-document> 
+    </xsl:template>
+    
+    <xsl:template match="/" mode="mique">
+        <xsl:result-document format="html" encoding="UTF-8" href="html/mique.html">
+            <html xmlns="http://www.w3.org/1999/xhtml">
+                <head>
+                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+                    <title>Édition du journal de Nicolas Durival ß</title>
+                    <meta charset="utf-8" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                    <link rel="stylesheet" href="../css/foundation.css" />
+                    <link rel="stylesheet" href="../css/app.css" />
+                    <link rel="stylesheet" href="../js/leaflet/leaflet.css" />
+                    <script>
+                        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                        
+                        ga('create', 'UA-78667211-1', 'auto');
+                        ga('send', 'pageview');                            
+                    </script>
+                </head>
+                <body class="zoomify">
+                    <xsl:copy-of select="$mapHeader"/>
+                    <div id="photo"></div>
+                    <script src="../js/leaflet/leafletZ.js"></script>
+                    <script type="text/javascript" src="../js/leaflet/L.TileLayer.Zoomify.js"></script>
+                    <script src="../js/cartographie/mique.js"></script>
+                    <script src="../js/vendor/jquery.js"></script>
+                    <script src="../js/foundation.min.js"></script>
+                    <script src="../js/vendor/modernizr.js"></script>
+                    <script src="../js/modernisation/modernisation.js"></script>
+                    <script>$(document).foundation();</script>
+                </body>
+            </html>
+        </xsl:result-document> 
+    </xsl:template>        
+    
     <xsl:template match="//tei:div[@type='index'][descendant::tei:listPlace[@xml:id='listPlace']][descendant::tei:listOrg[@xml:id='listOrg']]" mode="cartographie">
         <!--<xsl:template match="//tei:listPlace[@xml:id='listPlace']" mode="cartographie">-->        
         <xsl:result-document format="html" encoding="UTF-8" href="html/cartographie.html">
@@ -1613,15 +1875,12 @@
                         id: 'mapbox.streets'
                         }).addTo(mymap);
                         
-                        var base2 = L.tileLayer('http://mapwarper.net/maps/tile/13564/{z}/{x}/{y}.png', {
-                        maxZoom: 20, attribution: 'Map data ©; OpenStreetMap contributors, ' +
-                        'CC-BY-SA, ' +
-                        'Imagery © Mapbox',
-                        id: 'mapbox.streets'
-                        })/*.addTo(mymap)*/;
-                        
-                        //todo besoin de cette ligne ?
-                        var baseLayers = null;
+                        //var base2 = L.tileLayer('http://mapwarper.net/maps/tile/13564/{z}/{x}/{y}.png', {
+                        //maxZoom: 20, attribution: 'Map data ©; OpenStreetMap contributors, ' +
+                        //'CC-BY-SA, ' +
+                        //'Imagery © Mapbox',
+                        //id: 'mapbox.streets'
+                        //})/*.addTo(mymap)*/;                                                
                         
                         // ICONES SUPPLEMENTAIRES
                         var iconA = L.icon({
@@ -1910,12 +2169,10 @@
                         </xsl:for-each>
                         
                         var baseLayers = null;
-                        var baseLayers = {
+                        /*var baseLayers = {
                             'Fond de carte contemporain': base1,
                             'Carte ancienne': base2
-                        };
-                        
-                        //var baseLayers = null;
+                        };*/                                                
                         
                         var overlayMaps = {
                         "Établissements religieux": religious,
@@ -1964,7 +2221,8 @@
                         <meta charset="utf-8" />
                         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                         <link rel="stylesheet" href="../css/app.css" />
-                        <link rel="stylesheet" href="../css/foundation.css" />            
+                        <link rel="stylesheet" href="../css/foundation.css" />                                                                   
+                        <link href="../css/lightbox/lightbox.css" rel="stylesheet" />
                         <link rel="stylesheet" href="../css/timeliner/timeliner.css" type="text/css" media="screen"/>
                         <link rel="stylesheet" href="../js/timeliner/vendor/venobox/venobox.css" type="text/css" media="screen"/>
                         
@@ -2007,6 +2265,14 @@
                                                         <dt class="timeline-event" id="{$id}"><a><xsl:value-of select="tei:head[@n='3']"/></a></dt>
                                                         <span class="tick tick-after" />
                                                         <dd class="timeline-event-content" id="{$id}EX">
+                                                            <xsl:if test=".//tei:graphic">
+                                                                <div class="media">
+                                                                    <a class="focus" href="../images/{.//tei:graphic/@url}.jpg" data-lightbox="bio">
+                                                                        <img src="../images/{.//tei:graphic/@url}.jpg" alt="Placard"/>
+                                                                    </a>
+                                                                    <!--<a class="focus" href="../images/{.//tei:graphic/@url}.jpg" data-lightbox="#"><img src="../images/{.//tei:graphic/@url}.jpg" alt="Placard"/></a>-->                                                                    
+                                                                </div><!-- /.media -->
+                                                            </xsl:if>
                                                             <xsl:for-each select="tei:p">
                                                                 <p>
                                                                     <xsl:apply-templates select="."/>
@@ -2022,10 +2288,11 @@
                                 </div>                           
                             </div>
                         </div>
-                        <xsl:copy-of select="$footer"/>
+                        <xsl:copy-of select="$footer"/>                        
                         <script src="../js/vendor/jquery.js">/*Pour transformation xslt*/</script>
                         <script src="../js/vendor/modernizr.js">/*Pour transformation xslt*/</script>
-                        <script src="../js/foundation.min.js">/*Pour transformation xslt*/</script>                                                                                                         
+                        <script src="../js/foundation.min.js">/*Pour transformation xslt*/</script>
+                        <script src="../js/lightbox/lightbox.js"></script>
                         <script type="text/javascript" src="../js/timeliner/timeliner.min.js"></script>
                         <script type="text/javascript" src="../js/timeliner/vendor/venobox/venobox.min.js"></script>
                         <script>$(document).foundation();</script>
@@ -2041,178 +2308,7 @@
     </xsl:template>
     
     <!-- *********** Autres pages Web ***********-->
-    <xsl:template match="/" mode="belprey">
-        <xsl:result-document format="html" encoding="UTF-8" href="html/belprey.html">
-            <html xmlns="http://www.w3.org/1999/xhtml">
-                <head>
-                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-                    <title>Édition du journal de Nicolas Durival ß</title>
-                    <meta charset="utf-8" />
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                    <link rel="stylesheet" href="../css/foundation.css" />
-                    <link rel="stylesheet" href="../css/app.css" />
-                    <link rel="stylesheet" href="../js/leaflet/leaflet.css" />
 
-                    <script>
-                        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-                        
-                        ga('create', 'UA-78667211-1', 'auto');
-                        ga('send', 'pageview');                            
-                    </script>
-                </head>
-                <body>
-                    <xsl:copy-of select="$mapHeader"/>
-
-                    <div id="mapid"></div>
-                    <script src="../js/leaflet/leaflet.js"></script>
-                    <script src="../js/cartographie/belprey.js"></script>
-                    <script src="../js/vendor/jquery.js"></script>
-                    <script src="../js/foundation.min.js"></script>
-                    <script src="../js/vendor/modernizr.js"></script>
-                    <script src="../js/modernisation/modernisation.js"></script>
-                    <script>$(document).foundation();</script>
-                </body>
-            </html>
-        </xsl:result-document> 
-
-
-    </xsl:template>
-    
-    <xsl:template match="/" mode="mique">
-        <xsl:result-document format="html" encoding="UTF-8" href="html/mique.html">
-            <html xmlns="http://www.w3.org/1999/xhtml">
-                <head>
-                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-                    <title>Édition du journal de Nicolas Durival ß</title>
-                    <meta charset="utf-8" />
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                    <link rel="stylesheet" href="../css/foundation.css" />
-                    <link rel="stylesheet" href="../css/app.css" />
-                    <link rel="stylesheet" href="../js/leaflet/leaflet.css" />
-                    <script>
-                        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-                        
-                        ga('create', 'UA-78667211-1', 'auto');
-                        ga('send', 'pageview');                            
-                    </script>
-                </head>
-                <body>
-                    <xsl:copy-of select="$mapHeader"/>
-                    <div id="mapid"></div>
-                    <script src="../js/leaflet/leaflet.js"></script>
-                    <script src="../js/cartographie/mique.js"></script>
-                    <script src="../js/vendor/jquery.js"></script>
-                    <script src="../js/foundation.min.js"></script>
-                    <script src="../js/vendor/modernizr.js"></script>
-                    <script src="../js/modernisation/modernisation.js"></script>
-                    <script>$(document).foundation();</script>
-                </body>
-            </html>
-        </xsl:result-document> 
-    </xsl:template>
-    
-    <xsl:template match="/" mode="carte">
-        <xsl:result-document format="html" encoding="UTF-8" href="html/cartes.html">
-            <html>
-                <head>
-                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-                    <title>Édition du journal de Nicolas Durival ß</title>
-                    <meta charset="utf-8" />
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                    <link rel="stylesheet" href="../css/app.css" />
-                    <link rel="stylesheet" href="../css/foundation.css" />
-                    <link rel="stylesheet" href="../css/timeliner/timeliner.css" type="text/css" media="screen" />
-                    <link rel="stylesheet" href="../js/timeliner/vendor/venobox/venobox.css" type="text/css" media="screen" />
-                    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,900,700" rel="stylesheet" type="text/css" />
-                    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900,300" rel="stylesheet" type="text/css" />
-                    <script>
-                        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-                        
-                        ga('create', 'UA-78667211-1', 'auto');
-                        ga('send', 'pageview');                            
-                    </script>
-                </head>
-                <body>
-                    <xsl:copy-of select="$header"/>
-                    <div class="row">
-                        <div class="large-12">
-                            <h2 class="text-center edito2">Les cartes</h2>
-                            <p class="edito"></p>
-                            <div class="large-4 columns">
-                                <div><!-- <h3 class="text-center edito2">Nancy en 1754</h3> --><br/></div>
-                                <a href="belprey.html" target="blank"><img src="../images/vignettes/vignetteBelprey.png"/></a><h3 class="text-center edito2">Le plan Belprey : 1754</h3>
-                            <br/>
-                                <h4 class="edito">Thomas Belprey (1713-1786).</h4>
-                                <cite class="edito">
-                                    Plan général des deux villes de Nancy et des nouveaux édifices que sa Majesté le roy de Pologne, duc de Lorraine et de Bar 
-                                    etc. y a fait construire. levé par Belprey, l'un des brigadiers de sa garde en 1754.
-                                </cite>
-                                <br />
-                                <p class="edito">
-                                    Ce plan présente une vue en perspective de la ville en 1754, soit avant l'achèvement de tous les travaux projetés par Stanislas. 
-                                    Il comporte douze vignettes qui représentent les principaux nouveaux bâtiments de la ville.
-                                </p>
-                            </div>
-                            <div class="large-4 columns">
-                                <div>
-                                    <br />
-                                    <a href="mique.html" target="blank"><img src="../images/vignettes/vignetteB543956101_H_FG_ES_00014.png"/></a>
-                                </div>
-                                <h3 class="text-center edito2">Le plan Mique : 1778</h3>
-                                <br />
-                                <h4 class="edito">Claude Mique.</h4>
-                                <cite class="edito">
-                                    Plan des villes, citadelle et faubourgs de Nancy, dédié à la Reine par son très humble et 
-                                    très obéissant serviteur C. Mique, architecte de feu Roi de Pologne à Nancy.
-                                </cite>
-                                <p class="edito">
-                                    Sur ce plan, toutes les réalisations voulues par Stanislas ont été réalisées. On peut y voir 
-                                    la nouvelle université (actuelle bibliothèque Stanislas), et le début de la destruction des bastions. 
-                                    Celui des Michotte a déjà disparu, laissant place à la nouvelle place de Grève.
-                                </p>
-                            </div>
-                            <div class="large-4 columns">
-                                <div>
-                                    <br />
-                                    <a href="cartographie.html" target="blank"><img src="../images/vignettes/vignetteCarte.png"/></a>
-                                    <h3 class="text-center edito2">Nancy aujourd'hui</h3>
-                                    <br />
-                                    <p class="edito">
-                                        Sur cette carte contemporaine, retrouvez les lieux évoqués par Durival. Cette superposition 
-                                        redessine la ville telle que Durival l'a parcouru, vous donnant accès à des informations sur 
-                                        des lieux qui sont toujours visibvles, ont été transformés ou qui parfois ont disparus. 
-                                    </p>
-                                </div>
-                            </div>                             
-                            <br />
-                        </div>                                                                        
-                    </div> 
-                    <xsl:copy-of select="$footer"/>
-                    <!-- FOOTER -->                    
-                    <script src="../js/vendor/jquery.js">/*Pour transformation xslt*/</script>
-                    <script src="../js/vendor/modernizr.js">/*Pour transformation xslt*/</script>
-                    <script src="../js/foundation.min.js">/*Pour transformation xslt*/</script>
-                    <script type="text/javascript" src="../js/timeliner/timeliner.min.js"></script>
-                    <script type="text/javascript" src="../js/timeliner/vendor/venobox/venobox.min.js"></script>
-                    <script>$(document).foundation();</script>
-                    <script>
-                        $(document).ready(function() {
-                        $.timeliner({});
-                        });
-                    </script>
-                </body>
-            </html>
-        </xsl:result-document> 
-    </xsl:template>   
 
     <xsl:template match="/" mode="focus">
         <xsl:result-document format="html" encoding="UTF-8" href="html/focus.html">
@@ -2289,6 +2385,91 @@
                 </body>
             </html>
         </xsl:result-document> 
+    </xsl:template>
+    
+<!--  ************************** A propos *****************************  -->
+    <xsl:template match="tei:projectDesc/tei:p" mode="projecDesc">
+        <p><xsl:apply-templates mode="projecDesc"/></p>
+    </xsl:template>
+    <xsl:template match="tei:projectDesc//tei:lb" mode="projecDesc">
+        <br />
+    </xsl:template>
+    <xsl:template match="tei:projectDesc//tei:ref" mode="projecDesc">
+        <xsl:for-each select=".">
+            <xsl:choose>
+                <xsl:when test="@type='mailto'">
+                    <a href="mailto:{@target}"><xsl:apply-templates mode="projecDesc"></xsl:apply-templates></a>
+                </xsl:when>
+                <xsl:when test="@type='externalLink'">
+                    <a target="_blank" href="{@target}"><xsl:apply-templates mode="projecDesc"></xsl:apply-templates></a>
+                </xsl:when>
+            </xsl:choose>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template match="tei:projectDesc//tei:list" mode="projecDesc">
+        <ul class="no-bullet">
+            <xsl:for-each select="tei:item">
+                <li class="enum"><xsl:apply-templates select="." mode="projecDesc"/></li>
+            </xsl:for-each>
+        </ul>
+    </xsl:template>
+    
+    <xsl:template match="tei:projectDesc//tei:hi" mode="projecDesc">
+        <xsl:for-each select=".">
+            <xsl:choose>
+                <xsl:when test="@rend='super'"><sup><xsl:apply-templates mode="projecDesc"/></sup></xsl:when>
+                <xsl:when test="not(@*)"><h2 class="section"><xsl:apply-templates mode="projecDesc"/></h2></xsl:when>
+            </xsl:choose>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template match="tei:projectDesc" mode="projecDesc">
+        <xsl:result-document format="html" encoding="UTF-8" href="html/apropos.html">
+            <html>
+                <head>
+                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+                    <title>Édition du journal de Nicolas Durival ß</title>
+                    <meta charset="utf-8" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                    <link rel="stylesheet" href="../css/app.css" />
+                    <link rel="stylesheet" href="../css/foundation.css" />                                        
+                    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,900,700" rel="stylesheet" type="text/css" />
+                    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900,300" rel="stylesheet" type="text/css" />
+                    <script>
+                        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                        
+                        ga('create', 'UA-78667211-1', 'auto');
+                        ga('send', 'pageview');                            
+                    </script>
+                </head>
+                <body>
+                    <xsl:copy-of select="$header"/>
+                    <div class="row">
+                        <div class="large-12">
+                            <h1>L'édition du Journal de Durival</h1>
+                            <xsl:apply-templates mode="projecDesc"/>
+                        </div>
+                    </div>
+                    <xsl:copy-of select="$footer"/>
+                    <!-- FOOTER -->                    
+                    <script src="../js/vendor/jquery.js">/*Pour transformation xslt*/</script>
+                    <script src="../js/vendor/modernizr.js">/*Pour transformation xslt*/</script>
+                    <script src="../js/foundation.min.js">/*Pour transformation xslt*/</script>
+                    <script type="text/javascript" src="../js/timeliner/timeliner.min.js"></script>
+                    <script type="text/javascript" src="../js/timeliner/vendor/venobox/venobox.min.js"></script>
+                    <script>$(document).foundation();</script>
+                    <script>
+                        $(document).ready(function() {
+                        $.timeliner({});
+                        });
+                    </script>
+                </body>
+            </html>
+        </xsl:result-document>
     </xsl:template>
     
 </xsl:stylesheet>

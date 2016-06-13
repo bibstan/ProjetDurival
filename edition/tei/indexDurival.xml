@@ -89,7 +89,7 @@
                <persName><surname>Guyot</surname><roleName>abbé</roleName></persName>
             </person>
             <person xml:id="abbeMontignot">
-               <persName><surname>Montignot</surname><forename>Henri</forename><roleName>abbé</roleName></persName>               
+               <persName><surname>Montignot</surname><forename>Henri</forename><roleName>abbé</roleName></persName>
                <birth when="1715"/>
                <listEvent>
                   <event>
@@ -112,7 +112,7 @@
             <person xml:id="abbeRoyer">
                <persName><surname>Royer</surname><roleName>abbé</roleName></persName>
             </person>
-            
+
             <!-- todo fusionner les 4 entrées ? -->
             <person xml:id="abbesseStLouis">
                <persName><surname>Choiseul-Stainville</surname><forename>Charlotte-Eugénie de</forename></persName>
@@ -135,14 +135,14 @@
                   </event>
                </listEvent>
             </person>
-            
+
             <person xml:id="choiseulMme">
                <persName><surname>Choiseul</surname><addName>M<hi rend="super">me</hi> de</addName></persName>
                <state>
                   <p>Abbesse de S. Louis</p>
                </state>
             </person>
-            
+
             <person xml:id="aiguillonDuchesse"><!-- voir si renvoi à Aiguillon -->
                <persName><surname>Brehan de Plélo</surname><forename>Louise-Félicité de</forename><roleName>duchesse d'Aiguillon</roleName></persName>
                <birth when="1726"/>
@@ -223,7 +223,7 @@
                <state><p>comédien</p></state>
             </person>
             <person xml:id="aufresnePere">
-               <persName><surname>Aufresne <hi rend="italic">(père)</hi></surname></persName>               
+               <persName><surname>Aufresne <hi rend="italic">(père)</hi></surname></persName>
             </person>
             <person xml:id="aumonierSuede"><!-- TODO  -->
                <persName><surname>Aumônier de l'ambassade de Suède</surname></persName>
@@ -276,9 +276,9 @@
                <listEvent>
                   <event><p>Chevalier de saint louis</p></event>
                   <event><p>ingénieur en chef à Nancy à partir de 1737</p></event>
-               </listEvent>               
+               </listEvent>
             </person>
-            
+
             <person xml:id="beauchamps">
                <persName><surname>Beauchamps</surname><addName>M. de</addName></persName>
                <death when="1766"/>
@@ -286,7 +286,7 @@
                   <event><p>Ancien lieutenant du roi</p></event>
                </listEvent>
             </person>
-            
+
             <person xml:id="beauvau">
                <persName><surname>Beauvau</surname><forename>Charles Juste</forename><roleName>prince de</roleName></persName>
                <birth when="1720"/>
@@ -312,13 +312,13 @@
                   <event><p>Receveur de la fondation des maladies épidémiques</p></event>
                </listEvent>
             </person>
-            
+
             <person xml:id="belloy"><!-- todo dit Dormont de Belloy -->
                <persName><surname>Buirette de Belloy</surname><forename>Pierre-Laurent</forename></persName>
                <state><p>comédien</p></state>
                <birth when="1727"/>
                <death when="1775"/>
-               <listEvent>                  
+               <listEvent>
                   <event><p>Triomphe de sa première pièce en 1765, Le siège de Calais - membre de l'Académie française le 23/11/1791</p></event>
                </listEvent>
             </person>
@@ -385,12 +385,12 @@
                <persName><surname>Bouchon</surname><addName>M.</addName></persName>
                <listEvent>
                   <event><p>Epoux de Marianne Breton et fils d'un marchand de Ligny</p></event>
-               </listEvent>               
+               </listEvent>
             </person>
             <person xml:id="boufflersMis">
                <persName><surname>Boufflers</surname><forename>Charles-Marc</forename><roleName>marquis de</roleName></persName>
                <birth when="1736"/>
-               <death when="1783"/>               
+               <death when="1783"/>
             </person>
             <person xml:id="boufflersStanislas2">
                <!-- renvoi -->
@@ -436,7 +436,7 @@
             <person xml:id="bremon">
                <persName><surname>Bremon</surname><addName>M.</addName></persName>
             </person>
-            
+
             <person xml:id="bremont">
                <persName><surname>Brémont <hi rend="italic">(père)</hi></surname></persName>
                <listEvent>
@@ -445,11 +445,11 @@
                   </event>
                </listEvent>
             </person>
-            
+
             <person xml:id="bressey">
                <persName><surname>Bressey</surname><roleName>abbé de</roleName></persName>
             </person>
-            
+
             <person xml:id="bresson">
                <persName><surname>Bresson</surname><forename>Louis de</forename></persName>
                <birth when="1721"/>
@@ -460,7 +460,7 @@
                   <event><p>avocat au Parlement de Paris</p></event>
                </listEvent>
             </person>
-            
+
             <person xml:id="breton">
                <persName><surname>Breton</surname><forename>Jean Charles</forename></persName>
                <listEvent><!-- todo vérif -->
@@ -533,19 +533,18 @@
             </person>
             <person xml:id="chancelierLudres"><!-- todo -->
                <persName><surname>Ludres</surname><roleName>M. le chancelier de</roleName></persName>
-            </person>
-            <person xml:id="chapuis">
-               <persName><surname>Chapuis</surname><addName>M.</addName></persName>
-            </person>
+            </person>            
             <person xml:id="chapuisComedien">
                <persName><surname>Chapuis</surname><addName>M.</addName></persName>
                <state><p>Directeur de l'opéra Bouffon</p></state>
             </person>
             <person xml:id="chapuisFils">
-               <persName><surname>Chapuis <hi rend="italic">(fils)</hi></surname></persName>
+               <persName><surname>Chapuis <hi rend="italic">(fils)</hi></surname><forename>Louis-Gabriel</forename></persName>
+               <state><p>avocat à la cour, procureur syndic</p></state>
             </person>
             <person xml:id="chapuisPere">
-               <persName><surname>Chapuis <hi rend="italic">(père)</hi></surname></persName>
+               <persName><surname>Chapuis <hi rend="italic">(père)</hi></surname><forename>Guillaume</forename></persName>
+               <state><p>conseiller de la ville, libraire</p></state>
             </person>
             <person xml:id="charles">
                <persName><surname>Charles</surname></persName>
@@ -626,7 +625,7 @@
                <birth when="1712"/>
                <death when="1785"/>
             </person>
-            
+
             <person xml:id="christineSaxe">
                <persName><surname>Saxe</surname><forename>Christine de</forename></persName>
                <birth when="1735"/>
@@ -731,7 +730,7 @@
                </listEvent>
             </person>
             <person xml:id="cureCommercy">
-               <persName>Le curé de Commercy</persName>
+               <persName><surname>Commercy</surname><roleName>curé de</roleName></persName>
             </person>
             <person xml:id="custine">
                <persName><surname>Custine</surname><addName>M.</addName></persName>
@@ -759,7 +758,7 @@
                </listEvent>
             </person>
             <person xml:id="dAuthieulles">
-               <persName><surname>Godard d'Authieulle</surname><forename>Philippe de</forename></persName>               
+               <persName><surname>Godard d'Authieulle</surname><forename>Philippe de</forename></persName>
                <listEvent>
                   <event><p>chevalier de Saint-Louis</p></event>
                   <event><p>lieutenant du roi</p></event>
@@ -862,7 +861,7 @@
                <persName><surname>Demange</surname><forename>Anne-Marie</forename></persName>
                <listEvent>
                   <event><p>Ancienne concierge de Durival</p></event>
-               </listEvent>               
+               </listEvent>
             </person>
             <person xml:id="deMontal">
                <persName><surname>Montal</surname><addName>M. de</addName></persName>
@@ -928,8 +927,8 @@
                </listEvent>
             </person>
             <person xml:id="deschampsdeVillers">
-               <persName><surname>Deschamps de Villers</surname><addName>M<hi rend="super">e</hi></addName></persName>   
-               <state><p>Avocat</p></state>               
+               <persName><surname>Deschamps de Villers</surname><addName>M<hi rend="super">e</hi></addName></persName>
+               <state><p>Avocat</p></state>
             </person>
             <person xml:id="deSerre">
                <persName><surname>Serre</surname><addName>M. de</addName><roleName/></persName>
@@ -1080,7 +1079,7 @@
                <persName><surname>Durival</surname><forename>Claude</forename><addName type="say">le jeune</addName></persName>
             </person>
             <person xml:id="durivalJean"><!-- todo vérif -->
-               <persName><surname>Durival</surname><forename>Jean-Baptiste Lutton</forename><addName type="say">commissaire</addName></persName>
+               <persName><surname>Durival</surname><forename>Jean-Baptiste Lutton</forename><addName type="say">le commissaire</addName></persName>
                <birth when="1725"/>
                <death when="1810"/>
                <listEvent>
@@ -1162,8 +1161,8 @@
                </listEvent>
             </person>
             <person xml:id="feriet">
-               <persName><surname>Feriet</surname><addName>M.</addName></persName>   
-               <state><p>Secrétaire d'État</p></state>               
+               <persName><surname>Feriet</surname><addName>M.</addName></persName>
+               <state><p>Secrétaire d'État</p></state>
             </person>
             <person xml:id="figean">
                <persName><surname>Figean</surname><addName>P.</addName></persName>
@@ -1173,7 +1172,7 @@
                <state><p>comédien</p></state>
             </person>
             <person xml:id="foliot">
-               <persName><surname>Foliot</surname><addName>abbé</addName></persName>               
+               <persName><surname>Foliot</surname><addName>abbé</addName></persName>
             </person>
             <person xml:id="fontelle">
                <persName><surname>Fontelle</surname><addName>M. de</addName></persName>
@@ -1230,7 +1229,7 @@
             <person xml:id="gautier">
                <persName><surname>Gautier</surname><roleName>abbé</roleName></persName>
             </person>
-            
+
             <!-- todo distinguer les Gignéville ? -->
             <person xml:id="gautierGigneville">
                <persName><surname>Gauthier de Gignéville</surname><forename>Guillaume Hyacinthe</forename><roleName>seigneur de Gignéville</roleName></persName>
@@ -1248,7 +1247,7 @@
                   <event><p>fils du conseiller à la chambre des comptes de Lorraine</p></event>
                </listEvent>
             </person>
-            
+
             <person xml:id="gigneville">
                <persName><surname>Gignéville</surname><addName>M. de</addName></persName>
                <death when="1765"/>
@@ -1259,7 +1258,7 @@
                <state><p>chevalier de Saint-Louis</p></state>
                <listEvent><event><p>maitre des comptes</p></event></listEvent>
             </person>
-            
+
             <person xml:id="gauvinVe">
                <persName><surname>Gauvin</surname><addName>V<hi rend="super">e</hi></addName></persName>
             </person>
@@ -1270,7 +1269,7 @@
             <person xml:id="georgeIII">
                <persName><surname>George III</surname><roleName>roi d'Angleterre</roleName></persName>
                <birth when="1738"/>
-               <death when="1820"/>               
+               <death when="1820"/>
             </person>
             <person xml:id="georgin">
                <persName><surname>Georgin</surname><addName>M<hi rend="super">lle</hi></addName></persName>
@@ -1292,12 +1291,12 @@
                <persName><surname>Lambertye</surname><forename>Camille de</forename><roleName>marquis de Gerbeviller</roleName></persName>
                <birth when="1714"/>
                <death when="1770"/>
-               <listEvent>                  
+               <listEvent>
                   <event><p>Chambellan de l'empereur</p></event>
                   <event><p>grand louvetier du roi de Pologne</p></event>
                </listEvent>
             </person>
-            
+
             <person xml:id="gillyBernard">
                <persName><surname>Gilly</surname><forename>Bernard</forename></persName>
                <state><p>Italien</p></state>
@@ -1337,7 +1336,7 @@
                <state><p>Bâtonnier des avocats</p></state>
             </person>
             <person xml:id="grandpair">
-               <persName><surname>Grandpair</surname><roleName>abbé</roleName></persName>               
+               <persName><surname>Grandpair</surname><roleName>abbé</roleName></persName>
             </person>
             <person xml:id="granvilleMme">
                <persName><surname>Royer de Marainville</surname><forename>Elisabeth-Charlotte-Léopoldine</forename><roleName>comtesse de Grandville</roleName></persName>
@@ -1347,7 +1346,7 @@
                   <event><p>épouse de Monsieur de Grandville ancien chambellan du duc Léopold</p></event>
                </listEvent>
             </person>
-            
+
             <person xml:id="gronierMlle">
                <persName><surname>Gronier</surname><addName>M<hi rend="super">lle</hi></addName></persName>
                <state><p>Comédienne</p></state>
@@ -1356,7 +1355,7 @@
                <persName><surname>Grossier</surname><addName>M<hi rend="super">lle</hi></addName></persName>
                <state><p>Comédienne</p></state>
             </person>
-            
+
             <person xml:id="guerchyComte"><!-- todo renvoi ? -->
                <persName><surname>Régnier</surname><forename>Claude-Louis-François</forename><roleName>comte de Guerchy, marquis de Nangis</roleName></persName>
                <birth when="1715"/>
@@ -1513,7 +1512,7 @@
                <state><p>Jardinier et concierge de Nicolas Durival à Heillecourt</p></state>
             </person>
             <person xml:id="lallementMathieu">
-               <persName><surname>Lallement</surname><forename>Mathieu</forename></persName>               
+               <persName><surname>Lallement</surname><forename>Mathieu</forename></persName>
             </person>
             <person xml:id="lambert"><!-- todo vérif -->
                <persName><surname>Saint Lambert</surname><forename>Jean-François</forename><roleName>marquis de</roleName></persName>
@@ -1621,11 +1620,8 @@
             </person>
             <person xml:id="lePelletier">
                <persName><surname>Le Pelletier de Beauprés</surname><addName>M.</addName></persName>
-            </person>
-            <person xml:id="leSeur">
-               <persName><surname>Le Seur</surname><addName>M.</addName></persName>
-            </person>
-            <person xml:id="leSeure">
+            </person>            
+            <person xml:id="leseure">
                <persName><surname>Leseure</surname><forename>Claude</forename></persName>
                <state><p>maître imprimeur</p></state>
                <birth when="1734"/>
@@ -1635,7 +1631,7 @@
                   <event><p>imprimeur ordinaire du Roi (1757), del'évêque Né en 1733 ou 1734. Chargé des impressions pour l'intendance et la Société royale et littéraire</p></event>
                   <event><p>installé rue Saint-Dizier</p></event>
                </listEvent>
-            </person>
+            </person>            
             <person xml:id="leslie">
                <persName><surname>Leslie</surname><forename>Ernest</forename></persName>
                <birth when="1713"/>
@@ -1652,7 +1648,7 @@
                <listEvent><event><p>reine de France par son mariage avec Louis XV en 1725</p></event></listEvent>
             </person>
             <person xml:id="leTexierElisabeth">
-               <persName><surname>Le Texier</surname><forename>Elisabeth-Henriette</forename></persName>               
+               <persName><surname>Le Texier</surname><forename>Elisabeth-Henriette</forename></persName>
                <death when="1766"/>
                <listEvent><event><p>épouse de M. Leopold de Bourcier de They, lieutenant colonel des Gardes du duc Leopold</p></event></listEvent>
             </person>
@@ -1667,8 +1663,8 @@
                <persName><surname>Liebault</surname><forename>Jean</forename></persName>
                <listEvent><event><p>membre de l'Académie dès 1755-1756</p></event></listEvent>
             </person>
-            <person xml:id="ligneville"><!-- todo la date donnée ne correspondait pas aux écrits de Durival -->
-               <persName><surname>Lignéville</surname><roleName>abbé et comte de</roleName></persName>                              
+            <person xml:id="ligneville">
+               <persName><surname>Ligniville</surname><forename>Henri-Honoré</forename><roleName>abbé et comte de</roleName></persName><!-- Pfister histoire de Nancy -->
                <death when="1765"/>
                <state><p>chanoine de Bayeux</p></state>
             </person>
@@ -1715,7 +1711,7 @@
                </listEvent>
             </person>
             <person xml:id="louisXVI"><!-- todo garder cette dénomination ou simplifier en Louis XVI (mais il ne l'est pas encore) ? -->
-               <persName><forename>Louis-Auguste</forename><surname>de France</surname><roleName>duc de Berry</roleName></persName>               
+               <persName><forename>Louis-Auguste</forename><surname>de France</surname><roleName>duc de Berry</roleName></persName>
                <birth when="1754"/>
                <death when="1793"/>
                <listEvent><event><p>Louis XVI, roi de France de 1774 à 1791</p></event></listEvent>
@@ -1782,16 +1778,16 @@
                <listEvent><event><p>Sous-bibliothécaire de la bibliothèque publique (1763)</p></event></listEvent>
             </person>
             <person xml:id="masson">
-               <persName><surname>Masson</surname><addName>M.</addName></persName>               
+               <persName><surname>Masson</surname><addName>M.</addName></persName>
             </person>
             <person xml:id="mathis">
-               <persName><surname>Mathis</surname><addName>M.</addName></persName>               
+               <persName><surname>Mathis</surname><addName>M.</addName></persName>
                <listEvent><event><p>Ancien prévôt de Boucquemont</p></event></listEvent>
             </person>
             <person xml:id="mengin">
                <persName><surname>Mengin</surname><addName>M.</addName></persName>
                <death when="1766"/>
-               <state><p>procureur du Roi</p></state>               
+               <state><p>procureur du Roi</p></state>
             </person>
             <person xml:id="menginArnould">
                <persName><surname>Mengin Arnould</surname><addName>M.</addName></persName>
@@ -1959,7 +1955,7 @@
                <birth when="1729"/>
                <death when="1794"/>
                <listEvent>
-                  <event><p>première dame d'honneur de Marie Leszczynska</p></event>                  
+                  <event><p>première dame d'honneur de Marie Leszczynska</p></event>
                </listEvent>
             </person>
             <person xml:id="noelVe">
@@ -2065,7 +2061,7 @@
                <death when="1795"/>
                <listEvent>
                   <event><p>propriétaire du château de Montaigu</p></event>
-                  <event><p>épouse de Bon Prevost, receveur général des fermes de Lorraine</p></event>                  
+                  <event><p>épouse de Bon Prevost, receveur général des fermes de Lorraine</p></event>
                </listEvent>
             </person>
             <person xml:id="princeBrunswic">
@@ -2111,7 +2107,7 @@
                </listEvent>
             </person>
             <person xml:id="rausch">
-               <persName><surname>Rausch</surname><forename>Conrad</forename></persName>               
+               <persName><surname>Rausch</surname><forename>Conrad</forename></persName>
             </person>
             <person xml:id="receveurGeneral">
                <persName><persName>le Receveur général des fermes</persName></persName>
@@ -2182,7 +2178,7 @@
                <listEvent><event><p>fournisseur des casernes</p></event></listEvent>
             </person>
             <person xml:id="rorteMme">
-               <persName><surname>Aucy de Vioncourt</surname><forename>Marie d'</forename></persName>               
+               <persName><surname>Aucy de Vioncourt</surname><forename>Marie d'</forename></persName>
                <death when="1765"/>
                <listEvent>
                   <event><p>Mère du marquis Des Salles</p></event>
@@ -2209,7 +2205,7 @@
                <persName><surname>Sanlaville</surname><addName>M<hi rend="super">me</hi></addName></persName>
             </person>
             <person xml:id="saulxMis">
-               <persName><surname>Saulx</surname><roleName>marquis de</roleName></persName>               
+               <persName><surname>Saulx</surname><roleName>marquis de</roleName></persName>
             </person>
             <person xml:id="schmidt">
                <persName><surname>Schmidt</surname><addName>M.</addName></persName>
@@ -2263,7 +2259,7 @@
                <persName><surname>Sirejean <hi rend="italic">(père)</hi></surname><addName>M.</addName></persName>
             </person>
             <person xml:id="sirejeanfils">
-               <persName><surname>Sirejean <hi rend="italic">(fils)</hi></surname><addName>M.</addName></persName>                           
+               <persName><surname>Sirejean <hi rend="italic">(fils)</hi></surname><addName>M.</addName></persName>
             </person>
             <person xml:id="sivry">
                <persName><surname>Sivry</surname><addName>M. de</addName></persName>
@@ -2305,7 +2301,7 @@
             <person xml:id="stadler">
                <persName><surname>Stadler</surname><addName>M.</addName></persName>
                <listEvent>
-                  <event><p>écuyer de M. le comte de Stainville</p></event>                  
+                  <event><p>écuyer de M. le comte de Stainville</p></event>
                </listEvent>
             </person>
             <person xml:id="stainville">
@@ -2365,7 +2361,7 @@
                <persName><surname>Saint-Lambert</surname><addName>M<hi rend="super">me</hi> de</addName></persName>
                <listEvent><event><p>Mère de Jean François de Saint Lambert (amant de la marquise de Boufflers)</p></event></listEvent>
             </person>
-            
+
             <person xml:id="stNicolasCure">
                <persName><persName>Curé de Saint Nicolas</persName></persName>
             </person>
@@ -2392,7 +2388,7 @@
                <listEvent><event><p>Ancien commis du trésorier de l'hôtel du duc Léopold</p></event></listEvent>
             </person>
             <person xml:id="taylor">
-               <persName><surname>Taylor</surname><roleName>chevalier</roleName></persName>               
+               <persName><surname>Taylor</surname><roleName>chevalier</roleName></persName>
                <state>
                   <p>Occultiste anglais</p>
                </state>
@@ -2418,7 +2414,7 @@
                <persName><surname>Thoilley</surname><forename>Marguerite</forename></persName>
             </person>
             <person xml:id="thouvenin">
-               <persName><surname>Thouvenin</surname><roleName>abbé</roleName></persName>               
+               <persName><surname>Thouvenin</surname><roleName>abbé</roleName></persName>
             </person>
             <person xml:id="tresorierNancy">
                <persName><persName>Tresorier de Nancy</persName></persName>
@@ -2446,7 +2442,7 @@
                <persName><surname>Valbelle</surname><roleName>marquise de</roleName></persName>
             </person>
             <person xml:id="vannson">
-               <persName><surname>Vannson</surname><addName>M.</addName></persName>               
+               <persName><surname>Vannson</surname><addName>M.</addName></persName>
                <state><p>Sergent de ville</p></state>
             </person>
             <person xml:id="viceChancelier">
@@ -2496,7 +2492,7 @@
                <persName><surname>Legal de Vissemberg</surname><forename>Marianne</forename></persName>
             </person>
             <person xml:id="voltaire">
-               <persName><surname>Arouet</surname><forename>François-Marie</forename><addName type="say">voltaire</addName></persName>               
+               <persName><surname>Arouet</surname><forename>François-Marie</forename><addName type="say">voltaire</addName></persName>
                <birth when="1694"/>
                <death when="1778"/>
                <listEvent>
@@ -2582,10 +2578,7 @@
             </person>
             <person xml:id="thomasHenri"><!-- todo quel est le nom du prénom -->
                <persName><surname>Thomas</surname><forename>Henri</forename></persName>
-            </person>
-            <person xml:id="leseure"><!-- todo -->
-               <persName>Leseure</persName>
-            </person>
+            </person>            
             <person xml:id="alixThierry">
                <persName><surname>Alix</surname><forename>Thierry</forename></persName>
             </person>
@@ -2631,6 +2624,13 @@
             </person>
             <person xml:id="beaupre">
                <persName><surname>Beaupré</surname><forename>Jean-Nicolas</forename></persName>
+               <birth when="1795"/>
+               <death when="1869"/>
+               <state><p>magistrat et historien</p></state>
+               <listEvent>
+                  <event><p>Conseiller à la Cour impériale</p></event>
+                  <event><p>Membre correspondant de l'Académie de Strasbourg, de la Société des antiquaires de France et l'un des fondateurs de la Société d'archéologie de Lorraine</p></event>
+               </listEvent>
             </person>
 
          </listPerson>
@@ -3643,7 +3643,7 @@
                </location>
             </org>
             <org xml:id="parlementRouen">
-               <orgName>Parlement de Rouen</orgName>
+               <orgName>Parlement<!-- de Rouen--></orgName>
                <location>
                   <placeName>Rouen</placeName>
                </location>
@@ -3662,7 +3662,7 @@
                </location>
             </org>
             <org xml:id="ordreAvocats">
-               <orgName>Ordre des avocats de Nancy</orgName>
+               <orgName>Ordre des avocats<!-- de Nancy--></orgName>
                <location>
                   <placeName>Nancy</placeName>
                </location>
@@ -3681,32 +3681,32 @@
                </location>
             </org>
             <org xml:id="parlementBretagne">
-               <orgName>Parlement de Rennes</orgName>
+               <orgName>Parlement<!-- de Rennes--></orgName>
                <location>
                   <placeName>Rennes (1554-1790)</placeName>
                </location>
             </org>
             <org xml:id="parlementParis">
-               <orgName>Parlement de Paris</orgName>
+               <orgName>Parlement<!-- de Paris--></orgName>
                <location>
                   <placeName>Paris</placeName>
                </location>
             </org>
             <org xml:id="chambreComptes">
-               <orgName>Chambre des Comptes</orgName>
+               <orgName>Chambre des comptes</orgName>
                <location>
                   <placeName>Nancy</placeName>
                </location>
                <desc>Créé entre 1698 et 1702.</desc>
             </org>
             <org xml:id="academieLyon">
-               <orgName>Académie des sciences, belles-lettres et arts de Lyon</orgName>
+               <orgName>Académie des sciences, belles-lettres et arts</orgName>
                <location>
                   <placeName>Lyon</placeName>
                </location>
             </org>
             <org xml:id="academieScience">
-               <orgName>Académie des Sciences de Paris</orgName>
+               <orgName>Académie des sciences<!-- de Paris--></orgName>
                <location>
                   <placeName>Paris</placeName>
                </location>
@@ -3730,21 +3730,22 @@
                   <placeName>Nancy</placeName>
                </location>
             </org>
-            <org xml:id="laCour">
+            <!--<org xml:id="laCour">
                <orgName>Cour souveraine de Lorraine et de Barrois</orgName>
                <location>
                   <placeName>Nancy</placeName>
                </location>
-            </org>
+               entrée supprimée du d17660223
+            </org>-->
             <org xml:id="intendance">
-               <orgName>Intendance, Hôtel de l'</orgName>
+               <orgName>Hôtel de l'intendance</orgName>
                <location>
                   <placeName>Nancy</placeName>
                </location>
                <desc>Place royale.</desc>
             </org>
             <org xml:id="jesuitesPontamousson">
-               <orgName>Ordre des Jésuites de Pont-à-Mousson</orgName>
+               <orgName>Jésuites de Pont-à-Mousson, ordre des</orgName>
                <location>
                   <placeName>Pont-à-Mousson</placeName>
                </location>
@@ -3762,20 +3763,20 @@
                </location>
             </org>
             <org xml:id="academieFrancaise">
-               <orgName>Académie Française</orgName>
+               <orgName>Académie française</orgName>
                <location>
                   <placeName>Paris</placeName>
                </location>
             </org>
             <org xml:id="gouvernement">
-               <orgName>Gouvernement, Hôtel du</orgName>
+               <orgName>Hôtel du gouvernement</orgName>
                <location>
                   <placeName>Nancy</placeName>
                </location>
                <desc>Place de la Carrière.</desc>
             </org>
             <org xml:id="parlementMetz">
-               <orgName>Parlement de Metz</orgName>
+               <orgName>Parlement<!-- de Metz--></orgName>
                <location>
                   <placeName>Metz</placeName>
                </location>
@@ -3788,7 +3789,7 @@
                <desc>Rue de la Poissonnerie (aujourd'hui Gambetta).</desc>
             </org>
             <org xml:id="HDV">
-               <orgName>Hôtel de Ville</orgName>
+               <orgName>Hôtel de ville</orgName>
                <location>
                   <placeName>Nancy</placeName>
                </location>
@@ -3801,7 +3802,7 @@
                <desc>La bibliothèque royale est au premier étage de l'hôtel de Ville depuis 1763, auparavant elle était dans la galerie des Cerfs au Palais Ducal. Elle intègrera son emplacement actuel vers 1797.</desc>
             </org>
             <org xml:id="aumonePub">
-               <orgName>Aumône publique, Bureau de l'</orgName>
+               <orgName>Aumône publique, bureau de l'</orgName>
                <location>
                   <placeName>Nancy</placeName>
                </location>
@@ -3813,15 +3814,16 @@
                   <placeName>Nancy</placeName>
                </location>
             </org>
-            <org xml:id="fondationI">
+            <!--<org xml:id="fondationI">
                <orgName>Pépinière royale</orgName>
                <location>
                   <placeName>Nancy</placeName>
                </location>
-               <desc>Une des dernières fondations de Stanislas en 1765.</desc>
-            </org>
+               <desc>Une des dernières fondations de Stanislas en 1765.
+               entrée supprimée voir d1765050802 et d1765062702</desc>
+            </org>-->
             <org xml:id="fondationII">
-               <orgName>Orphelins, fondation pour les</orgName>
+               <orgName>Fondation pour les orphelins</orgName>
                <location>
                   <placeName>Nancy</placeName>
                   <geo>48.69189170755945,6.184414923191071</geo>
@@ -3841,7 +3843,7 @@
                </location>
             </org>
             <org xml:id="cafeRoyal">
-               <orgName>Café Royal</orgName>
+               <orgName>Café royal</orgName>
                <location>
                   <placeName>Nancy</placeName>
                </location>
@@ -3855,7 +3857,7 @@
                <desc> Fondation de Stanislas en 1752 (bâtiment de l'actuel Musée des Beaux-Arts). </desc>
             </org>
             <org xml:id="comedie">
-               <orgName>Théâtre de Nancy</orgName>
+               <orgName>Théâtre<!-- de Nancy--></orgName>
                <location>
                   <placeName>Nancy</placeName>
                </location>
@@ -3868,35 +3870,35 @@
                </location>
             </org>
             <org xml:id="fondationMaladieEpi">
-               <orgName>Maladies épidémiques, fondation des</orgName>
+               <orgName>Fondation des maladies épidémiques</orgName>
                <location>
                   <placeName>Nancy</placeName>
                </location>
                <desc>Fondation de Stanislas en 1748.</desc>
             </org>
             <org xml:id="ecoleRoyaleMili">
-               <orgName>Ecole royale Militaire</orgName>
+               <orgName>École royale militaire</orgName>
             </org>
             <org xml:id="corpsGrenadiersFr">
-               <orgName>Corps des Grenadiers de France</orgName>
+               <orgName>Corps des grenadiers de France</orgName>
             </org>
             <org xml:id="miliceBourgeoise">
                <orgName>Milice bourgeoise</orgName>
             </org>
             <org xml:id="regimentSchomberg">
-               <orgName>regiment de Schomberg</orgName>
+               <orgName>Régiment de Schomberg</orgName>
             </org>
             <org xml:id="regimentCustine">
-               <orgName>regiment de Custine</orgName>
+               <orgName>Régiment de Custine</orgName>
             </org>
             <org xml:id="regimentNavarre">
-               <orgName>regiment de Navarre</orgName>
+               <orgName>Régiment de Navarre</orgName>
             </org>
             <org xml:id="regimentRoi">
-               <orgName>régiment du roi</orgName>
+               <orgName>Régiment du roi</orgName>
             </org>
             <org xml:id="gardesLorraines">
-               <orgName>Régiment Gardes Lorraines</orgName>
+               <orgName>Régiment GardesLorraines</orgName>
             </org>
             <org xml:id="hussardsNassau">
                <orgName>Régiments d'hussards de Nassau</orgName>
@@ -3908,19 +3910,19 @@
                <orgName>Compagnie des gardes du roi</orgName>
             </org>
             <org xml:id="musiqueRoi">
-               <orgName>La musique du roi</orgName>
+               <orgName>Musique du roi</orgName>
             </org>
             <org xml:id="regimentRoyalItalien">
-               <orgName>regiment royal italien</orgName>
+               <orgName>Régiment royal italien</orgName>
             </org>
             <org xml:id="missionsRoyales">
-               <orgName>les missions royales</orgName>
+               <orgName>Missions royales</orgName>
             </org>
             <org xml:id="capitainerieChasses">
-               <orgName>la capitainerie des chasses</orgName>
+               <orgName>Capitainerie des chasses</orgName>
             </org>
             <org xml:id="maisonRoi">
-               <orgName>La maison du roi</orgName>
+               <orgName>Maison du roi</orgName>
             </org>
             <!-- todo vérif intendance/institution ou juste le lieu ? -->
             <org xml:id="corpsSteCatherine">
@@ -3928,361 +3930,619 @@
             </org>
          </listOrg>
          <listBibl xml:id="listBibl">
-            <bibl xml:id="bib1">
-               <title>les eaux de Luxeuil</title>
-               <author>M. Bagard</author>
-            </bibl>
-            <bibl xml:id="bib2"><title>le discours de reception de M. l'abbé Millot</title>abbé Millot<author/></bibl>
-            <bibl xml:id="bib3">
-               <title>Discours de M. du Rouvrois</title>
-               <author>du Rouvrois</author>
-            </bibl>
-            <bibl xml:id="bib4">
-               <title>memoire lu par Coster le 12 juin 1765</title>
-            </bibl>
-            <bibl xml:id="bib5">
-               <title>Les duchés de Lorraine et de Bar</title>
-               <author>Nicolas Durival</author>
-            </bibl>
-            <bibl xml:id="bib6">
-               <title>Discours sur l'agriculture en lorraine lu par Coster</title>
-            </bibl>
-            <bibl xml:id="bib7">
-               <title>Discours sur les eaux thermales lu par Bagard le 26/06/1765 - voir bib1 ?</title>
-            </bibl>
-            <bibl xml:id="bib8">
-               <title>Eloge historique</title>
-               <author>Dom Remy Cellier</author>
-            </bibl>
-            <bibl xml:id="bib9">
-               <title>ouvrage de l'abbé sigorque</title>
-               <author>abbé Sigorque</author>
-            </bibl>
-            <bibl xml:id="bib10">
-               <title>Les lettres écrites de la montagne</title>
-               <author>J.J. Rousseau</author>
-            </bibl>
-            <bibl xml:id="bib11">
-               <title>ouvrage sur les inconvénients de la litterature</title>
-            </bibl>
-            <bibl xml:id="bib12">
-               <title>mémoire militaire (nov. 1765)</title>
-               <author>jean Durival</author>
-            </bibl>
-            <bibl xml:id="bib13">
-               <title>Ouvrage sur la manière de tenir les livres de commerce</title>
-            </bibl>
-            <bibl xml:id="bib14">
-               <title>un ouvrage de méchanique pour sonner en volée, brider et débrider les cloches sans monter au clocher</title>
-            </bibl>
-            <bibl xml:id="bib15">
-               <title>un ouvrage sur les fortifications (voir 1765-12-27)</title>
-            </bibl>
-            <bibl xml:id="bib16">
-               <title>Eloge historique de Stanislas I. Roi de Pologne... Prononcé le 11 mai 1766... l'Académie Royale des Sciences</title>
-               <author>
-                  <forename>Pierre-Joseph de</forename>
-                  <surname>Solignac</surname>
-               </author>
-               <pubPlace>Nancy</pubPlace>
-               <publisher>Leseure, Veuve d'Antoine ; Leseure, Claude</publisher>
-               <date>1766</date>
-               <idno type="callNumber">BM Nancy 50 279 (f) ou 702 031 (16)</idno>
-            </bibl>
-            <bibl xml:id="bib17">
-               <title>ouvrage sur les impots (voir 1766-05-03)</title>
-               <author>Jean Durival</author>
-            </bibl>
-            <bibl xml:id="bib18">
-               <title>Mémoire sur les abbayes et prieurés de Lorraine</title>
-               <author>M. Guerre</author>
-            </bibl>
-            <bibl xml:id="bib19">
-               <title>dissertation sur les deux odes d'Horace (voir 1766-05-28)</title>
-            </bibl>
-            <bibl xml:id="bib20">
-               <title>Memoire "indécent" des messins (voir 1766-07-14)</title>
-            </bibl>
-            <bibl xml:id="bib21">
-               <title>Memoire de la Cour Souveraine (voir 1766-07-14)</title>
-            </bibl>
-            <bibl xml:id="bib22">
-               <title>Memoire de 1738 sur la liquidation des dettes de Lorraine</title>
-            </bibl>
+           <bibl xml:id="bib1">
+             <title>Les eaux deLuxeuil</title>
+             <author>
+               <surname>Bagard</surname>
+               <forename>Charles</forename>
+             </author>
+             <note>Lu à l'Académie le 02 mai 1765 par le médecin Bagard</note>
+           </bibl>
+           <bibl xml:id="bib2">
+             <title>Discours de reception de l'abbé Millot</title>
+             <author>
+               <surname>Millot</surname>
+               <forename>Claude François Xavier</forename>
+             </author>
+             <note>Discours de récepeption de l'abbé MillotLu le 2 et 8 mai 1765</note>
+           </bibl>
+           <bibl xml:id="bib3">
+             <title>Discours de M. du Rouvrois</title>
+             <author><surname>Du Rouvrois</surname></author>
+           </bibl>
+           <bibl xml:id="bib4">
+             <title>Mémoire sur la Lorraine</title>
+             <author>
+               <surname>Coster</surname>
+                <forename>Joseph</forename>
+             </author>
+             <note>Lu à l'Académie le 12 juin 1765</note>
+           </bibl>
+           <bibl xml:id="bib5">
+             <title level="m">Mémoire sur la Lorraine et le Barrois, suivi de la table alphabétique et topographique des lieux</title>
+             <author>               
+               <surname>Durival</surname>
+                <forename>NicolasLuton</forename>
+             </author>
+             <pubPlace>Nancy</pubPlace>
+             <publisher>Thomas, Henri</publisher>
+             <date>1753</date>
+           </bibl>
+           <bibl xml:id="bib6">
+             <title>Discours sur l'agriculture en lorraine</title>
+             <author>
+               <surname>Coster</surname>
+               <forename>Joseph</forename>
+             </author>
+             <note>Lu à l'Académie le 26 juin 1765</note>
+           </bibl>
+           <bibl xml:id="bib7">
+             <title>Discours sur les eaux thermales</title>
+             <author>
+               <surname>Bagard</surname>
+               <forename>Charles</forename>
+             </author>
+             <note>Lu à l'Académie le 26 juin 1765</note>
+           </bibl>
+           <bibl xml:id="bib8">
+             <title>Eloge historique</title>
+             <author>
+               <surname>Cellier</surname>
+               <forename>Rémy</forename>
+             </author>
+             <note>Lu à l'Académie le 10 juillet 1765 par Charles François de Tervenus</note>
+           </bibl>
+           <bibl xml:id="bib9">
+             <title>Les lettres écrites de la Plaine en réponse à celles de la Montagne</title>
+             <author>
+               <surname>Sigorgne</surname>
+               <forename>Pierre</forename>
+             </author>
+             <date>1765</date>
+             <pubPlace>Amsterdam</pubPlace>
+             <publisher>Faucheux</publisher>
+             <note>Lu à l'Académie le 31 juillet 1765. Par cet ouvrage, Sigorgne s'oppose à Rousseau et ses Lettres écrites de la montagne</note>
+           </bibl>
+           <bibl xml:id="bib10">
+             <title>Les lettres écrites de la Montagne</title>
+             <author>
+               <surname>Rousseau</surname>
+               <forename>Jean-Jacques</forename>
+             </author>
+             <pubPlace>Amsterdam</pubPlace>
+             <publisher>Rey</publisher>
+             <date>1764</date>
+           </bibl>
+           <bibl xml:id="bib11">
+             <title>Ouvrage sur les inconvénients de la litterature</title>
+             <note>Lu à l'Académie le 13 novembre 1765. L'auteur n'est pas cité, mais l'ouvrage est admis au concours. N'obtiendra pas le prix (11 décembre 1765)</note>
+           </bibl>
+           <bibl xml:id="bib12">
+             <title>Mémoire militaire</title>
+             <author>
+                <surname>Durival</surname>
+               <forename>Jean</forename>               
+             </author>
+             <note>Mémoire adressé à la Cour le 14 novembre 1765</note>
+           </bibl>
+           <bibl xml:id="bib13">
+             <title>Ouvrage sur la manière de tenir les livres de commerce</title>
+             <note>Récipiendaire anonyme (une jeune fille) d'une dotation de 300 livres par l'Académie le 11 décembre 1765</note>
+           </bibl>
+           <bibl xml:id="bib14">
+             <title>Description d'un ouvrage de méchanique pour sonner en volée, brider et débrider les cloches sans monter au clocher</title>
+             <note>Récipiendaire anonyme d'une dotation de 100 livres par l'Académie le 11 décembre 1765</note>
+           </bibl>
+           <bibl xml:id="bib15">
+             <title>Ouvrage sur les fortifications</title>
+             <author>
+               <surname>Falois</surname>
+               <forename>Joseph de</forename>
+             </author>
+             <note>Joseph de Falois est proposé à l'Académie, mais sa candidature est rejettée, malgré que son ouvrage ait été approuvé par l'Académie des sciences.</note>
+           </bibl>
+           <bibl xml:id="bib16">
+             <title>Éloge historique de Stanislas I. Roi de Pologne... Prononcé le 11 mai 1766... </title>
+             <author>
+                <surname>Solignac</surname>
+               <forename>Pierre-Joseph de</forename>               
+             </author>
+             <pubPlace>Nancy</pubPlace>
+             <publisher>Leseure, Veuve d'Antoine ; Leseure, Claude</publisher>
+             <date>1766</date>
+             <idno type="callNumber">BM Nancy 50 279 (f) ou 702 031 (16)</idno>
+           </bibl>
+           <bibl xml:id="bib17">
+             <title>Ouvrage sur les impôts</title>
+             <author>
+                <surname>Durival</surname>
+                <forename>Jean</forename>
+             </author>
+             <note>Il semble que Jean Durival ne publiera jamais cet ouvrage.</note>
+           </bibl>
+           <bibl xml:id="bib18">
+             <title>Mémoire sur les abbayes et prieurés de Lorraine</title>
+             <author><surname>Guerre</surname></author>
+             <note>On ne trouve pas trace de cet ouvrage</note>
+           </bibl>
+           <bibl xml:id="bib19">
+             <title>Dissertation sur les deux odes d'Horace</title>
+             <author>
+               <surname>Sozzi</surname>
+               <forename>Louis-François de</forename>
+             </author>
+             <note>Lu àl'Académie le 28 mai 1766 </note>
+           </bibl>
+           <bibl xml:id="bib20">
+             <title>Memoire du Parlement de Metz sur son ressort</title>
+             <note>Ce mémoire sur des questions de ressort n'a pas été identifié mais a donné lieux à deux réponses de Nancy</note>
+           </bibl>
+           <bibl xml:id="bib21">
+             <title> Second mémoire, Présenté par la Cour Souveraine de Lorraine et Barrois; contenant des Observations sur les Questions auxquelles ont donné lieu les prétentions formées sur son Ressort / par le Parlement de Metz</title>
+             <!--TODO rs a attacher à réponse"-->
+           </bibl>
+           <!--  <bibl xml:id="bib22">
+              <title>Memoire de 1738 sur la liquidation des dettes de Lorraine</title>
+            </bibl>-->
             <bibl xml:id="bib23">
-               <title>Mémoire de la Cour souveraine contre le parlement de Metz</title>
+              <!--TODO rs a attacher aussi à mémoire de la cour le 14-07-66"-->
+              <title>Mémoire présenté par la Cour Souveraine de Lorraine et de Barrois, pour prouver que le Parlement de Metz ne peut à aucun Titre, ni par aucune considération, demander le Ressort de la Cour Souveraine de Lorraine et Barrois</title>
+              <date>1766</date>
             </bibl>
-            <bibl xml:id="bib24">
-               <title>Mémoire d'observation sur les deux parlement</title>
-               <author>M. l'intendant de lorraine</author>
-            </bibl>
+            <!--  <bibl xml:id="bib24">
+              <title>Mémoire d'observation sur les deux parlement</title>
+              <author>M. l'intendant de lorraine</author>
+            </bibl>-->
             <bibl xml:id="bib25">
-               <title>Discours sur la conservation des grains</title>
-               <author>Gandoger</author>
+              <title>Discours sur la conservation des grains</title>
+              <author>
+                <surname>Gandoger de Foigny</surname>
+                <forename>Pierre-Louis</forename>
+              </author>
+              <date>1766</date>
+              <note>Lu à l'Académie le 15 octobre 1766</note>
             </bibl>
             <bibl xml:id="bib26">
-               <title>Discours (voir 1766-10-15)</title>
-               <author>François</author>
+              <title>Discours</title>
+              <author>                
+                 <surname>Neufchâteau</surname>
+                 <forename>François de</forename>
+              </author>
+              <date>1766</date>
+              <note>Lu à l'Académie le 15 octobre 1766</note>
             </bibl>
             <bibl xml:id="bib27">
-               <title level="m">Charles 1<hi rend="super">er</hi> Roi d'Angleterre à son fils le Prince de Galles retiré en France</title>
-               <author><forename>François de</forename><surname>Neufchâteau</surname></author>
-               <date>1766</date>
-               <idno type="callNumber">Bibliothèque de l'Académie Stanislas</idno>
+              <title level="m">Charles 1<hi rend="super">er</hi> Roi d'Angleterre à son fils le Prince de Galles retiré en France</title>
+               <author>                
+                  <surname>Neufchâteau</surname>
+                  <forename>François de</forename>
+               </author>
+              <note>Lu à l'Académie le 15 octobre 1766</note>
+              <idno type="callNumber">Bibliothèque de l'Académie Stanislas, manuscrit des séances de 1766</idno>
             </bibl>
-            <!--  <bibl xml:id="bib28">
-               <title>Histoire romaine (voir 1766-11-05)</title>
-            </bibl>
-            <bibl xml:id="bib29">
-               <title>méthode presque géometrique de former l’Ennéagone</title>
+            <!-- <bibl xml:id="bib28">
+              <title>Histoire romaine (voir 1766-11-05)</title>
             </bibl>-->
+            <bibl xml:id="bib29">
+              <title>Méthode nouvelle de former l’Ennéagone</title>
+              <note>Lu à l'Académie le 05 novembre 1766 par Gautier</note>
+            </bibl>
             <bibl xml:id="bib30">
-               <title level="m">Dictionnaire philosophique, portatif, ou supplément à l'édition de 1765 . Revu, corrigé &amp; augmenté de XXXVII articles par l'auteur</title>
-               <author>Voltaire</author>
-               <pubPlace>À Londres [Nancy] [ca 1765]</pubPlace>
-               <publisher>[Leclerc]</publisher>
-               <date>1765</date>
- <note>Fausse adresse, imprimé en France, peut-être à Nancy chez J.-B. Hyacinthe Leclerc, d'après le matériel typographique (voir BnF)</note>
+              <title level="m">Dictionnaire philosophique, portatif, ou supplément à l'édition de 1765 . Revu, corrigé &amp; augmenté de XXXVII articles par l'auteur</title>
+              <author><surname>Voltaire</surname></author>
+              <pubPlace>À Londres [Nancy] [ca 1765]</pubPlace>
+              <publisher>[Leclerc]</publisher>
+              <date>1765</date>
+              <note>Fausse adresse, imprimé en France, peut-être à Nancy chez J.-B. Hyacinthe Leclerc, d'après le matériel typographique (voir BnF)</note>
+
             </bibl>
             <bibl xml:id="bib31">
-               <title>Théogonie d'Hésiode</title>
-               <author><surname>Bergier</surname><forename>Nicolas</forename></author>
+              <title>Théogonie d'Hésiode</title>
+              <author>
+                <surname>Bergier</surname>
+                <forename>Nicolas</forename>
+              </author>
             </bibl>
             <bibl xml:id="bib32">
-               <title level="m">Le Siège de Calais</title>
-               <author><forename>Pierre Laurent de</forename><surname>Belloy</surname></author>
-               <pubPlace>Paris</pubPlace>
-               <publisher>Duchesne, Nicolas-Bonaventure</publisher>
-               <date>1765</date>
-               <note type="accessed">2016-01-26T14:14:24Z</note>
-               <note type="url">http://catalogue.bnf.fr/ark:/12148/cb30081326s</note>
-               <idno type="callNumber">BM Nancy 313 765 (a)</idno>
+              <title level="m">Le Siège de Calais</title>
+              <author>
+                 <surname>Belloy</surname>
+                <forename>Pierre Laurent de</forename>                
+              </author>
+              <pubPlace>Paris</pubPlace>
+              <publisher>Duchesne, Nicolas-Bonaventure</publisher>
+              <date>1765</date>
+              <note type="accessed">2016-01-26T14:14:24Z</note>
+              <note type="url">http://catalogue.bnf.fr/ark:/12148/cb30081326s</note>
+              <idno type="callNumber">BM Nancy 313 765 (a)</idno>
             </bibl>
             <bibl xml:id="bib33">
-               <title>Essai sur le luxe</title>
-               <author><forename>François de</forename><surname>Saint-Lambert</surname></author>
-               <pubPlace>Nancy</pubPlace>
-               <publisher>Leclerc</publisher>
-               <date>1765</date>
+              <title>Essai sur leLuxe</title>
+              <author>                
+                <surname>Saint-Lambert</surname>
+                 <forename>François de</forename>
+              </author>
+              <pubPlace>Nancy</pubPlace>
+              <publisher>Leclerc</publisher>
+              <date>1765</date>
             </bibl>
             <bibl xml:id="bib34">
-               <title>Journal de l'agriculture, du commerce et des finances </title>
-               <placeName>Paris</placeName>
+              <title>Journal de l'agriculture, du commerce et des finances </title>
+              <placeName>Paris</placeName>
             </bibl>
             <bibl xml:id="bib35">
-               <title>Recueil sur diverses matieres</title>
+              <title>Recueil sur diverses matieres</title>
+              <author>
+                <surname>Leszczynsk</surname>
+                <forename>Stanislas</forename>
+              </author>
+              <publisher>Leseur (veuve)</publisher>
+              <pubPlace>Nancy</pubPlace>
+              <date>1765</date>
             </bibl>
             <bibl xml:id="bib36">
-               <title>Ortografe des Dames pour aprandre à écrire et à lire corectemant en tres peu de temps.</title>
-               <pubPlace>Nancy</pubPlace>
-               <publisher>Haenner</publisher>
-               <date>1766</date>
+              <title>Ortografe des Dames pour aprandre à écrire et à lire corectemant en tres peu de temps.</title>
+              <pubPlace>Nancy</pubPlace>
+              <publisher>Haenner</publisher>
+              <date>1766</date>
             </bibl>
             <bibl xml:id="bib37">
-               <title level="m">Discours d'un de MM. des enquêtes au parlement, chambres assemblées... et sur la lettre circulaire qui devait être adressée à tous les prélats du royaume avec ces Actes. Du 4 (et du 5) septembre 1765</title>
-               <date>1765</date>
+              <title level="m">Discours d'un de MM. des enquêtes au parlement, chambres assemblées... et sur la lettre circulaire qui devait être adressée à tous les prélats du royaume avec ces Actes. Du 4 (et du 5) septembre 1765</title>
+              <date>1765</date>
             </bibl>
             <bibl xml:id="bib38">
-               <title>Extraits des assertions dangereuses et pernicieuses en tout genre, que les soi-disant Jésuites ont, dans tous les temps et persévéramment, soutenues, enseignées et publiées dans leurs livres, avec l'approbation des supérieurs et généraux... </title>
-               <placeName>Paris</placeName>
-               <publisher>Simon, Pierre Guillaume</publisher>
-               <date>1762</date>
+              <title>Extraits des assertions dangereuses et pernicieuses en tout genre, que les soi-disant Jésuites ont, dans tous les temps et persévéramment, soutenues, enseignées et publiées dans leurs livres, avec l'approbation des supérieurs et généraux... </title>
+              <placeName>Paris</placeName>
+              <publisher>Simon, Pierre Guillaume</publisher>
+              <date>1762</date>
             </bibl>
             <bibl xml:id="bib39">
-               <title>Histoire de Sinal</title>
+              <title>Histoire de Sinal</title>
+              <pubPlace>Nancy</pubPlace>
+              <publisher>Hoener</publisher>
+              <date>1765</date>
+              <note>On ne trouve pas trace de cet ouvrage</note>
             </bibl>
             <bibl xml:id="bib40">
-               <title>Anti-réformateur</title>
+              <title>Anti-réformateur</title>
+              <author>
+                <surname>Montal</surname>
+              </author>
+              <!--MORTAL ?-->
+              <note>On ne trouve pas trace de cet ouvrage</note>
             </bibl>
             <bibl xml:id="bib41">
-               <title>La gazette de France</title>
-               <placeName>Paris</placeName>
-               <publisher>Renaudot, Théophraste</publisher>
+              <title>La gazette de France</title>
+              <placeName>Paris</placeName>
+              <publisher>Renaudot, Théophraste</publisher>
             </bibl>
             <bibl xml:id="bib60">
-               <title>Disours sur la théologie</title>
+              <title>Disours sur la théologie</title>
+              <note>Lu à l'Académie le 09 janvier 1765.</note>
             </bibl>
             <bibl xml:id="bib61">
-               <title>Discours sur le luxe</title>
-               <author><forename>François de</forename><surname>Simonin</surname></author>
+              <title>Discours sur leLuxe</title>
+              <author>
+                 <surname>Simonin</surname>
+                <forename>François de</forename>                
+              </author>
             </bibl>
             <bibl xml:id="bib63">
-               <title>Recueil des plans, élévations et coupes tant géométrales qu'en perspective des châteaux, jardins et dépendances que le roy de Pologne occupe en Lorraine y compris les bâtimens qu'il a fait élever, ainsi que les changemens considérables, les décorations et autres enrichissemens, qu'il a fait faire à ceux qui étoient déjà construire le tout dirigé et dedié à sa Majesté par M. Héré, son premier architecte.</title>
-               <author>
-                  <forename>Emmanuel</forename>
-                  <surname>Héré</surname>
-               </author>
-               <pubPlace>Paris</pubPlace>
-               <publisher>François</publisher>
-               <date>1753-1756</date>
+              <title>Recueil des plans, élévations et coupes ... des châteaux, jardins et dépendances que le roy de Pologne occupe en Lorraine y compris les bâtimens qu'il a fait élever, ainsi que les changemens considérables, les décorations et autres enrichissemens, qu'il a fait faire à ceux qui étoient déjà construire</title>
+              <author>
+                 <surname>Héré</surname>
+                <forename>Emmanuel</forename>                
+              </author>
+              <pubPlace>Paris</pubPlace>
+              <publisher>François</publisher>
+              <date>1753-1756</date>
             </bibl>
-            <!-- <bibl xml:id="bib64">
-               <title>Ouvrage sur la formation des glaces dans les eaux mortes et rivières</title>
-               
-               <note>Ouvrage non publié</note>
+            <bibl xml:id="bib64">
+              <title>Ouvrage sur la formation de la glace dans les eaux mortes et rivières</title>
+              <note>Lu à l'Académie le 06 février 1765. Auteur inconnu.</note>
+            </bibl>
+            <bibl xml:id="bib65">
+              <title>Éloge au roi de Pologne ou le regne de Thelemaque dans Itaque</title>
+              <author>
+                 <forename>Claude François Xavier</forename>
+                <surname>Millot</surname>                
+              </author>
+              <note>Lu à l'Académie le 06 février 1765, l'auteur est proposé comme académicien.</note>
+            </bibl>
+            <!--<bibl xml:id="bib66">
+              <title>Discours sur les qualités qui font un bon citoyen</title>
+              <author><surname>Coster</surname><forename>Joseph</forename></author>
             </bibl>-->
-            <!-- <bibl xml:id="bib65">
-               <title>Eloge au roi de Pologne ou le regne de Thelemaque dans Itaque</title>
-            </bibl>-->
-            <bibl xml:id="bib66">
-               <title>Discours sur les qualités qui font un bon citoyen</title>
-               <author><surname>Coster</surname><forename>Joseph</forename></author>
-            </bibl>
-            <bibl xml:id="bib68">
-               <title>Manuscrit d'un ouvrage sur la finance</title>
-            </bibl>
-            <!-- Pièces de théatre -->
-
+            <!-- <bibl xml:id="bib68">
+              <title>Manuscrit d'un ouvrage sur la finance</title>
+            </bibl>-->                          
+            <!-- Pièces de théatre -->  
             <bibl xml:id="bib42">
-               <title level="m">Oeuvres complètes de Voltaire. Tome 2 : Zaïre</title>
-               <author><forename>Arouet de</forename><surname>Voltaire</surname></author>
-               <pubPlace>Kehl</pubPlace>
-               <publisher>De l'imprimerie de la société littéraire typographique</publisher>
-               <date>1785</date>
-               <idno type="callNumber">BM cote 460 851 (2)</idno>
+              <title level="m">Zaïre</title>
+              <author><surname>Voltaire</surname></author>
+              <!-- <pubPlace>Kehl</pubPlace>
+              <publisher>De l'imprimerie de la société littéraire typographique</publisher>
+              <date>1785</date>
+              <idno type="callNumber">BM cote 460 851 (2)</idno>-->
+              <note>Première représentation à Paris en 1732</note>
             </bibl>
             <bibl xml:id="bib43">
-               <title>les Folies amoureuses</title>
+              <title level="m">Les folies amoureuses</title>
+              <author>
+                 <surname>Regnard</surname>
+                <forename>Jean-François</forename>                
+              </author>
+              <!-- <pubPlace>Paris</pubPlace>
+              <publisher>Prault fils</publisher>
+              <date>1750</date>-->
+              <note>Première édition en 1714</note>
             </bibl>
             <bibl xml:id="bib62">
-               <title>Annette et Lubin</title>
+              <title level="m">Annette EtLubin. Pastorale.</title>
+              <author>
+                 <surname>Marmontel</surname>
+                <forename>Jean-François</forename>                
+              </author>
+              <!-- <publisher>Lesclapart</publisher>
+              <date>1762</date>-->
+              <note>Représentée pour la premiere fois par les comédiens italiens ordinaires du Roi (Paris), le 15 février 1762</note>
             </bibl>
             <bibl xml:id="bib44">
-               <title>Alzire</title>
+              <title level="m">Alzire ou les Américains. Tragédie</title>
+              <author>
+                <surname>Voltaire</surname>
+              </author>
+              <!--  <pubPlace>Paris</pubPlace>
+              <publisher>Prault fils</publisher>
+              <date>1750</date>-->
+              <note>Representée à Paris pour la premiere fois le 27 janvier 1736</note>
             </bibl>
             <bibl xml:id="bib45">
-               <title level="m">Oeuvres complètes. Tome 2 : Le duc de Foix</title>
-               <author><forename>Arouet de</forename><surname>Voltaire</surname></author>
-               <pubPlace>Kehl</pubPlace>
-               <publisher>De l'imprimerie de la société littéraire typographique</publisher>
-               <date>1785</date>
-               <idno type="callNumber">BM cote 460 851 (2)</idno>
+              <title level="m">Le duc de Foix</title>
+              <author><surname>Voltaire</surname></author>
+              <!--   <pubPlace>Kehl</pubPlace>
+              <publisher>De l'imprimerie de la société littéraire typographique</publisher>
+              <date>1785</date>
+              <idno type="callNumber">BM cote 460 851 (2)</idno>-->
+              <note>Tragédie e 1752</note>
             </bibl>
             <bibl xml:id="bib46">
-               <title level="m">Théâtre d'Euripide. Tome 2 : Iphigénie en Tauride</title>
-               <author><forename>Emile</forename><surname>Pessonneaux</surname></author>
-               <pubPlace>Paris</pubPlace>
-               <publisher>Charpentier, Gervais</publisher>
-               <date>[S.d.]</date>
-               <idno type="callNumber">BM Nancy 264 761 (2)</idno>
+              <title level="m">Iphigénie en Tauride</title>
+              <author>
+                 <surname>Pessonneaux</surname>
+                <forename>Emile</forename>                
+              </author>
+              <!--  <pubPlace>Paris</pubPlace>
+              <publisher>Charpentier, Gervais</publisher>
+              <date>[S.d.]</date>
+              <idno type="callNumber">BM Nancy 264 761 (2)</idno>-->
             </bibl>
             <bibl xml:id="bib47">
-               <title level="m">Oeuvres : tragédie. Tome 2. Mithridate</title>
-               <author><forename>Jean</forename><surname>Racine</surname></author>
-               <pubPlace>[S.l.]</pubPlace>
-               <publisher>[S.n.]</publisher>
-               <date>1760</date>
-               <idno type="callNumber">BM Nancy cote rés. 4 163 (2)</idno>
+              <title level="m">Mithridate</title>
+              <author>
+                 <surname>Racine</surname>
+                <forename>Jean</forename>                
+              </author>
+              <!--    <pubPlace>[S.l.]</pubPlace>
+              <publisher>[S.n.]</publisher>
+              <date>1760</date>
+              <idno type="callNumber">BM Nancy cote rés. 4 163 (2)</idno>-->
             </bibl>
             <bibl xml:id="bib48">
-               <title>Philosophe marié</title>
+              <title level="m">Le philosophe marié, ou le mari honteux de l'être, comédie en vers, et en cinq actes</title>
+              <author><surname>Nericault-Destouches</surname></author>
+              <!--  <pubPlace>Paris</pubPlace>
+              <publisher>Aux dépens de la Compagnie</publisher>
+              <date>1742</date>-->
             </bibl>
             <bibl xml:id="bib67">
-               <title>la jeune indienne</title>
+              <title level="m">La jeune indienne, comédie en un acte et en vers. </title>
+              <author>
+                 <surname>Chamfort</surname>
+                <forename>Sébastien-Roch-Nicolas de</forename>                
+              </author>
+              <!-- <publisher>Cailleau</publisher>
+              <pubPlace>A Paris, chez Cailleau. M.DCC.LXIV, France</pubPlace>
+              <date>1764</date>-->
+              <note>Représentée pour la premiere fois par les comédiens français ordinaires du Roi (Paris), le 30 avril 1764.</note>
             </bibl>
             <bibl xml:id="bib49">
-               <title>Misantrope</title>
+              <title level="m">Le misantrope</title>
+              <author><surname>Molière</surname></author>
+              <!-- <pubPlace>Paris</pubPlace>
+              <date>1667</date>-->
+              <note>Première représentation le 4 juin 1666</note>
             </bibl>
             <bibl xml:id="bib50">
-               <title>Pere de famille</title>
+              <title level="m">Le Père de famille, comédie en 5 actes et en prose</title>
+              <author>
+                 <surname>Diderot</surname>
+                <forename>Denis</forename>                
+              </author>
+              <!--   <pubPlace>Amsterdam</pubPlace>
+              <publisher>[S.n.]</publisher>
+              <date>1758</date>-->
+              <note>Pièce de 1758, première représentation par les Comédiens français le 18 février 1761</note>
             </bibl>
             <bibl xml:id="bib51">
-               <title>écossaise</title>
+              <title level="m">Le Caffé, ou l'Écossaise, comédie.</title>
+              <author>
+                 <forename>David</forename>
+                <surname>Hume</surname>                
+              </author>
+              <!--  <pubPlace>Londres</pubPlace>
+              <date>1761</date>-->
+              <note> Représentée pour la première fois par les Comédiens français ordinaires du Roi (Paris), le 26 juillet 1760</note>
             </bibl>
             <bibl xml:id="bib52">
-               <title>Légataire</title>
+              <title level="m">Le Légataire universel: Comédie</title>
+              <author>
+                 <surname>Regnard</surname>
+                <forename>Jean-François</forename>                
+              </author>
+              <!--  <pubPlace>[S.l.]</pubPlace>
+              <publisher>[S.n.]</publisher>
+              <date>1708</date>-->
+              <note>Pièce de 1708</note>
             </bibl>
             <bibl xml:id="bib53">
-               <title>Crispin médecin</title>
+              <title level="m">Crispin médecin. Comédie</title>
+              <author>
+                 <surname>Hauteroche</surname>
+                <forename>Noël Lebreton</forename>                
+              </author>
+              <!--   <pubPlace>Paris</pubPlace>
+              <publisher>J. Ribou</publisher>
+              <date>1680</date>-->
+              <note>Pièce de 1670</note>
             </bibl>
             <bibl xml:id="bib54">
-               <title>Crispin Rival de son maitre</title>
+              <title level="m">Crispin rival de son maitre, comédie en un acte en prose. </title>
+              <author>
+                 <surname>Lesage</surname>
+                <forename>Alain-René</forename>                
+              </author>
+              <!-- <publisher>Duchesne (veuve)</publisher>
+              <pubPlace>Paris</pubPlace>
+              <date>1787</date>-->
+              <note> Représentée par les Comédiens français, le mardi 15 mars 1707.</note>
             </bibl>
             <bibl xml:id="bib55">
-               <title level="m">Oeuvres - Démocrite, Les Folies amoureuses, Les Menechmes</title>
-               <author><forename>Jean-François</forename><surname>Regnard</surname></author>
-               <pubPlace>Amterdam</pubPlace>
-               <publisher>Aux dépens de la Compagnie</publisher>
-               <date>1750</date>
-               <idno type="callNumber">BM Nancy 262 552 (2)</idno>
+              <title level="m">Démocrite, Les Folies amoureuses, les Menechmes</title>
+              <author>
+                 <surname>Regnard</surname>
+                <forename>Jean-François</forename>                
+              </author>
+              <!--  <pubPlace>Amterdam</pubPlace>
+              <publisher>Aux dépens de la Compagnie</publisher>
+              <date>1750</date>
+              <idno type="callNumber">BM Nancy 262 552 (2)</idno>-->
+              <note>Représentée pour la première fois à Paris le 12 janvier 1700.</note>
             </bibl>
             <bibl xml:id="bib56">
-               <title>Le medecin malgré lui</title>
+              <title level="m">Le medecin malgréLui. Comedie.</title>
+              <author><surname>Molière</surname></author>
+              <!--  <publisher>Ribou</publisher>
+              <pubPlace>Paris</pubPlace>
+              <date>1667</date>-->
+              <note>Représentée pour la première fois à Paris le 6 août 1666</note>
             </bibl>
             <bibl xml:id="bib57">
-               <title>Le Philosophe sans le savoir</title>
+              <title level="m">Le philosophe sans le savoir, comedie en prose et en cinq actes, </title>
+              <author>
+                 <surname>Sedaine</surname>
+                <forename>Michel-Jean</forename>                
+              </author>
+              <!--  <publisher>Hérissant</publisher>
+              <pubPlace>Paris</pubPlace>
+              <date>1766</date>-->
+              <note>Représentée par les comédiens français ordinaires du Roi (Paris), le 2 novembre 1765.</note>
             </bibl>
             <bibl xml:id="bib58">
-               <title>Les trois freres rivaux</title>
+              <title level="m">Les Trois frères rivaux, comédie en un acte et en vers.</title>
+              <author>
+                 <surname>La Font</surname>
+                <forename>Joseph de</forename>                
+              </author>
+              <!-- <pubPlace>Paris</pubPlace>
+              <publisher>Bélin</publisher>
+              <date>1788</date>-->
             </bibl>
             <bibl xml:id="bib59">
-               <title>Confidences réciproques</title>
+              <title>Confidences réciproques</title>
             </bibl>
             <bibl xml:id="bib69">
-               <title>La Partie de chasse de Henri IV</title>
+              <title level="m">La Partie de Chasse de Henri IV, comédie en trois actes et en prose</title>
+              <author>
+                 <surname>Collé</surname>                
+                 <forename>Charles</forename>                
+              </author>
+              <!--   <pubPlace>Paris</pubPlace>
+              <publisher>Duchesne (veuve)</publisher>
+              <date>1766</date>-->
+              <note>Pièce de 1766</note>
             </bibl>
             <bibl xml:id="bib70">
-               <title>Rhadamiste</title>
+              <title level="m">Rhadamiste et Zénobie, tragédie en cinq actes, en vers.</title>
+              <author>
+                 <surname>Crébillon</surname>
+                <forename>Prosper Jolyot de</forename>                
+              </author>
+              <!-- <publisher>[S.n.]</publisher>
+              <pubPlace>[S.l.]</pubPlace>
+              <date>1711</date>-->
+              <note>Représentée pour la première fois le 23 janvier 1711</note>
             </bibl>
             <bibl xml:id="bib71">
-               <title level="m">Oraison funèbre de très-haut,... Stanislas I,... Prononcée en l'Eglise Primatiale de Lorraine le 10 du mois de Mai 1766</title>
-               <author>Élisée</author>
-               <pubPlace>Paris</pubPlace>
-               <publisher>Lottin, Antoine-Prosper</publisher>
-               <date>1766</date>
+              <title level="m">Oraison funèbre de très-haut,... Stanislas I,... Prononcée en l'Eglise Primatiale de Lorraine le 10 du mois de Mai 1766</title>
+              <author><surname>Élisée</surname></author>
+              <pubPlace>Paris</pubPlace>
+              <publisher>Lottin, Antoine-Prosper</publisher>
+              <date>1766</date>
             </bibl>
             <bibl xml:id="bib72">
-               <title>Oraison funèbre de... Stanislas 1er,... duc de Lorraine... prononcée le 12 mai 1766...</title>
-               <author>
-                  <forename>Abbé de</forename>
-                  <surname>Dombasle</surname>
-               </author>
-               <pubPlace>Nancy</pubPlace>
-               <publisher>Leclerc, Jean-Baptiste-Hyacinthe</publisher>
-               <date>1766</date>
-               <idno type="callNumber">BM Nancy 50 279 (g)</idno>
+              <title>Oraison funèbre de... Stanislas 1<hi rend="super">er</hi>,... duc de Lorraine... prononcée le 12 mai 1766...</title>
+              <author>
+                 <surname>Dombasle</surname>
+                 <!-- prévoir quelque chose pour les abbés ou ne pas en tenir compte  <forename>Abbé de</forename>-->                
+              </author>
+              <pubPlace>Nancy</pubPlace>
+              <publisher>Leclerc, Jean-Baptiste-Hyacinthe</publisher>
+              <date>1766</date>
+              <idno type="callNumber">BM Nancy 50 279 (g)</idno>
             </bibl>
             <bibl xml:id="bib73">
-               <title>Oraison funèbre de Stanislas... prononcée dans l'Eglise du Collège,... le 15 may 1766,...</title>
-               <author>
-                  <forename>Sigisbert-Etienne</forename>
-                  <surname>Coster</surname>
-               </author>
-               <pubPlace>Nancy</pubPlace>
-               <publisher>Leseure, Veuve d'Antoine ; Leseure, Claude</publisher>
-               <date>1766</date>
-               <idno type="callNumber">BM cote 50 279 (h)</idno>
+              <title>Oraison funèbre de Stanislas... prononcée dans l'Eglise du Collège,... le 15 may 1766,...</title>
+              <author>
+                 <surname>Coster</surname>
+                <forename>Sigisbert-Etienne</forename>                
+              </author>
+              <pubPlace>Nancy</pubPlace>
+              <publisher>Leseure, Veuve d'Antoine ; Leseure, Claude</publisher>
+              <date>1766</date>
+              <idno type="callNumber">BM cote 50 279 (h)</idno>
             </bibl>
             <bibl xml:id="bib74">
-               <title>Oraison funèbre de... Stanislas I,... , prononcée en l'église paroissiale de St-Roch de Nancy..., le 26 may 1766...</title>
-               <author>
-                  <forename>Denis-Xavier</forename>
-                  <surname>Clément</surname>
-               </author>
-               <pubPlace>Paris</pubPlace>
-               <publisher>Delatour, Louis-François</publisher>
-               <date>1766</date>
-               <idno type="callNumber">BM Nancy 50 279 (j)</idno>
+              <title>Oraison funèbre de... Stanislas I,... , prononcée en l'église paroissiale de St-Roch de Nancy..., le 26 may 1766...</title>
+              <author>
+                 <surname>Clément</surname>                
+                 <forename>Denis-Xavier</forename>                
+              </author>
+              <pubPlace>Paris</pubPlace>
+              <publisher>Delatour, Louis-François</publisher>
+              <date>1766</date>
+              <idno type="callNumber">BM Nancy 50 279 (j)</idno>
             </bibl>
             <bibl xml:id="bib75">
-               <title>Oraison funèbre de Stanislas 1er,... prononcée le 10 juin 1766...</title>
-               <author><forename>Guillaume-Germain</forename><surname>Guyot</surname></author>
-               <pubPlace>Nancy</pubPlace><title level="m">Oraison funèbre de Stanislas 1er,... prononcée le 10 juin 1766...</title>/pubPlace&gt; <publisher>Leseure, Veuve d'Antoine ; Leseure, Claude</publisher>
-               <date>1766</date>
-               <idno type="callNumber">BM Nancy 50 279 (k)</idno>
+              <title>Oraison funèbre de Stanislas 1<hi rend="super">er</hi>,[...] prononcée le 10 juin 1766...</title>
+              <author>
+                 <surname>Guyot</surname>
+                 <forename>Guillaume-Germain</forename>
+              </author>
+              <pubPlace>Nancy</pubPlace>
+               <publisher>Leseure, Veuve d'Antoine ; Leseure, Claude</publisher>
+              <date>1766</date>
+              <idno type="callNumber">BM Nancy 50 279 (k)</idno>
             </bibl>
             <bibl xml:id="memoireChComptes">
-               <title>Mémoire attribué à la Chambre des Comptes</title>
+              <title>Mémoire attribué à la Chambre des Comptes</title>
             </bibl>
-            <bibl xml:id="catalogueBibiliotheque"><title>catalogue des livres de la
-                  bibliothèque</title></bibl>
+            <bibl xml:id="catalogueBibiliotheque">
+               <title>catalogue des livres de la bibliothèque royale de Nancy, fondée par le roi de Pologne [...]</title>
+               <pubPlace>Nancy</pubPlace>
+               <publisher>Leseure, Veuve d'Antoine</publisher>
+               <date>1766</date>
+               <idno type="callNumber">BM Nancy 2 808</idno>
+            </bibl>         
+
          </listBibl>
+
          <list type="artwork">
-            <item xml:id="estampeCollin">estampe de la construction du quartier roïal des cazernes par Collin</item>
-            <item xml:id="arcTriomphe">estampe de la construction du quartier roïal des cazernes par Collin</item>
+            <item xml:id="estampeCollin">Construction du quartier roïal des cazernes par Collin</item>
+            <item xml:id="arcTriomphe">Cnstruction du quartier roïal des cazernes par Collin</item>
             <item xml:id="sceauxCollin">Sceaux gravés par Collin</item>
-            <item xml:id="piecesMausolee">Les principales pièces du mausolées</item>
-            <item xml:id="estampeCollinMausolee">estampe du mausolée de Stanislas par Collin</item>
+            <item xml:id="piecesMausolee">Mausolées de Stanislas</item>
+            <item xml:id="estampeCollinMausolee">Mausolée de Stanislas estampe gravée par Collin</item>
          </list>
       </body>
    </text>

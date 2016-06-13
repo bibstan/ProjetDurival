@@ -32,153 +32,219 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Edition augmentée du Journal de Nicolas Durival (1765-1766)</title>            
+            <title>Edition augmentée du Journal de Nicolas Durival (1765-1766)</title>
             <respStmt>
                <resp>édité et encodé en XML-TEI par </resp>
                <persName xml:id="CH">Claire Haquet</persName>
-               <persName xml:id="EN">Eric Nunes</persName>
+               <persName xml:id="EN">Éric Nunes</persName>
                <persName xml:id="JM">Josselin Morvan</persName>
             </respStmt>
             <funder>Ville de Nancy</funder>
          </titleStmt>
          <publicationStmt>
-            <publisher>Les Bibliothèques de Nancy</publisher>
-            <pubPlace>Nancy, Bibliothèque Stanislas</pubPlace>
+            <publisher>Bibliothèques de Nancy</publisher>
+            <pubPlace>Bibliothèque Stanislas</pubPlace>
             <address>
                <addrLine>43, rue Stanislas, 54 000 Nancy</addrLine>
             </address>
             <date when="2016">2016</date>
             <availability>
                <p>Licence ouverte Etalab</p>
+               <p>Domaine public</p>
             </availability>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <country>France</country>
-                  <institution>Bibliothèque municipale classée de Nancy</institution>                  
+                  <institution>Bibliothèques de Nancy</institution>
                   <repository>Bibliothèque Stanislas</repository>
                   <idno>ms. 863</idno>
                   <altIdentifier>
                      <idno>ancienne cote : catalogue Favier 1315</idno>
-                  </altIdentifier>                  
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
-                  <p><!--Description intellectuelle du manuscrit / dates / sujet--></p>
+                  <p>
+                     Le <title>Journal</title> et son auteur Nicolas Durival (1713-1795) est
+                     un officier au service du chancelier Chaumont de la Galaizière dès
+                     l'arrivée de Stanislas et des Français en Lorraine en 1737. Il passe
+                     ensuite au Conseil du roi et, à partir de 1760, achète la charge de
+                     lieutenant général de police de Nancy à la demande de son souverain.
+                     Administrateur, statisticien, il est aussi un historien reconnu, auteur
+                     du <title>Mémoire sur la Lorraine et le Barrois</title>, célébré dès son
+                     époque par le vanniste Dom Calmet ou l'abbé Expilly pour sa précision.
+                     C'est certainement pour alimenter ses travaux scientifiques qu'il tient,
+                     dès 1737 et jusqu'à sa mort en 1795 un journal des faits qui se sont
+                     déroulés dans l'entourage ducal et dans la ville de Nancy. Sources de
+                     première importance pour l'histoire de la ville et de la cour, ces 14
+                     volumes manuscrits n'avaient encore jamais fait l'objet d'une édition
+                     complète. C'est le défi que se sont lancées les Bibliothèques de Nancy
+                     pour les années à venir.
+                  </p>
                </msContents>
                <physDesc>
-                  <p>
-                     Manuscrit autographe en 14 volumes. Durival utilise un papier imprimé
-                     destiné à la rédaction d'un journal
-                  </p>
-               </physDesc>               
+                  <p> Manuscrit autographe en 14 volumes. </p>
+               </physDesc>
             </msDesc>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <projectDesc>
-            <p>L'objectif du projet est de fournir une édition augmentée du Journal blabla</p>
+         <projectDesc>            
+            <p>
+               Le 18 juin 2016, les Bibliothèques de Nancy mettent en ligne l'édition augmentée
+               du <title>Journal</title> de Nicolas Durival pour les années 1765-1766. Cette
+               réalisation s'inscrit dans le 250<hi rend="super">e</hi> anniversaire du
+               rattachement de la Lorraine à la France, consécutif à la mort du roi Stanislas
+               le 23 février 1766. L'édition repose sur une transcription et un encodage en
+               XML-TEI enrichis de données biographiques, iconographiques, cartographiques et
+               historiques.
+            </p>
+            <p>
+               <hi>Les objectifs</hi> 
+               Les objectifs en étaient multiples :
+               <list>
+                  <item>tester l'intérêt d'utiliser la TEI pour éditer un document manuscrit dans une bibliothèque municipale ;</item>
+                  <item>enrichir le document, numérisé depuis quelques années, des éléments de contextualisation indispensables à sa compréhension par tous types de publics ;</item>
+                  <item>valoriser les ressources de la bibliothèque par l'accompagnement d'images issues du fonds iconographique en lien avec les événements relatés ;</item>
+                  <item>relier l'ensemble au catalogue du fonds ancien, Nicolas Durival étant amateur de théâtre, de littérature et de par ses fonctions, étroitement lié à l'Académie royale des Sciences, Arts et Lettres de Nancy et au commerce de la librairie ;</item>
+                  <item>mettre en place les compétences et la chaîne de traitement nécessaires à la poursuite du projet dans les années à venir.</item>
+               </list>
+            </p>
+            <p>
+               <hi>La transcription et l'encodage</hi>                
+               La transcription, l'encodage et la réalisation du site web <ref type="externalLink" target="http://www.journaldedurival.fr">http://www.journaldedurival.fr</ref> ont été confiés à un prestataire issu du master de L’École nationale des Chartes et réalisés en étroite collaboration avec l'équipe du Patrimoine des Bibliothèques de Nancy. Les spécifications techniques ont concerné :
+               <list>
+                  <item>la possibilité de lire en continu le Journal dans son orthographe et ses abréviations d'époque ou modernisés ;</item>
+                  <item>la navigation par date, voire par heure pour un événement exceptionnel comme l'agonie du roi ;</item>
+                  <item>l'encodage des noms de personne, pour réalisation un index biographique ;</item>
+                  <item>l'encodage des noms de lieux, pour naviguer dans le Journal à partir d'un plan de Nancy ;</item>
+                  <item>l'encodage des titres d’œuvres, à relier au catalogue de la bibliothèque ou à des ressources externes.</item>
+               </list>
+            </p>
+            <p>
+               <hi>L'enrichissement</hi> 
+               Les enrichissements - non encore finalisés - ont impliqué plusieurs acteurs. L'équipe de la bibliothèque a réalisé la relecture de la transcription, les recherches bibliographiques, le (re)catalogage des œuvres imprimées et manuscrites de Nicolas Durival et des œuvres citées par lui en 1765-1766, des élucidations lexicales et de faits locaux, la rédaction de fiches thématiques, la recherche iconographique. Le Musée lorrain a apporté son concours à la fourniture d'images. Enfin, une équipe d'étudiants de licence 3 Histoire de l'Université de Lorraine a réalisé le gros des recherches biographiques, en guise d'apprentissage des techniques de la recherche historique.
+            </p>
+            <p>
+               <hi><!--Le résultat--></hi> 
+               Le site <ref type="externalLink" target="http://www.journaldedurival.fr">http://www.journaldedurival.fr</ref> est le premier résultat tangible de ce travail. Il peut encore être amélioré dans ses fonctionnalités, notamment de recherche textuelle, ce qui viendra dans une seconde phase. Les fichiers source sont préparés dans ce sens. L'équipe de la bibliothèque est en possession d'un modèle ré-utilisable d'édition de texte du 18<hi rend="super">e</hi> siècle et peut s'apprêter à mettre à profit ses compétences développées en XML-TEI pour continuer dans les années qui viennent la transcription, l'encodage et l'enrichissement des 13 volumes restants. À l'heure actuelle, le projet s'achemine vers la combinaison de plusieurs partenariats dont la réutilisation de transcriptions effectuées au fil du temps par des historiens locaux et un partenariat solidifié avec la filière Histoire de l'Université de Lorraine aux niveaux L3 et Master. La phase d'encodage XML-TEI et des développements du site, pourraient également faire l'objet de partenariats futurs.
+            </p>
+            <p>
+               <hi>Équipe</hi> 
+               <list>
+                  <item>Responsabilité scientifique : <persName>Claire Haquet</persName>, <persName>Malik Diallo</persName></item>
+                  <item>Coordination scientifique et technique, maquette (réalisation des CSS) : <persName>Éric Nunes</persName></item>
+                  <item>Transcription, encodage (1765-1766), feuilles de styles XSLT : <persName>Josselin Morvan</persName> (diplômé du master "technologies numériques appliquées à l'histoire" de l'École des Chartes)</item> 
+                  <item>Index et bibliographies : équipe du patrimoine des Bibliothèques de Nancy, étudiants de M. <persName>Jalabert</persName> de l'<orgName>Université Lorraine</orgName> (<persName>Élodie Réot</persName> , <persName>Louise Engler</persName>, <persName>Jules Rawolle</persName>, <persName>Gaëtan Barbier</persName>, <persName>Alexandre Brignon</persName>, <persName>Pierre Valentin</persName>), une partie des notes historiques a été réalisée par <persName>Sara Nadal</persName>.</item>
+               </list>               
+            </p>
+            <p>
+               <hi>Remerciements</hi>
+               M. <persName>Christian Hénard</persName>, "précurseur" dans l'étude et la transcription du <title>Journal</title> dont les conseils avisés et les notes nous ont été d'une grande aide.
+            </p>
+            <p>
+               <hi>Techniques</hi> 
+               <lb/>Le site repose sur la transformation des fichiers TEI en multiples fichiers HTML par le biais de plusieurs feuilles de style XSLT. Il est conçu sur la base du framework <ref type="externalLink" target="http://foundation.zurb.com/">Foundation 6</ref> (personnalisé). 
+               <lb/>Plusieurs bibliothèques javascript sont utilisées :
+               <list>
+                  <!--a reprendre -->
+                  <item><ref type="externalLink" target="http://www.owlcarousel.owlgraphic.com/">OWLcarousel.js</ref> pour le slider du journal;</item>
+                  <item><ref type="externalLink" target="https://technotarek.com/timeliner/">Timeliner.js</ref> pour certaines biographies et l'accès calendaire;</item>
+                  <item><ref type="externalLink" target="http://lokeshdhakar.com/projects/lightbox2/">Lightbox.js</ref> pour la visualisation des illustrations;</item>
+                  <item><ref type="externalLink" target="http://leafletjs.com/">Leaflet.js</ref> pour la carte annotée.</item>
+                  <item><ref type="externalLink" target="http://leafletjs.com/">Leaflet.js</ref> et Zoomify pour les cartes anciennes</item><!-- todo link Zoomify-->
+                  <!--source -->
+               </list>
+            </p>
+            <p> 
+               <hi>Sources du projet</hi> 
+               Les sources du projet (texte, index, manuel d'encodage, schéma ODD, feuilles de styles XSLT et CSS) sont disponibles sur le <ref type="externalLink" target="http://www.github.com/bibstan">github de la bibliothèque</ref>. Des bibliographies complémentaires sont disponibles sur le Zotero de la bibliothèque. 
+            </p>
+            <p>
+               <hi>Propriété intellectuelle</hi> 
+               Sauf mention contraire, tous les éléments du site sont sous Licence Ouverte Etalab (pour les images) et sous licence CC0 (pour les productions scientifiques).                
+            </p>
+            <p>
+               <hi>Contacts</hi>
+               Pour toute information complémentaire, vous pouvez contacter : 
+               <list>
+                  <item>Organisation du projet, des recherches, rédactionnels, site : <ref type="mailto" target="e.nunes@nancy.fr">Eric Nunes</ref> ou <ref type="mailto" target="c.haquet@nancy.fr">Claire Haquet</ref></item>
+                  <item>Encodage XML-TEI (et schéma ODD), feuilles de style XSLT : <ref type="mailto" target="morvan.josselin@gmail.com">Josselin Morvan</ref></item>
+                  <item>Partenariat Université de Lorraine : <ref type="mailto" target="laurent.jalabert@univ-lorraine.fr">Laurent Jalabert</ref></item>
+               </list>
+            </p>
          </projectDesc>
-         <editorialDecl><!-- todo symbole pour la livre => # -->            
-            <normalization method="silent">               
+         <editorialDecl>
+            <!-- todo symbole pour la livre => # -->
+            <normalization method="silent">
                <p>
-                  Lors de la transcription, l'emploi des majuscules et des minuscules a été modernisé. 
-                  Si les mots agglutinés ont été séparés conformément à la graphie moderne, les termes aujourd'hui réunis n'ont pas été soudés.
-                  La ponctuation a été mintenue, en revanche, les signes de ponctuation double (;-:-?-!) sont précédés d'un espace.
+                  Lors de la transcription, l'emploi des majuscules et des minuscules a été
+                  modernisé. Si les mots agglutinés ont été séparés conformément à la graphie
+                  moderne, les termes aujourd'hui réunis n'ont pas été soudés. La ponctuation
+                  a été maintenue, en revanche, les signes de ponctuation double (;-:-?-!) sont
+                  précédés d'un espace.
                </p>
             </normalization>
             <normalization method="markup">
-               <p>
-                  Les éléments <gi>choice</gi>, <gi>abbr</gi> et <gi>expan</gi> ont été utilisés pour le développement des abréviations.
-                  La graphie n'ayant pas été modernisée, les termes dont l'orthographe peut sembler douteuse, ont été encodés avec l'élément <gi>sic</gi>.
-                  Les coupures de mot en fin de ligne sont maintenues ; elles sont balisées au moyen des éléments <gi>w</gi> et <gi>lb</gi>.
-                  Les omissions et blancs laissés vacants par l'auteur, sont encodés respectivement avec les balises <gi>gap</gi> et <gi>space</gi>.
-                  Les titres courants sont encodés lors de leur première apparition à l'aide de l'élément <gi>fw</gi>.
+               <p> 
+                  Les éléments <gi>choice</gi>, <gi>abbr</gi> et <gi>expan</gi> ont été
+                  utilisés pour le développement des abréviations. La graphie n'ayant pas été
+                  modernisée, les termes dont l'orthographe peut sembler douteuse, ont été
+                  encodés avec l'élément <gi>sic</gi>. Les coupures de mot en fin de ligne
+                  sont maintenues ; elles sont balisées au moyen des éléments <gi>w</gi> et
+                  <gi>lb</gi>. Les omissions et blancs laissés vacants par l'auteur, sont
+                  encodés respectivement avec les balises <gi>gap</gi> et <gi>space</gi>. Les
+                  titres courants sont encodés lors de leur première apparition à l'aide de
+                  l'élément <gi>fw</gi>. 
                </p>
             </normalization>
             <quotation>
-               <p>
-                  Les guillemets n'ont pas été conservés. En lieu et place de ces marques de citation, nous avons utilisé l'élément <gi>q</gi>.
-                  Lorsque les citations n'ont pas été retranscrites avec des guillemets par l'auteur, nous avons employé la balise <gi>quote</gi>.
+               <p> 
+                  Les guillemets n'ont pas été conservés. En lieu et place de ces marques de
+                  citation, nous avons utilisé l'élément <gi>q</gi>. Lorsque les citations
+                  n'ont pas été retranscrites avec des guillemets par l'auteur, nous avons
+                  employé la balise <gi>quote</gi>. 
                </p>
-            </quotation>            
-            <interpretation>               
+            </quotation>
+            <interpretation>
                <p>
                   <interpGrp type="theme">
-                     <interp xml:id="meteo">
-                        météo
-                        <desc>
-                           Entrées concernant les conditions
-                           météorologiques et leurs conséquences sur l'agriculture et la
-                           vie quotidienne
-                        </desc>
+                     <interp xml:id="meteo"> météo <desc> Entrées concernant les conditions
+                        météorologiques et leurs conséquences sur l'agriculture et la
+                        vie quotidienne </desc>
                      </interp>
-                     <interp xml:id="aca">
-                        Académie
-                        <desc>
-                           Entrées relatant les séances ou
-                           rencontres des membres de l'Académie Royale des Sciences, Arts
-                           et Belles-Lettres de Nancy
-                        </desc>
+                     <interp xml:id="aca"> Académie <desc> Entrées relatant les séances ou
+                        rencontres des membres de l'Académie Royale des Sciences, Arts
+                        et Belles-Lettres de Nancy </desc>
                      </interp>
-                     <interp xml:id="theatre">
-                        représentation théâtrale
-                        <desc>
-                           Entrées concernant
-                           les représentations théâtrales données à Nancy et devant le roi
-                           Stanislas
-                        </desc>
+                     <interp xml:id="theatre"> représentation théâtrale <desc> Entrées
+                        concernant les représentations théâtrales données à Nancy et
+                        devant le roi Stanislas </desc>
                      </interp>
-                     <interp xml:id="cour">
-                        Stanislas et la Cour
-                        <desc>Entrées relatant la vie du
-                           roi Stanislas et de sa cour, la plupart du temps à
-                           Lunéville
-                        </desc>                        
+                     <interp xml:id="cour"> Stanislas et la Cour <desc>Entrées relatant la
+                        vie du roi Stanislas et de sa cour, la plupart du temps à
+                        Lunéville </desc>
                      </interp>
-                     <interp xml:id="ville">
-                        administration de la ville
-                        <desc>
-                           Entrées relatant les
-                           événements du quotidien et la gestion de la ville de Nancy par
-                           Nicolas Durival
-                        </desc>
+                     <interp xml:id="ville"> administration de la ville <desc> Entrées
+                        relatant les événements du quotidien et la gestion de la ville
+                        de Nancy par Nicolas Durival </desc>
                      </interp>
-                     <interp xml:id="bio">
-                        éléments biographiques
-                        <desc>
-                           Entrées concernant des
-                           événements de la vie personnelle de Durival et de sa
-                           famille
-                        </desc>
+                     <interp xml:id="bio"> éléments biographiques <desc> Entrées concernant
+                        des événements de la vie personnelle de Durival et de sa famille
+                     </desc>
                      </interp>
-                     <interp xml:id="armee">
-                        armées
-                        <desc>
-                           Entrées relatant les mouvements et
-                           exercices des régiments stationnés à Nancy et dans la
-                           région
-                        </desc>
+                     <interp xml:id="armee"> armées <desc> Entrées relatant les mouvements et
+                        exercices des régiments stationnés à Nancy et dans la région
+                     </desc>
                      </interp>
-                     <interp xml:id="fetes">
-                        fêtes et cérémonies
-                        <desc>
-                           Entrées relatant les
-                           différentes manifestations civiles ou
-                           religieuses
-                        </desc>
+                     <interp xml:id="fetes"> fêtes et cérémonies <desc> Entrées relatant les
+                        différentes manifestations civiles ou religieuses </desc>
                      </interp>
-                     <interp xml:id="necro">
-                        décès
-                        <desc>
-                           Entrées relatant les
-                           décès
-                        </desc>
+                     <interp xml:id="necro"> décès <desc> Entrées relatant les décès </desc>
                      </interp>
                      <interp xml:id="stan">
-                        <desc>
-                           Entrées relatant l'accident et la mort du  
-                        </desc>
+                        <desc> Entrées relatant l'accident et la mort du </desc>
                      </interp>
                   </interpGrp>
                </p>
@@ -226,7 +292,7 @@
                </msDesc>
             </sourceDesc>
          </fileDesc>      
-      </teiHeader>
+      </teiHeader>      
       <text>
          <front>
             <div type="bio">
@@ -343,8 +409,9 @@
                         </p>
                      </div>
                      <div>
-                        <head xml:id="durivalBio5" n="3">Lieutenant de police de Nancy</head>                    
+                        <head xml:id="durivalBio5" n="3">Lieutenant de police de Nancy</head>                        
                         <p>
+                           <graphic url="focus/durival/B543956101_098040-7-2"/>
                            En <date when="1760">1760</date>, il résigne ces charges au profit de la lieutenance générale 
                            de police de la ville de <placeName ref="#nancy">Nancy</placeName>, cet office lui 
                            prenant tout son temps. 
@@ -378,6 +445,7 @@
                      <div>
                         <head xml:id="durivalBio6" n="3"><bibl>Le <title>Mémoire sur la Lorraine et le Barrois</title></bibl></head>                    
                         <p>
+                           <graphic url="focus/durival/B543956101_50035_tit"/>                           
                            Selon les historiens, s'appuyant sur les échanges entre 
                            <persName ref="#durival">Durival</persName> et <persName ref="#calmet">Dom Calmet</persName>,
                            <persName ref="#durival">Nicolas Durival</persName> considère, en bon administrateur de son temps, qu'il est 
@@ -407,6 +475,7 @@
                      <div>
                         <head xml:id="durivalBio7" n="3"><bibl>La <title>Description de la Lorraine et du Barrois</title></bibl></head>                    
                         <p>
+                           <graphic url="focus/durival/B543956101_000201-bis_tit"/>                           
                            Cet ouvrage est publié en 4 volumes chez <persName ref="#leClerc">Leclerc</persName> à <placeName ref="#nancy">Nancy</placeName> entre 
                            <date when="1779">1779</date> et <date when="1783">1783</date>, le quatrième volume composé d'ajouts et d'annexes 
                            étant mis gracieusement à disposition des possesseurs des trois 
@@ -496,6 +565,7 @@
                      <div>
                         <head xml:id="durivalBio9" n="3"><bibl>Le <title>Journal</title></bibl></head>                    
                         <p>
+                           <graphic url="focus/durival/B543956101M00863_vues_0004"/>
                            Tenu de <date from="1737" to="1795-12-18">1737 au 18 décembre 1795</date>, soit 3 jours avant la mort 
                            de son rédacteur, <bibl>le <title>Journal</title> de <persName type="author" ref="#durival">Nicolas Durival</persName></bibl> 
                            n'est pas tant un écrit intime 
@@ -624,7 +694,7 @@
                            <lb/>prix ne s'est point trouvé. <persName ref="#simonin">Le P. Simonin</persName> <choice><abbr>jes.</abbr><expan>jésuite</expan></choice> de
                            <lb/><placeName ref="#pontamousson">Pont &aà; Mousson</placeName> en est l'auteur. C'est <persName ref="#bergier">M. Bergier</persName>
                            <lb/>de <placeName ref="#darney">Darney</placeName>, curé au diocèse de <placeName ref="#besancon">Besançon</placeName> qui
-                           <lb/>a traduit <bibl><title ref="#bib31">la Théogonie</title><ref type="note" target="#note17650109A"/> d'<persName type="author">Hésiode</persName></bibl>
+                           <lb/>a traduit <bibl><title ref="#bib31">la Théogonie</title><ref type="note" target="#note17650109A"/> d'Hésiode</bibl>
                         </p>
                      </div>
                      <div type="day" xml:id="d17650110">
@@ -978,7 +1048,7 @@
                            <lb/>qui aura le cornet à sa place.
                         </p>
                         <p xml:id="d1765031802" ana="#necro">                       
-                           <rs type="person" ref="#cureCommercy">Le curé de Commercy</rs> (M.<space/>
+                           <rs type="person" ref="#cureCommercy">Le curé de Commercy</rs> (M. <space/>
                            <lb/>est mort aussi.
                         </p>
                      </div>
@@ -1369,7 +1439,7 @@
                         <dateline><date type="entry" when="1765-04-21">21</date></dateline>
                         <p xml:id="d1765042101" ana="#fetes">                           
                            Concert à <placeName ref="#nancyComedie">la comédie</placeName> au profit des S.<hi rend="super">rs</hi>
-                           <lb/><space/>musiciens de <rs type="person" ref="#anhalt">M. le <choice><abbr>p<hi rend="super">ce</hi></abbr><expan>prince</expan></choice></rs>.
+                           <lb/><space/> musiciens de <rs type="person" ref="#anhalt">M. le <choice><abbr>p<hi rend="super">ce</hi></abbr><expan>prince</expan></choice></rs>.
                         </p>
                      </div>
                      
@@ -1577,7 +1647,7 @@
                            <lb/>La s&eé;ance a été terminée par un fort
                            <lb/>bon discours de <rs type="person" ref="#rouvrois">M. le directeur</rs>, où il a fait 
                            <pb facs="B543956101M00863_06_0082_2R" n="80"/><fw type="pageNum" n="80" place="topRight">80</fw>entrer fort adroitement l'éloge du <rs type="person" ref="#stanislas">roy de <choice><abbr>P.</abbr><expan>Pologne</expan></choice></rs>
-                           <lb/>et parlé de <rs type="org" ref="#fondationI">sa derniere fondation</rs><ref type="note" target="#note17650508B"/>. Il n'a
+                           <lb/>et parlé de sa derniere fondation<ref type="note" target="#note17650508B"/>. Il n'a
                            <lb/>p&ûu; par faiblesse de poitrine lire que le <choice><abbr>commencem</abbr><expan>commencement</expan></choice>.
                            <lb/>La lecture a été faite par <persName ref="#sivry">M. de Sivry</persName> qui
                            <lb/>&eé;t&oa;it à côté de lui. Il y av&oa;it beaucoup de
@@ -1791,8 +1861,7 @@
                         </p>
                         <p xml:id="d1765052902" ana="#aca">
                            Assemblée particuli&eè;re de <orgName ref="#academie">l'Acad&eé;mie</orgName> pour
-
-                           <lb/>examiner un ouvrage imprimé <choice><orig>chès</orig><reg>chez</reg></choice> <persName ref="#leSeure">Le Seure</persName>,
+                           <lb/>examiner un ouvrage imprimé <choice><orig>chès</orig><reg>chez</reg></choice> <persName ref="#leseure">Le Seure</persName>,
                            <lb/>sous le <choice><orig>tître</orig><reg>titre</reg></choice> de <hi rend="underline"><title ref="#bib35">Recueil sur diverses mati&eè;res</title></hi>.
                            <lb/><persName ref="#solignac">M. de Solignac</persName> l'av&oa;it adressé à <persName ref="#rouvrois">M. Du Rouvrois</persName>
                            <lb/>comme l'ouvrage d'un jeune homme qui av&oa;it
@@ -2104,7 +2173,7 @@
                         </p>
                         <p xml:id="d1765062702" ana="#ville">
                            J'ai v&ûu; <rs type="person" ref="#stanislas">le &roy;</rs>. Il m'a parlé des <placeName ref="#nancyCasernes"><choice><orig>cazernes</orig><reg>casernes</reg></choice></placeName>
-                           <lb/>de <placeName ref="#nancyBibliotheque">la <choice><orig>biblioteque</orig><reg>bibliothèque</reg></choice></placeName>, de <rs type="org" ref="#fondationI">sa derni&eè;re fondation</rs>. Il
+                           <lb/>de <placeName ref="#nancyBibliotheque">la <choice><orig>biblioteque</orig><reg>bibliothèque</reg></choice></placeName>, de sa derni&eè;re fondation. Il
                            <lb/>doit venir demain voir <placeName ref="#nancyBibliotheque">la <choice><orig>biblioteque</orig><reg>bibliothèque</reg></choice> à
                               <lb/>l'h&oô;tel de ville</placeName>.
                         </p>
@@ -3096,7 +3165,7 @@
                               <lb/>du clergé de <choice><abbr>F.<hi rend="super">ce</hi></abbr><expan>France</expan></choice> de <date type="pub" when="1765">1765</date></title></bibl> et de la lettre
                            <lb/>circulaire du <date when="1765-08-27">27 aout</date> ; <persName ref="#rochechouartC">M. le cardinal
                               <lb/>de Rochouard</persName> av&oa;it demandé au <rs type="person" ref="#stanislas">&roy;</rs> de
-                           <lb/>faire faire cette réimpression, et <persName ref="#leSeur">Le Seur</persName>
+                           <lb/>faire faire cette réimpression, et <persName ref="#leseure">Le Seur</persName>
                            <lb/>en &eé;t&oa;it chargé. Il y en a 500 exemplaires
                            <lb/>pour <persName ref="#eveqToul">l'év&eê;que de Toul</persName>. 500 pour <persName ref="#eveqMetz">celui de
                               <pb facs="B543956101M00863_06_0098_2R" n="96"/><fw type="pageNum" n="96" place="topRight">96</fw><choice><orig>Mets</orig><reg>Metz</reg></choice></persName>, et 1000 pour <persName ref="#eveqVerdun">celui de Verdun</persName>.
@@ -5008,8 +5077,8 @@
                               <lb/>que ce que je vous en ai marqué à 8 h. <rs type="person" ref="#stanislas"><choice><abbr>S. M.</abbr><expan>Sa Majesté</expan></choice></rs>
                               <lb/>a donné quelques signes de conn&oa;issance
                               <lb/>mais sa situation est absolument d&èé;sespérée ;
-                              <lb/>Je ne vous parle pas de l'accablement de <orgName ref="#laCour">la
-                                 <lb/>Cour</orgName>. <persName ref="#chapuis">M. Chap<supplied reason="inkBlot">uis</supplied></persName> va faire partir ceci
+                              <lb/>Je ne vous parle pas de l'accablement de la                                 
+                              <lb/>Cour. <persName ref="#chapuisFils">M. Chap<supplied reason="inkBlot">uis</supplied></persName> va faire partir ceci
                               <lb/>par le messager qui l'a suivi ; je lui ai
                               <pb facs="B543956101M00863_06_0122_2R" n="119"/><fw type="pageNum" n="119" place="topRight">119</fw>conseill&eé; de ne partir lui même que ce soir.
                               <lb/>Nous sommes tous dans la douleur.
@@ -5020,7 +5089,7 @@
                            <quote>
                               <lb/><rs type="person" ref="#chancelier">M. le chancelier</rs>, <rs type="person" ref="#intendant">M. l'intendant</rs> et 3 ou 4
                               <lb/>personnes ne quittent plus la chambre du <rs type="person" ref="#stanislas">&roy;</rs>.
-                              <lb/>vous <choice><orig>verrés</orig><reg>verrez</reg></choice> ce soir <persName ref="#chapuis">M. Chapuis</persName>. Les <choice><orig>playes</orig><reg>plaies</reg></choice>
+                              <lb/>vous <choice><orig>verrés</orig><reg>verrez</reg></choice> ce soir <persName ref="#chapuisFils">M. Chapuis</persName>. Les <choice><orig>playes</orig><reg>plaies</reg></choice>
                               <lb/>sont séches et noires ; on reveille le
                               <lb/>malade par de <choice><orig>violens</orig><reg>violents</reg></choice> cordiaux. 
                            </quote>
@@ -5038,7 +5107,7 @@
                         <quote type="report" xml:id="d1766022309" ana="#stan">
                            <seg type="dateline"><placeName ref="#luneville">Lun&èé;ville</placeName> <date when="1766-02-23T16:15:00">23 <choice><abbr>f.<hi rend="super">er</hi></abbr><expan>février</expan></choice> 4 h<hi rend="super">1</hi>/<hi rend="sub">4</hi></date></seg>
                            <p xml:id="d176602230901">
-                              <lb/><persName ref="#chapuis">M. Chapuis</persName> va vous annoncer la perte que
+                              <lb/><persName ref="#chapuisFils">M. Chapuis</persName> va vous annoncer la perte que
                               <lb/>nous venons de faire du <rs type="person" ref="#stanislas">meilleur des rois</rs>. Je
                               <lb/>vous <choice><orig>attens</orig><reg>attends</reg></choice> demain dans la matinée. 
                               <add place="marginLeft">
@@ -5052,7 +5121,7 @@
                            </p>
                         </quote>
                         <p xml:id="d1766022310" ana="#stan">
-                           <persName ref="#chapuis">M. Chapuis</persName> a ajouté de bouche beaucoup de
+                           <persName ref="#chapuisFils">M. Chapuis</persName> a ajouté de bouche beaucoup de
                            <lb/>détails, et m'a dit de la part de <persName ref="#intendant">M. l'intendant</persName>
                            <lb/>de rester. <persName ref="#bouflersMme"><choice><abbr>M.<hi rend="super">e</hi></abbr><expan>Madame</expan></choice> de Bouflers</persName> s'&eé;t&oa;it présentée
                            <lb/>pour voir <rs type="person" ref="#stanislas">le &roy;</rs> quelques heures avant la
@@ -8378,7 +8447,7 @@
                         <dateline><date type="entry" when="1766-10-08">8</date></dateline>
                         <p xml:id="d1766100801" ana="#bio">                           
                            Aujourd'hui mercredi j’y reçois une lettre
-                           <lb/>de <rs type="person" ref="#durivalClaude">mon jeune fr&eè;re</rs> du <date when="1766-10-05">5</date> qui me marque qu’il
+                           <lb/>de <rs type="person" ref="#durivalJean">mon jeune fr&eè;re</rs> du <date when="1766-10-05">5</date> qui me marque qu’il
                            <lb/>s’est logé ru&ëe; Feydeau. <persName ref="#dOrmesson">M. d’Ormesson</persName> se trouve
                            <lb/>embarassé touchant <rs type="bibl" ref="#bib17">l’ouvrage de mon
                               <lb/>fr&eè;re sur l’impôt</rs>, parce que <rs type="person" ref="#durivalClaude">mon fr&eè;re</rs>
