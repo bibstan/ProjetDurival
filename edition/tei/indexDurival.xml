@@ -5316,7 +5316,7 @@
                <pubPlace>Paris</pubPlace>
                <publisher>Duchesne, Nicolas-Bonaventure</publisher>
                <date>1765</date>
-               <note type="accessed">2016-01-26T14:14:24Z</note>
+               <!--<note type="accessed">2016-01-26T14:14:24Z</note>-->
                <note type="url">http://catalogue.bnf.fr/ark:/12148/cb30081326s</note>
                <idno type="callNumber">BM Nancy 313 765 (a)</idno>
             </bibl>
