@@ -54,6 +54,13 @@ ul > li.enum {
   text-indent: 5px;
 }
 
+.zommify, #photo {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\PARTIES EDITON\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
 /*font pour le texte de l'édition*/
