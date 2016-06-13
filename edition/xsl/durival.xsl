@@ -1702,7 +1702,7 @@
                             <p class="edito"></p>
                             <div class="large-4 columns">
                                 <div><!-- <h3 class="text-center edito2">Nancy en 1754</h3> --><br/></div>
-                                <a href="belprey.html" target="blank"><img src="../images/vignettes/vignetteBelprey.png"/></a><h3 class="text-center edito2">Le plan Belprey : 1754</h3>
+                                <a href="belprey.html" target="blank"><img src="../images/vignettes/vignetteBelprey.gif"/></a><h3 class="text-center edito2">Le plan Belprey : 1754</h3>
                                 <br/>
                                 <h4 class="edito">Thomas Belprey (1713-1786).</h4>
                                 <cite class="edito">
@@ -1718,7 +1718,7 @@
                             <div class="large-4 columns">
                                 <div>
                                     <br />
-                                    <a href="mique.html" target="blank"><img src="../images/vignettes/vignetteB543956101_H_FG_ES_00014.png"/></a>
+                                    <a href="mique.html" target="blank"><img src="../images/vignettes/vignetteB543956101_H_FG_ES_00014.gif"/></a>
                                 </div>
                                 <h3 class="text-center edito2">Le plan Mique : 1778</h3>
                                 <br />
@@ -1736,7 +1736,7 @@
                             <div class="large-4 columns">
                                 <div>
                                     <br />
-                                    <a href="cartographie.html" target="blank"><img src="../images/vignettes/vignetteCarte.png"/></a>
+                                    <a href="cartographie.html" target="blank"><img src="../images/vignettes/vignetteCarte.gif"/></a>
                                     <h3 class="text-center edito2">Nancy aujourd'hui</h3>
                                     <br />
                                     <p class="edito">
