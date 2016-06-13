@@ -1051,18 +1051,18 @@
                                                             <div class="accordion-content" data-tab-content="true">
                                                                 <xsl:if test="./tei:listEvent">
                                                                     <div class="note">
-                                                                        <xsl:for-each select="./tei:listEvent/tei:event">
-                                                                            <xsl:choose>
-                                                                                <xsl:when test="position() = 1">                                                                                    
-                                                                                    <xsl:value-of select="normalize-space(concat(upper-case(substring(.,1,1)),lower-case(substring(., 2)),' '[not(last())]))"/>
-                                                                                </xsl:when>
-                                                                                <xsl:when test="position() != last()">
-                                                                                    <xsl:value-of select="normalize-space(.)"/><xsl:text>, </xsl:text>
-                                                                                </xsl:when>
-                                                                                <xsl:otherwise>
-                                                                                    <xsl:value-of select="normalize-space(.)"/><xsl:text>.</xsl:text>
-                                                                                </xsl:otherwise>
-                                                                            </xsl:choose>
+                                                                        <xsl:for-each select="./tei:listEvent/tei:event">                                                                            
+                                                                                <xsl:choose>
+                                                                                    <xsl:when test="position() = 1"><!-- force la capitale pour le premier event, et les minus pour les autres -->                                                                                    
+                                                                                        <xsl:value-of select="normalize-space(concat(upper-case(substring(tei:p,1,1)),substring(tei:p, 2),' '[not(last())]))"/><xsl:choose><xsl:when test="following-sibling::tei:event[1]"/><xsl:otherwise><xsl:text>.</xsl:text></xsl:otherwise></xsl:choose>
+                                                                                    </xsl:when>
+                                                                                    <xsl:when test="position() != last()">
+                                                                                        <xsl:text> - </xsl:text><xsl:value-of select="normalize-space(concat(lower-case(substring(tei:p,1,1)),substring(tei:p, 2),' '[not(last())]))"/>
+                                                                                    </xsl:when>
+                                                                                    <xsl:otherwise>
+                                                                                        <xsl:text> - </xsl:text><xsl:value-of select="normalize-space(concat(lower-case(substring(tei:p,1,1)),substring(tei:p, 2),' '[not(last())]))"/><xsl:text>.</xsl:text>
+                                                                                    </xsl:otherwise>
+                                                                                </xsl:choose>                                                                                
                                                                         </xsl:for-each>                                                                        
                                                                     </div>
                                                                 </xsl:if>
