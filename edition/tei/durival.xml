@@ -66,109 +66,69 @@
                </msIdentifier>
                <msContents>
                   <p>
-                     Le <title>Journal</title> et son auteur Nicolas Durival (1713-1795) est
-                     un officier au service du chancelier Chaumont de la Galaizière dès
-                     l'arrivée de Stanislas et des Français en Lorraine en 1737. Il passe
-                     ensuite au Conseil du roi et, à partir de 1760, achète la charge de
-                     lieutenant général de police de Nancy à la demande de son souverain.
-                     Administrateur, statisticien, il est aussi un historien reconnu, auteur
-                     du <title>Mémoire sur la Lorraine et le Barrois</title>, célébré dès son
-                     époque par le vanniste Dom Calmet ou l'abbé Expilly pour sa précision.
-                     C'est certainement pour alimenter ses travaux scientifiques qu'il tient,
-                     dès 1737 et jusqu'à sa mort en 1795 un journal des faits qui se sont
-                     déroulés dans l'entourage ducal et dans la ville de Nancy. Sources de
-                     première importance pour l'histoire de la ville et de la cour, ces 14
-                     volumes manuscrits n'avaient encore jamais fait l'objet d'une édition
-                     complète. C'est le défi que se sont lancées les Bibliothèques de Nancy
-                     pour les années à venir.
+                     <hi>Le <title>Journal</title> et son auteur</hi> Nicolas Durival (1713-1795) est un officier au service du chancelier Chaumont de la Galaizière dès l'arrivée de Stanislas et des Français en Lorraine en 1737. Il passe ensuite au Conseil du roi et, à partir de 1760, achète la charge de lieutenant général de police de Nancy à la demande de son souverain. Administrateur, statisticien, il est aussi un historien reconnu, auteur du <title>Mémoire sur la Lorraine et le Barrois</title>, célébré dès son époque par le vanniste Dom Calmet ou l'abbé Expilly pour sa précision. C'est certainement pour alimenter ses travaux scientifiques qu'il tient, dès 1737 et jusqu'à sa mort en 1795 un journal des faits qui se sont déroulés dans l'entourage ducal et dans la ville de Nancy. Sources de première importance pour l'histoire de la ville et de la cour, ces 14 volumes manuscrits n'avaient encore jamais fait l'objet d'une édition complète. C'est le défi que se sont lancées les
+                     Bibliothèques de Nancy pour les années à venir. 
                   </p>
                </msContents>
                <physDesc>
-                  <p> Manuscrit autographe en 14 volumes. </p>
+                  <p>Manuscrit autographe en 14 volumes.</p>
                </physDesc>
             </msDesc>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <projectDesc>            
+         <projectDesc>
+            <p> Le 18 juin 2016, les Bibliothèques de Nancy mettent en ligne l'édition augmentée du <title>Journal</title> de Nicolas Durival pour les années 1765-1766. Cette réalisation s'inscrit dans le 250<hi rend="super">e</hi> anniversaire du rattachement de la Lorraine à la France, consécutif à la mort du roi Stanislas le 23 février 1766. L'édition repose sur une transcription et un encodage en XML-TEI enrichis de données biographiques, iconographiques, cartographiques et historiques. </p>
             <p>
-               Le 18 juin 2016, les Bibliothèques de Nancy mettent en ligne l'édition augmentée
-               du <title>Journal</title> de Nicolas Durival pour les années 1765-1766. Cette
-               réalisation s'inscrit dans le 250<hi rend="super">e</hi> anniversaire du
-               rattachement de la Lorraine à la France, consécutif à la mort du roi Stanislas
-               le 23 février 1766. L'édition repose sur une transcription et un encodage en
-               XML-TEI enrichis de données biographiques, iconographiques, cartographiques et
-               historiques.
-            </p>
-            <p>
-               <hi>Les objectifs</hi> 
-               Les objectifs en étaient multiples :
-               <list>
-                  <item>tester l'intérêt d'utiliser la TEI pour éditer un document manuscrit dans une bibliothèque municipale ;</item>
-                  <item>enrichir le document, numérisé depuis quelques années, des éléments de contextualisation indispensables à sa compréhension par tous types de publics ;</item>
-                  <item>valoriser les ressources de la bibliothèque par l'accompagnement d'images issues du fonds iconographique en lien avec les événements relatés ;</item>
-                  <item>relier l'ensemble au catalogue du fonds ancien, Nicolas Durival étant amateur de théâtre, de littérature et de par ses fonctions, étroitement lié à l'Académie royale des Sciences, Arts et Lettres de Nancy et au commerce de la librairie ;</item>
+               <hi>Les objectifs</hi> Les objectifs sont multiples : <list>
+                  <item>publier en ligne, enrichir et contextualiser, pour les chercheurs et le grand public, une source essentielle de l'histoire Lorraine au XVIII<hi rend="super">e</hi> siècle ;</item>
+                  <item>tester l'intérêt d'utiliser la <ref type="externalLink" target="https://fr.wikipedia.org/wiki/Text_Encoding_Initiative">TEI</ref> pour éditer un document manuscrit dans une bibliothèque municipale ;</item> <item>valoriser les ressources de la bibliothèque par l'accompagnement d'images issues du fonds iconographique en lien avec les événements relatés ;</item>
+                  <item>relier l'ensemble au catalogue du fonds ancien, Nicolas Durival étant amateur de théâtre, de littérature et de par ses fonctions, étroitement lié à l'Académie royale des Sciences, Arts et Lettres de Nancy (aujourd'hui <ref type="externalLink" target="http://www.academie-stanislas.org/Presentation2.html">Académie Stanislas</ref>) et au commerce de la librairie ;</item>
                   <item>mettre en place les compétences et la chaîne de traitement nécessaires à la poursuite du projet dans les années à venir.</item>
                </list>
             </p>
             <p>
-               <hi>La transcription et l'encodage</hi>                
-               La transcription, l'encodage et la réalisation du site web <ref type="externalLink" target="http://www.journaldedurival.fr">http://www.journaldedurival.fr</ref> ont été confiés à un prestataire issu du master de L’École nationale des Chartes et réalisés en étroite collaboration avec l'équipe du Patrimoine des Bibliothèques de Nancy. Les spécifications techniques ont concerné :
-               <list>
+               <hi>La transcription et l'encodage</hi> La transcription, l'encodage et la réalisation du site web <ref type="externalLink" target="http://www.journaldedurival.fr">http://www.journaldedurival.fr</ref> ont été confiés à un prestataire issu du master de L’École nationale des Chartes et réalisés en étroite collaboration avec l'équipe du Patrimoine des Bibliothèques de Nancy. Les spécifications techniques ont concerné : <list>
                   <item>la possibilité de lire en continu le Journal dans son orthographe et ses abréviations d'époque ou modernisés ;</item>
-                  <item>la navigation par date, voire par heure pour un événement exceptionnel comme l'agonie du roi ;</item>
-                  <item>l'encodage des noms de personne, pour réalisation un index biographique ;</item>
-                  <item>l'encodage des noms de lieux, pour naviguer dans le Journal à partir d'un plan de Nancy ;</item>
-                  <item>l'encodage des titres d’œuvres, à relier au catalogue de la bibliothèque ou à des ressources externes.</item>
+                  <item>la navigation par <ref type="externalLink" target="http://journaldedurival.fr/demo/html/calendrier.html">date</ref> ;</item>
+                  <item>l'encodage des noms de personne, pour réaliser un <ref type="externalLink" target="http://journaldedurival.fr/html/listPerson.html">index biographique</ref> ;</item>
+                  <item>l'encodage des <ref type="externalLink" target="http://journaldedurival.fr/html/listPlace.html">noms de lieux</ref>, pour naviguer dans le Journal à partir d'un <ref type="externalLink" target="http://journaldedurival.fr/html/cartographie.html">plan de Nancy</ref> ;</item>
+                  <item>l'encodage des <ref type="externalLink" target="http://journaldedurival.fr/html/listbib.html">titres d’œuvres</ref>.</item>
                </list>
             </p>
             <p>
-               <hi>L'enrichissement</hi> 
-               Les enrichissements - non encore finalisés - ont impliqué plusieurs acteurs. L'équipe de la bibliothèque a réalisé la relecture de la transcription, les recherches bibliographiques, le (re)catalogage des œuvres imprimées et manuscrites de Nicolas Durival et des œuvres citées par lui en 1765-1766, des élucidations lexicales et de faits locaux, la rédaction de fiches thématiques, la recherche iconographique. Le Musée lorrain a apporté son concours à la fourniture d'images. Enfin, une équipe d'étudiants de licence 3 Histoire de l'Université de Lorraine a réalisé le gros des recherches biographiques, en guise d'apprentissage des techniques de la recherche historique.
-            </p>
+               <hi>Le travail d'enrichissement</hi> Les enrichissements - itératifs - impliquent plusieurs acteurs. L'équipe de la bibliothèque réalise la relecture de la transcription, les recherches bibliographiques, le (re)catalogage des œuvres imprimées et manuscrites de Nicolas Durival et des œuvres citées par lui en 1765-1766, des élucidations lexicales et de faits locaux, la rédaction de fiches thématiques, la recherche iconographique. Le <ref type="externalLink" target="https://musee-lorrain.nancy.fr/">Musée lorrain</ref> a apporté son concours à la fourniture d'images. Enfin, une équipe d'étudiants de <ref type="externalLink" target="http://campus-lettres.univ-lorraine.fr/content/licence-histoire">licence 3 Histoire de l'Université de Lorraine</ref> a réalisé le gros des recherches biographiques, en guise d'apprentissage des techniques de la recherche historique. </p>
             <p>
-               <hi><!--Le résultat--></hi> 
-               Le site <ref type="externalLink" target="http://www.journaldedurival.fr">http://www.journaldedurival.fr</ref> est le premier résultat tangible de ce travail. Il peut encore être amélioré dans ses fonctionnalités, notamment de recherche textuelle, ce qui viendra dans une seconde phase. Les fichiers source sont préparés dans ce sens. L'équipe de la bibliothèque est en possession d'un modèle ré-utilisable d'édition de texte du 18<hi rend="super">e</hi> siècle et peut s'apprêter à mettre à profit ses compétences développées en XML-TEI pour continuer dans les années qui viennent la transcription, l'encodage et l'enrichissement des 13 volumes restants. À l'heure actuelle, le projet s'achemine vers la combinaison de plusieurs partenariats dont la réutilisation de transcriptions effectuées au fil du temps par des historiens locaux et un partenariat solidifié avec la filière Histoire de l'Université de Lorraine aux niveaux L3 et Master. La phase d'encodage XML-TEI et des développements du site, pourraient également faire l'objet de partenariats futurs.
-            </p>
+               <hi><!--Le résultat--></hi> Le site <ref type="externalLink" target="http://www.journaldedurival.fr">http://www.journaldedurival.fr</ref> est le premier résultat tangible de ce travail. Il peut encore être amélioré dans ses fonctionnalités, notamment de recherche textuelle, ce qui viendra dans une seconde phase. Les fichiers source sont préparés dans ce sens. L'équipe de la bibliothèque est en possession d'un modèle ré-utilisable d'édition de texte du 18<hi rend="super">e</hi> siècle et peut s'apprêter à mettre à profit ses compétences développées en XML-TEI pour continuer dans les années qui viennent la transcription, l'encodage et l'enrichissement des 13 volumes restants. À l'heure actuelle, le projet s'achemine vers la combinaison de plusieurs partenariats dont la réutilisation de transcriptions effectuées au fil du temps par des historiens locaux et un partenariat solidifié avec la filière Histoire de l'Université de Lorraine aux niveaux L3 et Master. La phase
+               d'encodage XML-TEI et des développements du site, pourraient également faire l'objet de partenariats futurs. </p>
             <p>
-               <hi>Équipe</hi> 
+               <hi>L'équipe</hi>
                <list>
+                  <item>Directeur de la publication : Juliette Lenoir, directrice des Bibliothèques de Nancy</item>
                   <item>Responsabilité scientifique : <persName>Claire Haquet</persName>, <persName>Malik Diallo</persName></item>
                   <item>Coordination scientifique et technique, maquette (réalisation des CSS) : <persName>Éric Nunes</persName></item>
-                  <item>Transcription, encodage (1765-1766), feuilles de styles XSLT : <persName>Josselin Morvan</persName> (diplômé du master "technologies numériques appliquées à l'histoire" de l'École des Chartes)</item> 
+                  <item>Transcription, encodage (1765-1766), feuilles de styles XSLT : <persName>Josselin Morvan</persName> (diplômé du master "technologies numériques appliquées à l'histoire" de l'École des Chartes)</item>
                   <item>Index et bibliographies : équipe du patrimoine des Bibliothèques de Nancy, étudiants de M. <persName>Jalabert</persName> de l'<orgName>Université Lorraine</orgName> (<persName>Élodie Réot</persName> , <persName>Louise Engler</persName>, <persName>Jules Rawolle</persName>, <persName>Gaëtan Barbier</persName>, <persName>Alexandre Brignon</persName>, <persName>Pierre Valentin</persName>), une partie des notes historiques a été réalisée par <persName>Sara Nadal</persName>.</item>
-               </list>               
+               </list>
             </p>
             <p>
-               <hi>Remerciements</hi>
-               M. <persName>Christian Hénard</persName>, "précurseur" dans l'étude et la transcription du <title>Journal</title> dont les conseils avisés et les notes nous ont été d'une grande aide.
-            </p>
+               <hi>Remerciements</hi> M. <persName>Christian Hénard</persName>, "précurseur" dans l'étude et la transcription du <title>Journal</title> dont les conseils et les notes nous sont d'une grande aide. </p>
             <p>
-               <hi>Techniques</hi> 
-               <lb/>Le site repose sur la transformation des fichiers TEI en multiples fichiers HTML par le biais de plusieurs feuilles de style XSLT. Il est conçu sur la base du framework <ref type="externalLink" target="http://foundation.zurb.com/">Foundation 6</ref> (personnalisé). 
-               <lb/>Plusieurs bibliothèques javascript sont utilisées :
-               <list>
+               <hi>Techniques</hi>
+               <lb/>Le site est en HTML, chaque page est générée par le biais d'une feuilles de style XSLT. Il est conçu sur la base du framework <ref type="externalLink" target="http://foundation.zurb.com/">Foundation 6</ref> (personnalisé). <lb/>Plusieurs bibliothèques javascript sont utilisées : <list>
                   <!--a reprendre -->
                   <item><ref type="externalLink" target="http://www.owlcarousel.owlgraphic.com/">OWLcarousel.js</ref> pour le slider du journal;</item>
                   <item><ref type="externalLink" target="https://technotarek.com/timeliner/">Timeliner.js</ref> pour certaines biographies et l'accès calendaire;</item>
                   <item><ref type="externalLink" target="http://lokeshdhakar.com/projects/lightbox2/">Lightbox.js</ref> pour la visualisation des illustrations;</item>
                   <item><ref type="externalLink" target="http://leafletjs.com/">Leaflet.js</ref> pour la carte annotée.</item>
-                  <item><ref type="externalLink" target="http://leafletjs.com/">Leaflet.js</ref> et Zoomify pour les cartes anciennes</item><!-- todo link Zoomify-->
-                  <!--source -->
-               </list>
-            </p>
-            <p> 
-               <hi>Sources du projet</hi> 
-               Les sources du projet (texte, index, manuel d'encodage, schéma ODD, feuilles de styles XSLT et CSS) sont disponibles sur le <ref type="externalLink" target="http://www.github.com/bibstan">github de la bibliothèque</ref>. Des bibliographies complémentaires sont disponibles sur le Zotero de la bibliothèque. 
+                  <item><ref type="externalLink" target="https://github.com/triceam/Leaflet.Zoomify">Leaflet.js et Zoomify</ref> pour les cartes anciennes</item> </list>
             </p>
             <p>
-               <hi>Propriété intellectuelle</hi> 
-               Sauf mention contraire, tous les éléments du site sont sous Licence Ouverte Etalab (pour les images) et sous licence CC0 (pour les productions scientifiques).                
-            </p>
+               <hi>Sources du projet</hi> Les sources du projet (texte, index, manuel d'encodage, schéma ODD, feuilles de styles XSLT et CSS) sont disponibles sur le <ref type="externalLink" target="http://www.github.com/bibstan">github de la bibliothèque</ref>. Des bibliographies complémentaires sont disponibles sur le <ref type="externalLink" target="https://www.zotero.org/groups/bibliotheque_nancy_stanislas/items/collectionKey/UWA7S8RT">Zotero</ref> de la bibliothèque. </p>
             <p>
-               <hi>Contacts</hi>
-               Pour toute information complémentaire, vous pouvez contacter : 
-               <list>
+               <hi>Propriété intellectuelle</hi> Sauf mention contraire, tous les éléments du site sont sous Licence Ouverte <ref type="externalLink" target="https://www.etalab.gouv.fr/licence-ouverte-open-licence">Etalab</ref> (pour les images) et sous <ref type="externalLink" target="https://creativecommons.org/publicdomain/zero/1.0/deed.fr">licence CC0</ref> (pour les productions scientifiques). </p>
+            <p>
+               <hi>Contacts</hi> Pour toute information complémentaire, vous pouvez contacter : <list>
                   <item>Organisation du projet, des recherches, rédactionnels, site : <ref type="mailto" target="e.nunes@nancy.fr">Eric Nunes</ref> ou <ref type="mailto" target="c.haquet@nancy.fr">Claire Haquet</ref></item>
                   <item>Encodage XML-TEI (et schéma ODD), feuilles de style XSLT : <ref type="mailto" target="morvan.josselin@gmail.com">Josselin Morvan</ref></item>
                   <item>Partenariat Université de Lorraine : <ref type="mailto" target="laurent.jalabert@univ-lorraine.fr">Laurent Jalabert</ref></item>
@@ -178,74 +138,27 @@
          <editorialDecl>
             <!-- todo symbole pour la livre => # -->
             <normalization method="silent">
-               <p>
-                  Lors de la transcription, l'emploi des majuscules et des minuscules a été
-                  modernisé. Si les mots agglutinés ont été séparés conformément à la graphie
-                  moderne, les termes aujourd'hui réunis n'ont pas été soudés. La ponctuation
-                  a été maintenue, en revanche, les signes de ponctuation double (;-:-?-!) sont
-                  précédés d'un espace.
-               </p>
+               <p> Lors de la transcription, l'emploi des majuscules et des minuscules a été modernisé. Si les mots agglutinés ont été séparés conformément à la graphie moderne, les termes aujourd'hui réunis n'ont pas été soudés. La ponctuation a été maintenue, en revanche, les signes de ponctuation double (;-:-?-!) sont précédés d'un espace. </p>
             </normalization>
             <normalization method="markup">
-               <p> 
-                  Les éléments <gi>choice</gi>, <gi>abbr</gi> et <gi>expan</gi> ont été
-                  utilisés pour le développement des abréviations. La graphie n'ayant pas été
-                  modernisée, les termes dont l'orthographe peut sembler douteuse, ont été
-                  encodés avec l'élément <gi>sic</gi>. Les coupures de mot en fin de ligne
-                  sont maintenues ; elles sont balisées au moyen des éléments <gi>w</gi> et
-                  <gi>lb</gi>. Les omissions et blancs laissés vacants par l'auteur, sont
-                  encodés respectivement avec les balises <gi>gap</gi> et <gi>space</gi>. Les
-                  titres courants sont encodés lors de leur première apparition à l'aide de
-                  l'élément <gi>fw</gi>. 
-               </p>
+               <p> Les éléments <gi>choice</gi>, <gi>abbr</gi> et <gi>expan</gi> ont été utilisés pour le développement des abréviations. La graphie n'ayant pas été modernisée, les termes dont l'orthographe peut sembler douteuse, ont été encodés avec l'élément <gi>sic</gi>. Les coupures de mot en fin de ligne sont maintenues ; elles sont balisées au moyen des éléments <gi>w</gi> et <gi>lb</gi>. Les omissions et blancs laissés vacants par l'auteur, sont encodés respectivement avec les balises <gi>gap</gi> et <gi>space</gi>. Les titres courants sont encodés lors de leur première apparition à l'aide de l'élément <gi>fw</gi>. </p>
             </normalization>
             <quotation>
-               <p> 
-                  Les guillemets n'ont pas été conservés. En lieu et place de ces marques de
-                  citation, nous avons utilisé l'élément <gi>q</gi>. Lorsque les citations
-                  n'ont pas été retranscrites avec des guillemets par l'auteur, nous avons
-                  employé la balise <gi>quote</gi>. 
-               </p>
+               <p> Les guillemets n'ont pas été conservés. En lieu et place de ces marques de citation, nous avons utilisé l'élément <gi>q</gi>. Lorsque les citations n'ont pas été retranscrites avec des guillemets par l'auteur, nous avons employé la balise <gi>quote</gi>. </p>
             </quotation>
             <interpretation>
                <p>
                   <interpGrp type="theme">
-                     <interp xml:id="meteo"> météo <desc> Entrées concernant les conditions
-                        météorologiques et leurs conséquences sur l'agriculture et la
-                        vie quotidienne </desc>
-                     </interp>
-                     <interp xml:id="aca"> Académie <desc> Entrées relatant les séances ou
-                        rencontres des membres de l'Académie Royale des Sciences, Arts
-                        et Belles-Lettres de Nancy </desc>
-                     </interp>
-                     <interp xml:id="theatre"> représentation théâtrale <desc> Entrées
-                        concernant les représentations théâtrales données à Nancy et
-                        devant le roi Stanislas </desc>
-                     </interp>
-                     <interp xml:id="cour"> Stanislas et la Cour <desc>Entrées relatant la
-                        vie du roi Stanislas et de sa cour, la plupart du temps à
-                        Lunéville </desc>
-                     </interp>
-                     <interp xml:id="ville"> administration de la ville <desc> Entrées
-                        relatant les événements du quotidien et la gestion de la ville
-                        de Nancy par Nicolas Durival </desc>
-                     </interp>
-                     <interp xml:id="bio"> éléments biographiques <desc> Entrées concernant
-                        des événements de la vie personnelle de Durival et de sa famille
-                     </desc>
-                     </interp>
-                     <interp xml:id="armee"> armées <desc> Entrées relatant les mouvements et
-                        exercices des régiments stationnés à Nancy et dans la région
-                     </desc>
-                     </interp>
-                     <interp xml:id="fetes"> fêtes et cérémonies <desc> Entrées relatant les
-                        différentes manifestations civiles ou religieuses </desc>
-                     </interp>
-                     <interp xml:id="necro"> décès <desc> Entrées relatant les décès </desc>
-                     </interp>
-                     <interp xml:id="stan">
-                        <desc> Entrées relatant l'accident et la mort du </desc>
-                     </interp>
+                     <interp xml:id="meteo">météo <desc> Entrées concernant les conditions météorologiques et leurs conséquences sur l'agriculture et la vie quotidienne</desc></interp>
+                     <interp xml:id="aca">Académie <desc> Entrées relatant les séances ou rencontres des membres de l'Académie Royale des Sciences, Arts et Belles-Lettres de Nancy</desc></interp>
+                     <interp xml:id="theatre">représentation théâtrale <desc> Entrées concernant les représentations théâtrales données à Nancy et devant le roi Stanislas</desc></interp>
+                     <interp xml:id="cour">Stanislas et la Cour <desc>Entrées relatant la vie du roi Stanislas et de sa cour, la plupart du temps à Lunéville</desc></interp>
+                     <interp xml:id="ville">administration de la ville <desc> Entrées relatant les événements du quotidien et la gestion de la ville de Nancy par Nicolas Durival</desc></interp>
+                     <interp xml:id="bio">éléments biographiques <desc> Entrées concernant des événements de la vie personnelle de Durival et de sa famille</desc></interp>
+                     <interp xml:id="armee">armées <desc> Entrées relatant les mouvements et exercices des régiments stationnés à Nancy et dans la région</desc></interp>
+                     <interp xml:id="fetes">fêtes et cérémonies <desc> Entrées relatant les différentes manifestations civiles ou religieuses</desc></interp>
+                     <interp xml:id="necro">décès <desc> Entrées relatant les décès</desc></interp>
+                     <interp xml:id="stan"><desc>Entrées relatant l'accident et la mort du</desc></interp>
                   </interpGrp>
                </p>
             </interpretation>
@@ -638,7 +551,7 @@
                         </p>
                         <p xml:id="d1765010102" ana="#ville">
                            <placeName ref="#nancyHDV">L'h&oô;tel de ville de Nancy</placeName> <choice><orig>aiant</orig><reg>ayant</reg></choice> fait graver par
-                           <lb/><persName ref="#collin">Collin</persName> l'estampe de la <title ref="#estampeCollin">construction du quartier
+                           <lb/><persName ref="#collin">Collin</persName> l'estampe de <title ref="#estampeCollin">la construction du quartier
                               <lb/><choice><orig>roïal</orig><reg>royal</reg></choice> des <choice><orig>cazernes</orig><reg>casernes</reg></choice></title><ref type="picture" target="#pic01"/>. Elle a été presentée ce matin
                            <lb/>au <rs type="person" ref="#stanislas">&roy; de Pologne</rs> à <placeName ref="#luneville">Lunéville</placeName>. <rs type="person" ref="#stanislas"><choice><abbr>S. M.</abbr><expan>Sa Majesté</expan></choice></rs> en a été contente.
                         </p>
