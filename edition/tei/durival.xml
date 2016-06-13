@@ -8949,6 +8949,568 @@
                <xi:include href="indexDurival.xml" xpointer="listOrg" parse="xml"/>
                <xi:include href="indexDurival.xml" xpointer="listBibl" parse="xml"/>
             </div>
+            <div>
+               <listBibl xml:id="BiblioGenerale">
+                <biblStruct type="journalArticle">
+                    <analytic>
+                        <title level="a">À propos de la nouvelle bibliothèque : l'ardoisière de la vénerie (1764)</title>
+                        <author><forename>André</forename><surname>Gain</surname></author>
+                    </analytic>
+                    <monogr>
+                        <title level="j">Annales de l'Est</title>
+                        <imprint>
+                            <biblScope unit="page">231-237</biblScope>
+                            <date>1934</date>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m">Art français au temps de Stanislas: Bi-centenaire de la Place Stanislas, Musée des beaux-arts, Nancy, 13 juin-14 septembre 1992</title>
+                        <author/>
+                        <imprint>
+                            <pubPlace>Paris, France</pubPlace>
+                            <publisher>Musée des Beaux-Arts de Nancy</publisher>
+                            <date>1955</date>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m">De l'esprit des villes: Nancy et l'Europe urbaine au siècle des Lumières, 1720-1770 [exposition,] Musée des beaux-arts de Nancy, 7 mai-22 août 2005</title>
+                        <respStmt>
+                            <resp>contributor</resp>
+                            <persName><forename>Alexandre</forename><surname>Gady</surname></persName>
+                        </respStmt>
+                        <respStmt>
+                            <resp>contributor</resp>
+                            <persName><forename>Jean-Marie</forename><surname>Pérouse de Montclos</surname></persName>
+                        </respStmt>
+                        <author/>
+                        <imprint>
+                            <pubPlace>Versailles</pubPlace>
+                            <publisher>Artlys</publisher>
+                            <date>2005</date>
+                        </imprint>
+                    </monogr>
+                    <idno type="callNumber">711.409 40933</idno>
+                </biblStruct>
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m">Hommage de la Lorraine à la France: à l'occasion du bicentenaire de leur réunion</title>
+                        <author/>
+                        <imprint>
+                            <pubPlace>Nancy, France</pubPlace>
+                            <publisher>Berger-Levrault</publisher>
+                            <date>1966</date>
+                        </imprint>
+                    </monogr>
+
+                </biblStruct>
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m">La Cour Souveraine de Lorraine sous Stanislas. M. d'Aristay de Chateaufort. Discours</title>
+                        <author><forename>Jules</forename><surname>Poulet</surname></author>
+                        <imprint>
+                            <publisher>Vagner</publisher>
+                            <date>1876</date>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+                <biblStruct type="journalArticle">
+                    <analytic>
+                        <title level="a">La persistance du sentiment lorrain après le départ de la Maison ducale (1737-1793)</title>
+                        <author><forename>Alain</forename><surname>Petiot</surname></author>
+                    </analytic>
+                    <monogr>
+                        <title level="j">Mémoires de l'Académie de Stanislas</title>
+                        <imprint>
+                            <biblScope unit="page">349-363</biblScope>
+                            <date>2007</date>
+                            <!--<note type="accessed">2015-12-05T14:53:00Z</note>-->
+                            <note type="url">http://www.academie-stanislas.org/TomeXXI/37-Communication%20de%20Monsieur%20Alain%20Petiot.pdf</note>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m">La vie culturelle à l'époque de Stanislas: actes du colloque de Nancy, Palais du gouvernement, 30 septembre, 1er octobre 2005</title>
+                        <author><forename>Yves</forename><surname>Ferraton</surname></author>
+                        <author><forename>Béatrice</forename><surname>Didier</surname></author>
+                        <author><forename>André</forename><surname>Rossinot</surname></author>                        
+                        <imprint>
+                            <pubPlace>Langres</pubPlace>
+                            <publisher>Guéniot</publisher>
+                            <date>2005</date>
+                        </imprint>
+                    </monogr>
+                    <idno type="callNumber">10 046</idno>
+                </biblStruct>
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m">Le roi Stanislas</title>
+                        <author><forename>Anne</forename><surname>Muratori-Philip</surname></author>
+                        <imprint>
+                            <publisher>Fayard</publisher>
+                            <date>2000</date>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+                <biblStruct type="conferencePaper">
+                    <analytic>
+                        <title level="a">Les salons littéraires nancéiens de 1760 à 1789</title>
+                        <author><forename>Laurent</forename><surname>Versini</surname></author>
+                    </analytic>
+                    <monogr>
+                        <title level="m">Vie des salons et activités littéraires [Texte imprimé] : de Marguerite de Valois à Mme de Staël : actes du colloque international de Nancy, 6-8 octobre 1999, recueillis et publié par Roger Marchal</title>
+                        <imprint>
+                            <pubPlace>Nancy</pubPlace>
+                            <biblScope unit="page">243-249</biblScope>
+                            <publisher>Presses universitaires de Nancy</publisher>
+                            <date>2001</date>
+                        </imprint>
+                    </monogr>
+                    <idno type="callNumber">474 293</idno>
+                </biblStruct>
+                <biblStruct type="journalArticle">
+                    <analytic>
+                        <title level="a">Nicolas Durival : descripteur de la Lorraine au xviiie siècle</title>
+                        <title type="short">Le Pays lorrain</title>
+                        <author><forename>Stéphane</forename><surname>Gaber</surname></author>
+                    </analytic>
+                    <monogr>
+                        <title level="j">Le Pays lorrain</title>
+                        <imprint>
+                            <biblScope unit="page">237-244</biblScope>
+                            <date>1991</date>
+                            <!--<note type="accessed">2015-10-19T13:07:29Z</note>-->
+                            <note type="url">http://gallica.bnf.fr/ark:/12148/bpt6k9600146m</note>
+                        </imprint>
+                    </monogr>
+
+                </biblStruct>
+                <biblStruct type="journalArticle">
+                    <analytic>
+                        <title level="a">Notice sur Nicolas Durival</title>
+                        <author><forename>Justin</forename><surname>Favier</surname></author>
+                    </analytic>
+                    <monogr>
+                        <title level="j">Mémoires de la Société d’Archéologie lorraine</title>
+                        <imprint>
+                            <biblScope unit="page">5-36</biblScope>
+                            <date>1880</date>
+                            <note type="url">http://gallica.bnf.fr/ark:/12148/bpt6k337007/f4.item</note>
+                        </imprint>
+                    </monogr>
+                    <idno type="callNumber">BM Nancy 80 250 (6)</idno>
+                </biblStruct>
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m">Stanislas, un roi de Pologne en Lorraine:, Musée lorrain, Nancy, 17 décembre 2004-21 mars 2005</title>
+                        <title type="short">Stanislas, un roi de Pologne en Lorraine</title>
+                        <author/>
+                        <imprint>
+                            <pubPlace>Versailles</pubPlace>
+                            <publisher>Artlys</publisher>
+                            <date>2004</date>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </listBibl>
+            
+            <listBibl xml:id="œuvresCitees">
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m">Description du mausolée et de la pompe funèbre faite dans l'église de Notre-Dame, le 12 juin 1766, pour... prince Stanislas Leszczynski, ...</title>
+                        <author><forename>Charles-Michel-Ange</forename><surname>Challes</surname></author>
+                        
+                        <imprint>
+                            <pubPlace>Paris</pubPlace>
+                            <publisher>Ballard, Pierre-Robert-Christophe</publisher>
+                            <date>1766</date>
+                            
+                        </imprint>
+                    </monogr>
+                    <idno type="callNumber">BM Nancy : cote 702 032 (17), 50 279 (m) et 154 032 (k)</idno>
+                </biblStruct>
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m">Dictionnaire philosophique, portatif, ou supplément à l'édition de 1765 . Revu, corrigé &amp; augmenté de XXXVII articles par l'auteur</title>
+                        <author><persName>Voltaire</persName></author>
+                        <imprint>
+                            <pubPlace>A Londres [ca 1765]</pubPlace>
+                            <date>1765</date>
+                            
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+                
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m">Éloge historique de Stanislas I. Roi de Pologne... Prononcé le 11 mai 1766... l'Académie Royale des Sciences</title>
+                        <author><forename>Pierre-Joseph de</forename><surname>Solignac</surname></author>
+                        <imprint>
+                            <pubPlace>Nancy</pubPlace>
+                            <publisher>Leseure, Veuve d'Antoine ; Leseure, Claude</publisher>
+                            <date>1766</date>
+                        </imprint>
+                    </monogr>
+                    <idno type="callNumber">BM Nancy : cote 50 279 (f) ou 702 031 (16)</idno>
+                </biblStruct>
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m">Éssai sur le luxe</title>
+                        <author><forename>Jean-François</forename><surname>Saint-Lambert</surname></author>
+                        <edition>[S.N]</edition>
+                        <imprint>
+                            <pubPlace>Yvzerdon</pubPlace>
+                            <date>1765</date>
+                        </imprint>
+                    </monogr>
+                    <idno type="callNumber">BM Nancy : cote 6013 b</idno>
+                </biblStruct>
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m">Honneurs funèbres rendus à très-haut,... Monseigneur Louis Dauphin ; par les jésuites de Nancy... le 7 février 1766</title>
+                        <imprint>
+                            <pubPlace>Nancy</pubPlace>
+                            <publisher>Lamort, Claude-Sigisbert</publisher>
+                            <date>1766</date>
+                        </imprint>
+                    </monogr>
+                    <idno type="callNumber">BM Nancy : cote 301 (i)</idno>
+                </biblStruct>
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m">Mandement de Mgr l'évêque, comte de Toul... ordonne des prières publiques pour le repos de l'âme du roi de Pologne,...</title>
+                        <author><forename>Claude</forename><surname>Drouas de Boussey</surname></author>
+                        <imprint>
+                            <pubPlace>Toul</pubPlace>
+                            <publisher>Carez, Joseph</publisher>
+                            <date>1766</date>
+                        </imprint>
+                    </monogr>
+                    <idno type="callNumber">BM Nancy : cote 50 279 (b)</idno>
+                </biblStruct>
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m">Mémoire présenté par la cour souveraine... pour prouver que le Parlement de Metz ne peut à aucun titre,... demander le ressort de la Cour souveraine de Lorraine et Barrois</title>
+                        <imprint>
+                            <pubPlace>[S.l.]</pubPlace>
+                            <publisher>[S.n.]</publisher>
+                            <date>1766</date>
+                        </imprint>
+                    </monogr>
+                    <idno type="callNumber">BM Nancy : cote 98 025 (15) et 298 523 (v)</idno>
+                </biblStruct>
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m">Nouvelles observations sur les naissances tardives ;... Suivies d'une consultation de célébres médecins &amp; chirurgiens de Paris</title>
+                        <author><forename>Jean</forename><surname>Le Bas</surname></author>
+                        <editor><forename>Louis-Alexandre</forename><surname>Delalain</surname></editor>
+                        <imprint>
+                            <pubPlace>Paris</pubPlace>
+                            <publisher>Delalain, Nicolas-Augustin</publisher>
+                            <date>1765</date>
+                        </imprint>
+                    </monogr>                    
+                </biblStruct>
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m">Oraison funèbre de... M<hi rend="super">gr</hi> Louis, Dauphin, prononcée... le 7 février 1766</title>
+                        <author><forename>Alexandre</forename><surname>Lenfant</surname></author>
+                        <imprint>
+                            <pubPlace>Nancy</pubPlace>
+                            <publisher>François Messin ; Nicolas Gervois</publisher>
+                            <date>1766</date>
+                        </imprint>
+                    </monogr>
+                    <idno type="callNumber">BM Nancy : cote 1984 (f) et/ou 301 (h)</idno>
+                </biblStruct>
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m">Oraison funèbre de... Monseigneur Louis, Dauphin,... Eglise primatiale de Lorraine, le 3 février 1766</title>
+                        <author><forename>Jean-Louis</forename><surname>Coster</surname></author>
+                        <imprint>
+                            <pubPlace>Nancy</pubPlace>
+                            <publisher>Leseur, Veuve d'Antoine ; Leseure, Claude</publisher>
+                            <date>1766</date>
+                        </imprint>
+                    </monogr>
+                    <idno type="callNumber">BM Nancy : cote 301 (f)</idno>
+                </biblStruct>
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m">Oraison funèbre de Stanislas 1<hi rend="super">er</hi>..., 20 may 1766...</title>
+                        <author><forename>Jean-Louis</forename><surname>Coster</surname></author>
+                        <imprint>
+                            <pubPlace>Nancy</pubPlace>
+                            <publisher>Leseure, Veuve d'Antoine ; Leseure, Claude</publisher>
+                            <date>1766</date>
+                        </imprint>
+                    </monogr>
+                    <idno type="callNumber">BM Nancy : cote 50 279 (i) et 50 280 (5)</idno>
+                </biblStruct>
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m">Oraison funèbre de... Stanislas 1<hi rend="super">er</hi>,... duc de Lorraine... prononcée le 12 mai 1766...</title>
+                        <author><forename>Abbé de</forename><surname>Dombasle</surname></author>
+                        <imprint>
+                            <pubPlace>Nancy</pubPlace>
+                            <publisher>Leclerc, Jean-Baptiste-Hyacinthe</publisher>
+                            <date>1766</date>
+                        </imprint>
+                    </monogr>
+                    <idno type="callNumber">BM Nancy : cote 50 279 (g)</idno>
+                </biblStruct>
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m">Oraison funèbre de Stanislas 1<hi rend="super">er</hi>,... prononcée le 10 juin 1766...</title>
+                        <author><forename>Guillaume-Germain</forename><surname>Guyot</surname></author>
+                        <imprint>
+                            <pubPlace>Nancy</pubPlace>
+                            <publisher>Leseure, Veuve d'Antoine ; Leseure, Claude</publisher>
+                            <date>1766</date>
+                        </imprint>
+                    </monogr>
+                    <idno type="callNumber">BM Nancy : cote 50 279 (k)</idno>
+                </biblStruct>
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m">Oraison funèbre de... Stanislas I,... , prononcée en l'église paroissiale de St-Roch de Nancy..., le 26 may 1766...</title>
+                        <author><forename>Denis-Xavier</forename><surname>Clément</surname></author>
+                        <imprint>
+                            <pubPlace>Paris</pubPlace>
+                            <publisher>Delatour, Louis-François</publisher>
+                            <date>1766</date>
+                        </imprint>
+                    </monogr>
+                    <idno type="callNumber">BM Nancy : cote 50 279 (j)</idno>
+                </biblStruct>
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m">Oraison funèbre de Stanislas... prononcée dans l'Eglise du Collège,... le 15 may 1766,...</title>
+                        <author><forename>Sigisbert-Etienne</forename><surname>Coster</surname></author>
+                        <imprint>
+                            <pubPlace>Nancy</pubPlace>
+                            <publisher>Leseure, Veuve d'Antoine ; Leseure, Claude</publisher>
+                            <date>1766</date>
+                        </imprint>
+                    </monogr>
+                    <idno type="callNumber">BM Nancy : cote 50 279 (h)</idno>
+                </biblStruct>
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m">Oraison funèbre de très-haut,... Stanislas I,... Prononcée en l'Eglise Primatiale de Lorraine le 10 du mois de Mai 1766</title>
+                        <author/>
+                        <imprint>
+                            <pubPlace>Paris</pubPlace>
+                            <publisher>Lottin, Antoine-Prosper</publisher>
+                            <date>1766</date>
+                        </imprint>
+                    </monogr>
+                    <idno type="callNumber">BM Nancy : cote 702 031 19(a-b)</idno>
+                </biblStruct>
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m">Oraison funèbre de très-haut,... Stanislas I... Prononcée en l'église Primatiale de Lorraine le dix du mois de Mai 1766...</title>
+                        <author/>
+                        <imprint>
+                            <pubPlace>Nancy</pubPlace>
+                            <publisher>Antoine, Pierre</publisher>
+                            <date>1766</date>
+                        </imprint>
+                    </monogr>
+                    <idno type="callNumber">BM Nancy :cote 50 279 (e)</idno>
+                </biblStruct>
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m">Recueil des plans, élévations et coupes tant géométrales qu'en perspective des châteaux, jardins et dépendances que le roy de Pologne occupe en Lorraine [...] par M. Héré, son premier architecte.</title>
+                        <author><forename>Emmanuel</forename><surname>Héré</surname></author>
+                        <author/>
+                        <imprint>
+                            <pubPlace>Paris</pubPlace>
+                            <publisher>François</publisher>
+                            <date>1753</date>
+                        </imprint>
+                    </monogr>
+                    <idno type="callNumber">BM Nancy : cote Rés. 28</idno>
+                </biblStruct>
+            </listBibl>
+            
+            <listBibl xml:id="œuvresDurival">
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m">Description de la Lorraine et du Barrois, par M. Durival l'aîné. Tome premier</title>
+                        <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
+                        <imprint>
+                            <pubPlace>Nancy</pubPlace>
+                            <publisher>Leclerc, Veuve de Jean-Baptiste-Hyacinthe</publisher>
+                            <date>1778</date>
+                            <note type="url">https://books.google.fr/books?id=SQRUAAAAcAAJ&amp;hl=fr&amp;pg=PP7#v=onepage&amp;q&amp;f=false</note>
+                        </imprint>
+                    </monogr>
+                    <idno type="callNumber">BM Nancy 50 051 (1)</idno>
+                </biblStruct>
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m">Description de la Lorraine et du barrois par M. Durival l'ainé. Tome quatrième. Servant de supplément aux trois autres</title>
+                        <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
+                        <imprint>
+                            <pubPlace>Nancy</pubPlace>
+                            <publisher>Leseure, Claude</publisher>
+                            <date>1783</date>
+                        </imprint>
+                    </monogr>
+                    <idno type="callNumber">BM Nancy 50 051 (4)</idno>
+                </biblStruct>
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m">Description de la Lorraine et du Barrois, par M. Durival l'aîné. Tome second</title>
+                        <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
+                        <imprint>
+                            <pubPlace>Nancy</pubPlace>
+                            <publisher>Leclerc, Veuve de Jean-Baptiste-Hyacinthe</publisher>
+                            <date>1779</date>
+                            <note type="url">https://books.google.fr/books?id=8jUli2255SMC&amp;hl=fr&amp;pg=PP5#v=onepage&amp;q&amp;f=false</note>
+                        </imprint>
+                    </monogr>
+                    <idno type="callNumber">BM Nancy 50 051 (2)</idno>
+                </biblStruct>
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m">Description de la Lorraine et du Barrois, par M. Durival l'aîné. Tome troisième</title>
+                        <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
+                        <imprint>
+                            <pubPlace>Nancy</pubPlace>
+                            <publisher>Leclerc, Veuve de Jean-Baptiste-Hyacinthe</publisher>
+                            <date>1779</date>
+                            <note type="url">https://books.google.fr/books?id=cARUAAAAcAAJ&amp;hl=fr&amp;pg=PP7#v=onepage&amp;q&amp;f=false</note>
+                        </imprint>
+                    </monogr>
+                    <idno type="callNumber">BM Nancy 50 051 (3)</idno>
+                </biblStruct>
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m">Introduction à la description de la Lorraine et du Barrois</title>
+                        <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
+                        <imprint>
+                            <pubPlace>Nancy</pubPlace>
+                            <publisher>Babin, François</publisher>
+                            <date>1774</date>
+                            <note type="url">https://books.google.fr/books?id=HBNUAAAAcAAJ&amp;hl=fr&amp;pg=PP5#v=onepage&amp;q&amp;f=false</note>
+                        </imprint>
+                    </monogr>
+                    <idno type="callNumber">BM Nancy 201 ; 201 Bis</idno>
+                </biblStruct>
+                <biblStruct type="manuscript">
+                    <monogr>
+                        <title level="m">Journal de Durival l'aîné, de 1737 à 1795</title>
+                        <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
+                        <imprint>
+                            <pubPlace>Nancy</pubPlace>
+                            <date>1737</date>
+                        </imprint>
+                    </monogr>
+                    <idno type="callNumber">BM Nancy ms. 863 (1-14)</idno>
+                </biblStruct>
+                <biblStruct type="document">
+                    <monogr>
+                        <title level="m">[Placard] La Lorraine devant bientôt jouïr du bonheur d'y recevoir Mesdames de France Adélaïde et Victoire à Nancy "..."</title>
+                        <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
+                        <imprint>
+                            <publisher>[S.n.]</publisher>
+                            <date>1762</date>
+                        </imprint>
+                    </monogr>
+                    <idno type="callNumber">BM Nancy 98 040 7(1)</idno>
+                </biblStruct>
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m">Mémoire concernant la clôture des héritages, le vain-pâturage et le parcours en Lorraine</title>
+                        <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
+                        <imprint>
+                            <pubPlace>Nancy</pubPlace>
+                            <publisher>Thomas, Henri ; Thomas, Pierre-Henri</publisher>
+                            <date>1763</date>
+                        </imprint>
+                    </monogr>
+                    <idno type="callNumber">BM Nancy 3261 (c) ; 80 147 (11)</idno>
+                </biblStruct>
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m">Mémoire sur la Lorraine et le Barrois</title>
+                        <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
+                        <imprint>
+                            <pubPlace>[S.l.]</pubPlace>
+                            <publisher>[S.n.]</publisher>
+                            <date>1752</date>
+                        </imprint>
+                    </monogr>
+                    <idno type="callNumber">BM Nancy 9562</idno>
+                </biblStruct>
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m">Mémoire sur la Lorraine et le Barrois, suivi de la table alphabétique et topographique des lieux</title>
+                        <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
+                        <imprint>
+                            <pubPlace>Nancy</pubPlace>
+                            <publisher>Thomas, Henri</publisher>
+                            <date>1753</date>
+                            <note type="url">https://books.google.fr/books?id=uAVcAAAAcAAJ&amp;hl=fr&amp;pg=PR1#v=onepage&amp;q&amp;f=false</note>
+                        </imprint>
+                    </monogr>
+                    <idno type="callNumber">BM Nancy 50 035 ; 50 035 Bis ; 50 035 Ter</idno>
+                </biblStruct>
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m">Table alphabétique des villes, bourgs, villages etc. de la Lorraine et du Barrois</title>
+                        <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
+                        <imprint>
+                            <pubPlace>Nancy</pubPlace>
+                            <publisher>Thomas, Henri</publisher>
+                            <date>1766</date>
+                        </imprint>
+                    </monogr>
+                    <idno type="callNumber">BM Nancy 199 ; 199 Bis ; 199 Ter ; 311 652</idno>
+                </biblStruct>
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m">Table alphabétique des villes, bourgs, villages et hameaux de Lorraine et Barrois</title>
+                        <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
+                        <imprint>
+                            <pubPlace>[S.l.]</pubPlace>
+                            <publisher>[S.n.]</publisher>
+                            <date>1748</date>
+                        </imprint>
+                    </monogr>
+                    <idno type="callNumber">BM Nancy 12 320</idno>
+                </biblStruct>
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m">Table alphabétique des villes, bourgs, villages et hameaux de Lorraine et du Barrois</title>
+                        <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
+                        <imprint>
+                            <pubPlace>[S.l.]</pubPlace>
+                            <publisher>[S.n.]</publisher>
+                            <date>1749</date>
+                        </imprint>
+                    </monogr>
+                    <idno type="callNumber">BM Nancy 200 ; 200 Bis</idno>
+                </biblStruct>
+                <biblStruct type="document">
+                    <monogr>
+                        <title level="m">Tous les ordres des la Ville de Nancy donnent des preuves si sensibles de joye, à l'occasion de l'arrivée de Mesdames de France Adelaïde &amp; Victoire "..."</title>
+                        <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
+                        <imprint>
+                            <publisher>[S.n.]</publisher>
+                            <date>1761</date>
+                        </imprint>
+                    </monogr>
+                    <idno type="callNumber">BM Nancy 98 040 7(2)</idno>
+                </biblStruct>
+            </listBibl>
+            </div>
          </body>
       </text>
    </TEI>
