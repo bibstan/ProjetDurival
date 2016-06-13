@@ -8949,7 +8949,7 @@
                <xi:include href="indexDurival.xml" xpointer="listOrg" parse="xml"/>
                <xi:include href="indexDurival.xml" xpointer="listBibl" parse="xml"/>
             </div>
-            <div>
+            <div type="bibl">
                <listBibl xml:id="BiblioGenerale">
                 <biblStruct type="journalArticle">
                     <analytic>
@@ -8966,10 +8966,9 @@
                 </biblStruct>
                 <biblStruct type="book">
                     <monogr>
-                        <title level="m">Art français au temps de Stanislas: Bi-centenaire de la Place Stanislas, Musée des beaux-arts, Nancy, 13 juin-14 septembre 1992</title>
-                        <author/>
+                        <title level="m">Art français au temps de Stanislas : Bi-centenaire de la Place Stanislas, Musée des beaux-arts, Nancy, 13 juin-14 septembre 1992</title>                        
                         <imprint>
-                            <pubPlace>Paris, France</pubPlace>
+                            <pubPlace>Paris</pubPlace>
                             <publisher>Musée des Beaux-Arts de Nancy</publisher>
                             <date>1955</date>
                         </imprint>
@@ -8978,15 +8977,16 @@
                 <biblStruct type="book">
                     <monogr>
                         <title level="m">De l'esprit des villes: Nancy et l'Europe urbaine au siècle des Lumières, 1720-1770 [exposition,] Musée des beaux-arts de Nancy, 7 mai-22 août 2005</title>
-                        <respStmt>
+                       <author><forename>Alexandre</forename><surname>Gady</surname></author>
+                       <author><forename>Jean-Marie</forename><surname>Pérouse de Montclos</surname></author>
+                       <!--<respStmt> todo pour faire les contributions il faut les références des articles
                             <resp>contributor</resp>
                             <persName><forename>Alexandre</forename><surname>Gady</surname></persName>
-                        </respStmt>
-                        <respStmt>
+                        </respStmt>-->
+                        <!--<respStmt>
                             <resp>contributor</resp>
                             <persName><forename>Jean-Marie</forename><surname>Pérouse de Montclos</surname></persName>
-                        </respStmt>
-                        <author/>
+                        </respStmt>-->
                         <imprint>
                             <pubPlace>Versailles</pubPlace>
                             <publisher>Artlys</publisher>
@@ -8997,10 +8997,9 @@
                 </biblStruct>
                 <biblStruct type="book">
                     <monogr>
-                        <title level="m">Hommage de la Lorraine à la France: à l'occasion du bicentenaire de leur réunion</title>
-                        <author/>
+                        <title level="m">Hommage de la Lorraine à la France : à l'occasion du bicentenaire de leur réunion</title>
                         <imprint>
-                            <pubPlace>Nancy, France</pubPlace>
+                            <pubPlace>Nancy</pubPlace>
                             <publisher>Berger-Levrault</publisher>
                             <date>1966</date>
                         </imprint>
@@ -9034,7 +9033,7 @@
                 </biblStruct>
                 <biblStruct type="book">
                     <monogr>
-                        <title level="m">La vie culturelle à l'époque de Stanislas: actes du colloque de Nancy, Palais du gouvernement, 30 septembre, 1er octobre 2005</title>
+                        <title level="m">La vie culturelle à l'époque de Stanislas : actes du colloque de Nancy, Palais du gouvernement, 30 septembre, 1er octobre 2005</title>
                         <author><forename>Yves</forename><surname>Ferraton</surname></author>
                         <author><forename>Béatrice</forename><surname>Didier</surname></author>
                         <author><forename>André</forename><surname>Rossinot</surname></author>                        
@@ -9106,9 +9105,8 @@
                 </biblStruct>
                 <biblStruct type="book">
                     <monogr>
-                        <title level="m">Stanislas, un roi de Pologne en Lorraine:, Musée lorrain, Nancy, 17 décembre 2004-21 mars 2005</title>
+                        <title level="m">Stanislas, un roi de Pologne en Lorraine : Musée lorrain, Nancy, 17 décembre 2004-21 mars 2005</title>
                         <title type="short">Stanislas, un roi de Pologne en Lorraine</title>
-                        <author/>
                         <imprint>
                             <pubPlace>Versailles</pubPlace>
                             <publisher>Artlys</publisher>
@@ -9136,11 +9134,10 @@
                 <biblStruct type="book">
                     <monogr>
                         <title level="m">Dictionnaire philosophique, portatif, ou supplément à l'édition de 1765 . Revu, corrigé &amp; augmenté de XXXVII articles par l'auteur</title>
-                        <author><persName>Voltaire</persName></author>
+                        <author><surname>Voltaire</surname></author>
                         <imprint>
                             <pubPlace>A Londres [ca 1765]</pubPlace>
-                            <date>1765</date>
-                            
+                            <date>1765</date>                            
                         </imprint>
                     </monogr>
                 </biblStruct>
@@ -9302,7 +9299,6 @@
                 <biblStruct type="book">
                     <monogr>
                         <title level="m">Oraison funèbre de très-haut,... Stanislas I,... Prononcée en l'Eglise Primatiale de Lorraine le 10 du mois de Mai 1766</title>
-                        <author/>
                         <imprint>
                             <pubPlace>Paris</pubPlace>
                             <publisher>Lottin, Antoine-Prosper</publisher>
@@ -9314,7 +9310,6 @@
                 <biblStruct type="book">
                     <monogr>
                         <title level="m">Oraison funèbre de très-haut,... Stanislas I... Prononcée en l'église Primatiale de Lorraine le dix du mois de Mai 1766...</title>
-                        <author/>
                         <imprint>
                             <pubPlace>Nancy</pubPlace>
                             <publisher>Antoine, Pierre</publisher>
@@ -9327,7 +9322,6 @@
                     <monogr>
                         <title level="m">Recueil des plans, élévations et coupes tant géométrales qu'en perspective des châteaux, jardins et dépendances que le roy de Pologne occupe en Lorraine [...] par M. Héré, son premier architecte.</title>
                         <author><forename>Emmanuel</forename><surname>Héré</surname></author>
-                        <author/>
                         <imprint>
                             <pubPlace>Paris</pubPlace>
                             <publisher>François</publisher>
