@@ -137,34 +137,28 @@
     </xsl:variable>
     
     <xsl:variable name="footer">
-        <div class="row footer edito">
-            <div class="large-12 columns">
-                <div class="large-4 columns">
-                    <img src="../images/logo/BN-logo-blanc-fond or-B55mm-55x85mm.jpg" width="300px" /> 
-                    <br />
-                    <br />Bibliothèques de Nancy
-                    <br />43, rue Stanislas
-                    <br />54 700 Nancy
+        <div class="row footer">
+            <div class="large-8 medium-12 columns">
+                <ul class="menu">
+                    <li class="logo"><a target="_blank" href="http://www.nancy.fr"><img class="logo" src="../images/logo/logo-ville-de-nancy.jpg" /></a></li>
+                    <li class="logo"><a target="_blank" href="http://www.reseau-colibris.fr/iguana/www.main.cls?surl=nancybmn"><img class="logo" src="../images/logo/BN-logo-blanc-fond or-B55mm-55x85mm.jpg" /></a></li>
+                    <li class="logo"><a target="_blank"><img class="logo" src="../images/logo/BN-logo-blanc-fond or-B55mm-55x85mm.jpg" /></a></li>
+                    <li class="logo"><a target="_blank" href="https://musee-lorrain.nancy.fr/"><img class="logo" src="../images/logo/MuseeLorrain-LOGO.jpg" /></a></li>
+                    <li class="logo"><a target="_blank"><img class="logo" src="../images/logo/LOGO CMJN 250e FR-LOR.jpg" /></a></li>
+                </ul>
+            </div>
+            <div class="large-4 medium-12 columns">
+                <div class="row edito">
+                    <div class="small-6 columns">
+                        Bibliothèques de Nancy <br />43, rue Stanislas <br />54 700 Nancy
+                    </div>
+                    <div class="small-6 columns">
+                        <a class="float-right" href="mailto:bibliotheque@nancy.fr">Contact</a>
+                        <br />
+                        <a class="float-right" href="apropos.html">Crédits</a>
+                    </div>
                 </div>
-                <div class="large-4 columns">
-                    <a href="calendrier.html">Le journal</a>
-                    <br />
-                    <a href="cartes.html">Les cartes</a>
-                    <br />
-                    <a href="galerie.html">Les illustrations</a>
-                    <br />
-                    <a href="ressources.html">Les focus</a>
-                    <br />
-                    <a href="listPerson.html">Index des personnes</a>
-                    <br />
-                    <a href="listPlace.html">Index des lieux</a>
-                    <br />
-                    <a href="listOrg.html">Index des institutions</a>                                                                
-                </div>
-                <div class="large-4 columns">
-                    <a href="apropos.html">À propos</a>
-                </div>                                                        
-            </div>                        
+            </div>
         </div>
     </xsl:variable>
     
@@ -298,34 +292,28 @@
                 </div>
                 <br />
                 <!-- FOOTER -->
-                <div class="row footer edito">
-                    <div class="large-12 columns">
-                        <div class="large-4 columns">
-                            <img src="images/logo/BN-logo-blanc-fond or-B55mm-55x85mm.jpg" width="300px" /> 
-                            <br />
-                            <br />Bibliothèques de Nancy
-                            <br />43, rue Stanislas
-                            <br />54 700 Nancy
+                <div class="row footer">
+                    <div class="large-8 medium-12 columns">
+                        <ul class="menu">
+                            <li class="logo"><a target="_blank" href="http://www.nancy.fr"><img class="logo" src="images/logo/logo-ville-de-nancy.jpg" /></a></li>
+                            <li class="logo"><a target="_blank" href="http://www.reseau-colibris.fr/iguana/www.main.cls?surl=nancybmn"><img class="logo" src="images/logo/BN-logo-blanc-fond or-B55mm-55x85mm.jpg" /></a></li>
+                            <li class="logo"><a target="_blank"><img class="logo" src="images/logo/BN-logo-blanc-fond or-B55mm-55x85mm.jpg" /></a></li>
+                            <li class="logo"><a target="_blank" href="https://musee-lorrain.nancy.fr/"><img class="logo" src="images/logo/MuseeLorrain-LOGO.jpg" /></a></li>
+                            <li class="logo"><a target="_blank"><img class="logo" src="images/logo/LOGO CMJN 250e FR-LOR.jpg" /></a></li>
+                        </ul>
+                    </div>
+                    <div class="large-4 medium-12 columns">
+                        <div class="row edito">
+                            <div class="small-6 columns">
+                                Bibliothèques de Nancy <br />43, rue Stanislas <br />54 700 Nancy
+                            </div>
+                            <div class="small-6 columns">
+                                <a class="float-right" href="mailto:bibliotheque@nancy.fr">Contact</a>
+                                <br />
+                                <a class="float-right" href="html/apropos.html">Crédits</a>
+                            </div>
                         </div>
-                        <div class="large-4 columns">
-                            <a href="html/calendrier.html">Le journal</a>
-                            <br />
-                            <a href="html/cartes.html">Les cartes</a>
-                            <br />
-                            <a href="html/galerie.html">Les illustrations</a>
-                            <br />
-                            <a href="html/ressources.html">Les focus</a>
-                            <br />
-                            <a href="html/listPerson.html">Index des personnes</a>
-                            <br />
-                            <a href="html/listPlace.html">Index des lieux</a>
-                            <br />
-                            <a href="html/listOrg.html">Index des institutions</a>                                                                
-                        </div>
-                        <div class="large-4 columns">
-                            <a href="html/apropos.html">À propos</a>
-                        </div>                                                        
-                    </div>                        
+                    </div>
                 </div>
                 <script src="js/vendor/jquery.js">/*Pour transformation xslt*/</script>
                 <script src="js/foundation.min.js">/*Pour transformation xslt*/</script>

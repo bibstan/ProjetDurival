@@ -241,9 +241,21 @@ a.focus img:focus{ /*images cliquables focus*/
 
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\FOOTER\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
+/*img.logo{
+  height:100px;
+}*/
 
+.menu > li.logo > a {
+display: block;
+padding: 0;
+line-height: 1;  
+}
+
+li.logo {
+  padding:2px;
+}
 .footer{
-  /*    background-image: url("../images/fonds/fond2.png");*/
+  background-image: url("../images/fonds/fond2.png");
   color: #cc6600;
   padding: 25 10 10 0px;
 }
