@@ -17,13 +17,337 @@
     <text>
         <body>
             <div type="pictures" xml:id="picturesDurival">
-                <figure xml:id="pic01">
-                    <graphic url="B543956101_TS21_COLLIN_0015"/>                    
-                    <desc>
-                        Dominique Collin, Construction du quartier royal des casernes de Nancy.
-                    </desc>
+                <figure xml:id="picture17650101A" type="militaire">
+                    <graphic url="B543956101_TS21_COLLIN_0015"/>
+                    <desc>Dominique Collin, Construction du quartier royal des casernes de Nancy. </desc>
                 </figure>
-            </div> 
+                <figure xml:id="picture17660815A" type="civil">
+                  <graphic mimeType="image/jpeg" url="2003-11-2_PM"/>
+                  <desc>Anonyme, Vue de la place de la Carrière depuis l'Intendance. Gouache, vers 1760. Inv. 2003.11.2. © Musée Lorrain, Nancy / Photo P. Mignot</desc>
+                </figure>
+                <figure xml:id="picture17650505A" type="civil">
+                  <graphic mimeType="image/jpeg" url="B543956101_G_FG_ES_00003"/>
+                  <desc>Médaillons qui sont aux quatre faces du pied d'estal de la figure de Louis XV</desc>
+                </figure>
+                <figure xml:id="picture17650109A" type="civil">
+                  <graphic mimeType="image/jpeg" url="B543956101_M_FG_ES_00036"/>
+                  <desc>Deruet, Le palais ducal. mi XVIIe</desc>
+                </figure>
+                <figure xml:id="picture17660321A" type="civil">
+                  <graphic mimeType="image/jpeg" url="B543956101_P_FG_ES_00083"/>
+                  <desc>Vue méridionale de la place roiale de Nancy. Sans date</desc>
+                </figure>
+                <figure xml:id="picture17660321B" type="civil">
+                  <graphic mimeType="image/jpeg" url="B543956101_P_FG_ES_00084"/>
+                  <desc>Vue septentrionale de la place roiale de Nancy. Sans date</desc>
+                </figure>
+                <figure xml:id="picture17660825A" type="civil">
+                  <graphic mimeType="image/jpeg" url="B543956101_P_FG_ES_00085"/>
+                  <desc>Vue des fontaines et de la face opposée à l'hôtel de ville.</desc>
+                </figure>
+                <figure xml:id="picture17660815B" type="civil">
+                  <graphic mimeType="image/jpeg" url="B543956101_P_FG_ES_00086"/>
+                  <desc>Hôtel de ville.</desc>
+                </figure>
+                <figure xml:id="picture17660815C" type="civil">
+                  <graphic mimeType="image/jpeg" url="B543956101_P_FG_ES_00093"/>
+                  <desc>Hôtel des fermes et hôtel de Mr Alliot.</desc>
+                </figure>
+                <figure xml:id="picture17650421A" type="civil">
+                  <graphic mimeType="image/jpeg" url="B543956101_P_FG_ES_00094"/>
+                  <desc>Pavillon du Sieur Jacquet et pavillon de la Comédie</desc>
+                </figure>
+                <figure xml:id="picture17650502A" type="civil">
+                  <graphic mimeType="image/jpeg" url="B543956101_P_FG_ES_00095"/>
+                  <desc>Guibal, Vue orientale de la statue de Louis XV</desc>
+                </figure>
+                <figure xml:id="picture17660408A" type="civil">
+                  <graphic mimeType="image/jpeg" url="B543956101_P_FG_ES_00128"/>
+                  <desc>Intendance. Sans date</desc>
+                </figure>
+                <figure xml:id="picture17660101A" type="civil">
+                  <graphic mimeType="image/jpeg" url="B543956101_P-PI-ES-00007A"/>
+                  <desc>Nouvelle construction de pompe tel que l'on s'en sert dans les Châteaux du roi. 1765</desc>
+                </figure>
+                <figure xml:id="picture17660825B" type="civil">
+                  <graphic mimeType="image/jpeg" url="M0514_D-95-644"/>
+                  <desc>Anonyme, Place Royale de Nancy, Arc de Triomphe. Gouache, vers 1760. Dépôt du Musée des Beaux-Arts de Nancy. Inv. D.95.644. © Musée Lorrain, Nancy</desc>
+                </figure>
+                <figure xml:id="picture17660404A" type="civil">
+                  <graphic mimeType="image/jpeg" url="M0514_D-95-646"/>
+                  <desc>Anonyme, Palais de l'Intendance. Anonyme, Palais de l'Intendance. Dépôt du Musée des Beaux-Arts de Nancy Inv. D.95.646. © Musée Lorrain, Nancy</desc>
+                </figure>
+                <figure xml:id="picture17660605A" type="dominiqueCollin">
+                  <graphic mimeType="image/jpeg" url="B543956101_P_FG_ES_00071"/>
+                  <desc>Dominique Collin, Vue méridionale de la Carrière de Nancy</desc>
+                </figure>
+                <figure xml:id="picture17650502B" type="dominiqueCollin">
+                  <graphic mimeType="image/jpeg" url="B543956101_P_FG_ES_00097"/>
+                  <desc>Dominique Collin, Statue de Louis XV... 1756</desc>
+                </figure>
+                <figure xml:id="picture17661128A" type="dominiqueCollin">
+                  <graphic mimeType="image/jpeg" url="B543956101_P_FG_ES_00125"/>
+                  <desc>Dominique Collin, Casernes royales de Nancy. 1769.</desc>
+                </figure>
+                <figure xml:id="picture17650101B" type="dominiqueCollin">
+                  <graphic mimeType="image/jpeg" url="B543956101_P_TS_ES_00212"/>
+                  <desc>Dominique Collin, Stanislas premier.</desc>
+                </figure>
+                <figure xml:id="picture17660427A" type="dominiqueCollin">
+                  <graphic mimeType="image/jpeg" url="B543956101_TS21_Dominique Collin_0006"/>
+                  <desc>Dominique Collin, Face extérieure de la Porte Saint-Jean. 1762.</desc>
+                </figure>
+                <figure xml:id="picture17660915A" type="dominiqueCollin">
+                  <graphic mimeType="image/jpeg" url="B543956101_TS21_Dominique Collin_0009"/>
+                  <desc>Dominique Collin, Mausolée de Stanislas le Bienfaisant pour l'église Saint-Roch le 26 mai 1766 (modèle de Girardet)</desc>
+                </figure>
+                <figure xml:id="picture17650101C" type="dominiqueCollin">
+                  <graphic mimeType="image/jpeg" url="B543956101_TS21_Dominique Collin_0015"/>
+                  <desc>Dominique Collin, Construction du quartier royal des casernes de Nancy.</desc>
+                </figure>
+                <figure xml:id="picture17660825C" type="dominiqueCollin">
+                  <graphic mimeType="image/jpeg" url="B543956101_TS21_Dominique Collin_0017"/>
+                  <desc>Dominique Collin, Vue méridionale de la place royale de Nancy</desc>
+                </figure>
+                <figure xml:id="picture17650818A" type="dominiqueCollin">
+                  <graphic mimeType="image/jpeg" url="B543956101_TS21_Dominique Collin_0018"/>
+                  <desc>Dominique Collin, Vue de la fontaine royale, dans la forêt de Commercy</desc>
+                </figure>
+                <figure xml:id="picture17661101A" type="dominiqueCollin">
+                  <graphic mimeType="image/jpeg" url="B543956101_TS21_Dominique Collin_0019"/>
+                  <desc>Dominique Collin, Vue de la place d'Alliance de Nancy. 1760</desc>
+                </figure>
+                <figure xml:id="picture17660511A" type="dominiqueCollin">
+                  <graphic mimeType="image/jpeg" url="B543956101_TS21_Dominique Collin_0024"/>
+                  <desc>Dominique Collin, Frontispice du recueil des Fondations</desc>
+                </figure>
+                <figure xml:id="picture17660624A" type="dominiqueCollin">
+                  <graphic mimeType="image/jpeg" url="B543956101_TS21_Dominique Collin_0032"/>
+                  <desc>Dominique Collin, Petite foire Saint-Jean</desc>
+                </figure>
+                <figure xml:id="picture17650715A" type="dominiqueCollin">
+                  <graphic mimeType="image/jpeg" url="B543956101_TS21_Dominique Collin_0035"/>
+                  <desc>Dominique Collin, Face intérieure de la face intérieur de la Porte Saint-Nicolas de Nancy</desc>
+                </figure>
+                <figure xml:id="picture17650606A" type="eglise">
+                  <graphic mimeType="image/jpeg" url="B543956101_G_TS_DE_00004"/>
+                  <desc>Gircourt, [Primatiale] Élévation de la façade. Projet de monsieur l’Abbé Dumolart pour un troisième ordre en supprimant le fronton qui couronne le second ordre</desc>
+                </figure>
+                <figure xml:id="picture17650627A" type="eglise">
+                  <graphic mimeType="image/jpeg" url="B543956101_G_TS_DE_00004"/>
+                  <desc>Elévation de la façade [de la Primatiale]. Dessin. 1734.</desc>
+                </figure>
+                <figure xml:id="picture17650814A" type="eglise">
+                  <graphic mimeType="image/jpeg" url="B543956101_P_FG_ES_00217"/>
+                  <desc>Vue de Notre-Dame de Bonsecours. Milieu XIXe.</desc>
+                </figure>
+                <figure xml:id="picture17660301A" type="eglise">
+                  <graphic mimeType="image/jpeg" url="B543956101_P_FG_ES_00227"/>
+                  <desc>Fichol, Notre-Dame de Bonsecours. XIXe</desc>
+                </figure>
+                <figure xml:id="picture17650109B" type="eglise">
+                  <graphic mimeType="image/jpeg" url="B543956101_P_FG_ES_00322"/>
+                  <desc>Maugendre, Église Saint-Èpvre. Fin XIXe.</desc>
+                </figure>
+                <figure xml:id="picture17650314A" type="eglise">
+                  <graphic mimeType="image/jpeg" url="B543956101_P_FG_ES_00360"/>
+                  <desc>Digout, Église Saint-Sébastien. Fin XIXe</desc>
+                </figure>
+                <figure xml:id="picture17660630A" type="eglise">
+                  <graphic mimeType="image/jpeg" url="M0514_D-2015-0-1_01"/>
+                  <desc>Élévation en profil ou coupe de la chapelle Roialle [...] des Cordeliers. Dessin. Sans date.</desc>
+                </figure>
+                <figure xml:id="picture17650128A" type="emmanuelHere">
+                  <graphic mimeType="image/jpeg" url="B543956101R00028-1-00001"/>
+                  <desc>Emmanuel Héré, Reliure aux armes de Stanislas du Recueil</desc>
+                </figure>
+                <figure xml:id="picture17660330A" type="emmanuelHere">
+                  <graphic mimeType="image/jpeg" url="B543956101R00028-1-00009"/>
+                  <desc>Emmanuel Héré, Façade du château de Lunéville coté cours. Recueil de plans... 1756.</desc>
+                </figure>
+                <figure xml:id="picture17660331A" type="emmanuelHere">
+                  <graphic mimeType="image/jpeg" url="B543956101R00028-1-00010"/>
+                  <desc>Emmanuel Héré, Façade du château royal de Lunéville du costé de l'entrée. Recueil de plans... 1756.</desc>
+                </figure>
+                <figure xml:id="picture17660401A" type="emmanuelHere">
+                  <graphic mimeType="image/jpeg" url="B543956101R00028-1-00016"/>
+                  <desc>Emmanuel Héré, Vue en perspective de la cascade et du pavillon au bout du canal des jardins de Lunéville. Recueil de plans... 1756.</desc>
+                </figure>
+                <figure xml:id="picture17660224A" type="emmanuelHere">
+                  <graphic mimeType="image/jpeg" url="B543956101R00028-1-00028B"/>
+                  <desc>Emmanuel Héré, Élévation de la façade du pavillon de Chanteheux du coté de l'entrée. Recueil de plans... 1756.</desc>
+                </figure>
+                <figure xml:id="picture17660401B" type="emmanuelHere">
+                  <graphic mimeType="image/jpeg" url="B543956101R00028-1-00037"/>
+                  <desc>Emmanuel Héré, Décoration développée de l'intérieur de la salle à manger (Lunéville). Recueil de plans... 1756.</desc>
+                </figure>
+                <figure xml:id="picture17650703A" type="emmanuelHere">
+                  <graphic mimeType="image/jpeg" url="B543956101R00028-2-00007"/>
+                  <desc>Emmanuel Héré, Élévation du château royale de Commercy... Recueil de plans... 1756.</desc>
+                </figure>
+                <figure xml:id="picture17650817A" type="emmanuelHere">
+                  <graphic mimeType="image/jpeg" url="B543956101R00028-2-00013B"/>
+                  <desc>Emmanuel Héré, Élévation du pavillon royale ... de Commercy... Recueil de plans... 1756.</desc>
+                </figure>
+                <figure xml:id="picture17660206A" type="emmanuelHere">
+                  <graphic mimeType="image/jpeg" url="B543956101R00028-2-00026"/>
+                  <desc>Emmanuel Héré, Façade de la Mission royale... Recueil de plans... 1756.</desc>
+                </figure>
+                <figure xml:id="picture17651019A" type="emmanuelHere">
+                  <graphic mimeType="image/jpeg" url="B543956101R00028-2-00027"/>
+                  <desc>Emmanuel Héré, Hôpital Saint-Julien... Recueil de plans... 1756.</desc>
+                </figure>
+                <figure xml:id="picture17660922A" type="emmanuelHere">
+                  <graphic mimeType="image/jpeg" url="B543956101R00028-3-00006"/>
+                  <desc>Emmanuel Héré, Vue de la Place royale de Nancy du coté de l'arc de triomphe. Recueil de plans... 1756.</desc>
+                </figure>
+                <figure xml:id="picture17660825D" type="emmanuelHere">
+                  <graphic mimeType="image/jpeg" url="B543956101R00028-3-00007"/>
+                  <desc>Emmanuel Héré, Vue de la Place royale de Nancy du coté de l'hôtel de Ville. Recueil de plans... 1756.</desc>
+                </figure>
+                <figure xml:id="picture17660922B" type="emmanuelHere">
+                  <graphic mimeType="image/jpeg" url="B543956101R00028-3-00008"/>
+                  <desc>Emmanuel Héré, Arc de triomphe servant de porte royale entre les deux villes de Nancy. Recueil de plans... 1756.</desc>
+                </figure>
+                <figure xml:id="picture17650109C" type="emmanuelHere">
+                  <graphic mimeType="image/jpeg" url="B543956101R00028-3-00009B"/>
+                  <desc>Emmanuel Héré, Façade de l'hôtel de ville... Recueil de plans... 1756.</desc>
+                </figure>
+                <figure xml:id="picture17660408B" type="emmanuelHere">
+                  <graphic mimeType="image/jpeg" url="B543956101R00028-3-00010"/>
+                  <desc>Emmanuel Héré, Façade colatéralle de la Place royale de Nancy. Recueil de plans... 1756.</desc>
+                </figure>
+                <figure xml:id="picture17660408C" type="emmanuelHere">
+                  <graphic mimeType="image/jpeg" url="B543956101R00028-3-00011"/>
+                  <desc>Emmanuel Héré, Élévation ... d'une grille et fontaine... Recueil de plans... 1756.</desc>
+                </figure>
+                <figure xml:id="picture17650502C" type="emmanuelHere">
+                  <graphic mimeType="image/jpeg" url="B543956101R00028-3-00012"/>
+                  <desc>Emmanuel Héré, Statue de Louis XV... Recueil de plans... 1756.</desc>
+                </figure>
+                <figure xml:id="picture17660815D" type="emmanuelHere">
+                  <graphic mimeType="image/jpeg" url="B543956101R00028-3-00014"/>
+                  <desc>Emmanuel Héré, Hôtel consulaire et de la Bourse de commerce... Recueil de plans... 1756.</desc>
+                </figure>
+                <figure xml:id="picture17660605B" type="emmanuelHere">
+                  <graphic mimeType="image/jpeg" url="B543956101R00028-3-00015"/>
+                  <desc>Emmanuel Héré, Plan de la fontaine... au bout de la Carrière... Recueil de plans... 1756.</desc>
+                </figure>
+                <figure xml:id="picture17660319A" type="emmanuelHere">
+                  <graphic mimeType="image/jpeg" url="B543956101R00028-3-00017B"/>
+                  <desc>Emmanuel Héré, Élévation de la nouvelle intendance... Recueil de plans... 1756.</desc>
+                </figure>
+                <figure xml:id="picture17651127A" type="livre">
+                  <graphic mimeType="image/jpeg" url="B543956101_2808-4_tit"/>
+                  <desc>Page de titre du Catalogue des livres de la bibliothèque. 1766</desc>
+                </figure>
+                <!--bibliothèque-->
+                <figure xml:id="picture17650110A" type="livre">
+                  <graphic mimeType="image/jpeg" url="B543956101_memAca_1765_001"/>
+                  <desc>Compte rendu des séances de l'Académie. Discours sur le Luxe. Bibliothèque de l'Académie Stanislas</desc>
+                </figure>
+                <figure xml:id="picture17660226A" type="livre">
+                  <graphic mimeType="image/jpeg" url="B543956101_memAca_1766_001"/>
+                  <desc>Compte rendu des séances de l'Académie. Séance du 26 février 1766. Bibliothèque de l'Académie Stanislas</desc>
+                </figure>
+                <figure xml:id="picture17661020A" type="livre">
+                  <graphic mimeType="image/jpeg" url="B543956101_memAca_1766_002"/>
+                  <desc>Compte rendu des séance de l'Académie. Héroïde de Charles I par François de Neufchâteau.</desc>
+                </figure>
+                <figure xml:id="picture17660206B" type="luneville">
+                  <graphic mimeType="image/jpeg" url="B543956101_M-PI-DE-00008"/>
+                  <desc>Antichambre [Lunéville] de son altesse royale du loté de la cheminée. Dessin</desc>
+                </figure>
+                <figure xml:id="picture17660915B" type="militaire">
+                  <graphic mimeType="image/jpeg" url="B543656101_H-TS-DE-00019B"/>
+                  <desc>Plan d'un hôpital militaire... 1766. Dessin.</desc>
+                </figure>
+                <figure xml:id="picture17660915C" type="militaire">
+                  <graphic mimeType="image/jpeg" url="B543656101_H-TS-DE-00020B"/>
+                  <desc>Plan de masse d'un hôpital militaire projeté à faire à Nancy... 1766. Dessin.</desc>
+                </figure>
+                <figure xml:id="picture17660915D" type="militaire">
+                  <graphic mimeType="image/jpeg" url="B543656101_H-TS-DE-00020B"/>
+                  <desc>Plan de masse de l'hôpital militaire. 1766</desc>
+                </figure>
+                <figure xml:id="picture17660915E" type="militaire">
+                  <graphic mimeType="image/jpeg" url="B543656101_H-TS-DE-00022B"/>
+                  <desc>Élévation et coupe de l'hôpital militaire. 1767</desc>
+                </figure>
+                <figure xml:id="picture17650413A" type="portrait">
+                  <graphic mimeType="image/jpeg" url="95-535_GM"/>
+                  <desc>Jean-Ernest Heinsius, Richard Mique, architecte de Stanislas, Huile sur toile, 1782. Inv. 95.535. © Musée Lorrain, Nancy / Photo G. Mangin</desc>
+                </figure>
+                <figure xml:id="picture17650208A" type="porte">
+                  <graphic mimeType="image/jpeg" url="B543956101_P_FG_ES_00109"/>
+                  <desc>Vue et perspective de la porte Notre-Dame appelée à présent porte de la Citadelle. XVIe</desc>
+                </figure>
+                <figure xml:id="picture17650709A" type="porte">
+                  <graphic mimeType="image/jpeg" url="B543956101_P_FG_ES_00110"/>
+                  <desc>Vue et perspective de la porte Saint-George par dedans. XVIe</desc>
+                </figure>
+                <figure xml:id="picture17660427B" type="porte">
+                  <graphic mimeType="image/jpeg" url="B543956101_P_FG_ES_00116"/>
+                  <desc>Vue et perspective de la porte Saint-Jean par dehors. XVIe</desc>
+                </figure>
+                <figure xml:id="picture17650715B" type="porte">
+                  <graphic mimeType="image/jpeg" url="B543956101_P_FG_ES_00120"/>
+                  <desc>Vue et perspective de la porte Saint-Nicolas. XVIe</desc>
+                </figure>
+                <figure xml:id="picture17660307A" type="porte">
+                  <graphic mimeType="image/jpeg" url="B543956101_P_FG_ES_00516"/>
+                  <desc>Fagonde, Porte Notre-Dame. FIn XIXe</desc>
+                </figure>
+                <figure xml:id="picture17660307B" type="porte">
+                  <graphic mimeType="image/jpeg" url="B543956101M001861_0001"/>
+                  <desc>Guibal, Porte Notre-Dame. 1832</desc>
+                </figure>
+                <figure xml:id="picture17660307C" type="porte">
+                  <graphic mimeType="image/jpeg" url="B543956101M001861_0002"/>
+                  <desc>Guibal, Porte Notre-Dame. 1831</desc>
+                </figure>
+                <figure xml:id="picture17650209A" type="porte">
+                  <graphic mimeType="image/jpeg" url="B543956101M001861_0003"/>
+                  <desc>Guibal, Porte Notre-Dame. 1839</desc>
+                </figure>
+                <figure xml:id="picture17650715C" type="porte">
+                  <graphic mimeType="image/jpeg" url="B543956101M001861_0004"/>
+                  <desc>Guibal, Porte Stanislas. 1842</desc>
+                </figure>
+                <figure xml:id="picture17650128B" type="portrait">
+                  <graphic mimeType="image/jpeg" url="95-531_PM"/>
+                  <desc>Anonyme, Emmanuel Emmanuel Héré, premier architecte de Stanislas, Huile sur toile, vers 1760. Inv. 95.531. © Musée Lorrain, Nancy / Photo P. Mignot</desc>
+                </figure>
+                <figure xml:id="picture17650703B" type="portrait">
+                  <graphic mimeType="image/jpeg" url="B543956101_M_FG_ES_00062"/>
+                  <desc>Venloo, Stanislas Ier. Gravé par Larmessin.</desc>
+                </figure>
+                <figure xml:id="picture17650430A" type="portrait">
+                  <graphic mimeType="image/jpeg" url="B543956101_M_TS_ES_00182"/>
+                  <desc>Jean Girardet, Stanislas 1er, gravé par Dominique Collin. 1759</desc>
+                </figure>
+                <figure xml:id="picture17650323A" type="portrait">
+                  <graphic mimeType="image/jpeg" url="B543956101_P_TS_ES_00209"/>
+                  <desc>Stanislas Premier. Sans date</desc>
+                </figure>
+                <figure xml:id="picture17650205A" type="portrait">
+                  <graphic mimeType="image/jpeg" url="B543956101_P_TS_ES_00210"/>
+                  <desc>Massé, Stanislas, gravé par Cathelin. 1764</desc>
+                </figure>
+                <figure xml:id="picture17660718A" type="residence">
+                  <graphic mimeType="image/jpeg" url="B543956101_H-PI-DE-00006A"/>
+                  <desc>Élévation de l'aile des officiers de la Malgrange. Dessin</desc>
+                </figure>
+                <figure xml:id="picture17660224B" type="residence">
+                  <graphic mimeType="image/jpeg" url="B543956101_H-PI-DE-00007A"/>
+                  <desc>Plan du château d'Einville</desc>
+                </figure>
+                <figure xml:id="picture17650612A" type="livre">
+                  <graphic mimeType="image/jpeg" url="B543956101_50035_tit"/>
+                  <desc>Page de titre du Mémoire sur la Lorraine et le Barrois de Nicolas Durival.</desc>
+                  <!--inventions mechaniques stan / memoire durival duchés bar-->
+                </figure>
+            </div>
         </body>
     </text>
 </TEI>
