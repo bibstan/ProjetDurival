@@ -834,9 +834,19 @@
         </xsl:for-each>
         <xsl:choose>
             <xsl:when test="tei:birth | tei:death">
-                <xsl:text> (</xsl:text>
-                <xsl:apply-templates select="tei:birth"/><xsl:text>-</xsl:text><xsl:apply-templates select="tei:death"/>
-                <xsl:text>)</xsl:text>
+                <xsl:choose>
+                    <xsl:when test="tei:birth and tei:death">
+                        <xsl:text> (</xsl:text>
+                        <xsl:apply-templates select="tei:birth"/><xsl:text>-</xsl:text><xsl:apply-templates select="tei:death"/>
+                        <xsl:text>)</xsl:text>
+                    </xsl:when>
+                    <xsl:when test="tei:birth and not(tei:death)">
+                        <xsl:text> (&#10033;&#160;</xsl:text><xsl:apply-templates select="tei:birth"/><xsl:text>)</xsl:text>
+                    </xsl:when>
+                    <xsl:when test="tei:death and not(tei:birth)">
+                        <xsl:text> (&#x2020;&#160;</xsl:text><xsl:apply-templates select="tei:death"/><xsl:text>)</xsl:text>
+                    </xsl:when>
+                </xsl:choose>                
             </xsl:when>
         </xsl:choose>
         <xsl:if test="tei:state">
@@ -1078,12 +1088,13 @@
                                     <xsl:variable name="id" select="@xml:id"/>
                                     <xsl:variable name="links" select="concat('#',@xml:id)"/>
                                     <xsl:variable name="idref" select="concat($links,'-')"/>
-                                    <li class="vedette" id="{$id}">                    
+                                    <!--<li class="vedette" id="{$id}">-->                    
                                         <!--<xsl:apply-templates select="." mode="tooltip"/>-->
                                         <!--<xsl:apply-templates select="tei:persName"/>-->
                                         <xsl:choose>
                                             <xsl:when test="//tei:div[@type='transcription'][descendant::*[contains(concat(replace(@ref,' ','-'),'-'),$idref)]]">
-                                                <!--<xsl:if test="//tei:div[@type='transcription'][descendant::*[contains(@ref,$links)]]">-->
+                                                <li class="vedette" id="{$id}">
+                                                    <!--<xsl:if test="//tei:div[@type='transcription'][descendant::*[contains(@ref,$links)]]">-->
                                                     <ul class="accordion" data-accordion="true" data-allow-all-closed="true">
                                                         <li class="accordion-item" data-accordion-item="true">
                                                             <a href="#" class="accordion-title vedette"><xsl:apply-templates select="." mode="tooltip"/></a>
@@ -1091,17 +1102,17 @@
                                                                 <xsl:if test="./tei:listEvent">
                                                                     <div class="note">
                                                                         <xsl:for-each select="./tei:listEvent/tei:event">                                                                            
-                                                                                <xsl:choose><!-- force la capitale pour le premier event, et les minus pour les autres -->
-                                                                                    <xsl:when test="position() = 1">                                                                                    
-                                                                                        <xsl:value-of select="normalize-space(concat(upper-case(substring(tei:p,1,1)),substring(tei:p, 2),' '[not(last())]))"/><xsl:choose><xsl:when test="following-sibling::tei:event[1]"/><xsl:otherwise><xsl:text>.</xsl:text></xsl:otherwise></xsl:choose>
-                                                                                    </xsl:when>
-                                                                                    <xsl:when test="position() != last()">
-                                                                                        <xsl:text> - </xsl:text><xsl:value-of select="normalize-space(concat(lower-case(substring(tei:p,1,1)),substring(tei:p, 2),' '[not(last())]))"/>
-                                                                                    </xsl:when>
-                                                                                    <xsl:otherwise>
-                                                                                        <xsl:text> - </xsl:text><xsl:value-of select="normalize-space(concat(lower-case(substring(tei:p,1,1)),substring(tei:p, 2),' '[not(last())]))"/><xsl:text>.</xsl:text>
-                                                                                    </xsl:otherwise>
-                                                                                </xsl:choose>                                                                                
+                                                                            <xsl:choose><!-- force la capitale pour le premier event, et les minus pour les autres -->
+                                                                                <xsl:when test="position() = 1">                                                                                    
+                                                                                    <xsl:value-of select="normalize-space(concat(upper-case(substring(tei:p,1,1)),substring(tei:p, 2),' '[not(last())]))"/><xsl:choose><xsl:when test="following-sibling::tei:event[1]"/><xsl:otherwise><xsl:text>.</xsl:text></xsl:otherwise></xsl:choose>
+                                                                                </xsl:when>
+                                                                                <xsl:when test="position() != last()">
+                                                                                    <xsl:text> - </xsl:text><xsl:value-of select="normalize-space(concat(lower-case(substring(tei:p,1,1)),substring(tei:p, 2),' '[not(last())]))"/>
+                                                                                </xsl:when>
+                                                                                <xsl:otherwise>
+                                                                                    <xsl:text> - </xsl:text><xsl:value-of select="normalize-space(concat(lower-case(substring(tei:p,1,1)),substring(tei:p, 2),' '[not(last())]))"/><xsl:text>.</xsl:text>
+                                                                                </xsl:otherwise>
+                                                                            </xsl:choose>                                                                                
                                                                         </xsl:for-each>                                                                        
                                                                     </div>
                                                                 </xsl:if>
@@ -1153,18 +1164,20 @@
                                                             </div>
                                                         </li>
                                                     </ul>
-                                                <!--</xsl:if>-->
+                                                    <!--</xsl:if>-->
+                                                </li>
                                             </xsl:when>
-                                            <xsl:otherwise>
-                                                <span class="vedette"><xsl:text>&#x2013;&#160;&#160;</xsl:text><xsl:apply-templates select="." mode="tooltip"/></span>
-                                            </xsl:otherwise>
+                                            <xsl:when test="./tei:persName[@ref]">
+                                                <li class="vedette" id="{$id}"><span class="vedette"><xsl:text>&#x2013;&#160;&#160;</xsl:text><xsl:apply-templates select="." mode="tooltip"/></span></li>
+                                            </xsl:when>
+                                            <xsl:otherwise/>
                                         </xsl:choose>
-                                    </li>
+                                    <!--</li>-->
                                 </xsl:for-each>
                             </ul>
                         </div>
                     </div>   
-                    <xsl:value-of select="$footer"/>
+                    <xsl:copy-of select="$footer"/>
                     <script src="../js/vendor/jquery.js">/*Pour transformation xslt*/</script>                        
                     
                     <script src="../js/foundation.min.js"></script>
@@ -1652,7 +1665,8 @@
                                                                         <a href="{$month}.html#{$day}"><xsl:apply-templates select="tei:dateline/tei:date[@type='entry']" mode="date"/></a>
                                                                         <div class="media">
                                                                             <a href="{$month}.html#{$day}" class="venobox" data-type="iframe" data-overlay="rgba(0,0,0,0.5)">
-                                                                                <img src="../images/{$year}/{$facs}.jpg" alt="Stanislas"/></a>
+                                                                                <img src="../images/{$year}/{$facs}.jpg" alt="Stanislas"/>
+                                                                            </a>
                                                                         </div>
                                                                     </li> 
                                                                 </xsl:when>
