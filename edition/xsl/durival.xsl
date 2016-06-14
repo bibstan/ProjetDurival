@@ -863,7 +863,7 @@
         </xsl:for-each>
     </xsl:template>        
     
-    <xsl:template match="tei:div[@type='transcription']//tei:rs[@type='artwork']">
+    <!--<xsl:template match="tei:div[@type='transcription']//tei:rs[@type='artwork']">
         <xsl:variable name="ref" select="@ref"/>
         <xsl:variable name="id" select="substring-after(@ref,'#')"/>
         <xsl:variable name="tooltip">
@@ -872,7 +872,7 @@
             </xsl:if>
         </xsl:variable>
         <span data-tooltip='true' aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="{$tooltip}"><a class="person" href="listPerson.html{$ref}"><xsl:apply-templates/></a></span>
-    </xsl:template>
+    </xsl:template>-->
     
     <xsl:template match="tei:div[@type='transcription']//tei:persName | tei:div[@type='transcription']//tei:rs[@type='person']">
         <xsl:variable name="ref" select="@ref"/><!-- todo @type=groupPerson -->
@@ -943,7 +943,7 @@
             </xsl:if>
         </xsl:variable>
         <!--todo a.cite à la place de cite -->
-        <span data-tooltip='true' aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="{$tooltip}"><a class="cite" href="listOrg.html{$ref}"><xsl:apply-templates/></a></span>
+        <span data-tooltip='true' aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="{$tooltip}"><a class="cite" href="listbib.html{$ref}"><xsl:apply-templates/></a></span>
     </xsl:template>
     
     <xsl:template match="tei:div[@type='transcription']//tei:rs[@type='bibl']">
@@ -955,7 +955,7 @@
             </xsl:if>
         </xsl:variable>
         <!--todo a.cite à la place de cite -->
-        <span data-tooltip='true' aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="{$tooltip}"><a class="person" href="listOrg.html{$ref}"><xsl:apply-templates/></a></span>
+        <span data-tooltip='true' aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="{$tooltip}"><a class="person" href="listbib.html{$ref}"><xsl:apply-templates/></a></span>
     </xsl:template>
     
     <!-- ********** INDEX ********** -->
@@ -2476,15 +2476,44 @@
                     <xsl:copy-of select="$header"/>
                     <div class="row">
                         <div class="large-12">
-                            <h1>Bibliographie générale</h1>
-                            <ul class="no-bullet">
-                                <xsl:for-each select=".//tei:biblStruct">
-                                    <xsl:sort select=".//tei:author[1]" order="ascending"/>                                    
-                                    <li>
-                                        <xsl:apply-templates select="." mode="bibl"/>
-                                    </li>
-                                </xsl:for-each>                                
-                            </ul>
+                            <h1>Bibliographie</h1>
+                            <xsl:for-each select="./tei:listBibl">
+                                <xsl:choose>
+                                    <xsl:when test="@xml:id='BiblioGenerale'">
+                                        <h2 class="edito2">Bibliographie générale</h2>
+                                        <ul class="no-bullet">
+                                            <xsl:for-each select=".//tei:biblStruct">
+                                                <xsl:sort select=".[descendant::tei:author]//tei:author[1] | .[not(descendant::tei:author)]//tei:title[1]" order="ascending"/>                                    
+                                                <li class="bibl">
+                                                    <xsl:apply-templates select="." mode="bibl"/>
+                                                </li>
+                                            </xsl:for-each>                                
+                                        </ul>
+                                    </xsl:when>
+                                    <xsl:when test="@xml:id='œuvresDurival'">
+                                        <h2 class="edito2">Ouvrages de Nicolas Durival</h2>
+                                        <ul class="no-bullet">
+                                            <xsl:for-each select=".//tei:biblStruct">
+                                                <xsl:sort select=".[descendant::tei:author]//tei:author[1] | .[not(descendant::tei:author)]//tei:title[1]" order="ascending"/>                                    
+                                                <li class="bibl">
+                                                    <xsl:apply-templates select="." mode="bibl"/>
+                                                </li>
+                                            </xsl:for-each>                                
+                                        </ul>
+                                    </xsl:when>
+                                    <xsl:when test="@xml:id='œuvresCitees'">
+                                        <h2 class="edito2">Ouvrages cités dans le Journal de Durival</h2>
+                                        <ul class="no-bullet">
+                                            <xsl:for-each select=".//tei:biblStruct">
+                                                <xsl:sort select=".[descendant::tei:author]//tei:author[1] | .[not(descendant::tei:author)]//tei:title[1]" order="ascending"/>                                    
+                                                <li class="bibl">
+                                                    <xsl:apply-templates select="." mode="bibl"/>
+                                                </li>
+                                            </xsl:for-each>                                
+                                        </ul>
+                                    </xsl:when>
+                                </xsl:choose>
+                            </xsl:for-each>                            
                         </div>
                     </div>
                     <!-- FOOTER -->
@@ -2506,11 +2535,36 @@
 
     <!--  ************************** A propos *****************************  -->
     <xsl:template match="tei:projectDesc/tei:p" mode="projecDesc">
-        <p><xsl:apply-templates mode="projecDesc"/></p>
+        <xsl:for-each select=".">
+            <xsl:if test="tei:hi[not(@*)]">
+                <xsl:apply-templates select="tei:hi" mode="projecDesc2"/>
+            </xsl:if>
+            <p class="edito"><xsl:apply-templates mode="projecDesc"/></p>
+            <xsl:if test="tei:list">
+                <xsl:apply-templates select="tei:list" mode="projecDesc2"/>
+            </xsl:if>
+        </xsl:for-each>        
     </xsl:template>
+    
+    <xsl:template match="tei:hi[not(@*)]" mode="projecDesc"/>
+    <xsl:template match="tei:hi[not(@*)]" mode="projecDesc2">
+        <h2 class="edito2"><xsl:apply-templates mode="projecDesc"/></h2>
+    </xsl:template>   
+    
+    <xsl:template match="tei:projectDesc//tei:list" mode="projecDesc"/>
+    
+    <xsl:template match="tei:projectDesc//tei:list" mode="projecDesc2">
+        <ul class="no-bullet">
+            <xsl:for-each select="tei:item">
+                <li class="enum edito"><xsl:apply-templates select="." mode="projecDesc"/></li>
+            </xsl:for-each>
+        </ul>
+    </xsl:template>
+    
     <xsl:template match="tei:projectDesc//tei:lb" mode="projecDesc">
         <br />
     </xsl:template>
+    
     <xsl:template match="tei:projectDesc//tei:ref" mode="projecDesc">
         <xsl:for-each select=".">
             <xsl:choose>
@@ -2522,24 +2576,7 @@
                 </xsl:when>
             </xsl:choose>
         </xsl:for-each>
-    </xsl:template>
-    
-    <xsl:template match="tei:projectDesc//tei:list" mode="projecDesc">
-        <ul class="no-bullet">
-            <xsl:for-each select="tei:item">
-                <li class="enum"><xsl:apply-templates select="." mode="projecDesc"/></li>
-            </xsl:for-each>
-        </ul>
-    </xsl:template>
-    
-    <xsl:template match="tei:projectDesc//tei:hi" mode="projecDesc">
-        <xsl:for-each select=".">
-            <xsl:choose>
-                <xsl:when test="@rend='super'"><sup><xsl:apply-templates mode="projecDesc"/></sup></xsl:when>
-                <xsl:when test="not(@*)"><h2 class="section"><xsl:apply-templates mode="projecDesc"/></h2></xsl:when>
-            </xsl:choose>
-        </xsl:for-each>
-    </xsl:template>
+    </xsl:template>                
     
     <xsl:template match="tei:projectDesc" mode="projecDesc">
         <xsl:result-document format="html" encoding="UTF-8" href="html/apropos.html">
