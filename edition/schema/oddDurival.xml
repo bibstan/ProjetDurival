@@ -55,7 +55,7 @@
             <classSpec type="atts" ident="att.msExcerpt" mode="delete"/>
             <classSpec type="atts" ident="att.fragmentable" mode="delete"/>
             <classSpec type="atts" ident="att.cReferencing" mode="delete"/>
-            <classSpec type="atts" ident="att.internetMedia" mode="delete"/>  
+            <!--<classSpec type="atts" ident="att.internetMedia" mode="delete"/>-->  
             <classSpec type="atts" ident="att.pointing" mode="change">
                <attList>
                   <attDef ident="targetLang" mode="delete"/>
@@ -110,7 +110,40 @@
                <attList>
                   <attDef ident="ana" mode="delete"/>
                   <attDef ident="resp" mode="delete"/>
-                  <attDef ident="type" mode="delete"/>
+                  <attDef ident="type" mode="change">
+                     <valList mode="add" type="closed">
+                        <valItem ident="civil">
+                           <!--<desc></desc>--><!-- todo desc des valeurs -->
+                        </valItem>
+                        <valItem ident="dominiqueCollin">
+                           <!--<desc></desc>-->
+                        </valItem>
+                        <valItem ident="eglise">
+                           <!--<desc></desc>-->
+                        </valItem>
+                        <valItem ident="emmanuelHere">
+                           <!--<desc></desc>-->
+                        </valItem>
+                        <valItem ident="livre">
+                           <!--<desc></desc>-->
+                        </valItem>
+                        <valItem ident="luneville">
+                           <!--<desc></desc>-->
+                        </valItem>
+                        <valItem ident="militaire">
+                           <!--<desc></desc>-->
+                        </valItem>
+                        <valItem ident="portrait">
+                           <!--<desc></desc>-->
+                        </valItem>
+                        <valItem ident="porte">
+                           <!--<desc></desc>-->
+                        </valItem>
+                        <valItem ident="residence">
+                           <!--<desc></desc>-->
+                        </valItem>                        
+                     </valList>
+                  </attDef>
                   <attDef ident="subtype" mode="delete"/>
                </attList>
             </elementSpec>
@@ -535,6 +568,15 @@
                   <attDef ident="resp" mode="delete"/>                  
                </attList>
             </elementSpec>
+            <elementSpec ident="graphic" mode="change">
+               <attList>
+                  <attDef ident="ana" mode="delete"/>
+                  <attDef ident="facs" mode="delete"/>
+                  <attDef ident="resp" mode="delete"/>
+                  <attDef ident="rend" mode="delete"/>                  
+                  <attDef ident="n" mode="delete"/>        
+               </attList>
+            </elementSpec>
             <elementSpec ident="q" mode="change">
                <attList>
                   <attDef ident="facs" mode="delete"/>
@@ -582,6 +624,7 @@
                   <attDef ident="rend" mode="delete"/>
                   <attDef ident="xml:lang" mode="delete"/>
                   <attDef ident="n" mode="delete"/>
+                  <attDef ident="mimeType" mode="delete"/>
                   <attDef ident="type" mode="change">
                      <valList mode="add" type="closed">
                         <valItem ident="note">
