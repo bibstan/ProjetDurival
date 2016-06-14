@@ -2080,7 +2080,7 @@
             </person>
             <person xml:id="jeunesse">
                <!-- todo gestion xsl -->
-               <persName><addName type="say">La Jeunesse</addName></persName>
+               <persName><addName>La Jeunesse</addName></persName>
                <listEvent>
                   <event>
                      <p>Concierge puis portier à l'Intendance fils d'un ancien portier du château de Nancy</p>
@@ -2157,9 +2157,11 @@
                <persName><surname>Saint-Lambert</surname><forename>Jean-François</forename><roleName>marquis de</roleName></persName>
                <birth when="1716"/>
                <death when="1803"/>
-               <state>
-                  <p>Auteur recueil poétique des Saisons, chef d'oeuvre de la poésie descriptive du XVIIIe siècle. Il est aussi en 1765 l'auteur d'un Essai sur le luxe. Issu d’une famille noble mais modeste, Jean-François de Saint-Lambert fit ses études au collège de Pont-à-Mousson puis servit dans les gardes lorraines du roi Stanislas Leszczyński, avant de devenir grand-maître de sa garde-robe. Il fut d'abord remarqué par la Marquise de Boufflers jusqu'à en devenir l'amant puis devint proche de Voltaire jusqu'au décès de d'Émilie du Châtelet qui fut sa seconde maîtresse et qui mourut en 1749 après avoir mis au monde une petite fille conçue avec l'écrivain</p>
-               </state>
+               <listEvent>
+                  <event>
+                     <p>Auteur recueil poétique des Saisons, chef d'oeuvre de la poésie descriptive du XVIIIe siècle. Il est aussi en 1765 l'auteur d'un Essai sur le luxe. Issu d’une famille noble mais modeste, Jean-François de Saint-Lambert fit ses études au collège de Pont-à-Mousson puis servit dans les gardes lorraines du roi Stanislas Leszczyński, avant de devenir grand-maître de sa garde-robe. Il fut d'abord remarqué par la Marquise de Boufflers jusqu'à en devenir l'amant puis devint proche de Voltaire jusqu'au décès de d'Émilie du Châtelet qui fut sa seconde maîtresse et qui mourut en 1749 après avoir mis au monde une petite fille conçue avec l'écrivain</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="laMilliere">
                <persName><surname>Chaumont de la Millière</surname><forename>Antoine-Louis</forename></persName>
@@ -5364,7 +5366,7 @@
             <bibl xml:id="bib39">
                <title>Histoire de Sinal</title>
                <pubPlace>Nancy</pubPlace>
-               <publisher>Hoener</publisher>
+               <publisher>Haener</publisher>
                <date>1765</date>
                <note>On ne trouve pas trace de cet ouvrage</note>
             </bibl>
