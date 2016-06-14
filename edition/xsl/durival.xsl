@@ -943,7 +943,14 @@
             </xsl:if>
         </xsl:variable>
         <!--todo a.cite à la place de cite -->
-        <span data-tooltip='true' aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="{$tooltip}"><a class="cite" href="listbib.html{$ref}"><xsl:apply-templates/></a></span>
+        <xsl:choose>
+            <xsl:when test="//tei:div[@type='index']//tei:bibl[@xml:id=$id]">
+                <span data-tooltip='true' aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="{$tooltip}"><a class="cite" href="listbib.html{$ref}"><xsl:apply-templates/></a></span>
+            </xsl:when>
+            <xsl:otherwise>
+                <cite><xsl:apply-templates/></cite>
+            </xsl:otherwise>
+        </xsl:choose>                
     </xsl:template>
     
     <xsl:template match="tei:div[@type='transcription']//tei:rs[@type='bibl']">
@@ -2534,6 +2541,7 @@
     </xsl:template>
 
     <!--  ************************** A propos *****************************  -->
+    
     <xsl:template match="tei:projectDesc/tei:p" mode="projecDesc">
         <xsl:for-each select=".">
             <xsl:if test="tei:hi[not(@*)]">
