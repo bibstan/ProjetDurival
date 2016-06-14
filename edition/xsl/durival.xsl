@@ -978,8 +978,7 @@
             <xsl:if test="//tei:div[@type='index']//tei:bibl[@xml:id=$id]">
                 <xsl:apply-templates select="//tei:div[@type='index']//tei:bibl[@xml:id=$id]" mode="tooltip"/>
             </xsl:if>
-        </xsl:variable>
-        <!--todo a.cite à la place de cite -->
+        </xsl:variable>        
         <span data-tooltip='true' aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="{$tooltip}"><a class="person" href="listbib.html{$ref}"><xsl:apply-templates/></a></span>
     </xsl:template>
     
@@ -1643,7 +1642,7 @@
                                                     <a><xsl:value-of select="format-date($date,'[MNn]')"/></a>
                                                 </dt>
                                                 <dd class="timeline-event-content" id="{$month}EX">
-                                                    <ul>
+                                                    <ul class="no-bullet">
                                                         <xsl:for-each select="tei:div[@type='day']">
                                                             <xsl:variable name="day" select="@xml:id"/>
                                                             <xsl:variable name="year" select="substring(./tei:dateline/tei:date/@when | ./tei:dateline/tei:date/@from,1,4)"/>
