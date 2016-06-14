@@ -40,7 +40,14 @@
                                                 <li><a href="stanislas.html">Stanislas</a></li>
                                                 <li><a href="durival.html">Durival</a></li>
                                             </ul>
-                                        </li>                                                                                        
+                                        </li>
+                                        <li>
+                                            <a href="#">Histoires</a>
+                                            <ul class="vertical menu">
+                                                <li><a href="bibliotheque.html">Histoire de la Bibliothèque</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="bibliographie.html">Bibliographie générale</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -53,8 +60,7 @@
                                         <li><a href="listPerson.html">Personnes</a></li>
                                         <li><a href="listPlace.html">Lieux</a></li>
                                         <li><a href="listOrg.html">Institutions</a></li>
-                                        <li><a href="listbib.html">Œuvres citées</a></li>
-                                        <li><a href="bibliographie.html">Bibliographie générale</a></li>
+                                        <li><a href="listbib.html">Œuvres citées</a></li>                                        
                                     </ul>
                                 </li>
                                 <li><a href="apropos.html">À propos</a></li>
@@ -98,7 +104,14 @@
                                                 <li><a href="stanislas.html">Stanislas</a></li>
                                                 <li><a href="durival.html">Durival</a></li>
                                             </ul>
-                                        </li>                                                                                        
+                                        </li>
+                                        <li>
+                                            <a href="#">Histoires</a>
+                                            <ul class="vertical menu">
+                                                <li><a href="bibliotheque.html">Histoire de la Bibliothèque</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="bibliographie.html">Bibliographie générale</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -111,8 +124,7 @@
                                         <li><a href="listPerson.html">Personnes</a></li>
                                         <li><a href="listPlace.html">Lieux</a></li>
                                         <li><a href="listOrg.html">Institutions</a></li>
-                                        <li><a href="listbib.html">Œuvres citées</a></li>
-                                        <li><a href="bibliographie.html">Bibliographie générale</a></li>
+                                        <li><a href="listbib.html">Œuvres citées</a></li>                                        
                                     </ul>
                                 </li>
                                 <li><a href="apropos.html">À propos</a></li>
@@ -212,7 +224,14 @@
                                                         <li><a href="html/stanislas.html">Stanislas</a></li>
                                                         <li><a href="html/durival.html">Durival</a></li>
                                                     </ul>
-                                                </li>                                                                                        
+                                                </li>
+                                                <li>
+                                                    <a href="#">Histoires</a>
+                                                    <ul class="vertical menu">
+                                                        <li><a href="html/bibliotheque.html">Histoire de la Bibliothèque</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="html/bibliographie.html">Bibliographie générale</a></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -225,8 +244,7 @@
                                                 <li><a href="html/listPerson.html">Personnes</a></li>
                                                 <li><a href="html/listPlace.html">Lieux</a></li>
                                                 <li><a href="html/listOrg.html">Institutions</a></li>
-                                                <li><a href="html/listbib.html">Œuvres citées</a></li>
-                                                <li><a href="html/bibliographie.html">Bibliographie générale</a></li>
+                                                <li><a href="html/listbib.html">Œuvres citées</a></li>                                                
                                             </ul>
                                         </li>
                                         <li><a href="html/apropos.html">À propos</a></li>
