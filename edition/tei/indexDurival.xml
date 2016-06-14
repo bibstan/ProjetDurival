@@ -5693,13 +5693,12 @@
                <title>Mémoire attribué à la Chambre des Comptes</title>
             </bibl>
             <bibl xml:id="catalogueBibiliotheque">
-               <title>catalogue des livres de la bibliothèque royale de Nancy, fondée par le roi de Pologne [...]</title>
+               <title>Catalogue des livres de la bibliothèque royale de Nancy, fondée par le roi de Pologne [...]</title>
                <pubPlace>Nancy</pubPlace>
                <publisher>Leseure, Veuve d'Antoine</publisher>
                <date>1766</date>
                <idno type="callNumber">BM Nancy 2 808</idno>
             </bibl>
-
          </listBibl>
 
          <list type="artwork">
