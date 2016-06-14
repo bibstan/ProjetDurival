@@ -9118,18 +9118,19 @@
                <listBibl xml:id="œuvresDurival">
                   <biblStruct type="book">
                      <monogr>
-                        <title level="m">Description de la Lorraine et du Barrois, par M. Durival l'aîné. Tome premier</title>
+                        <title level="m">Description de la Lorraine et du Barrois, par M. Durival l'aîné. Tomes premier à quatrième</title>
                         <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
                         <imprint>
                            <pubPlace>Nancy</pubPlace>
+                           <publisher>Leseure, Claude</publisher>
                            <publisher>Leclerc, Veuve de Jean-Baptiste-Hyacinthe</publisher>
-                           <date>1778</date>
+                           <date>1778-1783</date>
                            <note type="url">https://books.google.fr/books?id=SQRUAAAAcAAJ&amp;hl=fr&amp;pg=PP7#v=onepage&amp;q&amp;f=false</note>
                         </imprint>
                      </monogr>
                      <idno type="callNumber">BM Nancy 50 051 (1)</idno>
                   </biblStruct>
-                  <biblStruct type="book">
+                  <!--<biblStruct type="book">
                      <monogr>
                         <title level="m">Description de la Lorraine et du barrois par M. Durival l'ainé. Tome quatrième. Servant de supplément aux trois autres</title>
                         <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
@@ -9140,8 +9141,8 @@
                         </imprint>
                      </monogr>
                      <idno type="callNumber">BM Nancy 50 051 (4)</idno>
-                  </biblStruct>
-                  <biblStruct type="book">
+                  </biblStruct>-->
+                  <!--<biblStruct type="book">
                      <monogr>
                         <title level="m">Description de la Lorraine et du Barrois, par M. Durival l'aîné. Tome second</title>
                         <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
@@ -9153,8 +9154,8 @@
                         </imprint>
                      </monogr>
                      <idno type="callNumber">BM Nancy 50 051 (2)</idno>
-                  </biblStruct>
-                  <biblStruct type="book">
+                  </biblStruct>-->
+                  <!--<biblStruct type="book">
                      <monogr>
                         <title level="m">Description de la Lorraine et du Barrois, par M. Durival l'aîné. Tome troisième</title>
                         <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
@@ -9166,7 +9167,7 @@
                         </imprint>
                      </monogr>
                      <idno type="callNumber">BM Nancy 50 051 (3)</idno>
-                  </biblStruct>
+                  </biblStruct>-->
                   <biblStruct type="book">
                      <monogr>
                         <title level="m">Introduction à la description de la Lorraine et du Barrois</title>
@@ -9182,7 +9183,7 @@
                   </biblStruct>
                   <biblStruct type="manuscript">
                      <monogr>
-                        <title level="m">Journal de Durival l'aîné, de 1737 à 1795</title>
+                        <title level="m">Journal de Durival l'aîné, de 1737 à 1795, ms. 863</title>
                         <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
                         <imprint>
                            <pubPlace>Nancy</pubPlace>

@@ -2427,7 +2427,7 @@
     
     <xsl:template match="tei:div[@type='bibl']//tei:imprint[ancestor::*[@type='book' or @type='manuscript' or @type='document']]" mode="bibl">
         <xsl:if test="tei:pubPlace"><xsl:apply-templates select="tei:pubPlace"/><xsl:text>, </xsl:text></xsl:if>
-        <xsl:if test="tei:publisher"><xsl:apply-templates select="tei:publisher"/><xsl:text>, </xsl:text></xsl:if>
+        <xsl:if test="tei:publisher"><xsl:for-each select="tei:publisher"><xsl:apply-templates select="."/><xsl:text>, </xsl:text></xsl:for-each></xsl:if>
         <xsl:apply-templates select="tei:date"/><xsl:text>.</xsl:text>
     </xsl:template>
     
