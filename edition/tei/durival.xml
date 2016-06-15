@@ -78,44 +78,44 @@
       </fileDesc>
       <encodingDesc>
          <projectDesc>
-            <p> Le 18 juin 2016, les Bibliothèques de Nancy mettent en ligne l'édition augmentée du <title>Journal</title> de Nicolas Durival pour les années 1765-1766. Cette réalisation s'inscrit dans le 250<hi rend="super">e</hi> anniversaire du rattachement de la Lorraine à la France, consécutif à la mort du roi Stanislas le 23 février 1766. L'édition repose sur une transcription et un encodage en XML-TEI enrichis de données biographiques, iconographiques, cartographiques et historiques. </p>
+            <p>Le 18 juin 2016, les Bibliothèques de Nancy mettent en ligne l'édition augmentée du <title>Journal</title> de Nicolas Durival pour les années 1765-1766. Cette réalisation s'inscrit dans le 250<hi rend="super">e</hi> anniversaire du rattachement de la Lorraine à la France, consécutif à la mort du roi Stanislas le 23 février 1766. L'édition repose sur une transcription et un encodage en XML-TEI enrichis de données biographiques, iconographiques, cartographiques et historiques. </p>
             <p>
-               <hi>Les objectifs</hi> Les objectifs sont multiples : <list>
-                  <item>publier en ligne, enrichir et contextualiser, pour les chercheurs et le grand public, une source essentielle de l'histoire Lorraine au XVIII<hi rend="super">e</hi> siècle ;</item>
-                  <item>tester l'intérêt d'utiliser la <ref type="externalLink" target="https://fr.wikipedia.org/wiki/Text_Encoding_Initiative">TEI</ref> pour éditer un document manuscrit dans une bibliothèque municipale ;</item> <item>valoriser les ressources de la bibliothèque par l'accompagnement d'images issues du fonds iconographique en lien avec les événements relatés ;</item>
-                  <item>relier l'ensemble au catalogue du fonds ancien, Nicolas Durival étant amateur de théâtre, de littérature et de par ses fonctions, étroitement lié à l'Académie royale des Sciences, Arts et Lettres de Nancy (aujourd'hui <ref type="externalLink" target="http://www.academie-stanislas.org/Presentation2.html">Académie Stanislas</ref>) et au commerce de la librairie ;</item>
+               <hi>Les objectifs</hi> Les objectifs sont multiples&#160;: <list>
+                  <item>publier en ligne, enrichir et contextualiser, pour les chercheurs et le grand public, une source essentielle de l'histoire Lorraine au XVIII<hi rend="super">e</hi> siècle&#160;;</item>
+                  <item>tester l'intérêt d'utiliser la <ref type="externalLink" target="https://fr.wikipedia.org/wiki/Text_Encoding_Initiative">TEI</ref> pour éditer un document manuscrit dans une bibliothèque municipale&#160;;</item> <item>valoriser les ressources de la bibliothèque par l'accompagnement d'images issues du fonds iconographique en lien avec les événements relatés&#160;;</item>
+                  <item>relier l'ensemble au catalogue du fonds ancien, Nicolas Durival étant amateur de théâtre, de littérature et de par ses fonctions, étroitement lié à l'Académie royale des Sciences, Arts et Lettres de Nancy (aujourd'hui <ref type="externalLink" target="http://www.academie-stanislas.org/Presentation2.html">Académie Stanislas</ref>) et au commerce de la librairie&#160;;</item>
                   <item>mettre en place les compétences et la chaîne de traitement nécessaires à la poursuite du projet dans les années à venir.</item>
                </list>
             </p>
             <p>
-               <hi>La transcription et l'encodage</hi> La transcription, l'encodage et la réalisation du site web <ref type="externalLink" target="http://www.journaldedurival.fr">http://www.journaldedurival.fr</ref> ont été confiés à un prestataire issu du master de L’École nationale des Chartes et réalisés en étroite collaboration avec l'équipe du Patrimoine des Bibliothèques de Nancy. Les spécifications techniques ont concerné : <list>
-                  <item>la possibilité de lire en continu le Journal dans son orthographe et ses abréviations d'époque ou modernisés ;</item>
-                  <item>la navigation par <ref type="externalLink" target="http://journaldedurival.fr/demo/html/calendrier.html">date</ref> ;</item>
-                  <item>l'encodage des noms de personne, pour réaliser un <ref type="externalLink" target="http://journaldedurival.fr/html/listPerson.html">index biographique</ref> ;</item>
-                  <item>l'encodage des <ref type="externalLink" target="http://journaldedurival.fr/html/listPlace.html">noms de lieux</ref>, pour naviguer dans le Journal à partir d'un <ref type="externalLink" target="http://journaldedurival.fr/html/cartographie.html">plan de Nancy</ref> ;</item>
+               <hi>La transcription et l'encodage</hi> La transcription, l'encodage et la réalisation du site web <ref type="externalLink" target="http://www.journaldedurival.fr">http://www.journaldedurival.fr</ref> ont été confiés à un prestataire issu du master de L’École nationale des Chartes et réalisés en étroite collaboration avec l'équipe du Patrimoine des Bibliothèques de Nancy. Les spécifications techniques ont concerné&#160;: <list>
+                  <item>la possibilité de lire en continu le Journal dans son orthographe et ses abréviations d'époque ou modernisés&#160;;</item>
+                  <item>la navigation par <ref type="externalLink" target="http://journaldedurival.fr/demo/html/calendrier.html">date</ref>&#160;;</item>
+                  <item>l'encodage des noms de personne, pour réaliser un <ref type="externalLink" target="http://journaldedurival.fr/html/listPerson.html">index biographique</ref>&#160;;</item>
+                  <item>l'encodage des <ref type="externalLink" target="http://journaldedurival.fr/html/listPlace.html">noms de lieux</ref>, pour naviguer dans le Journal à partir d'un <ref type="externalLink" target="http://journaldedurival.fr/html/cartographie.html">plan de Nancy</ref>&#160;;</item>
                   <item>l'encodage des <ref type="externalLink" target="http://journaldedurival.fr/html/listbib.html">titres d’œuvres</ref>.</item>
                </list>
             </p>
             <p>
                <hi>Le travail d'enrichissement</hi> Les enrichissements - itératifs - impliquent plusieurs acteurs. L'équipe de la bibliothèque réalise la relecture de la transcription, les recherches bibliographiques, le (re)catalogage des œuvres imprimées et manuscrites de Nicolas Durival et des œuvres citées par lui en 1765-1766, des élucidations lexicales et de faits locaux, la rédaction de fiches thématiques, la recherche iconographique. Le <ref type="externalLink" target="https://musee-lorrain.nancy.fr/">Musée lorrain</ref> a apporté son concours à la fourniture d'images. Enfin, une équipe d'étudiants de <ref type="externalLink" target="http://campus-lettres.univ-lorraine.fr/content/licence-histoire">licence 3 Histoire de l'Université de Lorraine</ref> a réalisé le gros des recherches biographiques, en guise d'apprentissage des techniques de la recherche historique. </p>
             <p>
-               <hi><!--Le résultat--></hi> Le site <ref type="externalLink" target="http://www.journaldedurival.fr">http://www.journaldedurival.fr</ref> est le premier résultat tangible de ce travail. Il peut encore être amélioré dans ses fonctionnalités, notamment de recherche textuelle, ce qui viendra dans une seconde phase. Les fichiers source sont préparés dans ce sens. L'équipe de la bibliothèque est en possession d'un modèle ré-utilisable d'édition de texte du 18<hi rend="super">e</hi> siècle et peut s'apprêter à mettre à profit ses compétences développées en XML-TEI pour continuer dans les années qui viennent la transcription, l'encodage et l'enrichissement des 13 volumes restants. À l'heure actuelle, le projet s'achemine vers la combinaison de plusieurs partenariats dont la réutilisation de transcriptions effectuées au fil du temps par des historiens locaux et un partenariat solidifié avec la filière Histoire de l'Université de Lorraine aux niveaux L3 et Master. La phase
+               Le site <ref type="externalLink" target="http://www.journaldedurival.fr">http://www.journaldedurival.fr</ref> est le premier résultat tangible de ce travail. Il peut encore être amélioré dans ses fonctionnalités, notamment de recherche textuelle, ce qui viendra dans une seconde phase. Les fichiers source sont préparés dans ce sens. L'équipe de la bibliothèque est en possession d'un modèle ré-utilisable d'édition de texte du 18<hi rend="super">e</hi> siècle et peut s'apprêter à mettre à profit ses compétences développées en XML-TEI pour continuer dans les années qui viennent la transcription, l'encodage et l'enrichissement des 13 volumes restants. À l'heure actuelle, le projet s'achemine vers la combinaison de plusieurs partenariats dont la réutilisation de transcriptions effectuées au fil du temps par des historiens locaux et un partenariat solidifié avec la filière Histoire de l'Université de Lorraine aux niveaux L3 et Master. La phase
                d'encodage XML-TEI et des développements du site, pourraient également faire l'objet de partenariats futurs. </p>
             <p>
                <hi>L'équipe</hi>
                <list>
-                  <item>Directeur de la publication : Juliette Lenoir, directrice des Bibliothèques de Nancy</item>
-                  <item>Responsabilité scientifique : <persName>Claire Haquet</persName>, <persName>Malik Diallo</persName></item>
-                  <item>Coordination scientifique et technique, maquette (réalisation des CSS) : <persName>Éric Nunes</persName></item>
-                  <item>Transcription, encodage (1765-1766), feuilles de styles XSLT : <persName>Josselin Morvan</persName> (diplômé du master "technologies numériques appliquées à l'histoire" de l'École des Chartes)</item>
-                  <item>Index et bibliographies : équipe du patrimoine des Bibliothèques de Nancy, étudiants de M. <persName>Jalabert</persName> de l'<orgName>Université Lorraine</orgName> (<persName>Élodie Réot</persName> , <persName>Louise Engler</persName>, <persName>Jules Rawolle</persName>, <persName>Gaëtan Barbier</persName>, <persName>Alexandre Brignon</persName>, <persName>Pierre Valentin</persName>), une partie des notes historiques a été réalisée par <persName>Sara Nadal</persName>.</item>
+                  <item>Directeur de la publication&#160;: Juliette Lenoir, directrice des Bibliothèques de Nancy</item>
+                  <item>Responsabilité scientifique&#160;: <persName>Claire Haquet</persName>, <persName>Malik Diallo</persName></item>
+                  <item>Coordination scientifique et technique, maquette (réalisation des CSS)&#160;: <persName>Éric Nunes</persName></item>
+                  <item>Transcription, encodage (1765-1766), feuilles de styles XSLT&#160;: <persName>Josselin Morvan</persName> (diplômé du master "technologies numériques appliquées à l'histoire" de l'École des Chartes)</item>
+                  <item>Index et bibliographies&#160;: équipe du patrimoine des Bibliothèques de Nancy, étudiants de M. <persName>Jalabert</persName> de l'<orgName>Université Lorraine</orgName> (<persName>Élodie Réot</persName> , <persName>Louise Engler</persName>, <persName>Jules Rawolle</persName>, <persName>Gaëtan Barbier</persName>, <persName>Alexandre Brignon</persName>, <persName>Pierre Valentin</persName>), une partie des notes historiques a été réalisée par <persName>Sara Nadal</persName>.</item>
                </list>
             </p>
             <p>
                <hi>Remerciements</hi> M. <persName>Christian Hénard</persName>, "précurseur" dans l'étude et la transcription du <title>Journal</title> dont les conseils et les notes nous sont d'une grande aide. </p>
             <p>
                <hi>Techniques</hi>
-               <lb/>Le site est en HTML, chaque page est générée par le biais d'une feuilles de style XSLT. Il est conçu sur la base du framework <ref type="externalLink" target="http://foundation.zurb.com/">Foundation 6</ref> (personnalisé). <lb/>Plusieurs bibliothèques javascript sont utilisées : <list>
+               <lb/>Le site est en HTML, chaque page est générée par le biais d'une feuilles de style XSLT. Il est conçu sur la base du framework <ref type="externalLink" target="http://foundation.zurb.com/">Foundation 6</ref> (personnalisé). <lb/>Plusieurs bibliothèques javascript sont utilisées&#160;: <list>
                   <!--a reprendre -->
                   <item><ref type="externalLink" target="http://www.owlcarousel.owlgraphic.com/">OWLcarousel.js</ref> pour le slider du journal;</item>
                   <item><ref type="externalLink" target="https://technotarek.com/timeliner/">Timeliner.js</ref> pour certaines biographies et l'accès calendaire;</item>
@@ -128,10 +128,10 @@
             <p>
                <hi>Propriété intellectuelle</hi> Sauf mention contraire, tous les éléments du site sont sous Licence Ouverte <ref type="externalLink" target="https://www.etalab.gouv.fr/licence-ouverte-open-licence">Etalab</ref> (pour les images) et sous <ref type="externalLink" target="https://creativecommons.org/publicdomain/zero/1.0/deed.fr">licence CC0</ref> (pour les productions scientifiques). </p>
             <p>
-               <hi>Contacts</hi> Pour toute information complémentaire, vous pouvez contacter : <list>
-                  <item>Organisation du projet, des recherches, rédactionnels, site : <ref type="mailto" target="e.nunes@nancy.fr">Eric Nunes</ref> ou <ref type="mailto" target="c.haquet@nancy.fr">Claire Haquet</ref></item>
-                  <item>Encodage XML-TEI (et schéma ODD), feuilles de style XSLT : <ref type="mailto" target="morvan.josselin@gmail.com">Josselin Morvan</ref></item>
-                  <item>Partenariat Université de Lorraine : <ref type="mailto" target="laurent.jalabert@univ-lorraine.fr">Laurent Jalabert</ref></item>
+               <hi>Contacts</hi> Pour toute information complémentaire, vous pouvez contacter&#160;: <list>
+                  <item>Organisation du projet, des recherches, rédactionnels, site&#160;: <ref type="mailto" target="e.nunes@nancy.fr">Eric Nunes</ref> ou <ref type="mailto" target="c.haquet@nancy.fr">Claire Haquet</ref></item>
+                  <item>Encodage XML-TEI (et schéma ODD), feuilles de style XSLT&#160;: <ref type="mailto" target="morvan.josselin@gmail.com">Josselin Morvan</ref></item>
+                  <item>Partenariat Université de Lorraine&#160;: <ref type="mailto" target="laurent.jalabert@univ-lorraine.fr">Laurent Jalabert</ref></item>
                </list>
             </p>
          </projectDesc>
@@ -552,7 +552,7 @@
                         <p xml:id="d1765010102" ana="#ville">
                            <placeName ref="#nancyHDV">L'h&oô;tel de ville de Nancy</placeName> <choice><orig>aiant</orig><reg>ayant</reg></choice> fait graver par
                            <lb/><persName ref="#collin">Collin</persName> l'estampe de <title ref="#estampeCollin">la construction du quartier
-                              <lb/><choice><orig>roïal</orig><reg>royal</reg></choice> des <choice><orig>cazernes</orig><reg>casernes</reg></choice></title><ref type="picture" target="#pic01"/>. Elle a été presentée ce matin
+                              <lb/><choice><orig>roïal</orig><reg>royal</reg></choice> des <choice><orig>cazernes</orig><reg>casernes</reg></choice></title><ref type="picture" target="#picture17650101A"/>. Elle a été presentée ce matin
                            <lb/>au <rs type="person" ref="#stanislas">&roy; de Pologne</rs> à <placeName ref="#luneville">Lunéville</placeName>. <rs type="person" ref="#stanislas"><choice><abbr>S. M.</abbr><expan>Sa Majesté</expan></choice></rs> en a été contente.
                         </p>
                      </div>
@@ -3525,7 +3525,7 @@
                      <div type="day" xml:id="d17651110">
                         <dateline><date type="entry" when="1765-11-10">10</date></dateline>
                         <p xml:id="d1765111001" ana="#ville">                           
-                           J'ai fait mettre en prison <persName ref="#hoener">hœner</persName>, pour avoir
+                           J'ai fait mettre en prison <persName ref="#haener">hœner</persName>, pour avoir
                            <lb/>imprimé : <title ref="#bib39">Histoire de Sinal</title>, traduite d'un
                            <lb/>manuscrit h&eé;breu, à <placeName ref="#smirne">Smirne</placeName> <date when="1765">1765</date>, <term type="format" subtype="in-douze">in 12</term><ref type="note" target="#note17651110A"/> de
                            <lb/>14 pages. C'est une sanglante satyre contre
@@ -3561,7 +3561,7 @@
                            <lb/><placeName ref="#nancyStEpvre">S. Epvre</placeName> et à <placeName ref="#nancyCongregation">la Congrégation</placeName>.
                         </p>
                         <p xml:id="d1765111202" ana="#ville">
-                           J'ai le soir fait sortir <persName ref="#hoener">Hœner</persName> de prison.
+                           J'ai le soir fait sortir <persName ref="#haener">Hœner</persName> de prison.
                         </p>
                      </div>
                   
@@ -9207,7 +9207,179 @@
                     </monogr>
                 </biblStruct>
             </listBibl>
-            
+               <listBibl xml:id="œuvresDurival">
+                  <biblStruct type="book">
+                     <monogr>
+                        <title level="m">Description de la Lorraine et du Barrois, par M. Durival l'aîné. Tomes premier à quatrième</title>
+                        <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
+                        <imprint>
+                           <pubPlace>Nancy</pubPlace>
+                           <publisher>Leseure, Claude</publisher>
+                           <publisher>Leclerc, Veuve de Jean-Baptiste-Hyacinthe</publisher>
+                           <date>1778-1783</date>
+                           <note type="url">https://books.google.fr/books?id=SQRUAAAAcAAJ&amp;hl=fr&amp;pg=PP7#v=onepage&amp;q&amp;f=false</note>
+                        </imprint>
+                     </monogr>
+                     <idno type="callNumber">BM Nancy 50 051 (1)</idno>
+                  </biblStruct>
+                  <!--<biblStruct type="book">
+                     <monogr>
+                        <title level="m">Description de la Lorraine et du barrois par M. Durival l'ainé. Tome quatrième. Servant de supplément aux trois autres</title>
+                        <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
+                        <imprint>
+                           <pubPlace>Nancy</pubPlace>
+                           <publisher>Leseure, Claude</publisher>
+                           <date>1783</date>
+                        </imprint>
+                     </monogr>
+                     <idno type="callNumber">BM Nancy 50 051 (4)</idno>
+                  </biblStruct>-->
+                  <!--<biblStruct type="book">
+                     <monogr>
+                        <title level="m">Description de la Lorraine et du Barrois, par M. Durival l'aîné. Tome second</title>
+                        <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
+                        <imprint>
+                           <pubPlace>Nancy</pubPlace>
+                           <publisher>Leclerc, Veuve de Jean-Baptiste-Hyacinthe</publisher>
+                           <date>1779</date>
+                           <note type="url">https://books.google.fr/books?id=8jUli2255SMC&amp;hl=fr&amp;pg=PP5#v=onepage&amp;q&amp;f=false</note>
+                        </imprint>
+                     </monogr>
+                     <idno type="callNumber">BM Nancy 50 051 (2)</idno>
+                  </biblStruct>-->
+                  <!--<biblStruct type="book">
+                     <monogr>
+                        <title level="m">Description de la Lorraine et du Barrois, par M. Durival l'aîné. Tome troisième</title>
+                        <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
+                        <imprint>
+                           <pubPlace>Nancy</pubPlace>
+                           <publisher>Leclerc, Veuve de Jean-Baptiste-Hyacinthe</publisher>
+                           <date>1779</date>
+                           <note type="url">https://books.google.fr/books?id=cARUAAAAcAAJ&amp;hl=fr&amp;pg=PP7#v=onepage&amp;q&amp;f=false</note>
+                        </imprint>
+                     </monogr>
+                     <idno type="callNumber">BM Nancy 50 051 (3)</idno>
+                  </biblStruct>-->
+                  <biblStruct type="book">
+                     <monogr>
+                        <title level="m">Introduction à la description de la Lorraine et du Barrois</title>
+                        <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
+                        <imprint>
+                           <pubPlace>Nancy</pubPlace>
+                           <publisher>Babin, François</publisher>
+                           <date>1774</date>
+                           <note type="url">https://books.google.fr/books?id=HBNUAAAAcAAJ&amp;hl=fr&amp;pg=PP5#v=onepage&amp;q&amp;f=false</note>
+                        </imprint>
+                     </monogr>
+                     <idno type="callNumber">BM Nancy 201 ; 201 Bis</idno>
+                  </biblStruct>
+                  <biblStruct type="manuscript">
+                     <monogr>
+                        <title level="m">Journal de Durival l'aîné, de 1737 à 1795, ms. 863</title>
+                        <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
+                        <imprint>
+                           <pubPlace>Nancy</pubPlace>
+                           <date>1737</date>
+                        </imprint>
+                     </monogr>
+                     <idno type="callNumber">BM Nancy ms. 863 (1-14)</idno>
+                  </biblStruct>
+                  <biblStruct type="document">
+                     <monogr>
+                        <title level="m">[Placard] La Lorraine devant bientôt jouïr du bonheur d'y recevoir Mesdames de France Adélaïde et Victoire à Nancy "..."</title>
+                        <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
+                        <imprint>
+                           <publisher>[S.n.]</publisher>
+                           <date>1762</date>
+                        </imprint>
+                     </monogr>
+                     <idno type="callNumber">BM Nancy 98 040 7(1)</idno>
+                  </biblStruct>
+                  <biblStruct type="book">
+                     <monogr>
+                        <title level="m">Mémoire concernant la clôture des héritages, le vain-pâturage et le parcours en Lorraine</title>
+                        <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
+                        <imprint>
+                           <pubPlace>Nancy</pubPlace>
+                           <publisher>Thomas, Henri ; Thomas, Pierre-Henri</publisher>
+                           <date>1763</date>
+                        </imprint>
+                     </monogr>
+                     <idno type="callNumber">BM Nancy 3261 (c) ; 80 147 (11)</idno>
+                  </biblStruct>
+                  <biblStruct type="book">
+                     <monogr>
+                        <title level="m">Mémoire sur la Lorraine et le Barrois</title>
+                        <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
+                        <imprint>
+                           <pubPlace>[S.l.]</pubPlace>
+                           <publisher>[S.n.]</publisher>
+                           <date>1752</date>
+                        </imprint>
+                     </monogr>
+                     <idno type="callNumber">BM Nancy 9562</idno>
+                  </biblStruct>
+                  <biblStruct type="book">
+                     <monogr>
+                        <title level="m">Mémoire sur la Lorraine et le Barrois, suivi de la table alphabétique et topographique des lieux</title>
+                        <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
+                        <imprint>
+                           <pubPlace>Nancy</pubPlace>
+                           <publisher>Thomas, Henri</publisher>
+                           <date>1753</date>
+                           <note type="url">https://books.google.fr/books?id=uAVcAAAAcAAJ&amp;hl=fr&amp;pg=PR1#v=onepage&amp;q&amp;f=false</note>
+                        </imprint>
+                     </monogr>
+                     <idno type="callNumber">BM Nancy 50 035 ; 50 035 Bis ; 50 035 Ter</idno>
+                  </biblStruct>
+                  <biblStruct type="book">
+                     <monogr>
+                        <title level="m">Table alphabétique des villes, bourgs, villages etc. de la Lorraine et du Barrois</title>
+                        <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
+                        <imprint>
+                           <pubPlace>Nancy</pubPlace>
+                           <publisher>Thomas, Henri</publisher>
+                           <date>1766</date>
+                        </imprint>
+                     </monogr>
+                     <idno type="callNumber">BM Nancy 199 ; 199 Bis ; 199 Ter ; 311 652</idno>
+                  </biblStruct>
+                  <biblStruct type="book">
+                     <monogr>
+                        <title level="m">Table alphabétique des villes, bourgs, villages et hameaux de Lorraine et Barrois</title>
+                        <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
+                        <imprint>
+                           <pubPlace>[S.l.]</pubPlace>
+                           <publisher>[S.n.]</publisher>
+                           <date>1748</date>
+                        </imprint>
+                     </monogr>
+                     <idno type="callNumber">BM Nancy 12 320</idno>
+                  </biblStruct>
+                  <biblStruct type="book">
+                     <monogr>
+                        <title level="m">Table alphabétique des villes, bourgs, villages et hameaux de Lorraine et du Barrois</title>
+                        <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
+                        <imprint>
+                           <pubPlace>[S.l.]</pubPlace>
+                           <publisher>[S.n.]</publisher>
+                           <date>1749</date>
+                        </imprint>
+                     </monogr>
+                     <idno type="callNumber">BM Nancy 200 ; 200 Bis</idno>
+                  </biblStruct>
+                  <biblStruct type="document">
+                     <monogr>
+                        <title level="m">Tous les ordres des la Ville de Nancy donnent des preuves si sensibles de joye, à l'occasion de l'arrivée de Mesdames de France Adelaïde &amp; Victoire "..."</title>
+                        <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
+                        <imprint>
+                           <publisher>[S.n.]</publisher>
+                           <date>1761</date>
+                        </imprint>
+                     </monogr>
+                     <idno type="callNumber">BM Nancy 98 040 7(2)</idno>
+                  </biblStruct>
+               </listBibl>
             <listBibl xml:id="œuvresCitees">
                 <biblStruct type="book">
                     <monogr>
@@ -9397,7 +9569,7 @@
                             <date>1766</date>
                         </imprint>
                     </monogr>
-                    <idno type="callNumber">BM Nancy : cote 702 031 19(a-b)</idno>
+                    <idno type="callNumber">BM Nancy : cote 702 031 19 (a-b)</idno>
                 </biblStruct>
                 <biblStruct type="book">
                     <monogr>
@@ -9422,180 +9594,7 @@
                     </monogr>
                     <idno type="callNumber">BM Nancy : cote Rés. 28</idno>
                 </biblStruct>
-            </listBibl>
-            
-            <listBibl xml:id="œuvresDurival">
-                <biblStruct type="book">
-                    <monogr>
-                        <title level="m">Description de la Lorraine et du Barrois, par M. Durival l'aîné. Tome premier</title>
-                        <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
-                        <imprint>
-                            <pubPlace>Nancy</pubPlace>
-                            <publisher>Leclerc, Veuve de Jean-Baptiste-Hyacinthe</publisher>
-                            <date>1778</date>
-                            <note type="url">https://books.google.fr/books?id=SQRUAAAAcAAJ&amp;hl=fr&amp;pg=PP7#v=onepage&amp;q&amp;f=false</note>
-                        </imprint>
-                    </monogr>
-                    <idno type="callNumber">BM Nancy 50 051 (1)</idno>
-                </biblStruct>
-                <biblStruct type="book">
-                    <monogr>
-                        <title level="m">Description de la Lorraine et du barrois par M. Durival l'ainé. Tome quatrième. Servant de supplément aux trois autres</title>
-                        <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
-                        <imprint>
-                            <pubPlace>Nancy</pubPlace>
-                            <publisher>Leseure, Claude</publisher>
-                            <date>1783</date>
-                        </imprint>
-                    </monogr>
-                    <idno type="callNumber">BM Nancy 50 051 (4)</idno>
-                </biblStruct>
-                <biblStruct type="book">
-                    <monogr>
-                        <title level="m">Description de la Lorraine et du Barrois, par M. Durival l'aîné. Tome second</title>
-                        <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
-                        <imprint>
-                            <pubPlace>Nancy</pubPlace>
-                            <publisher>Leclerc, Veuve de Jean-Baptiste-Hyacinthe</publisher>
-                            <date>1779</date>
-                            <note type="url">https://books.google.fr/books?id=8jUli2255SMC&amp;hl=fr&amp;pg=PP5#v=onepage&amp;q&amp;f=false</note>
-                        </imprint>
-                    </monogr>
-                    <idno type="callNumber">BM Nancy 50 051 (2)</idno>
-                </biblStruct>
-                <biblStruct type="book">
-                    <monogr>
-                        <title level="m">Description de la Lorraine et du Barrois, par M. Durival l'aîné. Tome troisième</title>
-                        <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
-                        <imprint>
-                            <pubPlace>Nancy</pubPlace>
-                            <publisher>Leclerc, Veuve de Jean-Baptiste-Hyacinthe</publisher>
-                            <date>1779</date>
-                            <note type="url">https://books.google.fr/books?id=cARUAAAAcAAJ&amp;hl=fr&amp;pg=PP7#v=onepage&amp;q&amp;f=false</note>
-                        </imprint>
-                    </monogr>
-                    <idno type="callNumber">BM Nancy 50 051 (3)</idno>
-                </biblStruct>
-                <biblStruct type="book">
-                    <monogr>
-                        <title level="m">Introduction à la description de la Lorraine et du Barrois</title>
-                        <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
-                        <imprint>
-                            <pubPlace>Nancy</pubPlace>
-                            <publisher>Babin, François</publisher>
-                            <date>1774</date>
-                            <note type="url">https://books.google.fr/books?id=HBNUAAAAcAAJ&amp;hl=fr&amp;pg=PP5#v=onepage&amp;q&amp;f=false</note>
-                        </imprint>
-                    </monogr>
-                    <idno type="callNumber">BM Nancy 201 ; 201 Bis</idno>
-                </biblStruct>
-                <biblStruct type="manuscript">
-                    <monogr>
-                        <title level="m">Journal de Durival l'aîné, de 1737 à 1795</title>
-                        <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
-                        <imprint>
-                            <pubPlace>Nancy</pubPlace>
-                            <date>1737</date>
-                        </imprint>
-                    </monogr>
-                    <idno type="callNumber">BM Nancy ms. 863 (1-14)</idno>
-                </biblStruct>
-                <biblStruct type="document">
-                    <monogr>
-                        <title level="m">[Placard] La Lorraine devant bientôt jouïr du bonheur d'y recevoir Mesdames de France Adélaïde et Victoire à Nancy "..."</title>
-                        <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
-                        <imprint>
-                            <publisher>[S.n.]</publisher>
-                            <date>1762</date>
-                        </imprint>
-                    </monogr>
-                    <idno type="callNumber">BM Nancy 98 040 7(1)</idno>
-                </biblStruct>
-                <biblStruct type="book">
-                    <monogr>
-                        <title level="m">Mémoire concernant la clôture des héritages, le vain-pâturage et le parcours en Lorraine</title>
-                        <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
-                        <imprint>
-                            <pubPlace>Nancy</pubPlace>
-                            <publisher>Thomas, Henri ; Thomas, Pierre-Henri</publisher>
-                            <date>1763</date>
-                        </imprint>
-                    </monogr>
-                    <idno type="callNumber">BM Nancy 3261 (c) ; 80 147 (11)</idno>
-                </biblStruct>
-                <biblStruct type="book">
-                    <monogr>
-                        <title level="m">Mémoire sur la Lorraine et le Barrois</title>
-                        <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
-                        <imprint>
-                            <pubPlace>[S.l.]</pubPlace>
-                            <publisher>[S.n.]</publisher>
-                            <date>1752</date>
-                        </imprint>
-                    </monogr>
-                    <idno type="callNumber">BM Nancy 9562</idno>
-                </biblStruct>
-                <biblStruct type="book">
-                    <monogr>
-                        <title level="m">Mémoire sur la Lorraine et le Barrois, suivi de la table alphabétique et topographique des lieux</title>
-                        <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
-                        <imprint>
-                            <pubPlace>Nancy</pubPlace>
-                            <publisher>Thomas, Henri</publisher>
-                            <date>1753</date>
-                            <note type="url">https://books.google.fr/books?id=uAVcAAAAcAAJ&amp;hl=fr&amp;pg=PR1#v=onepage&amp;q&amp;f=false</note>
-                        </imprint>
-                    </monogr>
-                    <idno type="callNumber">BM Nancy 50 035 ; 50 035 Bis ; 50 035 Ter</idno>
-                </biblStruct>
-                <biblStruct type="book">
-                    <monogr>
-                        <title level="m">Table alphabétique des villes, bourgs, villages etc. de la Lorraine et du Barrois</title>
-                        <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
-                        <imprint>
-                            <pubPlace>Nancy</pubPlace>
-                            <publisher>Thomas, Henri</publisher>
-                            <date>1766</date>
-                        </imprint>
-                    </monogr>
-                    <idno type="callNumber">BM Nancy 199 ; 199 Bis ; 199 Ter ; 311 652</idno>
-                </biblStruct>
-                <biblStruct type="book">
-                    <monogr>
-                        <title level="m">Table alphabétique des villes, bourgs, villages et hameaux de Lorraine et Barrois</title>
-                        <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
-                        <imprint>
-                            <pubPlace>[S.l.]</pubPlace>
-                            <publisher>[S.n.]</publisher>
-                            <date>1748</date>
-                        </imprint>
-                    </monogr>
-                    <idno type="callNumber">BM Nancy 12 320</idno>
-                </biblStruct>
-                <biblStruct type="book">
-                    <monogr>
-                        <title level="m">Table alphabétique des villes, bourgs, villages et hameaux de Lorraine et du Barrois</title>
-                        <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
-                        <imprint>
-                            <pubPlace>[S.l.]</pubPlace>
-                            <publisher>[S.n.]</publisher>
-                            <date>1749</date>
-                        </imprint>
-                    </monogr>
-                    <idno type="callNumber">BM Nancy 200 ; 200 Bis</idno>
-                </biblStruct>
-                <biblStruct type="document">
-                    <monogr>
-                        <title level="m">Tous les ordres des la Ville de Nancy donnent des preuves si sensibles de joye, à l'occasion de l'arrivée de Mesdames de France Adelaïde &amp; Victoire "..."</title>
-                        <author><forename>Nicolas Luton</forename><surname>Durival</surname></author>
-                        <imprint>
-                            <publisher>[S.n.]</publisher>
-                            <date>1761</date>
-                        </imprint>
-                    </monogr>
-                    <idno type="callNumber">BM Nancy 98 040 7(2)</idno>
-                </biblStruct>
-            </listBibl>
+            </listBibl>                        
             </div>
          </body>
       </text>

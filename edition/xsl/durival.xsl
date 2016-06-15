@@ -40,7 +40,14 @@
                                                 <li><a href="stanislas.html">Stanislas</a></li>
                                                 <li><a href="durival.html">Durival</a></li>
                                             </ul>
-                                        </li>                                                                                        
+                                        </li>
+                                        <li>
+                                            <a href="#">Histoires</a>
+                                            <ul class="vertical menu">
+                                                <li><a href="bibliotheque.html">Histoire de la Bibliothèque</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="bibliographie.html">Bibliographie générale</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -53,8 +60,7 @@
                                         <li><a href="listPerson.html">Personnes</a></li>
                                         <li><a href="listPlace.html">Lieux</a></li>
                                         <li><a href="listOrg.html">Institutions</a></li>
-                                        <li><a href="listbib.html">Œuvres citées</a></li>
-                                        <li><a href="bibliographie.html">Bibliographie générale</a></li>
+                                        <li><a href="listbib.html">Œuvres citées</a></li>                                        
                                     </ul>
                                 </li>
                                 <li><a href="apropos.html">À propos</a></li>
@@ -99,7 +105,14 @@
                                                 <li><a href="stanislas.html">Stanislas</a></li>
                                                 <li><a href="durival.html">Durival</a></li>
                                             </ul>
-                                        </li>                                                                                        
+                                        </li>
+                                        <li>
+                                            <a href="#">Histoires</a>
+                                            <ul class="vertical menu">
+                                                <li><a href="bibliotheque.html">Histoire de la Bibliothèque</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="bibliographie.html">Bibliographie générale</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -112,8 +125,7 @@
                                         <li><a href="listPerson.html">Personnes</a></li>
                                         <li><a href="listPlace.html">Lieux</a></li>
                                         <li><a href="listOrg.html">Institutions</a></li>
-                                        <li><a href="listbib.html">Œuvres citées</a></li>
-                                        <li><a href="bibliographie.html">Bibliographie générale</a></li>
+                                        <li><a href="listbib.html">Œuvres citées</a></li>                                        
                                     </ul>
                                 </li>
                                 <li><a href="apropos.html">À propos</a></li>
@@ -126,36 +138,37 @@
     </xsl:variable>
 
     <xsl:variable name="footer">
-        <div class="row footer edito">
-            <div class="large-12 columns">
-                <div class="large-4 columns">
-                    <img src="../images/logo/BN-logo-blanc-fond or-B55mm-55x85mm.jpg" width="300px" /> 
-                    <br />
-                    <br />Bibliothèques de Nancy
-                    <br />43, rue Stanislas
-                    <br />54 700 Nancy
+        <div class="row footer">
+            <div class="large-8 medium-12 columns">
+                <ul class="menu">
+                    <li class="logo"><a target="_blank" href="http://www.nancy.fr"><img class="logo" src="../images/logo/logo-ville-de-nancy.jpg" /></a></li>
+                    <li class="logo"><a target="_blank" href="http://www.reseau-colibris.fr/iguana/www.main.cls?surl=nancybmn"><img class="logo" src="../images/logo/BN-logo-blanc-fond or-B55mm-55x85mm.jpg" /></a></li>
+                    <li class="logo"><a target="_blank"><img class="logo" src="../images/logo/BN-logo-blanc-fond or-B55mm-55x85mm.jpg" /></a></li>
+                    <li class="logo"><a target="_blank" href="https://musee-lorrain.nancy.fr/"><img class="logo" src="../images/logo/MuseeLorrain-LOGO.jpg" /></a></li>
+                    <li class="logo"><a target="_blank"><img class="logo" src="../images/logo/LOGO CMJN 250e FR-LOR.jpg" /></a></li>
+                </ul>
+            </div>
+            <div class="large-4 medium-12 columns">
+                <div class="row edito">
+                    <div class="small-6 columns">
+                        Bibliothèques de Nancy <br />43, rue Stanislas <br />54 700 Nancy
+                    </div>
+                    <div class="small-6 columns">
+                        <a class="float-right" href="mailto:bibliotheque@nancy.fr">Contact</a>
+                        <br />
+                        <a class="float-right" href="apropos.html">Crédits</a>
+                    </div>
                 </div>
-                <div class="large-4 columns">
-                    <a href="calendrier.html">Le journal</a>
-                    <br />
-                    <a href="cartes.html">Les cartes</a>
-                    <br />
-                    <a href="galerie.html">Les illustrations</a>
-                    <br />
-                    <a href="ressources.html">Les focus</a>
-                    <br />
-                    <a href="listPerson.html">Index des personnes</a>
-                    <br />
-                    <a href="listPlace.html">Index des lieux</a>
-                    <br />
-                    <a href="listOrg.html">Index des institutions</a>                                                                
-                </div>
+<<<<<<< HEAD
                 <div class="large-4 columns">
 
                     <a href="apropos.html">À propos</a>
 
                 </div>                                                        
             </div>                        
+=======
+            </div>
+>>>>>>> bibstan/master
         </div>
     </xsl:variable>
     
@@ -215,7 +228,14 @@
                                                         <li><a href="html/stanislas.html">Stanislas</a></li>
                                                         <li><a href="html/durival.html">Durival</a></li>
                                                     </ul>
-                                                </li>                                                                                        
+                                                </li>
+                                                <li>
+                                                    <a href="#">Histoires</a>
+                                                    <ul class="vertical menu">
+                                                        <li><a href="html/bibliotheque.html">Histoire de la Bibliothèque</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="html/bibliographie.html">Bibliographie générale</a></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -228,8 +248,7 @@
                                                 <li><a href="html/listPerson.html">Personnes</a></li>
                                                 <li><a href="html/listPlace.html">Lieux</a></li>
                                                 <li><a href="html/listOrg.html">Institutions</a></li>
-                                                <li><a href="html/listbib.html">Œuvres citées</a></li>
-                                                <li><a href="html/bibliographie.html">Bibliographie générale</a></li>
+                                                <li><a href="html/listbib.html">Œuvres citées</a></li>                                                
                                             </ul>
                                         </li>
                                         <li><a href="html/apropos.html">À propos</a></li>
@@ -283,34 +302,28 @@
                 </div>
                 <br />
                 <!-- FOOTER -->
-                <div class="row footer edito">
-                    <div class="large-12 columns">
-                        <div class="large-4 columns">
-                            <img src="images/logo/BN-logo-blanc-fond or-B55mm-55x85mm.jpg" width="300px" /> 
-                            <br />
-                            <br />Bibliothèques de Nancy
-                            <br />43, rue Stanislas
-                            <br />54 700 Nancy
+                <div class="row footer">
+                    <div class="large-8 medium-12 columns">
+                        <ul class="menu">
+                            <li class="logo"><a target="_blank" href="http://www.nancy.fr"><img class="logo" src="images/logo/logo-ville-de-nancy.jpg" /></a></li>
+                            <li class="logo"><a target="_blank" href="http://www.reseau-colibris.fr/iguana/www.main.cls?surl=nancybmn"><img class="logo" src="images/logo/BN-logo-blanc-fond or-B55mm-55x85mm.jpg" /></a></li>
+                            <li class="logo"><a target="_blank"><img class="logo" src="images/logo/BN-logo-blanc-fond or-B55mm-55x85mm.jpg" /></a></li>
+                            <li class="logo"><a target="_blank" href="https://musee-lorrain.nancy.fr/"><img class="logo" src="images/logo/MuseeLorrain-LOGO.jpg" /></a></li>
+                            <li class="logo"><a target="_blank"><img class="logo" src="images/logo/LOGO CMJN 250e FR-LOR.jpg" /></a></li>
+                        </ul>
+                    </div>
+                    <div class="large-4 medium-12 columns">
+                        <div class="row edito">
+                            <div class="small-6 columns">
+                                Bibliothèques de Nancy <br />43, rue Stanislas <br />54 700 Nancy
+                            </div>
+                            <div class="small-6 columns">
+                                <a class="float-right" href="mailto:bibliotheque@nancy.fr">Contact</a>
+                                <br />
+                                <a class="float-right" href="html/apropos.html">Crédits</a>
+                            </div>
                         </div>
-                        <div class="large-4 columns">
-                            <a href="html/calendrier.html">Le journal</a>
-                            <br />
-                            <a href="html/cartes.html">Les cartes</a>
-                            <br />
-                            <a href="html/galerie.html">Les illustrations</a>
-                            <br />
-                            <a href="html/ressources.html">Les focus</a>
-                            <br />
-                            <a href="html/listPerson.html">Index des personnes</a>
-                            <br />
-                            <a href="html/listPlace.html">Index des lieux</a>
-                            <br />
-                            <a href="html/listOrg.html">Index des institutions</a>                                                                
-                        </div>
-                        <div class="large-4 columns">
-                            <a href="html/apropos.html">À propos</a>
-                        </div>                                                        
-                    </div>                        
+                    </div>
                 </div>
 
                 <script src="js/vendor/jquery.js">/*Pour transformation xslt*/</script>
@@ -822,9 +835,19 @@
         </xsl:for-each>
         <xsl:choose>
             <xsl:when test="tei:birth | tei:death">
-                <xsl:text> (</xsl:text>
-                <xsl:apply-templates select="tei:birth"/><xsl:text>-</xsl:text><xsl:apply-templates select="tei:death"/>
-                <xsl:text>)</xsl:text>
+                <xsl:choose>
+                    <xsl:when test="tei:birth and tei:death">
+                        <xsl:text> (</xsl:text>
+                        <xsl:apply-templates select="tei:birth"/><xsl:text>-</xsl:text><xsl:apply-templates select="tei:death"/>
+                        <xsl:text>)</xsl:text>
+                    </xsl:when>
+                    <xsl:when test="tei:birth and not(tei:death)">
+                        <xsl:text> (&#10033;&#160;</xsl:text><xsl:apply-templates select="tei:birth"/><xsl:text>)</xsl:text>
+                    </xsl:when>
+                    <xsl:when test="tei:death and not(tei:birth)">
+                        <xsl:text> (&#x2020;&#160;</xsl:text><xsl:apply-templates select="tei:death"/><xsl:text>)</xsl:text>
+                    </xsl:when>
+                </xsl:choose>                
             </xsl:when>
         </xsl:choose>
         <xsl:if test="tei:state">
@@ -869,7 +892,7 @@
         </xsl:for-each>
     </xsl:template>        
     
-    <xsl:template match="tei:div[@type='transcription']//tei:rs[@type='artwork']">
+    <!--<xsl:template match="tei:div[@type='transcription']//tei:rs[@type='artwork']">
         <xsl:variable name="ref" select="@ref"/>
         <xsl:variable name="id" select="substring-after(@ref,'#')"/>
         <xsl:variable name="tooltip">
@@ -878,7 +901,7 @@
             </xsl:if>
         </xsl:variable>
         <span data-tooltip='true' aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="{$tooltip}"><a class="person" href="listPerson.html{$ref}"><xsl:apply-templates/></a></span>
-    </xsl:template>
+    </xsl:template>-->
     
     <xsl:template match="tei:div[@type='transcription']//tei:persName | tei:div[@type='transcription']//tei:rs[@type='person']">
         <xsl:variable name="ref" select="@ref"/><!-- todo @type=groupPerson -->
@@ -949,7 +972,14 @@
             </xsl:if>
         </xsl:variable>
         <!--todo a.cite à la place de cite -->
-        <span data-tooltip='true' aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="{$tooltip}"><a class="cite" href="listOrg.html{$ref}"><xsl:apply-templates/></a></span>
+        <xsl:choose>
+            <xsl:when test="//tei:div[@type='index']//tei:bibl[@xml:id=$id]">
+                <span data-tooltip='true' aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="{$tooltip}"><a class="cite" href="listbib.html{$ref}"><xsl:apply-templates/></a></span>
+            </xsl:when>
+            <xsl:otherwise>
+                <cite><xsl:apply-templates/></cite>
+            </xsl:otherwise>
+        </xsl:choose>                
     </xsl:template>
     
     <xsl:template match="tei:div[@type='transcription']//tei:rs[@type='bibl']">
@@ -959,9 +989,8 @@
             <xsl:if test="//tei:div[@type='index']//tei:bibl[@xml:id=$id]">
                 <xsl:apply-templates select="//tei:div[@type='index']//tei:bibl[@xml:id=$id]" mode="tooltip"/>
             </xsl:if>
-        </xsl:variable>
-        <!--todo a.cite à la place de cite -->
-        <span data-tooltip='true' aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="{$tooltip}"><a class="person" href="listOrg.html{$ref}"><xsl:apply-templates/></a></span>
+        </xsl:variable>        
+        <span data-tooltip='true' aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="{$tooltip}"><a class="person" href="listbib.html{$ref}"><xsl:apply-templates/></a></span>
     </xsl:template>
     
     <!-- ********** INDEX ********** -->
@@ -1060,12 +1089,13 @@
                                     <xsl:variable name="id" select="@xml:id"/>
                                     <xsl:variable name="links" select="concat('#',@xml:id)"/>
                                     <xsl:variable name="idref" select="concat($links,'-')"/>
-                                    <li class="vedette" id="{$id}">                    
+                                    <!--<li class="vedette" id="{$id}">-->                    
                                         <!--<xsl:apply-templates select="." mode="tooltip"/>-->
                                         <!--<xsl:apply-templates select="tei:persName"/>-->
                                         <xsl:choose>
                                             <xsl:when test="//tei:div[@type='transcription'][descendant::*[contains(concat(replace(@ref,' ','-'),'-'),$idref)]]">
-                                                <!--<xsl:if test="//tei:div[@type='transcription'][descendant::*[contains(@ref,$links)]]">-->
+                                                <li class="vedette" id="{$id}">
+                                                    <!--<xsl:if test="//tei:div[@type='transcription'][descendant::*[contains(@ref,$links)]]">-->
                                                     <ul class="accordion" data-accordion="true" data-allow-all-closed="true">
                                                         <li class="accordion-item" data-accordion-item="true">
                                                             <a href="#" class="accordion-title vedette"><xsl:apply-templates select="." mode="tooltip"/></a>
@@ -1073,17 +1103,17 @@
                                                                 <xsl:if test="./tei:listEvent">
                                                                     <div class="note">
                                                                         <xsl:for-each select="./tei:listEvent/tei:event">                                                                            
-                                                                                <xsl:choose><!-- force la capitale pour le premier event, et les minus pour les autres -->
-                                                                                    <xsl:when test="position() = 1">                                                                                    
-                                                                                        <xsl:value-of select="normalize-space(concat(upper-case(substring(tei:p,1,1)),substring(tei:p, 2),' '[not(last())]))"/><xsl:choose><xsl:when test="following-sibling::tei:event[1]"/><xsl:otherwise><xsl:text>.</xsl:text></xsl:otherwise></xsl:choose>
-                                                                                    </xsl:when>
-                                                                                    <xsl:when test="position() != last()">
-                                                                                        <xsl:text> - </xsl:text><xsl:value-of select="normalize-space(concat(lower-case(substring(tei:p,1,1)),substring(tei:p, 2),' '[not(last())]))"/>
-                                                                                    </xsl:when>
-                                                                                    <xsl:otherwise>
-                                                                                        <xsl:text> - </xsl:text><xsl:value-of select="normalize-space(concat(lower-case(substring(tei:p,1,1)),substring(tei:p, 2),' '[not(last())]))"/><xsl:text>.</xsl:text>
-                                                                                    </xsl:otherwise>
-                                                                                </xsl:choose>                                                                                
+                                                                            <xsl:choose><!-- force la capitale pour le premier event, et les minus pour les autres -->
+                                                                                <xsl:when test="position() = 1">                                                                                    
+                                                                                    <xsl:value-of select="normalize-space(concat(upper-case(substring(tei:p,1,1)),substring(tei:p, 2),' '[not(last())]))"/><xsl:choose><xsl:when test="following-sibling::tei:event[1]"/><xsl:otherwise><xsl:text>.</xsl:text></xsl:otherwise></xsl:choose>
+                                                                                </xsl:when>
+                                                                                <xsl:when test="position() != last()">
+                                                                                    <xsl:text> - </xsl:text><xsl:value-of select="normalize-space(concat(lower-case(substring(tei:p,1,1)),substring(tei:p, 2),' '[not(last())]))"/>
+                                                                                </xsl:when>
+                                                                                <xsl:otherwise>
+                                                                                    <xsl:text> - </xsl:text><xsl:value-of select="normalize-space(concat(lower-case(substring(tei:p,1,1)),substring(tei:p, 2),' '[not(last())]))"/><xsl:text>.</xsl:text>
+                                                                                </xsl:otherwise>
+                                                                            </xsl:choose>                                                                                
                                                                         </xsl:for-each>                                                                        
                                                                     </div>
                                                                 </xsl:if>
@@ -1135,18 +1165,20 @@
                                                             </div>
                                                         </li>
                                                     </ul>
-                                                <!--</xsl:if>-->
+                                                    <!--</xsl:if>-->
+                                                </li>
                                             </xsl:when>
-                                            <xsl:otherwise>
-                                                <span class="vedette"><xsl:text>&#x2013;&#160;&#160;</xsl:text><xsl:apply-templates select="." mode="tooltip"/></span>
-                                            </xsl:otherwise>
+                                            <xsl:when test="./tei:persName[@ref]">
+                                                <li class="vedette" id="{$id}"><span class="vedette"><xsl:text>&#x2013;&#160;&#160;</xsl:text><xsl:apply-templates select="." mode="tooltip"/></span></li>
+                                            </xsl:when>
+                                            <xsl:otherwise/>
                                         </xsl:choose>
-                                    </li>
+                                    <!--</li>-->
                                 </xsl:for-each>
                             </ul>
                         </div>
                     </div>   
-                    <xsl:value-of select="$footer"/>
+                    <xsl:copy-of select="$footer"/>
                     <script src="../js/vendor/jquery.js">/*Pour transformation xslt*/</script>                        
                     
                     <script src="../js/foundation.min.js"></script>
@@ -1624,7 +1656,7 @@
                                                     <a><xsl:value-of select="format-date($date,'[MNn]')"/></a>
                                                 </dt>
                                                 <dd class="timeline-event-content" id="{$month}EX">
-                                                    <ul>
+                                                    <ul class="no-bullet">
                                                         <xsl:for-each select="tei:div[@type='day']">
                                                             <xsl:variable name="day" select="@xml:id"/>
                                                             <xsl:variable name="year" select="substring(./tei:dateline/tei:date/@when | ./tei:dateline/tei:date/@from,1,4)"/>
@@ -1634,7 +1666,8 @@
                                                                         <a href="{$month}.html#{$day}"><xsl:apply-templates select="tei:dateline/tei:date[@type='entry']" mode="date"/></a>
                                                                         <div class="media">
                                                                             <a href="{$month}.html#{$day}" class="venobox" data-type="iframe" data-overlay="rgba(0,0,0,0.5)">
-                                                                                <img src="../images/{$year}/{$facs}.jpg" alt="Stanislas"/></a>
+                                                                                <img src="../images/{$year}/{$facs}.jpg" alt="Stanislas"/>
+                                                                            </a>
                                                                         </div>
                                                                     </li> 
                                                                 </xsl:when>
@@ -2430,7 +2463,7 @@
     
     <xsl:template match="tei:div[@type='bibl']//tei:imprint[ancestor::*[@type='book' or @type='manuscript' or @type='document']]" mode="bibl">
         <xsl:if test="tei:pubPlace"><xsl:apply-templates select="tei:pubPlace"/><xsl:text>, </xsl:text></xsl:if>
-        <xsl:if test="tei:publisher"><xsl:apply-templates select="tei:publisher"/><xsl:text>, </xsl:text></xsl:if>
+        <xsl:if test="tei:publisher"><xsl:for-each select="tei:publisher"><xsl:apply-templates select="."/><xsl:text>, </xsl:text></xsl:for-each></xsl:if>
         <xsl:apply-templates select="tei:date"/><xsl:text>.</xsl:text>
     </xsl:template>
     
@@ -2486,15 +2519,44 @@
                     <xsl:copy-of select="$header"/>
                     <div class="row">
                         <div class="large-12">
-                            <h1>Bibliographie générale</h1>
-                            <ul class="no-bullet">
-                                <xsl:for-each select=".//tei:biblStruct">
-                                    <xsl:sort select=".//tei:author[1]" order="ascending"/>                                    
-                                    <li>
-                                        <xsl:apply-templates select="." mode="bibl"/>
-                                    </li>
-                                </xsl:for-each>                                
-                            </ul>
+                            <h1>Bibliographie</h1>
+                            <xsl:for-each select="./tei:listBibl">
+                                <xsl:choose>
+                                    <xsl:when test="@xml:id='BiblioGenerale'">
+                                        <h2 class="edito2">Bibliographie générale</h2>
+                                        <ul class="no-bullet">
+                                            <xsl:for-each select=".//tei:biblStruct">
+                                                <xsl:sort select=".[descendant::tei:author]//tei:author[1] | .[not(descendant::tei:author)]//tei:title[1]" order="ascending"/>                                    
+                                                <li class="bibl">
+                                                    <xsl:apply-templates select="." mode="bibl"/>
+                                                </li>
+                                            </xsl:for-each>                                
+                                        </ul>
+                                    </xsl:when>
+                                    <xsl:when test="@xml:id='œuvresDurival'">
+                                        <h2 class="edito2">Ouvrages de Nicolas Durival</h2>
+                                        <ul class="no-bullet">
+                                            <xsl:for-each select=".//tei:biblStruct">
+                                                <xsl:sort select=".[descendant::tei:author]//tei:author[1] | .[not(descendant::tei:author)]//tei:title[1]" order="ascending"/>                                    
+                                                <li class="bibl">
+                                                    <xsl:apply-templates select="." mode="bibl"/>
+                                                </li>
+                                            </xsl:for-each>                                
+                                        </ul>
+                                    </xsl:when>
+                                    <xsl:when test="@xml:id='œuvresCitees'">
+                                        <h2 class="edito2">Ouvrages cités dans le Journal de Durival</h2>
+                                        <ul class="no-bullet">
+                                            <xsl:for-each select=".//tei:biblStruct">
+                                                <xsl:sort select=".[descendant::tei:author]//tei:author[1] | .[not(descendant::tei:author)]//tei:title[1]" order="ascending"/>                                    
+                                                <li class="bibl">
+                                                    <xsl:apply-templates select="." mode="bibl"/>
+                                                </li>
+                                            </xsl:for-each>                                
+                                        </ul>
+                                    </xsl:when>
+                                </xsl:choose>
+                            </xsl:for-each>                            
                         </div>
                     </div>
                     <!-- FOOTER -->
@@ -2515,12 +2577,38 @@
     </xsl:template>
 
     <!--  ************************** A propos *****************************  -->
+    
     <xsl:template match="tei:projectDesc/tei:p" mode="projecDesc">
-        <p><xsl:apply-templates mode="projecDesc"/></p>
+        <xsl:for-each select=".">
+            <xsl:if test="tei:hi[not(@*)]">
+                <xsl:apply-templates select="tei:hi" mode="projecDesc2"/>
+            </xsl:if>
+            <p class="edito"><xsl:apply-templates mode="projecDesc"/></p>
+            <xsl:if test="tei:list">
+                <xsl:apply-templates select="tei:list" mode="projecDesc2"/>
+            </xsl:if>
+        </xsl:for-each>        
     </xsl:template>
+    
+    <xsl:template match="tei:hi[not(@*)]" mode="projecDesc"/>
+    <xsl:template match="tei:hi[not(@*)]" mode="projecDesc2">
+        <h2 class="edito2"><xsl:apply-templates mode="projecDesc"/></h2>
+    </xsl:template>   
+    
+    <xsl:template match="tei:projectDesc//tei:list" mode="projecDesc"/>
+    
+    <xsl:template match="tei:projectDesc//tei:list" mode="projecDesc2">
+        <ul class="no-bullet">
+            <xsl:for-each select="tei:item">
+                <li class="enum edito"><xsl:apply-templates select="." mode="projecDesc"/></li>
+            </xsl:for-each>
+        </ul>
+    </xsl:template>
+    
     <xsl:template match="tei:projectDesc//tei:lb" mode="projecDesc">
         <br />
     </xsl:template>
+    
     <xsl:template match="tei:projectDesc//tei:ref" mode="projecDesc">
         <xsl:for-each select=".">
             <xsl:choose>
@@ -2532,24 +2620,7 @@
                 </xsl:when>
             </xsl:choose>
         </xsl:for-each>
-    </xsl:template>
-    
-    <xsl:template match="tei:projectDesc//tei:list" mode="projecDesc">
-        <ul class="no-bullet">
-            <xsl:for-each select="tei:item">
-                <li class="enum"><xsl:apply-templates select="." mode="projecDesc"/></li>
-            </xsl:for-each>
-        </ul>
-    </xsl:template>
-    
-    <xsl:template match="tei:projectDesc//tei:hi" mode="projecDesc">
-        <xsl:for-each select=".">
-            <xsl:choose>
-                <xsl:when test="@rend='super'"><sup><xsl:apply-templates mode="projecDesc"/></sup></xsl:when>
-                <xsl:when test="not(@*)"><h2 class="section"><xsl:apply-templates mode="projecDesc"/></h2></xsl:when>
-            </xsl:choose>
-        </xsl:for-each>
-    </xsl:template>
+    </xsl:template>                
     
     <xsl:template match="tei:projectDesc" mode="projecDesc">
         <xsl:result-document format="html" encoding="UTF-8" href="html/apropos.html">
