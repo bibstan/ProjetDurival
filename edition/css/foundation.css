@@ -3340,8 +3340,79 @@ table.hover tr:nth-of-type(even):hover {
   position: absolute;
   z-index: 10;
   top: calc(100% + 0.6495rem);
+/*  max-width: 10rem !important;*/
+  max-width: 20rem !important;
+  border-radius: 1px; }
+
+  .tooltip::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: inset 0.75rem;
+    border-color: transparent transparent #fefefe;
+    border-bottom-style: solid;
+    border-top-width: 0;
+    bottom: 100%;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    }
+  .tooltip.top::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: inset 0.75rem;
+    border-color: #fefefe transparent transparent;
+    border-top-style: solid;
+    border-bottom-width: 0;
+    top: 100%;
+    bottom: auto; }
+  .tooltip.left::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: inset 0.75rem;
+    border-color: transparent transparent transparent #fefefe;
+    border-left-style: solid;
+    border-right-width: 0;
+    bottom: auto;
+    left: 100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  .tooltip.right::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: inset 0.75rem;
+    border-color: transparent #fefefe transparent transparent;
+    border-right-style: solid;
+    border-left-width: 0;
+    bottom: auto;
+    left: auto;
+    right: 100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
+
+/*.tooltip {
+  background-color: #fefefe;
+  color: 0a0a0a;
+  font-size: 80%;
+  padding: 0.75rem;
+  position: absolute;
+  z-index: 10;
+  top: calc(100% + 0.6495rem);
   max-width: 10rem !important;
-  /*max-width: 20rem !important;*/
+  /\*max-width: 20rem !important;*\/
   border-radius: 1px; }
 
   .tooltip::before {
@@ -3400,7 +3471,7 @@ table.hover tr:nth-of-type(even):hover {
     top: 50%;
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
-            transform: translateY(-50%); }
+            transform: translateY(-50%); }*/
 
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\MODIF POUR DURIVAL/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 .top-bar {
