@@ -141,8 +141,8 @@
             <div class="large-8 medium-12 columns">
                 <ul class="menu">
                     <li class="logo"><a target="_blank" href="http://www.nancy.fr"><img class="logo" src="../images/logo/logo-ville-de-nancy.jpg" /></a></li>
-                    <li class="logo"><a target="_blank" href="http://www.reseau-colibris.fr/iguana/www.main.cls?surl=nancybmn"><img class="logo" src="../images/logo/BN-logo-blanc-fond or-B55mm-55x85mm.jpg" /></a></li>
-                    <li class="logo"><a target="_blank"><img class="logo" src="../images/logo/BN-logo-blanc-fond or-B55mm-55x85mm.jpg" /></a></li>
+                    <li class="logo"><a target="_blank" href="http://www.reseau-colibris.fr/iguana/www.main.cls?surl=nancybmn"><img class="logo" src="../images/logo/BN-logo-blanc-fond-or-B15mm-30x60mm.jpg" /></a></li>
+                    <li class="logo"><a target="_blank"><img class="logo" src="../images/logo/pacte Lorraine.png" /></a></li>
                     <li class="logo"><a target="_blank" href="https://musee-lorrain.nancy.fr/"><img class="logo" src="../images/logo/MuseeLorrain-LOGO.jpg" /></a></li>
                     <li class="logo"><a target="_blank"><img class="logo" src="../images/logo/LOGO CMJN 250e FR-LOR.jpg" /></a></li>
                 </ul>
@@ -150,7 +150,7 @@
             <div class="large-4 medium-12 columns">
                 <div class="row edito">
                     <div class="small-6 columns">
-                        Bibliothèques de Nancy <br />43, rue Stanislas <br />54 700 Nancy
+                        Bibliothèques de Nancy <br />43, rue Stanislas <br />54 000 Nancy <br /> &#x260E; 03 83 87 38 83 
                     </div>
                     <div class="small-6 columns">
                         <a class="float-right" href="mailto:bibliotheque@nancy.fr">Contact</a>
@@ -296,8 +296,8 @@
                     <div class="large-8 medium-12 columns">
                         <ul class="menu">
                             <li class="logo"><a target="_blank" href="http://www.nancy.fr"><img class="logo" src="images/logo/logo-ville-de-nancy.jpg" /></a></li>
-                            <li class="logo"><a target="_blank" href="http://www.reseau-colibris.fr/iguana/www.main.cls?surl=nancybmn"><img class="logo" src="images/logo/BN-logo-blanc-fond or-B55mm-55x85mm.jpg" /></a></li>
-                            <li class="logo"><a target="_blank"><img class="logo" src="images/logo/BN-logo-blanc-fond or-B55mm-55x85mm.jpg" /></a></li>
+                            <li class="logo"><a target="_blank" href="http://www.reseau-colibris.fr/iguana/www.main.cls?surl=nancybmn"><img class="logo" src="images/logo/BN-logo-blanc-fond-or-B15mm-30x60mm.jpg" /></a></li>
+                            <li class="logo"><a target="_blank"><img class="logo" src="images/logo/pacte Lorraine.png" /></a></li>
                             <li class="logo"><a target="_blank" href="https://musee-lorrain.nancy.fr/"><img class="logo" src="images/logo/MuseeLorrain-LOGO.jpg" /></a></li>
                             <li class="logo"><a target="_blank"><img class="logo" src="images/logo/LOGO CMJN 250e FR-LOR.jpg" /></a></li>
                         </ul>
@@ -305,7 +305,7 @@
                     <div class="large-4 medium-12 columns">
                         <div class="row edito">
                             <div class="small-6 columns">
-                                Bibliothèques de Nancy <br />43, rue Stanislas <br />54 700 Nancy
+                                Bibliothèques de Nancy <br />43, rue Stanislas <br />54 000 Nancy <br /> &#x260E; 03 83 87 38 83
                             </div>
                             <div class="small-6 columns">
                                 <a class="float-right" href="mailto:bibliotheque@nancy.fr">Contact</a>

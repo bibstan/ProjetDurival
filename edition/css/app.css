@@ -241,14 +241,15 @@ a.focus img:focus{ /*images cliquables focus*/
 
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\FOOTER\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
-/*img.logo{
-  height:100px;
-}*/
+img.logo{
+  border-radius:3px;
+  /*box-shadow: 1px 1px 1px #cc6600;*/
+}
 
 .menu > li.logo > a {
 display: block;
 padding: 0;
-line-height: 1;  
+line-height: 1;
 }
 
 li.logo {
