@@ -6472,7 +6472,7 @@
                            <persName ref="#deSilly">M. de Silly</persName>, major de la place, s'est battu
                            <lb/>cet après midi contre <persName ref="#deLescoure">M. de Lescoure</persName>, <choice><abbr>cap.<hi rend="super">e</hi></abbr><expan>capitaine</expan></choice>
                            <lb/>officier au <orgName ref="#regimentRoi"><choice><abbr>reg.<hi rend="super">t</hi></abbr><expan>régiment</expan></choice> du &roy;</orgName>, et a reçu un coup
-                           <lb/>d'épée.
+                           <lb/>d'épée<ref type="note" target="#note17660418A"/>.
                         </p>
                         <p xml:id="d1766041803" ana="#cour">
                            <rs type="person" ref="#controleurGeneral">M. le controlleur g&eé;n&eé;ral</rs> av&oa;it &eé;crit <date when="1766-04-10">le 10</date>
@@ -6492,7 +6492,7 @@
                         <p xml:id="d1766041901" ana="#ville">                           
                            <rs type="groupPerson" ref="#durivalJean #durivalClaude">Mes fr&eè;res</rs> arrivent de <placeName ref="#luneville">Lun&èé;ville</placeName>. Je donne
                            <lb/>l'ordre pour le tirage des 35 miliciens de
-                           <lb/><placeName ref="#nancy">la ville de Nancy</placeName>.
+                           <lb/><placeName ref="#nancy">la ville de Nancy</placeName><ref type="note" target="#note17660419A"/>.
                         </p>
                      </div>
                   
@@ -6515,7 +6515,7 @@
                            <lb/>a été réduit à environ 250. Il y a eu
                            <lb/>beaucoup de tumulte, en sorte que l'examen
                            <lb/>n'a pu &eê;tre fait qu'à 8 h. du soir, et que
-                           <lb/>j'ai été obligé de remettre le sort au lendemain.
+                           <lb/>j'ai été obligé de remettre le sort au lendemain<ref type="note" target="#note17660421A"/>.
                         </p>
                      </div>
                   
