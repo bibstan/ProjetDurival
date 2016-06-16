@@ -1700,16 +1700,21 @@
         <xsl:result-document format="html" encoding="UTF-8" href="html/cartes.html">
             <html>
                 <head>
-                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
                     <title>Édition du journal de Nicolas Durival ß</title>
-                    <meta charset="utf-8" />
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                    <link rel="stylesheet" href="../css/app.css" />
-                    <link rel="stylesheet" href="../css/foundation.css" />
-                    <link rel="stylesheet" href="../css/timeliner/timeliner.css" type="text/css" media="screen" />
-                    <link rel="stylesheet" href="../js/timeliner/vendor/venobox/venobox.css" type="text/css" media="screen" />
-                    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,900,700" rel="stylesheet" type="text/css" />
-                    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900,300" rel="stylesheet" type="text/css" />
+                    <meta charset="utf-8"/>
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+                    <link rel="stylesheet" href="../css/app.css"/>
+                    <link rel="stylesheet" href="../css/foundation.css"/>
+                    <link rel="stylesheet" href="../css/timeliner/timeliner.css" type="text/css"
+                        media="screen"/>
+                    <link rel="stylesheet" href="../js/timeliner/vendor/venobox/venobox.css"
+                        type="text/css" media="screen"/>
+                    <link
+                        href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,900,700"
+                        rel="stylesheet" type="text/css"/>
+                    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900,300"
+                        rel="stylesheet" type="text/css"/>
                     <script>
                         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -1725,63 +1730,80 @@
                     <div class="row">
                         <div class="large-12">
                             <h2 class="text-center edito2">Les cartes</h2>
-                            <p class="edito"></p>
+                            <p class="edito"/>
                             <div class="large-4 columns">
-                                <div><!-- <h3 class="text-center edito2">Nancy en 1754</h3> --><br/></div>
-                                <a href="belprey.html" target="blank"><img src="../images/vignettes/vignetteBelprey.gif"/></a><h3 class="text-center edito2">Le plan Belprey : 1754</h3>
+                                <div>
+                                    <!-- <h3 class="text-center edito2">Nancy en 1754</h3> -->
+                                    <br/>
+                                </div>
+                                <a href="belprey.html" target="blank">
+                                    <img src="../images/vignettes/vignetteBelprey.gif"/>
+                                </a>
+                                <h3 class="text-center edito2">Le plan Belprey : 1754</h3>
                                 <br/>
-                                <h4 class="edito">Thomas Belprey (1713-1786).</h4>
-                                <cite class="edito">
-                                    Plan général des deux villes de Nancy et des nouveaux édifices que sa Majesté le roy de Pologne, duc de Lorraine et de Bar 
-                                    etc. y a fait construire. levé par Belprey, l'un des brigadiers de sa garde en 1754.
-                                </cite>
-                                <br />
-                                <p class="edito">
-                                    Ce plan présente une vue en perspective de la ville en 1754, soit avant l'achèvement de tous les travaux projetés par Stanislas. 
-                                    Il comporte douze vignettes qui représentent les principaux nouveaux bâtiments de la ville.
+                                <h4 class="edito">Thomas Belprey (1713-1786)</h4>
+                                <cite class="edito">Plan général des deux villes de Nancy et des
+                                    nouveaux édifices que sa Majesté le roy de Pologne, duc de
+                                    Lorraine et de Bar etc. y a fait construire. Levé par Belprey...
+                                    en 1754.</cite>
+                                <br/>
+                                <p class="edito">Ce plan de Thomas Belprey présente une vue en
+                                    perspective de la ville en 1754, soit avant l'achèvement de tous
+                                    les travaux voulus par Stanislas. Il comporte douze vignettes
+                                    qui représentent les principaux nouveaux bâtiments de la ville.
                                 </p>
                             </div>
                             <div class="large-4 columns">
                                 <div>
-                                    <br />
-                                    <a href="mique.html" target="blank"><img src="../images/vignettes/vignetteB543956101_H_FG_ES_00014.gif"/></a>
+                                    <br/>
+                                    <a href="mique.html" target="blank">
+                                        <img
+                                            src="../images/vignettes/vignetteB543956101_H_FG_ES_00014.gif"
+                                        />
+                                    </a>
                                 </div>
                                 <h3 class="text-center edito2">Le plan Mique : 1778</h3>
-                                <br />
-                                <h4 class="edito">Claude Mique.</h4>
-                                <cite class="edito">
-                                    Plan des villes, citadelle et faubourgs de Nancy, dédié à la Reine par son très humble et 
-                                    très obéissant serviteur C. Mique, architecte de feu Roi de Pologne à Nancy.
-                                </cite>
-                                <p class="edito">
-                                    Sur ce plan, toutes les réalisations voulues par Stanislas ont été réalisées. On peut y voir 
-                                    la nouvelle université (actuelle bibliothèque Stanislas), et le début de la destruction des bastions. 
-                                    Celui des Michotte a déjà disparu, laissant place à la nouvelle place de Grève.
-                                </p>
+                                <br/>
+                                <h4 class="edito">Claude Mique (1714-1796) </h4>
+                                <cite class="edito">Plan des villes, citadelle et faubourgs de
+                                    Nancy, dédié à la Reine par son très humble et très obéissant
+                                    serviteur C. Mique, architecte de feu Roi de Pologne à Nancy.
+                                    Vers 1778.</cite>
+                                <p class="edito">Sur ce plan de l'architecte du roi, l'essentiel
+                                    des transformations voulues par Stanislas ont été réalisées. On
+                                    peut y voir la nouvelle université (actuelle bibliothèque
+                                    Stanislas), et le début de la destruction des bastions. Celui
+                                    des Michottes a déjà disparu, laissant place à la nouvelle place
+                                    de Grève.</p>
                             </div>
                             <div class="large-4 columns">
                                 <div>
-                                    <br />
-                                    <a href="cartographie.html" target="blank"><img src="../images/vignettes/vignetteCarte.gif"/></a>
+                                    <br/>
+                                    <a href="cartographie.html" target="blank">
+                                        <img src="../images/vignettes/vignetteCarte.gif"/>
+                                    </a>
                                     <h3 class="text-center edito2">Nancy aujourd'hui</h3>
-                                    <br />
-                                    <p class="edito">
-                                        Sur cette carte contemporaine, retrouvez les lieux évoqués par Durival. Cette superposition 
-                                        redessine la ville telle que Durival l'a parcouru, vous donnant accès à des informations sur 
-                                        des lieux qui sont toujours visibvles, ont été transformés ou qui parfois ont disparus. 
-                                    </p>
+                                    <br/>
+                                    <cite class="edito">Les lieux évoqués par Durival en 1765-1766 </cite>
+                                    <p class="edito"> Sur cette carte contemporaine, les lieux
+                                        évoqués par Durival sont signalés par un icone (avec une
+                                        distinction pour le civil, le religieux et le militaire).
+                                        Cette superposition redessine la ville telle que Durival l'a
+                                        parcouru, donnant accès à des informations sur des lieux qui
+                                        sont toujours visibles, ont été transformés ou qui parfois
+                                        ont disparus.</p>
                                 </div>
-                            </div>                             
-                            <br />
-                        </div>                                                                        
-                    </div> 
+                            </div>
+                            <br/>
+                        </div>
+                    </div>
                     <xsl:copy-of select="$footer"/>
-                    <!-- FOOTER -->                    
+                    <!-- FOOTER -->
                     <script src="../js/vendor/jquery.js">/*Pour transformation xslt*/</script>
                     <script src="../js/vendor/modernizr.js">/*Pour transformation xslt*/</script>
                     <script src="../js/foundation.min.js">/*Pour transformation xslt*/</script>
-                    <script type="text/javascript" src="../js/timeliner/timeliner.min.js"></script>
-                    <script type="text/javascript" src="../js/timeliner/vendor/venobox/venobox.min.js"></script>
+                    <script type="text/javascript" src="../js/timeliner/timeliner.min.js"/>
+                    <script type="text/javascript" src="../js/timeliner/vendor/venobox/venobox.min.js"/>
                     <script>$(document).foundation();</script>
                     <script>
                         $(document).ready(function() {
@@ -1790,7 +1812,7 @@
                     </script>
                 </body>
             </html>
-        </xsl:result-document> 
+        </xsl:result-document>
     </xsl:template>
     
     <xsl:template match="/" mode="belprey">
@@ -2346,16 +2368,21 @@
         <xsl:result-document format="html" encoding="UTF-8" href="html/focus.html">
             <html xmlns="http://www.w3.org/1999/xhtml">
                 <head>
-                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
                     <title>Édition du journal de Nicolas Durival ß</title>
-                    <meta charset="utf-8" />
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                    <link rel="stylesheet" href="../css/app.css" />
-                    <link rel="stylesheet" href="../css/foundation.css" />
-                    <link rel="stylesheet" href="../css/timeliner/timeliner.css" type="text/css" media="screen" />
-                    <link rel="stylesheet" href="../js/timeliner/vendor/venobox/venobox.css" type="text/css" media="screen" />
-                    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,900,700" rel="stylesheet" type="text/css" />
-                    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900,300" rel="stylesheet" type="text/css" />
+                    <meta charset="utf-8"/>
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+                    <link rel="stylesheet" href="../css/app.css"/>
+                    <link rel="stylesheet" href="../css/foundation.css"/>
+                    <link rel="stylesheet" href="../css/timeliner/timeliner.css" type="text/css"
+                        media="screen"/>
+                    <link rel="stylesheet" href="../js/timeliner/vendor/venobox/venobox.css"
+                        type="text/css" media="screen"/>
+                    <link
+                        href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,900,700"
+                        rel="stylesheet" type="text/css"/>
+                    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900,300"
+                        rel="stylesheet" type="text/css"/>
                     <script>
                         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -2369,63 +2396,87 @@
                 <body>
                     <xsl:copy-of select="$header"/>
                     <div class="row">
-                        <div class="large-12"> 
-                            <h2 class="text-center edito2">Les focus</h2> 
-                            <br />
+                        <div class="large-12">
+                            <h2 class="text-center edito2">Les focus</h2>
+                            <br/>
                             <div class="media-object">
                                 <div class="media-object-section">
                                     <div class="thumbnail">
-                                        <a href="durival.html"><img src= "../images/vignettes/vignetteStanislasPortrait.png" width="200" /></a>
+                                        <a href="durival.html">
+                                            <img
+                                                src="../images/vignettes/vignetteM0514_39-22-2_b_MBo.png"
+                                                width="200"/>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="media-object-section">
-                                    <h2 class="edito">Nicolas Durival (Commercy, 12 novembre 1713 - Heillecourt, 21 décembre 1795)</h2>
-                                    <p class="edito">
-                                        Fils d'un valet de garde-robe du duc Léopold, Jacques Luton, Nicolas Durival met sa carrière au 
-                                        service du nouveau souverain, Stanislas Leszczynski, roi de Pologne, dès l'arrivée de celui-ci dans 
-                                        le duché de Lorraine. Homme de confiance du duc, il exerce différentes fonctions au plus près de la 
-                                        cour de Lunéville avant de devenir lieutenant général de police de la ville de Nancy. Il mène parallèlement 
-                                        une activité de statisticien et d'historien, son Mémoire sur la Lorraine et le Barrois étant unanimement 
-                                        salué dès sa parution. 
-                                    </p> 
+                                    <h2 class="edito">Nicolas Durival (Commercy, 12 novembre 1713 -
+                                        Heillecourt, 21 décembre 1795)</h2>
+                                    <p class="edito">Fils d'un valet de garde-robe du duc Léopold,
+                                        Jacques Luton, Nicolas Durival met sa carrière au service du
+                                        nouveau souverain, Stanislas Leszczynski, roi de Pologne,
+                                        dès l'arrivée de celui-ci dans le duché de Lorraine. Homme
+                                        de confiance du duc, il exerce différentes fonctions au plus
+                                        près de la cour de Lunéville avant de devenir lieutenant
+                                        général de police de la ville de Nancy. Il mène
+                                        parallèlement une activité de statisticien et d'historien,
+                                        son Mémoire sur la Lorraine et le Barrois étant unanimement
+                                        salué dès sa parution.</p>
                                 </div>
                             </div>
-                            <br />
+                            <br/>
                             <div class="media-object">
                                 <div class="media-object-section">
                                     <div class="thumbnail">
-                                        <img src= "../images/vignettes/vignetteStanislasPortrait.png" width="200" />
+                                        <a href="stanislas.html">
+                                            <img src="../images/vignettes/vignetteStanislasPortrait.png" width="200"/>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="media-object-section">
-                                    <h2 class="edito">Stanislas Leszczynski (20 octobre 1677- 23 février 1766)</h2>
-                                    <p class="edito">
-                                        Fils d'un valet de garde-robe du duc Léopold, Jacques Luton, Nicolas Durival 
-                                        met sa carrière au service du nouveau souverain, Stanislas Leszczynski, roi de Pologne, 
-                                        dès l'arrivée de celui-ci dans le duché de Lorraine. Homme de confiance du duc, il exerce 
-                                        différentes fonctions au plus près de la cour de Lunéville avant de devenir lieutenant général 
-                                        de police de la ville de Nancy. Il mène parallèlement une activité de statisticien et d'historien, 
-                                        son Mémoire sur la Lorraine et le Barrois étant unanimement salué dès sa parution. 
-                                    </p> 
+                                    <h2 class="edito">Stanislas Leszczynski (20 octobre 1677- 23
+                                        février 1766)</h2>
+                                    <p class="edito"> Les deux dernières années de Stanislas. </p>
                                 </div>
-                            </div>  
+                            </div>
+                            <div class="media-object">
+                                <div class="media-object-section">
+                                    <div class="thumbnail">
+                                        <a href="bibliotheque.html">
+                                            <img
+                                                src="../images/vignettes/vignetteStanislasPortrait.png"
+                                                width="200"/>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="media-object-section">
+                                    <h2 class="edito">Histoire de la Bibliothèque de sa création à
+                                        1799</h2>
+                                    <p class="edito">Fondée par un édit de Stanislas du 28 décemnre
+                                        1750, la Bibliothèque entend favoriser la diffusion des
+                                        idées nouvelles, le progrès des sciences et des arts. En
+                                        un-demi siècle, elle connaîtra trois déménagements et une
+                                        révolution.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- FOOTER -->
-                    <xsl:copy-of select="$footer"></xsl:copy-of>
+                    <xsl:copy-of select="$footer"/>
                     <script src="../js/vendor/jquery.js">/*Pour transformation xslt*/</script>
                     <script src="../js/vendor/modernizr.js">/*Pour transformation xslt*/</script>
                     <script src="../js/foundation.min.js">/*Pour transformation xslt*/</script>
-                    <script type="text/javascript" src="../js/timeliner/timeliner.min.js"></script>
-                    <script type="text/javascript" src="../js/timeliner/vendor/venobox/venobox.min.js"></script>
-                    <script>$(document).foundation();</script><script>
+                    <script type="text/javascript" src="../js/timeliner/timeliner.min.js"/>
+                    <script type="text/javascript" src="../js/timeliner/vendor/venobox/venobox.min.js"/>
+                    <script>$(document).foundation();</script>
+                    <script>
                         $(document).ready(function() {
                         $.timeliner({});
                         });
                     </script>
                 </body>
             </html>
-        </xsl:result-document> 
+        </xsl:result-document>
     </xsl:template>
     <!--  ************************** bibliographie générale *****************************  -->
     
