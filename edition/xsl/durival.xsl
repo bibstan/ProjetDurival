@@ -141,10 +141,10 @@
             <div class="large-8 medium-12 columns">
                 <ul class="menu">
                     <li class="logo"><a target="_blank" href="http://www.nancy.fr"><img class="logo" src="../images/logo/logo-ville-de-nancy.jpg" /></a></li>
-                    <li class="logo"><a target="_blank" href="http://www.reseau-colibris.fr/iguana/www.main.cls?surl=nancybmn"><img class="logo" src="../images/logo/BN-logo-blanc-fond-or-B15mm-30x60mm.jpg" /></a></li>
-                    <li class="logo"><a target="_blank"><img class="logo" src="../images/logo/pacte Lorraine.png" /></a></li>
+                    <li class="logo"><a target="_blank" href="http://www.reseau-colibris.fr/iguana/www.main.cls?surl=accueil"><img class="logo" src="../images/logo/BN-logo-blanc-fond-or-B15mm-30x60mm.jpg" /></a></li>
+                    <li class="logo"><a target="_blank" href="http://www.pactelorraine.eu/"><img class="logo" src="../images/logo/pacte Lorraine.png" /></a></li>
                     <li class="logo"><a target="_blank" href="https://musee-lorrain.nancy.fr/"><img class="logo" src="../images/logo/MuseeLorrain-LOGO.jpg" /></a></li>
-                    <li class="logo"><a target="_blank"><img class="logo" src="../images/logo/LOGO CMJN 250e FR-LOR.jpg" /></a></li>
+                    <li class="logo"><img class="logo" src="../images/logo/LOGO CMJN 250e FR-LOR.jpg" /></li>
                 </ul>
             </div>
             <div class="large-4 medium-12 columns">
@@ -295,11 +295,11 @@
                 <div class="row footer">
                     <div class="large-8 medium-12 columns">
                         <ul class="menu">
-                            <li class="logo"><a target="_blank" href="http://www.nancy.fr"><img class="logo" src="images/logo/logo-ville-de-nancy.jpg" /></a></li>
-                            <li class="logo"><a target="_blank" href="http://www.reseau-colibris.fr/iguana/www.main.cls?surl=nancybmn"><img class="logo" src="images/logo/BN-logo-blanc-fond-or-B15mm-30x60mm.jpg" /></a></li>
-                            <li class="logo"><a target="_blank"><img class="logo" src="images/logo/pacte Lorraine.png" /></a></li>
-                            <li class="logo"><a target="_blank" href="https://musee-lorrain.nancy.fr/"><img class="logo" src="images/logo/MuseeLorrain-LOGO.jpg" /></a></li>
-                            <li class="logo"><a target="_blank"><img class="logo" src="images/logo/LOGO CMJN 250e FR-LOR.jpg" /></a></li>
+                            <li class="logo"><a target="_blank" href="http://www.nancy.fr"><img class="logo" src="../images/logo/logo-ville-de-nancy.jpg" /></a></li>
+                            <li class="logo"><a target="_blank" href="http://www.reseau-colibris.fr/iguana/www.main.cls?surl=accueil"><img class="logo" src="../images/logo/BN-logo-blanc-fond-or-B15mm-30x60mm.jpg" /></a></li>
+                            <li class="logo"><a target="_blank" href="http://www.pactelorraine.eu/"><img class="logo" src="../images/logo/pacte Lorraine.png" /></a></li>
+                            <li class="logo"><a target="_blank" href="https://musee-lorrain.nancy.fr/"><img class="logo" src="../images/logo/MuseeLorrain-LOGO.jpg" /></a></li>
+                            <li class="logo"><img class="logo" src="../images/logo/LOGO CMJN 250e FR-LOR.jpg" /></li>
                         </ul>
                     </div>
                     <div class="large-4 medium-12 columns">
