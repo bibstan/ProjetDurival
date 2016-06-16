@@ -140,6 +140,9 @@ li.vedette:before{
 
 }
 
+.content {
+    padding:10px;
+}
 
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\PARTIES CARTES\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
@@ -237,9 +240,10 @@ a.miniatures{
   transition: box-shadow 200ms ease-out;
   border-radius: 500px;
   margin-bottom: 1rem;
+  margin:5px;
   width: 75px;
 }
-/*images cliquables rondes grandesNE FONCTIONNE PAS A REVOIR*/
+/*images cliquables rondes grandes NE FONCTIONNE PAS A REVOIR*/
 a.vignettes:hover,
 a.vignettes:focus{
   border-radius: 500px;
@@ -261,14 +265,15 @@ a.focus img:focus{ /*images cliquables focus*/
 
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\FOOTER\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
-/*img.logo{
-  height:100px;
-}*/
+img.logo{
+  border-radius:3px;
+  /*box-shadow: 1px 1px 1px #cc6600;*/
+}
 
 .menu > li.logo > a {
 display: block;
 padding: 0;
-line-height: 1;  
+line-height: 1;
 }
 
 li.logo {
@@ -278,4 +283,18 @@ li.logo {
   background-image: url("../images/fonds/fond2.png");
   color: #cc6600;
   padding: 25 10 10 0px;
+}
+
+/*/////////////////////////////////control\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+.control {
+    padding:5px;
+}
+
+.control span {
+    vertical-align: top;
+}
+
+.switch {
+    display:inline;    
 }

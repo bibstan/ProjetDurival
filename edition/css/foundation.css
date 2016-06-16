@@ -24,7 +24,7 @@ html {
    * Remove default margin.
    */
 body {
-  margin: 0; 
+  margin: 0;
 }
 
 /* HTML5 display definitions
@@ -1209,7 +1209,7 @@ small {
 
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\MODIF POUR DURIVAL/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
-p.note {             
+p.note {
       font-family: 'Lato', Helvetica, Roboto, Arial, sans-serif;
 color: #555555;    font-size:0.8em;
 }
@@ -1228,7 +1228,7 @@ h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   line-height: 1.4; }
-  
+
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\MODIF POUR DURIVAL/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
  /* PARTIES EDITORIALES*/
 .edito, .lead, h2.edito {
@@ -1283,13 +1283,13 @@ h6 {
     font-size: 1rem; } }
 
 a {
- color: #E3920B; 
+ color: #E3920B;
    text-decoration: none;
   line-height: inherit;
   cursor: pointer; }
   a:hover, a:focus {
 
- color: #9E8A4D; 
+ color: #9E8A4D;
 }
 
   a img {
@@ -1827,7 +1827,7 @@ select {
 
 .accordion-title, span.vedette {
     font-family: 'Lato', Helvetica, Roboto, Arial, sans-serif;
-   
+
   display: block;
   padding: 0.8rem 1rem;
   line-height: 1em;
@@ -3032,7 +3032,8 @@ body.is-reveal-open {
     bottom: 0; }
 
 .switch {
-  margin-bottom: 1rem;
+  /*margin-bottom: 1rem;*/
+  border-radius: 2px;
   outline: 0;
   position: relative;
   -webkit-user-select: none;
@@ -3048,14 +3049,14 @@ body.is-reveal-open {
   position: absolute; }
 
 .switch-paddle {
-  background: #cacaca;
+  background: #cc6600;
   cursor: pointer;
   display: block;
   position: relative;
   width: 4rem;
   height: 2rem;
   transition: all 0.25s ease-out;
-  border-radius: 0;
+  border-radius: 2px;
   color: inherit;
   font-weight: inherit; }
   input + .switch-paddle {
@@ -3072,9 +3073,9 @@ body.is-reveal-open {
     transition: all 0.25s ease-out;
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
-    border-radius: 0; }
+    border-radius: 2px; }
   input:checked ~ .switch-paddle {
-    background: #2199e8; }
+    background: #cc6600; }
     input:checked ~ .switch-paddle::after {
       left: 2.25rem; }
   [data-whatinput='mouse'] input:focus ~ .switch-paddle {
@@ -3224,7 +3225,7 @@ table.hover tr:nth-of-type(even):hover {
     color: #fefefe; }
     .tabs.primary > li > a:hover, .tabs.primary > li > a:focus {
       background: #1893e4; }
-      
+
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\MODIF POUR DURIVAL/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 .tabs-title {
   float: left; }
@@ -3247,7 +3248,7 @@ table.hover tr:nth-of-type(even):hover {
 
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\MODIF POUR DURIVAL/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 .tabs-content {
-/*  background: #fefefe;*/ 
+/*  background: #fefefe;*/
  transition: all 0.5s ease;
 /*  border: 1px solid #e6e6e6;*/
   border-top: 0; }
@@ -3262,7 +3263,7 @@ table.hover tr:nth-of-type(even):hover {
   .tabs-panel.is-active {
     display: block; }
 
-/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\MODIF POUR DURIVAL/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/    
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\MODIF POUR DURIVAL/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 /*.thumbnail dans app.css*/
 
 /*.thumbnail {
@@ -3339,8 +3340,8 @@ table.hover tr:nth-of-type(even):hover {
   position: absolute;
   z-index: 10;
   top: calc(100% + 0.6495rem);
-/*  max-width: 10rem !important;*/
-  max-width: 20rem !important;
+  max-width: 10rem !important;
+  /*max-width: 20rem !important;*/
   border-radius: 1px; }
 
   .tooltip::before {
@@ -3411,7 +3412,7 @@ table.hover tr:nth-of-type(even):hover {
     clear: both; }
   .top-bar,
   .top-bar ul {
-    background-color: #000000; 
+    background-color: #000000;
 background-image: url("../images/fonds/fond2.png");
   }
 

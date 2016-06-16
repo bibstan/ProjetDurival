@@ -37,8 +37,8 @@
                                         <li>
                                             <a href="#">Biographies</a>
                                             <ul class="vertical menu">
-                                                <li><a href="stanislas.html">Stanislas</a></li>
                                                 <li><a href="durival.html">Durival</a></li>
+                                                <li><a href="stanislas.html">Stanislas</a></li>                                                
                                             </ul>
                                         </li>
                                         <li>
@@ -102,8 +102,8 @@
                                         <li>
                                             <a href="#">Biographies</a>
                                             <ul class="vertical menu">
-                                                <li><a href="stanislas.html">Stanislas</a></li>
                                                 <li><a href="durival.html">Durival</a></li>
+                                                <li><a href="stanislas.html">Stanislas</a></li>                                                
                                             </ul>
                                         </li>
                                         <li>
@@ -142,16 +142,16 @@
             <div class="large-8 medium-12 columns">
                 <ul class="menu">
                     <li class="logo"><a target="_blank" href="http://www.nancy.fr"><img class="logo" src="../images/logo/logo-ville-de-nancy.jpg" /></a></li>
-                    <li class="logo"><a target="_blank" href="http://www.reseau-colibris.fr/iguana/www.main.cls?surl=nancybmn"><img class="logo" src="../images/logo/BN-logo-blanc-fond or-B55mm-55x85mm.jpg" /></a></li>
-                    <li class="logo"><a target="_blank"><img class="logo" src="../images/logo/BN-logo-blanc-fond or-B55mm-55x85mm.jpg" /></a></li>
+                    <li class="logo"><a target="_blank" href="http://www.reseau-colibris.fr/iguana/www.main.cls?surl=accueil"><img class="logo" src="../images/logo/BN-logo-blanc-fond-or-B15mm-30x60mm.jpg" /></a></li>
+                    <li class="logo"><a target="_blank" href="http://www.pactelorraine.eu/"><img class="logo" src="../images/logo/pacte Lorraine.png" /></a></li>
                     <li class="logo"><a target="_blank" href="https://musee-lorrain.nancy.fr/"><img class="logo" src="../images/logo/MuseeLorrain-LOGO.jpg" /></a></li>
-                    <li class="logo"><a target="_blank"><img class="logo" src="../images/logo/LOGO CMJN 250e FR-LOR.jpg" /></a></li>
+                    <li class="logo"><img class="logo" src="../images/logo/LOGO CMJN 250e FR-LOR.jpg" /></li>
                 </ul>
             </div>
             <div class="large-4 medium-12 columns">
                 <div class="row edito">
                     <div class="small-6 columns">
-                        Bibliothèques de Nancy <br />43, rue Stanislas <br />54 700 Nancy
+                        Bibliothèques de Nancy <br />43, rue Stanislas <br />54 000 Nancy <br /> &#x260E; 03 83 87 38 83 
                     </div>
                     <div class="small-6 columns">
                         <a class="float-right" href="mailto:bibliotheque@nancy.fr">Contact</a>
@@ -225,8 +225,8 @@
                                                 <li>
                                                     <a href="#">Biographies</a>
                                                     <ul class="vertical menu">
-                                                        <li><a href="html/stanislas.html">Stanislas</a></li>
                                                         <li><a href="html/durival.html">Durival</a></li>
+                                                        <li><a href="html/stanislas.html">Stanislas</a></li>                                                        
                                                     </ul>
                                                 </li>
                                                 <li>
@@ -305,17 +305,17 @@
                 <div class="row footer">
                     <div class="large-8 medium-12 columns">
                         <ul class="menu">
-                            <li class="logo"><a target="_blank" href="http://www.nancy.fr"><img class="logo" src="images/logo/logo-ville-de-nancy.jpg" /></a></li>
-                            <li class="logo"><a target="_blank" href="http://www.reseau-colibris.fr/iguana/www.main.cls?surl=nancybmn"><img class="logo" src="images/logo/BN-logo-blanc-fond or-B55mm-55x85mm.jpg" /></a></li>
-                            <li class="logo"><a target="_blank"><img class="logo" src="images/logo/BN-logo-blanc-fond or-B55mm-55x85mm.jpg" /></a></li>
-                            <li class="logo"><a target="_blank" href="https://musee-lorrain.nancy.fr/"><img class="logo" src="images/logo/MuseeLorrain-LOGO.jpg" /></a></li>
-                            <li class="logo"><a target="_blank"><img class="logo" src="images/logo/LOGO CMJN 250e FR-LOR.jpg" /></a></li>
+                            <li class="logo"><a target="_blank" href="http://www.nancy.fr"><img class="logo" src="../images/logo/logo-ville-de-nancy.jpg" /></a></li>
+                            <li class="logo"><a target="_blank" href="http://www.reseau-colibris.fr/iguana/www.main.cls?surl=accueil"><img class="logo" src="../images/logo/BN-logo-blanc-fond-or-B15mm-30x60mm.jpg" /></a></li>
+                            <li class="logo"><a target="_blank" href="http://www.pactelorraine.eu/"><img class="logo" src="../images/logo/pacte Lorraine.png" /></a></li>
+                            <li class="logo"><a target="_blank" href="https://musee-lorrain.nancy.fr/"><img class="logo" src="../images/logo/MuseeLorrain-LOGO.jpg" /></a></li>
+                            <li class="logo"><img class="logo" src="../images/logo/LOGO CMJN 250e FR-LOR.jpg" /></li>
                         </ul>
                     </div>
                     <div class="large-4 medium-12 columns">
                         <div class="row edito">
                             <div class="small-6 columns">
-                                Bibliothèques de Nancy <br />43, rue Stanislas <br />54 700 Nancy
+                                Bibliothèques de Nancy <br />43, rue Stanislas <br />54 000 Nancy <br /> &#x260E; 03 83 87 38 83
                             </div>
                             <div class="small-6 columns">
                                 <a class="float-right" href="mailto:bibliotheque@nancy.fr">Contact</a>
@@ -344,12 +344,14 @@
         <!--<xsl:apply-templates select="//tei:listPlace[@xml:id='listPlace']" mode="cartographie"/>-->
         <xsl:apply-templates select="//tei:div[@type='index'][descendant::tei:listPlace[@xml:id='listPlace']][descendant::tei:listOrg[@xml:id='listOrg']]" mode="cartographie"/>
         <xsl:apply-templates select="//tei:front/tei:div[@type='bio']" mode="bio"/>
+        <xsl:apply-templates select="//tei:front/tei:div[@type='history']" mode="history"/>
         <xsl:apply-templates select="/" mode="mique"/>
         <xsl:apply-templates select="/" mode="belprey"/>
         <xsl:apply-templates select="/" mode="carte"/>
         <xsl:apply-templates select="/" mode="focus"/>
         <xsl:apply-templates select="//tei:projectDesc" mode="projecDesc"/>
         <xsl:apply-templates select="//tei:div[@type='bibl']" mode="bibl"/>
+        <xsl:apply-templates select="//tei:div[@type='pictures']" mode="galerie"/>
     </xsl:template>    
     
     <xsl:template match="//tei:body">
@@ -391,27 +393,28 @@
                         <xsl:copy-of select="$header"/>                                                                                                                                                                                               
                         <div class="row">                            
                             <div class="large-12 tabs-content" data-tabs-content="example-tabs">
-                                <div class="row">   
-                                    <div class="large-6 columns">
-                                        <div class="control">
-                                            <span>Forme originale : </span>
-                                            <div class="switch tiny">                                                        
-                                                <input class="switch-input checkbox_modern" id="modern" checked="checked" type="checkbox" name="modern"/>
-                                                <label class="switch-paddle" for="modern">                                                                
-                                                    <!--<span>Modernisation</span>-->
-                                                    <span class="switch-active" aria-hidden="true">&#160;I</span>
-                                                    <span class="switch-inactive" aria-hidden="true">O</span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>                                    
-                                    <div class="large-6 columns clearfix">
+                                <div class="row">                                                                           
+                                    <div class="large-12 columns clearfix">
                                         <ul class="tabs float-right" data-tabs="true" id="example-tabs">                                
                                             <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">transcriptions</a></li>
                                             <li class="tabs-title"><a href="#panel2">facsimilés</a></li>                                            
                                         </ul>
-                                    </div>
-                                </div>
+                                    </div>                                    
+                                    <div class="large-12 columns">
+                                        <div class="control">
+                                            <span>Transcription modernisée&#160;</span>
+                                            <div class="switch tiny">                                                        
+                                                <input class="switch-input checkbox_modern" id="modern" type="checkbox" name="modern"/>
+                                                <label class="switch-paddle" for="modern">                                                                
+                                                    <!--<span>Modernisation</span>-->
+                                                    <span class="switch-active" aria-hidden="true"/>
+                                                    <span class="switch-inactive" aria-hidden="true"/>
+                                                </label>
+                                            </div>
+                                            <span>&#160;Transcription originale</span>
+                                        </div>
+                                    </div>                                    
+                                </div>                                
                                 <div class="tabs-panel is-active" id="panel1">                                                                                 
                                     <div class="large-12 center">                            
                                         <div class="owl-carousel owl-theme">
@@ -1081,8 +1084,9 @@
                 </head>
                 <body class="text-justify">
                     <xsl:copy-of select="$header"/>                                                                                                                                                                                               
-                    <div class="row">                            
+                    <div class="row content">                            
                         <div class="large-12">
+                            <h1>Personnes citées ou évoquées dans le Journal</h1>
                             <ul class="no-bullet">
                                 <xsl:for-each select="tei:person">
                                     <xsl:sort select="tei:persName" order="ascending" case-order="upper-first"/>
@@ -1232,8 +1236,9 @@
                 </head>
                 <body class="text-justify">
                     <xsl:copy-of select="$header"/>                                                                                                                                                                                               
-                    <div class="row">                            
+                    <div class="row content">                            
                         <div class="large-12">
+                            <h1>Lieux cités ou évoqués dans le Journal</h1>
                             <ul class="no-bullet">
                                 <xsl:for-each select="tei:place">
                                     <xsl:sort select="tei:placeName[1]" order="ascending" case-order="upper-first"/>
@@ -1359,8 +1364,9 @@
                 </head>
                 <body class="text-justify">
                     <xsl:copy-of select="$header"/>                                                                                                                                                                                               
-                    <div class="row">                            
+                    <div class="row content">                            
                         <div class="large-12">
+                            <h1>Institutions citées ou évoquées dans le Journal</h1>
                             <ul class="no-bullet">
                                 <xsl:for-each select="tei:org">
                                     <xsl:sort select="tei:orgName" order="ascending" case-order="upper-first"/>
@@ -1490,8 +1496,9 @@
                 </head>
                 <body class="text-justify">
                     <xsl:copy-of select="$header"/>                                                                                                                                                                                               
-                    <div class="row">                            
+                    <div class="row content">                            
                         <div class="large-12">
+                            <h1>Œuvres citées ou évoquées dans le Journal</h1>
                             <ul class="no-bullet">
                                 <xsl:for-each select="tei:bibl">
                                     <xsl:sort select="tei:title" order="ascending" case-order="upper-first"/>                                    
@@ -1713,16 +1720,21 @@
         <xsl:result-document format="html" encoding="UTF-8" href="html/cartes.html">
             <html>
                 <head>
-                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
                     <title>Édition du journal de Nicolas Durival ß</title>
-                    <meta charset="utf-8" />
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                    <link rel="stylesheet" href="../css/app.css" />
-                    <link rel="stylesheet" href="../css/foundation.css" />
-                    <link rel="stylesheet" href="../css/timeliner/timeliner.css" type="text/css" media="screen" />
-                    <link rel="stylesheet" href="../js/timeliner/vendor/venobox/venobox.css" type="text/css" media="screen" />
-                    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,900,700" rel="stylesheet" type="text/css" />
-                    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900,300" rel="stylesheet" type="text/css" />
+                    <meta charset="utf-8"/>
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+                    <link rel="stylesheet" href="../css/app.css"/>
+                    <link rel="stylesheet" href="../css/foundation.css"/>
+                    <link rel="stylesheet" href="../css/timeliner/timeliner.css" type="text/css"
+                        media="screen"/>
+                    <link rel="stylesheet" href="../js/timeliner/vendor/venobox/venobox.css"
+                        type="text/css" media="screen"/>
+                    <link
+                        href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,900,700"
+                        rel="stylesheet" type="text/css"/>
+                    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900,300"
+                        rel="stylesheet" type="text/css"/>
                     <script>
                         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -1738,63 +1750,80 @@
                     <div class="row">
                         <div class="large-12">
                             <h2 class="text-center edito2">Les cartes</h2>
-                            <p class="edito"></p>
+                            <p class="edito"/>
                             <div class="large-4 columns">
-                                <div><!-- <h3 class="text-center edito2">Nancy en 1754</h3> --><br/></div>
-                                <a href="belprey.html" target="blank"><img src="../images/vignettes/vignetteBelprey.gif"/></a><h3 class="text-center edito2">Le plan Belprey : 1754</h3>
+                                <div>
+                                    <!-- <h3 class="text-center edito2">Nancy en 1754</h3> -->
+                                    <br/>
+                                </div>
+                                <a href="belprey.html" target="blank">
+                                    <img src="../images/vignettes/vignetteBelprey.gif"/>
+                                </a>
+                                <h3 class="text-center edito2">Le plan Belprey : 1754</h3>
                                 <br/>
-                                <h4 class="edito">Thomas Belprey (1713-1786).</h4>
-                                <cite class="edito">
-                                    Plan général des deux villes de Nancy et des nouveaux édifices que sa Majesté le roy de Pologne, duc de Lorraine et de Bar 
-                                    etc. y a fait construire. levé par Belprey, l'un des brigadiers de sa garde en 1754.
-                                </cite>
-                                <br />
-                                <p class="edito">
-                                    Ce plan présente une vue en perspective de la ville en 1754, soit avant l'achèvement de tous les travaux projetés par Stanislas. 
-                                    Il comporte douze vignettes qui représentent les principaux nouveaux bâtiments de la ville.
+                                <h4 class="edito">Thomas Belprey (1713-1786)</h4>
+                                <cite class="edito">Plan général des deux villes de Nancy et des
+                                    nouveaux édifices que sa Majesté le roy de Pologne, duc de
+                                    Lorraine et de Bar etc. y a fait construire. Levé par Belprey...
+                                    en 1754.</cite>
+                                <br/>
+                                <p class="edito">Ce plan de Thomas Belprey présente une vue en
+                                    perspective de la ville en 1754, soit avant l'achèvement de tous
+                                    les travaux voulus par Stanislas. Il comporte douze vignettes
+                                    qui représentent les principaux nouveaux bâtiments de la ville.
                                 </p>
                             </div>
                             <div class="large-4 columns">
                                 <div>
-                                    <br />
-                                    <a href="mique.html" target="blank"><img src="../images/vignettes/vignetteB543956101_H_FG_ES_00014.gif"/></a>
+                                    <br/>
+                                    <a href="mique.html" target="blank">
+                                        <img
+                                            src="../images/vignettes/vignetteB543956101_H_FG_ES_00014.gif"
+                                        />
+                                    </a>
                                 </div>
                                 <h3 class="text-center edito2">Le plan Mique : 1778</h3>
-                                <br />
-                                <h4 class="edito">Claude Mique.</h4>
-                                <cite class="edito">
-                                    Plan des villes, citadelle et faubourgs de Nancy, dédié à la Reine par son très humble et 
-                                    très obéissant serviteur C. Mique, architecte de feu Roi de Pologne à Nancy.
-                                </cite>
-                                <p class="edito">
-                                    Sur ce plan, toutes les réalisations voulues par Stanislas ont été réalisées. On peut y voir 
-                                    la nouvelle université (actuelle bibliothèque Stanislas), et le début de la destruction des bastions. 
-                                    Celui des Michotte a déjà disparu, laissant place à la nouvelle place de Grève.
-                                </p>
+                                <br/>
+                                <h4 class="edito">Claude Mique (1714-1796) </h4>
+                                <cite class="edito">Plan des villes, citadelle et faubourgs de
+                                    Nancy, dédié à la Reine par son très humble et très obéissant
+                                    serviteur C. Mique, architecte de feu Roi de Pologne à Nancy.
+                                    Vers 1778.</cite>
+                                <p class="edito">Sur ce plan de l'architecte du roi, l'essentiel
+                                    des transformations voulues par Stanislas ont été réalisées. On
+                                    peut y voir la nouvelle université (actuelle bibliothèque
+                                    Stanislas), et le début de la destruction des bastions. Celui
+                                    des Michottes a déjà disparu, laissant place à la nouvelle place
+                                    de Grève.</p>
                             </div>
                             <div class="large-4 columns">
                                 <div>
-                                    <br />
-                                    <a href="cartographie.html" target="blank"><img src="../images/vignettes/vignetteCarte.gif"/></a>
+                                    <br/>
+                                    <a href="cartographie.html" target="blank">
+                                        <img src="../images/vignettes/vignetteCarte.gif"/>
+                                    </a>
                                     <h3 class="text-center edito2">Nancy aujourd'hui</h3>
-                                    <br />
-                                    <p class="edito">
-                                        Sur cette carte contemporaine, retrouvez les lieux évoqués par Durival. Cette superposition 
-                                        redessine la ville telle que Durival l'a parcouru, vous donnant accès à des informations sur 
-                                        des lieux qui sont toujours visibvles, ont été transformés ou qui parfois ont disparus. 
-                                    </p>
+                                    <br/>
+                                    <cite class="edito">Les lieux évoqués par Durival en 1765-1766 </cite>
+                                    <p class="edito"> Sur cette carte contemporaine, les lieux
+                                        évoqués par Durival sont signalés par un icone (avec une
+                                        distinction pour le civil, le religieux et le militaire).
+                                        Cette superposition redessine la ville telle que Durival l'a
+                                        parcouru, donnant accès à des informations sur des lieux qui
+                                        sont toujours visibles, ont été transformés ou qui parfois
+                                        ont disparus.</p>
                                 </div>
-                            </div>                             
-                            <br />
-                        </div>                                                                        
-                    </div> 
+                            </div>
+                            <br/>
+                        </div>
+                    </div>
                     <xsl:copy-of select="$footer"/>
-                    <!-- FOOTER -->                    
+                    <!-- FOOTER -->
                     <script src="../js/vendor/jquery.js">/*Pour transformation xslt*/</script>
                     <script src="../js/vendor/modernizr.js">/*Pour transformation xslt*/</script>
                     <script src="../js/foundation.min.js">/*Pour transformation xslt*/</script>
-                    <script type="text/javascript" src="../js/timeliner/timeliner.min.js"></script>
-                    <script type="text/javascript" src="../js/timeliner/vendor/venobox/venobox.min.js"></script>
+                    <script type="text/javascript" src="../js/timeliner/timeliner.min.js"/>
+                    <script type="text/javascript" src="../js/timeliner/vendor/venobox/venobox.min.js"/>
                     <script>$(document).foundation();</script>
                     <script>
                         $(document).ready(function() {
@@ -1803,7 +1832,7 @@
                     </script>
                 </body>
             </html>
-        </xsl:result-document> 
+        </xsl:result-document>
     </xsl:template>
     
     <xsl:template match="/" mode="belprey">
@@ -2290,7 +2319,7 @@
                     </head>
                     <body>
                         <xsl:copy-of select="$header"/>
-                        <div class="row">
+                        <div class="row content">
                             <div class="large-12">            
                                 <div class="container">
                                     <h1><xsl:value-of select="./tei:head[@n=1]"/></h1>
@@ -2356,23 +2385,25 @@
         </xsl:for-each>
     </xsl:template>
     
-    <!-- *********** Autres pages Web ***********-->
-
-
-    <xsl:template match="/" mode="focus">
-        <xsl:result-document format="html" encoding="UTF-8" href="html/focus.html">
-            <html xmlns="http://www.w3.org/1999/xhtml">
+<!-- ******************History************************ -->
+    
+    <xsl:template match="//tei:front/tei:div[@type='history']/tei:div[@xml:id='bibliothequeHisto']" mode="history">
+        <xsl:result-document format="html" encoding="UTF-8" href="html/bibliotheque.html">
+            <html>
                 <head>
                     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
                     <title>Édition du journal de Nicolas Durival ß</title>
                     <meta charset="utf-8" />
                     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                     <link rel="stylesheet" href="../css/app.css" />
-                    <link rel="stylesheet" href="../css/foundation.css" />
-                    <link rel="stylesheet" href="../css/timeliner/timeliner.css" type="text/css" media="screen" />
-                    <link rel="stylesheet" href="../js/timeliner/vendor/venobox/venobox.css" type="text/css" media="screen" />
-                    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,900,700" rel="stylesheet" type="text/css" />
-                    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900,300" rel="stylesheet" type="text/css" />
+                    <link rel="stylesheet" href="../css/foundation.css" />                                                                   
+                    <link href="../css/lightbox/lightbox.css" rel="stylesheet" />
+                    <link rel="stylesheet" href="../css/timeliner/timeliner.css" type="text/css" media="screen"/>
+                    <link rel="stylesheet" href="../js/timeliner/vendor/venobox/venobox.css" type="text/css" media="screen"/>
+                    
+                    <!-- Font -->
+                    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,900,700' rel='stylesheet' type='text/css'/>                     
+                    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'/>
                     <script>
                         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -2385,64 +2416,187 @@
                 </head>
                 <body>
                     <xsl:copy-of select="$header"/>
-                    <div class="row">
-                        <div class="large-12"> 
-                            <h2 class="text-center edito2">Les focus</h2> 
-                            <br />
-                            <div class="media-object">
-                                <div class="media-object-section">
-                                    <div class="thumbnail">
-                                        <a href="durival.html"><img src= "../images/vignettes/vignetteStanislasPortrait.png" width="200" /></a>
-                                    </div>
+                    <div class="row content">
+                        <div class="large-12">            
+                            <div class="container">
+                                <h1><xsl:value-of select="./tei:head[@n=1]"/></h1>
+                                <xsl:if test="./tei:p">
+                                    <xsl:for-each select="./tei:p">
+                                        <p class="lead">
+                                            <xsl:apply-templates select="."/>
+                                        </p>
+                                    </xsl:for-each>
+                                </xsl:if>
+                                <div id="timeline" class="timeline-container">
+                                    <button class="timeline-toggle">+ expand all</button>
+                                    <br class="clear" />
+                                    <xsl:for-each select="tei:div">
+                                        <div class="timeline-wrapper">
+                                            <h2 class="timeline-time"><span><xsl:value-of select="tei:head[@n='2']"/></span></h2>
+                                            <dl class="timeline-series">
+                                                <xsl:for-each select="tei:div">
+                                                    <xsl:variable name="id" select="tei:head[@n='3']/@xml:id"/>
+                                                    <span class="tick tick-before" />
+                                                    <dt class="timeline-event" id="{$id}"><a><xsl:value-of select="tei:head[@n='3']"/></a></dt>
+                                                    <span class="tick tick-after" />
+                                                    <dd class="timeline-event-content" id="{$id}EX">
+                                                        <xsl:if test=".//tei:graphic">
+                                                            <div class="media">
+                                                                <a class="focus" href="../images/{.//tei:graphic/@url}.jpg" data-lightbox="bio">
+                                                                    <img src="../images/{.//tei:graphic/@url}.jpg" alt="Placard"/>
+                                                                </a>
+                                                                <!--<a class="focus" href="../images/{.//tei:graphic/@url}.jpg" data-lightbox="#"><img src="../images/{.//tei:graphic/@url}.jpg" alt="Placard"/></a>-->                                                                    
+                                                            </div><!-- /.media -->
+                                                        </xsl:if>
+                                                        <xsl:for-each select="tei:p">
+                                                            <p>
+                                                                <xsl:apply-templates select="."/>
+                                                            </p>
+                                                        </xsl:for-each>
+                                                        <br class="clear" />
+                                                    </dd>
+                                                </xsl:for-each>                                                     
+                                            </dl> 
+                                        </div> 
+                                    </xsl:for-each>
                                 </div>
-                                <div class="media-object-section">
-                                    <h2 class="edito">Nicolas Durival (Commercy, 12 novembre 1713 - Heillecourt, 21 décembre 1795)</h2>
-                                    <p class="edito">
-                                        Fils d'un valet de garde-robe du duc Léopold, Jacques Luton, Nicolas Durival met sa carrière au 
-                                        service du nouveau souverain, Stanislas Leszczynski, roi de Pologne, dès l'arrivée de celui-ci dans 
-                                        le duché de Lorraine. Homme de confiance du duc, il exerce différentes fonctions au plus près de la 
-                                        cour de Lunéville avant de devenir lieutenant général de police de la ville de Nancy. Il mène parallèlement 
-                                        une activité de statisticien et d'historien, son Mémoire sur la Lorraine et le Barrois étant unanimement 
-                                        salué dès sa parution. 
-                                    </p> 
-                                </div>
-                            </div>
-                            <br />
-                            <div class="media-object">
-                                <div class="media-object-section">
-                                    <div class="thumbnail">
-                                        <img src= "../images/vignettes/vignetteStanislasPortrait.png" width="200" />
-                                    </div>
-                                </div>
-                                <div class="media-object-section">
-                                    <h2 class="edito">Stanislas Leszczynski (20 octobre 1677- 23 février 1766)</h2>
-                                    <p class="edito">
-                                        Fils d'un valet de garde-robe du duc Léopold, Jacques Luton, Nicolas Durival 
-                                        met sa carrière au service du nouveau souverain, Stanislas Leszczynski, roi de Pologne, 
-                                        dès l'arrivée de celui-ci dans le duché de Lorraine. Homme de confiance du duc, il exerce 
-                                        différentes fonctions au plus près de la cour de Lunéville avant de devenir lieutenant général 
-                                        de police de la ville de Nancy. Il mène parallèlement une activité de statisticien et d'historien, 
-                                        son Mémoire sur la Lorraine et le Barrois étant unanimement salué dès sa parution. 
-                                    </p> 
-                                </div>
-                            </div>  
+                            </div>                           
                         </div>
                     </div>
-                    <!-- FOOTER -->
-                    <xsl:copy-of select="$footer"></xsl:copy-of>
+                    <xsl:copy-of select="$footer"/>                        
                     <script src="../js/vendor/jquery.js">/*Pour transformation xslt*/</script>
                     <script src="../js/vendor/modernizr.js">/*Pour transformation xslt*/</script>
                     <script src="../js/foundation.min.js">/*Pour transformation xslt*/</script>
+                    <script src="../js/lightbox/lightbox.js"></script>
                     <script type="text/javascript" src="../js/timeliner/timeliner.min.js"></script>
                     <script type="text/javascript" src="../js/timeliner/vendor/venobox/venobox.min.js"></script>
-                    <script>$(document).foundation();</script><script>
+                    <script>$(document).foundation();</script>
+                    <script>
+                        $(document).ready(function() {
+                        $.timeliner({});
+                        });
+                    </script>                    
+                </body>
+            </html> 
+        </xsl:result-document>
+    </xsl:template>
+    
+    <!-- *********** Autres pages Web ***********-->
+
+
+    <xsl:template match="/" mode="focus">
+        <xsl:result-document format="html" encoding="UTF-8" href="html/focus.html">
+            <html xmlns="http://www.w3.org/1999/xhtml">
+                <head>
+                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+                    <title>Édition du journal de Nicolas Durival ß</title>
+                    <meta charset="utf-8"/>
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+                    <link rel="stylesheet" href="../css/app.css"/>
+                    <link rel="stylesheet" href="../css/foundation.css"/>
+                    <link rel="stylesheet" href="../css/timeliner/timeliner.css" type="text/css"
+                        media="screen"/>
+                    <link rel="stylesheet" href="../js/timeliner/vendor/venobox/venobox.css"
+                        type="text/css" media="screen"/>
+                    <link
+                        href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,900,700"
+                        rel="stylesheet" type="text/css"/>
+                    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900,300"
+                        rel="stylesheet" type="text/css"/>
+                    <script>
+                        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                        
+                        ga('create', 'UA-78667211-1', 'auto');
+                        ga('send', 'pageview');                            
+                    </script>
+                </head>
+                <body>
+                    <xsl:copy-of select="$header"/>
+                    <div class="row content">
+                        <div class="large-12">
+                            <h2 class="text-center edito2">Les focus</h2>
+                            <br/>
+                            <div class="media-object">
+                                <div class="media-object-section">
+                                    <div class="thumbnail">
+                                        <a href="durival.html">
+                                            <img
+                                                src="../images/vignettes/vignetteM0514_39-22-2_b_MBo.png"
+                                                width="200"/>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="media-object-section">
+                                    <h2 class="edito">Nicolas Durival (Commercy, 12 novembre 1713 -
+                                        Heillecourt, 21 décembre 1795)</h2>
+                                    <p class="edito">Fils d'un valet de garde-robe du duc Léopold,
+                                        Jacques Luton, Nicolas Durival met sa carrière au service du
+                                        nouveau souverain, Stanislas Leszczynski, roi de Pologne,
+                                        dès l'arrivée de celui-ci dans le duché de Lorraine. Homme
+                                        de confiance du duc, il exerce différentes fonctions au plus
+                                        près de la cour de Lunéville avant de devenir lieutenant
+                                        général de police de la ville de Nancy. Il mène
+                                        parallèlement une activité de statisticien et d'historien,
+                                        son Mémoire sur la Lorraine et le Barrois étant unanimement
+                                        salué dès sa parution.</p>
+                                </div>
+                            </div>
+                            <br/>
+                            <div class="media-object">
+                                <div class="media-object-section">
+                                    <div class="thumbnail">
+                                        <a href="stanislas.html">
+                                            <img src="../images/vignettes/vignetteStanislasPortrait.png" width="200"/>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="media-object-section">
+                                    <h2 class="edito">Stanislas Leszczynski (20 octobre 1677- 23
+                                        février 1766)</h2>
+                                    <p class="edito"> Les deux dernières années de Stanislas. </p>
+                                </div>
+                            </div>
+                            <div class="media-object">
+                                <div class="media-object-section">
+                                    <div class="thumbnail">
+                                        <a href="bibliotheque.html">
+                                            <img
+                                                src="../images/vignettes/vignetteStanislasPortrait.png"
+                                                width="200"/>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="media-object-section">
+                                    <h2 class="edito">Histoire de la Bibliothèque de sa création à
+                                        1799</h2>
+                                    <p class="edito">Fondée par un édit de Stanislas du 28 décemnre
+                                        1750, la Bibliothèque entend favoriser la diffusion des
+                                        idées nouvelles, le progrès des sciences et des arts. En
+                                        un-demi siècle, elle connaîtra trois déménagements et une
+                                        révolution.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FOOTER -->
+                    <xsl:copy-of select="$footer"/>
+                    <script src="../js/vendor/jquery.js">/*Pour transformation xslt*/</script>
+                    <script src="../js/vendor/modernizr.js">/*Pour transformation xslt*/</script>
+                    <script src="../js/foundation.min.js">/*Pour transformation xslt*/</script>
+                    <script type="text/javascript" src="../js/timeliner/timeliner.min.js"/>
+                    <script type="text/javascript" src="../js/timeliner/vendor/venobox/venobox.min.js"/>
+                    <script>$(document).foundation();</script>
+                    <script>
                         $(document).ready(function() {
                         $.timeliner({});
                         });
                     </script>
                 </body>
             </html>
-        </xsl:result-document> 
+        </xsl:result-document>
     </xsl:template>
     <!--  ************************** bibliographie générale *****************************  -->
     
@@ -2517,7 +2671,7 @@
                 </head>
                 <body>
                     <xsl:copy-of select="$header"/>
-                    <div class="row">
+                    <div class="row content">
                         <div class="large-12">
                             <h1>Bibliographie</h1>
                             <xsl:for-each select="./tei:listBibl">
@@ -2557,6 +2711,70 @@
                                     </xsl:when>
                                 </xsl:choose>
                             </xsl:for-each>                            
+                        </div>
+                    </div>
+                    <!-- FOOTER -->
+                    <xsl:copy-of select="$footer"></xsl:copy-of>
+                    <script src="../js/vendor/jquery.js">/*Pour transformation xslt*/</script>
+                    <script src="../js/vendor/modernizr.js">/*Pour transformation xslt*/</script>
+                    <script src="../js/foundation.min.js">/*Pour transformation xslt*/</script>
+                    <script type="text/javascript" src="../js/timeliner/timeliner.min.js"></script>
+                    <script type="text/javascript" src="../js/timeliner/vendor/venobox/venobox.min.js"></script>
+                    <script>$(document).foundation();</script><script>
+                        $(document).ready(function() {
+                        $.timeliner({});
+                        });
+                    </script>
+                </body>
+            </html>
+        </xsl:result-document>
+    </xsl:template>
+    
+<!--  ********************** Galerie **************************  -->
+
+    <xsl:template match="tei:div[@type='pictures']" mode="galerie">
+        <xsl:result-document format="html" encoding="UTF-8" href="html/galerie.html">
+            <html xmlns="http://www.w3.org/1999/xhtml">
+                <head>
+                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+                    <title>Édition du journal de Nicolas Durival ß</title>
+                    <meta charset="utf-8" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                    <link rel="stylesheet" href="../css/app.css" />
+                    <link rel="stylesheet" href="../css/foundation.css" />
+                    <link rel="stylesheet" href="../css/timeliner/timeliner.css" type="text/css" media="screen" />
+                    <link rel="stylesheet" href="../js/timeliner/vendor/venobox/venobox.css" type="text/css" media="screen" />
+                    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,900,700" rel="stylesheet" type="text/css" />
+                    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900,300" rel="stylesheet" type="text/css" />
+                    <script>
+                        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                        
+                        ga('create', 'UA-78667211-1', 'auto');
+                        ga('send', 'pageview');                            
+                    </script>
+                </head>
+                <body>
+                    <xsl:copy-of select="$header"/>
+                    <div class="row content">
+                        <div class="large-12">
+                            <h1>Galerie</h1>
+                            <xsl:for-each-group select="tei:figure" group-by="@type">
+                                <xsl:for-each select="current-group()">
+                                    <xsl:choose>
+                                        <xsl:when test="@type='luneville'">
+                                            <p>toto</p>
+                                        </xsl:when>
+                                        <xsl:otherwise>
+                                            <p>tati
+                                                <xsl:apply-templates select="current-group()"/>
+                                            </p>
+                                        </xsl:otherwise>
+                                    </xsl:choose>                                    
+                                </xsl:for-each>                                
+                            </xsl:for-each-group>                            
                         </div>
                     </div>
                     <!-- FOOTER -->
@@ -2646,7 +2864,7 @@
                 </head>
                 <body>
                     <xsl:copy-of select="$header"/>
-                    <div class="row">
+                    <div class="row content">
                         <div class="large-12">
                             <h1>L'édition du Journal de Durival</h1>
                             <xsl:apply-templates mode="projecDesc"/>

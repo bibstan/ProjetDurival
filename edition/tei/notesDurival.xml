@@ -100,20 +100,17 @@
                         géographiques éloignées. </p>
                 </note>
                 <note xml:id="note17650331A">
-                    <!--Troubles en Bretagne [cité le 31/03/65] :-->   <p> Le parlement de Bretagne
-                        avait défendu, sous des peines sévères, la perception d'impôts établis par
-                        le roi, mais non consentis par les États. Le 11 août 1764, le parlement
-                        avait adopté des remontrances « au sujet des atteintes portées aux droits,
-                        franchises et immunités de la Bretagne, des corvées dont cette province est
-                        accablée, et des imputations qui ont attiré à ce parlement des ordres et des
-                        reproches de la part du roi ». La session des États se poursuit dans la
-                        difficulté jusqu’au 1<hi rend="super">er</hi> avril 1765, tandis que le
-                        parlement résiste aux volontés du roi. Cette situation, débutée en hiver
-                        1763, trouve sa cause dans un impôt supplémentaire exigé afin de rétablir
-                        les finances royales très éprouvées par la guerre de Sept Ans, close en
-                        février 1763. Après convocations, démissions, procès, condamnations, le
-                        calme ne sera rétabli que dansle courant de l’année 1774. Pendant cette
-                        décennie, cette affaire sera évoquée comme « l’Affaire de Bretagne ». </p>
+                    <!--Troubles en Bretagne [cité le 31/03/65] :-->   </note>
+                <note>
+                    <p>En 1763, le gouvernement de Louis XV décide d 'augmenter des impôts, afin de
+                        rétablir les finances royales très éprouvées par la guerre de Sept Ans
+                        terminée la même année. La déclaration royale est envoyée au Parlement de
+                        Bretagne, qui entame alors un bras de fer avec le pouvoir royal. Mais ce
+                        dernier ne cède pas et va imposer par lit de justice l'application de l'édit
+                        de Bertin. Les parlementairs Rennais démissionennt en signe de contetsation
+                        face à cet instrument de l'absolutisme. Après convocations, démissions,
+                        procès, condamnations, "l'affaire de Bretagne" débutée en 1764 se termine en
+                        1774 et l'édit n'est finalement pas appliqué. </p>
                 </note>
                 <!-- <note xml:id="note17650401A"><!-\- todo vérif ancre -\-> M. l’Intendant [cité le
                     01/04/65] :  <!-\- todo pas nécessaire ??? -\->
@@ -128,10 +125,11 @@
                 </note>
                 <note xml:id="note17650409A">
                     <!--Lettres patentes [cité le 09/04/65] :  -->
-                    <p> Du latin <foreign xml:lang="lat">patens,-tis</foreign> = ouvert, car n'ayant
-                        qu'un simple repli au bas, qui n'empêche pas d’en lire le contenu (à la
-                        différence des lettres closes ou de cachet). Il s’agit de lettres émanées du
-                        roi, scellées du grand sceau et contre-signées par un secrétaire.  </p>
+                    <p> Du latin <foreign xml:lang="lat">patens,-tis</foreign> = ouvert. Les lettres
+                        patentes étaient revêtues du grand sceau de l'état que le roi adressait
+                        « ouvertes » aux parlements, rendant ainsi public un droit, un statut ou un
+                        privilège. Elles s'opposent aux lettres de cachet, lettres « fermées » d'un
+                        cachet du roi.</p>
                 </note>
                 <note xml:id="note17650411A">
                     <!--Minute [cité le 11/04/65] : -->  <p> Nom donné à l'original d'un document
@@ -806,8 +804,7 @@
                         « fermées » d'un cachet du roi.</p>
                 </note>
                 <!--notes Sara (2)-->
-                <note xml:id="note17660317B"><!--<ref type="note" target="#note17660317B"
-                        />--><!--(Fournier, Alban, "L'expulsion des Jésuites en Lorraine", l'Annuairegénéral des Vosges 1900, Épinal, 1899, p. 17-24. --><p>Les
+                <note xml:id="note17660317B"><!--<ref type="note" target="#note17660317B"/>--><!--(Fournier, Alban, "L'expulsion des Jésuites en Lorraine", l'Annuairegénéral des Vosges 1900, Épinal, 1899, p. 17-24. --><p>Les
                         Jésuites se sont installés en Lorraine dans la seconde moitié du XVIème
                         siècle. Si le duc Charles III (1543-1608) leur accorda la direction de
                         divers établissements d'éducation, les Jésuites ont longtemps dû subir les
@@ -818,8 +815,7 @@
                         accueillant en Lorraine, face à son gendre Louis XV qui les banissait de
                         France en 1763 et 1764. Dès le décès de Stanislas, le décret d'expulsion des
                         Jésuites était appliqué. </p></note>
-                <note xml:id="note17650916C"><!--<ref target="#note17650916C"
-                        />--><!--(Charon, Annie, Histoire du Livre. Techniques du livre, recueil inédit non publié, École nationale des Chartes, 2014. --><p>Lors
+                <note xml:id="note17650916C"><!--<ref target="#note17650916C"/>--><!--(Charon, Annie, Histoire du Livre. Techniques du livre, recueil inédit non publié, École nationale des Chartes, 2014. --><p>Lors
                         de la fabrication d'un livre, deux phases se succèdent: la composition et
                         l'impression. Les pages d'un livre ne sont pas imprimées dans l'ordre; les
                         grandes pages de papier sont composées de plusieurs pages imprimées et sont
@@ -828,13 +824,40 @@
                         constituant ainsi une forme. Très souvent, deux formes sont nécéssaires:
                         l'une servant à imprimer une face du papier, l'autre servant pour la seconde
                         face.  </p></note>
-                <note xml:id="note17650916D"><ref target="#note17650916D"/><!----><p>Selon Gervais
-                        François Magné de Marolles, les signatures des livres imprimés sont apparues
-                        en 1474 à Venise. Tel un repère, la signature consiste à faciliter
+                <note xml:id="note17650916D"><!--(Varry, Dominique, Signatures, Introduction à la bibliographie matérielle : Archéologie du livre imprimé (1454 – vers 1830) [en ligne]. Blog professionnel de Dominique Varry, 2011.--><p>Selon
+                        Gervais François Magné de Marolles, les signatures des livres imprimés sont
+                        apparues en 1474 à Venise. Tel un repère, la signature consiste à faciliter
                         l'organisation d'un cahier dans un livre avant son impression. La signature
                         est composée soit d'un symbole (étoile, parenthèse, croix...), soit d'une
                         lettre de l'alphabet, généralement placé dans la marge inférieure des
                         feuillets.</p></note>
+<<<<<<< HEAD
+=======
+                <note xml:id="note17660418A">
+                    <p>Un duel est un combat par les armes (sabre, pistolet...) opposant deux
+                        adversaires en réparation d'un tort ou d'une offense. Il est soumis à des
+                        règles et se déroule devant un arbitre. À la fois interdit et toléré sous
+                        l'ancien Régime, le duel permettait de résoudre et réglementer la violence
+                        qui pouvait être suscitée entre deux individus après un conflit.</p>
+                </note>
+                <note xml:id="note17660419A">
+                    <p>À partir du XVII ème siècle, il a été question de constituer une armée
+                        nationale, la milice, placée au rang inférieur de l'armée régulière et
+                        composée de jeune citoyens célibataires puis mariés mais sans enfants. Les
+                        miliciens ont été levés la première fois en 1688, puis à trois reprises au
+                        XVII ème siècle. D'abord nommé par les habitants, le milicien était désigné
+                        par tirage au sort, entraînant par là même des scènes parfois de désolation
+                        de la part des jeunes gens, régulièrement issu de la paysanerie.</p>
+                </note>
+                <note xml:id="note17660421A">
+                    <p>À partir du XVII ème siècle, il a été question de constituer une armée
+                        nationale, la milice, placée au rang inférieur de l'armée régulière et
+                        composée de jeune citoyens célibataires puis mariés mais sans enfants. Les
+                        miliciens ont été levés la première fois en 1688, puis à trois reprises au
+                        XVII ème siècle.</p>
+                </note>
+                
+>>>>>>> bibstan/master
             </div>
         </body>
     </text>
