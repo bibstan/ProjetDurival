@@ -119,34 +119,16 @@
                <persName><surname>Royer</surname><roleName>abbé</roleName></persName>
             </person>
 
-            <!-- todo fusionner les 4 entrées ? EN oui-->
-            <person xml:id="abbesseStLouis">
+
+            <person xml:id="choiseulMme">
                <persName><surname>Choiseul-Stainville</surname><forename>Charlotte-Eugénie de</forename></persName>
-               <state>
-                  <p>Abbesse de Saint-Louis de Metz</p>
-               </state>
-            </person>
-            <person xml:id="abesseStPierre">
-               <persName><surname>Choiseul-Stainville</surname><forename>Charlotte-Eugénie de</forename></persName>
-               <state>
-                  <p>Abbesse de Saint-Pierre</p>
-               </state>
-            </person>
-            <person xml:id="stLouisMetzAbbesse">
-               <persName><surname>Choiseul-Stainville</surname><forename>Charlotte-Eugénie de</forename><roleName>abbesse</roleName></persName>
                <death when="1816"/>
+               <state><p>abbesse</p></state>
                <listEvent>
                   <event>
                      <p>Abbesse de Saint-Pierre de Metz, élue en 1762 abbesse de Saint-Louis</p>
                   </event>
                </listEvent>
-            </person>
-
-            <person xml:id="choiseulMme">
-               <persName><surname>Choiseul</surname><addName>M<hi rend="super">me</hi> de</addName></persName>
-               <state>
-                  <p>Abbesse de S. Louis</p>
-               </state>
             </person>
 
             <person xml:id="aiguillonDuchesse">
@@ -394,7 +376,7 @@
                </listEvent>
             </person>
 
-            <person xml:id="belloy">
+            <person xml:id="belloyBuirette">
                <!-- todo dit Dormont de Belloy -->
                <persName><surname>Buirette de Belloy</surname><forename>Pierre-Laurent</forename></persName>
                <state>
@@ -411,7 +393,7 @@
                   </event>
                </listEvent>
             </person>
-            <person xml:id="belloyBuirette">
+            <person xml:id="belloy">
                <persName><surname>Belloy</surname><addName>M. de</addName></persName>
                <listEvent>
                   <event>
@@ -755,10 +737,7 @@
             </person>
             <person xml:id="chasteletMisFrere">
                <!-- todo -->
-               <persName><surname>Du Chastelet</surname></persName>
-               <state>
-                  <p>frère du marquis</p>
-               </state>
+               <persName><surname>Du Chastelet <hi rend="italic">frère</hi></surname></persName>               
             </person>
             <person xml:id="chateaufort">
                <persName><surname>Aristay de Châteaufort</surname><forename>François d'</forename></persName>
@@ -889,7 +868,15 @@
                   <p>graveur</p>
                </state>
             </person>
+            
             <person xml:id="commissairefleury">
+               <persName><surname>Fleury</surname><addName>M.</addName></persName>
+               <state>
+                  <p>commissaire de police</p>
+               </state>                              
+            </person>
+            
+            <!-- correction au dessus <person xml:id="commissairefleury">
                <persName><surname>Fleury</surname><forename>André-Hercule de Rosset de</forename><roleName>marquis de Rocozel puis duc de Fleury en 1736</roleName></persName>
                <state>
                   <p>Pair de France en 1736</p>
@@ -908,7 +895,7 @@
                      <p>lieutenant général en 1748 </p>
                   </event>
                </listEvent>
-            </person>
+            </person>-->
             <person xml:id="contade">
                <persName><surname>Contade</surname><forename>Louis Georges Érasme de</forename></persName>
                <birth when="1704"/>
@@ -2139,6 +2126,20 @@
                   </event>
                </listEvent>
             </person>
+            
+            <!--
+               voir @xml:id laGalaiziereBarth
+               <person xml:id="stDiezCoadjuteur">               
+               <persName><persName>Coadjuteur de Saint-Dié</persName></persName>
+               <birth when="1737"/>
+               <death when="1808"/>
+               <listEvent>
+                  <event>
+                     <p>possiblement Barthélémy Louis Martin Chaumont, premier évêque de Saint Dié suite à une division du diocèse de Toul</p>
+                  </event>
+               </listEvent>
+            </person>-->
+            
             <!--  TODO Kafouse c'est la douane, sise 45 rue Saint Jean en faire un placeName-->
             <!--  <person xml:id="laKafouse">
                <persName><surname>La Kafouse</surname><addName>M.</addName></persName>
@@ -2522,7 +2523,7 @@
                </listEvent>
             </person>
             <person xml:id="mareil">
-               <persName><surname>Chaumont de la Millière</surname><forename>Dieudonné</forename></persName>
+               <persName><surname>Chaumont de la Millière</surname><forename>Dieudonné</forename><roleName>comte de Saint-Dié</roleName></persName>
                <birth when="1708"/>
                <death when="1768"/>
                <listEvent>
@@ -2537,6 +2538,35 @@
                   </event>
                </listEvent>
             </person>
+            
+            <!--
+               @xml:id mareil
+               <person xml:id="stDiezComte">
+               <!-\- todo renvoi ?  -\->
+               <persName><surname>Chaumont de la Millière</surname><forename>Dieudonné</forename><roleName>comte de Saint-Dié</roleName></persName>
+               <birth when="1708"/>
+               <death when="1768"/>
+               <listEvent>
+                  <event>
+                     <p>grand prêvot de Saint-Dié</p>
+                  </event>
+               </listEvent>
+            </person>
+            
+            <person xml:id="sion">
+               <persName><surname>Chaumont de la Millière</surname><forename>Dieudonné</forename></persName>
+               <birth when="1708"/>
+               <death when="1768"/>
+               <listEvent>
+                  <event>
+                     <p>oncle de l'Intendant Antoine Chaumont de la Galaizière</p>
+                  </event>
+                  <event>
+                     <p>évêque de Sion</p>
+                  </event>
+               </listEvent>
+            </person>-->
+            
             <person xml:id="marin">
                <persName><surname>Marin</surname><addName>M.</addName></persName>
                <listEvent>
@@ -2592,9 +2622,8 @@
                   </event>
                </listEvent>
             </person>
-            <person xml:id="menginMlgr">
-               <!-- todo -->
-               <persName>Le S. Mengin à la Malgrange</persName>
+            <person xml:id="menginMlgr">               
+               <persName><surname>Mengin</surname><addName>M.</addName></persName>
             </person>
             <person xml:id="menoux">
                <persName><surname>Menoux</surname><forename>Joseph de</forename></persName>
@@ -2642,10 +2671,24 @@
                </listEvent>
             </person>
             <person xml:id="mique">
-               <persName><surname>Mique</surname><addName>M.</addName></persName>
+               <persName><surname>Mique</surname><forename>Claude</forename></persName>
                <state>
                   <p>architecte</p>
                </state>
+               <birth when="1714"/>
+               <death when="1796"/>
+               <listEvent>
+                  <event><p>Cousin de Richard Mique, architecte également</p></event>
+               </listEvent>
+            </person>
+            <person xml:id="miqueRichard">
+               <persName><surname>Mique</surname><forename>Richard</forename></persName>
+               <state>
+                  <p>architecte</p>
+               </state>               
+               <listEvent>
+                  <event><p>Cousin de Claude Mique</p></event>
+               </listEvent>
             </person>
             <person xml:id="mirebeck">
                <persName><surname>Mirebeck</surname><forename>Ignace-Frederic de</forename></persName>
@@ -2664,10 +2707,10 @@
                <persName><surname>Mittié</surname><addName>M.</addName></persName>
                <listEvent>
                   <event>
-                     <p>il a vécu à Mantes probablement sous le premier Empire</p>
+                     <p>Il a vécu à Mantes probablement sous le premier Empire</p>
                   </event>
                   <event>
-                     <p>maire de 1808 à 1831, il meurt à Blaru (78) </p>
+                     <p>maire de 1808 à 1831, il meurt à Blaru (78)</p>
                   </event>
                </listEvent>
             </person>
@@ -3249,19 +3292,7 @@
                   <p>jésuite</p>
                </state>
             </person>
-            <person xml:id="sion">
-               <persName><surname>Chaumont de la Millière</surname><forename>Dieudonné</forename></persName>
-               <birth when="1708"/>
-               <death when="1768"/>
-               <listEvent>
-                  <event>
-                     <p>oncle de l'Intendant Antoine Chaumont de la Galaizière</p>
-                  </event>
-                  <event>
-                     <p>évêque de Sion</p>
-                  </event>
-               </listEvent>
-            </person>
+            
             <person xml:id="sirejean">
                <persName><surname>Sirejean <hi rend="italic">(père)</hi></surname><addName>M.</addName></persName>
             </person>
@@ -3379,29 +3410,8 @@
                      <p>père de la reine de France Marie Leszczynska</p>
                   </event>
                </listEvent>
-            </person>
-            <person xml:id="stDiezCoadjuteur">
-               <!-- todo -->
-               <persName><persName>Coadjuteur de Saint-Dié</persName></persName>
-               <birth when="1737"/>
-               <death when="1808"/>
-               <listEvent>
-                  <event>
-                     <p>possiblement Barthélémy Louis Martin Chaumont, premier évêque de Saint Dié suite à une division du diocèse de Toul</p>
-                  </event>
-               </listEvent>
-            </person>
-            <person xml:id="stDiezComte">
-               <!-- todo renvoi ?  -->
-               <persName><surname>Chaumont de la Millière</surname><forename>Dieudonné</forename><roleName>comte de Saint-Dié</roleName></persName>
-               <birth when="1708"/>
-               <death when="1768"/>
-               <listEvent>
-                  <event>
-                     <p>grand prêvot de Saint-Dié</p>
-                  </event>
-               </listEvent>
-            </person>
+            </person>            
+            
             <person xml:id="steinbockComte">
                <persName><surname>Steinbock</surname><roleName>comte de</roleName></persName>
             </person>
@@ -3584,19 +3594,13 @@
                </listEvent>
             </person>
             <person xml:id="virionVe">
-               <persName><surname>Virion</surname><forename>Jean Claude</forename><roleName>Veuve</roleName></persName>
+               <persName><surname>Virion</surname><addName>M<hi rend="super">me</hi></addName></persName>
                <birth when="1713"/>
-               <death when="1764"/>
+               <death when="1764"/>               
                <listEvent>
                   <event>
-                     <p>Pharmacien</p>
-                  </event>
-                  <event>
-                     <p>pharmacie rue Saint-Dizier</p>
-                  </event>
-                  <event>
-                     <p>dépositaire général des eaux minérales pour Nancy</p>
-                  </event>
+                     <p>Veuve du pharmacien Jean-Claude Virion installé rue Saint-Dizier, dépositaire général des eaux minérales pour Nancy</p>
+                  </event>                                    
                </listEvent>
             </person>
             <person xml:id="vissemberg">
