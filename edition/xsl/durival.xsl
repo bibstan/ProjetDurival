@@ -37,8 +37,8 @@
                                         <li>
                                             <a href="#">Biographies</a>
                                             <ul class="vertical menu">
-                                                <li><a href="stanislas.html">Stanislas</a></li>
                                                 <li><a href="durival.html">Durival</a></li>
+                                                <li><a href="stanislas.html">Stanislas</a></li>                                                
                                             </ul>
                                         </li>
                                         <li>
@@ -101,8 +101,8 @@
                                         <li>
                                             <a href="#">Biographies</a>
                                             <ul class="vertical menu">
-                                                <li><a href="stanislas.html">Stanislas</a></li>
                                                 <li><a href="durival.html">Durival</a></li>
+                                                <li><a href="stanislas.html">Stanislas</a></li>                                                
                                             </ul>
                                         </li>
                                         <li>
@@ -215,8 +215,8 @@
                                                 <li>
                                                     <a href="#">Biographies</a>
                                                     <ul class="vertical menu">
-                                                        <li><a href="html/stanislas.html">Stanislas</a></li>
                                                         <li><a href="html/durival.html">Durival</a></li>
+                                                        <li><a href="html/stanislas.html">Stanislas</a></li>                                                        
                                                     </ul>
                                                 </li>
                                                 <li>
@@ -381,27 +381,28 @@
                         <xsl:copy-of select="$header"/>                                                                                                                                                                                               
                         <div class="row">                            
                             <div class="large-12 tabs-content" data-tabs-content="example-tabs">
-                                <div class="row">   
-                                    <div class="large-6 columns">
-                                        <div class="control">
-                                            <span>Forme originale : </span>
-                                            <div class="switch tiny">                                                        
-                                                <input class="switch-input checkbox_modern" id="modern" checked="checked" type="checkbox" name="modern"/>
-                                                <label class="switch-paddle" for="modern">                                                                
-                                                    <!--<span>Modernisation</span>-->
-                                                    <span class="switch-active" aria-hidden="true">&#160;I</span>
-                                                    <span class="switch-inactive" aria-hidden="true">O</span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>                                    
-                                    <div class="large-6 columns clearfix">
+                                <div class="row">                                                                           
+                                    <div class="large-12 columns clearfix">
                                         <ul class="tabs float-right" data-tabs="true" id="example-tabs">                                
                                             <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">transcriptions</a></li>
                                             <li class="tabs-title"><a href="#panel2">facsimilés</a></li>                                            
                                         </ul>
-                                    </div>
-                                </div>
+                                    </div>                                    
+                                    <div class="large-12 columns">
+                                        <div class="control">
+                                            <span>Transcription modernisée&#160;</span>
+                                            <div class="switch tiny">                                                        
+                                                <input class="switch-input checkbox_modern" id="modern" type="checkbox" name="modern"/>
+                                                <label class="switch-paddle" for="modern">                                                                
+                                                    <!--<span>Modernisation</span>-->
+                                                    <span class="switch-active" aria-hidden="true"/>
+                                                    <span class="switch-inactive" aria-hidden="true"/>
+                                                </label>
+                                            </div>
+                                            <span>&#160;Transcription originale</span>
+                                        </div>
+                                    </div>                                    
+                                </div>                                
                                 <div class="tabs-panel is-active" id="panel1">                                                                                 
                                     <div class="large-12 center">                            
                                         <div class="owl-carousel owl-theme">
@@ -1069,7 +1070,7 @@
                 </head>
                 <body class="text-justify">
                     <xsl:copy-of select="$header"/>                                                                                                                                                                                               
-                    <div class="row">                            
+                    <div class="row content">                            
                         <div class="large-12">
                             <h1>Personnes citées ou évoquées dans le Journal</h1>
                             <ul class="no-bullet">
@@ -1221,7 +1222,7 @@
                 </head>
                 <body class="text-justify">
                     <xsl:copy-of select="$header"/>                                                                                                                                                                                               
-                    <div class="row">                            
+                    <div class="row content">                            
                         <div class="large-12">
                             <h1>Lieux cités ou évoqués dans le Journal</h1>
                             <ul class="no-bullet">
@@ -1349,7 +1350,7 @@
                 </head>
                 <body class="text-justify">
                     <xsl:copy-of select="$header"/>                                                                                                                                                                                               
-                    <div class="row">                            
+                    <div class="row content">                            
                         <div class="large-12">
                             <h1>Institutions citées ou évoquées dans le Journal</h1>
                             <ul class="no-bullet">
@@ -1481,7 +1482,7 @@
                 </head>
                 <body class="text-justify">
                     <xsl:copy-of select="$header"/>                                                                                                                                                                                               
-                    <div class="row">                            
+                    <div class="row content">                            
                         <div class="large-12">
                             <h1>Œuvres citées ou évoquées dans le Journal</h1>
                             <ul class="no-bullet">
@@ -2300,7 +2301,7 @@
                     </head>
                     <body>
                         <xsl:copy-of select="$header"/>
-                        <div class="row">
+                        <div class="row content">
                             <div class="large-12">            
                                 <div class="container">
                                     <h1><xsl:value-of select="./tei:head[@n=1]"/></h1>
@@ -2397,7 +2398,7 @@
                 </head>
                 <body>
                     <xsl:copy-of select="$header"/>
-                    <div class="row">
+                    <div class="row content">
                         <div class="large-12">            
                             <div class="container">
                                 <h1><xsl:value-of select="./tei:head[@n=1]"/></h1>
@@ -2496,7 +2497,7 @@
                 </head>
                 <body>
                     <xsl:copy-of select="$header"/>
-                    <div class="row">
+                    <div class="row content">
                         <div class="large-12">
                             <h2 class="text-center edito2">Les focus</h2>
                             <br/>
@@ -2652,7 +2653,7 @@
                 </head>
                 <body>
                     <xsl:copy-of select="$header"/>
-                    <div class="row">
+                    <div class="row content">
                         <div class="large-12">
                             <h1>Bibliographie</h1>
                             <xsl:for-each select="./tei:listBibl">
@@ -2781,7 +2782,7 @@
                 </head>
                 <body>
                     <xsl:copy-of select="$header"/>
-                    <div class="row">
+                    <div class="row content">
                         <div class="large-12">
                             <h1>L'édition du Journal de Durival</h1>
                             <xsl:apply-templates mode="projecDesc"/>
