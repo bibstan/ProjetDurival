@@ -1071,6 +1071,7 @@
                     <xsl:copy-of select="$header"/>                                                                                                                                                                                               
                     <div class="row">                            
                         <div class="large-12">
+                            <h1>Personnes citées ou évoquées dans le Journal</h1>
                             <ul class="no-bullet">
                                 <xsl:for-each select="tei:person">
                                     <xsl:sort select="tei:persName" order="ascending" case-order="upper-first"/>
@@ -1222,6 +1223,7 @@
                     <xsl:copy-of select="$header"/>                                                                                                                                                                                               
                     <div class="row">                            
                         <div class="large-12">
+                            <h1>Lieux cités ou évoqués dans le Journal</h1>
                             <ul class="no-bullet">
                                 <xsl:for-each select="tei:place">
                                     <xsl:sort select="tei:placeName[1]" order="ascending" case-order="upper-first"/>
@@ -1349,6 +1351,7 @@
                     <xsl:copy-of select="$header"/>                                                                                                                                                                                               
                     <div class="row">                            
                         <div class="large-12">
+                            <h1>Institutions citées ou évoquées dans le Journal</h1>
                             <ul class="no-bullet">
                                 <xsl:for-each select="tei:org">
                                     <xsl:sort select="tei:orgName" order="ascending" case-order="upper-first"/>
@@ -1480,6 +1483,7 @@
                     <xsl:copy-of select="$header"/>                                                                                                                                                                                               
                     <div class="row">                            
                         <div class="large-12">
+                            <h1>Œuvres citées ou évoquées dans le Journal</h1>
                             <ul class="no-bullet">
                                 <xsl:for-each select="tei:bibl">
                                     <xsl:sort select="tei:title" order="ascending" case-order="upper-first"/>                                    
