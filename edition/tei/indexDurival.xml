@@ -3693,7 +3693,7 @@
             </person>
             <person xml:id="ministre">
                <!-- todo -->
-               <persName>ministre</persName>
+               <persName>Ministre</persName><!-- todo certainement Étienne-François, duc de Choiseul ?? -->
             </person>
             <person xml:id="thouveninFille">
                <persName><surname>Huilier</surname><addName>M<hi rend="super">me</hi></addName></persName>
