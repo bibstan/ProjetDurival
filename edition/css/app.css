@@ -4,7 +4,7 @@ body{
 
 
 
-a {
+a{
   font-weight: normal;
 }
 
@@ -16,135 +16,155 @@ a {
 
 
 /*style p de la page d'accueil*/
-.edito, .lead {
+.edito,
+.lead{
   font-family: 'Lato', Helvetica, Roboto, Arial, sans-serif;
   font-weight: 300;
   font-size: 18px;
 }
-.edito2 {
+.edito2{
   font-family: 'Lato', sans-serif;
   font-weight: 900;
 }
 /*reprise h2, h3 plus géré par foundation.css*/
-h2, h3{
+h2,
+h3{
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   color: #cc6600;
 }
 
+/* Pour la page a propos */
+.enum{
+  padding-top: 10px;
+  padding-left: 25px;
+}
+
+ul > li.enum{
+  text-indent: 5px;
+}
+
+.enum:before{
+  content: "- ";
+  text-indent: 5px;
+}
 
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\PARTIES EDITON\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
 /*font pour le texte de l'édition*/
-p {
+p{
   font-family: 'Playfair Display', Georgia, Times, serif;
 }
 
-cite, a.cite  {
+cite,
+a.cite,
+.has-tip a.cite{
   font-style: normal;
   color: #996600
 }
 
-p.note {             
+p.note{
   font-family: 'Lato', Helvetica, Roboto, Arial, sans-serif;
-  color: #555555;    font-size:0.8em;
+  color: #555555;
+  font-size: 0.8em;
 }
 
 /*.note {
     font-size:1em;
     }*/
 
-    .border-top {
-/*    border-top: 1px solid #e6e6e6;
-*/}
+.border-top{
+  /*    border-top: 1px solid #e6e6e6;
+*/
+}
 
-.day {
-  min-height:300px;
+.day{
+  min-height: 300px;
 }
 
 
 
-.has-tip {
+.has-tip{
 
   border-bottom: 1px dotted #cc6600;
 }
 
-.has-tip a {
+.has-tip a{
   color: #333333;
   border-bottom: 1px dotted #cc6600;
 }
 
-.has-tip a:hover {
+.has-tip a:hover{
   color: #cc6600
 }
 
 
-
-
-header {
-  z-index:100;
+header{
+  z-index: 100;
   background-color: #e6e6e6;
-  }
-  .index li {
-    display:inline;
-  }
-
-
-
-  li.vedette:before {
-    display: block; 
-    content: " "; 
-    margin-top: -75px; 
-    height: 75px; 
-    visibility: hidden;
-  }  
-
-/*.tabs-title {
-    border-bottom: 1px solid #e6e6e6;
-    border-left: 1px solid #e6e6e6;
-    }*/
-
-    /*Pour les illustrations dans un bloc de texte*/
-    .float-left {
-      padding: 0 10 0 0px;
-    }
-    .tabs-title{
-      background-color: #dfdac5;
-    }
-    .tabs-title > a {
-      font-family: 'Lato', Helvetica, Roboto, Arial, sans-serif;
-      font-variant: small-caps;
-
-    }
-
-
-    /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\PARTIES CARTES\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
-
-
-
-
-
-#mapid {
-  height : 100%;
-  z-index:1;
+}
+.index li{
+  display: inline;
 }
 
-.full-width {
-  width:100%;                    
+
+
+li.vedette:before{
+  display: block;
+  content: " ";
+  margin-top: -75px;
+  height: 75px;
+  visibility: hidden;
 }
 
-  .nav {
-    width:100%;
-    /*position:relative !important;/\*position et z-index pour le menu responsive*\/*/
-    z-index:1000 !important;
-  }
 
-  .nav {
-    width:100%;
-  }
-  .index li {
-    display:inline;
-  }
+/*Pour les illustrations dans un bloc de texte*/
+.float-left{
+  padding: 0 10 0 0px;
+}
+.tabs-title{
+  background-color: #dfdac5;
+}
+.tabs-title > a{
+  font-family: 'Lato', Helvetica, Roboto, Arial, sans-serif;
+  font-variant: small-caps;
+
+}
+
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\PARTIES CARTES\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+
+/*Cartes anciennes*/
+.zommify, #photo {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+
+#mapid{
+  height: 100%;
+  z-index: 1;
+}
+
+.full-width{
+  width: 100%;
+}
+
+.nav{
+  width: 100%;
+  /*position:relative !important;/\*position et z-index pour le menu responsive*\/*/
+  z-index: 1000 !important;
+}
+
+.nav{
+  width: 100%;
+}
+.index li{
+  display: inline;
+}
 
 
 /*.thumbnail  {
@@ -159,66 +179,84 @@ header {
   .thumbnail:hover, .thumbnail:focus {
     box-shadow: 0 0 6px 1px rgba(255, 102, 0, 1.0); }*/
 
-    /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\PARTIES INDEX\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\PARTIES INDEX\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 /*voir .accordion-title foundation*/
 
-a.accordion-title {
+a.accordion-title{
   color: #333333
 }
 
+/*.smallCaps {
+  font-variant: small-caps;
+}*/
 
-    /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\GESTION ILLUSTRATIONS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+.bibl{
+  padding-bottom: 10px;
+}
 
-    img.thumbnail {
-     display: inline;      
-     margin-bottom: 0;
-     width:75px;
-     border:0;
-     /*text-align:center;*/
-   }
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\GESTION ILLUSTRATIONS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
- /*Pour les illustrations dans un bloc de texte*/
-   .float-left {              
-    padding: 0 10 0 0px;
-  }
+img.thumbnail{
+  display: inline;
+  margin-bottom: 0;
+  width: 75px;
+  border: 0;
+  /*text-align:center;*/
+}
+
+/*Pour les illustrations dans un bloc de texte*/
+.float-left{
+  padding: 0 10 0 0px;
+}
 
 /*images en vignettes en marge du texte*/
-  a.miniatures { 
-    display: inline-block;
-    line-height: 0;
-    max-width: 100%;
-    transition: box-shadow 200ms ease-out;
-    border-radius: 500px;
-    margin-bottom: 1rem;    
-    width:75px;
-  }
-
-  a.miniatures:hover, a.miniatures:focus {
-    border-radius: 500px;
-    box-shadow: 0 0 20px px rgba(255, 102, 0, 1.0); 
-  }
-
-  a img:hover, a img:focus { /*images cliquables rondes*/
-    border-radius: 500px;
-    box-shadow: 0 0 20px 1px rgba(255, 102, 0, 1.0); }
-
-    /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\FOOTER\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
-
-
-    .footer {
-      /*    background-image: url("../images/fonds/fond2.png");*/
-      color: #cc6600;
-      padding:25 10 10 0px;
-    }
-
-.control {
-    padding:5px;
+a.miniatures{
+  display: inline-block;
+  line-height: 0;
+  max-width: 100%;
+  transition: box-shadow 200ms ease-out;
+  border-radius: 500px;
+  margin-bottom: 1rem;
+  width: 75px;
+}
+/*images cliquables rondes grandesNE FONCTIONNE PAS A REVOIR*/
+a.vignettes:hover,
+a.vignettes:focus{
+  border-radius: 500px;
+  box-shadow: 0 0 20px px rgba(255, 102, 0, 1.0);
+}
+/*images cliquables rondes marges*/
+a.miniatures img:hover,
+a.miniatures img:focus{
+  border-radius: 500px;
+  box-shadow: 0 0 20px 1px rgba(255, 102, 0, 1.0);
 }
 
-.control span {
-    vertical-align: top;
+
+a.focus img:hover,
+a.focus img:focus{ /*images cliquables focus*/
+  border-radius: 0px;
+  box-shadow: 0 0 20px 1px rgba(255, 102, 0, 1.0);
 }
 
-.switch {
-    display:inline;    
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\FOOTER\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+img.logo{
+  border-radius:3px;
+  /*box-shadow: 1px 1px 1px #cc6600;*/
+}
+
+.menu > li.logo > a {
+display: block;
+padding: 0;
+line-height: 1;
+}
+
+li.logo {
+  padding:2px;
+}
+.footer{
+  background-image: url("../images/fonds/fond2.png");
+  color: #cc6600;
+  padding: 25 10 10 0px;
 }
