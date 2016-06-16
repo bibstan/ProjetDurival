@@ -27,12 +27,12 @@
           <graphic mimeType="image/jpeg" url="2003-11-2_PM"/>
           <desc>Anonyme, Vue de la place de la Carrière depuis l'Intendance. Gouache, vers 1760. Inv. 2003.11.2. © Musée Lorrain, Nancy / Photo P. Mignot</desc>
         </figure>
-        <figure xml:id="picture17650505A" type="civil">
-          <!--<ref type="picture" target="#picture17650505A"/>-->
+        <figure xml:id="picture17650502A" type="civil">
+          <!--<ref type="picture" target="#picture17650502A"/>-->
           <graphic mimeType="image/jpeg" url="B543956101_G_FG_ES_00003"/>
           <desc>Médaillons qui sont aux quatre faces du pied d'estal de la figure de Louis XV</desc>
         </figure>
-        <figure xml:id="picture17650109A" type="civil">
+        <figure xml:id="picture17650109A" type="civil"><!-- TODO --> 
           <!--<ref type="picture" target="#picture17650109A"/>-->
           <graphic mimeType="image/jpeg" url="B543956101_M_FG_ES_00036"/>
           <desc>Deruet, Le palais ducal. mi XVIIe</desc>
@@ -58,7 +58,7 @@
           <desc>Hôtel de ville.</desc>
         </figure>
         <figure xml:id="picture17660815C" type="civil">
-          <!--<ref type="picture" target="#picture17660815C"/>-->
+          <!--<ref type="picture" target="#picture17660815C"/>--><!-- TODO pas trouvé--> 
           <graphic mimeType="image/jpeg" url="B543956101_P_FG_ES_00093"/>
           <desc>Hôtel des fermes et hôtel de Mr Alliot.</desc>
         </figure>
@@ -67,8 +67,8 @@
           <graphic mimeType="image/jpeg" url="B543956101_P_FG_ES_00094"/>
           <desc>Pavillon du Sieur Jacquet et pavillon de la Comédie</desc>
         </figure>
-        <figure xml:id="picture17650502A" type="civil">
-          <!--<ref type="picture" target="#picture17650502A"/>-->
+        <figure xml:id="picture17650502B" type="civil">
+          <!--<ref type="picture" target="#picture17650502A"/>--><!-- TODO vérif déjà une autre occurence--> 
           <graphic mimeType="image/jpeg" url="B543956101_P_FG_ES_00095"/>
           <desc>Guibal, Vue orientale de la statue de Louis XV</desc>
         </figure>
@@ -78,7 +78,7 @@
           <desc>Intendance. Sans date</desc>
         </figure>
         <figure xml:id="picture17660101A" type="civil">
-          <!--<ref type="picture" target="#picture17660101A"/>-->
+          <!--<ref type="picture" target="#picture17660101A"/>--><!-- TODO -->
           <graphic mimeType="image/jpeg" url="B543956101_P-PI-ES-00007A"/>
           <desc>Nouvelle construction de pompe tel que l'on s'en sert dans les Châteaux du roi. 1765</desc>
         </figure>
@@ -97,7 +97,7 @@
           <graphic mimeType="image/jpeg" url="B543956101_P_FG_ES_00071"/>
           <desc>Dominique Collin, Vue méridionale de la Carrière de Nancy</desc>
         </figure>
-        <figure xml:id="picture17650502B" type="dominiqueCollin">
+        <figure xml:id="picture17650502C" type="dominiqueCollin">
           <!--<ref type="picture" target="#picture17650502B"/>-->
           <graphic mimeType="image/jpeg" url="B543956101_P_FG_ES_00097"/>
           <desc>Dominique Collin, Statue de Louis XV... 1756</desc>
@@ -114,48 +114,49 @@
         </figure>
         <figure xml:id="picture17660427A" type="dominiqueCollin">
           <!--<ref type="picture" target="#picture17660427A"/>-->
-          <graphic mimeType="image/jpeg" url="B543956101_TS21_Dominique Collin_0006"/>
+          <graphic mimeType="image/jpeg" url="B543956101_TS21_COLLIN_0006"/>
           <desc>Dominique Collin, Face extérieure de la Porte Saint-Jean. 1762.</desc>
         </figure>
         <figure xml:id="picture17660915A" type="dominiqueCollin">
           <!--<ref type="picture" target="#picture17660915A"/>-->
-          <graphic mimeType="image/jpeg" url="B543956101_TS21_Dominique Collin_0009"/>
+          <graphic mimeType="image/jpeg" url="B543956101_TS21_COLLIN_0009"/>
           <desc>Dominique Collin, Mausolée de Stanislas le Bienfaisant pour l'église Saint-Roch le 26 mai 1766 (modèle de Girardet)</desc>
         </figure>
         <figure xml:id="picture17650101C" type="dominiqueCollin">
           <!--<ref type="picture" target="#picture17650101C"/>-->
-          <graphic mimeType="image/jpeg" url="B543956101_TS21_Dominique Collin_0015"/>
+          <graphic mimeType="image/jpeg" url="B543956101_TS21_COLLIN_0015"/>
           <desc>Dominique Collin, Construction du quartier royal des casernes de Nancy.</desc>
         </figure>
         <figure xml:id="picture17660825C" type="dominiqueCollin">
           <!--<ref type="picture" target="#picture17660825C"/>-->
-          <graphic mimeType="image/jpeg" url="B543956101_TS21_Dominique Collin_0017"/>
+          <graphic mimeType="image/jpeg" url="B543956101_TS21_COLLIN_0017"/>
           <desc>Dominique Collin, Vue méridionale de la place royale de Nancy</desc>
         </figure>
         <figure xml:id="picture17650818A" type="dominiqueCollin">
           <!--<ref type="picture" target="#picture17650818A"/>-->
-          <graphic mimeType="image/jpeg" url="B543956101_TS21_Dominique Collin_0018"/>
+          <graphic mimeType="image/jpeg" url="B543956101_TS21_COLLIN_0018"/>
           <desc>Dominique Collin, Vue de la fontaine royale, dans la forêt de Commercy</desc>
         </figure>
         <figure xml:id="picture17661101A" type="dominiqueCollin">
           <!--<ref type="picture" target="#picture17661101A"/>-->
-          <graphic mimeType="image/jpeg" url="B543956101_TS21_Dominique Collin_0019"/>
+          <graphic mimeType="image/jpeg" url="B543956101_TS21_COLLIN_0019"/>
           <desc>Dominique Collin, Vue de la place d'Alliance de Nancy. 1760</desc>
         </figure>
         <figure xml:id="picture17660511A" type="dominiqueCollin">
-          <!--<ref type="picture" target="#picture17660511A"/>-->
-          <graphic mimeType="image/jpeg" url="B543956101_TS21_Dominique Collin_0024"/>
+          <!--<ref type="picture" target="#picture17660511A"/>--><!-- TODO -->
+          <graphic mimeType="image/jpeg" url="B543956101_TS21_COLLIN_0024"/>
           <desc>Dominique Collin, Frontispice du recueil des Fondations</desc>
         </figure>
         <figure xml:id="picture17660624A" type="dominiqueCollin">
           <!--<ref type="picture" target="#picture17660624A"/>-->
-          <graphic mimeType="image/jpeg" url="B543956101_TS21_Dominique Collin_0032"/>
+          <graphic mimeType="image/jpeg" url="B543956101_TS21_COLLIN_0032"/>
           <desc>Dominique Collin, Petite foire Saint-Jean</desc>
         </figure>
         <figure xml:id="picture17650715A" type="dominiqueCollin">
           <!--<ref type="picture" target="#picture17650715A"/>-->
-          <graphic mimeType="image/jpeg" url="B543956101_TS21_Dominique Collin_0035"/>
+          <graphic mimeType="image/jpeg" url="B543956101_TS21_COLLIN_0035"/>
           <desc>Dominique Collin, Face intérieure de la face intérieur de la Porte Saint-Nicolas de Nancy</desc>
+<!--          TODO répétition dans desc-->
         </figure>
         <figure xml:id="picture17650606A" type="eglise">
           <!--<ref type="picture" target="#picture17650606A"/>-->
@@ -268,11 +269,11 @@
           <desc>Emmanuel Héré, Façade colatéralle de la Place royale de Nancy. Recueil de plans... 1756.</desc>
         </figure>
         <figure xml:id="picture17660408C" type="emmanuelHere">
-          <!--<ref type="picture" target="#picture17660408C"/>-->
+          <!--<ref type="picture" tarpicture17650502Dget="#picture17660408C"/>-->
           <graphic mimeType="image/jpeg" url="B543956101R00028-3-00011"/>
           <desc>Emmanuel Héré, Élévation ... d'une grille et fontaine... Recueil de plans... 1756.</desc>
         </figure>
-        <figure xml:id="picture17650502C" type="emmanuelHere">
+        <figure xml:id="picture17650502D" type="emmanuelHere">
           <!--<ref type="picture" target="#picture17650502C"/>-->
           <graphic mimeType="image/jpeg" url="B543956101R00028-3-00012"/>
           <desc>Emmanuel Héré, Statue de Louis XV... Recueil de plans... 1756.</desc>
@@ -364,22 +365,22 @@
           <desc>Vue et perspective de la porte Saint-Nicolas. XVIe</desc>
         </figure>
         <figure xml:id="picture17660307A" type="porte">
-          <!--<ref type="picture" target="#picture17660307A"/>-->
+          <!--<ref type="picture" target="#picture17660307A"/>--><!--TODO emplacement dans texte-->
           <graphic mimeType="image/jpeg" url="B543956101_P_FG_ES_00516"/>
           <desc>Fagonde, Porte Notre-Dame. FIn XIXe</desc>
         </figure>
         <figure xml:id="picture17660307B" type="porte">
-          <!--<ref type="picture" target="#picture17660307B"/>-->
+          <!--<ref type="picture" target="#picture17660307B"/>--><!--TODO emplacement dans texte-->
           <graphic mimeType="image/jpeg" url="B543956101M001861_0001"/>
           <desc>Guibal, Porte Notre-Dame. 1832</desc>
         </figure>
         <figure xml:id="picture17660307C" type="porte">
-          <!--<ref type="picture" target="#picture17660307C"/>-->
+          <!--<ref type="picture" target="#picture17660307C"/>--><!--TODO emplacement dans texte-->
           <graphic mimeType="image/jpeg" url="B543956101M001861_0002"/>
           <desc>Guibal, Porte Notre-Dame. 1831</desc>
         </figure>
         <figure xml:id="picture17650209A" type="porte">
-          <!--<ref type="picture" target="#picture17650209A"/>-->
+          <!--<ref type="picture" target="#picture17650209A"/>--><!--TODO emplacement dans texte-->
           <graphic mimeType="image/jpeg" url="B543956101M001861_0003"/>
           <desc>Guibal, Porte Notre-Dame. 1839</desc>
         </figure>
@@ -391,7 +392,7 @@
         <figure xml:id="picture17650128B" type="portrait">
           <!--<ref type="picture" target="#picture17650128B"/>-->
           <graphic mimeType="image/jpeg" url="95-531_PM"/>
-          <desc>Anonyme, Emmanuel Emmanuel Héré, premier architecte de Stanislas, Huile sur toile, vers 1760. Inv. 95.531. © Musée Lorrain, Nancy / Photo P. Mignot</desc>
+          <desc>Anonyme, Emmanuel Héré, premier architecte de Stanislas, Huile sur toile, vers 1760. Inv. 95.531. © Musée Lorrain, Nancy / Photo P. Mignot</desc>
         </figure>
         <figure xml:id="picture17650703B" type="portrait">
           <!--<ref type="picture" target="#picture17650703B"/>-->
@@ -419,7 +420,7 @@
           <desc>Élévation de l'aile des officiers de la Malgrange. Dessin</desc>
         </figure>
         <figure xml:id="picture17660224B" type="residence">
-          <!--<ref type="picture" target="#picture17660224B"/>-->
+          <!--<ref type="picture" target="#picture17660224B"/>--><!--TODO emplacement texte-->
           <graphic mimeType="image/jpeg" url="B543956101_H-PI-DE-00007A"/>
           <desc>Plan du château d'Einville</desc>
         </figure>
