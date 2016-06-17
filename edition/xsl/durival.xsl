@@ -972,6 +972,10 @@
         </xsl:choose>                
     </xsl:template>
     
+    <xsl:template match="tei:front//tei:title">
+        <cite><xsl:apply-templates/></cite>
+    </xsl:template>
+    
     <xsl:template match="tei:div[@type='transcription']//tei:rs[@type='bibl']">
         <xsl:variable name="ref" select="@ref"/>
         <xsl:variable name="id" select="substring-after(@ref,'#')"/>
@@ -1020,7 +1024,9 @@
         </xsl:choose>
     </xsl:template>
     
-    <xsl:template match="tei:addName[@type='say']"><!-- todo prévoir pour les femmes -->
+    <xsl:template match="tei:addName[@type='say']">
+        <xsl:if test="preceding-sibling::tei:addName[1]"><xsl:text>, </xsl:text></xsl:if>
+        <xsl:text>dit &#171;&#160;</xsl:text><xsl:apply-templates/><xsl:text>&#160;&#187;</xsl:text>
     </xsl:template>
     
     <xsl:template match="tei:birth | tei:death">
@@ -2663,7 +2669,7 @@
                                         <h2 class="edito2">Bibliographie générale</h2>
                                         <ul class="no-bullet">
                                             <xsl:for-each select=".//tei:biblStruct">
-                                                <xsl:sort select=".[descendant::tei:author]//tei:author[1] | .[not(descendant::tei:author)]//tei:title[1]" order="ascending"/>                                    
+                                                <xsl:sort select=".[descendant::tei:author]//tei:author[1]/tei:surname | .[not(descendant::tei:author)]//tei:title[1]"  order="ascending"/>                                    
                                                 <li class="bibl">
                                                     <xsl:apply-templates select="." mode="bibl"/>
                                                 </li>
@@ -2674,7 +2680,7 @@
                                         <h2 class="edito2">Ouvrages de Nicolas Durival</h2>
                                         <ul class="no-bullet">
                                             <xsl:for-each select=".//tei:biblStruct">
-                                                <xsl:sort select=".[descendant::tei:author]//tei:author[1] | .[not(descendant::tei:author)]//tei:title[1]" order="ascending"/>                                    
+                                                <xsl:sort select=".[descendant::tei:author]//tei:author[1]/tei:surname | .[not(descendant::tei:author)]//tei:title[1]" order="ascending"/>                                    
                                                 <li class="bibl">
                                                     <xsl:apply-templates select="." mode="bibl"/>
                                                 </li>
@@ -2685,7 +2691,7 @@
                                         <h2 class="edito2">Ouvrages cités dans le Journal de Durival</h2>
                                         <ul class="no-bullet">
                                             <xsl:for-each select=".//tei:biblStruct">
-                                                <xsl:sort select=".[descendant::tei:author]//tei:author[1] | .[not(descendant::tei:author)]//tei:title[1]" order="ascending"/>                                    
+                                                <xsl:sort select=".[descendant::tei:author]//tei:author[1]/tei:surname | .[not(descendant::tei:author)]//tei:title[1]" order="ascending"/>                                    
                                                 <li class="bibl">
                                                     <xsl:apply-templates select="." mode="bibl"/>
                                                 </li>
