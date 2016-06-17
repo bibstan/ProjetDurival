@@ -150,7 +150,7 @@
             <div class="large-4 medium-12 columns">
                 <div class="row edito">
                     <div class="small-6 columns">
-                        Bibliothèques de Nancy <br />43, rue Stanislas <br />54 000 Nancy <br /> &#x260E; 03 83 87 38 83 
+                        Bibliothèques&#160;de&#160;Nancy<br />43,&#160;rue&#160;Stanislas<br />54&#160;000&#160;Nancy<br />&#x260E; 03 83 87 38 83 
                     </div>
                     <div class="small-6 columns">
                         <a class="float-right" href="mailto:bibliotheque@nancy.fr">Contact</a>
@@ -305,7 +305,7 @@
                     <div class="large-4 medium-12 columns">
                         <div class="row edito">
                             <div class="small-6 columns">
-                                Bibliothèques de Nancy <br />43, rue Stanislas <br />54 000 Nancy <br /> &#x260E; 03 83 87 38 83
+                                Bibliothèques&#160;de&#160;Nancy<br />43,&#160;rue&#160;Stanislas<br />54&#160;000&#160;Nancy<br />&#x260E; 03 83 87 38 83
                             </div>
                             <div class="small-6 columns">
                                 <a class="float-right" href="mailto:bibliotheque@nancy.fr">Contact</a>
