@@ -2759,7 +2759,71 @@
                     <div class="row content">
                         <div class="large-12">
                             <h1>Galerie</h1>
-                            <xsl:for-each-group select="tei:figure" group-by="@type">                                
+                            <h2 class="edito">Portraits</h2>
+                            <xsl:for-each select="tei:figure[@type='portrait']">
+                                <xsl:variable name="picture" select="./tei:graphic/@url"/>
+                                <xsl:variable name="cartel" select="./tei:desc"/>
+                                <a class="miniatures" href="../images/illustrations/{$picture}.jpg" data-lightbox="{@type}" data-title="{$cartel}">
+                                    <img src="../images/illustrations/thumbs/T{$picture}.png" alt="{$cartel}"/>
+                                </a>
+                            </xsl:for-each>
+                            <h2 class="edito">Oeuvres de Emmanuel Héré, architecte du roi</h2>
+                            <xsl:for-each select="tei:figure[@type='emmanuelHere']">
+                                <xsl:variable name="picture" select="./tei:graphic/@url"/>
+                                <xsl:variable name="cartel" select="./tei:desc"/>
+                                <a class="miniatures" href="../images/illustrations/{$picture}.jpg" data-lightbox="{@type}" data-title="{$cartel}">
+                                    <img src="../images/illustrations/thumbs/T{$picture}.png" alt="{$cartel}"/>
+                                </a>
+                            </xsl:for-each>
+                            <h2 class="edito">Oeuvres de Dominique Collin, graveur du roi</h2>
+                            <xsl:for-each select="tei:figure[@type='dominiqueCollin']">
+                                <xsl:variable name="picture" select="./tei:graphic/@url"/>
+                                <xsl:variable name="cartel" select="./tei:desc"/>
+                                <a class="miniatures" href="../images/illustrations/{$picture}.jpg" data-lightbox="{@type}" data-title="{$cartel}">
+                                    <img src="../images/illustrations/thumbs/T{$picture}.png" alt="{$cartel}"/>
+                                </a>
+                            </xsl:for-each>
+                            <h2 class="edito">Édifices civils</h2>
+                            <xsl:for-each select="tei:figure[@type='civil']">
+                                <xsl:variable name="picture" select="./tei:graphic/@url"/>
+                                <xsl:variable name="cartel" select="./tei:desc"/>
+                                <a class="miniatures" href="../images/illustrations/{$picture}.jpg" data-lightbox="{@type}" data-title="{$cartel}">
+                                    <img src="../images/illustrations/thumbs/T{$picture}.png" alt="{$cartel}"/>
+                                </a>
+                            </xsl:for-each>
+                            <h2 class="edito">Édifices religieux</h2>
+                            <xsl:for-each select="tei:figure[@type='eglise']">
+                                <xsl:variable name="picture" select="./tei:graphic/@url"/>
+                                <xsl:variable name="cartel" select="./tei:desc"/>
+                                <a class="miniatures" href="../images/illustrations/{$picture}.jpg" data-lightbox="{@type}" data-title="{$cartel}">
+                                    <img src="../images/illustrations/thumbs/T{$picture}.png" alt="{$cartel}"/>
+                                </a>
+                            </xsl:for-each>
+                            <h2 class="edito">Édifices militaires</h2>
+                            <xsl:for-each select="tei:figure[@type='porte'] | tei:figure[@type='militaire']">
+                                <xsl:variable name="picture" select="./tei:graphic/@url"/>
+                                <xsl:variable name="cartel" select="./tei:desc"/>
+                                <a class="miniatures" href="../images/illustrations/{$picture}.jpg" data-lightbox="{@type}" data-title="{$cartel}">
+                                    <img src="../images/illustrations/thumbs/T{$picture}.png" alt="{$cartel}"/>
+                                </a>
+                            </xsl:for-each>
+                            <h2 class="edito">Livres</h2>
+                            <xsl:for-each select="tei:figure[@type='livre']">
+                                <xsl:variable name="picture" select="./tei:graphic/@url"/>
+                                <xsl:variable name="cartel" select="./tei:desc"/>
+                                <a class="miniatures" href="../images/illustrations/{$picture}.jpg" data-lightbox="{@type}" data-title="{$cartel}">
+                                    <img src="../images/illustrations/thumbs/T{$picture}.png" alt="{$cartel}"/>
+                                </a>
+                            </xsl:for-each>
+                            <h2 class="edito">Résidences</h2>
+                            <xsl:for-each select="tei:figure[@type='luneville'] | tei:figure[@type='residence']">
+                                <xsl:variable name="picture" select="./tei:graphic/@url"/>
+                                <xsl:variable name="cartel" select="./tei:desc"/>
+                                <a class="miniatures" href="../images/illustrations/{$picture}.jpg" data-lightbox="{@type}" data-title="{$cartel}">
+                                    <img src="../images/illustrations/thumbs/T{$picture}.png" alt="{$cartel}"/>
+                                </a>
+                            </xsl:for-each>
+                            <!--<xsl:for-each-group select="tei:figure" group-by="@type">                                
                                     <div>
                                         <xsl:choose>
                                             <xsl:when test="@type='portrait'">
@@ -2772,13 +2836,13 @@
                                                 <h2 class="edito">Édifices militaires</h2>
                                             </xsl:when>
                                             <xsl:when test="@type='eglise'">
-                                                <h2 class="edito">Église</h2>
+                                                <h2 class="edito">Édifices religieux</h2>
                                             </xsl:when>
                                             <xsl:when test="@type='dominiqueCollin'">
-                                                <h2 class="edito">Dominique Collin</h2>
+                                                <h2 class="edito">Oeuvres de Dominique Collin, graveur du roi</h2>
                                             </xsl:when>                                            
                                             <xsl:when test="@type='emmanuelHere'">
-                                                <h2 class="edito">Emmanuel Héré</h2>
+                                                <h2 class="edito">Oeuvres de Emmanuel Héré, architecte du roi</h2>
                                             </xsl:when>
                                             <xsl:when test="@type='livre'">
                                                 <h2 class="edito">Livres</h2>
@@ -2801,7 +2865,7 @@
                                             </a>
                                         </xsl:for-each>
                                     </div>                                                                                                    
-                            </xsl:for-each-group>                            
+                            </xsl:for-each-group>-->                            
                         </div>
                     </div>
                     <!-- FOOTER -->

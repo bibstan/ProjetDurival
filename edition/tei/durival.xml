@@ -2875,7 +2875,7 @@
                         <p xml:id="d1765052601" ana="#fetes"> Aujourd'hui, fête de la Pentecôte,
                               <persName ref="#mareil">M. l'abbé
                               <lb/>de Mareil</persName>, a été sacré &eé;vêque de Sion,
-                           <lb/>par <persName ref="#archBesancon">M. l'archevêque de
+                           <lb/>par <persName ref="#choiseulCdl">M. l'archevêque de
                               Besançon</persName>, <persName ref="#eveqMetz">M. l'&eé;v&eê;que
                               <lb/>de <choice>
                                  <orig>Mets</orig>
@@ -10587,7 +10587,7 @@
                            <lb/>incendiés on a fait une délibération qui accorde
                            <lb/><measure type="currency" quantity="300" unit="lF">300<hi
                                  rend="super">#.</hi> de France</measure> par année au <persName
-                              ref="#becher">S. Bécher</persName>, receveur
+                              ref="#bechet">S. Béchet</persName>, receveur
                            <lb/>de la fondation ; r&éè;gle que les comptes seront
                            <lb/>rendus chaque année dans le 15 premiers
                            <lb/>jours de mai ; et que les drogues seront
@@ -10959,7 +10959,7 @@
                               <reg>apparence</reg>
                            </choice>
                            <lb/>que <rs type="person" ref="#durivalJean">mon fr&eè;re</rs>
-                           remplacera auprès du <rs type="person" ref="#ministre">ministre</rs>.
+                           remplacera auprès du <rs type="person" ref="#choiseul">ministre</rs>.
                         </p>
                      </div>
                      <div type="day" xml:id="d17660511">
@@ -11266,7 +11266,7 @@
                               <lb/>nous <choice>
                                  <orig>supléer</orig>
                                  <reg>suppléer</reg>
-                              </choice> auprès du <rs type="person" ref="#ministre"
+                              </choice> auprès du <rs type="person" ref="#choiseul"
                               >ministre</rs></q>
                         </p>
                         <p xml:id="d1766052403" ana="#bio">
@@ -11773,7 +11773,7 @@
                            <lb/>que les cours &eé;t&oa;ient en diligence là dessus,
                            <lb/>et que des députés de corps particuliers
                            <lb/>ser&oa;ient mal reçus. Qu'il av&oa;it &eé;crit à <persName
-                              ref="#stainvilleFrere">son fr&eè;re</persName> &etc;. </p>
+                              ref="#choiseul">son fr&eè;re</persName> &etc;. </p>
                      </div>
                      <pb facs="B543956101M00863_06_0142_2R" n="139"/>
                      <fw type="pageNum" n="139" place="topRight">139</fw>
@@ -13213,7 +13213,7 @@
                            <lb/>du commandant du corps et des officiers
                            <lb/>majors persuadés de la nécessité d'un exemple.
                            <lb/>On a &eé;crit à la Cour et il est arrivé une
-                           <lb/>lettre du <rs type="person" ref="#ministre">ministre</rs> sur
+                           <lb/>lettre du <rs type="person" ref="#choiseul">ministre</rs> sur
                            laquelle on a tenu
                            <lb/>aujourd'hui un nouveau conseil de guerre.
                            <lb/>Les deux d&eé;serteurs ont eu aujourdhui
@@ -13995,7 +13995,7 @@
                                  ref="#gautier">Gautier</persName></del>
                            <persName ref="#coster">Coster</persName>, <persName ref="#thibault"
                               >Thibault</persName>,
-                           <lb/><persName ref="#montignot">Montignot</persName>
+                           <lb/><persName ref="#abbeMontignot">Montignot</persName>
                            <space/>
                            <lb/><persName ref="#gandoger">Gandoger</persName>, <persName
                               ref="#francoisJeanCharles">François</persName>. Le public a paru
