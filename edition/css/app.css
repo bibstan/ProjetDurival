@@ -144,15 +144,21 @@ li.vedette:before{
     padding:10px;
 }
 
+.timeline-event-content ul {
+  min-height:400px;
+}
+
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\PARTIES CARTES\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
 
 /*Cartes anciennes*/
 .zommify, #photo {
   width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
+  height: 94%;
+  /*padding: 0;
+  margin: 0;*/
+  display:block;
+  
 }
 
 
@@ -169,11 +175,9 @@ li.vedette:before{
   width: 100%;
   /*position:relative !important;/\*position et z-index pour le menu responsive*\/*/
   z-index: 1000 !important;
+  display:block;
 }
 
-.nav{
-  width: 100%;
-}
 .index li{
   display: inline;
 }

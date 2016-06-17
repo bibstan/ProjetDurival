@@ -17,6 +17,10 @@
     <text>
         <body>
             <div type="pictures" xml:id="picturesDurival">
+              <figure xml:id="pictureDurival" type="portrait">                
+                <graphic url="M0514_39-22-2_b_MBo"/><!-- todo cartel musée ? -->
+                <desc>Dominique Collin, portrait de Nicolas Durival.</desc>
+              </figure>
         <figure xml:id="picture17650101A" type="militaire">
           <!--<ref type="picture" target="#picture17650101A"/>-->
           <graphic url="B543956101_TS21_COLLIN_0015"/>
@@ -78,7 +82,7 @@
           <desc>Intendance. Sans date</desc>
         </figure>
         <figure xml:id="picture17660101A" type="civil">
-          <!--<ref type="picture" target="#picture17660101A"/>--><!-- TODO -->
+          <!--<ref type="picture" target="#picture17660101A"/>--><!-- TODO --><!-- plus manque illustration -->
           <graphic mimeType="image/jpeg" url="B543956101_P-PI-ES-00007A"/>
           <desc>Nouvelle construction de pompe tel que l'on s'en sert dans les Châteaux du roi. 1765</desc>
         </figure>
@@ -122,7 +126,7 @@
           <graphic mimeType="image/jpeg" url="B543956101_TS21_COLLIN_0009"/>
           <desc>Dominique Collin, Mausolée de Stanislas le Bienfaisant pour l'église Saint-Roch le 26 mai 1766 (modèle de Girardet)</desc>
         </figure>        
-        <figure xml:id="picture17660825C" type="dominiqueCollin">
+        <figure xml:id="picture17660825C" type="dominiqueCollin"><!-- manque thumb -->
           <!--<ref type="picture" target="#picture17660825C"/>-->
           <graphic mimeType="image/jpeg" url="B543956101_TS21_COLLIN_0017"/>
           <desc>Dominique Collin, Vue méridionale de la place royale de Nancy</desc>
@@ -158,11 +162,11 @@
           <graphic mimeType="image/jpeg" url="B543956101_G_TS_DE_00004"/>
           <desc>Gircourt, [Primatiale] Élévation de la façade. Projet de monsieur l’Abbé Dumolart pour un troisième ordre en supprimant le fronton qui couronne le second ordre</desc>
         </figure>
-        <figure xml:id="picture17650627A" type="eglise">
-          <!--<ref type="picture" target="#picture17650627A"/>-->
+              <!--Doublon voir au dessus picture17650606A <figure xml:id="picture17650627A" type="eglise">
+          <!-\-<ref type="picture" target="#picture17650627A"/>-\->
           <graphic mimeType="image/jpeg" url="B543956101_G_TS_DE_00004"/>
           <desc>Elévation de la façade [de la Primatiale]. Dessin. 1734.</desc>
-        </figure>
+        </figure>-->
         <figure xml:id="picture17650814A" type="eglise">
           <!--<ref type="picture" target="#picture17650814A"/>-->
           <graphic mimeType="image/jpeg" url="B543956101_P_FG_ES_00217"/>
@@ -324,12 +328,12 @@
           <graphic mimeType="image/jpeg" url="B543656101_H-TS-DE-00020B"/>
           <desc>Plan de masse d'un hôpital militaire projeté à faire à Nancy... 1766. Dessin.</desc>
         </figure>
-        <figure xml:id="picture17660915D" type="militaire">
-          <!--<ref type="picture" target="#picture17660915D"/>-->
+              <!-- Doublon voir au dessus picture17660915C <figure xml:id="picture17660915D" type="militaire"><!-\- double -\->
+          <!-\-<ref type="picture" target="#picture17660915D"/>-\->
           <graphic mimeType="image/jpeg" url="B543656101_H-TS-DE-00020B"/>
           <desc>Plan de masse de l'hôpital militaire. 1766</desc>
-        </figure>
-        <figure xml:id="picture17660915E" type="militaire">
+        </figure>-->
+        <figure xml:id="picture17660915E" type="militaire"><!-- Manque illustration -->
           <!--<ref type="picture" target="#picture17660915E"/>-->
           <graphic mimeType="image/jpeg" url="B543656101_H-TS-DE-00022B"/>
           <desc>Élévation et coupe de l'hôpital militaire. 1767</desc>

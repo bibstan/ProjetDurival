@@ -1,3 +1,9 @@
+/*============= modif chevauchement ===========*/
+
+.timeline-event-content ul {
+  min-height:400px;
+}
+
 /* ============ TIMELINER.JS ============= */
 .timeline-container {
   /*border-left: 2px solid #ccc;*/

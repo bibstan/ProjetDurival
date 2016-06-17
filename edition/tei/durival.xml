@@ -107,7 +107,7 @@
                   <item>Directeur de la publication&#160;: Juliette Lenoir, directrice des Bibliothèques de Nancy</item>
                   <item>Responsabilité scientifique&#160;: <persName>Claire Haquet</persName>, <persName>Malik Diallo</persName></item>
                   <item>Coordination scientifique et technique, maquette (réalisation des CSS)&#160;: <persName>Éric Nunes</persName></item>
-                  <item>Transcription, encodage (1765-1766), feuilles de styles XSLT&#160;: <persName>Josselin Morvan</persName> (diplômé du master "technologies numériques appliquées à l'histoire" de l'École des Chartes)</item>
+                  <item>Transcription, encodage (1765-1766), feuilles de styles XSLT&#160;: <persName>Josselin Morvan</persName></item>
                   <item>Index et bibliographies&#160;: équipe du patrimoine des Bibliothèques de Nancy, étudiants de M. <persName>Jalabert</persName> de l'<orgName>Université Lorraine</orgName> (<persName>Élodie Réot</persName> , <persName>Louise Engler</persName>, <persName>Jules Rawolle</persName>, <persName>Gaëtan Barbier</persName>, <persName>Alexandre Brignon</persName>, <persName>Pierre Valentin</persName>), une partie des notes historiques a été réalisée par <persName>Sara Nadal</persName>.</item>
                </list>
             </p>
@@ -115,7 +115,7 @@
                <hi>Remerciements</hi> M. <persName>Christian Hénard</persName>, "précurseur" dans l'étude et la transcription du <title>Journal</title> dont les conseils et les notes nous sont d'une grande aide. </p>
             <p>
                <hi>Techniques</hi>
-               <lb/>Le site est en HTML, chaque page est générée par le biais d'une feuilles de style XSLT. Il est conçu sur la base du framework <ref type="externalLink" target="http://foundation.zurb.com/">Foundation 6</ref> (personnalisé). <lb/>Plusieurs bibliothèques javascript sont utilisées&#160;: <list>
+               <lb/>Le site est en HTML, chaque page est générée par le biais d'une feuilles de style XSLT. Il est conçu sur la base du framework <ref type="externalLink" target="http://foundation.zurb.com/">Foundation 6</ref> (personnalisé). Il est consultable à partir d'une tablette et compatible avec les dernières versions des navigateurs web. <lb/>Plusieurs bibliothèques javascript sont utilisées&#160;: <list>
                   <!--a reprendre -->
                   <item><ref type="externalLink" target="http://www.owlcarousel.owlgraphic.com/">OWLcarousel.js</ref> pour le slider du journal;</item>
                   <item><ref type="externalLink" target="https://technotarek.com/timeliner/">Timeliner.js</ref> pour certaines biographies et l'accès calendaire;</item>
@@ -230,6 +230,7 @@
                      <div>
                         <head xml:id="durivalBio1" n="3">Nicolas Durival</head>
                         <p>
+                           <graphic url="focus/durival/vignetteM0514_39-22-2_b_MBo"/>
                            <persName ref="#durival">Nicolas Luton Durival</persName> est le fils aîné de 
                            <persName ref="#luton">Jacques Luton</persName>, originaire de Normandie, fils d'un ancien valet de 
                            la Maison de Louis XIV et lui-même valet de garde-robe du 
@@ -1890,9 +1891,13 @@
                            <lb/>Il comptoit donner à d&iî;ner au maréchal mais
                            <lb/>il ne s'est point arrêté et ils ne se sont point v&ûu;s.
                            <lb/>Le soir arrivent <persName ref="#archCambray">M. l'archevêque de Cambray</persName>,
+<<<<<<< HEAD
 
                            <lb/><persName ref="#abbesseStLouis"><choice><abbr>mad.</abbr><expan>madame</expan></choice> l'abbesse de S. Louis</persName>, <choice><abbr>M.<hi rend="super">rs</hi></abbr><expan>Messieurs</expan></choice> <persName ref="#armentieres">d'Armenti&eè;res</persName>, <persName ref="#anhalt"><choice><abbr>p.<hi rend="super">ce</hi></abbr><expan>prince</expan></choice>
 
+=======
+                           <lb/><persName ref="#choiseulMme"><choice><abbr>mad.</abbr><expan>madame</expan></choice> l'abbesse de S. Louis</persName>, <choice><abbr>M.<hi rend="super">rs</hi></abbr><expan>Messieurs</expan></choice> <persName ref="#armentieres">d'Armenti&eè;res</persName>, <persName ref="#anhalt"><choice><abbr>p.<hi rend="super">ce</hi></abbr><expan>prince</expan></choice>
+>>>>>>> bibstan/master
                               <lb/>d'Anhalt</persName>, <persName ref="#chabot">de Chabot</persName>.
                         </p>
                      </div>
@@ -1984,15 +1989,19 @@
                      <div type="day" xml:id="d17650528">
                         <dateline><date type="entry" when="1765-05-28">28</date></dateline>
                         <p xml:id="d1765052801" ana="#ville">                                                   
-                           <persName ref="#sion">M. de Sion</persName> et <rs type="person" ref="#intendant">M. l'intendant</rs> son neveu
+                           <persName ref="#mareil">M. de Sion</persName> et <rs type="person" ref="#intendant">M. l'intendant</rs> son neveu
                            <lb/>y arrivent l'après midi.
                         </p>
                      </div>
                      <div type="day" xml:id="d17650529">
                         <dateline><date type="entry" when="1765-05-29">29</date></dateline>
                         <p xml:id="d1765052901" ana="#ville">                           
+<<<<<<< HEAD
                            <persName ref="#sion">M. de Sion</persName> part pour <placeName ref="#metz"><choice><orig>Mets</orig><reg>Metz</reg></choice></placeName>. <persName ref="#lePelletier">M. Le Pelletier
 
+=======
+                           <persName ref="#mareil">M. de Sion</persName> part pour <placeName ref="#metz"><choice><orig>Mets</orig><reg>Metz</reg></choice></placeName>. <persName ref="#lePelletier">M. Le Pelletier
+>>>>>>> bibstan/master
                               <lb/>de Beauprés</persName> passe et voit <rs type="person" ref="#intendant">M. l'intendant</rs>.
 
                            <lb/>Peu après passe aussi <persName ref="#blair">M. de Blair</persName>
@@ -2304,7 +2313,7 @@
                         <dateline><date type="entry" when="1765-06-27">27</date></dateline>
                         <p xml:id="d1765062701" ana="#necro">                           
                            <persName ref="#ligneville">M. l'abbé</persName> <space/> comte de Lignéville,
-                           <lb/><choice><orig>ecôlatre</orig><reg>écolâtre</reg></choice> de <placeName ref="#nancyPrimatiale">la primatiale</placeName><ref type="note" target="#note17650627A"/> est mort<ref type="picture" target="#picture17650627A"/>. La place
+                           <lb/><choice><orig>ecôlatre</orig><reg>écolâtre</reg></choice> de <placeName ref="#nancyPrimatiale">la primatiale</placeName><ref type="note" target="#note17650627A"/> est mort<ref type="picture" target="#picture17650606A"/>. La place
                            <lb/>d'&eé;colâtre donnée à <persName ref="#tervenus">M. l'abbé de Tervenus</persName>, qui
                            <lb/>l'ét&oa;it déjà de <orgName ref="#ancChpStGeorges">l'ancien chapitre de S. Georges</orgName>.
                            <lb/>Le canonicat<ref type="note" target="#note17650627B"/> vacant donné à <persName ref="#turique">M. l'abbé de
@@ -2754,7 +2763,7 @@
                               <lb/>Rorté</persName>, agée de 84 ans, m&eè;re du <persName ref="#dessalles"><choice><abbr>m.<hi rend="super">is</hi></abbr><expan>marquis</expan></choice> Dessalles</persName>.
                         </p>
                         <p xml:id="d1765080502" ana="#cour">
-                           <persName ref="#stLouisMetzAbbesse">L'abesse de S. Louis de Metz</persName> arrive à <placeName ref="#commercy">Commercy</placeName>
+                           <persName ref="#choiseulMme">L'abesse de S. Louis de Metz</persName> arrive à <placeName ref="#commercy">Commercy</placeName>
                            <lb/>et <persName ref="#grammontDuchesse"><choice><abbr>M.<hi rend="super">e</hi></abbr><expan>madame</expan></choice> la duchesse de Grammont</persName> presque en
                            <lb/>m&eê;me <choice><orig>tems</orig><reg>temps</reg></choice>.
                         </p>
@@ -3483,7 +3492,7 @@
                            Le lendemain &eé;crit à <rs type="person" ref="#chancelier">M. le chancelier</rs> et
                            <lb/>touchant la clause du brevet qui porte
                            <lb/>que le coadjuteur pourra siéger à <orgName ref="#courSouveraine">la Cour
-                              <lb/>souveraine</orgName> lorsque le <choice><abbr>g.<hi rend="super">d</hi></abbr><expan>grand</expan></choice> pr&eé;v&oô;t <persName ref="#stDiezComte">comte de
+                              <lb/>souveraine</orgName> lorsque le <choice><abbr>g.<hi rend="super">d</hi></abbr><expan>grand</expan></choice> pr&eé;v&oô;t <persName ref="#mareil">comte de
                                  <lb/>S. Diez</persName> n'y sera pas. Ce qui pourr&oa;it
                            <lb/>faire difficulté.
                         </p>
@@ -3519,7 +3528,7 @@
                         <dateline><date type="entry" when="1765-10-04">4</date></dateline>
                         <p xml:id="d1765100401" ana="#ville">                           
                            Je reçois à 8 h du matin réponse de <rs type="person" ref="#chancelier">M.
-                              <lb/>le <choice><abbr>ch.</abbr><expan>chancelier</expan></choice></rs> touchant <rs type="person" ref="#stDiezCoadjuteur">le coadjuteur de S. Diez</rs>. 
+                              <lb/>le <choice><abbr>ch.</abbr><expan>chancelier</expan></choice></rs> touchant <rs type="person" ref="#laGalaiziereBarth">le coadjuteur de S. Diez</rs>. 
                            <lb/>Elle porte en substance que le coadjuteur a
                            <lb/>sans contredit le m&eê;me droit que le titulaire
                            <lb/>pourvu qu'ils ne l'exercent pas ensemble. Qu'au
@@ -4007,7 +4016,7 @@
                            <p rend="center">
                               Vers de <persName ref="#solignac">M. de Solignac</persName> à <persName ref="#durivalClaude">M. 
                                  <lb/>Durival le jeune</persName> en lui renvoyant
-                              <lb/><rs type="bibl" ref="#bib68">le manuscrit d'un ouvrage sur la
+                              <lb/><rs type="bibl" ref="#bib17">le manuscrit d'un ouvrage sur la
                                  <lb/>Finance</rs>.                        
                            </p>     
                            <quote type="verse">
@@ -7765,7 +7774,7 @@
                      <div type="day" xml:id="d17660730">
                         <dateline><date type="entry" when="1766-07-30">30</date></dateline>
                         <p xml:id="d1766073001">                           
-                           <persName ref="#mique">M. Mique</persName> de <placeName ref="#luneville">Lun&èé;ville</placeName> passe allant à
+                           <persName ref="#miqueRichard">M. Mique</persName> de <placeName ref="#luneville">Lun&èé;ville</placeName> passe allant à
                            <lb/><placeName ref="#versailles">Versailles</placeName>.
                         </p>
                      </div>
@@ -8400,7 +8409,7 @@
                            Il entre dans les projets de <rs type="person" ref="#intendant">M. l’intendant</rs>
                            <lb/>de faire à <placeName ref="#nancy">Nancy</placeName> un hôpital militaire <!-- TODO EN note hopital militaire ? -->
                            <lb/>dont le plan a été examiné aujourd'hui
-                           <lb/>par lui et <persName ref="#stainville">M. le comte de Stainville</persName><ref type="picture" target="#picture17660915B"/><ref type="picture" target="#picture17660915C"/><ref type="picture" target="#picture17660915D"/><ref type="picture" target="#picture17660915E"/>--> ; un
+                           <lb/>par lui et <persName ref="#stainville">M. le comte de Stainville</persName><ref type="picture" target="#picture17660915B"/><ref type="picture" target="#picture17660915C"/><ref type="picture" target="#picture17660915C"/><ref type="picture" target="#picture17660915E"/>--> ; un
                            <lb/>man&éè;ge des chevaux de la province ; et
                            <lb/>un h&oô;pital g&eé;n&eé;ral. 
                         </p>
@@ -8439,7 +8448,7 @@
                         <p xml:id="d1766092201" ana="#theatre">                           
                            Les comédiens jouent avec succès <title ref="#bib69">la Partie
                               <lb/>de chasse de Henri IV</title>. <choice><abbr>M.<hi rend="super">rs</hi></abbr><expan>Messieurs</expan></choice> les <persName ref="#stainville">comte de Stainville</persName>,
-                           <lb/>et <persName ref="#choiseulMis">marquis de Choiseul</persName> y &eé;t&oa;ient avec <persName ref="#abesseStPierre"><choice><abbr>mad.</abbr><expan>madame</expan></choice>
+                           <lb/>et <persName ref="#choiseulMis">marquis de Choiseul</persName> y &eé;t&oa;ient avec <persName ref="#choiseulMme"><choice><abbr>mad.</abbr><expan>madame</expan></choice>
                               <lb/>l’abbesse de S. Pierre</persName>. Le spectacle &eé;t&oa;it plus
                            <lb/>rempli qu’il n’est ordinairement dans cette saison.
                         </p>
@@ -8465,7 +8474,7 @@
                            <lb/>de nouveau à <placeName ref="#paris">Paris</placeName>.
                         </p>
                         <p xml:id="d1766092302">
-                           <persName ref="#mique">M. Mique</persName> passe venant de <placeName ref="#compiegne">Compiègne</placeName>.
+                           <persName ref="#miqueRichard">M. Mique</persName> passe venant de <placeName ref="#compiegne">Compiègne</placeName>.
                         </p>
                      </div>
                      <pb facs="B543956101M00863_06_0153_1L" n="149v"/>
@@ -8925,7 +8934,7 @@
                      <div type="day" xml:id="d17661123">
                         <dateline><date type="entry" when="1766-11-23">23</date></dateline>
                         <p xml:id="d1766112301">                           
-                           <persName ref="#mique">M. Mique</persName> passe retournant à <placeName ref="#paris">Paris</placeName>, par
+                           <persName ref="#miqueRichard">M. Mique</persName> passe retournant à <placeName ref="#paris">Paris</placeName>, par
                            <lb/>ordre de <rs type="person" ref="#leszczynskaMarie">la reine</rs><ref type="picture" target="#picture17661123A"/>.
                         </p>
                      </div>
