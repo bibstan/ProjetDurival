@@ -273,16 +273,16 @@
                         </ul>
                         <br />
                         <br />
-                        <div class="large-4 columns">
-                            <div class="thumbnail"><a href="html/cartes.html" target="blank"><img src="images/vignettes/vignetteBelprey.gif"/></a></div>
+                        <div class="large-4 medium-12 columns">
+                            <a href="html/cartes.html" target="blank"><img class="float-center" src="images/vignettes/vignetteBelprey.gif"/></a>
                             <h3 class="text-center edito2">cartes</h3>
                         </div>
-                        <div class="large-4 columns">
-                            <div class="thumbnail"><a href="html/focus.html" target="blank"><img src="images/vignettes/vignetteStanislasPortrait.png"/></a></div>
+                        <div class="large-4 medium-12 columns">
+                            <a href="html/focus.html" target="blank"><img class="float-center" src="images/vignettes/vignetteStanislasPortrait.png"/></a>
                             <h3 class="text-center edito2">focus</h3>
                         </div>                         
-                        <div class="large-4 columns">                            
-                            <div class="thumbnail"><a href="html/galerie.html" target="blank"><img src="images/vignettes/vignetteB543956101_M_TS_ES_00020.png"/></a></div>
+                        <div class="large-4 medium-12 columns">                            
+                            <a href="html/galerie.html" target="blank"><img class="float-center" src="images/vignettes/vignetteB543956101_M_TS_ES_00020.png"/></a>
                             <h3 class="text-center edito2">galerie</h3>
                         </div>                        
                         <br />
@@ -295,11 +295,11 @@
                 <div class="row footer">
                     <div class="large-8 medium-12 columns">
                         <ul class="menu">
-                            <li class="logo"><a target="_blank" href="http://www.nancy.fr"><img class="logo" src="../images/logo/logo-ville-de-nancy.jpg" /></a></li>
-                            <li class="logo"><a target="_blank" href="http://www.reseau-colibris.fr/iguana/www.main.cls?surl=accueil"><img class="logo" src="../images/logo/BN-logo-blanc-fond-or-B15mm-30x60mm.jpg" /></a></li>
-                            <li class="logo"><a target="_blank" href="http://www.pactelorraine.eu/"><img class="logo" src="../images/logo/pacte Lorraine.png" /></a></li>
-                            <li class="logo"><a target="_blank" href="https://musee-lorrain.nancy.fr/"><img class="logo" src="../images/logo/MuseeLorrain-LOGO.jpg" /></a></li>
-                            <li class="logo"><img class="logo" src="../images/logo/LOGO CMJN 250e FR-LOR.jpg" /></li>
+                            <li class="logo"><a target="_blank" href="http://www.nancy.fr"><img class="logo" src="images/logo/logo-ville-de-nancy.jpg" /></a></li>
+                            <li class="logo"><a target="_blank" href="http://www.reseau-colibris.fr/iguana/www.main.cls?surl=accueil"><img class="logo" src="images/logo/BN-logo-blanc-fond-or-B15mm-30x60mm.jpg" /></a></li>
+                            <li class="logo"><a target="_blank" href="http://www.pactelorraine.eu/"><img class="logo" src="images/logo/pacte Lorraine.png" /></a></li>
+                            <li class="logo"><a target="_blank" href="https://musee-lorrain.nancy.fr/"><img class="logo" src="images/logo/MuseeLorrain-LOGO.jpg" /></a></li>
+                            <li class="logo"><img class="logo" src="images/logo/LOGO CMJN 250e FR-LOR.jpg" /></li>
                         </ul>
                     </div>
                     <div class="large-4 medium-12 columns">
@@ -1744,13 +1744,13 @@
                         <div class="large-12">
                             <h2 class="text-center edito2">Les cartes</h2>
                             <p class="edito"/>
-                            <div class="large-4 columns">
+                            <div class="large-4 medium-12 columns">
                                 <div>
                                     <!-- <h3 class="text-center edito2">Nancy en 1754</h3> -->
                                     <br/>
                                 </div>
                                 <a href="belprey.html" target="blank">
-                                    <img src="../images/vignettes/vignetteBelprey.gif"/>
+                                    <img class="float-center" src="../images/vignettes/vignetteBelprey.gif"/>
                                 </a>
                                 <h3 class="text-center edito2">Le plan Belprey : 1754</h3>
                                 <br/>
@@ -1766,14 +1766,10 @@
                                     qui représentent les principaux nouveaux bâtiments de la ville.
                                 </p>
                             </div>
-                            <div class="large-4 columns">
+                            <div class="large-4 medium-12 columns">
                                 <div>
                                     <br/>
-                                    <a href="mique.html" target="blank">
-                                        <img
-                                            src="../images/vignettes/vignetteB543956101_H_FG_ES_00014.gif"
-                                        />
-                                    </a>
+                                    <a href="mique.html" target="blank"><img class="float-center" src="../images/vignettes/vignetteB543956101_H_FG_ES_00014.gif" /></a>
                                 </div>
                                 <h3 class="text-center edito2">Le plan Mique : 1778</h3>
                                 <br/>
@@ -1789,12 +1785,10 @@
                                     des Michottes a déjà disparu, laissant place à la nouvelle place
                                     de Grève.</p>
                             </div>
-                            <div class="large-4 columns">
+                            <div class="large-4 medium-12 columns">
                                 <div>
                                     <br/>
-                                    <a href="cartographie.html" target="blank">
-                                        <img src="../images/vignettes/vignetteCarte.gif"/>
-                                    </a>
+                                    <a href="cartographie.html" target="blank"><img class="float-center" src="../images/vignettes/vignetteCarte.gif"/></a>
                                     <h3 class="text-center edito2">Nancy aujourd'hui</h3>
                                     <br/>
                                     <cite class="edito">Les lieux évoqués par Durival en 1765-1766 </cite>
