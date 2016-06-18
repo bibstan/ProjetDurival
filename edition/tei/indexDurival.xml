@@ -38,11 +38,7 @@
                </listEvent>
             </person>
             <person xml:id="abbeDeLisle">
-               <persName><surname>Lisle</surname><roleName>abbé de</roleName></persName>
-               <state>
-                  <!-- todo -->
-                  <p>Dom</p>
-               </state>
+               <persName><surname>Lisle</surname><roleName>abbé de</roleName></persName>               
                <listEvent>
                   <event>
                      <p>Abbé de Saint-Léopold</p>
@@ -67,10 +63,7 @@
                </listEvent>
             </person>
             <person xml:id="abbeExpilly">
-               <persName><surname>Expilly</surname><forename>Jean-Joseph d'</forename></persName>
-               <state>
-                  <p>abbé</p>
-               </state>
+               <persName><surname>Expilly</surname><forename>Jean-Joseph</forename><roleName>abbé d'</roleName></persName>               
                <birth when="1719"/>
                <death when="1793"/>
                <listEvent>
@@ -94,6 +87,7 @@
             <person xml:id="abbeGuyot">
                <persName><surname>Guyot</surname><roleName>abbé</roleName></persName>
             </person>
+            
             <person xml:id="abbeMontignot">
                <persName><surname>Montignot</surname><forename>Henri</forename><roleName>abbé</roleName></persName>
                <birth when="1715"/>
@@ -102,10 +96,19 @@
                      <p>Membre de l'Académie dès 1754</p>
                   </event>
                   <event>
-                     <p>Docteur en théologie, chanoine de Toul</p>
+                     <p>docteur en théologie et chanoine de Toul</p>
                   </event>
                </listEvent>
             </person>
+            <!-- remplacé par @xml:id abbeMontignot <person xml:id="montignot">
+               <persName><surname>Montignot</surname><forename>Henri</forename></persName>
+               <listEvent>
+                  <event>
+                     <p>chanoine de Toul et académicien</p>
+                  </event>
+               </listEvent>
+            </person>-->
+            
             <person xml:id="abbeParquet">
                <persName><surname>Parquet</surname><roleName>abbé</roleName></persName>
                <birth when="1715"/>
@@ -180,22 +183,7 @@
                   </event>
                </listEvent>
             </person>
-            <person xml:id="archBesancon">
-               <persName><surname>Choiseul-Beaupré</surname><forename>Antoine Clériade de</forename></persName>
-               <birth when="1707"/>
-               <death when="1774"/>
-               <state>
-                  <p>archevêque de Besançon</p>
-               </state>
-               <listEvent>
-                  <event>
-                     <p>Grand aumônier de Stanislas (1742)</p>
-                  </event>
-                  <event>
-                     <p>fait cardinal par le pape Clément XIII (1761)</p>
-                  </event>
-               </listEvent>
-            </person>
+            
             <person xml:id="archCambray">
                <persName><surname>Choiseul-Stainville</surname><forename>Léopold Charles de</forename></persName>
                <birth when="1724"/>
@@ -249,7 +237,7 @@
             </person>
             <person xml:id="aumonierSuede">
                <!-- TODO  -->
-               <persName><surname>Aumônier de l'ambassade de Suède</surname></persName>
+               <persName><persName>Aumônier de l'ambassade de Suède, l'</persName></persName>
             </person>
             <person xml:id="avocatRequetesPalais">
                <persName><surname>Fallois</surname><forename>Jean Baptiste de</forename></persName>
@@ -268,7 +256,7 @@
                </listEvent>
             </person>
             <person xml:id="avocatRoy">
-               <persName><persName>Avocat du roi</persName></persName>
+               <persName><persName>Avocat du roi, l'</persName></persName>
             </person>
             <person xml:id="bagard">
                <!--doute sur présence ou non du père à revoir-->
@@ -300,7 +288,7 @@
             <person xml:id="baltazardMarie">
                <persName><surname>Baltazard</surname><forename>Marie-Marthe-Scholastique</forename></persName>
                <state>
-                  <p>Maître imprimeur</p>
+                  <p>maître imprimeur</p>
                </state>
                <listEvent>
                   <event>
@@ -309,7 +297,7 @@
                </listEvent>
             </person>
             <person xml:id="bartMis">
-               <persName><surname>Bart</surname><roleName>marquis de</roleName></persName>
+               <persName><surname>Bart</surname><roleName>M. le marquis de</roleName></persName>
             </person>
             <person xml:id="batonnier">
                <persName><surname>Bâtonnier de Nancy</surname></persName>
@@ -375,6 +363,15 @@
                   </event>
                </listEvent>
             </person>
+            
+            <!-- erreur dans la transcription voir @xml:id bechet <person xml:id="becher">
+               <persName><surname>Bécher</surname><addName>M.</addName></persName>
+               <listEvent>
+                  <event>
+                     <p>Receveur des fondations de Stanislas</p>
+                  </event>
+               </listEvent>
+            </person>-->
 
             <person xml:id="belloyBuirette">
                <!-- todo dit Dormont de Belloy -->
@@ -781,8 +778,25 @@
                   </event>
                </listEvent>
             </person>
+            
+            <!-- remplacé par @xml:id choiseul <person xml:id="stainvilleFrere">
+               <persName><surname>Choiseul Stainville</surname><forename>Etienne-François</forename><roleName>comte puis duc de</roleName></persName>
+               <birth when="1719"/>
+               <death when="1785"/>
+               <listEvent>
+                  <event>
+                     <p>1766-1770: secrétaire d'État aux affaires étrangères</p>
+                  </event>
+               </listEvent>
+            </person>-->
+            
+            <!-- remplacé par @xml:id choiseul <person xml:id="ministre">
+               <!-\- todo -\->
+               <persName>Ministre</persName><!-\- todo certainement Étienne-François, duc de Choiseul ?? -\->
+            </person>-->
+            
             <person xml:id="choiseulCdl">
-               <persName><surname>Choiseul-Beaupré</surname><forename>Antoine-Clériade</forename><roleName>Cardinal de</roleName></persName>
+               <persName><surname>Choiseul-Beaupré</surname><forename>Antoine-Clériade</forename><roleName>cardinal de</roleName></persName>
                <birth when="1707"/>
                <death when="1774"/>
                <listEvent>
@@ -797,6 +811,23 @@
                   </event>
                </listEvent>
             </person>
+            <!-- remplacer par @xml:id choiseulCdl <person xml:id="archBesancon">
+               <persName><surname>Choiseul-Beaupré</surname><forename>Antoine Clériade de</forename></persName>
+               <birth when="1707"/>
+               <death when="1774"/>
+               <state>
+                  <p>archevêque de Besançon</p>
+               </state>
+               <listEvent>
+                  <event>
+                     <p>Grand aumônier de Stanislas (1742)</p>
+                  </event>
+                  <event>
+                     <p>fait cardinal par le pape Clément XIII (1761)</p>
+                  </event>
+               </listEvent>
+            </person>-->
+            
             <person xml:id="choiseulMis">
                <persName><surname>Choiseul-Chevigny</surname><forename>César Gabriel</forename><roleName>marquis de</roleName></persName>
                <birth when="1712"/>
@@ -1008,7 +1039,7 @@
             </person>
             <person xml:id="deBaye">
                <!--Berthelot marquis de Baye ???-->
-               <persName><surname>Baye</surname><addName>les de</addName></persName>
+               <persName><surname>Baye</surname><addName>M. et M<hi rend="super">me</hi> de</addName></persName>
             </person>
             <person xml:id="deBeaumont">
                <persName><surname>Moreau de Baumont</surname><forename>Jean-Louis</forename></persName>
@@ -1176,7 +1207,7 @@
                </listEvent>
             </person>
             <person xml:id="deMortal">
-               <persName><surname>Mortal</surname><add>M. de</add></persName>
+               <persName><surname>Mortal</surname><addName>M. de</addName></persName>
                <state>
                   <p>chancelier de Toul</p>
                </state>
@@ -1256,7 +1287,7 @@
             <person xml:id="deSerre">
                <persName><surname>Serre</surname><addName>M. de</addName><roleName/></persName>
                <state>
-                  <p>Secrétaire d'État</p>
+                  <p>secrétaire d'État</p>
                </state>
             </person>
             <person xml:id="deSilly">
@@ -1316,7 +1347,7 @@
                </listEvent>
             </person>
             <person xml:id="devaux">
-               <persName><surname>Devaux</surname><forename>François Antoine</forename><addName>dit Panpan<!-- todo --></addName></persName>
+               <persName><surname>Devaux</surname><forename>François Antoine</forename><addName type="say">Panpan</addName></persName>
                <birth when="1712"/>
                <death when="1796"/>
                <listEvent>
@@ -1360,7 +1391,7 @@
                <birth when="1710"/>
                <death when="1775"/>
                <state>
-                  <p>Intendant des Finances</p>
+                  <p>intendant des Finances</p>
                </state>
             </person>
             <person xml:id="doyen">
@@ -1501,16 +1532,12 @@
             </person>
             <person xml:id="durivalMere">
                <persName><surname>Humblot</surname><forename>Marie-Anne</forename></persName>
-               <state>
-                  <p>mère de Nicolas Durival</p>
-               </state>
-            </person>
-            <person xml:id="durivalMme">
-               <persName><surname>Dufresne</surname><forename>Louise Élisabeth</forename></persName>
-               <state>
-                  <p>Épouse de Jean-Baptiste Durival</p>
-               </state>
-            </person>
+               <listEvent>
+                  <event>
+                     <p>mère de Nicolas Durival</p>
+                  </event>
+               </listEvent>
+            </person>            
             <person xml:id="edelinJeanne">
                <persName><surname>Édelin</surname><forename>Jeanne</forename></persName>
                <state>
@@ -1518,7 +1545,7 @@
                </state>
             </person>
             <person xml:id="elisee">
-               <persName><surname>Élisée</surname><addName>Père</addName></persName>
+               <persName><surname>Élisée</surname><addName>M.</addName></persName>
                <state>
                   <p>Jésuite</p>
                </state>
@@ -1620,7 +1647,8 @@
                </state>
             </person>
             <person xml:id="figean">
-               <persName><surname>Figean</surname><addName>Père</addName></persName>
+               <persName><surname>Figean</surname><addName>M.</addName></persName>
+               <state><p>ecclésiastique</p></state>
             </person>
             <person xml:id="fleury">
                <persName><surname>Bénard</surname><forename>François</forename><addName type="say">Fleury</addName></persName>
@@ -1670,14 +1698,16 @@
             <person xml:id="friant">
                <persName><surname>Friant d'Alincourt</surname><forename>Dominique-François</forename></persName>
                <state>
-                  <p>Procureur du roi</p>
+                  <p>procureur du roi</p>
                </state>
             </person>
             <person xml:id="fumeronMarieCatherine">
                <persName><surname>Fumeron</surname><forename>Marie-Catherine de</forename></persName>
-               <state>
-                  <p>douairière de feu M. Jacques Dalmas</p>
-               </state>
+               <listEvent>
+                  <event>
+                     <p>Douairière de feu M. Jacques Dalmas</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="gallois">
                <persName><surname>Gallois</surname><addName>François-Paul</addName></persName>
@@ -1778,9 +1808,11 @@
             </person>
             <person xml:id="georgin">
                <persName><surname>Georgin</surname><addName>M<hi rend="super">lle</hi></addName></persName>
-               <state>
-                  <p>Suisse de la paroisse Saint-Epvre</p>
-               </state>
+               <listEvent>
+                  <event>
+                     <p>Suisse de la paroisse Saint-Epvre</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="gerardDeVietAnneCatherine">
                <persName><surname>Wiet</surname><forename>Anne-Catherine Girard de</forename><roleName>duchesse d'Aiguillon</roleName></persName>
@@ -1796,10 +1828,10 @@
                </listEvent>
             </person>
             <person xml:id="gerbevillerMis2">
-               <persName ref="#gerbevillerMis"><persName>Gerbeviller</persName><forename>Camille de</forename><surname>Lambertye</surname><roleName>marquis de</roleName></persName>
+               <persName ref="#gerbevillerMis"><surname>Lambertye</surname><forename>Camille de</forename><roleName>marquis de Gerbeviller</roleName></persName>
             </person>
-            <person xml:id="gerbevillerMis">
-               <persName><surname>Lambertye</surname><forename>Camille de</forename><roleName>marquis de Gerbeviller</roleName></persName>
+            <person xml:id="gerbevillerMis">               
+               <persName><persName>Gerbeviller</persName><forename>Camille de</forename><surname>Lambertye</surname><roleName>marquis de</roleName></persName>
                <birth when="1714"/>
                <death when="1770"/>
                <listEvent>
@@ -1927,9 +1959,11 @@
             </person>
             <person xml:id="guireMme">
                <persName><surname>Guire</surname><addName>M<hi rend="super">me</hi></addName></persName>
-               <state>
-                  <p>Épouse de M. Guire</p>
-               </state>
+               <listEvent>
+                  <event>
+                     <p>Épouse de M. Guire</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="harmant">
                <persName><surname>Harmant</surname><forename>Dominique-Louis</forename></persName>
@@ -1975,9 +2009,11 @@
             <person xml:id="henryMaurice">
                <!-- todo quel est le nom quel est le prénom ? -->
                <persName><surname>Henry</surname><forename>Maurice</forename></persName>
-               <state>
-                  <p>suisse de la paroisse Saint-Nicolas</p>
-               </state>
+               <listEvent>
+                  <event>
+                     <p>suisse de la paroisse Saint-Nicolas</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="hericourtM">
                <!-- todo faire renvoi -->
@@ -1999,9 +2035,11 @@
             <person xml:id="hocquetFils">
                <!-- todo gestion xsl -->
                <persName><surname>Hocquet <hi rend="italic">(fils)</hi></surname><addName>M.</addName></persName>
-               <state>
-                  <p>Frère de la veuve Dujard</p>
-               </state>
+               <listEvent>
+                  <event>
+                     <p>Frère de la veuve Dujard</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="hoffman">
                <persName><surname>Hoffman</surname><addName>M.</addName></persName>
@@ -2014,12 +2052,14 @@
             </person>
             <person xml:id="huguetDeMontaran">
                <persName><surname>Huguet de Montaran</surname><forename>Pierre-François</forename></persName>
-               <state>
-                  <p>écuyer et avocat au Parlement de Paris</p>
-               </state>
+               <listEvent>
+                  <event>
+                     <p>écuyer et avocat au Parlement de Paris</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="husson">
-               <persName><surname>Husson</surname><addName>Père</addName></persName>
+               <persName><surname>Husson</surname><addName>M.</addName></persName>
                <state>
                   <p>ecclésiastique</p>
                </state>
@@ -2055,9 +2095,11 @@
             </person>
             <person xml:id="jacob">
                <persName><surname>Jacob</surname><addName>M<hi rend="super">me</hi></addName></persName>
-               <state>
-                  <p>épouse de M. Alix de Pixérécourt</p>
-               </state>
+               <listEvent>
+                  <event>
+                     <p>épouse de M. Alix de Pixérécourt</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="jaquemin">
                <persName><surname>Jaquemin</surname><forename>Claude-Louis-Bertrand</forename></persName>
@@ -2075,7 +2117,7 @@
                </listEvent>
             </person>
             <person xml:id="josephIIEmpereur">
-               <persName><roleName>Joseph II de</roleName><surname>Habsbourg-Lorraine</surname></persName>
+               <persName><roleName>Joseph II de Habsbourg-Lorraine</roleName></persName>
                <birth when="1741"/>
                <death when="1790"/>
                <listEvent>
@@ -2083,7 +2125,7 @@
                      <p>Empereur du Saint Empire Romain Germanique de 1765 à 1790</p>
                   </event>
                   <event>
-                     <p>Succède à son père François I<hi rend="super">er</hi></p>
+                     <p>succède à son père François I<hi rend="super">er</hi></p>
                   </event>
                </listEvent>
             </person>
@@ -2100,15 +2142,17 @@
             </person>
             <person xml:id="laCoste">
                <persName><surname>La Coste</surname><addName>M.</addName></persName>
-               <state>
+               <!--<state>
                   <p>homme arrêté et mis à la Bastille en même temps que Renaut</p>
-               </state>
+               </state>-->
             </person>
             <person xml:id="laDuclos">
                <persName><surname>La Duclos</surname><addName>M<hi rend="super">me</hi></addName></persName>
-               <state>
-                  <p>pensionnaire au refuge de la fondation de l'abbé de Bousey pour l'année 1767 et 1768</p>
-               </state>
+               <listEvent>
+                  <event>
+                     <p>Pensionnaire au refuge de la fondation de l'abbé de Bousey pour l'année 1767 et 1768</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="laGalaiziereBarth">
                <persName><surname>Chaumont de La Galaizière</surname><forename>Barthélemy-Louis-Martin</forename></persName>
@@ -2146,9 +2190,11 @@
             </person>-->
             <person xml:id="lallemant">
                <persName><surname>Lallemant</surname><addName>M.</addName></persName>
-               <state>
-                  <p>Jardinier et concierge de Nicolas Durival à Heillecourt</p>
-               </state>
+               <listEvent>
+                  <event>
+                     <p>Jardinier et concierge de Nicolas Durival à Heillecourt</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="lallementMathieu">
                <persName><surname>Lallement</surname><forename>Mathieu</forename></persName>
@@ -2239,9 +2285,12 @@
             </person>
             <person xml:id="laSone">
                <persName><surname>La Sône</surname><addName>M. de</addName></persName>
-               <state>
-                  <p>premier médecin de la reine</p>
-               </state>
+               <state><p>médecin</p></state>
+               <listEvent>
+                  <event>
+                     <p>premier médecin de la reine</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="launayComm">
                <persName><surname>Launay <hi rend="italic">(père)</hi></surname><addName>M.</addName></persName>
@@ -2272,7 +2321,7 @@
             <person xml:id="leBas">
                <persName><surname>Le Bas</surname><addName>M.</addName></persName>
                <state>
-                  <p>Médecin</p>
+                  <p>médecin</p>
                </state>
             </person>
             <person xml:id="leChangeur">
@@ -2290,7 +2339,7 @@
             <person xml:id="leKain">
                <persName><surname>Le Kain</surname><forename>Henri Louis</forename></persName>
                <state>
-                  <p>Comédien</p>
+                  <p>comédien</p>
                </state>
                <birth when="1729"/>
                <death when="1778"/>
@@ -2301,10 +2350,11 @@
                </listEvent>
             </person>
             <person xml:id="lelong">
-               <persName><surname>Le Long</surname><addName>Père</addName></persName>
+               <persName><surname>Le Long</surname><addName>M.</addName></persName>
+               <state><p>ecclésiastique</p></state>
             </person>
             <person xml:id="lEnfant">
-               <persName><surname>L'Enfant</surname><addName>Père</addName></persName>
+               <persName><surname>L'Enfant</surname><addName>M.</addName></persName>
                <state>
                   <p>jésuite</p>
                </state>
@@ -2390,9 +2440,11 @@
                <persName><surname>Ligniville</surname><forename>Henri-Honoré</forename><roleName>abbé et comte de</roleName></persName>
                <!-- Pfister histoire de Nancy -->
                <death when="1765"/>
-               <state>
-                  <p>chanoine de Bayeux</p>
-               </state>
+               <listEvent>
+                  <event>
+                     <p>chanoine de Bayeux</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="lomont2">
                <persName ref="#lomont"><surname>Chastelet</surname><forename>Florent Louis Marie du</forename></persName>
@@ -2421,9 +2473,11 @@
             </person>
             <person xml:id="louis">
                <persName><surname>Louis</surname><addName>M.</addName></persName>
-               <state>
-                  <p>Secrétaire du duc de Fleury</p>
-               </state>
+               <listEvent>
+                  <event>
+                     <p>Secrétaire du duc de Fleury</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="louisDeFrance">
                <persName>Louis de France</persName>
@@ -2486,7 +2540,7 @@
                </listEvent>
             </person>
             <person xml:id="lupcourtComte">
-               <persName><surname>Lupcourt</surname><roleName>comte de</roleName></persName>
+               <persName><surname>Lupcourt</surname><roleName>M. le comte de</roleName></persName>
                <!-- todo <listEvent>
                   <event>
                      <p>Mahuet ?</p>
@@ -2641,7 +2695,7 @@
             <person xml:id="ment">
                <persName><surname>Ment</surname><addName>M.</addName></persName>
                <state>
-                  <p>Architecte</p>
+                  <p>architecte</p>
                </state>
             </person>
             <person xml:id="mestivier">
@@ -2658,10 +2712,7 @@
                <persName><surname>Millet</surname><addName>M. de</addName></persName>
             </person>
             <person xml:id="millot">
-               <persName><surname>Millot</surname><forename>Claude-François-Xavier</forename></persName>
-               <state>
-                  <p>abbé</p>
-               </state>
+               <persName><surname>Millot</surname><forename>Claude-François-Xavier</forename><roleName>abbé</roleName></persName>               
                <birth when="1726"/>
                <death when="1785"/>
                <listEvent>
@@ -2704,20 +2755,23 @@
                </listEvent>
             </person>
             <person xml:id="mittie">
-               <persName><surname>Mittié</surname><addName>M.</addName></persName>
-               <listEvent>
-                  <event>
-                     <p>Il a vécu à Mantes probablement sous le premier Empire</p>
+               <persName><surname>Mittié <hi rend="italic">(fils)</hi></surname><addName>M.</addName></persName>
+               <state><p>Médecin</p></state>
+               <!--<listEvent>
+                  
+                  <!-\-Todo à vérifier <event>
+                     <p>il a vécu à Mantes probablement sous le premier Empire</p>
                   </event>
                   <event>
                      <p>maire de 1808 à 1831, il meurt à Blaru (78)</p>
-                  </event>
-               </listEvent>
+                  </event>-\->
+               </listEvent>-->
             </person>
             <person xml:id="mittiePere">
                <persName><surname>Mittié</surname><forename>Jean-Stanislas</forename></persName>
                <birth when="1727"/>
                <death when="1795"/>
+               <state><p>médecin</p></state>
                <listEvent>
                   <event>
                      <p>Médecin du Roi Stanislas à la cour de Nancy, membre de l'Académie de Stanislas de 1766 à 1793</p>
@@ -2761,15 +2815,7 @@
                      <p>Épouse de Thibault de Monbois, maître des comptes.</p>
                   </event>
                </listEvent>
-            </person>
-            <person xml:id="montignot">
-               <persName><surname>Montignot</surname><forename>Henri</forename></persName>
-               <listEvent>
-                  <event>
-                     <p>chanoine de Toul et académicien</p>
-                  </event>
-               </listEvent>
-            </person>
+            </person>            
             <person xml:id="moret">
                <persName><surname>Moret</surname><addName>M. de</addName></persName>
             </person>
@@ -2826,18 +2872,22 @@
             </person>
             <person xml:id="nanon">
                <persName><forename>Nanon</forename></persName>
-               <state>
-                  <p>Concièrge de Nicolas Durival à Heillecourt</p>
-               </state>
+               <listEvent>
+                  <event>
+                     <p>Concièrge de Nicolas Durival à Heillecourt</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="narbonne">
                <persName><surname>Narbonne</surname><addName>M. de</addName></persName>
             </person>
             <person xml:id="nicetti">
                <persName><surname>Nicetti</surname><addName>M.</addName></persName>
-               <state>
-                  <p>Chargé des représentations théâtrales</p>
-               </state>
+               <listEvent>
+                  <event>
+                     <p>Chargé des représentations théâtrales</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="niceville">
                <persName><surname>Nicéville</surname><forename>Charles-Martin de</forename></persName>
@@ -2894,9 +2944,11 @@
             </person>
             <person xml:id="peraultAimeClaire">
                <persName><surname>Perault</surname><forename>Aime-Claire</forename></persName>
-               <state>
-                  <p>épouse de M. Mathieu Lallement</p>
-               </state>
+               <listEvent>
+                  <event>
+                     <p>épouse de M. Mathieu Lallement</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="peronnet">
                <persName><surname>Peronnet</surname><forename>Jean-Rodolphe</forename></persName>
@@ -2915,13 +2967,13 @@
             <person xml:id="philippeInfant">
                <persName><forename>Philippe d'</forename><surname>Espagne</surname><roleName>duc de Parme</roleName></persName>
                <state>
-                  <p>infant d'Espagne puis duc de Parme</p>
+                  <p>infant d'Espagne</p>
                </state>
             </person>
             <person xml:id="pierre">
                <persName><surname>Pierre</surname><addName>M.</addName></persName>
                <state>
-                  <p>Président</p>
+                  <p>président</p>
                </state>
             </person>
             <person xml:id="pierrot">
@@ -2941,7 +2993,7 @@
             <person xml:id="plaid">
                <persName><surname>Plaid</surname><addName>M.</addName></persName>
                <state>
-                  <p>chanoine</p>
+                  <p>ecclésisatique</p>
                </state>
                <listEvent>
                   <event>
@@ -2996,22 +3048,7 @@
                   <p>comédien</p>
                </state>
             </person>
-            <person xml:id="prevostFille">
-               <persName><surname>Prevost <hi rend="italic">(fille)</hi></surname><addName>M<hi rend="super">me</hi></addName></persName>
-            </person>
-            <person xml:id="prevostMme">
-               <persName><surname>Le Maistre</surname><forename>Marie</forename></persName>
-               <birth when="1717"/>
-               <death when="1795"/>
-               <listEvent>
-                  <event>
-                     <p>propriétaire du château de Montaigu</p>
-                  </event>
-                  <event>
-                     <p>épouse de Bon Prevost, receveur général des fermes de Lorraine</p>
-                  </event>
-               </listEvent>
-            </person>
+            
             <person xml:id="princeBrunswic">
                <persName><surname>Brunswick-Lünebourg</surname><forename>Charles-Guillaume-Ferdinand de</forename><roleName>prince héréditaire de Brunswick</roleName></persName>
                <birth when="1735"/>
@@ -3078,8 +3115,26 @@
                <persName><surname>Rausch</surname><forename>Conrad</forename></persName>
             </person>
             <person xml:id="receveurGeneral">
-               <persName><persName>le Receveur général des fermes</persName></persName>
+               <persName><persName>Receveur général des fermes, le</persName></persName>
             </person>
+            
+            <person xml:id="prevostFille">
+               <persName><surname>Prevost <hi rend="italic">(fille)</hi></surname><addName>M<hi rend="super">me</hi></addName></persName>
+            </person>
+            <person xml:id="prevostMme">
+               <persName><surname>Le Maistre</surname><forename>Marie</forename></persName>
+               <birth when="1717"/>
+               <death when="1795"/>
+               <listEvent>
+                  <event>
+                     <p>propriétaire du château de Montaigu</p>
+                  </event>
+                  <event>
+                     <p>épouse de Bon Prevost, receveur général des fermes de Lorraine</p>
+                  </event>
+               </listEvent>
+            </person>
+            
             <person xml:id="remyCellier">
                <!-- todo Dom ? -->
                <persName><surname>Cellier</surname><forename>Remy</forename></persName>
@@ -3111,9 +3166,11 @@
             </person>
             <person xml:id="richer">
                <persName><surname>Richer</surname><addName>M.</addName></persName>
-               <state>
-                  <p>trésorier de l'hôtel de ville</p>
-               </state>
+               <listEvent>
+                  <event>
+                     <p>trésorier de l'hôtel de ville</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="riocourt">
                <!-- todo renvoi ? -->
@@ -3149,12 +3206,12 @@
                </listEvent>
             </person>
             <person xml:id="rochechouartC">
-               <persName><surname>Rochechouart</surname><forename>Jean-François-Joseph</forename><roleName>cardinal</roleName></persName>
+               <persName><surname>Rochechouart</surname><forename>Jean-François-Joseph</forename><roleName>cardinal de</roleName></persName>
                <birth when="1718"/>
                <death when="1777"/>
                <listEvent>
                   <event>
-                     <p>grand-aumônier de la reine Marie Leszczyńska (1757)</p>
+                     <p>Grand-aumônier de la reine Marie Leszczyńska (1757)</p>
                   </event>
                </listEvent>
             </person>
@@ -3229,7 +3286,7 @@
                <persName><surname>Sanlaville</surname><addName>M<hi rend="super">me</hi></addName></persName>
             </person>
             <person xml:id="saulxMis">
-               <persName><surname>Saulx</surname><roleName>marquis de</roleName></persName>
+               <persName><surname>Saulx</surname><roleName>M. le marquis de</roleName></persName>
             </person>
             <person xml:id="schmidt">
                <persName><surname>Schmidt</surname><addName>M.</addName></persName>
@@ -3238,7 +3295,7 @@
                </state>
             </person>
             <person xml:id="secretaireDurival">
-               <persName><persName>Secrétaire de Nicolas Durival</persName></persName>
+               <persName><persName>Secrétaire de Nicolas Durival, le</persName></persName>
             </person>
             <person xml:id="seguin">
                <persName><surname>Séguin</surname><addName>M<hi rend="super">me</hi></addName></persName>
@@ -3260,9 +3317,11 @@
             </person>
             <person xml:id="servet">
                <persName><surname>Servet</surname><forename>Michel</forename></persName>
-               <state>
-                  <p>Théologien du XVI<hi rend="super">e</hi>siècle</p>
-               </state>
+               <listEvent>
+                  <event>
+                     <p>Théologien du XVI<hi rend="super">e</hi>siècle</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="sigisbertPoinsignon">
                <persName><surname>Poinsignon</surname><forename>Sigisbert</forename></persName>
@@ -3271,10 +3330,7 @@
                </state>
             </person>
             <person xml:id="sigorqueAbbe">
-               <persName><surname>Sigorgne</surname><forename>Pierre</forename></persName>
-               <state>
-                  <p>abbé</p>
-               </state>
+               <persName><surname>Sigorgne</surname><forename>Pierre</forename><roleName>abbé</roleName></persName>               
                <birth when="1719"/>
                <death when="1809"/>
                <listEvent>
@@ -3287,7 +3343,7 @@
                </listEvent>
             </person>
             <person xml:id="simonin">
-               <persName><surname>Simonin</surname><addName>Père</addName></persName>
+               <persName><surname>Simonin</surname><addName>M.</addName></persName>
                <state>
                   <p>jésuite</p>
                </state>
@@ -3300,13 +3356,13 @@
                <persName><surname>Sirejean <hi rend="italic">(fils)</hi></surname><addName>M.</addName></persName>
             </person>
             <person xml:id="sivry">
-               <persName><surname>Sivry</surname><addName>M. de</addName></persName>
+               <persName><surname>Sivry</surname><forename>Pierre de</forename></persName>
                <state>
                   <p>sous-directeur de l'Académie</p>
                </state>
             </person>
             <person xml:id="solignac">
-               <persName><surname>Solignac</surname><forename>Pierre Joseph de</forename></persName>
+               <persName><surname>Solignac</surname><forename>Pierre-Joseph de</forename></persName>
                <state>
                   <p>chevalier</p>
                </state>
@@ -3375,16 +3431,7 @@
                   </event>
                </listEvent>
             </person>
-            <person xml:id="stainvilleFrere">
-               <persName><surname>Choiseul Stainville</surname><forename>Etienne-François</forename><roleName>comte puis duc de</roleName></persName>
-               <birth when="1719"/>
-               <death when="1785"/>
-               <listEvent>
-                  <event>
-                     <p>1766-1770: secrétaire d'État aux affaires étrangères</p>
-                  </event>
-               </listEvent>
-            </person>
+            
             <person xml:id="stainvilleMme">
                <persName><surname>Clermont d'Amboise</surname><forename>Thomasse-Thérèse</forename><roleName>comtesse de Stainville</roleName></persName>
                <birth when="1746"/>
@@ -3429,16 +3476,16 @@
                <persName><surname>Saint-Lambert</surname><addName>M<hi rend="super">me</hi> de</addName></persName>
                <listEvent>
                   <event>
-                     <p>Mère de Jean François de Saint-Lambert (amant de la marquise de Boufflers)</p>
+                     <p>Mère de Jean François de Saint-Lambert</p>
                   </event>
                </listEvent>
             </person>
 
             <person xml:id="stNicolasCure">
-               <persName><persName>Curé de Saint-Nicolas</persName></persName>
+               <persName><persName>Saint-Nicolas</persName><addName>curé de</addName></persName>
             </person>
             <person xml:id="stRochVicaire">
-               <persName><persName>Vicaire de Saint-Roch</persName></persName>
+               <persName><persName>Saint-Roch</persName><roleName>M. le vicaire de</roleName></persName>
             </person>
             <person xml:id="stSimon">
                <persName><surname>Saint-Simon</surname><addName>M. de</addName></persName>
@@ -3474,7 +3521,7 @@
             <person xml:id="taylor">
                <persName><surname>Taylor</surname><roleName>chevalier</roleName></persName>
                <state>
-                  <p>Occuliste anglais</p>
+                  <p>occuliste anglais</p>
                </state>
             </person>
             <person xml:id="tervenus">
@@ -3511,7 +3558,7 @@
                <persName><surname>Thouvenin</surname><roleName>abbé</roleName></persName>
             </person>
             <person xml:id="tresorierNancy">
-               <persName><persName>Tresorier de Nancy</persName></persName>
+               <persName><persName>Trésorier de Nancy, le</persName></persName>
             </person>
             <person xml:id="trudaine">
                <persName><surname>Trudaine</surname><forename>Daniel-Charles</forename></persName>
@@ -3540,12 +3587,12 @@
                <persName><surname>Uriot</surname><addName>M.</addName></persName>
             </person>
             <person xml:id="valbelleMise">
-               <persName><surname>Valbelle</surname><roleName>marquise de</roleName></persName>
+               <persName><surname>Valbelle</surname><roleName>M<hi rend="super">me</hi> la marquise de</roleName></persName>
             </person>
             <person xml:id="vannson">
                <persName><surname>Vannson</surname><addName>M.</addName></persName>
                <state>
-                  <p>Sergent de ville</p>
+                  <p>sergent de ville</p>
                </state>
             </person>
             <person xml:id="viceChancelier">
@@ -3560,17 +3607,19 @@
             <person xml:id="vigneronAvocat">
                <persName><surname>Vigneron</surname><forename>Nicolas-Louis</forename></persName>
                <state>
-                  <p>Avocat général en 1751</p>
-               </state>
-            </person>
-            <person xml:id="vigneronMme">
-               <persName><surname>Vigneron</surname><addName>M<hi rend="super">me</hi></addName></persName>
-               <state>
-                  <p>Présidente</p>
+                  <p>avocat</p>
                </state>
                <listEvent>
                   <event>
-                     <p>femme du premier président de la cour souverainde de Lorraine</p>
+                     <p>Avocat général en 1751</p>
+                  </event>
+               </listEvent>
+            </person>
+            <person xml:id="vigneronMme">
+               <persName><surname>Vigneron</surname><addName>M<hi rend="super">me</hi></addName></persName>
+               <listEvent>
+                  <event>
+                     <p>Femme du premier président de la cour souverain de de Lorraine</p>
                   </event>
                </listEvent>
             </person>
@@ -3632,7 +3681,7 @@
                <persName><surname>Willemin</surname><forename>Joseph-Bernard</forename><roleName>abbé de</roleName></persName>
             </person>
             <person xml:id="zuilyComte">
-               <persName><surname>Zuily</surname><roleName>comte de</roleName></persName>
+               <persName><surname>Zuily</surname><roleName>M. le comte de</roleName></persName>
             </person>
             <person xml:id="deMalleloy">
                <persName><surname>Collignon de Malleloy</surname><forename>Léopold</forename><roleName>comte de Malleloy</roleName></persName>
@@ -3645,7 +3694,7 @@
             <person xml:id="haener">
                <persName><surname>Haener</surname><forename>Jean-Jacques</forename></persName>
                <state>
-                  <p>Maître imprimeur</p>
+                  <p>maître imprimeur</p>
                </state>
                <birth when="1710"/>
                <death when="1794"/>
@@ -3683,23 +3732,15 @@
             <person xml:id="ltGnlBauge">
                <persName><surname>Lieutenant général du Bauge</surname><addName>le</addName></persName>
             </person>
-            <person xml:id="becher">
-               <persName><surname>Bécher</surname><addName>M.</addName></persName>
-               <listEvent>
-                  <event>
-                     <p>Receveur des fondations de Stanislas</p>
-                  </event>
-               </listEvent>
-            </person>
-            <person xml:id="ministre">
-               <!-- todo -->
-               <persName>Ministre</persName><!-- todo certainement Étienne-François, duc de Choiseul ?? -->
-            </person>
+            
+            
             <person xml:id="thouveninFille">
                <persName><surname>Huilier</surname><addName>M<hi rend="super">me</hi></addName></persName>
-               <state>
-                  <p>fille de M. Thouvenin</p>
-               </state>
+               <listEvent>
+                  <event>
+                     <p>fille de M. Thouvenin</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="auroyMise">
                <persName><surname>Foucault</surname><forename>Anne Françoise de</forename><roleName>marquise de Saint-Germain Beaupré</roleName></persName>
@@ -3715,7 +3756,7 @@
                </listEvent>
             </person>
             <person xml:id="cureHeillecourt">
-               <persName><persName>Curé d’Heillecourt</persName><addName>le</addName></persName>
+               <persName><persName>Heillecourt</persName><addName>Curé d’</addName></persName>
             </person>
             <person xml:id="michelHeille">
                <persName><forename>Michel</forename></persName>
@@ -3727,8 +3768,11 @@
             <person xml:id="here">
                <persName><surname>Héré</surname><forename>Emmanuel</forename></persName>
                <state>
-                  <p>architecte de Stanislas</p>
+                  <p>architecte</p>
                </state>
+               <listEvent>
+                  <event><p>Architecte de Stanislas</p></event>
+               </listEvent>
             </person>
             <person xml:id="poniatowski">
                <persName><forename>Stanislas II Auguste</forename></persName>
@@ -3784,9 +3828,13 @@
             <person xml:id="abbeGregoire">
                <persName><surname>Grégoire</surname><roleName>abbé</roleName></persName>
             </person>
-            <person xml:id="dufresneLouisElisabeth">
+            <person xml:id="dufresneLouiseElisabeth">
                <persName><surname>Dufresne</surname><forename>Louise-Élisabeth</forename></persName>
-            </person>
+               <state>
+                  <p>épouse de Jean-Baptiste Durival</p>
+               </state>
+            </person>            
+            
             <person xml:id="beaupre">
                <persName><surname>Beaupré</surname><forename>Jean-Nicolas</forename></persName>
                <birth when="1795"/>
@@ -5337,7 +5385,7 @@
                <idno type="callNumber">BM Nancy 313 765 (a)</idno>
             </bibl>
             <bibl xml:id="bib33">
-               <title>Éssai sur leLuxe</title>
+               <title>Éssai sur le Luxe</title>
                <author>
                   <surname>Saint-Lambert</surname>
                   <forename>François de</forename>

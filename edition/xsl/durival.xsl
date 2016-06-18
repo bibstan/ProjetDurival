@@ -151,7 +151,7 @@
             <div class="large-4 medium-12 columns">
                 <div class="row edito">
                     <div class="small-6 columns">
-                        Bibliothèques de Nancy <br />43, rue Stanislas <br />54 000 Nancy <br /> &#x260E; 03 83 87 38 83 
+                        Bibliothèques&#160;de&#160;Nancy<br />43,&#160;rue&#160;Stanislas<br />54&#160;000&#160;Nancy<br />&#x260E; 03 83 87 38 83 
                     </div>
                     <div class="small-6 columns">
                         <a class="float-right" href="mailto:bibliotheque@nancy.fr">Contact</a>
@@ -283,16 +283,16 @@
                         </ul>
                         <br />
                         <br />
-                        <div class="large-4 columns">
-                            <div class="thumbnail"><a href="html/cartes.html" target="blank"><img src="images/vignettes/vignetteBelprey.gif"/></a></div>
+                        <div class="large-4 medium-12 columns">
+                            <a href="html/cartes.html" target="blank"><img class="float-center" src="images/vignettes/vignetteBelprey.gif"/></a>
                             <h3 class="text-center edito2">cartes</h3>
                         </div>
-                        <div class="large-4 columns">
-                            <div class="thumbnail"><a href="html/focus.html" target="blank"><img src="images/vignettes/vignetteStanislasPortrait.png"/></a></div>
+                        <div class="large-4 medium-12 columns">
+                            <a href="html/focus.html" target="blank"><img class="float-center" src="images/vignettes/vignetteStanislasPortrait.png"/></a>
                             <h3 class="text-center edito2">focus</h3>
                         </div>                         
-                        <div class="large-4 columns">                            
-                            <div class="thumbnail"><a href="html/galerie.html" target="blank"><img src="images/vignettes/vignetteB543956101_M_TS_ES_00020.png"/></a></div>
+                        <div class="large-4 medium-12 columns">                            
+                            <a href="html/galerie.html" target="blank"><img class="float-center" src="images/vignettes/vignetteB543956101_M_TS_ES_00020.png"/></a>
                             <h3 class="text-center edito2">galerie</h3>
                         </div>                        
                         <br />
@@ -305,17 +305,17 @@
                 <div class="row footer">
                     <div class="large-8 medium-12 columns">
                         <ul class="menu">
-                            <li class="logo"><a target="_blank" href="http://www.nancy.fr"><img class="logo" src="../images/logo/logo-ville-de-nancy.jpg" /></a></li>
-                            <li class="logo"><a target="_blank" href="http://www.reseau-colibris.fr/iguana/www.main.cls?surl=accueil"><img class="logo" src="../images/logo/BN-logo-blanc-fond-or-B15mm-30x60mm.jpg" /></a></li>
-                            <li class="logo"><a target="_blank" href="http://www.pactelorraine.eu/"><img class="logo" src="../images/logo/pacte Lorraine.png" /></a></li>
-                            <li class="logo"><a target="_blank" href="https://musee-lorrain.nancy.fr/"><img class="logo" src="../images/logo/MuseeLorrain-LOGO.jpg" /></a></li>
-                            <li class="logo"><img class="logo" src="../images/logo/LOGO CMJN 250e FR-LOR.jpg" /></li>
+                            <li class="logo"><a target="_blank" href="http://www.nancy.fr"><img class="logo" src="images/logo/logo-ville-de-nancy.jpg" /></a></li>
+                            <li class="logo"><a target="_blank" href="http://www.reseau-colibris.fr/iguana/www.main.cls?surl=accueil"><img class="logo" src="images/logo/BN-logo-blanc-fond-or-B15mm-30x60mm.jpg" /></a></li>
+                            <li class="logo"><a target="_blank" href="http://www.pactelorraine.eu/"><img class="logo" src="images/logo/pacte Lorraine.png" /></a></li>
+                            <li class="logo"><a target="_blank" href="https://musee-lorrain.nancy.fr/"><img class="logo" src="images/logo/MuseeLorrain-LOGO.jpg" /></a></li>
+                            <li class="logo"><img class="logo" src="images/logo/LOGO CMJN 250e FR-LOR.jpg" /></li>
                         </ul>
                     </div>
                     <div class="large-4 medium-12 columns">
                         <div class="row edito">
                             <div class="small-6 columns">
-                                Bibliothèques de Nancy <br />43, rue Stanislas <br />54 000 Nancy <br /> &#x260E; 03 83 87 38 83
+                                Bibliothèques&#160;de&#160;Nancy<br />43,&#160;rue&#160;Stanislas<br />54&#160;000&#160;Nancy<br />&#x260E; 03 83 87 38 83
                             </div>
                             <div class="small-6 columns">
                                 <a class="float-right" href="mailto:bibliotheque@nancy.fr">Contact</a>
@@ -985,6 +985,10 @@
         </xsl:choose>                
     </xsl:template>
     
+    <xsl:template match="tei:front//tei:title">
+        <cite><xsl:apply-templates/></cite>
+    </xsl:template>
+    
     <xsl:template match="tei:div[@type='transcription']//tei:rs[@type='bibl']">
         <xsl:variable name="ref" select="@ref"/>
         <xsl:variable name="id" select="substring-after(@ref,'#')"/>
@@ -1033,7 +1037,9 @@
         </xsl:choose>
     </xsl:template>
     
-    <xsl:template match="tei:addName[@type='say']"><!-- todo prévoir pour les femmes -->
+    <xsl:template match="tei:addName[@type='say']">
+        <xsl:if test="preceding-sibling::tei:addName[1]"><xsl:text>, </xsl:text></xsl:if>
+        <xsl:text>dit &#171;&#160;</xsl:text><xsl:apply-templates/><xsl:text>&#160;&#187;</xsl:text>
     </xsl:template>
     
     <xsl:template match="tei:birth | tei:death">
@@ -1751,13 +1757,13 @@
                         <div class="large-12">
                             <h2 class="text-center edito2">Les cartes</h2>
                             <p class="edito"/>
-                            <div class="large-4 columns">
+                            <div class="large-4 medium-12 columns">
                                 <div>
                                     <!-- <h3 class="text-center edito2">Nancy en 1754</h3> -->
                                     <br/>
                                 </div>
                                 <a href="belprey.html" target="blank">
-                                    <img src="../images/vignettes/vignetteBelprey.gif"/>
+                                    <img class="float-center" src="../images/vignettes/vignetteBelprey.gif"/>
                                 </a>
                                 <h3 class="text-center edito2">Le plan Belprey : 1754</h3>
                                 <br/>
@@ -1773,14 +1779,10 @@
                                     qui représentent les principaux nouveaux bâtiments de la ville.
                                 </p>
                             </div>
-                            <div class="large-4 columns">
+                            <div class="large-4 medium-12 columns">
                                 <div>
                                     <br/>
-                                    <a href="mique.html" target="blank">
-                                        <img
-                                            src="../images/vignettes/vignetteB543956101_H_FG_ES_00014.gif"
-                                        />
-                                    </a>
+                                    <a href="mique.html" target="blank"><img class="float-center" src="../images/vignettes/vignetteB543956101_H_FG_ES_00014.gif" /></a>
                                 </div>
                                 <h3 class="text-center edito2">Le plan Mique : 1778</h3>
                                 <br/>
@@ -1796,12 +1798,10 @@
                                     des Michottes a déjà disparu, laissant place à la nouvelle place
                                     de Grève.</p>
                             </div>
-                            <div class="large-4 columns">
+                            <div class="large-4 medium-12 columns">
                                 <div>
                                     <br/>
-                                    <a href="cartographie.html" target="blank">
-                                        <img src="../images/vignettes/vignetteCarte.gif"/>
-                                    </a>
+                                    <a href="cartographie.html" target="blank"><img class="float-center" src="../images/vignettes/vignetteCarte.gif"/></a>
                                     <h3 class="text-center edito2">Nancy aujourd'hui</h3>
                                     <br/>
                                     <cite class="edito">Les lieux évoqués par Durival en 1765-1766 </cite>
@@ -2680,7 +2680,7 @@
                                         <h2 class="edito2">Bibliographie générale</h2>
                                         <ul class="no-bullet">
                                             <xsl:for-each select=".//tei:biblStruct">
-                                                <xsl:sort select=".[descendant::tei:author]//tei:author[1] | .[not(descendant::tei:author)]//tei:title[1]" order="ascending"/>                                    
+                                                <xsl:sort select=".[descendant::tei:author]//tei:author[1]/tei:surname | .[not(descendant::tei:author)]//tei:title[1]"  order="ascending"/>                                    
                                                 <li class="bibl">
                                                     <xsl:apply-templates select="." mode="bibl"/>
                                                 </li>
@@ -2691,7 +2691,7 @@
                                         <h2 class="edito2">Ouvrages de Nicolas Durival</h2>
                                         <ul class="no-bullet">
                                             <xsl:for-each select=".//tei:biblStruct">
-                                                <xsl:sort select=".[descendant::tei:author]//tei:author[1] | .[not(descendant::tei:author)]//tei:title[1]" order="ascending"/>                                    
+                                                <xsl:sort select=".[descendant::tei:author]//tei:author[1]/tei:surname | .[not(descendant::tei:author)]//tei:title[1]" order="ascending"/>                                    
                                                 <li class="bibl">
                                                     <xsl:apply-templates select="." mode="bibl"/>
                                                 </li>
@@ -2702,7 +2702,7 @@
                                         <h2 class="edito2">Ouvrages cités dans le Journal de Durival</h2>
                                         <ul class="no-bullet">
                                             <xsl:for-each select=".//tei:biblStruct">
-                                                <xsl:sort select=".[descendant::tei:author]//tei:author[1] | .[not(descendant::tei:author)]//tei:title[1]" order="ascending"/>                                    
+                                                <xsl:sort select=".[descendant::tei:author]//tei:author[1]/tei:surname | .[not(descendant::tei:author)]//tei:title[1]" order="ascending"/>                                    
                                                 <li class="bibl">
                                                     <xsl:apply-templates select="." mode="bibl"/>
                                                 </li>
@@ -2770,7 +2770,71 @@
                     <div class="row content">
                         <div class="large-12">
                             <h1>Galerie</h1>
-                            <xsl:for-each-group select="tei:figure" group-by="@type">                                
+                            <h2 class="edito">Portraits</h2>
+                            <xsl:for-each select="tei:figure[@type='portrait']">
+                                <xsl:variable name="picture" select="./tei:graphic/@url"/>
+                                <xsl:variable name="cartel" select="./tei:desc"/>
+                                <a class="miniatures" href="../images/illustrations/{$picture}.jpg" data-lightbox="{@type}" data-title="{$cartel}">
+                                    <img src="../images/illustrations/thumbs/T{$picture}.png" alt="{$cartel}"/>
+                                </a>
+                            </xsl:for-each>
+                            <h2 class="edito">Oeuvres de Emmanuel Héré, architecte du roi</h2>
+                            <xsl:for-each select="tei:figure[@type='emmanuelHere']">
+                                <xsl:variable name="picture" select="./tei:graphic/@url"/>
+                                <xsl:variable name="cartel" select="./tei:desc"/>
+                                <a class="miniatures" href="../images/illustrations/{$picture}.jpg" data-lightbox="{@type}" data-title="{$cartel}">
+                                    <img src="../images/illustrations/thumbs/T{$picture}.png" alt="{$cartel}"/>
+                                </a>
+                            </xsl:for-each>
+                            <h2 class="edito">Oeuvres de Dominique Collin, graveur du roi</h2>
+                            <xsl:for-each select="tei:figure[@type='dominiqueCollin']">
+                                <xsl:variable name="picture" select="./tei:graphic/@url"/>
+                                <xsl:variable name="cartel" select="./tei:desc"/>
+                                <a class="miniatures" href="../images/illustrations/{$picture}.jpg" data-lightbox="{@type}" data-title="{$cartel}">
+                                    <img src="../images/illustrations/thumbs/T{$picture}.png" alt="{$cartel}"/>
+                                </a>
+                            </xsl:for-each>
+                            <h2 class="edito">Édifices civils</h2>
+                            <xsl:for-each select="tei:figure[@type='civil']">
+                                <xsl:variable name="picture" select="./tei:graphic/@url"/>
+                                <xsl:variable name="cartel" select="./tei:desc"/>
+                                <a class="miniatures" href="../images/illustrations/{$picture}.jpg" data-lightbox="{@type}" data-title="{$cartel}">
+                                    <img src="../images/illustrations/thumbs/T{$picture}.png" alt="{$cartel}"/>
+                                </a>
+                            </xsl:for-each>
+                            <h2 class="edito">Édifices religieux</h2>
+                            <xsl:for-each select="tei:figure[@type='eglise']">
+                                <xsl:variable name="picture" select="./tei:graphic/@url"/>
+                                <xsl:variable name="cartel" select="./tei:desc"/>
+                                <a class="miniatures" href="../images/illustrations/{$picture}.jpg" data-lightbox="{@type}" data-title="{$cartel}">
+                                    <img src="../images/illustrations/thumbs/T{$picture}.png" alt="{$cartel}"/>
+                                </a>
+                            </xsl:for-each>
+                            <h2 class="edito">Édifices militaires</h2>
+                            <xsl:for-each select="tei:figure[@type='porte'] | tei:figure[@type='militaire']">
+                                <xsl:variable name="picture" select="./tei:graphic/@url"/>
+                                <xsl:variable name="cartel" select="./tei:desc"/>
+                                <a class="miniatures" href="../images/illustrations/{$picture}.jpg" data-lightbox="{@type}" data-title="{$cartel}">
+                                    <img src="../images/illustrations/thumbs/T{$picture}.png" alt="{$cartel}"/>
+                                </a>
+                            </xsl:for-each>
+                            <h2 class="edito">Livres</h2>
+                            <xsl:for-each select="tei:figure[@type='livre']">
+                                <xsl:variable name="picture" select="./tei:graphic/@url"/>
+                                <xsl:variable name="cartel" select="./tei:desc"/>
+                                <a class="miniatures" href="../images/illustrations/{$picture}.jpg" data-lightbox="{@type}" data-title="{$cartel}">
+                                    <img src="../images/illustrations/thumbs/T{$picture}.png" alt="{$cartel}"/>
+                                </a>
+                            </xsl:for-each>
+                            <h2 class="edito">Résidences</h2>
+                            <xsl:for-each select="tei:figure[@type='luneville'] | tei:figure[@type='residence']">
+                                <xsl:variable name="picture" select="./tei:graphic/@url"/>
+                                <xsl:variable name="cartel" select="./tei:desc"/>
+                                <a class="miniatures" href="../images/illustrations/{$picture}.jpg" data-lightbox="{@type}" data-title="{$cartel}">
+                                    <img src="../images/illustrations/thumbs/T{$picture}.png" alt="{$cartel}"/>
+                                </a>
+                            </xsl:for-each>
+                            <!--<xsl:for-each-group select="tei:figure" group-by="@type">                                
                                     <div>
                                         <xsl:choose>
                                             <xsl:when test="@type='portrait'">
@@ -2783,13 +2847,13 @@
                                                 <h2 class="edito">Édifices militaires</h2>
                                             </xsl:when>
                                             <xsl:when test="@type='eglise'">
-                                                <h2 class="edito">Église</h2>
+                                                <h2 class="edito">Édifices religieux</h2>
                                             </xsl:when>
                                             <xsl:when test="@type='dominiqueCollin'">
-                                                <h2 class="edito">Dominique Collin</h2>
+                                                <h2 class="edito">Oeuvres de Dominique Collin, graveur du roi</h2>
                                             </xsl:when>                                            
                                             <xsl:when test="@type='emmanuelHere'">
-                                                <h2 class="edito">Emmanuel Héré</h2>
+                                                <h2 class="edito">Oeuvres de Emmanuel Héré, architecte du roi</h2>
                                             </xsl:when>
                                             <xsl:when test="@type='livre'">
                                                 <h2 class="edito">Livres</h2>
@@ -2812,7 +2876,7 @@
                                             </a>
                                         </xsl:for-each>
                                     </div>                                                                                                    
-                            </xsl:for-each-group>                            
+                            </xsl:for-each-group>-->                            
                         </div>
                     </div>
                     <!-- FOOTER -->
