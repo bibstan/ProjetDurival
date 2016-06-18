@@ -262,7 +262,7 @@
                                         durival</b> est la première étape d'un projet qui vise à
                                         l'édition complète des 14 volumes composés par Nicolas
                                         Durival entre 1737 et 1795. </p>
-                                    <p> Nicolas Durival est un officier au service du chancelier
+                                    <p class="edito text-left"> Nicolas Durival est un officier au service du chancelier
                                         Chaumont de la Galaizière dès l'arrivée de Stanislas et des
                                         Français en Lorraine en 1737. Il passe ensuite au Conseil du
                                         roi et, à partir de 1760, achète la charge de lieutenant
@@ -273,7 +273,7 @@
                                         l'histoire de la ville et de la cour, ces 14 volumes
                                         manuscrits n'ont encore jamais fait l'objet d'une
                                         édition complète. </p>
-                                    <p>Dès aujourd'hui, les Bibliothèques de Nancy proposent l'édition de deux années
+                                    <p class="edito text-left">Dès aujourd'hui, les Bibliothèques de Nancy proposent l'édition de deux années
                                         charnières pour l'histoire de la Lorraine : 1765-1766. Cette
                                         édition est annotée et augmentée d'un index, de cartes
                                         anciennes ou interactives, d'illustrations , de ressources
@@ -1095,7 +1095,7 @@
                     <xsl:copy-of select="$header"/>                                                                                                                                                                                               
                     <div class="row content">                            
                         <div class="large-12">
-                            <h1>Personnes citées ou évoquées dans le Journal</h1>
+                            <h1 class="text-center edito2">Personnes citées ou évoquées dans le Journal</h1>
                             <ul class="no-bullet">
                                 <xsl:for-each select="tei:person">
                                     <xsl:sort select="tei:persName" order="ascending" case-order="upper-first"/>
@@ -1247,7 +1247,7 @@
                     <xsl:copy-of select="$header"/>                                                                                                                                                                                               
                     <div class="row content">                            
                         <div class="large-12">
-                            <h1>Lieux cités ou évoqués dans le Journal</h1>
+                            <h1 class="text-center edito2">Lieux cités ou évoqués dans le Journal</h1>
                             <ul class="no-bullet">
                                 <xsl:for-each select="tei:place">
                                     <xsl:sort select="tei:placeName[1]" order="ascending" case-order="upper-first"/>
@@ -1375,7 +1375,7 @@
                     <xsl:copy-of select="$header"/>                                                                                                                                                                                               
                     <div class="row content">                            
                         <div class="large-12">
-                            <h1>Institutions citées ou évoquées dans le Journal</h1>
+                            <h1 class="text-center edito2">Institutions citées ou évoquées dans le Journal</h1>
                             <ul class="no-bullet">
                                 <xsl:for-each select="tei:org">
                                     <xsl:sort select="tei:orgName" order="ascending" case-order="upper-first"/>
@@ -1507,7 +1507,7 @@
                     <xsl:copy-of select="$header"/>                                                                                                                                                                                               
                     <div class="row content">                            
                         <div class="large-12">
-                            <h1>Œuvres citées ou évoquées dans le Journal</h1>
+                            <h1 class="text-center edito2">Œuvres citées ou évoquées dans le Journal</h1>
                             <ul class="no-bullet">
                                 <xsl:for-each select="tei:bibl">
                                     <xsl:sort select="tei:title" order="ascending" case-order="upper-first"/>                                    
@@ -1651,7 +1651,7 @@
                     <xsl:copy-of select="$header"/>
                     <div class="row">
                         <div class="large-12">            
-                            <h1>Accès calendaire</h1>                                                            
+                            <h1 class="text-center edito2">Accès calendaire</h1>                                                            
                             <div id="timeline" class="timeline-container">                  
                                 <button class="timeline-toggle">+ expand all</button>                  
                                 <br class="clear" />
@@ -1758,7 +1758,7 @@
                     <xsl:copy-of select="$header"/>
                     <div class="row">
                         <div class="large-12">
-                            <h2 class="text-center edito2">Cartes</h2>
+                            <h1 class="text-center edito2">Cartes</h1>
                             <p class="edito"/>
                             <div class="large-4 medium-12 columns">
                                 <div>
@@ -2324,7 +2324,7 @@
                         <div class="row content">
                             <div class="large-12">            
                                 <div class="container">
-                                    <h1><xsl:value-of select="./tei:head[@n=1]"/></h1>
+                                    <h1 class="text-center edito2"><xsl:value-of select="./tei:head[@n=1]"/></h1>
                                     <xsl:if test="./tei:p">
                                         <xsl:for-each select="./tei:p">
                                             <p class="lead">
@@ -2421,7 +2421,7 @@
                     <div class="row content">
                         <div class="large-12">            
                             <div class="container">
-                                <h1><xsl:value-of select="./tei:head[@n=1]"/></h1>
+                                <h1 class="text-center edito2"><xsl:value-of select="./tei:head[@n=1]"/></h1>
                                 <xsl:if test="./tei:p">
                                     <xsl:for-each select="./tei:p">
                                         <p class="lead">
@@ -2519,7 +2519,7 @@
                     <xsl:copy-of select="$header"/>
                     <div class="row content">
                         <div class="large-12">
-                            <h2 class="text-center edito2">Focus</h2>
+                            <h1 class="text-center edito2">Focus</h1>
                             <br/>
                             <div class="media-object">
                                 <div class="media-object-section">
@@ -2674,7 +2674,7 @@
                     <xsl:copy-of select="$header"/>
                     <div class="row content">
                         <div class="large-12">
-                            <h1>Bibliographie</h1>
+                            <h1 class="text-center edito2">Bibliographie</h1>
                             <xsl:for-each select="./tei:listBibl">
                                 <xsl:choose>
                                     <xsl:when test="@xml:id='BiblioGenerale'">
@@ -2770,8 +2770,8 @@
                     <xsl:copy-of select="$header"/>
                     <div class="row content">
                         <div class="large-12">
-                            <h1>Galerie</h1>
-                            <h2 class="edito">Portraits</h2>
+                            <h1 class="text-center edito2">Galerie</h1>
+                            <h2 class="edito2">Portraits</h2>
                             <xsl:for-each select="tei:figure[@type='portrait']">
                                 <xsl:variable name="picture" select="./tei:graphic/@url"/>
                                 <xsl:variable name="cartel" select="./tei:desc"/>
@@ -2779,7 +2779,7 @@
                                     <img src="../images/illustrations/thumbs/T{$picture}.png" alt="{$cartel}"/>
                                 </a>
                             </xsl:for-each>
-                            <h2 class="edito">Oeuvres de Emmanuel Héré, architecte du roi</h2>
+                            <h2 class="edito2">Oeuvres de Emmanuel Héré, architecte du roi</h2>
                             <xsl:for-each select="tei:figure[@type='emmanuelHere']">
                                 <xsl:variable name="picture" select="./tei:graphic/@url"/>
                                 <xsl:variable name="cartel" select="./tei:desc"/>
@@ -2787,7 +2787,7 @@
                                     <img src="../images/illustrations/thumbs/T{$picture}.png" alt="{$cartel}"/>
                                 </a>
                             </xsl:for-each>
-                            <h2 class="edito">Oeuvres de Dominique Collin, graveur du roi</h2>
+                            <h2 class="edito2">Oeuvres de Dominique Collin, graveur du roi</h2>
                             <xsl:for-each select="tei:figure[@type='dominiqueCollin']">
                                 <xsl:variable name="picture" select="./tei:graphic/@url"/>
                                 <xsl:variable name="cartel" select="./tei:desc"/>
@@ -2795,7 +2795,7 @@
                                     <img src="../images/illustrations/thumbs/T{$picture}.png" alt="{$cartel}"/>
                                 </a>
                             </xsl:for-each>
-                            <h2 class="edito">Édifices civils</h2>
+                            <h2 class="edito2">Édifices civils</h2>
                             <xsl:for-each select="tei:figure[@type='civil']">
                                 <xsl:variable name="picture" select="./tei:graphic/@url"/>
                                 <xsl:variable name="cartel" select="./tei:desc"/>
@@ -2803,7 +2803,7 @@
                                     <img src="../images/illustrations/thumbs/T{$picture}.png" alt="{$cartel}"/>
                                 </a>
                             </xsl:for-each>
-                            <h2 class="edito">Édifices religieux</h2>
+                            <h2 class="edito2">Édifices religieux</h2>
                             <xsl:for-each select="tei:figure[@type='eglise']">
                                 <xsl:variable name="picture" select="./tei:graphic/@url"/>
                                 <xsl:variable name="cartel" select="./tei:desc"/>
@@ -2811,15 +2811,15 @@
                                     <img src="../images/illustrations/thumbs/T{$picture}.png" alt="{$cartel}"/>
                                 </a>
                             </xsl:for-each>
-                            <h2 class="edito">Édifices militaires</h2>
+                            <h2 class="edito2">Édifices militaires</h2>
                             <xsl:for-each select="tei:figure[@type='porte'] | tei:figure[@type='militaire']">
                                 <xsl:variable name="picture" select="./tei:graphic/@url"/>
                                 <xsl:variable name="cartel" select="./tei:desc"/>
-                                <a class="miniatures" href="../images/illustrations/{$picture}.jpg" data-lightbox="{@type}" data-title="{$cartel}">
+                                <a class="miniatures" href="../images/illustrations/{$picture}.jpg" data-lightbox="militaire" data-title="{$cartel}">
                                     <img src="../images/illustrations/thumbs/T{$picture}.png" alt="{$cartel}"/>
                                 </a>
                             </xsl:for-each>
-                            <h2 class="edito">Livres</h2>
+                            <h2 class="edito2">Livres</h2>
                             <xsl:for-each select="tei:figure[@type='livre']">
                                 <xsl:variable name="picture" select="./tei:graphic/@url"/>
                                 <xsl:variable name="cartel" select="./tei:desc"/>
@@ -2827,11 +2827,11 @@
                                     <img src="../images/illustrations/thumbs/T{$picture}.png" alt="{$cartel}"/>
                                 </a>
                             </xsl:for-each>
-                            <h2 class="edito">Résidences</h2>
+                            <h2 class="edito2">Résidences</h2>
                             <xsl:for-each select="tei:figure[@type='luneville'] | tei:figure[@type='residence']">
                                 <xsl:variable name="picture" select="./tei:graphic/@url"/>
                                 <xsl:variable name="cartel" select="./tei:desc"/>
-                                <a class="miniatures" href="../images/illustrations/{$picture}.jpg" data-lightbox="{@type}" data-title="{$cartel}">
+                                <a class="miniatures" href="../images/illustrations/{$picture}.jpg" data-lightbox="residence" data-title="{$cartel}">
                                     <img src="../images/illustrations/thumbs/T{$picture}.png" alt="{$cartel}"/>
                                 </a>
                             </xsl:for-each>
@@ -2971,7 +2971,7 @@
                     <xsl:copy-of select="$header"/>
                     <div class="row content">
                         <div class="large-12">
-                            <h1>L'édition du Journal de Durival</h1>
+                            <h1 class="text-center edito2">L'édition du Journal de Durival</h1>
                             <xsl:apply-templates mode="projecDesc"/>
                         </div>
                     </div>
