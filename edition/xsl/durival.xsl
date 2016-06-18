@@ -1810,7 +1810,7 @@
                                     <p class="edito"> Sur ce plan de nancy, les lieux cités par
                                         Durival sont signalés par une icône (avec une distinction
                                         pour le civil, le religieux et le militaire). </p>
-                                    <p>Cette superposition redessine la ville telle que Durival l'a
+                                    <p class="edito">Cette superposition redessine la ville telle que Durival l'a
                                         parcouru et donne accès à des informations sur des lieux qui
                                         sont toujours visibles, ont été transformés ou qui parfois
                                         ont disparu.</p>
