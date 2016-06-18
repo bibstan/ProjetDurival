@@ -1,0 +1,99 @@
+\usepackage[top=4cm, bottom=2cm, outer=5cm, inner=2cm, heightrounded, marginparwidth=3.5cm, marginparsep=0.75cm]{geometry}
+
+\newcommand{\mybox}[1]{%
+\marginnote{{\color{red}CAUTION!}\\{#1}}
+}
+
+\newlength\sidebar
+ \newlength\envrule
+ \newlength\envborder
+ \setlength\sidebar{1.5mm}
+ \setlength\envrule{0.4pt}
+ \setlength\envborder{2mm}
+
+\makeatletter
+ \long\def\fboxs#1{%
+   \leavevmode
+   \setbox\@tempboxa\hbox{%
+     \color@begingroup
+       \kern\fboxsep{#1}\kern\fboxsep
+     \color@endgroup}%
+   \@frames@x\relax}
+ \def\frameboxs{%
+   \@ifnextchar(%)
+     \@framepicbox{\@ifnextchar[\@frameboxs\fboxs}}
+ \def\@frameboxs[#1]{%
+   \@ifnextchar[%]
+     {\@iframeboxs[#1]}%
+     {\@iframeboxs[#1][c]}}
+ \long\def\@iframeboxs[#1][#2]#3{%
+   \leavevmode
+   \@begin@tempboxa\hbox{#3}%
+     \setlength\@tempdima{#1}%
+     \setbox\@tempboxa\hb@xt@\@tempdima
+          {\kern\fboxsep\csname bm@#2\endcsname\kern\fboxsep}%
+     \@frames@x{\kern-\fboxrule}%
+   \@end@tempboxa}
+ \def\@frames@x#1{%
+   \@tempdima\fboxrule
+   \advance\@tempdima\fboxsep
+   \advance\@tempdima\dp\@tempboxa
+   \hbox{%
+     \lower\@tempdima\hbox{%
+       \vbox{%
+         %\hrule\@height\fboxrule
+         \hbox{%
+          \vrule\@width\fboxrule
+           #1%
+           \vbox{%
+             \vskip\fboxsep
+             \box\@tempboxa
+             \vskip\fboxsep}%
+           #1%
+           }%\vrule\@width\fboxrule}%
+         }%\hrule\@height\fboxrule}%
+                           }%
+         }%
+ }
+ \def\esefcolorbox#1#{\esecolor@fbox{#1}}
+ \def\esecolor@fbox#1#2#3{%
+   \color@b@x{\fboxsep\z@\color#1{#2}\fboxs}{\color#1{#3}}}
+ \makeatother
+
+
+ \definecolor{exampleborder}{HTML}{FFFFFF}
+ \definecolor{examplebg}{HTML}{FFFFFF}
+ \definecolor{statementborder}{rgb}{1,1,1}
+ \definecolor{statementbg}{rgb}{1,1,1}
+
+ \newenvironment{eseframed}{%
+   \def\FrameCommand{\fboxrule=\the\sidebar  \fboxsep=\the\envborder%
+   \esefcolorbox{exampleborder}{examplebg}}%
+   \MakeFramed{\FrameRestore}}%
+  {\endMakeFramed}
+
+%\renewcommand\dateTurkish{\def\today{\number\day~%
+ %\ifcase \month \or Ocak\or Şubat\or Mart\or Nisan\or Mayıs\or Haziran\or
+ %  Temmuz\or Ağustos\or Eylül\or Ekim\or Kasım\or Aralık\fi\space
+ %\number\year}}
+%\dateTurkish
+
+ \newcounter{diary}
+%\numberwithin{uygulama}
+\renewcommand{\thediary}{\arabic{diary}}
+
+ %%% CODE ENVIRONMENT. PUT TEXT INTO COLORED FRAME %%%
+ \newenvironment{diary}[2]
+ {\par\medskip\refstepcounter{diary}%
+ \hbox{%
+ \fboxsep=\the\sidebar\hspace{-\envborder}\hspace{-.5\sidebar}%
+ \colorbox{exampleborder}{%
+ \hspace{\envborder}\sffamily\large\bfseries%
+ \textcolor{black}{{\underline{#1}}\ {#2}}\enspace\hspace{\envborder}
+%\today
+ }
+ }
+ \nointerlineskip\vspace{-\topsep}%
+ \begin{eseframed}\noindent\ignorespaces%
+ }
+ {\end{eseframed}\vspace{-\baselineskip}\medskip}

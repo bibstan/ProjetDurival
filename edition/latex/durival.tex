@@ -1,0 +1,43 @@
+%//////////////////////////////////////////
+%\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+%avant de compiler penser à remplacer dans le document : 
+%  & => \&
+%  # => \#
+%  °  => \degre
+%//////////////////////////////////////////
+%\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\documentclass[a4paper,oneside]{book}
+%supprimer oneside pour avoir l'alternance gauche/droite des marges latérales.
+\usepackage[english,italian,french]{babel}
+\usepackage{lipsum}
+\usepackage{xcolor}
+\usepackage{framed}
+\usepackage{datetime}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fourier}
+\usepackage{marginnote}
+\usepackage{tikz}
+\usepackage{hyperref}
+\usepackage[normalem]{ulem}
+\setlength\parindent{0pt}
+
+\newcounter{mynote}% a new counter for use in margin notes
+
+\newcommand{\mynote}[1]{% a simple margin note
+        \refstepcounter{mynote}% step counter
+        \mbox{\textsuperscript{\themynote}}% the number (superscript) in text
+        \marginnote{\mbox{\textsuperscript{\themynote}}#1}% the note
+}
+
+\input{input}
+
+\title{\Huge Journal de Nicolas Durival 1765-1766}
+\author{Bibliothèque municipale de Nancy}
+\date{}
+\begin{document}
+\maketitle
+\include{./1765-66/1765-66}
+
+\tableofcontents
+\end{document}
