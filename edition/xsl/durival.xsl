@@ -159,16 +159,7 @@
                         <a class="float-right" href="apropos.html">Crédits</a>
                     </div>
                 </div>
-<<<<<<< HEAD
-                <div class="large-4 columns">
-
-                    <a href="apropos.html">À propos</a>
-
-                </div>                                                        
-            </div>                        
-=======
             </div>
->>>>>>> bibstan/master
         </div>
     </xsl:variable>
     
@@ -266,18 +257,32 @@
                         <ul class="accordion" data-accordion="true" data-allow-all-closed="true">
                             <li class="accordion-item" data-accordion-item="true">
                                 <a href="#" class="accordion-title text-center"><h2 class="edito2">En savoir plus sur le projet</h2></a>                                
-                                <div class="accordion-content" data-tab-content="true" >                                    
-                                    <p class="edito text-left">
-                                        Le site internet <b>Journal de durival</b> est la première étape d'un projet qui vise à l'édition complète des 
-                                        14 volumes composés par Durival entre 1737 et 1795. Dès aujourd'hui, nous proposons l'édition de deux années 
-                                        charnières pour l'histoire de la Lorraine : 1765-1766. Cette édition est annotée et augmentée d'un index, de 
-                                        cartes anciennes ou interactives, d'illustrations issues essentiellement de nos fonds iconographiques (ou de nos partenaires), 
-                                        de ressources complémentaires tels que bibliographies et notices biographiques ou historiques visant à éclairer le contexte de 
-                                        rédaction de ce document exceptionnel.
-                                        <br />
-                                        Ce site vous plonge au plus près de la vie des nancéens à la fin du règne de Stanislas et durant 
-                                        la première année du rattachement effectif du Duché au royaume de France.
-                                    </p>
+                                <div class="accordion-content" data-tab-content="true">
+                                    <p class="edito text-left"> Le site internet <b>Journal de
+                                        durival</b> est la première étape d'un projet qui vise à
+                                        l'édition complète des 14 volumes composés par Nicolas
+                                        Durival entre 1737 et 1795. </p>
+                                    <p> Nicolas Durival est un officier au service du chancelier
+                                        Chaumont de la Galaizière dès l'arrivée de Stanislas et des
+                                        Français en Lorraine en 1737. Il passe ensuite au Conseil du
+                                        roi et, à partir de 1760, achète la charge de lieutenant
+                                        général de police de Nancy à la demande de son souverain. Il
+                                        tient, dès 1737 et jusqu'à sa mort en 1795, un journal des
+                                        faits qui se sont déroulés dans l'entourage ducal et dans la
+                                        ville de Nancy. Sources de première importance pour
+                                        l'histoire de la ville et de la cour, ces 14 volumes
+                                        manuscrits n'ont encore jamais fait l'objet d'une
+                                        édition complète. </p>
+                                    <p>Dès aujourd'hui, les Bibliothèques de Nancy proposent l'édition de deux années
+                                        charnières pour l'histoire de la Lorraine : 1765-1766. Cette
+                                        édition est annotée et augmentée d'un index, de cartes
+                                        anciennes ou interactives, d'illustrations , de ressources
+                                        complémentaires tels que bibliographies et notices
+                                        biographiques ou historiques visant à éclairer le contexte
+                                        de rédaction de ce document exceptionnel. <br/> Ce site vous
+                                        plonge au plus près de la vie des nancéiens à la fin du
+                                        règne de Stanislas et durant la première année du
+                                        rattachement effectif du Duché au royaume de France. </p>
                                 </div>
                             </li>                            
                         </ul>
@@ -1755,7 +1760,7 @@
                     <xsl:copy-of select="$header"/>
                     <div class="row">
                         <div class="large-12">
-                            <h2 class="text-center edito2">Les cartes</h2>
+                            <h2 class="text-center edito2">Cartes</h2>
                             <p class="edito"/>
                             <div class="large-4 medium-12 columns">
                                 <div>
@@ -1765,13 +1770,13 @@
                                 <a href="belprey.html" target="blank">
                                     <img class="float-center" src="../images/vignettes/vignetteBelprey.gif"/>
                                 </a>
-                                <h3 class="text-center edito2">Le plan Belprey : 1754</h3>
+                                <h3 class="text-center edito2">Nancy en 1754</h3>
                                 <br/>
                                 <h4 class="edito">Thomas Belprey (1713-1786)</h4>
                                 <cite class="edito">Plan général des deux villes de Nancy et des
                                     nouveaux édifices que sa Majesté le roy de Pologne, duc de
-                                    Lorraine et de Bar etc. y a fait construire. Levé par Belprey...
-                                    en 1754.</cite>
+                                    Lorraine et de Bar etc... y a fait construire. Levé par
+                                    Belprey... en 1754.</cite>
                                 <br/>
                                 <p class="edito">Ce plan de Thomas Belprey présente une vue en
                                     perspective de la ville en 1754, soit avant l'achèvement de tous
@@ -1784,19 +1789,17 @@
                                     <br/>
                                     <a href="mique.html" target="blank"><img class="float-center" src="../images/vignettes/vignetteB543956101_H_FG_ES_00014.gif" /></a>
                                 </div>
-                                <h3 class="text-center edito2">Le plan Mique : 1778</h3>
+                                <h3 class="text-center edito2">Nancy en 1778</h3>
                                 <br/>
-                                <h4 class="edito">Claude Mique (1714-1796) </h4>
+                                <h4 class="edito">Claude Mique (1714-1796)</h4>
                                 <cite class="edito">Plan des villes, citadelle et faubourgs de
-                                    Nancy, dédié à la Reine par son très humble et très obéissant
-                                    serviteur C. Mique, architecte de feu Roi de Pologne à Nancy.
-                                    Vers 1778.</cite>
-                                <p class="edito">Sur ce plan de l'architecte du roi, l'essentiel
-                                    des transformations voulues par Stanislas ont été réalisées. On
-                                    peut y voir la nouvelle université (actuelle bibliothèque
-                                    Stanislas), et le début de la destruction des bastions. Celui
-                                    des Michottes a déjà disparu, laissant place à la nouvelle place
-                                    de Grève.</p>
+                                    Nancy, dédié à la Reine par... C. Mique, architecte de feu Roi
+                                    de Pologne à Nancy.</cite>
+                                <p class="edito">Sur ce plan de l'architecte du roi, l'essentiel des
+                                    transformations voulues par Stanislas ont été réalisées. On y
+                                    voit l'université (actuelle bibliothèque Stanislas), et le début
+                                    de la destruction des bastions. Celui des Michottes a déjà
+                                    disparu, laissant place à la nouvelle place de Grève.</p>
                             </div>
                             <div class="large-4 medium-12 columns">
                                 <div>
@@ -1804,14 +1807,15 @@
                                     <a href="cartographie.html" target="blank"><img class="float-center" src="../images/vignettes/vignetteCarte.gif"/></a>
                                     <h3 class="text-center edito2">Nancy aujourd'hui</h3>
                                     <br/>
-                                    <cite class="edito">Les lieux évoqués par Durival en 1765-1766 </cite>
-                                    <p class="edito"> Sur cette carte contemporaine, les lieux
-                                        évoqués par Durival sont signalés par un icone (avec une
-                                        distinction pour le civil, le religieux et le militaire).
-                                        Cette superposition redessine la ville telle que Durival l'a
-                                        parcouru, donnant accès à des informations sur des lieux qui
+                                    <cite class="edito">La ville de Nancy telle qu'évoquée par
+                                        Durival en 1765-1766 sur un plan contemporain.</cite>
+                                    <p class="edito"> Sur ce plan de nancy, les lieux cités par
+                                        Durival sont signalés par une icône (avec une distinction
+                                        pour le civil, le religieux et le militaire). </p>
+                                    <p>Cette superposition redessine la ville telle que Durival l'a
+                                        parcouru et donne accès à des informations sur des lieux qui
                                         sont toujours visibles, ont été transformés ou qui parfois
-                                        ont disparus.</p>
+                                        ont disparu.</p>
                                 </div>
                             </div>
                             <br/>
@@ -2517,7 +2521,7 @@
                     <xsl:copy-of select="$header"/>
                     <div class="row content">
                         <div class="large-12">
-                            <h2 class="text-center edito2">Les focus</h2>
+                            <h2 class="text-center edito2">Focus</h2>
                             <br/>
                             <div class="media-object">
                                 <div class="media-object-section">
@@ -2530,8 +2534,7 @@
                                     </div>
                                 </div>
                                 <div class="media-object-section">
-                                    <h2 class="edito">Nicolas Durival (Commercy, 12 novembre 1713 -
-                                        Heillecourt, 21 décembre 1795)</h2>
+                                    <h2 class="edito">Nicolas Durival (1713-1795)</h2>
                                     <p class="edito">Fils d'un valet de garde-robe du duc Léopold,
                                         Jacques Luton, Nicolas Durival met sa carrière au service du
                                         nouveau souverain, Stanislas Leszczynski, roi de Pologne,
@@ -2548,23 +2551,9 @@
                             <div class="media-object">
                                 <div class="media-object-section">
                                     <div class="thumbnail">
-                                        <a href="stanislas.html">
-                                            <img src="../images/vignettes/vignetteStanislasPortrait.png" width="200"/>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="media-object-section">
-                                    <h2 class="edito">Stanislas Leszczynski (20 octobre 1677- 23
-                                        février 1766)</h2>
-                                    <p class="edito"> Les deux dernières années de Stanislas. </p>
-                                </div>
-                            </div>
-                            <div class="media-object">
-                                <div class="media-object-section">
-                                    <div class="thumbnail">
                                         <a href="bibliotheque.html">
                                             <img
-                                                src="../images/vignettes/vignetteStanislasPortrait.png"
+                                                src="../images/vignettes/vignetteStanislas_portrait.png"
                                                 width="200"/>
                                         </a>
                                     </div>
@@ -2572,11 +2561,26 @@
                                 <div class="media-object-section">
                                     <h2 class="edito">Histoire de la Bibliothèque de sa création à
                                         1799</h2>
-                                    <p class="edito">Fondée par un édit de Stanislas du 28 décemnre
+                                    <p class="edito">Fondée par un édit de Stanislas du 28 décembre
                                         1750, la Bibliothèque entend favoriser la diffusion des
-                                        idées nouvelles, le progrès des sciences et des arts. En
-                                        un-demi siècle, elle connaîtra trois déménagements et une
+                                        idées nouvelles, le progrès des sciences et des arts. En un
+                                        demi-siècle, elle connaîtra trois déménagements et une
                                         révolution.</p>
+                                </div>
+                            </div>
+                            <div class="media-object">
+                                <div class="media-object-section">
+                                    <div class="thumbnail">
+                                        <a href="stanislas.html">
+                                            <img
+                                                src="../images/vignettes/VignetteD-95-395_PM .png"
+                                                width="200"/>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="media-object-section">
+                                    <h2 class="edito">Stanislas Leszczynski (1677-1766)</h2>
+                                    <p class="edito"> Les deux dernières années de Stanislas. </p>
                                 </div>
                             </div>
                         </div>
