@@ -1,0 +1,23 @@
+#      web page     #
+#####################
+edition/html/*.html
+edition/index.html
+#  dossiers travail  #
+######################
+/attente
+/pdf
+/images
+/edition/images
+/transcription
+/edition/latex
+# except .tex files which are maintained by hand
+!*.tex
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
