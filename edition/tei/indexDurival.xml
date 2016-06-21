@@ -26,7 +26,7 @@
                   <event>
                      <p>Doyen de l'église primatiale de Nancy</p>                     
                   </event>
-                  <event><p>il fut également grand aumônier et conseiller d'Etat de Léopold de Lorraine</p></event>
+                  <event><p>il fut également grand aumônier et conseiller d'État de Léopold de Lorraine</p></event>
                </listEvent>
             </person>
             <person xml:id="abbeClement">
@@ -71,11 +71,9 @@
                      <p>Chanione trésorier du chapitre de Sainte-Marthe de Tarascon</p>
                   </event>
                   <event>
-                     <p> historien</p>
+                     <p>historien et membre de plusieurs sociétés savantes d'Europe</p>
                   </event>
-                  <event>
-                     <p>membre de plusieurs sociétés savantes d'Europe</p>
-                  </event>
+
                </listEvent>
             </person>
             <person xml:id="abbeFinatory">
@@ -93,10 +91,7 @@
                <birth when="1715"/>
                <listEvent>
                   <event>
-                     <p>Membre de l'Académie dès 1754</p>
-                  </event>
-                  <event>
-                     <p>docteur en théologie et chanoine de Toul</p>
+                     <p>Membre de l'Académie dès 1754, il est docteur en Théologie et chanoine de Toul</p>
                   </event>
                </listEvent>
             </person>
@@ -114,7 +109,7 @@
                <birth when="1715"/>
                <listEvent>
                   <event>
-                     <p>Membre de l'Académie - chanoine de Toul</p>
+                     <p>Membre de l'Académie et chanoine de Toul</p>
                   </event>
                </listEvent>
             </person>
@@ -141,7 +136,7 @@
                <death when="1796"/>
                <listEvent>
                   <event>
-                     <p>Épouse du duc d'Aiguillon, gouverneur de Bretagne accusé d'abus de pouvoir, à l'origine de la fronde du Parlement de Bretagne</p>
+                     <p>Épouse du duc d'Aiguillon gouverneur de Bretagne, accusé d'abus de pouvoir, il est à l'origine de la fronde du Parlement de Bretagne</p>
                   </event>
                </listEvent>
             </person>
@@ -157,7 +152,7 @@
                      <p>fermier général (1756-1779)</p>
                   </event>
                   <event>
-                     <p>marié à Marie-Rose Mathieu</p>
+                     <p>il est marié à Marie-Rose Mathieu</p>
                   </event>
                </listEvent>
             </person>
@@ -165,10 +160,7 @@
                <persName><surname>André de Pirouel</surname><forename>Jean-Claude</forename></persName>
                <listEvent>
                   <event>
-                     <p>Membre de l'Académie (1756-1779)</p>
-                  </event>
-                  <event>
-                     <p>sous-directeur en 1762, 1763 et 1773</p>
+                     <p>Membre de l'Académie (1756-1779), il est sous-directeur en 1762, 1763 et 1773</p>
                   </event>
                </listEvent>
             </person>
@@ -193,7 +185,7 @@
                </state>
                <listEvent>
                   <event>
-                     <p>Frère du ministre de Louis XV Choiseul</p>
+                     <p>Frère d'Étienne-François de Choiseul, ministre de Louis XV</p>
                   </event>
                </listEvent>
             </person>
@@ -251,7 +243,7 @@
                      <p>Avocat du roi aux requêtes du Palais le 9 novembre 1754</p>
                   </event>
                   <event>
-                     <p>épouse Jeanne Calet en 1731</p>
+                     <p>Il épousa Jeanne Calet en 1731</p>
                   </event>
                </listEvent>
             </person>
@@ -292,7 +284,7 @@
                </state>
                <listEvent>
                   <event>
-                     <p>Succède à ses parents Nicolas (mort en 1738) et Scholastique, veuve Nicolas Baltazard, vers 1750.</p>
+                     <p>Succède à ses parents Nicolas (mort en 1738) et Scholastique, vers 1750.</p>
                   </event>
                </listEvent>
             </person>
@@ -308,7 +300,7 @@
                <death when="1766"/>
                <listEvent>
                   <event>
-                     <p>Chevalier de saint louis</p>
+                     <p>Chevalier de saint Louis</p>
                   </event>
                   <event>
                      <p>ingénieur en chef à Nancy à partir de 1737</p>
@@ -335,7 +327,7 @@
                      <p>Frère de la marquise de Boufflers</p>
                   </event>
                   <event>
-                     <p>colonel des Gardes Lorraines</p>
+                     <p>colonel des gardes lorraines</p>
                   </event>
                   <event>
                      <p>gouverneur du Languedoc</p>
@@ -351,7 +343,7 @@
                      <p>Marquis tué au siège d'Ypres</p>
                   </event>
                   <event>
-                     <p>frère de Anne de Beauvau (madame Des Armoises)</p>
+                     <p>Il est le frère de Anne de Beauvau (madame Des Armoises)</p>
                   </event>
                </listEvent>
             </person>
@@ -463,7 +455,7 @@
                      <p>intendant de Strasbourg (1764-1777)</p>
                   </event>
                   <event>
-                     <p>conseiller d'Etat en 1767</p>
+                     <p>conseiller d'État en 1767</p>
                   </event>
                </listEvent>
             </person>
@@ -471,7 +463,7 @@
                <persName><surname>Bouchon</surname><addName>M.</addName></persName>
                <listEvent>
                   <event>
-                     <p>Epoux de Marianne Breton et fils d'un marchand de Ligny</p>
+                     <p>Époux de Marianne Breton et fils d'un marchand de Ligny</p>
                   </event>
                </listEvent>
             </person>
@@ -501,7 +493,7 @@
                      <p>Chevalier de Malte, militaire, poète et littérateur</p>
                   </event>
                   <event>
-                     <p>Il est le fils de la marquise de Boufflers-Remiencourt, filleul et protégé de Stanislas</p>
+                     <p>Il est le fils de la marquise de Boufflers-Remiencourt et filleul et protégé de Stanislas</p>
                   </event>
                </listEvent>
             </person>
@@ -524,7 +516,7 @@
                <!-- todo pas certain de la date de naissance -->
                <listEvent>
                   <event>
-                     <p>Capitaine et colonel des Gardes du duc Leopold 1<hi rend="super">er</hi></p>
+                     <p>Capitaine et colonel des gardes du duc Leopold 1<hi rend="super">er</hi></p>
                   </event>
                </listEvent>
             </person>
@@ -567,15 +559,15 @@
 
             <person xml:id="breton">
                <persName><surname>Breton</surname><forename>Jean Charles</forename></persName>
-               <listEvent>
-                  <!-- todo vérif -->
+               <!--<listEvent>
+                  todo vérif
                   <event>
                      <p>Conseiller pour la noblesse = Jean-Charles Breton ? (succ. De Durival)</p>
                   </event>
                   <event>
                      <p>lieutenant général de police à Nancy en 1768</p>
                   </event>
-               </listEvent>
+               </listEvent>-->
             </person>
             <person xml:id="bretonMarianne">
                <persName><surname>Breton</surname><forename>Marianne</forename></persName>
@@ -606,9 +598,9 @@
                   <event>
                      <p>Fille d'un conseiller au Parlement</p>
                   </event>
-                  <event>
+                  <!--<event>
                      <p>une fille de son premier mariage habitait Nancy</p>
-                  </event>
+                  </event>-->
                   <event>
                      <p>son mari, Nicolas Isambart Busquet de Caumont, est conseiller au parlement de Normandie</p>
                   </event>
@@ -709,7 +701,7 @@
                <death when="1773"/>
                <listEvent>
                   <event>
-                     <p>Fille cadette du duc Léopold Ier</p>
+                     <p>Fille cadette du duc Léopold I<hi rend="super">er</hi></p>
                   </event>
                   <event>
                      <p>abbesse de l'abbaye de Remiremont en 1738</p>
@@ -728,7 +720,7 @@
                      <p>Lieutenant général des armées du roi</p>
                   </event>
                   <event>
-                     <p>gouverneur de Toul en 1763</p>
+                     <p>Il devient gouverneur de Toul en 1763</p>
                   </event>
                </listEvent>
             </person>
@@ -761,7 +753,7 @@
                <persName><surname>Cheneau</surname><addName>M<hi rend="super">lle</hi></addName></persName>
                <listEvent>
                   <event>
-                     <p>fille de M. Cheneau et épouse M. de Rutant de Saulxures</p>
+                     <p>Fille de M. Cheneau et épouse M. de Rutant de Saulxures</p>
                   </event>
                </listEvent>
             </person>
@@ -771,7 +763,7 @@
                <death when="1785"/>
                <listEvent>
                   <event>
-                     <p>ministre de la Guerre et de la Marine (1761-1766)</p>
+                     <p>Ministre de la Guerre et de la Marine (1761-1766)</p>
                   </event>
                   <event>
                      <p>ministre des Affaires étrangères de France (1766-1770)</p>
@@ -846,7 +838,7 @@
                      <p>chanoinesse puis abbesse de Remiremont</p>
                   </event>
                   <event>
-                     <p>sœur de la dauphine de France Marie-Josèphe de Saxe</p>
+                     <p>sœur de Marie-Josèphe de Saxe dauphine de France </p>
                   </event>
                </listEvent>
             </person>
@@ -950,9 +942,12 @@
                <persName><surname>Coster</surname><forename>Joseph</forename></persName>
                <listEvent>
                   <event>
-                     <p>ecclésiastique</p>
+                     <p>Ecclésiastique</p>
                   </event>
                </listEvent>
+            </person>
+            <person xml:id="costerSigisbert">
+               <persName><surname>Coster</surname><forename>Sigisbert-Etienne</forename></persName>
             </person>
             <person xml:id="craincourtAnne">
                <persName><surname>Craincourt</surname><forename>Anne</forename></persName>
@@ -986,13 +981,13 @@
                <death when="1775"/>
                <listEvent>
                   <event>
-                     <p>Membre de l'Académie dès 1751 et président du Collège Royal de Médecine dès 1772</p>
+                     <p>Membre de l'Académie dès 1751 et président du Collège royal de médecine dès 1772</p>
                   </event>
                   <event>
                      <p>docteur en médecine en 1734, il a fait ses études à Montpellier et Pont-à-Mouson</p>
                   </event>
                   <event>
-                     <p>fils de Claude Cupers, marchand, et d'Élisabeth Humblot</p>
+                     <p>il est le fils de Claude Cupers, marchand, et d'Élisabeth Humblot</p>
                   </event>
                </listEvent>
             </person>
@@ -1051,7 +1046,7 @@
                   </event>
                   <!-- todo mettre en state ? -->
                   <event>
-                     <p>intendant des finances en avril 1756 puis conseiller d'Etat (1765)</p>
+                     <p>intendant des Finances en avril 1756 puis conseiller d'État (1765)</p>
                   </event>
                   <event>
                      <p>siège au Conseil royal des Finances à partir de 1769 </p>
@@ -1060,7 +1055,7 @@
                      <p>conseiller d'État ordinaire (1775)</p>
                   </event>
                   <event>
-                     <p>président du Comité contentieux des finances (1777)</p>
+                     <p>président du Comité contentieux des Finances (1777)</p>
                   </event>
                   <event>
                      <p>conseiller à la première chambre des requêtes du Parlement de Paris avec dispense d'âge (20/12/1736), maître des requêtes (1740), président au Grand Conseil (1745)</p>
@@ -1110,7 +1105,7 @@
                <death when="1792"/>
                <listEvent>
                   <event>
-                     <p>Époux de Gabrille Charlotte Françoise, petite fille de Anne de Ligniville et favorite du duc Léopold</p>
+                     <p>Époux de Gabrielle Charlotte Françoise, petite fille de Anne de Ligniville et favorite du duc Léopold</p>
                   </event>
                </listEvent>
             </person>
@@ -1126,7 +1121,7 @@
                      <p>lieutenant au régiment des gardes de Lorraine</p>
                   </event>
                   <event>
-                     <p>directeur des postes à Nancy (après la Révolution Française)</p>
+                     <p>directeur des postes à Nancy (après la Révolution française)</p>
                   </event>
                </listEvent>
             </person>
@@ -1149,7 +1144,7 @@
                   <event>
                      <p>Militaire français d'origine irlandaise, excellent officier de la guerre de succession d'Autriche, il est nommé commandant des forces françaises en Inde durant la guerre de Sept Ans. Il s'agit d'une erreur stratégique du ministre de la Guerre. Tenu pour personnellement responsable des défaites indiennes, il est exécuté en place de Grève à Paris pour trahison. Inique et barbare, sa décapitation soulève une vague de protestations dans toute l'Europe. Voltaire aide notamment son fils à obtenir une révision de l'accusation de haute trahison.</p>                     
                   </event>
-                  <event><p>père de Trophime-Gérard de Lally-Tolendal (1751-1830) 6</p></event>
+                  <event><p>père de Trophime-Gérard de Lally-Tolendal (1751-1830)</p></event>
                </listEvent>
             </person>
             <person xml:id="deLaPonce">
@@ -1244,7 +1239,7 @@
                <!-- todo - mort à Nancy en 1768 ? -->
                <listEvent>
                   <event>
-                     <p>lieutenant général de François I<hi rend="super">er</hi></p>
+                     <p>Lieutenant général de François I<hi rend="super">er</hi></p>
                   </event>
                </listEvent>
             </person>
@@ -1265,8 +1260,7 @@
                <persName><surname>Sartine</surname><forename>Antoine Raymond Juan Gualbert Gabriel de</forename><roleName>comte d'Alby</roleName></persName>
                <birth when="1729"/>
                <death when="1801"/>
-               <listEvent>
-                  <!-- todo reprendre Wikipédia -->
+               <listEvent>                  
                   <event>
                      <p>Homme politique français, conseiller (1752), puis lieutenant criminel du Châtelet (1755), il est lieutenant général de police (1759–1774), et enfin ministre de la Marine sous Louis XVI.</p>
                   </event>
@@ -1309,7 +1303,7 @@
                <persName><surname>Despois</surname><addName>M.</addName></persName>
                <listEvent>
                   <event>
-                     <p>auteur d'un mémoire sur une pompe, reçoit pour son invention un prix de l'Académie en décembre 1766</p>
+                     <p>Auteur d'un mémoire sur une pompe, il reçoit pour son invention un prix de l'Académie en décembre 1766</p>
                   </event>
                </listEvent>
             </person>
@@ -1320,13 +1314,13 @@
                <death when="1778"/>
                <listEvent>
                   <event>
-                     <p>Maréchal de camp, gouverneur de Vaucouleurs, de Rhinfeld, de Valenciennes, de Maubeuge, conseiller d'Etat, chambellan du duc de Lorraine</p>
+                     <p>Maréchal de camp, gouverneur de Vaucouleurs, de Rhinfeld, de Valenciennes, de Maubeuge, conseiller d'État, chambellan du duc de Lorraine</p>
                   </event>
                   <event>
                      <p>lieutenant-Général des armées du Roi en 1759, commandeur de l'Ordre de Saint-Louis</p>
                   </event>
                   <event>
-                     <p>épouse le 6 mars 1730 Adélaide-Louise-Candide de Brancas</p>
+                     <p>il épousa le 6 mars 1730 Adélaide-Louise-Candide de Brancas</p>
                   </event>
                </listEvent>
             </person>
@@ -1352,7 +1346,7 @@
                <death when="1796"/>
                <listEvent>
                   <event>
-                     <p>poète lorrain</p>
+                     <p>Poète lorrain</p>
                   </event>
                   <event>
                      <p>lecteur du roi de Pologne</p>
@@ -1366,7 +1360,7 @@
                <persName><surname>Dheguerti</surname><addName>M.</addName></persName>
                <listEvent>
                   <event>
-                     <p>membre de l'Académie</p>
+                     <p>Membre de l'Académie</p>
                   </event>
                </listEvent>
             </person>
@@ -1374,7 +1368,7 @@
                <persName><surname>Hermond de Clery</surname><addName>M. d'</addName></persName>
                <listEvent>
                   <event>
-                     <p>Avocat au Parlement et ès conseils du roi à Paris</p>
+                     <p>Avocat au Parlement et ès conseil du roi à Paris</p>
                   </event>
                </listEvent>
             </person>
@@ -1401,7 +1395,7 @@
                <persName><surname>Drion</surname><addName>M.</addName></persName>
                <listEvent>
                   <event>
-                     <p>fermier de taxes</p>
+                     <p>Fermier de taxes</p>
                   </event>
                </listEvent>
             </person>
@@ -1457,7 +1451,7 @@
                <persName><surname>Dujard</surname><addName>V<hi rend="super">e</hi></addName></persName>
                <listEvent>
                   <event>
-                     <p>Sœur de Hocquet <hi rend="italic">(fils)</hi></p>
+                     <p>Sœur de M. Hocquet <hi rend="italic">(fils)</hi></p>
                   </event>
                </listEvent>
             </person>
@@ -1465,7 +1459,7 @@
                <persName><surname>Duplessis</surname><addName>M.</addName></persName>
                <listEvent>
                   <event>
-                     <p>correspondant de Durival</p>
+                     <p>Correspondant de Durival</p>
                   </event>
                </listEvent>
             </person>
@@ -1475,10 +1469,10 @@
                <death when="1802"/>
                <listEvent>
                   <event>
-                     <p>Épouse d'Emmanuel Félicité de Durfort de Duras</p>
+                     <p>Elle épousa d'Emmanuel Félicité de Durfort de Duras</p>
                   </event>
                   <event>
-                     <p>la mére de sa bru est dame d'honneur de Marie Leczinska</p>
+                     <p>la mére de sa bru fut dame d'honneur de Marie Leczinska</p>
                   </event>
                </listEvent>
             </person>

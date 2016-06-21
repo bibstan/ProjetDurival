@@ -747,7 +747,7 @@
                 <blockquote><xsl:apply-templates select="tei:lg"/></blockquote>
             </xsl:when>
             <xsl:when test="parent::tei:p">
-                <xsl:text>« </xsl:text><xsl:apply-templates/><xsl:text> »</xsl:text>
+                <xsl:text>«&#160;</xsl:text><xsl:apply-templates/><xsl:text>&#160;»</xsl:text>
             </xsl:when>
         </xsl:choose>
     </xsl:template>
@@ -2771,7 +2771,7 @@
                     <div class="row content">
                         <div class="large-12">
                             <h1 class="text-center edito2">Galerie</h1>
-                            <h2 class="edito2">Portraits</h2>
+                            <h2 class="edito">Portraits</h2>
                             <xsl:for-each select="tei:figure[@type='portrait']">
                                 <xsl:variable name="picture" select="./tei:graphic/@url"/>
                                 <xsl:variable name="cartel" select="./tei:desc"/>
@@ -2779,7 +2779,7 @@
                                     <img src="../images/illustrations/thumbs/T{$picture}.png" alt="{$cartel}"/>
                                 </a>
                             </xsl:for-each>
-                            <h2 class="edito2">Oeuvres de Emmanuel Héré, architecte du roi</h2>
+                            <h2 class="edito">Oeuvres de Emmanuel Héré, architecte du roi</h2>
                             <xsl:for-each select="tei:figure[@type='emmanuelHere']">
                                 <xsl:variable name="picture" select="./tei:graphic/@url"/>
                                 <xsl:variable name="cartel" select="./tei:desc"/>
@@ -2787,7 +2787,7 @@
                                     <img src="../images/illustrations/thumbs/T{$picture}.png" alt="{$cartel}"/>
                                 </a>
                             </xsl:for-each>
-                            <h2 class="edito2">Oeuvres de Dominique Collin, graveur du roi</h2>
+                            <h2 class="edito">Oeuvres de Dominique Collin, graveur du roi</h2>
                             <xsl:for-each select="tei:figure[@type='dominiqueCollin']">
                                 <xsl:variable name="picture" select="./tei:graphic/@url"/>
                                 <xsl:variable name="cartel" select="./tei:desc"/>
@@ -2795,7 +2795,7 @@
                                     <img src="../images/illustrations/thumbs/T{$picture}.png" alt="{$cartel}"/>
                                 </a>
                             </xsl:for-each>
-                            <h2 class="edito2">Édifices civils</h2>
+                            <h2 class="edito">Édifices civils</h2>
                             <xsl:for-each select="tei:figure[@type='civil']">
                                 <xsl:variable name="picture" select="./tei:graphic/@url"/>
                                 <xsl:variable name="cartel" select="./tei:desc"/>
@@ -2803,7 +2803,7 @@
                                     <img src="../images/illustrations/thumbs/T{$picture}.png" alt="{$cartel}"/>
                                 </a>
                             </xsl:for-each>
-                            <h2 class="edito2">Édifices religieux</h2>
+                            <h2 class="edito">Édifices religieux</h2>
                             <xsl:for-each select="tei:figure[@type='eglise']">
                                 <xsl:variable name="picture" select="./tei:graphic/@url"/>
                                 <xsl:variable name="cartel" select="./tei:desc"/>
@@ -2811,7 +2811,7 @@
                                     <img src="../images/illustrations/thumbs/T{$picture}.png" alt="{$cartel}"/>
                                 </a>
                             </xsl:for-each>
-                            <h2 class="edito2">Édifices militaires</h2>
+                            <h2 class="edito">Édifices militaires</h2>
                             <xsl:for-each select="tei:figure[@type='porte'] | tei:figure[@type='militaire']">
                                 <xsl:variable name="picture" select="./tei:graphic/@url"/>
                                 <xsl:variable name="cartel" select="./tei:desc"/>
@@ -2819,7 +2819,7 @@
                                     <img src="../images/illustrations/thumbs/T{$picture}.png" alt="{$cartel}"/>
                                 </a>
                             </xsl:for-each>
-                            <h2 class="edito2">Livres</h2>
+                            <h2 class="edito">Livres</h2>
                             <xsl:for-each select="tei:figure[@type='livre']">
                                 <xsl:variable name="picture" select="./tei:graphic/@url"/>
                                 <xsl:variable name="cartel" select="./tei:desc"/>
@@ -2827,7 +2827,7 @@
                                     <img src="../images/illustrations/thumbs/T{$picture}.png" alt="{$cartel}"/>
                                 </a>
                             </xsl:for-each>
-                            <h2 class="edito2">Résidences</h2>
+                            <h2 class="edito">Résidences</h2>
                             <xsl:for-each select="tei:figure[@type='luneville'] | tei:figure[@type='residence']">
                                 <xsl:variable name="picture" select="./tei:graphic/@url"/>
                                 <xsl:variable name="cartel" select="./tei:desc"/>
@@ -2912,7 +2912,9 @@
             </xsl:if>
         </xsl:for-each>        
     </xsl:template>
-    
+    <xsl:template match="tei:hi[@rend='super']" mode="projecDesc">
+        <sup><xsl:apply-templates/></sup>
+    </xsl:template>
     <xsl:template match="tei:hi[not(@*)]" mode="projecDesc"/>
     <xsl:template match="tei:hi[not(@*)]" mode="projecDesc2">
         <h2 class="edito2"><xsl:apply-templates mode="projecDesc"/></h2>
