@@ -167,7 +167,7 @@
         <html>
             <head>
                 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-                <title>Édition du journal de Nicolas Durival ß</title>
+                <title>Édition du journal de Nicolas Durival 1765-1766</title>
                 <script src="js/vendor/modernizr.js">/*Pour transformation xslt*/</script>
                 <script src="js/js/jquery.js">/*Pour transformation xslt*/</script>
                 <script src="js/vendor/modernizr.js">/*xslt*/</script>
@@ -365,7 +365,7 @@
             <xsl:result-document format="html" encoding="UTF-8" href="html/{./@xml:id}.html">
                 <html>
                     <head>
-                        <title>Édition du journal de Nicolas Durival ß</title>
+                        <title>Édition du journal de Nicolas Durival 1765-1766</title>
                         <meta charset="utf-8"/>
                         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
                         
@@ -1062,7 +1062,7 @@
         <xsl:result-document format="html" encoding="UTF-8" href="html/listPerson.html">
             <html>
                 <head>
-                    <title>Édition du journal de Nicolas Durival ß</title>
+                    <title>Édition du journal de Nicolas Durival 1765-1766</title>
                     <meta charset="utf-8"/>
                     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
                     
@@ -1214,7 +1214,7 @@
         <xsl:result-document format="html" encoding="UTF-8" href="html/listPlace.html">
             <html>
                 <head>
-                    <title>Édition du journal de Nicolas Durival ß</title>
+                    <title>Édition du journal de Nicolas Durival 1765-1766</title>
                     <meta charset="utf-8"/>
                     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
                     
@@ -1342,7 +1342,7 @@
         <xsl:result-document format="html" encoding="UTF-8" href="html/listOrg.html">           
             <html>
                 <head>
-                    <title>Édition du journal de Nicolas Durival ß</title>
+                    <title>Édition du journal de Nicolas Durival 1765-1766</title>
                     <meta charset="utf-8"/>
                     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
                     
@@ -1474,7 +1474,7 @@
         <xsl:result-document format="html" encoding="UTF-8" href="html/listbib.html">           
             <html>
                 <head>
-                    <title>Édition du journal de Nicolas Durival ß</title>
+                    <title>Édition du journal de Nicolas Durival 1765-1766</title>
                     <meta charset="utf-8"/>
                     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
                     
@@ -1626,7 +1626,7 @@
             <html>
                 <head>
                     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-                    <title>Édition du journal de Nicolas Durival ß</title>
+                    <title>Édition du journal de Nicolas Durival 1765-1766</title>
                     <meta charset="utf-8" />
                     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                     <link rel="stylesheet" href="../css/app.css" />
@@ -1730,7 +1730,7 @@
             <html>
                 <head>
                     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-                    <title>Édition du journal de Nicolas Durival ß</title>
+                    <title>Édition du journal de Nicolas Durival 1765-1766</title>
                     <meta charset="utf-8"/>
                     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
                     <link rel="stylesheet" href="../css/app.css"/>
@@ -1842,7 +1842,7 @@
             <html xmlns="http://www.w3.org/1999/xhtml">
                 <head>
                     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-                    <title>Édition du journal de Nicolas Durival ß</title>
+                    <title>Édition du journal de Nicolas Durival 1765-1766</title>
                     <meta charset="utf-8" />
                     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                     <link rel="stylesheet" href="../css/foundation.css" />
@@ -1879,7 +1879,7 @@
             <html xmlns="http://www.w3.org/1999/xhtml">
                 <head>
                     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-                    <title>Édition du journal de Nicolas Durival ß</title>
+                    <title>Édition du journal de Nicolas Durival 1765-1766</title>
                     <meta charset="utf-8" />
                     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                     <link rel="stylesheet" href="../css/foundation.css" />
@@ -1917,7 +1917,7 @@
             <html>
                 <head>
                     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-                    <title>Édition du journal de Nicolas Durival ß</title>
+                    <title>Édition du journal de Nicolas Durival 1765-1766</title>
                     <meta charset="utf-8" />
                     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                     <link rel="stylesheet" href="../css/foundation.css" />
@@ -2297,7 +2297,7 @@
                 <html>
                     <head>
                         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-                        <title>Édition du journal de Nicolas Durival ß</title>
+                        <title>Édition du journal de Nicolas Durival 1765-1766</title>
                         <meta charset="utf-8" />
                         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                         <link rel="stylesheet" href="../css/app.css" />
@@ -2394,7 +2394,7 @@
             <html>
                 <head>
                     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-                    <title>Édition du journal de Nicolas Durival ß</title>
+                    <title>Édition du journal de Nicolas Durival 1765-1766</title>
                     <meta charset="utf-8" />
                     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                     <link rel="stylesheet" href="../css/app.css" />
@@ -2491,7 +2491,7 @@
             <html xmlns="http://www.w3.org/1999/xhtml">
                 <head>
                     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-                    <title>Édition du journal de Nicolas Durival ß</title>
+                    <title>Édition du journal de Nicolas Durival 1765-1766</title>
                     <meta charset="utf-8"/>
                     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
                     <link rel="stylesheet" href="../css/app.css"/>
@@ -2651,7 +2651,7 @@
             <html xmlns="http://www.w3.org/1999/xhtml">
                 <head>
                     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-                    <title>Édition du journal de Nicolas Durival ß</title>
+                    <title>Édition du journal de Nicolas Durival 1765-1766</title>
                     <meta charset="utf-8" />
                     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                     <link rel="stylesheet" href="../css/app.css" />
@@ -2737,7 +2737,7 @@
         <xsl:result-document format="html" encoding="UTF-8" href="html/galerie.html">
             <html xmlns="http://www.w3.org/1999/xhtml">
                 <head>
-                    <title>Édition du journal de Nicolas Durival ß</title>
+                    <title>Édition du journal de Nicolas Durival 1765-1766</title>
                     <meta charset="utf-8"/>
                     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
                     
@@ -2952,7 +2952,7 @@
             <html>
                 <head>
                     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-                    <title>Édition du journal de Nicolas Durival ß</title>
+                    <title>Édition du journal de Nicolas Durival 1765-1766</title>
                     <meta charset="utf-8" />
                     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                     <link rel="stylesheet" href="../css/app.css" />
