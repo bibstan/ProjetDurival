@@ -9,7 +9,7 @@
 <xsl:output method="text" indent="no" omit-xml-declaration="no" encoding="UTF-8"/>
 
 <xsl:template match="/">
-    <xsl:apply-templates/>  
+    <xsl:apply-templates select="//tei:div[@type='transcription']"/>  
 </xsl:template>    
 
     <xsl:template match="//tei:div[@type='year']">
@@ -92,7 +92,7 @@
         </xsl:choose>        
     </xsl:template>
     
-    <xsl:template match="tei:p">
+    <xsl:template match="tei:p[not(ancestor::tei:note)]">
         <xsl:apply-templates/>
         <xsl:text>\bigskip</xsl:text>
         <xsl:text>
@@ -169,7 +169,7 @@
     
     <xsl:template match="tei:del[not(parent::tei:subst)]"><xsl:text>\sout{</xsl:text><xsl:apply-templates/><xsl:text>}</xsl:text></xsl:template>
 
-    <xsl:template match="tei:abbr"/>
+    <!--<xsl:template match="tei:abbr"/>-->
     <xsl:template match="//tei:teiHeader"/>
     <xsl:template match="//tei:div[@type='index']"/>
     <xsl:template match="//tei:fw"/>
@@ -182,6 +182,17 @@
                 <xsl:otherwise><xsl:apply-templates/></xsl:otherwise>
             </xsl:choose>
         </xsl:for-each>
+    </xsl:template>
+    
+    <!--<xsl:template match="tei:ref[@type='note']">
+        <xsl:for-each select=".">
+            <xsl:variable name="id" select="substring-after(@target,'#')"/>            
+            <xsl:text>\marginnote{</xsl:text><xsl:value-of select="normalize-space(//tei:back//tei:note[@xml:id=$id]/tei:p)"/><xsl:text>}</xsl:text>
+        </xsl:for-each>
+    </xsl:template>-->
+    
+    <xsl:template match="tei:choice">
+        <xsl:apply-templates select="tei:reg | tei:expan | tei:corr"/>
     </xsl:template>
     
     <xsl:template match="tei:div[@type='transcription']//tei:list">

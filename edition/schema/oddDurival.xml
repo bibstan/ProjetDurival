@@ -1487,6 +1487,9 @@
                         <valItem ident="bibl">
                            <desc>La valeur "bibl" doit être utilisée pour la bibliographie générale.</desc>
                         </valItem>
+                        <valItem ident="history">
+                           <desc>La valeur "history" doit être utilisée pour les développements historiques.</desc>
+                        </valItem>
                      </valList>
                   </attDef>
                   <attDef ident="subtype" mode="change">
