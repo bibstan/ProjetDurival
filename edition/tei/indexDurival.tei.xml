@@ -256,13 +256,15 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                      père</addName></persName>
                <birth when="1696"/>
                <death when="1759"/>
-              <listEvent> <event>
-                  <p> Père de l'acteur Jean Rival dit Aufresne </p>
-               </event>
-               <event>
-                  <p>Horloger genevois et poète amateur apprécié de Voltaire et cité par Rousseau
-                     dans Les Confessions.</p>
-               </event></listEvent>
+               <listEvent>
+                  <event>
+                     <p> Père de l'acteur Jean Rival dit Aufresne </p>
+                  </event>
+                  <event>
+                     <p>Horloger genevois et poète amateur apprécié de Voltaire et cité par Rousseau
+                        dans Les Confessions.</p>
+                  </event>
+               </listEvent>
                <!-- source : Les Confessions par Rousseau -->
             </person>
             <person xml:id="aumonierSuede">
@@ -465,6 +467,14 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                   </event>
                </listEvent>
             </person>
+            <person xml:id="bersonA">
+               <persName><surname>Berson</surname><forename>Anne</forename></persName>
+               <listEvent>
+                  <event>
+                     <p>Pensionnaire du Refuge jusque fin 1764</p>
+                  </event>
+               </listEvent>
+            </person>
             <person xml:id="billecard">
                <persName><surname>Billecard</surname><addName>M<hi rend="super"
                   >lle</hi></addName></persName>
@@ -568,7 +578,8 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                   </event>
                </listEvent>
             </person>
-            <person xml:id="baye"> <!--ID corrigée-->
+            <person xml:id="baye">
+               <!--ID corrigée-->
                <persName><surname>Baye</surname><forename>François
                      Berthelot</forename><roleName>Marquis de</roleName></persName>
                <birth when="1703"/>
@@ -1138,14 +1149,17 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="rioult">
-               <!--madame de Baye --> <!--ID corrigée-->
+               <!--madame de Baye -->
+               <!--ID corrigée-->
                <persName><surname>Rioult-d'Ouilly de Cursay</surname><forename>Cécile
                      Élisabeth</forename></persName>
                <birth when="1714"/>
-             <listEvent>  <event>
-                  <p>Cousine germaine de François Berthelot, marquis de Baye, qu'elle épouse le 26
-                     avril 1740</p>
-               </event></listEvent>
+               <listEvent>
+                  <event>
+                     <p>Cousine germaine de François Berthelot, marquis de Baye, qu'elle épouse le
+                        26 avril 1740</p>
+                  </event>
+               </listEvent>
                <!-- source : Dictionnaire de la noblesse, contenant les généalogies, l'histoire et... 
                   par François-Alexandre Aubert de La Chesnaye Des Bois -->
             </person>
@@ -3160,13 +3174,14 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <persName><surname>Narbonne</surname><addName>M. de</addName></persName>
             </person>
             <person xml:id="nicetti">
-               <persName><surname>Nicetti</surname><addName>M.</addName></persName>
+               <persName><surname>Nicetti</surname><addName>Mademoiselle</addName></persName>
                <listEvent>
                   <event>
-                     <p>Chargé des représentations théâtrales</p>
+                     <p>Comedienne et directrice de la Comédie à Nancy, elle a remplacée Fleury, elle fera venir Lekain à Nancy.</p>
                   </event>
                </listEvent>
-            </person>
+<!--               Source: Essai de répertoire des artistes lorrains...Paris, 1900
+-->            </person>
             <person xml:id="niceville">
                <persName><surname>Nicéville</surname><forename>Charles-Martin
                   de</forename></persName>
@@ -4196,9 +4211,183 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                   </event>
                </listEvent>
             </person>
+            <!--176412-->
+            <person xml:id="boyard">
+               <persName><surname>Boyard</surname></persName>
+               <death when="1764"/>
+               <listEvent>
+                  <event>
+                     <p>Maitre d'hôtel de Stanislas</p>
+                  </event>
+               </listEvent>
+            </person>
+
+            <person xml:id="leGagneur">
+               <persName><surname>Le Gagneur</surname></persName>
+               <listEvent>
+                  <event>
+                     <p>Patron de troupe</p>
+                  </event>
+               </listEvent>
+            </person>
+            <person xml:id="chappé">
+               <persName><surname>Chappé</surname><forename>André</forename></persName>
+               <listEvent>
+                  <event>
+                     <p>Tabellion à Nancy de 1751-1766</p>
+                  </event>
+               </listEvent>
+            </person>
+
+            <person xml:id="aubertin">
+               <persName><surname>Aubertin</surname><forename>d'</forename></persName>
+               <listEvent>
+                  <event>
+                     <p>Notaire à Paris (?)</p>
+                  </event>
+               </listEvent>
+            </person>
+            <person xml:id="monot">
+               <persName><surname>Monot</surname><forename/></persName>
+               <listEvent>
+                  <event>
+                     <p>Directeur du droit sur les cartes</p>
+                  </event>
+                  <event>
+                     <p>Epouse Mlle Charni en 1764</p>
+                  </event>
+               </listEvent>
+            </person>
+            <person xml:id="charniMlle">
+               <persName><surname>Charni</surname><forename/></persName>
+               <listEvent>
+                  <event>
+                     <p>Epouse M. Monot en 1764</p>
+                  </event>
+               </listEvent>
+            </person>
+            <person xml:id="boxthal">
+               <persName><surname>Boxthal</surname><forename/></persName>
+               <listEvent>
+                  <event>
+                     <p/>
+                  </event>
+               </listEvent>
+            </person>
+            <person xml:id="voyerMme">
+               <persName><surname>Voyer</surname>
+                  <roleName>marquise</roleName></persName>
+
+               <listEvent>
+                  <event>
+                     <p/>
+                  </event>
+               </listEvent>
+            </person>
+            <person xml:id="voyerM">
+               <persName><surname>Voyer</surname>
+                  <roleName>marquis</roleName></persName>
+
+               <listEvent>
+                  <event>
+                     <p/>
+                  </event>
+               </listEvent>
+            </person>
+            <!--176411-->
+            <person xml:id="dujardFE">
+               <persName><surname>Dujard</surname><forename/><forename>François Ernest</forename>
+               </persName>
+
+               <listEvent>
+                  <event>
+                     <p>Procureur du roi en la maîtrise des eaux et forêts</p>
+                  </event>
+               </listEvent>
+            </person>
+            <person xml:id="hochbrucker">
+               <persName><surname>Hochbrücker</surname><forename/>Christian<forename/>
+               </persName>
+
+               <listEvent>
+                  <event>
+                     <p>Harpiste pour le compte de Louis de Rohan-Guéméné jusqu'en 1781</p>
+                  </event>
+                  <event>
+                     <p>maître de harpe de Marie-Antoinette en 1781</p>
+                  </event>
+               </listEvent>
+            </person>
+            <person xml:id="cureArnould">
+               <persName><surname>Arnould</surname><forename/><forename/><roleName>Curé</roleName>
+               </persName>
+               
+               <listEvent>
+                  <event>
+                     <p>Curé de l'église Saint Pierre</p>
+                  </event>
+               </listEvent>
+            </person>
+
+            <person xml:id="rohanLouis">
+               <persName><surname>Rohan-Guéméné</surname><forename/>Louis César Constantin de<forename/>
+               </persName>
+               <birth when="1697"/>
+               <death when="1779"/>
+               <listEvent>
+           
+               </listEvent>
+            </person>
+            <person xml:id="duBoroger">
+               <persName><surname>Boroger</surname><forename/>du<forename/>
+               </persName>
+         
+               <listEvent>
+                  <event>
+                     <p>Prévôt général de la maréchaussée jusqu'en 1764</p>
+                  </event>
+               </listEvent>
+            </person>
+            <person xml:id="huinJD">
+               <persName><surname>Huin</surname><forename/>Jacques Dominique<forename/>
+               </persName>
+            
+               <listEvent>
+                  <event>
+                     <p>Prévôt général de la maréchaussée (1764-1792?)</p>
+                  </event>
+               </listEvent>
+            </person>
+            <person xml:id="duhamel">
+               <persName><surname>Duhamel</surname><forename/><forename/>
+               </persName>
+               
+               <listEvent>
+                  <event>
+                     <p>Notaire</p>
+                  </event>
+               </listEvent>
+            </person>
+            <person xml:id="parisse">
+               <persName><surname>Parisse</surname><forename/><forename/>
+               </persName>
+               
+               <listEvent>
+                  <event>
+                     <p>Brigadier</p>
+                  </event>
+               </listEvent>
+            </person>
+            
+
 
          </listPerson>
 
+
+
+
+
+         <!--PLACE-->
          <listPlace xml:id="listPlace">
             <place xml:id="smirne">
                <placeName>Smyrne</placeName>
@@ -5232,6 +5421,28 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             <place xml:id="maisonPerbal">
                <placeName>Maison de Perbal rue des champs</placeName>
             </place>
+            <!--176411-->
+            <place xml:id="nancybastionDamesKiosque" type="civil">
+               <placeName>Nancy</placeName>
+               <placeName>Kiosque du bastion des Dames</placeName>
+               <location>
+                  <geo></geo>
+               </location>
+               <desc>Le kiosque est détruit en 1764, une rampe d'accès permet de descendre sur la place de la Carrière</desc>
+            </place>
+            <place xml:id="nancySteCatherinerue" type="civil">
+               <placeName>Nancy</placeName>
+               <placeName>Chaussée Sainte Catherine</placeName>
+               <location>
+                  <geo></geo>
+               </location>
+               <desc></desc>
+            </place>
+            
+            
+            
+            
+            
          </listPlace>
 
          <listOrg xml:id="listOrg">
@@ -5758,32 +5969,14 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <note>Lu à l'Académie le 05 novembre 1766 par Gautier</note>
             </bibl>
             <bibl xml:id="bib30">
-<<<<<<< HEAD:edition/tei/indexDurival.xml
-<<<<<<< HEAD
-              <title level="m">Dictionnaire philosophique, portatif, ou supplément à l'édition de 1765 . Revu, corrigé &amp; augmenté de XXXVII articles par l'auteur</title>
-              <author><surname>Voltaire</surname></author>
-              <pubPlace>À Londres [Nancy] [ca 1765]</pubPlace>
-              <publisher>[Leclerc]</publisher>
-              <date>1765</date>
-              <note>Fausse adresse, imprimé en France, peut-être à Nancy chez J.-B. Hyacinthe Leclerc, d'après le matériel typographique (voir BnF)</note>
-
-=======
-               <title level="m">Dictionnaire philosophique, portatif, ou supplément à l'édition de 1765 . Revu, corrigé &amp; augmenté de XXXVII articles par l'auteur</title>
-=======
                <title level="m">Dictionnaire philosophique, portatif, ou supplément à l'édition de
                   1765 . Revu, corrigé &amp; augmenté de XXXVII articles par l'auteur</title>
->>>>>>> ProjetDurival/master:edition/tei/indexDurival.tei.xml
                <author><surname>Voltaire</surname></author>
                <pubPlace>À Londres [Nancy] [ca 1765]</pubPlace>
                <publisher>[Leclerc]</publisher>
                <date>1765</date>
-<<<<<<< HEAD:edition/tei/indexDurival.xml
-               <note>Fausse adresse, imprimé en France, peut-être à Nancy chez J.-B. Hyacinthe Leclerc, d'après le matériel typographique (voir BnF)</note>
->>>>>>> bibstan/master
-=======
                <note>Fausse adresse, imprimé en France, peut-être à Nancy chez J.-B. Hyacinthe
                   Leclerc, d'après le matériel typographique (voir BnF)</note>
->>>>>>> ProjetDurival/master:edition/tei/indexDurival.tei.xml
             </bibl>
             <bibl xml:id="bib31">
                <title>Théogonie d'Hésiode</title>
@@ -6205,15 +6398,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <publisher>Leseure, Veuve d'Antoine</publisher>
                <date>1766</date>
                <idno type="callNumber">BM Nancy 2 808</idno>
-<<<<<<< HEAD
-            </bibl>         
-=======
             </bibl>
-<<<<<<< HEAD
->>>>>>> bibstan/master
-
-=======
->>>>>>> bibstan/master
          </listBibl>
 
          <list type="artwork">
