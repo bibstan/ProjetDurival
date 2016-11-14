@@ -56,18 +56,9 @@ p{
   font-family: 'Playfair Display', Georgia, Times, serif;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-cite, a.cite  {
-=======
-cite, a.cite, .has-tip a.cite  {
->>>>>>> bibstan/master
-=======
 cite,
 a.cite,
 .has-tip a.cite{
->>>>>>> bibstan/master
   font-style: normal;
   color: #996600
 }
@@ -212,16 +203,6 @@ a.accordion-title{
 
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\GESTION ILLUSTRATIONS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
-<<<<<<< HEAD
-
-    img.thumbnail {
-     display: inline;
-     margin-bottom: 0;
-     width:75px;
-     border:0;
-     /*text-align:center;*/
-   }
-=======
 img.thumbnail{
   display: inline;
   margin-bottom: 0;
@@ -229,7 +210,6 @@ img.thumbnail{
   border: 0;
   /*text-align:center;*/
 }
->>>>>>> bibstan/master
 
 /*Pour les illustrations dans un bloc de texte*/
 .float-left{
