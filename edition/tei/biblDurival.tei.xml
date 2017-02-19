@@ -4,13 +4,13 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Title</title>
+            <title>Bibliographie générale</title>
          </titleStmt>
          <publicationStmt>
-            <p>Publication Information</p>
+            <p>Fichier bibliographique servant à la génnération de la page html bibliographie.html</p>
          </publicationStmt>
          <sourceDesc>
-            <p>Information about the source</p>
+            <p>Documents cités dans le texte par l'auteur et documents servant à l'appareil critique du texte.</p>
          </sourceDesc>
       </fileDesc>
    </teiHeader>

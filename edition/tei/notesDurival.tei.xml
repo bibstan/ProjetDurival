@@ -4,13 +4,13 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Title</title>
+                <title>Notes historiques sur le texte de Durival</title>
             </titleStmt>
             <publicationStmt>
-                <p>Publication Information</p>
+                <p>Fichier regroupant toutes les notes historiques</p>
             </publicationStmt>
             <sourceDesc>
-                <p>Information about the source</p>
+                <p>Travail collaboratif autour du texte, réalisé en particulier par des étudiants en histoire</p>
             </sourceDesc>
         </fileDesc>
     </teiHeader>
@@ -101,7 +101,7 @@
                 </note>
                 
                 <note xml:id="note17650331A">
-                    <p>En 1763, le gouvernement de Louis XV décide d 'augmenter des impôts, afin de
+                    <p>En 1763, le gouvernement de Louis XV décide d'augmenter des impôts, afin de
                         rétablir les finances royales très éprouvées par la guerre de Sept ans
                         terminée la même année. La déclaration royale est envoyée au Parlement de
                         Bretagne, qui entame alors un bras de fer avec le pouvoir royal. Mais ce
@@ -201,7 +201,7 @@
                         divisait en 4 bichets de chacun 12 pots ». (A. Denis, <title>Une seigneurie
                             lorraine sous l’ancien régime</title>). </p>
                 </note>
-                <note xml:id="note17650529E"> Bichet [cité le 29/05/65] :   <p> Jusqu’à la fin de
+                <note xml:id="note17650529E"> <!--Bichet [cité le 29/05/65] : -->  <p> Jusqu’à la fin de
                         l’Ancien Régime, mesure de capacité de grain équivalente à 0,96 l. </p>
 
                 </note>                                
