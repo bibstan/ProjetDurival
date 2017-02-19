@@ -4,13 +4,14 @@
    <teiHeader type="text">
       <fileDesc>
          <titleStmt>
-            <title>Title</title>
+            <title>Index général du projet</title>
          </titleStmt>
          <publicationStmt>
-            <p>Publication Information</p>
+            <p>Fichier qui regroupe les index de personnes, lieux, organismes et oeuvres citées dans
+               la source</p>
          </publicationStmt>
          <sourceDesc>
-            <p>Information about the source</p>
+            <p>En partie réalisé en collaboration avec les étudiants de l'université Lorraine</p>
          </sourceDesc>
       </fileDesc>
    </teiHeader>
@@ -312,7 +313,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="baligand">
-               <persName><surname>Baligand</surname><addName>M.</addName></persName>
+               <persName><surname>Baligand</surname><forename>Jacques Nicolas</forename></persName>
             </person>
             <person xml:id="baligandMere">
                <persName><surname>Baligand</surname><addName>M<hi rend="super"
@@ -2426,7 +2427,11 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             <!--  TODO Kafouse c'est la douane, sise 45 rue Saint Jean en faire un placeName-->
             <!--  <person xml:id="laKafouse">
                <persName><surname>La Kafouse</surname><addName>M.</addName></persName>
-            </person>-->
+            </person>
+            = 
+           
+           
+            -->
             <person xml:id="lallemant">
                <persName><surname>Lallemant</surname><addName>M.</addName></persName>
                <listEvent>
@@ -3177,11 +3182,13 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <persName><surname>Nicetti</surname><addName>Mademoiselle</addName></persName>
                <listEvent>
                   <event>
-                     <p>Comedienne et directrice de la Comédie à Nancy, elle a remplacée Fleury, elle fera venir Lekain à Nancy.</p>
+                     <p>Comedienne et directrice de la Comédie à Nancy, elle a remplacée Fleury,
+                        elle fera venir Lekain à Nancy.</p>
                   </event>
                </listEvent>
-<!--               Source: Essai de répertoire des artistes lorrains...Paris, 1900
--->            </person>
+               <!--               Source: Essai de répertoire des artistes lorrains...Paris, 1900
+-->
+            </person>
             <person xml:id="niceville">
                <persName><surname>Nicéville</surname><forename>Charles-Martin
                   de</forename></persName>
@@ -4321,7 +4328,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             <person xml:id="cureArnould">
                <persName><surname>Arnould</surname><forename/><forename/><roleName>Curé</roleName>
                </persName>
-               
+
                <listEvent>
                   <event>
                      <p>Curé de l'église Saint Pierre</p>
@@ -4330,18 +4337,21 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             </person>
 
             <person xml:id="rohanLouis">
-               <persName><surname>Rohan-Guéméné</surname><forename/>Louis César Constantin de<forename/>
+               <persName><surname>Rohan-Guéméné</surname><forename/>Louis César Constantin
+                  de<forename/>
                </persName>
                <birth when="1697"/>
                <death when="1779"/>
                <listEvent>
-           
+                  <event>
+                     <p/>
+                  </event>
                </listEvent>
             </person>
             <person xml:id="duBoroger">
                <persName><surname>Boroger</surname><forename/>du<forename/>
                </persName>
-         
+
                <listEvent>
                   <event>
                      <p>Prévôt général de la maréchaussée jusqu'en 1764</p>
@@ -4351,7 +4361,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             <person xml:id="huinJD">
                <persName><surname>Huin</surname><forename/>Jacques Dominique<forename/>
                </persName>
-            
+
                <listEvent>
                   <event>
                      <p>Prévôt général de la maréchaussée (1764-1792?)</p>
@@ -4361,7 +4371,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             <person xml:id="duhamel">
                <persName><surname>Duhamel</surname><forename/><forename/>
                </persName>
-               
+
                <listEvent>
                   <event>
                      <p>Notaire</p>
@@ -4371,23 +4381,255 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             <person xml:id="parisse">
                <persName><surname>Parisse</surname><forename/><forename/>
                </persName>
-               
+
                <listEvent>
                   <event>
                      <p>Brigadier</p>
                   </event>
                </listEvent>
             </person>
+
+            <!--176409-->
+
+
+            <person xml:id="leRoy">
+               <persName><surname>Le Roy</surname><forename>Suzanne-Raymonde</forename>
+                  <roleName>baronne de Seraucourt, douairière de Girecourt</roleName></persName>
+
+               <death when="1764"/>
+               <listEvent>
+                  <event>
+                     <p>Douairière du Comte de Girecourt</p>
+                  </event>
+               </listEvent>
+            </person>
+
+            <person xml:id="girecourt">
+               <persName><surname>Humbert </surname><forename>Jean
+                     François</forename><roleName>comte de Girecourt</roleName></persName>
+               <listEvent>
+                  <event>
+                     <p/>
+                  </event>
+               </listEvent>
+            </person>
+            <person xml:id="gaudage">
+               <persName><surname>Gaudagé</surname><forename/></persName>
+            </person>
+            <person xml:id="lomeniebrienne">
+               <persName><surname>Loménie de Brienne</surname><forename>Etienne Charles
+                     de</forename><roleName>archevêque de Toulouse</roleName></persName>
+               <birth when="1727"/>
+               <death when="1794"/>
+               <listEvent>
+                  <event>
+                     <p>Cardinal (de 1788 à 1791). - Évêque de Condom (1760/1761-1763), archevêque
+                        de Toulouse (1763-1788), puis de Sens (1788-1790), puis évêque de l'Yonne. -
+                        Premier ministre (1787-1788). - Membre de l'Académie française (élu en
+                        1770)</p>
+                  </event>
+               </listEvent>
+               <!--<idno>http://viaf.org/viaf/14840263/</idno>-->
+            </person>
+
+            <person xml:id="dauphineMlle">
+               <persName><surname/><forename>incertitude : Elisabeth ou
+                     Clotilde</forename><roleName>de France</roleName></persName>
+               <!--TODO vérifier laquelle-->
+            </person>
+            <person xml:id="montluisant">
+               <persName><surname>Montluisant</surname><forename>Charles Louis</forename></persName>
+               <birth when="1717"/>
+               <death when="1780"/>
+               <listEvent>
+                  <event>
+                     <p>Architecte, inspecteur des bâtiments du Roi de France (1763)</p>
+                  </event>
+               </listEvent>
+            </person>
+            <person xml:id="alliotPere">
+               <!--TODO vérifier-->
+               <persName><surname>Alliot (père)</surname></persName>
+            </person>
+
+            <person xml:id="antoineMme">
+               <persName><surname>Antoine (Madame)</surname><roleName/></persName>
+            </person>
+            <person xml:id="pierrotEntrepreneur">
+               <persName><surname>Pierrot</surname></persName>
+               <listEvent>
+                  <event>
+                     <p>Entrepreneur</p>
+                  </event>
+               </listEvent>
+            </person>
+            <person xml:id="regnaultEpouse">
+               <persName><surname>Regnault (épouse)</surname></persName>
+               <listEvent>
+                  <event>
+                     <p/>
+                  </event>
+               </listEvent>
+            </person>
+            <person xml:id="serignacMme">
+               <persName><surname>Serignac (madame)</surname><addName>mère Sainte
+                  Gertrude</addName></persName>
+               <death when="1764"/>
+               <listEvent>
+                  <event>
+                     <p>Supérieure du monastère du Saint-Sacrement à Nancy</p>
+                  </event>
+               </listEvent>
+            </person>
+            <!--176408-->
+            <person xml:id="baligandmaximilien">
+               <persName><surname>Baligand</surname><forename>Maximilien</forename></persName>
+               <listEvent>
+                  <event>
+                     <p>Prieur commanditaire de Silmont</p>
+                  </event>
+               </listEvent>
+            </person>
+            <person xml:id="baligandjeanjacques">
+               <persName><surname>Baligand</surname><forename>Jean Jacques</forename></persName>
+               <listEvent>
+                  <event>
+                     <p/>
+                  </event>
+               </listEvent>
+            </person>
+
+            <person xml:id="dumesnil">
+               
+               
+               <persName>Dumesnil</persName>
+            </person>
             
+            <person xml:id="DespreyJF">
+
+               <persName><forename>J. F.</forename>
+                  <surname>Desprey</surname><state>
+                     <p>Curé de Damelièvres</p>
+                  </state></persName>
+               <listEvent>
+                  <event>
+                     <p>Oncle maternel de Baligand</p>
+                  </event>
+               </listEvent>
+            </person>
+            <person xml:id="CoulonJeanYves">
+
+               <persName><forename>Jean-Yves</forename>
+                  <surname>Coulon</surname><state>
+                     <p>Secrétaire du roi</p>
+                  </state></persName>
+            </person>
+            <person xml:id="AntoinePierreMarc">
+
+               <persName><forename>Pierre-Marc</forename>
+                  <surname>Antoine</surname><roleName>Seigneur du fief de
+                  Vandoeuvre</roleName></persName>
+            </person>
+            <person xml:id="AlixChristophe">
+
+               <persName><forename>Christophe</forename>
+                  <surname>Alix</surname></persName>
+               <listEvent>
+                  <event>
+                     <p>Ancien grand maître des eaux et forêts</p>
+                  </event>
+               </listEvent>
+            </person>
+            <person xml:id="DesprésMarieCatherine">
+               <persName><forename>Marie-Catherine-Josephe</forename><surname>Després</surname></persName>
+               <listEvent>
+                  <event>
+                     <p>Veuve de Jean-Jacques Baligand</p>
+                  </event>
+               </listEvent>
+            </person>
+            <person xml:id="Michel">
+
+               <persName><surname>Michel</surname><state>
+                     <p>Huissier</p>
+                  </state></persName>
+            </person>
+            <person xml:id="lignevillede">
+
+               <persName><surname>M. de Ligneville</surname><state>
+                     <p>Ecolâtre pour les affaires de la communauté des Prêtres</p>
+                  </state></persName>
+            </person>
+            <person xml:id="parmentierAbbe">
+               
+               <persName><surname>Parmentier</surname><state>
+                  <p>Abbé</p>
+               </state></persName>
+            </person>
+            <person xml:id="rheyne">
+               
+               <persName>M. Rheyne</persName>
+            </person>
+            
+            <person xml:id="thouveninAbbe">
+               
+               
+               <persName><surname>Thouvenin</surname><state><p>abbé</p></state></persName>
+            </person>
+            
+            <person xml:id="controleurGcompiegne">
+               
+               
+               <persName></persName><state><p>Contrôleur général de Compiègne</p></state>
+            </person>
+            <person xml:id="fleuryFille">
+               
+               <persName>fille</persName>
+            </person>
+            <person xml:id="clerval">
+               
+               <persName><surname>Clerval</surname></persName>
+            </person>
+            <person xml:id="regnault">
+               
+               <persName><surname>Regnault</surname></persName>
+            </person>
+            <person xml:id="montancier">
+               
+               <persName><surname>Montancier</surname></persName>
+            </person>
+            <person xml:id="barailabbé">
+               
+               <persName> <surname>Barail</surname> <state><p>abbé</p></state></persName>
+            </person>
+            <person xml:id="curédesaintSebastien">
+               
+               <persName> </persName><state><p>curé de Saint-Sébastien</p></state>
+            </person>
+            <person xml:id="botanistePontaMousson">
+               
+               <persName></persName><state>
+                  <p>Botaniste de Pont-à-Mousson</p>
+               </state>
+            </person>
+
+            <person xml:id="renardJ">
+               
+               <persName><forename>Jean</forename>
+                  <surname>Renard</surname><state>
+                     <p>conducteur d’ardoisière</p>
+                  </state></persName>
+            </person>
+            <person xml:id="argensonComte">
+               
+               <persName><roleName>Comte d’</roleName><surname>Argenson</surname></persName>
+            </person>
+
 
 
          </listPerson>
 
-
-
-
-
-         <!--PLACE-->
+         <!--Noms de lieux-->
          <listPlace xml:id="listPlace">
             <place xml:id="smirne">
                <placeName>Smyrne</placeName>
@@ -4426,6 +4668,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <desc>Ensemble des biens matériels d'une église paroissiale. A VERIFIER LE SENS
                   ICI</desc>
             </place>
+
             <place xml:id="nancyJardin" type="civil">
                <placeName>Nancy</placeName>
                <placeName>Jardin Botanique</placeName>
@@ -5426,26 +5669,85 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <placeName>Nancy</placeName>
                <placeName>Kiosque du bastion des Dames</placeName>
                <location>
-                  <geo></geo>
+                  <geo/>
                </location>
-               <desc>Le kiosque est détruit en 1764, une rampe d'accès permet de descendre sur la place de la Carrière</desc>
+               <desc>Le kiosque est détruit en 1764, une rampe d'accès permet de descendre sur la
+                  place de la Carrière</desc>
             </place>
             <place xml:id="nancySteCatherinerue" type="civil">
                <placeName>Nancy</placeName>
                <placeName>Chaussée Sainte Catherine</placeName>
                <location>
-                  <geo></geo>
+                  <geo/>
                </location>
-               <desc></desc>
+               <desc/>
             </place>
-            
-            
-            
-            
-            
+            <!--176410-->
+            <place xml:id="amance">
+               <placeName>Amance</placeName>
+            </place>
+            <place xml:id="reims">
+               <placeName>Reims</placeName>
+            </place>
+            <place xml:id="gerbeviller">
+               <placeName>Gerbéviller</placeName>
+               <desc>Le marquis de Gerbéviller, Camille de Lambertye, y fait ériger un château par
+                  Germain Boffrand.</desc>
+            </place>
+            <!--176409-->
+            <place xml:id="houdemontFontaine">
+               <placeName>Houdemont</placeName>
+               <placeName>Fontaine Saint-Martin</placeName>
+            </place>
+            <place xml:id="houdemont">
+               <placeName>Houdemont</placeName>
+            </place>
+            <place xml:id="saudrux">
+               <placeName>Saudrux</placeName>
+            </place>
+            <place xml:id="sarry">
+               <placeName>Sarry</placeName>
+            </place>
+            <place xml:id="dormans">
+               <placeName>Dormans</placeName>
+            </place>
+            <place xml:id="bondy">
+               <placeName>Bondy</placeName>
+            </place>
+
+            <place xml:id="mareilLieu">
+               <placeName>Mareil</placeName>
+            </place>
+            <!--1764-08-->
+            <place xml:id="vandoeuvre">
+               <placeName>Vandœuvre</placeName>
+            </place>
+            <place xml:id="mozelli">
+               <placeName>Mozelli</placeName>
+            </place>
+
+            <place xml:id="charleville">
+               <placeName>Charleville</placeName>
+            </place>
+
+            <place xml:id="nancyIntendancePlace">
+               <placeName>Nancy</placeName>
+               <placeName>Place de l'Intendance</placeName>
+            </place>
+
          </listPlace>
+         <!--Organismes-->
 
          <listOrg xml:id="listOrg">
+            <org xml:id="nancylaKafouse">
+
+               <orgName>La Kafouse, douane de Nancy</orgName>
+               <location>
+                  <placeName>Nancy</placeName>
+                  <geo>48.690280483493154, 6.18105411529541</geo>
+               </location>
+               <desc>Douane de Nancy, au 45 rue Saint-Jean</desc>
+            </org>
             <org xml:id="academie">
                <orgName>Académie Royale des Sciences et Belles-Lettres</orgName>
                <location>
@@ -5671,7 +5973,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <location>
                   <placeName>Nancy</placeName>
                </location>
-               <desc>Un des premiers café de Nancy,</desc>
+               <desc>Un des premiers café de Nancy.</desc>
             </org>
             <org xml:id="collegeRoyalMedecins">
                <orgName>Collège royale de médecine</orgName>
@@ -5682,7 +5984,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </desc>
             </org>
             <org xml:id="comedie">
-               <orgName>Théâtre<!-- de Nancy--></orgName>
+               <orgName>Théâtre</orgName>
                <location>
                   <placeName>Nancy</placeName>
                </location>
@@ -5754,7 +6056,37 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             <org xml:id="corpsSteCatherine">
                <orgName>Corps de garde Sainte Catherine</orgName>
             </org>
+            <!--1764-08-->
+            <org xml:id="nancyCommunautePretres">
+               <location>
+                  <placeName>Nancy</placeName>
+               </location>
+               <orgName>Communauté des prêtres</orgName>
+            </org>
+            <org xml:id="pamFaculteMedecine">
+               <location>
+                  <placeName>Pont-à-Mousson</placeName>
+               </location>
+               <orgName>Faculté de médecine</orgName>
+            </org>
+            <org xml:id="nancyBoisLumieres">
+               <location>
+                  <placeName>Nancy</placeName>
+               </location>
+               <orgName>Bois et lumières</orgName>
+            </org>
+            <org xml:id="pamUniversite">
+               <location>
+                  <placeName>Pont-à-Mousson</placeName>
+               </location>
+               <orgName>Université</orgName>
+            </org>
+            
+            
          </listOrg>
+
+         <!-- Bibliographie-->
+
          <listBibl xml:id="listBibl">
             <bibl xml:id="bib1">
                <title>Eaux de Luxeuil, Les </title>

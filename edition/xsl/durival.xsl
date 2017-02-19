@@ -775,8 +775,8 @@
             <xsl:apply-templates select="tei:title"/><xsl:if test="tei:author"><xsl:text> (</xsl:text><xsl:if test="tei:author/tei:forename"><xsl:apply-templates select="tei:author/tei:forename"/><xsl:text> </xsl:text></xsl:if><xsl:apply-templates select="tei:author/tei:surname"/><xsl:text>)</xsl:text></xsl:if>
         </xsl:for-each>
     </xsl:template>
-    
-    <xsl:template match="tei:div[@type='transcription']//tei:persName | tei:div[@type='transcription']//tei:rs[@type='person']">
+<!--    EVENTUELLEMENT NE PAS AFFICHER LES INDEX PERS SANS REF (not(@ref)
+-->    <xsl:template match="tei:div[@type='transcription']//tei:persName | tei:div[@type='transcription']//tei:rs[@type='person']">
         <xsl:variable name="ref" select="@ref"/><!-- todo @type=groupPerson -->
         <xsl:variable name="id" select="substring-after(@ref,'#')"/>
         <xsl:variable name="tooltip">
