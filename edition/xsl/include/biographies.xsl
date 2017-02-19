@@ -63,7 +63,7 @@
                               <xsl:if test=".//tei:graphic">
                                 <div class="media">
                                   <a class="focus" href="../images/{.//tei:graphic/@url}.jpg" data-lightbox="bio">
-                                    <img src="../images/{.//tei:graphic/@url}.jpg" alt="Placard"/>
+                                    <img src="../images/{.//tei:graphic/@url}.jpg" alt=""/>
                                   </a>
                                   <!--<a class="focus" href="../images/{.//tei:graphic/@url}.jpg" data-lightbox="#"><img src="../images/{.//tei:graphic/@url}.jpg" alt="Placard"/></a>-->                                                                    
                                 </div><!-- /.media -->

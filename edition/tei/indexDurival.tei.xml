@@ -5758,8 +5758,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <note>Lu à l'Académie le 05 novembre 1766 par Gautier</note>
             </bibl>
             <bibl xml:id="bib30">
-<<<<<<< HEAD:edition/tei/indexDurival.xml
-<<<<<<< HEAD
+
               <title level="m">Dictionnaire philosophique, portatif, ou supplément à l'édition de 1765 . Revu, corrigé &amp; augmenté de XXXVII articles par l'auteur</title>
               <author><surname>Voltaire</surname></author>
               <pubPlace>À Londres [Nancy] [ca 1765]</pubPlace>
@@ -5767,23 +5766,9 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
               <date>1765</date>
               <note>Fausse adresse, imprimé en France, peut-être à Nancy chez J.-B. Hyacinthe Leclerc, d'après le matériel typographique (voir BnF)</note>
 
-=======
-               <title level="m">Dictionnaire philosophique, portatif, ou supplément à l'édition de 1765 . Revu, corrigé &amp; augmenté de XXXVII articles par l'auteur</title>
-=======
                <title level="m">Dictionnaire philosophique, portatif, ou supplément à l'édition de
                   1765 . Revu, corrigé &amp; augmenté de XXXVII articles par l'auteur</title>
->>>>>>> ProjetDurival/master:edition/tei/indexDurival.tei.xml
-               <author><surname>Voltaire</surname></author>
-               <pubPlace>À Londres [Nancy] [ca 1765]</pubPlace>
-               <publisher>[Leclerc]</publisher>
-               <date>1765</date>
-<<<<<<< HEAD:edition/tei/indexDurival.xml
-               <note>Fausse adresse, imprimé en France, peut-être à Nancy chez J.-B. Hyacinthe Leclerc, d'après le matériel typographique (voir BnF)</note>
->>>>>>> bibstan/master
-=======
-               <note>Fausse adresse, imprimé en France, peut-être à Nancy chez J.-B. Hyacinthe
-                  Leclerc, d'après le matériel typographique (voir BnF)</note>
->>>>>>> ProjetDurival/master:edition/tei/indexDurival.tei.xml
+
             </bibl>
             <bibl xml:id="bib31">
                <title>Théogonie d'Hésiode</title>
@@ -6205,15 +6190,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <publisher>Leseure, Veuve d'Antoine</publisher>
                <date>1766</date>
                <idno type="callNumber">BM Nancy 2 808</idno>
-<<<<<<< HEAD
-            </bibl>         
-=======
             </bibl>
-<<<<<<< HEAD
->>>>>>> bibstan/master
-
-=======
->>>>>>> bibstan/master
          </listBibl>
 
          <list type="artwork">

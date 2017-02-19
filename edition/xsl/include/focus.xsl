@@ -99,6 +99,30 @@
                     révolution.</p>
                 </div>
               </div>
+              
+              <div class="media-object">
+                <div class="media-object-section">
+                  <div class="thumbnail">
+                    <a href="girardet.html">
+                      <img
+                        src="../images/vignettes/vignetteSB543956101_FG3_GIRARDET1.png"
+                        width="200"/>
+                    </a>
+                  </div>
+                </div>
+                <div class="media-object-section">
+                  <h2 class="edito">Jean Girardet, peintre du roi Stanislas (1709-1778)</h2>
+                  <p class="edito">
+                    <p>
+                      <persName ref="#girardet">Jean Girardet</persName> est un peintre dont le nom
+                      reste étroitement associé au règne de <persName ref="#stanislas">Stanislas
+                        Leszczynski</persName>. Devenu, en 1758, le peintre attitré du <persName
+                          ref="#stanislas">Roi de Pologne</persName>, il a réalisé de nombreux
+                      portraits du <persName ref="#stanislas">duc de Lorraine</persName> mais
+                      également de sa cour, des lieux de vie et des nouvelles constructions
+                      architecturales. </p></p>
+                </div>
+              </div>
             </div>
           </div>
           <!-- FOOTER -->

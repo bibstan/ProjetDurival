@@ -1063,7 +1063,7 @@
                      <persName ref="#girardet">Jean Girardet</persName>, peintre du roi
                         <persName>Stanislas</persName> (1709-1778) </head>
                   <p>
-                     <persName ref="#girardet">Jean Girardet</persName>est un peintre dont le nom
+                     <persName ref="#girardet">Jean Girardet</persName> est un peintre dont le nom
                      reste étroitement associé au règne de <persName ref="#stanislas">Stanislas
                         Leszczynski</persName>. Devenu, en 1758, le peintre attitré du <persName
                         ref="#stanislas">Roi de Pologne</persName>, il a réalisé de nombreux
@@ -1077,7 +1077,7 @@
                         <p>Né le 13 novembre 1709 à Lunéville, il fait ses études au collège de
                            Lunéville puis à l’université de Pont-à-Mousson avant de devenir l’élève
                            du peintre Claude Charles<persName/> à l’Académie de peinture et de
-                           sculpture de Nancy. </p>
+                           sculpture de Nancy. <graphic url="focus/girardet/B543956101_FG3_GIRARDET1"/></p>
                         <p>En 1729, il participe à la décoration du catafalque du <persName>duc
                               Léopold </persName>avec d’autres grands artistes lorrains comme le
                            peintre <persName>Claude Jacquart</persName>. Comme de nombreux artistes,
@@ -1087,14 +1087,15 @@
                      </div>
                      <div>
                         <head xml:id="girardetBio2" n="3">Premiers travaux</head>
-                        <p>En 1736, après son séjour à Rome, il participe aux grandes festivités
+                        <p>
+                           En 1736, après son séjour à Rome, il participe aux grandes festivités
                            organisées en Lorraine pour célébrer le mariage du <persName>duc François
                               III</persName> et de l’archiduchesse Marie-Thérèse
                            d’Autriche<persName/> à Vienne. À cette occasion, d’énormes architectures
                            éphémères sont élevées à Nancy et à Lunéville. En collaboration avec
                            l’architecte <persName>Jean-Nicolas Jadot</persName> et le peintre
                               <persName>Jean-Joseph Chamant</persName> il réalise un « temple » dans
-                           l’avant cour du château de Lunéville où sera tiré un feu d’artifice. En
+                           l’avant cour du château de Lunéville où sera tiré un feu d’artifice. </p><p>En
                            1737, <persName>François III</persName> devient <persName>grand duc de
                               Toscane</persName> et cède le duché de Lorraine à <persName>Stanislas
                               Leszczynski</persName>, roi déchu de Pologne. Certains aristocrates,
@@ -1123,7 +1124,7 @@
                      <head n="2">Carrière lorraine</head>
                      <div>
                         <head xml:id="girardetBio4" n="3">Entre Commercy et Nancy</head>
-                        <p>
+                        <p><graphic url="focus/girardet/98-2-1_COP_vdn"/>
                            De retour en Lorraine
                            il travaille d’abord à Commercy, pour la <persName>duchesse
                               Elisabeth-Charlotte de Lorraine</persName>. Elle meurt en 1744, il est
@@ -1154,7 +1155,7 @@
                            hommes. Portraitiste préféré de <persName ref="#stanislas"
                               >Stanislas</persName>, <persName>Girardet</persName> célébre, à
                            travers ses peintures, l’ensemble de l’œuvre du <persName>roi</persName>. </p>
-                        <p><graphic url="focus/bibliotheque/Stanislas_portrait"/>Parmi les tableaux
+                        <p>Parmi les tableaux
                            commémoratifs, on trouve celui figurant
                                  <title><persName>Stanislas</persName> remet[tant] les lettres de
                               fondation de la bibliothèque royale et publique de Nancy au chancelier
@@ -1163,7 +1164,7 @@
                            finalement modifiée pour célébrer la création de la bibliothèque royale
                            et publique le 28 décembre 1750. Les quelques mots tracés sur le document
                            tendu au chancelier « bibliothèque royale et publique » viennent préciser
-                           sa nouvelle destination. <persName>Durival</persName> note dans son
+                           sa nouvelle destination. <graphic url="focus/bibliotheque/Stanislas_portrait"/><persName>Durival</persName> note dans son
                            journal que le roi va lui-même retoucher son portrait et celui de
                               <persName>la Galaizière</persName> « qui est fort ressemblant ».
                               <persName>Durival</persName> ajoute d’ailleurs avoir acheté «
@@ -1188,7 +1189,8 @@
                      </div>
                      <div>
                         <head xml:id="girardetBio6" n="3">Les dernières années</head>
-                        <p>La mort de <persName>Stanislas</persName> provoque la dispersion de la
+                        <p><graphic url="focus/girardet/202_cop_CP"/>
+                           La mort de <persName>Stanislas</persName> provoque la dispersion de la
                            Cour de Lunéville. <persName>Girardet</persName>, devenu maître de dessin
                            de <persName>Marie Leszczynska</persName> lors du voyage de la reine en
                            1765, est appelé à Versailles en novembre 1766. Autour de la reine, il
