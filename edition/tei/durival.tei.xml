@@ -1159,12 +1159,8 @@
                            hommes. Portraitiste préféré de <persName ref="#stanislas"
                               >Stanislas</persName>, <persName>Girardet</persName> célébre, à
                            travers ses peintures, l’ensemble de l’œuvre du <persName>roi</persName>. </p>
-<<<<<<< HEAD
-                        <p>Parmi les tableaux
-                           commémoratifs, on trouve celui figurant
-=======
+
                         <p>Parmi les tableaux commémoratifs, on trouve celui figurant
->>>>>>> 5427fc67d5b30ebb08cd05164d685ef2f409f70a
                                  <title><persName>Stanislas</persName> remet[tant] les lettres de
                               fondation de la bibliothèque royale et publique de Nancy au chancelier
                               de la Galaizière</title>. Cette toile, d’abord destinée à évoquer
@@ -7900,7 +7896,7 @@
                         <p xml:id="d1764082203">Délibération de <orgName ref="#HDV">l’hôtel de
                               ville</orgName> sur la promenade que <persName ref="#mengin">M.
                               Mengin</persName> formera dans <choice>
-                              <abbr>l’emplacem<hi rend="super">t</hi> </abbr>.<expan>l'emplacement</expan>
+                              <abbr>l’emplacem<hi rend="super">t</hi>.</abbr><expan>l'emplacement</expan>
                              
                            </choice> de <choice>
                               <abbr>l’anc.</abbr>
@@ -9059,7 +9055,7 @@
                               <abbr>s.</abbr>
                               <expan>sieur</expan>
                            </choice>
-                           <!--TODO-->[blanc], officier, un coup d’épée
+                           <space></space>, officier, un coup d’épée
                            <lb/>au travers du corps.</p>
                         <p xml:id="d1764102202">La <persName ref="#christineSaxe">Princesse
                               Christine</persName> part de <placeName ref="#luneville"
