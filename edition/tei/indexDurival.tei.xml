@@ -257,13 +257,15 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                      père</addName></persName>
                <birth when="1696"/>
                <death when="1759"/>
-              <listEvent> <event>
-                  <p> Père de l'acteur Jean Rival dit Aufresne </p>
-               </event>
-               <event>
-                  <p>Horloger genevois et poète amateur apprécié de Voltaire et cité par Rousseau
-                     dans Les Confessions.</p>
-               </event></listEvent>
+               <listEvent>
+                  <event>
+                     <p> Père de l'acteur Jean Rival dit Aufresne </p>
+                  </event>
+                  <event>
+                     <p>Horloger genevois et poète amateur apprécié de Voltaire et cité par Rousseau
+                        dans Les Confessions.</p>
+                  </event>
+               </listEvent>
                <!-- source : Les Confessions par Rousseau -->
             </person>
             <person xml:id="aumonierSuede">
@@ -569,7 +571,8 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                   </event>
                </listEvent>
             </person>
-            <person xml:id="baye"> <!--ID corrigée-->
+            <person xml:id="baye">
+               <!--ID corrigée-->
                <persName><surname>Baye</surname><forename>François
                      Berthelot</forename><roleName>Marquis de</roleName></persName>
                <birth when="1703"/>
@@ -1139,14 +1142,17 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="rioult">
-               <!--madame de Baye --> <!--ID corrigée-->
+               <!--madame de Baye -->
+               <!--ID corrigée-->
                <persName><surname>Rioult-d'Ouilly de Cursay</surname><forename>Cécile
                      Élisabeth</forename></persName>
                <birth when="1714"/>
-             <listEvent>  <event>
-                  <p>Cousine germaine de François Berthelot, marquis de Baye, qu'elle épouse le 26
-                     avril 1740</p>
-               </event></listEvent>
+               <listEvent>
+                  <event>
+                     <p>Cousine germaine de François Berthelot, marquis de Baye, qu'elle épouse le
+                        26 avril 1740</p>
+                  </event>
+               </listEvent>
                <!-- source : Dictionnaire de la noblesse, contenant les généalogies, l'histoire et... 
                   par François-Alexandre Aubert de La Chesnaye Des Bois -->
             </person>
@@ -1609,7 +1615,13 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="duhautoy">
-               <persName><surname>Duhautoy</surname><addName>M.</addName></persName>
+               <persName><surname>Du Hautoy</surname><forename>Jean Baptiste
+                     Gaston</forename><roleName>Marquis de Clémery</roleName></persName>
+               <listEvent>
+                  <event>
+                     <p>Épouse Claude Charlotte de Runes en 1711</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="dujardVeuve">
                <persName><surname>Dujard</surname><addName>V<hi rend="super"
@@ -2410,14 +2422,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>-->
 
-            <!--  TODO Kafouse c'est la douane, sise 45 rue Saint Jean en faire un placeName-->
-            <!--  <person xml:id="laKafouse">
-               <persName><surname>La Kafouse</surname><addName>M.</addName></persName>
-            </person>
-            = 
-           
-           
-            -->
+
             <person xml:id="lallemant">
                <persName><surname>Lallemant</surname><addName>M.</addName></persName>
                <listEvent>
@@ -2437,15 +2442,13 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <death when="1803"/>
                <listEvent>
                   <event>
-                     <p>Auteur recueil poétique des Saisons, chef d'oeuvre de la poésie descriptive
-                        du XVIIIe siècle. Il est aussi en 1765 l'auteur d'un Essai sur le luxe. Issu
-                        d’une famille noble mais modeste, Jean-François de Saint-Lambert fit ses
-                        études au collège de Pont-à-Mousson puis servit dans les gardes lorraines du
-                        roi Stanislas Leszczyński, avant de devenir grand-maître de sa garde-robe.
-                        Il fut d'abord remarqué par la Marquise de Boufflers jusqu'à en devenir
-                        l'amant puis devint proche de Voltaire jusqu'au décès de d'Émilie du
-                        Châtelet qui fut sa seconde maîtresse et qui mourut en 1749 après avoir mis
-                        au monde une petite fille conçue avec l'écrivain</p>
+                     <p>Auteur recueil poétique des Saisons, en 1765 d'un <title>Essai sur le
+                           luxe</title>. </p>
+                  </event>
+                  <event>
+                     <p> études au collège de Pont-à-Mousson puis servit dans les gardes lorraines
+                        du roi Stanislas Leszczyński, avant de devenir grand-maître de sa
+                        garde-robe.</p>
                   </event>
                </listEvent>
             </person>
@@ -3447,7 +3450,9 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="renault">
-               <persName><surname>Renault</surname><addName>M.</addName></persName>
+               <!--TODO  secretaire d'état et époux de mme de Tilly confusion avec  Renault d'Ubexi conseiller cour souv-->
+               <persName><surname>Renault</surname><addName>M.</addName> </persName>
+               <state><p>Secrétaire d'état</p></state>
             </person>
             <person xml:id="renaut">
                <persName><surname>Renaut</surname><addName>M.</addName></persName>
@@ -3921,9 +3926,11 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             </person>
             <person xml:id="vannson">
                <persName><surname>Vannson</surname><addName>M.</addName></persName>
-               <state>
-                  <p>sergent de ville</p>
-               </state>
+               <listEvent>
+                  <event>
+                     <p>sergent de ville</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="viceChancelier">
                <persName><persName>Vice Chancelier</persName><addName>le</addName></persName>
@@ -4106,7 +4113,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <persName><persName>Heillecourt</persName><addName>Curé d’</addName></persName>
             </person>
             <person xml:id="michelHeille">
-               <persName><forename>Michel</forename></persName>
+               <persName><surname>Michel</surname></persName>
                <state>
                   <p>habitant d'Heillecourt</p>
                </state>
@@ -4124,9 +4131,9 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="poniatowski">
-               <persName><forename>Stanislas II Auguste</forename></persName>
+               <persName><surname>Poniatowski</surname><forename> Stanislas Auguste</forename></persName>
                <state>
-                  <p>roi de Pologne Poniatowski</p>
+                  <p>Stanislas II roi de Pologne </p>
                </state>
             </person>
             <person xml:id="thomasHenri">
@@ -4249,7 +4256,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                      <p>Directeur du droit sur les cartes</p>
                   </event>
                   <event>
-                     <p>Epouse Mlle Charni en 1764</p>
+                     <p>Épouse Mlle Charni en 1764</p>
                   </event>
                </listEvent>
             </person>
@@ -4257,7 +4264,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <persName><surname>Charni</surname><forename/></persName>
                <listEvent>
                   <event>
-                     <p>Epouse M. Monot en 1764</p>
+                     <p>Épouse M. Monot en 1764</p>
                   </event>
                </listEvent>
             </person>
@@ -4273,21 +4280,12 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <persName><surname>Voyer</surname>
                   <roleName>marquise</roleName></persName>
 
-               <listEvent>
-                  <event>
-                     <p/>
-                  </event>
-               </listEvent>
+
             </person>
             <person xml:id="voyerM">
                <persName><surname>Voyer</surname>
                   <roleName>marquis</roleName></persName>
 
-               <listEvent>
-                  <event>
-                     <p/>
-                  </event>
-               </listEvent>
             </person>
             <!--176411-->
             <person xml:id="dujardFE">
@@ -4314,7 +4312,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="cureArnould">
-               <persName><surname>Arnould</surname><forename/><forename/><roleName>Curé</roleName>
+               <persName><surname>Arnould</surname><roleName>Curé</roleName>
                </persName>
 
                <listEvent>
@@ -4357,7 +4355,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="duhamel">
-               <persName><surname>Duhamel</surname><forename/><forename/>
+               <persName><surname>Duhamel</surname>
                </persName>
 
                <listEvent>
@@ -4367,14 +4365,9 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="parisse">
-               <persName><surname>Parisse</surname><forename/><forename/>
+               <persName><surname>Parisse</surname>
                </persName>
-
-               <listEvent>
-                  <event>
-                     <p>Brigadier</p>
-                  </event>
-               </listEvent>
+               <state><p>Brigadier</p></state>
             </person>
 
             <!--176409-->
@@ -4421,8 +4414,9 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             </person>
 
             <person xml:id="dauphineMlle">
-               <persName><surname/><forename>incertitude : Elisabeth ou
-                     Clotilde</forename><roleName>de France</roleName></persName>
+               <persName><surname>Elisabeth de France</surname><forename>M<hi rend="super">lle</hi> la dauphine
+                     <!--ou
+                     Clotilde--></forename></persName>
                <!--TODO vérifier laquelle-->
             </person>
             <person xml:id="montluisant">
@@ -4437,11 +4431,11 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             </person>
             <person xml:id="alliotPere">
                <!--TODO vérifier-->
-               <persName><surname>Alliot (père)</surname></persName>
+               <persName><surname>Alliot <hi rend="italic">(père)</hi></surname></persName>
             </person>
 
             <person xml:id="antoineMme">
-               <persName><surname>Antoine (Madame)</surname><roleName/></persName>
+               <persName><surname>Antoine</surname><addName>M<hi rend="super">e</hi></addName></persName>
             </person>
             <person xml:id="pierrotEntrepreneur">
                <persName><surname>Pierrot</surname></persName>
@@ -4452,7 +4446,8 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="regnaultEpouse">
-               <persName><surname>Regnault (épouse)</surname></persName>
+               <persName><surname>Regnault</surname><addName>M<hi rend="super"
+                  >e</hi></addName></persName>
                <listEvent>
                   <event>
                      <p/>
@@ -4460,8 +4455,8 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="serignacMme">
-               <persName><surname>Serignac (madame)</surname><addName>mère Sainte
-                  Gertrude</addName></persName>
+               <persName><surname>Serignac</surname><addName>M<hi rend="super"
+                     >e</hi></addName><addName type="say">mère Sainte Gertrude</addName></persName>
                <death when="1764"/>
                <listEvent>
                   <event>
@@ -4488,15 +4483,15 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             </person>
 
             <person xml:id="dumesnil">
-               
-               
+
+
                <persName>Dumesnil</persName>
             </person>
-            
+
             <person xml:id="DespreyJF">
 
-               <persName><forename>J. F.</forename>
-                  <surname>Desprey</surname><state>
+               <persName>
+                  <surname>Desprey</surname><forename>J. F.</forename><state>
                      <p>Curé de Damelièvres</p>
                   </state></persName>
                <listEvent>
@@ -4507,22 +4502,22 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             </person>
             <person xml:id="CoulonJeanYves">
 
-               <persName><forename>Jean-Yves</forename>
-                  <surname>Coulon</surname><state>
+               <persName>
+                  <surname>Coulon</surname><forename>Jean-Yves</forename><state>
                      <p>Secrétaire du roi</p>
                   </state></persName>
             </person>
             <person xml:id="AntoinePierreMarc">
 
-               <persName><forename>Pierre-Marc</forename>
-                  <surname>Antoine</surname><roleName>Seigneur du fief de
-                  Vandoeuvre</roleName></persName>
+               <persName>
+                  <surname>Antoine</surname><forename>Pierre-Marc</forename><roleName>Seigneur du
+                     fief de Vandoeuvre</roleName></persName>
             </person>
             <person xml:id="AlixChristophe">
 
 
-               <persName><forename>Christophe</forename>
-                  <surname>Alix</surname></persName>
+               <persName>
+                  <surname>Alix</surname><forename>Christophe</forename></persName>
                <listEvent>
                   <event>
                      <p>Ancien grand maître des eaux et forêts</p>
@@ -4530,7 +4525,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="DesprésMarieCatherine">
-               <persName><forename>Marie-Catherine-Josephe</forename><surname>Després</surname></persName>
+               <persName><surname>Després</surname><forename>Marie-Catherine-Josephe</forename></persName>
                <listEvent>
                   <event>
                      <p>Veuve de Jean-Jacques Baligand</p>
@@ -4546,74 +4541,196 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             </person>
             <person xml:id="lignevillede">
 
-               <persName><surname>M. de Ligneville</surname><state>
+               <persName><surname>Ligneville</surname><addName>M. de</addName><state>
                      <p>Ecolâtre pour les affaires de la communauté des Prêtres</p>
                   </state></persName>
             </person>
             <person xml:id="parmentierAbbe">
-               
+
                <persName><surname>Parmentier</surname><state>
-                  <p>Abbé</p>
-               </state></persName>
+                     <p>Abbé</p>
+                  </state></persName>
             </person>
             <person xml:id="rheyne">
-               
+
                <persName>M. Rheyne</persName>
             </person>
-            
+
             <person xml:id="thouveninAbbe">
-               
-               
-               <persName><surname>Thouvenin</surname><state><p>abbé</p></state></persName>
+
+
+               <persName><surname>Thouvenin</surname><state>
+                     <p>abbé</p>
+                  </state></persName>
             </person>
-            
+
             <person xml:id="controleurGcompiegne">
-               
-               
-               <persName></persName><state><p>Contrôleur général de Compiègne</p></state>
+
+
+               <persName><surname>Contrôleur général de Compiègne</surname></persName>
+              
             </person>
             <person xml:id="fleuryFille">
-               
-               <persName>fille</persName>
+
+               <persName>Fleury <hi rend="italic">(fille)</hi></persName>
             </person>
             <person xml:id="clerval">
-               
+
                <persName><surname>Clerval</surname></persName>
             </person>
             <person xml:id="regnault">
-               
+
                <persName><surname>Regnault</surname></persName>
             </person>
             <person xml:id="montancier">
-               
+
                <persName><surname>Montancier</surname></persName>
             </person>
             <person xml:id="barailabbé">
-               
-               <persName> <surname>Barail</surname> <state><p>abbé</p></state></persName>
+
+               <persName>
+                  <surname>Barail</surname>
+                  <state>
+                     <p>abbé</p>
+                  </state></persName>
             </person>
             <person xml:id="curédesaintSebastien">
-               
-               <persName> </persName><state><p>curé de Saint-Sébastien</p></state>
+
+               <persName>
+                  <surname>Curé de Saint-Sébastien</surname></persName>
+               <state>
+                  <p/>
+               </state>
             </person>
             <person xml:id="botanistePontaMousson">
+
+               <persName><surname>Botaniste de Pont-à-Mousson</surname></persName>
                
-               <persName></persName><state>
-                  <p>Botaniste de Pont-à-Mousson</p>
-               </state>
             </person>
 
             <person xml:id="renardJ">
-               
-               <persName><forename>Jean</forename>
-                  <surname>Renard</surname><state>
+
+               <persName>
+                  <surname>Renard</surname><forename>Jean</forename><state>
                      <p>conducteur d’ardoisière</p>
                   </state></persName>
             </person>
             <person xml:id="argensonComte">
-               
-               <persName><roleName>Comte d’</roleName><surname>Argenson</surname></persName>
+
+               <persName><surname>Argenson</surname><roleName>Comte d’</roleName></persName>
             </person>
+
+            <!--JUILLET 64-->
+            <person xml:id="MarieuxMF">
+               <persName>
+                  <surname>Marieux</surname><forename>Marie-Françoise</forename></persName>
+            </person>
+            <person xml:id="BretonNicolas">
+               <persName>
+                  <surname>Breton</surname><forename>Nicolas</forename></persName>
+            </person>
+            <person xml:id="Courtaujay">
+               <persName>
+                  <surname>Courtaujay</surname><addName>de La</addName></persName>
+            </person>
+            <person xml:id="GalaizièreEnfant">
+               <persName>
+                  <surname>Chaumont de La Galaizière</surname><forename>Charles</forename></persName>
+               <birth when="1764"/>
+               <death when="1835"/>
+               <listEvent><event><p>Épouse en 1795 Antoinette Françoise Brochet de Saint Prest (1762-1818)</p></event></listEvent>
+            </person>
+
+            <person xml:id="RunesCCDe">
+               <persName>
+                  <surname>Runes</surname><forename>Claude-Charlotte de</forename><roleName>marquise du Hautoy de
+                  Clémery</roleName></persName>
+               <death when="1764"/>
+               <listEvent>
+                  <event>
+                     <p>Épouse le marquis Jean Baptiste Gaston Du Hautoy de Clémery en 1711</p>
+                  </event>
+               </listEvent>
+            </person>
+            <person xml:id="RunesPetitFils">
+               <persName><surname>Hautoy de Clémery</surname></persName>
+               <listEvent>
+                  <event>
+                     <p>Petit fils de la marquise Du Hautoy de Clémery</p>
+                  </event>
+               </listEvent>
+            </person>
+            <person xml:id="Woronzow">
+               <persName>
+                  <surname>Woronzow</surname><forename>Michel Larionovitsch
+                     [?]</forename><roleName>Comte de</roleName></persName>
+               <listEvent>
+                  <event>
+                     <p>ancien chancelier de Russie</p>
+                  </event>
+               </listEvent>
+            </person>
+            <person xml:id="WoronzowEpouse">
+               <persName><surname>Woronzow</surname><addName>M<hi rend="super"
+                  >e</hi></addName></persName>
+            </person>
+            <person xml:id="WoronzowFille">
+               <persName><surname>Woronzow</surname><addName>M<hi rend="super"
+                  >lle</hi></addName></persName>
+            </person>
+            <person xml:id="DombâleDe">
+               <persName>
+                  <surname>Dombâle</surname><addName>de</addName></persName>
+            </person>
+            <person xml:id="renaultMadame">
+               <persName>
+                  <surname>Tilly</surname><addName>de</addName></persName>
+               <listEvent>
+                  <event>
+                     <p>Épouse de M. Renault d'Ubexi</p>
+                  </event>
+               </listEvent>
+               <death when="1764"/>
+            </person>
+            <person xml:id="dubois">
+               <persName><surname>Dubois</surname></persName>
+            </person>
+            <person xml:id="Derlange">
+               <persName><surname>Derlange</surname></persName>
+            </person>
+
+
+            <person xml:id="BorsonAnne">
+               <persName>
+                  <surname>Borson</surname><forename>Anne</forename></persName>
+            </person>
+            <person xml:id="Tressan">
+               <persName>
+                  <surname>Tressan</surname><roleName>Comte de</roleName></persName>
+            </person>
+            <person xml:id="Tressanfils">
+               <persName><surname>Tressan <hi rend="super">(fils)</hi></surname></persName>
+               <listEvent>
+                  <event>
+                     <p>Fils du comte de Tressan</p>
+                  </event>
+                  <event>
+                     <p>Chanoine de Saint-Dié en 1764</p>
+                  </event>
+               </listEvent>
+            </person>
+            <person xml:id="Thouvenotabbé">
+               <persName>
+                  <surname>Thouvenot</surname><roleName>abbé</roleName></persName>
+               <death when="1764"/>
+               <event>
+                  <p>Chanoine de Saint-Dié jusqu'en 1764</p>
+               </event>
+            </person>
+            <!--JUIN 64-->
+
+
+
 
 
 
@@ -5647,6 +5764,9 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             </place>-->
             <place xml:id="saintJoseph">
                <placeName>Les Premontés de Nancy</placeName>
+               <location>
+                  <!--                  <geo>GEO</geo>-->
+               </location>
             </place>
             <place xml:id="ancienneSalleAca">
                <placeName>Ancienne salle de l'Académie</placeName>
@@ -5670,6 +5790,9 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <placeName>Nancy</placeName>
                <placeName>Chaussée Sainte Catherine</placeName>
                <location>
+                  <!--                  <geo>GEO</geo>-->
+               </location>
+               <location>
                   <geo/>
                </location>
                <desc/>
@@ -5690,6 +5813,9 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             <place xml:id="houdemontFontaine">
                <placeName>Houdemont</placeName>
                <placeName>Fontaine Saint-Martin</placeName>
+               <location>
+                  <!--                  <geo>GEO</geo>-->
+               </location>
             </place>
             <place xml:id="houdemont">
                <placeName>Houdemont</placeName>
@@ -5725,8 +5851,32 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             <place xml:id="nancyIntendancePlace">
                <placeName>Nancy</placeName>
                <placeName>Place de l'Intendance</placeName>
+               <location>
+                  <!--                  <geo>GEO</geo>-->
+               </location>
             </place>
+            <!--176407-->
+            <place xml:id="normandie">
+               <placeName>Normandie</placeName>
 
+            </place>
+            <place xml:id="charmes">
+               <placeName>Charmes</placeName>
+            </place>
+            <place xml:id="nancyplacealliance">
+               <placeName>Nancy</placeName>
+               <placeName>Place d'Alliance</placeName>
+               <location>
+                  <geo>48.69377907589188,6.186321973800659</geo>
+                  <!--                  <desc></desc>-->
+               </location>
+            </place>
+            <place xml:id="laDesirade">
+               <placeName>La Désirade</placeName>
+               <country>Guadeloupe</country>
+               <desc>Ile de la Guadeloupe qui a parfois été servie de lieu de relégation pour les
+                  délinquants nobles de la métropole</desc>
+            </place>
          </listPlace>
          <!--Organismes-->
 
@@ -6073,8 +6223,19 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </location>
                <orgName>Université</orgName>
             </org>
-            
-            
+            <org xml:id="nancyAumoneArcher">
+               <location>
+                  <placeName>Nancy</placeName>
+               </location>
+               <orgName>Archers de l'aumône publique</orgName>
+            </org>
+            <org xml:id="soeursGrises">
+               <location>
+                  <placeName>Nancy</placeName>
+               </location>
+               <orgName>Sœurs Grises</orgName>
+            </org>
+
          </listOrg>
 
          <!-- Bibliographie-->
@@ -6293,17 +6454,16 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <note>Lu à l'Académie le 05 novembre 1766 par Gautier</note>
             </bibl>
             <bibl xml:id="bib30">
-
-              <title level="m">Dictionnaire philosophique, portatif, ou supplément à l'édition de 1765 . Revu, corrigé &amp; augmenté de XXXVII articles par l'auteur</title>
-              <author><surname>Voltaire</surname></author>
-              <pubPlace>À Londres [Nancy] [ca 1765]</pubPlace>
-              <publisher>[Leclerc]</publisher>
-              <date>1765</date>
-              <note>Fausse adresse, imprimé en France, peut-être à Nancy chez J.-B. Hyacinthe Leclerc, d'après le matériel typographique (voir BnF)</note>
-
                <title level="m">Dictionnaire philosophique, portatif, ou supplément à l'édition de
                   1765 . Revu, corrigé &amp; augmenté de XXXVII articles par l'auteur</title>
-
+               <author><surname>Voltaire</surname></author>
+               <pubPlace>À Londres [Nancy] [ca 1765]</pubPlace>
+               <publisher>[Leclerc]</publisher>
+               <date>1765</date>
+               <note>Fausse adresse, imprimé en France, peut-être à Nancy chez J.-B. Hyacinthe
+                  Leclerc, d'après le matériel typographique (voir BnF)</note>
+               <title level="m">Dictionnaire philosophique, portatif, ou supplément à l'édition de
+                  1765 . Revu, corrigé &amp; augmenté de XXXVII articles par l'auteur</title>
             </bibl>
             <bibl xml:id="bib31">
                <title>Théogonie d'Hésiode</title>
@@ -6726,6 +6886,14 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <date>1766</date>
                <idno type="callNumber">BM Nancy 2 808</idno>
             </bibl>
+            <bibl xml:id="bib76">
+               <title>Année littéraire</title>
+            </bibl>
+            <bibl xml:id="bib77">
+               <title>Art de tirer des carrières la pierre d'ardoise</title>
+               <author><surname>Fougeroux de Bondaroy</surname></author>
+               <date>1762</date>
+            </bibl>
          </listBibl>
 
          <list type="artwork">
@@ -6736,6 +6904,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             <item xml:id="piecesMausolee">Mausolée de Stanislas</item>
             <item xml:id="estampeCollinMausolee">Mausolée de Stanislas estampe gravée par
                Collin</item>
+            <item xml:id="statueLouisXV">Statue de Louis XV</item>
          </list>
       </body>
    </text>

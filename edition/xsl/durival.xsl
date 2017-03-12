@@ -783,13 +783,13 @@
             <xsl:apply-templates select="tei:title"/><xsl:if test="tei:author"><xsl:text> (</xsl:text><xsl:if test="tei:author/tei:forename"><xsl:apply-templates select="tei:author/tei:forename"/><xsl:text> </xsl:text></xsl:if><xsl:apply-templates select="tei:author/tei:surname"/><xsl:text>)</xsl:text></xsl:if>
         </xsl:for-each>
     </xsl:template>
-<!--    EVENTUELLEMENT NE PAS AFFICHER LES INDEX PERS SANS REF (not(@ref)
--->    <xsl:template match="tei:div[@type='transcription']//tei:persName | tei:div[@type='transcription']//tei:rs[@type='person']">
+<!--   ENU VOIR CT EVENTUELLEMENT NE PAS AFFICHER LES INDEX PERS SANS REF (not(@ref)-->    
+    <xsl:template match="tei:div[@type='transcription']//tei:persName | tei:div[@type='transcription']//tei:rs[@type='person']">
         <xsl:variable name="ref" select="@ref"/><!-- todo @type=groupPerson -->
         <xsl:variable name="id" select="substring-after(@ref,'#')"/>
         <xsl:variable name="tooltip">
             <xsl:if test="//tei:div[@type='index']//tei:person[@xml:id=$id]">
-                <xsl:apply-templates select="//tei:div[@type='index']//tei:person[@xml:id=$id]" mode="tooltip"/>
+                   <xsl:apply-templates select="//tei:div[@type='index']//tei:person[@xml:id=$id]" mode="tooltip"/>
                 <!--<xsl:value-of select="//tei:div[@type='index']//tei:person[@xml:id=$id]/tei:persName"/>-->
             </xsl:if>
         </xsl:variable>
@@ -888,7 +888,7 @@
     
     <!--/!\/!\/!\/!\ les notes d'identification au survole (@mode='tooltip') sont gérées conjointement avec les entrées d'index. Voir le document index.xsl pour modification /!\/!\/!\/!\-->
     
-   <!-- <xsl:include href="include/index.xsl"/>-->
+    <xsl:include href="include/index.xsl"/>
     
     <!--********** calendrier (accès calendaire) **********-->
     
