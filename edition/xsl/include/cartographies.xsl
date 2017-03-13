@@ -228,7 +228,7 @@
                         var mymap = L.map('mapid').setView([48.692054, 6.184417], 15);
                         //http://mapwarper.net/maps/tile/13564/{z}/{x}/{y}.png
                         //https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpandmbXliNDBjZWd2M2x6bDk3c2ZtOTkifQ._QA7i5Mpkd_m30IGElHziw
-                        var base1 = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpandmbXliNDBjZWd2M2x6bDk3c2ZtOTkifQ._QA7i5Mpkd_m30IGElHziw', {
+                        var base1 = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v10/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZW5ibW4iLCJhIjoiY2lvMDF6dmJjMDB0dXdkbHlrcnhpeWF1ZiJ9.si6DnhDmGd4jCIzX_Haqtg', {
                         maxZoom: 20, attribution: 'Map data ©; OpenStreetMap contributors, ' +
                         'CC-BY-SA, ' +
                         'Imagery © Mapbox',
