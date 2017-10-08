@@ -1035,9 +1035,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                   </event>
                </listEvent>
             </person>
-            <person xml:id="controleurGeneral">
-               <persName><surname>Contrôleur général</surname></persName>
-            </person>
+
             <person xml:id="coster">
                <persName><surname>Coster</surname><forename>Joseph</forename></persName>
                <listEvent>
@@ -1105,9 +1103,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             <person xml:id="custine">
                <persName><surname>Custine</surname><addName>M.</addName></persName>
             </person>
-            <person xml:id="dailly">
-               <persName><surname>Dailly</surname><addName>M.</addName></persName>
-            </person>
+
             <person xml:id="dalmasJaques">
                <persName><surname>Dalmas</surname><forename>Jacques</forename></persName>
                <birth when="1690"/>
@@ -2696,17 +2692,17 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                   </event>
                </listEvent>
             </person>
-            <person xml:id="ligneville">
+            <!--<person xml:id="ligneville">
                <persName><surname>Ligniville</surname><forename>Henri-Honoré</forename><roleName>abbé
                      et comte de</roleName></persName>
-               <!-- Pfister histoire de Nancy -->
+               <!-\- Pfister histoire de Nancy -\->
                <death when="1765"/>
                <listEvent>
                   <event>
                      <p>chanoine de Bayeux</p>
                   </event>
                </listEvent>
-            </person>
+            </person>-->
             <person xml:id="lomont2">
                <persName ref="#lomont"><surname>Chastelet</surname><forename>Florent Louis Marie
                      du</forename></persName>
@@ -2996,7 +2992,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             <person xml:id="mique">
                <persName><surname>Mique</surname><forename>Claude</forename></persName>
                <state>
-                  <p>architecte</p>
+                  <p>entrepreneur</p>
                </state>
                <birth when="1714"/>
                <death when="1796"/>
@@ -3005,17 +3001,29 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                      <p>Cousin de Richard Mique, architecte également</p>
                   </event>
                </listEvent>
+               <!-- source : http://data.bnf.fr/15372343/claude_mique/-->
             </person>
             <person xml:id="miqueRichard">
                <persName><surname>Mique</surname><forename>Richard</forename></persName>
+               <birth when="1728"/>
+               <death when="1794"/>
                <state>
-                  <p>architecte</p>
+                  <p>architecte du roi de Pologne</p>
                </state>
+
                <listEvent>
                   <event>
+                     <p>Premier architecte du roi de Pologne (1763-1766)</p>
+                  </event>
+                  <event>
+                     <p>Architecte de la reine Marie-Antoinette 1er architecte du roi</p>
+                  </event>
+                  <event>
+
                      <p>Cousin de Claude Mique</p>
                   </event>
                </listEvent>
+               <!--      source : http://data.bnf.fr/16549886/richard_mique/         -->
             </person>
             <person xml:id="mirebeck">
                <persName><surname>Mirebeck</surname><forename>Ignace-Frederic
@@ -3157,12 +3165,10 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="nanon">
-               <persName><forename>Nanon</forename></persName>
-               <listEvent>
-                  <event>
+               <persName><forename>Nanon</forename><state>
                      <p>Concièrge de Nicolas Durival à Heillecourt</p>
-                  </event>
-               </listEvent>
+                  </state></persName>
+
             </person>
             <person xml:id="narbonne">
                <persName><surname>Narbonne</surname><addName>M. de</addName></persName>
@@ -3451,8 +3457,11 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             </person>
             <person xml:id="renault">
                <!--TODO  secretaire d'état et époux de mme de Tilly confusion avec  Renault d'Ubexi conseiller cour souv-->
-               <persName><surname>Renault</surname><addName>M.</addName> </persName>
-               <state><p>Secrétaire d'état</p></state>
+               <persName><surname>Renault</surname><addName>M.</addName>
+               </persName>
+               <state>
+                  <p>Secrétaire d'état</p>
+               </state>
             </person>
             <person xml:id="renaut">
                <persName><surname>Renaut</surname><addName>M.</addName></persName>
@@ -3887,9 +3896,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             <person xml:id="thoilleyMarguerite">
                <persName><surname>Thoilley</surname><forename>Marguerite</forename></persName>
             </person>
-            <person xml:id="thouvenin">
-               <persName><surname>Thouvenin</surname><roleName>abbé</roleName></persName>
-            </person>
+
             <person xml:id="tresorierNancy">
                <persName><persName>Trésorier de Nancy, le</persName></persName>
             </person>
@@ -4131,7 +4138,8 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="poniatowski">
-               <persName><surname>Poniatowski</surname><forename> Stanislas Auguste</forename></persName>
+               <persName><surname>Poniatowski</surname><forename> Stanislas
+                  Auguste</forename></persName>
                <state>
                   <p>Stanislas II roi de Pologne </p>
                </state>
@@ -4163,7 +4171,15 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </state>
             </person>
             <person xml:id="opalinska">
-               <persName><surname>Opalinska</surname><forename>Catherine</forename></persName>
+               <persName><surname>Opalinska</surname><forename>Catherine</forename><roleName>Reine
+                     de Pologne et duchesse de Lorraine</roleName></persName>
+               <birth when="1680"/>
+               <death when="1747"/>
+               <listEvent>
+                  <event>
+                     <p>Épouse Stanislas Leszczynski en 1698</p>
+                  </event>
+               </listEvent>
             </person>
             <person xml:id="marieJosepheDeSaxe">
                <persName><surname>Saxe</surname><forename>Marie Josèphe
@@ -4215,13 +4231,27 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
 
             <!--176412-->
             <person xml:id="boyard">
-               <persName><surname>Boyard</surname></persName>
+               <persName>
+                  <surname>Boyard</surname>
+                  <forename>Charles-François</forename>
+                  <addName/>
+                  <roleName/>
+                  <state/>
+               </persName>
+
                <death when="1764"/>
                <listEvent>
                   <event>
-                     <p>Maitre d'hôtel de Stanislas</p>
+                     <p/>
+                  </event>
+                  <event>
+                     <p/>
+                  </event>
+                  <event>
+                     <p/>
                   </event>
                </listEvent>
+               <!--source : Claire (Aptel), "Le quartier d'alliance un habitat sous Stanislas et de nos jours", Le Pays Lorrain, n°2, fevrier 1986, p.63-->
             </person>
 
             <person xml:id="leGagneur">
@@ -4232,14 +4262,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                   </event>
                </listEvent>
             </person>
-            <person xml:id="chappé">
-               <persName><surname>Chappé</surname><forename>André</forename></persName>
-               <listEvent>
-                  <event>
-                     <p>Tabellion à Nancy de 1751-1766</p>
-                  </event>
-               </listEvent>
-            </person>
+
 
             <person xml:id="aubertin">
                <persName><surname>Aubertin</surname><forename>d'</forename></persName>
@@ -4276,41 +4299,20 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                   </event>
                </listEvent>
             </person>
-            <person xml:id="voyerMme">
-               <persName><surname>Voyer</surname>
-                  <roleName>marquise</roleName></persName>
 
 
-            </person>
-            <person xml:id="voyerM">
-               <persName><surname>Voyer</surname>
-                  <roleName>marquis</roleName></persName>
-
-            </person>
             <!--176411-->
             <person xml:id="dujardFE">
                <persName><surname>Dujard</surname><forename/><forename>François Ernest</forename>
                </persName>
-
+               <death when="1764-11-09"/>
                <listEvent>
                   <event>
                      <p>Procureur du roi en la maîtrise des eaux et forêts</p>
                   </event>
                </listEvent>
             </person>
-            <person xml:id="hochbrucker">
-               <persName><surname>Hochbrücker</surname><forename/>Christian<forename/>
-               </persName>
 
-               <listEvent>
-                  <event>
-                     <p>Harpiste pour le compte de Louis de Rohan-Guéméné jusqu'en 1781</p>
-                  </event>
-                  <event>
-                     <p>maître de harpe de Marie-Antoinette en 1781</p>
-                  </event>
-               </listEvent>
-            </person>
             <person xml:id="cureArnould">
                <persName><surname>Arnould</surname><roleName>Curé</roleName>
                </persName>
@@ -4322,18 +4324,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
 
-            <person xml:id="rohanLouis">
-               <persName><surname>Rohan-Guéméné</surname><forename/>Louis César Constantin
-                  de<forename/>
-               </persName>
-               <birth when="1697"/>
-               <death when="1779"/>
-               <listEvent>
-                  <event>
-                     <p/>
-                  </event>
-               </listEvent>
-            </person>
+
             <person xml:id="duBoroger">
                <persName><surname>Boroger</surname><forename/>du<forename/>
                </persName>
@@ -4344,16 +4335,8 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                   </event>
                </listEvent>
             </person>
-            <person xml:id="huinJD">
-               <persName><surname>Huin</surname><forename/>Jacques Dominique<forename/>
-               </persName>
 
-               <listEvent>
-                  <event>
-                     <p>Prévôt général de la maréchaussée (1764-1792?)</p>
-                  </event>
-               </listEvent>
-            </person>
+
             <person xml:id="duhamel">
                <persName><surname>Duhamel</surname>
                </persName>
@@ -4367,84 +4350,36 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             <person xml:id="parisse">
                <persName><surname>Parisse</surname>
                </persName>
-               <state><p>Brigadier</p></state>
+               <state>
+                  <p>Brigadier</p>
+               </state>
             </person>
 
             <!--176409-->
 
 
-            <person xml:id="leRoy">
-               <persName><surname>Le Roy</surname><forename>Suzanne-Raymonde</forename>
-                  <roleName>baronne de Seraucourt, douairière de Girecourt</roleName></persName>
 
-               <death when="1764"/>
-               <listEvent>
-                  <event>
-                     <p>Douairière du Comte de Girecourt</p>
-                  </event>
-               </listEvent>
-            </person>
 
-            <person xml:id="girecourt">
-               <persName><surname>Humbert </surname><forename>Jean
-                     François</forename><roleName>comte de Girecourt</roleName></persName>
-               <listEvent>
-                  <event>
-                     <p/>
-                  </event>
-               </listEvent>
-            </person>
+
             <person xml:id="gaudage">
                <persName><surname>Gaudagé</surname><forename/></persName>
             </person>
-            <person xml:id="lomeniebrienne">
-               <persName><surname>Loménie de Brienne</surname><forename>Etienne Charles
-                     de</forename><roleName>archevêque de Toulouse</roleName></persName>
-               <birth when="1727"/>
-               <death when="1794"/>
-               <listEvent>
-                  <event>
-                     <p>Cardinal (de 1788 à 1791). - Évêque de Condom (1760/1761-1763), archevêque
-                        de Toulouse (1763-1788), puis de Sens (1788-1790), puis évêque de l'Yonne. -
-                        Premier ministre (1787-1788). - Membre de l'Académie française (élu en
-                        1770)</p>
-                  </event>
-               </listEvent>
-               <!--<idno>http://viaf.org/viaf/14840263/</idno>-->
-            </person>
+
 
             <person xml:id="dauphineMlle">
-               <persName><surname>Elisabeth de France</surname><forename>M<hi rend="super">lle</hi> la dauphine
-                     <!--ou
+               <persName><surname>Elisabeth de France</surname><forename>M<hi rend="super">lle</hi>
+                     la dauphine <!--ou
                      Clotilde--></forename></persName>
                <!--TODO vérifier laquelle-->
             </person>
-            <person xml:id="montluisant">
-               <persName><surname>Montluisant</surname><forename>Charles Louis</forename></persName>
-               <birth when="1717"/>
-               <death when="1780"/>
-               <listEvent>
-                  <event>
-                     <p>Architecte, inspecteur des bâtiments du Roi de France (1763)</p>
-                  </event>
-               </listEvent>
-            </person>
-            <person xml:id="alliotPere">
-               <!--TODO vérifier-->
-               <persName><surname>Alliot <hi rend="italic">(père)</hi></surname></persName>
-            </person>
+
+
 
             <person xml:id="antoineMme">
-               <persName><surname>Antoine</surname><addName>M<hi rend="super">e</hi></addName></persName>
+               <persName><surname>Antoine</surname><addName>M<hi rend="super"
+                  >e</hi></addName></persName>
             </person>
-            <person xml:id="pierrotEntrepreneur">
-               <persName><surname>Pierrot</surname></persName>
-               <listEvent>
-                  <event>
-                     <p>Entrepreneur</p>
-                  </event>
-               </listEvent>
-            </person>
+
             <person xml:id="regnaultEpouse">
                <persName><surname>Regnault</surname><addName>M<hi rend="super"
                   >e</hi></addName></persName>
@@ -4473,14 +4408,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                   </event>
                </listEvent>
             </person>
-            <person xml:id="baligandjeanjacques">
-               <persName><surname>Baligand</surname><forename>Jean Jacques</forename></persName>
-               <listEvent>
-                  <event>
-                     <p/>
-                  </event>
-               </listEvent>
-            </person>
+
 
             <person xml:id="dumesnil">
 
@@ -4494,6 +4422,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                   <surname>Desprey</surname><forename>J. F.</forename><state>
                      <p>Curé de Damelièvres</p>
                   </state></persName>
+               <death when="1764"/>
                <listEvent>
                   <event>
                      <p>Oncle maternel de Baligand</p>
@@ -4503,7 +4432,8 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             <person xml:id="CoulonJeanYves">
 
                <persName>
-                  <surname>Coulon</surname><forename>Jean-Yves</forename><state>
+                  <surname>Coulon</surname><forename>Jean-Yves</forename><roleName>Seigneur de
+                     Maxéville</roleName><state>
                      <p>Secrétaire du roi</p>
                   </state></persName>
             </person>
@@ -4513,25 +4443,8 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                   <surname>Antoine</surname><forename>Pierre-Marc</forename><roleName>Seigneur du
                      fief de Vandoeuvre</roleName></persName>
             </person>
-            <person xml:id="AlixChristophe">
 
 
-               <persName>
-                  <surname>Alix</surname><forename>Christophe</forename></persName>
-               <listEvent>
-                  <event>
-                     <p>Ancien grand maître des eaux et forêts</p>
-                  </event>
-               </listEvent>
-            </person>
-            <person xml:id="DesprésMarieCatherine">
-               <persName><surname>Després</surname><forename>Marie-Catherine-Josephe</forename></persName>
-               <listEvent>
-                  <event>
-                     <p>Veuve de Jean-Jacques Baligand</p>
-                  </event>
-               </listEvent>
-            </person>
             <person xml:id="Michel">
 
 
@@ -4539,177 +4452,762 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                      <p>Huissier</p>
                   </state></persName>
             </person>
-            <person xml:id="lignevillede">
 
-               <persName><surname>Ligneville</surname><addName>M. de</addName><state>
-                     <p>Ecolâtre pour les affaires de la communauté des Prêtres</p>
-                  </state></persName>
-            </person>
             <person xml:id="parmentierAbbe">
 
                <persName><surname>Parmentier</surname><state>
                      <p>Abbé</p>
                   </state></persName>
             </person>
-            <person xml:id="rheyne">
-
-               <persName>M. Rheyne</persName>
-            </person>
-
-            <person xml:id="thouveninAbbe">
 
 
-               <persName><surname>Thouvenin</surname><state>
-                     <p>abbé</p>
-                  </state></persName>
-            </person>
-
-            <person xml:id="controleurGcompiegne">
 
 
-               <persName><surname>Contrôleur général de Compiègne</surname></persName>
-              
-            </person>
-            <person xml:id="fleuryFille">
 
-               <persName>Fleury <hi rend="italic">(fille)</hi></persName>
-            </person>
-            <person xml:id="clerval">
 
-               <persName><surname>Clerval</surname></persName>
-            </person>
-            <person xml:id="regnault">
 
-               <persName><surname>Regnault</surname></persName>
-            </person>
-            <person xml:id="montancier">
-
-               <persName><surname>Montancier</surname></persName>
-            </person>
-            <person xml:id="barailabbé">
-
-               <persName>
-                  <surname>Barail</surname>
-                  <state>
-                     <p>abbé</p>
-                  </state></persName>
-            </person>
-            <person xml:id="curédesaintSebastien">
-
-               <persName>
-                  <surname>Curé de Saint-Sébastien</surname></persName>
+            <person xml:id="RunesPetitFils">
+               <persName><surname>Hautoy de Clémery</surname></persName>
                <state>
-                  <p/>
+
+                  <p>Petit fils de la marquise Du Hautoy de Clémery</p>
+
                </state>
             </person>
-            <person xml:id="botanistePontaMousson">
 
-               <persName><surname>Botaniste de Pont-à-Mousson</surname></persName>
-               
+
+
+
+
+
+
+            <!--source : -->
+            <person xml:id="chappé">
+               <persName>
+                  <surname>Chappé</surname>
+                  <forename>André</forename>
+               </persName>
+               <birth when="1717"/>
+               <death when="1794"/>
+               <listEvent>
+                  <event>
+                     <p>Notaire à Nancy de 1751 à 1766; Notaire royal gardenottes héréditaire au
+                        Baillage de Nancy en 1760 et 1770 Conseiller du roy, notaire royal et
+                        procureur au baillage royal de Nancy en 1765;</p>
+                  </event>
+                  <event>
+                     <p>Avocat à la cour souveraine de Nancy en 1776.</p>
+                  </event>
+                  <event>
+                     <p>Son fils ainé fut Antoine André CHAPPÉ de Léonval (1743-1792), seigneur de
+                        Bioncourt, fut Notaire, Conseiller du roi à la chancellerie de Metz, avocat
+                        au Parlement de Metz et à celui de Nancy.</p>
+                  </event>
+               </listEvent>
+               <!--source : Frédéric (de METZ-NOBLAT) et Laurent (THOMAS), catalogue Est Enchères, Livres – Archives Bibliothèque d’un château lorrain et à divers, Vendredi 10 février 2012 –14h00 Quelques CHAPPÉ parmi d'autres (http://leonval.free.fr/CHAPPE-LEONVAL/index.html), site consulté le 28 fevrier 2017-->
             </person>
 
-            <person xml:id="renardJ">
 
+
+
+            <person xml:id="voyerMme">
                <persName>
-                  <surname>Renard</surname><forename>Jean</forename><state>
-                     <p>conducteur d’ardoisière</p>
-                  </state></persName>
+                  <surname>Voyer d'Argenson</surname>
+                  <forename>Marie-Jeanne-Constance de</forename>
+                  <roleName>marquise</roleName>
+                  <state>
+                     <p>épistolière, femme du monde</p>
+                  </state>
+               </persName>
+               <birth when="1734-12-12"/>
+               <death when="1783-09-15"/>
+               <listEvent>
+                  <event>
+                     <p>fille de Joseph-Augustin de Mailly d’Haucourt (1708-1794) et de Constance
+                        Colbert de Torcy</p>
+                  </event>
+
+               </listEvent>
+               <!--source : Marie-Jeanne-Constance de Voyer d'Argenson, https://fr.wikipedia.org/wiki/Marie-Jeanne-Constance_de_Voyer_d%27Argenson, site consulté le 28 fevrier 2017-->
+            </person>
+            <person xml:id="voyerM">
+               <persName>
+                  <surname>Voyer d'Argenson</surname>
+                  <forename>Marc-René de</forename>
+                  <roleName>marquis</roleName>
+               </persName>
+               <birth when="1722-09-20"/>
+               <death when="1782-09-18"/>
+               <listEvent>
+                  <event>
+                     <p>lieutenant général des armées du roi, directeur général des haras et
+                        gouverneur du château de Vincennes, puis gouverneur de plusieurs
+                        provinces.</p>
+                  </event>
+
+
+               </listEvent>
+               <!--source : Marc-René de Voyer d'Argenson (1722-1782), https://fr.wikipedia.org/wiki/Marc-Ren%C3%A9_de_Voyer_d%27Argenson_(1722-1782), site consulté le 28 fevrier 2017-->
+            </person>
+
+            <person xml:id="hochbrucker">
+               <persName>
+                  <surname>Hochbrücker</surname>
+                  <forename>Christian</forename>
+               </persName>
+               <birth when="1733"/>
+               <death when="1792"/>
+               <listEvent>
+
+                  <event>
+                     <p>Fils de Georg Hochbrücker, lutier bavarois, à partir de 1760, harpiste au
+                        Concert spirituel</p>
+                  </event>
+
+                  <event>
+                     <p>Harpiste pour le compte de Louis de Rohan-Guéméné jusqu'en 1781</p>
+                  </event>
+                  <event>
+                     <p>maître de harpe de Marie-Antoinette en 1781</p>
+                  </event>
+               </listEvent>
+               <!--source : Hennebelle (David ), De Lully à Mozart: Aristocratie, musique et musiciens à Paris (XVIIe-XVIIIe siècles), Champ Vallon, Seyssel, 2009 et Wasselin (Christian ), Beaumarchais, folio, 2015-->
+            </person>
+
+            <person xml:id="rohanLouis">
+               <persName>
+                  <surname>Rohan-Guéméné</surname>
+                  <forename>Louis César Constantin</forename>
+                  <roleName>Cardinal</roleName>
+                  <state>
+                     <p>Ancien chevalier de Malte, officier de marine dans la Marine royale et
+                        capitaine de vaisseau (1720).</p>
+                  </state>
+               </persName>
+               <birth when="1697-03-24"/>
+               <death when="1779-03-11"/>
+               <listEvent>
+                  <event>
+                     <p>Fils de Charles III de Rohan, cousin d'Armand-Gaston-Maximilien de Rohan</p>
+                  </event>
+                  <event>
+                     <p>Fait carrière dans les ordres dès 1732, de chanoine et grand-prévôt de
+                        Strasbourg jusqu'a devenir cardinal par le pape Clément XIII lors du
+                        consistoire du 23 novembre 1761</p>
+                  </event>
+
+               </listEvent>
+               <!--source : Louis-Constantin de Rohan, (https://fr.wikipedia.org/wiki/Louis-Constantin_de_Rohan), page consultée le 02 mars 2017-->
+            </person>
+
+            <person xml:id="huinJD">
+               <persName>
+                  <surname>Huin</surname>
+                  <forename>Jacques Dominique</forename>
+               </persName>
+               <birth when="1738-10-17"/>
+               <death when="1818-01-06"/>
+               <listEvent>
+                  <event>
+                     <p>Lieutenant de cavalerie au régiment Royal-Navarre, prévôt général de
+                        maréchaussée (succède au sieur Du Boroger)...</p>
+                  </event>
+                  <event>
+                     <p>Il a fait une carrière militaire, il a été fait chevalier de Saint-Louis en
+                        1786. Il fut un général de brigade de la Révolution française.</p>
+                  </event>
+                  <event>
+                     <p>beau-père de Mathieu-de-Dombasle.</p>
+                  </event>
+               </listEvent>
+               <!--source : Jacques Dominique Huin, (https://fr.wikipedia.org/wiki/Jacques_Dominique_Huin), page consultée le 02 mars 2017-->
+            </person>
+
+
+            <person xml:id="leRoy">
+               <persName>
+                  <surname>Le Roy</surname>
+                  <forename>Suzanne-Raymonde</forename>
+                  <roleName>baronne de Seraucourt, douairière de Girecourt</roleName>
+                  <state>
+                     <p>Douairière du Comte de Girecourt</p>
+                  </state>
+               </persName>
+               <birth when="1688"/>
+               <death when="1764"/>
+
+               <!--source : -->
+            </person>
+            <person xml:id="girecourt">
+               <persName>
+                  <surname>Humbert Jean</surname>
+                  <forename>François comte de Girecourt</forename>
+                  <roleName>Baron de Girecourt , Comte de Girecourt ,</roleName>
+                  <state>
+                     <p>Secrétaire d'Etat à la Cour Souveraine de Lorraine</p>
+                  </state>
+               </persName>
+               <birth when="1663"/>
+               <death when="1754"/>
+               <listEvent>
+                  <event>
+                     <p>Chef du Conseil des finances, Régent de la principauté de Commercy,
+                        Chancelier de la principauté de Commercy, Fondateur de l'Hôpital de
+                        Bruyères</p>
+                  </event>
+                  <event>
+                     <p>Chancelier de la principauté de Commercy , Fondateur de l'Hôpital de
+                        Bruyères</p>
+                  </event>
+                  <event>
+                     <p>Sa famille était au service des ducs de Lorraine depuis le XVIe siècle</p>
+                  </event>
+               </listEvent>
+               <!--source : Jean-François Humbert de Girecourt, (https://fr.wikipedia.org/wiki/Jean-Fran%C3%A7ois_Humbert_de_Girecourt), Site consulté le 02 mars 2017 et Jean François HUMBERT - Jean-Michel VISCARDI - Geneanet, (http://gw.geneanet.org/jmsavoie73?lang=fr&p=jean+francois&n=humbert&oc=0), site consulté le 02 mars 2017-->
+            </person>
+
+            <person xml:id="lomeniebrienne">
+               <persName>
+                  <surname>Loménie de Brienne</surname>
+                  <forename>Etienne Charles</forename><state>
+                     <p>archevêque de Toulouse</p>
+                  </state>
+               </persName>
+               <birth when="1727"/>
+               <death when="1794"/>
+               <listEvent>
+                  <event>
+                     <p>Cardinal (de 1788 à 1791). Évêque de Condom (1760/1761-1763)</p>
+                  </event>
+                  <event>
+                     <p>archevêque de Toulouse (1763-1788), puis de Sens (1788-1790), puis évêque de
+                        l'Yonne</p>
+                  </event>
+                  <event>
+                     <p>Premier ministre (1787-1788). Membre de l'Académie française</p>
+                  </event>
+               </listEvent>
+               <!--source : Étienne-Charles de Loménie de Brienne, (https://fr.wikipedia.org/wiki/%C3%89tienne-Charles_de_Lom%C3%A9nie_de_Brienne), site consulté le 02 mars 2017-->
+            </person>
+
+            <person xml:id="montluisant">
+               <persName>
+                  <surname>Montluisant Charles Louis</surname>
+                  <forename>Charles Louis</forename>
+                  <state>
+                     <p>Architecte français et nommé en 1763 inspecteur des bâtiments et usines du
+                        roi de France pour la Lorraine et le Barrois</p>
+                  </state>
+               </persName>
+               <birth when="1717"/>
+               <death when="1780"/>
+
+               <!--source : Charles-Louis de Montluisant, (https://fr.wikipedia.org/wiki/Charles-Louis_de_Montluisant), site consulté le 02 mars 2017-->
+            </person>
+
+
+            <person xml:id="pierrotEntrepreneur">
+               <persName>
+                  <surname>Pierrot</surname>
+                  <state>
+                     <p>Entrepreneur de l'ameublement du comte de Stainville</p>
+                  </state>
+               </persName>
+
+               <!--source : -->
+            </person>
+
+
+
+            <person xml:id="baligandjeanjacques">
+               <persName>
+                  <surname>Baligand</surname>
+                  <forename>Jean Jacques</forename>
+                  <roleName>Seigneur de Heillecourt et de Ferrière</roleName>
+                  <state>
+                     <p>Ecuyer</p>
+                  </state>
+               </persName>
+               <birth when="1697"/>
+               <death when="1764"/>
+               <listEvent>
+                  <event>
+                     <p>On lui doit la plupart des travaux publics faits en Lorraine au cours du
+                        XVIII</p>
+                  </event>
+                  <event>
+                     <p>Marié à Marie Catherine Josephe Després en 1738</p>
+                  </event>
+
+               </listEvent>
+               <!--source : Pfister (Christian), Histoire de Nancy (T. III), Nancy, Berger-Levrault, 1909-->
+            </person>
+
+
+
+
+
+            <person xml:id="AlixChristophe">
+               <persName>
+                  <surname>Alix de Pixérécourt</surname>
+                  <forename>Nicolas-Christophe</forename>
+                  <state>
+                     <p>Conseiller du roi au sein du Conseil</p>
+                  </state>
+               </persName>
+               <birth when="1713"/>
+               <death when="1788"/>
+               <listEvent>
+                  <event>
+                     <p>Grand Gruyer (premier officier d'un grand domaine forestier que l'on nomme
+                        "gruerie")</p>
+                  </event>
+                  <event>
+                     <p>Mariage avec Anne Jacob en 1746</p>
+                  </event>
+
+               </listEvent>
+               <!--source : Journal de Durival le 13 décembre 1766-->
+            </person>
+            <person xml:id="DesprésMarieCatherine">
+               <persName>
+                  <surname>Marie-Catherine-JosepheDesprés</surname>
+               </persName>
+               <birth when="1708"/>
+               <death when="1764"/>
+
+               <!--source : http://gw.geneanet.org/mvanhoegaerden?lang=en&pz=achille+michel+jean+marc+morgan&nz=van+hoegaerden+charmeaux&ocz=0&p=jean+jacques&n=baligand
+Dernière consultation le 02/03/17-->
+            </person>
+
+            <person xml:id="lignevillede">
+               <persName>
+                  <surname>M. de Ligneville</surname>
+                  <forename>Henri-Honoré</forename>
+                  <roleName>Comte de Lignéville</roleName>
+                  <state>
+                     <p>Abbé</p>
+                  </state>
+               </persName>
+
+               <death when="1765"/>
+
+               <!--source : Journal de Durival le 27/06/1765-->
+            </person>
+
+            <person xml:id="rheyne">
+               <persName>
+                  <surname>Rheyne</surname>
+                  <forename>Mathieu Dieudonné</forename>
+                  <roleName>Avocat</roleName>
+                  <state>
+                     <p>Substitut du procureur général</p>
+                  </state>
+               </persName>
+
+
+
+
+               <!--source : Reccueil des ordonnances et réglement de Lorraine depuis le règne de Léopold jusqu'à celui de sa majesté le roi de Pologne, duc de Lorraine et de Bar (T. V), p. 28 
+Et http://blamont.info/textes364.html, dernière consultation le 02/03/17-->
+            </person>
+            <person xml:id="thouveninAbbe">
+               <persName>
+                  <surname>Thouvenin</surname>
+                  <state>
+                     <p>Abbé</p>
+                  </state>
+               </persName>
+
+               <death when="1793"/>
+               <listEvent>
+                  <event>
+                     <p>Mort fusillé</p>
+                  </event>
+
+               </listEvent>
+               <!--source : MICHEL, Biographie historique et généalogique des hommes marquans de l'ancienne province de Lorraine, Nancy, 1829, p.126-->
+            </person>
+            <person xml:id="controleurGcompiegne">
+               <persName>
+                  <surname>L'Averdy</surname>
+                  <forename>Clément Charles François</forename>
+                  <addName/>
+                  <roleName>Marquis de Gambais</roleName>
+                  <state/>
+               </persName>
+               <birth when="1724"/>
+               <death when="1793"/>
+               <listEvent>
+                  <event>
+                     <p>Conseiller au Parlement de Paris</p>
+                  </event>
+                  <event>
+                     <p>Membre de la première chambre des enquêtes</p>
+                  </event>
+                  <event>
+                     <p>Connu pour sa lutte contre les Jésuites</p>
+                  </event>
+               </listEvent>
+               <!--source : http://dictionnaire.sensagent.leparisien.fr/Cl%C3%A9ment%20Charles%20Fran%C3%A7ois%20de%20L%E2%80%99Averdy/fr-fr/ 
+Dernière consultation le 02/03/17-->
+            </person>
+            <person xml:id="fleuryFille">
+               <persName>
+                  <surname/>
+                  <forename>Félicité</forename>
+               </persName>
+
+
+               <listEvent>
+                  <event>
+                     <p>Fille de M. Fleury, directeur de la Comédie</p>
+                  </event>
+                  <event>
+                     <p>Épouse de Clerval</p>
+                  </event>
+
+               </listEvent>
+               <!--source : Journal de Durival le 18 janvier 1764-->
+            </person>
+            <person xml:id="clerval">
+               <persName>
+                  <surname>Clerval</surname>
+                  <state>
+                     <p>Ancien lieutenant au corps des Grenadiers de France</p>
+                  </state>
+               </persName>
+
+               <listEvent>
+                  <event>
+                     <p>Epoux de Félicité, fille de M. Fleury, directeur de la Comédie de Nancy</p>
+                  </event>
+
+               </listEvent>
+               <!--source : Journal de Durival le 18 janvier 1764-->
+            </person>
+            <person xml:id="regnault">
+               <persName>
+                  <surname>Regnault</surname>
+               </persName>
+
+               <!--source : -->
+            </person>
+            <person xml:id="montancier">
+               <persName>
+                  <surname>Brunet</surname>
+                  <forename>Marguerite</forename>
+                  <state>
+                     <p>Comédienne</p>
+                  </state>
+               </persName>
+               <birth when="1730"/>
+               <death when="1820"/>
+               <listEvent>
+                  <event>
+                     <p>Dite "Mademoiselle Montancier"</p>
+                  </event>
+
+               </listEvent>
+               <!--source : Notice biographique sur Mademoiselle de Montansier dans Dictionnaire et album des Basses-Pyrénées (Lien : http://mediatheques.agglo-pau.fr/clientBookline/service/reference.asp?INSTANCE=EXPLOITATION&DOCBASE=IFD_BKDOSSDOC&DOCID=PHO00024857, site consulté le 28/02/17)-->
+            </person>
+            <person xml:id="barailabbé">
+               <persName>
+                  <surname>Barail</surname>
+                  <forename>François ?</forename>
+               </persName>
+
+               <!--source : Pfister (Christian), Histoire de Nancy (T. II), Paris, Berger-Levrault, 1909, p. 650-->
+            </person>
+            <person xml:id="curédesaintSebastien">
+               <persName>
+                  <surname>Barail</surname>
+                  <forename>Nicolas</forename>
+               </persName>
+
+               <death when="1770"/>
+
+               <!--source : Lepage (Henri), Histoire de Nancy, ville-vieille et ville-neuve, Nancy, 1838, p. 341-->
+            </person>
+            <person xml:id="botanistePontaMousson">
+               <persName>
+                  <surname>Botaniste de Pont-à-Mousson</surname>
+               </persName>
+
+               <!--source : -->
+            </person>
+            <person xml:id="renardJ">
+               <persName>
+                  <surname>Renard</surname>
+                  <forename>Jean</forename>
+               </persName>
+
+               <listEvent>
+                  <event>
+                     <p>Venu de Charleville</p>
+                  </event>
+
+               </listEvent>
+               <!--source : -->
             </person>
             <person xml:id="argensonComte">
+               <persName>
+                  <surname>Voyer de Paulmy</surname>
+                  <forename>Marc-Pierre de</forename>
+                  <roleName>Comte d’Argenson</roleName>
+               </persName>
+               <birth when="1696"/>
+               <death when="1764"/>
+               <listEvent>
+                  <event>
+                     <p>Lieutenant général de police (1720 puis 1722-1724)</p>
+                  </event>
+                  <event>
+                     <p>Chancelier du duc d'Orléans (1723-1740)</p>
+                  </event>
 
-               <persName><surname>Argenson</surname><roleName>Comte d’</roleName></persName>
+               </listEvent>
+               <!--source : Combeau (Yves), Le comte d'Argenson (1696-1764), ministre de Louis XV, Ecole des Chartes, 1999-->
             </person>
 
-            <!--JUILLET 64-->
+
+            <!--source : -->
             <person xml:id="MarieuxMF">
                <persName>
-                  <surname>Marieux</surname><forename>Marie-Françoise</forename></persName>
+                  <surname>Marieux</surname>
+                  <forename>Marie-Françoise</forename>
+               </persName>
+
+               <death when="1764"/>
+
+               <!--source : Journal de Durival-->
             </person>
             <person xml:id="BretonNicolas">
                <persName>
-                  <surname>Breton</surname><forename>Nicolas</forename></persName>
+                  <surname>Breton</surname>
+                  <forename>Nicolas</forename>
+               </persName>
+
+               <death when="1754"/>
+               <listEvent>
+                  <event>
+                     <p>Fils de Nicolas Breton, lieutenant général, civil et criminel au bailliage
+                        de Pont-à-Mousson</p>
+                  </event>
+
+               </listEvent>
+               <!--source : Pelletier (Dom Ambroise), Nobilliaire ou armorial général de la Lorraine et du Barrois en forme de dictionnaire, T.I, Nancy-->
             </person>
             <person xml:id="Courtaujay">
                <persName>
-                  <surname>Courtaujay</surname><addName>de La</addName></persName>
+                  <surname>Maussion de la Courtaujay</surname>
+                  <forename>Etienne Thomas</forename>
+               </persName>
+               <birth when="1750"/>
+               <death when="1794"/>
+               <listEvent>
+                  <event>
+                     <p>Conseiller au Parlement de Paris</p>
+                  </event>
+                  <event>
+                     <p>Frère de Geneviève Perrine Maussion de la Courtaujay</p>
+                  </event>
+
+               </listEvent>
+               <!--source : http://gw.geneanet.org/garric?lang=fr&p=etienne+thomas&n=maussion, site consulté le 15/03/17-->
             </person>
             <person xml:id="GalaizièreEnfant">
                <persName>
-                  <surname>Chaumont de La Galaizière</surname><forename>Charles</forename></persName>
+                  <surname>Chaumont de La Galaizière</surname>
+                  <forename>Charles</forename>
+               </persName>
                <birth when="1764"/>
                <death when="1835"/>
-               <listEvent><event><p>Épouse en 1795 Antoinette Françoise Brochet de Saint Prest (1762-1818)</p></event></listEvent>
-            </person>
+               <listEvent>
+                  <event>
+                     <p>Épouse en 1795 Antoinette Françoise Brochet de Saint Prest (1762-1818)</p>
+                  </event>
 
+               </listEvent>
+               <!--source : -->
+            </person>
             <person xml:id="RunesCCDe">
                <persName>
-                  <surname>Runes</surname><forename>Claude-Charlotte de</forename><roleName>marquise du Hautoy de
-                  Clémery</roleName></persName>
+                  <surname>Runes</surname>
+                  <forename>Claude-Charlotte de</forename>
+                  <state>
+                     <p>marquise du Hautoy de Clémery</p>
+                  </state>
+               </persName>
+
                <death when="1764"/>
                <listEvent>
                   <event>
                      <p>Épouse le marquis Jean Baptiste Gaston Du Hautoy de Clémery en 1711</p>
                   </event>
-               </listEvent>
-            </person>
-            <person xml:id="RunesPetitFils">
-               <persName><surname>Hautoy de Clémery</surname></persName>
-               <listEvent>
                   <event>
-                     <p>Petit fils de la marquise Du Hautoy de Clémery</p>
+                     <p>Fille de Jacques de Runes, chevalier, seigneur de Fayel</p>
                   </event>
+
                </listEvent>
+               <!--source : -->
             </person>
+
             <person xml:id="Woronzow">
                <persName>
-                  <surname>Woronzow</surname><forename>Michel Larionovitsch
-                     [?]</forename><roleName>Comte de</roleName></persName>
+                  <surname>Woronzow</surname>
+                  <forename>Mikhaïl Illarionovitch</forename>
+                  <roleName>Comte</roleName>
+                  <state>
+                     <p>Comte de</p>
+                  </state>
+               </persName>
+               <birth when="1714"/>
+               <death when="1767"/>
                <listEvent>
                   <event>
-                     <p>ancien chancelier de Russie</p>
+                     <p>ancien chancelier de Russie (1758-1763)</p>
                   </event>
+                  <event>
+                     <p>Ministre des affaires étrangères (1758-1763)</p>
+                  </event>
+
                </listEvent>
+               <!--source : https://fr.wikipedia.org/wiki/Mikha%C3%AFl_Illarionovitch_Vorontsov, site consulté le 16/03/17-->
             </person>
             <person xml:id="WoronzowEpouse">
-               <persName><surname>Woronzow</surname><addName>M<hi rend="super"
-                  >e</hi></addName></persName>
+               <persName>
+                  <surname>Woronzow</surname>
+                  <forename>Anna Karlovna Skavronskaïa</forename>
+                  <addName/>
+                  <roleName>Comtesse</roleName>
+                  <state/>
+               </persName>
+               <birth when="1722"/>
+               <death when="1775"/>
+               <listEvent>
+                  <event>
+                     <p>Une cousine d'Elisabeth 1ere de Russie</p>
+                  </event>
+
+               </listEvent>
+               <!--source : https://en.wikipedia.org/wiki/Anna_Vorontsova, site consulté le 16/03/17-->
             </person>
             <person xml:id="WoronzowFille">
-               <persName><surname>Woronzow</surname><addName>M<hi rend="super"
-                  >lle</hi></addName></persName>
+               <persName>
+                  <surname>Woronzow</surname>
+                  <forename>Anna Mikhaïlovna</forename>
+                  <roleName>Comtesse</roleName>
+               </persName>
+               <birth when="1743"/>
+               <death when="1769"/>
+               <listEvent>
+                  <event>
+                     <p>Mariée au comte Alexandre Sergueïevitch Stroganov</p>
+                  </event>
+
+               </listEvent>
+               <!--source : https://fr.wikipedia.org/wiki/Alexandre_Sergue%C3%AFevitch_Stroganov, consultée le 16/03/17-->
             </person>
             <person xml:id="DombâleDe">
                <persName>
-                  <surname>Dombâle</surname><addName>de</addName></persName>
+                  <surname>Dombâle</surname>
+                  <addName>M. de</addName>
+               </persName>
+
+               <!--source : -->
             </person>
             <person xml:id="renaultMadame">
                <persName>
-                  <surname>Tilly</surname><addName>de</addName></persName>
+                  <surname>Tilly</surname>
+                  <addName>Mme de</addName>
+                  <state/>
+               </persName>
+
+               <death when="1764"/>
                <listEvent>
                   <event>
                      <p>Épouse de M. Renault d'Ubexi</p>
                   </event>
+
                </listEvent>
-               <death when="1764"/>
+               <!--source : -->
             </person>
             <person xml:id="dubois">
-               <persName><surname>Dubois</surname></persName>
+               <persName>
+                  <surname>Dubois</surname>
+               </persName>
+
+
+               <!--source : -->
             </person>
             <person xml:id="Derlange">
-               <persName><surname>Derlange</surname></persName>
+               <persName>
+                  <surname>Derlange</surname>
+                  <forename>Jean-Nicolas</forename>
+                  <state>
+                     <p>Orfèvre et graveur à Nancy</p>
+                  </state>
+               </persName>
+               <birth when="1742"/>
+
+               <listEvent>
+                  <event>
+                     <p>Fils d'Antoine Derlange et Louise Bailly</p>
+                  </event>
+
+               </listEvent>
+               <!--source : Le Pays lorrain : revue régionale bi-mensuelle illustrée / dir. Charles Sadoul, Société d'archéologie lorraine. Musée lorrain (Nancy), Berger-Levrault, Nancy, 1969-->
             </person>
-
-
             <person xml:id="BorsonAnne">
                <persName>
-                  <surname>Borson</surname><forename>Anne</forename></persName>
+                  <surname>Borson</surname>
+                  <forename>Anne</forename>
+               </persName>
+
+               <listEvent>
+                  <event>
+                     <p>Anne Borson, qui était de la veille dans la maison de Fleury, place
+                        d’Alliance a été rendu à ces parents par Durival le 19 juillet 1764. Elle
+                        devait partir avec le sieur Baligand (fils), qui voulait l’épouser, et aller
+                        dans les pays étrangers. (cf. Affaire Baligand)</p>
+                  </event>
+
+               </listEvent>
+               <!--source : Durival (Nicolas), Journal, année 1764-->
             </person>
             <person xml:id="Tressan">
                <persName>
-                  <surname>Tressan</surname><roleName>Comte de</roleName></persName>
+                  <surname>Lavergne de Tressan</surname>
+                  <forename>Louis-Élisabeth de</forename>
+                  <roleName>Comte de</roleName>
+               </persName>
+               <birth when="1705"/>
+               <death when="1783"/>
+               <listEvent>
+                  <event>
+                     <p>Second président de la Société Royale des Sciences et Belles-Lettres de
+                        Nancy en 1751 et membre de plusieurs autres académies françaises et
+                        étrangères. Il est nommé gouverneur de Toul. Il reçoit le titre de grand
+                        maréchal de Stanislas.</p>
+                  </event>
+                  <event>
+                     <p>militaire, physicien et écrivain français, connu principalement pour ses
+                        adaptations de romans de chevalerie du Moyen Âge.</p>
+                  </event>
+                  <event>
+                     <p>Il épousa Charlotte Michel Russell en 1744.</p>
+                  </event>
+               </listEvent>
+               <!--source : Louis-Élisabeth de La Vergne de Tressan, https://fr.wikipedia.org/wiki/Louis-%C3%89lisabeth_de_La_Vergne_de_Tressan, site consulté le 16 mars 2017.-->
             </person>
             <person xml:id="Tressanfils">
-               <persName><surname>Tressan <hi rend="super">(fils)</hi></surname></persName>
+               <persName>
+                  <surname>Lavergne de Tressan</surname>
+                  <forename>Maurice-Élisabeth de</forename>
+               </persName>
+               <birth when="1749"/>
+               <death when="1809"/>
                <listEvent>
                   <event>
                      <p>Fils du comte de Tressan</p>
@@ -4717,23 +5215,847 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                   <event>
                      <p>Chanoine de Saint-Dié en 1764</p>
                   </event>
+                  <event>
+                     <p>l'abbé de Tressan, fut un littérateur.</p>
+                  </event>
                </listEvent>
+               <!--source : Maurice-Élisabeth de Lavergne de Tressan (1749-1809), http://data.bnf.fr/10063013/maurice-elisabeth_de_lavergne_de_tressan/, site consulté le 16 mars 2017 
+Dictionnaire des journalistes (1600-1789), http://dictionnaire-journalistes.gazettes18e.fr/journaliste/468-louis-la-vergne-de-tressan, site consulté le 16 mars 2017.-->
             </person>
             <person xml:id="Thouvenotabbé">
                <persName>
-                  <surname>Thouvenot</surname><roleName>abbé</roleName></persName>
+                  <surname>Thouvenot</surname>
+                  <forename>J-N</forename>
+                  <state>
+                     <p>abbé</p>
+                  </state>
+               </persName>
+
                <death when="1764"/>
-               <event>
-                  <p>Chanoine de Saint-Dié jusqu'en 1764</p>
-               </event>
+               <listEvent>
+                  <event>
+                     <p>Chanoine de Saint-Dié jusqu'en 1764 (Canonicat)</p>
+                  </event>
+                  <event>
+                     <p>Né à Ligny en Barrois, il a composé un ouvrage: Siège quasi épiscopal de
+                        l'église insigne de St Dié, et un recueil de lettres, pour servir de
+                        réplique à la défense de l'église de Toul</p>
+                  </event>
+
+               </listEvent>
+               <!--source : Richard (Charles Louis), Dictionnaire universel, dogmatique, canonique, historique, géographique et chronologique, des sciences ecclésiastiques, Volume 5, Jacques Rollin, Paris, 1762-->
             </person>
-            <!--JUIN 64-->
+            <person xml:id="montfermeil">
+               <persName>
+                  <surname>Montfermeil</surname>
+                  <roleName>Chevalier de</roleName>
+               </persName>
+
+               <!--source : Durival (Nicolas), Journal, année 1764-->
+            </person>
+            <person xml:id="Schomberg">
+               <persName>
+                  <surname>Schomberg</surname>
+               </persName>
+
+               <listEvent>
+
+                  <event>
+                     <p>Ici Durival fait référence au régiment de Schomberg nommé ainsi en l'honneur
+                        de Frédéric-Armand de Schomberg (1615-1690)</p>
+                  </event>
+
+               </listEvent>
+               <!--source : Durival (Nicolas), Journal, année 1764-->
+            </person>
+            <person xml:id="montignot">
+               <persName>
+                  <surname>Montignot</surname>
+                  <forename>Henri</forename>
+               </persName>
+               <birth when="1720"/>
+               <death when="1790"/>
+               <listEvent>
+                  <event>
+                     <p>abbé, chanoine de Toul, Membre de la Société royale des sciences et
+                        belles-lettres de Nancy</p>
+                  </event>
+
+               </listEvent>
+               <!--source : Henri Montignot (1720?-1790), http://data.bnf.fr/12151002/henri_montignot/, site consulté le 21 mars 2017-->
+            </person>
+            <person xml:id="pallas">
+               <persName>
+                  <surname>Pallas</surname>
+               </persName>
+               <birth when="1694"/>
+               <death when="1763"/>
+               <listEvent>
+                  <event>
+                     <p>académicien. À sa mort, il avait 69 ans et demi.</p>
+                  </event>
+                  <event>
+                     <p>Lieutenant général du baillage et siège présidial de Toul</p>
+                  </event>
+               </listEvent>
+               <!--source : La France littéraire, 1758 Durival (Nicolas), Journal, année 1764-->
+            </person>
+            <person xml:id="HerbelLG">
+               <persName>
+                  <surname>Herbel</surname>
+                  <forename>Leopold-Guillaume d'</forename>
+               </persName>
+
+
+               <death when="1764"/>
+               <listEvent>
+                  <event>
+                     <p>conseiller maître des comptes de Lorraine</p>
+                  </event>
+               </listEvent>
+               <!--source : Durival (Nicolas), Journal, année 1764-->
+            </person>
+            <person xml:id="martignyRoquefeuille">
+               <persName>
+                  <surname>Martigny (Roquefeuille)</surname>
+                  <addName>de</addName>
+               </persName>
+
+               <death when="1764"/>
+
+               <!--source : -->
+            </person>
+            <person xml:id="gelin">
+               <persName>
+                  <surname>Gelin</surname>
+                  <forename>Nicolas</forename>
+               </persName>
+               <birth when="1726"/>
+               <death when="1810"/>
+               <listEvent>
+                  <event>
+                     <p>Chanteur (basse-taille) français. - Actif à l'Académie royale de musique
+                        entre 1750 et 1779, au Concert Spirituel entre 1750 et 1772</p>
+                  </event>
+
+               </listEvent>
+               <!--source : Nicolas Gélin (1726-1810), http://data.bnf.fr/14792239/nicolas_gelin/, site consulté le 21 mars 2017-->
+            </person>
+            <person xml:id="gorion">
+               <persName>
+                  <surname>Gorion</surname>
+                  <addName>Demoiselle</addName>
+                  <state>
+                     <p>chanteuse</p>
+                  </state>
+               </persName>
+
+               <!--source : -->
+            </person>
+            <person xml:id="jonvaux">
+               <persName>
+                  <surname>Jonvaux</surname>
+                  <addName>Demoiselle</addName>
+                  <state>
+                     <p>chanteuse</p>
+                  </state>
+               </persName>
+
+               <listEvent>
+                  <event>
+                     <p>Actrice et chanteuse jugée "médiocre" par le Journal des théâtres</p>
+                  </event>
+
+               </listEvent>
+               <!--source : Journal des théâtres, ou le Nouveau spectateur : servant de répertoire universel des théâtres..., Esprit, Paris, 1777-06-15 p.274-->
+            </person>
+            <person xml:id="devancy">
+               <persName>
+                  <surname>Derancy</surname>
+               </persName>
+
+               <!--source : -->
+            </person>
+            <person xml:id="talmontPrincesse">
+               <persName>
+                  <surname>Talmont</surname>
+                  <forename>Marie-Maximilienne ?</forename>
+                  <state>
+                     <p>Princesse de</p>
+                  </state>
+               </persName>
+               <birth when="1744"/>
+               <death when="1790"/>
+               <listEvent>
+                  <event>
+                     <p>Princesse de Salm-Kyrburg</p>
+                  </event>
+                  <event>
+                     <p>Marié à Jean-Bretagne-Charles-Godefroy de La Trémoille en 1763</p>
+                  </event>
+
+               </listEvent>
+               <!--source : https://fr.wikipedia.org/wiki/Jean-Bretagne-Charles_de_La_Tr%C3%A9moille, site consulté le 21/03/17-->
+            </person>
+            <person xml:id="duBois">
+               <persName>
+                  <surname>Du Bois</surname>
+                  <state>
+                     <p>Joue dans les confidences réciproques</p>
+                  </state>
+               </persName>
+
+               <!--source : Journal de Durival-->
+            </person>
+            <person xml:id="blancmenil">
+               <persName>
+                  <surname>Lamoignon de Blancsmenil</surname>
+                  <forename>Agathe-Françoise de</forename>
+                  <state>
+                     <p>Religieuse visitandine</p>
+                  </state>
+               </persName>
+               <birth when="1723"/>
+               <death when="1806"/>
+
+               <!--source : https://fr.wikipedia.org/wiki/Guillaume_de_Lamoignon_de_Blancmesnil, site consulté le 21/03/17-->
+            </person>
+            <person xml:id="Harcourt">
+               <persName>
+                  <surname>Harcourt-Beuvron</surname>
+                  <forename>Anne-Pierre d'</forename>
+                  <state>
+                     <p>A le gouvernement de Normandie</p>
+                  </state>
+               </persName>
+               <birth when="1701"/>
+               <death when="1783"/>
+               <listEvent>
+                  <event>
+                     <p>Maréchal de France en 1775</p>
+                  </event>
+
+               </listEvent>
+               <!--source : https://fr.wikipedia.org/wiki/Anne_Pierre_d'Harcourt, site consulté le 21/03/17-->
+            </person>
+            <person xml:id="Tingy">
+               <persName>
+                  <surname>Montmorency-Beaumont</surname>
+                  <forename>Charles-François-Christian de</forename>
+                  <roleName>Prince de Tingry</roleName>
+               </persName>
+               <birth when="1713"/>
+               <death when="1787"/>
+               <listEvent>
+                  <event>
+                     <p>duc de Beaumont</p>
+                  </event>
+                  <event>
+                     <p>Capitaine des gardes du corps du roi</p>
+                  </event>
+
+               </listEvent>
+               <!--source : https://fr.wikipedia.org/wiki/Christian_Louis_de_Montmorency-Luxembourg, site consulté le 21/03/17-->
+            </person>
+            <person xml:id="luxembourg">
+               <persName>
+                  <surname>de Montmorency-Luxembourg</surname>
+                  <forename>Charles II Frédéric</forename>
+                  <roleName>Duc de</roleName>
+               </persName>
+               <birth when="1702"/>
+               <death when="1764"/>
+               <listEvent>
+                  <event>
+                     <p>Duc de Piney-Luxembourg et duc de Montmorency</p>
+                  </event>
+                  <event>
+                     <p>Pair de France</p>
+                  </event>
+                  <event>
+                     <p>Maréchal de France en 1757</p>
+                  </event>
+               </listEvent>
+               <!--source : https://fr.wikipedia.org/wiki/Charles_II_Fr%C3%A9d%C3%A9ric_de_Montmorency-Luxembourg, site consulté le 21/03/17-->
+            </person>
+            <person xml:id="Renardfrère">
+               <persName>
+                  <surname>Renard</surname>
+               </persName>
+
+               <listEvent>
+                  <event>
+                     <p>Frère de Jean Renard, facteur d'ardoisière de Charleville</p>
+                  </event>
+
+               </listEvent>
+               <!--source : -->
+            </person>
+            <!--AVRIL 64-->
+
+            <person xml:id="liboire">
+               <persName>
+                  <surname>Liboire</surname>
+               </persName>
+
+            </person>
+
+            <person xml:id="richardJ">
+               <persName>
+                  <surname>Richard</surname>
+                  <forename>Jeanne</forename>
+                  <state>
+                     <p>Colonel</p>
+                  </state>
+               </persName>
+
+               <death when="1764"/>
+
+            </person>
+            <person xml:id="bebe">
+               <persName>
+                  <surname>Bébé</surname>
+                  <state>
+                     <p>Nain de Stanislas</p>
+                  </state>
+               </persName>
+
+            </person>
+            <person xml:id="courtauge">
+               <persName>
+                  <surname>Courtaugé</surname>
+                  <forename>de La</forename>
+                  <addName>M<hi rend="super">e</hi></addName>
+               </persName>
+
+            </person>
+
+            <!--EN TODO AVRIL 64 et suite-->
+            <person xml:id="valee">
+               <persName>
+                  <surname>Valée</surname>
+                  <addName>M. de</addName>
+               </persName>
+
+            </person>
+            <person xml:id="louislieutenant">
+               <persName>
+                  <surname>Louis</surname>
+                  <state>
+                     <p>Lieutenant des chasses</p>
+                  </state>
+               </persName>
+
+            </person>
+            <person xml:id="michelan">
+
+               <persName>
+                  <surname>Michelan</surname>
+                  <state>
+                     <p>Avocat</p>
+                  </state>
+               </persName>
+
+            </person>
+            <person xml:id="custineAuflance">
+               <persName>
+                  <surname>Custine d’Auflance</surname>
+                  <roleName>M. de</roleName>
+               </persName>
+               <!-- TODO voir autre custine si même-->
+            </person>
+            <person xml:id="mirbeck">
+               <persName>
+                  <surname>Mirbeck</surname>
+               </persName>
+
+            </person>
+            <person xml:id="montignyIngenieur">
+               <persName>
+                  <surname>Montigny</surname>
+                  <state>
+                     <p>sous-ingénieur des Ponts et Chaussées </p>
+                  </state>
+               </persName>
+
+            </person>
+            <person xml:id="miqueSoeur">
+
+               <persName>
+                  <surname>Mique</surname>
+                  <addName>Madame</addName>
+               </persName>
+               <listEvent>
+                  <event>
+                     <p>Soeur de l'ingénieur en chef (?)</p>
+                  </event>
+               </listEvent>
+            </person>
+
+            <person xml:id="augusteRoi">
+               <persName>
+                  <surname>Auguste III</surname>
+                  <state>
+                     <p>Roi de Pologne et de Saxe (17-10-1696-5-10-1763)</p>
+                  </state>
+               </persName>
+               <listEvent>
+                  <event>
+                     <p>père de la dauphine de France et deuxième successeur de Stanislas au trône
+                        de Pologne</p>
+                  </event>
+               </listEvent>
+            </person>
+            <person xml:id="thomassinVisentini">
+               <persName>
+                  <surname>Thomassin-Visentini</surname>
+                  <forename>Emilie</forename>
+               </persName>
+               <death when="1764"/>
+               <listEvent>
+                  <event>
+                     <p>probablement fille de Thomas Visentini, acteur de la Comédie-Italienne</p>
+                  </event>
+               </listEvent>
+            </person>
+            <person xml:id="ambassadeurPologne">
+               <persName>
+                  <surname>Ambassadeur de Pologne</surname>
+               </persName>
+
+            </person>
+            <person xml:id="Jean">
+
+               <persName>
+                  <surname>Jean</surname>
+                  <state>
+                     <p>concièrge de Durival</p>
+                  </state>
+               </persName>
+
+            </person>
+            <person xml:id="hoffelize">
+
+               <persName>
+                  <surname>Hoffelize</surname>
+                  <roleName>Madame de</roleName>
+                  <!--NOTE Marguerite de Francquemont,  (Généanet) ?-->
+               </persName>
+
+            </person>
+            <person xml:id="borucCharles">
+
+               <persName>
+                  <surname> Boruc</surname>
+                  <forename>Charles</forename>
+               </persName>
+
+            </person>
+            <person xml:id="malcuitHubert">
+               <persName>
+                  <surname>Malcuit</surname>
+                  <forename>Hubert</forename>
+               </persName>
+               <death when="1764"/>
+            </person>
+            <person xml:id="alexisdeRousselot">
+               <persName>
+                  <surname>Alexis</surname>
+                  <roleName>comte de Rousselot</roleName>
+               </persName>
+               <death when="1764"/>
+            </person>
+            <person xml:id="dorsey">
+               <persName>
+                  <surname>Dorsey</surname>
+                  <addName>Madame</addName>
+                  <state>
+                     <p>actrice</p>
+                  </state>
+               </persName>
+               <listEvent>
+                  <event>
+                     <p>débutte au théâtre le 8 décembre 1762 dans Médée</p>
+                  </event>
+               </listEvent>
+               <!--NOTE Mlle Dorsey, actrice de la Comédie-Française (source Mercure de France, 1763, p. 150).-->
+            </person>
+            <person xml:id="intendantFils">
+
+               <persName>
+                  <surname>fils de M. l’Intendant</surname>
+               </persName>
+
+            </person>
+            <person xml:id="klein">
+               <persName>
+                  <surname>Klein</surname>
+               </persName>
+
+            </person>
+            <person xml:id="dieuzeGreffier">
+               <persName>
+                  <surname>le greffier de Dieuze</surname>
+               </persName>
+
+            </person>
+            <person xml:id="surirey">
+
+               <persName>
+                  <surname>Surirey de Saint-Rémy</surname>
+                  <forename>Pierre-Louis</forename>
+                  <state>
+                     <p>capitaine des grenadiers de France</p>
+                  </state>
+               </persName>
+               <birth when="1733"/>
+               <death when="1790"/>
+            </person>
+            <person xml:id="fossonnier">
+
+               <persName>
+                  <surname>Fossonnier</surname>
+                  <state>
+                     <p>danseuse de la troupe de la Comédie-Française</p>
+                  </state>
+               </persName>
+               <birth when="1751"/>
+               <listEvent>
+                  <event>
+                     <p>débutte sur scène à l'âge de 8 ans en 1759</p>
+                  </event>
+               </listEvent>
+               <!--NOTE Mlle Fossonnier, danseuse de la troupe de la Comédie-Française, qui fait ses débuts sur scène à l'âge de 8 ans en 1759 (source : Mercure de France, 1759, p. 154.) -->
+            </person>
+            <person xml:id="frederic">
+
+               <persName>
+                  <surname>Frederic</surname>
+                  <state>
+                     <p>maître de ballets</p>
+                  </state>
+               </persName>
+
+            </person>
+            <person xml:id="fredericEpouse">
+
+               <persName>
+                  <surname>Frederic</surname><addName>Madame</addName>
+               </persName>
+
+            </person>
+
+            <person xml:id="montesquiou">
+               <persName>
+                  <surname>Montesquiou</surname>
+                  <forename>Pierre de</forename>
+               </persName>
+               <birth when="1687"/>
+               <death when="1754"/>
+               <!--NOTE Pierre de Montesquiou d'Artagnan (1687-1754), lieutenant général des armées-->
+            </person>
+            <person xml:id="piles">
+               <persName>
+                  <surname>Fortia</surname><forename>Alphonse-Toussaint-Joseph de</forename>
+                  <roleName>comte de Piles</roleName>
+               </persName>
+               <birth when="1735"/>
+               <death when="1791"/>
+               <!--NOTE  Alphonse-Toussaint-Joseph de Fortia, comte de Piles (1735-1791), entré aux grenadiers en 1762, père de Caillot-Duval.-->
+            </person>
 
 
 
+            <person xml:id="renaud">
+               <persName>
+                  <surname>Renaud</surname>
+               </persName>
+
+            </person>
+            <person xml:id="oisemont">
+
+               <persName>
+                  <surname>Oisemont</surname>
+               </persName>
+
+            </person>
+
+
+            <person xml:id="louisLieutenant">
+
+               <persName>
+                  <surname>Louis</surname>
+                  <state>
+                     <p>lieutenant de la capitainerie de Nancy</p>
+                  </state>
+               </persName>
+
+            </person>
+            <person xml:id="froment">
+               <persName>
+                  <surname>Froment</surname>
+                  <state>
+                     <p> officier de la maîtrise, assesseur du lieutenant de la capitainerie de
+                        Nancy </p>
+                  </state>
+               </persName>
+
+            </person>
+
+            <person xml:id="drian">
+
+               <persName>
+                  <surname>Drian</surname>
+                  <state>
+                     <p>greffier de la capitainerie de Nancy</p>
+                  </state>
+               </persName>
+
+            </person>
+
+            <person xml:id="doridant">
+
+               <persName>
+                  <surname>Doridant</surname>
+                  <addName>M. de</addName>
+               </persName>
+
+            </person>
+            <person xml:id="vigneulles">
+               <persName>
+                  <surname>Vigneulles</surname>
+                  <addName>M. de</addName>
+               </persName>
+
+            </person>
+            <person xml:id="palissot">
+               <persName>
+                  <surname>Palissot de Montenay</surname>
+                  <forename>Charles</forename>
+               </persName>
+               <!--NOTE PALISSOT de MONTENOY (Charles). ― « La Dunciade,
+                           ou la Guerre des sots, poème en dix chants. ― Chelsea, [Paris]
+                           1764. In-8°, 76 p.  cotes BM 1580 (a), 2446 (a-b), 311 250 et Rés. 11 089-->
+            </person>
+            <person xml:id="pompadour">
+               <persName>
+                  <surname>Poisson</surname>
+                  <forename>Jeanne Antoinette</forename>
+                  <roleName>Marquise de Pompadour</roleName>
+               </persName>
+               <birth when="1721"/>
+               <death when="1764"/>
+            </person>
+            <person xml:id="massard">
+               <persName>
+                  <surname>Massard</surname>
+               </persName>
+
+            </person>
+
+            <person xml:id="darcisEpouse">
+               <persName>
+                  <surname>Darcis</surname>
+                  <addName>Madame</addName>
+               </persName>
+
+            </person>
+            <person xml:id="darcis">
+               <persName>
+                  <surname>Darcis</surname>
+               </persName>
+
+            </person>
+
+            <person xml:id="dupuydEmportes">
+               <persName>
+                  <surname>Dupuy d’Emportes</surname>
+               </persName>
+
+            </person>
+
+            <person xml:id="harlo">
+               <persName>
+                  <surname>Harlo</surname>
+                  <state>
+                     <p>machiniste</p>
+                  </state>
+               </persName>
+
+            </person>
+            <person xml:id="bernaut">
+               <persName>
+                  <surname>Bernaut</surname>
+                  <state>
+                     <p>directeur de la Comédie de Rouen</p>
+                  </state>
+               </persName>
+
+            </person>
+            <person xml:id="decour">
+               <persName>
+                  <surname>Décour</surname>
+                  <state>
+                     <p>actrice</p>
+                  </state>
+               </persName>
+               <birth when="1748"/>
+               <listEvent>
+                  <event>
+                     <p>dite Chateauneuf</p>
+                  </event>
+               </listEvent>
+            </person>
+            <person xml:id="durazzo">
+               <persName>
+                  <surname>Durazzo</surname>
+                  <roleName>Comte</roleName>
+               </persName>
+
+            </person>
+            <person xml:id="staremberg">
+               <persName>
+                  <surname>Staremberg</surname>
+                  <addName>M. de </addName>
+               </persName>
+
+            </person>
+            <person xml:id="damour">
+               <persName>
+                  <surname>Damour</surname>
+               </persName>
+
+            </person>
+            <person xml:id="françois">
+
+               <persName>
+                  <surname>François</surname>
+                  <state>
+                     <p>trésorier de l'Empereur à Nancy</p>
+                  </state>
+               </persName>
+
+            </person>
+
+
+            <person xml:id="parxelAnne">
+
+               <persName>
+                  <surname>Parxel</surname>
+                  <forename>Anne</forename>
+               </persName>
+               <death when="1764"/>
+            </person>
+            <person xml:id="saintcletteJoseph">
+               <persName>
+                  <surname>Saintclette</surname>
+                  <forename>Joseph</forename>
+               </persName>
+
+            </person>
+            <person xml:id="payen">
+               <persName>
+                  <surname>Payen</surname>
+                  <state>
+                     <p>commissaire de police</p>
+                  </state>
+               </persName>
+               <death when="1764"/>
+            </person>
+            <person xml:id="voirin">
+               <persName>
+                  <surname>Voirin</surname>
+               </persName>
+
+            </person>
+
+            <person xml:id="saintMartin">
+               <persName>
+                  <surname>Saint-Martin</surname>
+                  <surname><persName>commissaire de police à partir de 1764</persName></surname>
+               </persName>
+
+            </person>
+
+
+            <person xml:id="chevalierMarguerite">
+
+               <persName>
+                  <surname>Chevalier</surname>
+                  <forename>Marguerite</forename>
+               </persName>
+               <death when="1764"/>
+
+            </person>
+            <person xml:id="meratAbbe">
+               <persName>
+                  <surname>Mérat</surname>
+                  <roleName>Abbé</roleName>
+               </persName>
+
+            </person>
+            <person xml:id="hautcolas">
+               <persName>
+                  <surname>Hautcolas</surname>
+               </persName>
+
+            </person>
+            <person xml:id="oriot">
+               <persName>
+                  <surname>Oriot</surname>
+               </persName>
+
+            </person>
+
+
+            <person xml:id="novillarsMadame">
+               <persName>
+                  <surname>Novillars</surname>
+                  <addName>Madame de</addName>
+               </persName>
+               <death when="1764"/>
+            </person>
 
 
 
+            <person xml:id="duchesseDouairière">
+               <persName>
+                  <surname>duchesse douairièrede</surname>
+               </persName>
+
+            </person>
+            <person xml:id="examinateur">
+               <persName>
+                  <surname>examinateur</surname>
+               </persName>
+
+            </person>
+            <person xml:id="dailly">
+               <persName>
+                  <surname>Dailly</surname>
+                  <state>
+                     <p>chef de bureau de l'administration financière</p>
+                  </state>
+               </persName>
+
+            </person>
+            <person xml:id="françoisArcher">
+               <persName>
+                  <surname>François</surname>
+               </persName>
+
+            </person>
+
+            <person xml:id="rosaline">
+               <persName>
+                  <surname>Rosaline</surname>
+                  <addName>Madame</addName>
+                  <state>
+                     <p>actrice</p>
+                  </state>
+               </persName>
+
+            </person>
          </listPerson>
 
          <!--Noms de lieux-->
@@ -5749,7 +7071,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </location>
                <desc>La construction de l'arsenal remonte à 1550.</desc>
             </place>
-            <place xml:id="manufactureBains">
+            <place xml:id="manufactureBains" type="civil">
                <placeName>Nancy</placeName>
                <placeName>Manufacture des bains</placeName>
             </place>
@@ -5762,13 +7084,13 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             <!--<place xml:id="premontes">
                <placeName>Les Premontés de Nancy</placeName><!-\- todo vérif avec Eric et remplacé par Saint Joseph ? -\->
             </place>-->
-            <place xml:id="saintJoseph">
+            <place xml:id="saintJoseph" type="religious">
                <placeName>Les Premontés de Nancy</placeName>
                <location>
                   <!--                  <geo>GEO</geo>-->
                </location>
             </place>
-            <place xml:id="ancienneSalleAca">
+            <place xml:id="ancienneSalleAca" type="civil">
                <placeName>Ancienne salle de l'Académie</placeName>
             </place>
             <place xml:id="maisonPerbal">
@@ -5848,7 +7170,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <placeName>Charleville</placeName>
             </place>
 
-            <place xml:id="nancyIntendancePlace">
+            <place xml:id="nancyIntendancePlace" type="civil">
                <placeName>Nancy</placeName>
                <placeName>Place de l'Intendance</placeName>
                <location>
@@ -5863,7 +7185,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             <place xml:id="charmes">
                <placeName>Charmes</placeName>
             </place>
-            <place xml:id="nancyplacealliance">
+            <place xml:id="nancyplacealliance" type="civil">
                <placeName>Nancy</placeName>
                <placeName>Place d'Alliance</placeName>
                <location>
@@ -5877,6 +7199,13 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <desc>Ile de la Guadeloupe qui a parfois été servie de lieu de relégation pour les
                   délinquants nobles de la métropole</desc>
             </place>
+            <place xml:id="lisbonne">
+               <placeName>Lisbonne</placeName>
+               <country>Portugal</country>
+            </place>
+
+
+
          </listPlace>
          <!--Organismes-->
 

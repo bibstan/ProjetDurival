@@ -18,6 +18,7 @@
 
     
     <xsl:template match="//tei:listPerson">
+        <xsl:result-document format="csv" encoding="UTF-8" href="listPerson.csv">
         <xsl:text>@XML:ID,NOM,PRENOM,TITRE/NOBLESSE,AUTRE,DATE DE NAISSANCE,DECES,AUTRES INFOS 1,AUTRES INFOS 2,AUTRES INFOS 3;
 
         </xsl:text>
@@ -27,6 +28,7 @@
             <xsl:value-of select="normalize-space(tei:state/tei:p)"/><xsl:text>;
             </xsl:text>
         </xsl:for-each>
+        </xsl:result-document>
     </xsl:template>
     
     <xsl:template match="//tei:listPlace">
