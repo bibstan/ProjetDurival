@@ -1937,7 +1937,7 @@
                         <dateline>
                            <date type="entry" when="1763-01-28">28</date>
                         </dateline>
-                        <p xml:id="d1763012801">J’ai aujourd’hui écrit à M. André, sous-directeur de
+                        <p xml:id="d1763012801">J’ai aujourd’hui écrit à M. <persName ref="#andre">André</persName>, sous-directeur de
                            l’académie :</p>
                         <p xml:id="d1763012802">« Je <choice>
                               <orig>serois</orig>
@@ -1989,7 +1989,7 @@
                         <p xml:id="d1763020101">Assemblée de l’académie, où <choice>
                               <orig>étoient</orig>
                               <reg>étaient</reg>
-                           </choice> le P. de Menoux, M. André, M. Thibault, Les PP. Leslie et
+                           </choice> le P. de Menoux, M. <persName ref="#andre">André</persName>, M. <persName ref="#thibault">Thibault</persName>, Les P<persName ref="#leslie">P. Leslie</persName> et
                            Husson, M. Cupers et Durival l’aîné. On y a lu les lettres de
                            remerciement et d’excuses de <rs ref="#intendant">M. l’Intendant</rs>
                            pour la place de Directeur et de Durival l’aîné pour sous-directeur ; et
@@ -1998,7 +1998,7 @@
                               <reg>pouvait</reg>
                            </choice> en les admettant procéder à une nouvelle élection au nombre de
                            sept, vu les circonstances de maladie, d’absence, etc, on est allé au
-                           scrutin et M. l’abbé de Tervenus a été élu directeur, M. André continué
+                           scrutin et M. l’abbé <persName ref="#tervenus">de Tervenus</persName> a été élu directeur, M. <persName ref="#andre">André</persName> continué
                            sous-directeur ; ce que le Roy <choice>
                               <orig>seroit</orig>
                               <reg>serait</reg>
@@ -2151,10 +2151,10 @@
                            <choice>
                               <orig>Mr</orig>
                               <reg>Monsieur</reg>
-                           </choice> André, le P. de Menoux, <choice>
+                           </choice> <persName ref="#andre">André</persName>, le P. de Menoux, <choice>
                               <orig>Mrs</orig>
                               <reg>Messieurs</reg>
-                           </choice> Thibault, etc. Nous étions huit. Il <choice>
+                           </choice> <persName ref="#thibault">Thibault</persName>, etc. Nous étions huit. Il <choice>
                               <orig>étoit</orig>
                               <reg>était</reg>
                            </choice> question de savoir ce que l’on <choice>
@@ -2164,7 +2164,7 @@
                               <orig>différens</orig>
                               <reg>différents</reg>
                            </choice> refus de la place de Directeur de <rs ref="#intendant">M.
-                              l’Intendant</rs>, de M. de Tervenus, de M. de Custine d’Oxflance. On
+                              l’Intendant</rs>, de M. <persName ref="#tervenus">de Tervenus</persName>, de M. de Custine d’Oxflance. On
                            est convenu d’attendre le premier voyage du Roy à la Malgrange.</p>
                         <p xml:id="d1763022203">On a joué le Père de famille.</p>
                      </div>
@@ -2395,16 +2395,16 @@
                            <choice>
                               <orig>Mrs</orig>
                               <reg>Messieurs</reg>
-                           </choice> André, sous-directeur, De Solignac, secrétaire, Thibault,
+                           </choice> <persName ref="#andre">André</persName>, sous-directeur, De Solignac, secrétaire, <persName ref="#thibault">Thibault</persName>,
                            Bagard, les PP. de Menoux, Leslie, Husson, <choice>
                               <orig>Mrs</orig>
                               <reg>Messieurs</reg>
                            </choice> Cupers, Harmant, Sozzi, Durival l’aîné, et Durival le cadet. M.
-                           de Solignac a lu ce qui s’était passé dans l’assemblée précédente où le
+                           <persName ref="#solignac">de Solignac</persName> a lu ce qui s’était passé dans l’assemblée précédente où le
                            père Cerutti a été élu sur une lettre écrite de la part du Roy, et par
                            déférence. Il a été question ensuite de M. de S. Maurice, auteur de l’art
                            de cultiver les peupliers d’Italie ; convenu qu’avant de l’élire on
-                           s’informera. Le P. Leslie a lu ensuite un discours sur les poésies
+                           s’informera. Le <persName ref="#leslie">P. Leslie</persName> a lu ensuite un discours sur les poésies
                            perses, et quelques morceaux qui en ont été traduits sur la traduction
                            anglaise. On examinera si c’est au <choice>
                               <orig>Bibliotécaire</orig>
@@ -2412,7 +2412,7 @@
                            </choice> à nommer un sous-<choice>
                               <orig>bibliotécai</orig>
                               <reg>bibliothécaire</reg>
-                           </choice>. M. de Solignac à l’avance <choice>
+                           </choice>. M. <persName ref="#solignac">de Solignac</persName> à l’avance <choice>
                               <orig>avoit</orig>
                               <reg>avait</reg>
                            </choice> destiné la place à l’abbé Marquet, fils d’un médecin. M. de
@@ -2586,9 +2586,9 @@
                            composée de <choice>
                               <orig>Mrs</orig>
                               <reg>Messieurs</reg>
-                           </choice> de Tervenus, André, <pb n="8v"/> Harmand, Cupers, P. Husson, et
-                           Durival l’aîné. M. André a lu ce qui s’était passé dans la précédente. On
-                           demandera à M. de Solignac ce qui doit composer le 5e <choice>
+                           </choice> <persName ref="#tervenus">de Tervenus</persName>, <persName ref="#andre">André</persName>, <pb n="8v"/> Harmand, Cupers, P. Husson, et
+                           Durival l’aîné. M. <persName ref="#andre">André</persName> a lu ce qui s’était passé dans la précédente. On
+                           demandera à M. <persName ref="#solignac">de Solignac</persName> ce qui doit composer le 5e <choice>
                               <orig>vol</orig>
                               <reg>volume</reg>
                            </choice> des <choice>
@@ -2596,8 +2596,8 @@
                               <reg>mémoires</reg>
                            </choice> pour l’imprimer. Il a été question de M. l’abbé Coyer admis à
                            l’académie. J’y ai lu mon mémoire sur la clôture des héritages, la vaine
-                           pâture et le parcours en Lorraine. Il a été remis à M. André pour y faire
-                           ses notes. M. André a lu ensuite un écrit sur les principes relatifs à
+                           pâture et le parcours en Lorraine. Il a été remis à M. <persName ref="#andre">André</persName> pour y faire
+                           ses notes. M. <persName ref="#andre">André</persName> a lu ensuite un écrit sur les principes relatifs à
                            l’agriculture donnés sous le règne de Stanislas.</p>
                         <p xml:id="d1763041203">Hier <choice>
                               <orig>Mlle</orig>
@@ -2793,8 +2793,8 @@
                            <choice>
                               <orig>Mrs</orig>
                               <reg>Messieurs</reg>
-                           </choice> de Tervenus, André, Thibault, Cupers, Bagard, les PP. de Menoux
-                           et Leslie et Durival l’aîné. M. de Tervenus a lu un discours sur les
+                           </choice> <persName ref="#tervenus">de Tervenus</persName>, <persName ref="#andre">André</persName>, <persName ref="#thibault">Thibault</persName>, Cupers, Bagard, les PP. de Menoux
+                           et Leslie et Durival l’aîné. M. <persName ref="#tervenus">de Tervenus</persName> a lu un discours sur les
                            éloges des grands hommes. J’ai fait relir mon mémoire sur les clôtures
                            d’héritages, etc.</p>
                      </div>
@@ -2904,7 +2904,7 @@
                         </dateline>
                         <p xml:id="d1763050801">Fête du Roy. Assemblée publique de l’acad[émie] où
                            je n’était pas ; l’abbé Coyer et le P. Cerutti ont prononcé leurs
-                           discours. L’abbé de Tervenus en a prêché un ensuite et leur a
+                           discours. L’abbé <persName ref="#tervenus">de Tervenus</persName> en a prêché un ensuite et leur a
                            répondu.</p>
                         <p xml:id="d1763050802">
                            <pb n="11r"/> L’abbé de Séchamps <choice>
@@ -2987,7 +2987,7 @@
                               <reg>auxdits</reg>
                            </choice> Marchal et Cropsal, sauf à être procédé contre eux autrement
                            duement, à quoi faire le concierge des prisons sera contraint, s’il
-                           échet, signé Thibault. »</p>
+                           échet, signé <persName ref="#thibault">Thibault</persName>. »</p>
                         <p xml:id="d1763051104">La légion part et il arrive 3 escadrons de
                            gendarmerie, pour une nuit.</p>
                      </div>
@@ -3188,7 +3188,7 @@
                            </choice> du matin, il fait <choice>
                               <orig>apeler</orig>
                               <reg>appeler</reg>
-                           </choice> M. le Chancelier et M. de Solignac, et me fait lire par ce
+                           </choice> M. le Chancelier et M. <persName ref="#solignac">de Solignac</persName>, et me fait lire par ce
                            dernier un projet de don de la <choice>
                               <orig>Bibliotèque</orig>
                               <reg>Bibliothèque</reg>
@@ -3223,7 +3223,7 @@
                            concernant la <choice>
                               <orig>Bibliotèque</orig>
                               <reg>Bibliothèque</reg>
-                           </choice>, et j’écris à M. Thibault, <choice>
+                           </choice>, et j’écris à M. <persName ref="#thibault">Thibault</persName>, <choice>
                               <abbr>Pr</abbr>
                               <expan>Procureur</expan>
                            </choice>
@@ -3335,7 +3335,7 @@
                            <choice>
                               <orig>Mrs</orig>
                               <reg>Messieurs</reg>
-                           </choice> Du Rouvrois, de Morey, de Tervenus, de Bressey, de Dombale,
+                           </choice> Du Rouvrois, de Morey, <persName ref="#tervenus">de Tervenus</persName>, de Bressey, de Dombale,
                            François et Durival.</p>
                         <p xml:id="d1763061402">Il a été question de transporter le bureau dans
                            l’intérieur, et de demander au Roy de pouvoir juger à 3 les choses
@@ -3351,7 +3351,7 @@
                            <choice>
                               <orig>Mrs</orig>
                               <reg>Messieurs</reg>
-                           </choice> de Tervenus, directeur, André, sous-directeur, les PP. de
+                           </choice> <persName ref="#tervenus">de Tervenus</persName>, directeur, <persName ref="#andre">André</persName>, sous-directeur, les PP. de
                            Menoux et Leslie et Durival l’aîné. J’y ai rendu compte de mon voyage de
                            Lunéville, et du projet du Roy de P. de remettre la <choice>
                               <orig>Bibliotèque</orig>
@@ -3393,7 +3393,7 @@
                            <choice>
                               <orig>Mrs</orig>
                               <reg>Messieurs</reg>
-                           </choice> de Tervenus, André, Thibault, de Beauchamps, Harmant, Cupers,
+                           </choice> <persName ref="#tervenus">de Tervenus</persName>, <persName ref="#andre">André</persName>, <persName ref="#thibault">Thibault</persName>, de Beauchamps, Harmant, Cupers,
                            les PP. de Menoux, Leslie, Cerutti et Durival l’aîné. J’y ai parlé encore
                            de mon voyage de Lunéville, et du projet de translation de la <choice>
                               <orig>Bibliotèque</orig>
@@ -3401,7 +3401,7 @@
                            </choice> à l’hôtel de ville. On a lu un ouvrage de l’abbé <pb n="17v"/>
                            Gautier sur les bois, tombant assez dans le sentiment de M. Duhamel. Et
                            il a été résolu de charger Leseure de l’impression des mémoires de l’an
-                           dernier, depuis le 5e tome ; M. André corrigera les épreuves.</p>
+                           dernier, depuis le 5e tome ; M. <persName ref="#andre">André</persName> corrigera les épreuves.</p>
                      </div>
                      <div type="day" xml:id="d17630625">
                         <dateline>
@@ -3582,13 +3582,13 @@
                            <choice>
                               <orig>Mrs</orig>
                               <reg>Messieurs</reg>
-                           </choice> l’abbé de Tervenus, André, de Solignac, les PP. de Menoux,
+                           </choice> l’abbé <persName ref="#tervenus">de Tervenus</persName>, <persName ref="#andre">André</persName>, <persName ref="#solignac">de Solignac</persName>, les PP. de Menoux,
                            Leslie, Husson, Cerutti, et Durival l’aîné. On a lu l’ord[onnan]ce du 27
                            juin pour la translation de la <choice>
                               <orig>Bibliotèque</orig>
                               <reg>Bibliothèque</reg>
                            </choice>. Reparlé de l’impression de la suite des mémoires et dit que
-                           Coster <choice>
+                           <persName ref="#coster">Coster</persName> <choice>
                               <orig>seroit</orig>
                               <reg>serait</reg>
                            </choice> admis à prononcer un discours de réception à la 1re assemblée
@@ -3693,7 +3693,7 @@
                            <choice>
                               <orig>Mrs</orig>
                               <reg>Messieurs</reg>
-                           </choice> Du Rouvrois, de Tervenus, de Bressey, de Morey, de Dombâle et
+                           </choice> Du Rouvrois, <persName ref="#tervenus">de Tervenus</persName>, de Bressey, de Morey, de Dombâle et
                            Durival. On y a décidé sur beaucoup de procès-verbaux.</p>
                      </div>
                      <div type="day" xml:id="d17630716">
@@ -4015,7 +4015,7 @@
                            </choice> dans un livre dont l’auteur <choice>
                               <orig>étoit</orig>
                               <reg>était</reg>
-                           </choice> présent, en montrant Coster. Blachier n’a pu disconvenir que
+                           </choice> présent, en montrant <persName ref="#coster">Coster</persName>. Blachier n’a pu disconvenir que
                            les <choice>
                               <orig>manufact</orig>
                               <reg>manufactures</reg>
@@ -4063,17 +4063,17 @@
                            </choice> Tervenus, <choice>
                               <orig>dir</orig>
                               <reg>directeur</reg>
-                           </choice>, André, sous-<choice>
+                           </choice>, <persName ref="#andre">André</persName>, sous-<choice>
                               <orig>dir</orig>
                               <reg>directeur</reg>
-                           </choice>, de Solignac, <choice>
+                           </choice>, <persName ref="#solignac">de Solignac</persName>, <choice>
                               <abbr>secre</abbr>
                               <expan>secrétaire</expan>
-                           </choice>, Thibault, de Beauchamps, Cupers, de Nicéville, P.P. de Menoux
+                           </choice>, <persName ref="#thibault">Thibault</persName>, de Beauchamps, Cupers, de Nicéville, P.P. de Menoux
                            et Cerutti, et Durival l[’aîn]é.</p>
                         <p xml:id="d1763080902">J’y ai fait proposer de nouveau M. Dupuy Demportes,
                            auteur du gentilhomme cultivateur, de quelques pièces de théâtre et de
-                           poésies. Il a été admis. M. de Tervenus a lu un discours sur l’union qui <choice>
+                           poésies. Il a été admis. M. <persName ref="#tervenus">de Tervenus</persName> a lu un discours sur l’union qui <choice>
                               <orig>devroit</orig>
                               <reg>devrait</reg>
                            </choice> régner parmi les gens de lettres. On ne se rassemblera plus
@@ -4164,7 +4164,7 @@
                            <choice>
                               <orig>Mrs</orig>
                               <reg>Messieurs</reg>
-                           </choice> de Morey, de Tervenus, de Bressey, de Dombâle et Durival
+                           </choice> de Morey, <persName ref="#tervenus">de Tervenus</persName>, de Bressey, de Dombâle et Durival
                            l’aîné. On y a décidé quelques <choice>
                               <orig>raports</orig>
                               <reg>rapports</reg>
@@ -4548,16 +4548,16 @@
                            <choice>
                               <orig>Mrs</orig>
                               <reg>Messieurs</reg>
-                           </choice> de Tervenus, de Solignac, Thibault, P. de Menoux, abbé Gautier,
+                           </choice> <persName ref="#tervenus">de Tervenus</persName>, <persName ref="#solignac">de Solignac</persName>, <persName ref="#thibault">Thibault</persName>, P. de Menoux, <persName ref="#gautier">abbé Gautier</persName>,
                            Bagard, Cupers, de Beauchamps, et Durival l’aîné. On a lu ce qui s’était
-                           passé dans la séance précédente ; ensuite M. de Solignac a présenté cinq
+                           passé dans la séance précédente ; ensuite M. <persName ref="#solignac">de Solignac</persName> a présenté cinq
                            ouvrages pour le concours des prix, trois ont été rejetés aussitôt, les
                            deux autres à examiner.</p>
                         <p xml:id="d1763100602">Sur l’assemblée publique du 20, convenu que M. de
                            Solignac lira l’Eloge de M. O-Eguerti, et lorsqu’on a proposé le <choice>
                               <orig>je</orig>
                               <reg>jeune</reg>
-                           </choice> Coster pour académicien élu, mais que le Roy <choice>
+                           </choice> <persName ref="#coster">Coster</persName> pour académicien élu, mais que le Roy <choice>
                               <orig>avoit</orig>
                               <reg>avait</reg>
                            </choice> défendu de recevoir, et ensuite permis, je m’y suis opposé, sur
@@ -4590,7 +4590,7 @@
                         <p xml:id="d1763100803">Le <choice>
                               <orig>je</orig>
                               <reg>jeune</reg>
-                           </choice> Coster se plaint à M. le Chancelier de ce que je l’ai fait
+                           </choice> <persName ref="#coster">Coster</persName> se plaint à M. le Chancelier de ce que je l’ai fait
                            rejeter de l’académie, qu’il est déshonoré, que les avocats ne l’<choice>
                               <orig>auroient</orig>
                               <reg>auraient</reg>
@@ -4773,11 +4773,11 @@
                            </choice> salon de l’hôtel de ville, pour la première fois, composée de <choice>
                               <orig>Mrs</orig>
                               <reg>Messieurs</reg>
-                           </choice> de Tervenus, directeur, André, sous-directeur, de Solignac,
-                           secrétaire, de Beauchamps, Bagard, Cupers, Harmant, Thibault, Pierre de
+                           </choice> <persName ref="#tervenus">de Tervenus</persName>, directeur, <persName ref="#andre">André</persName>, sous-directeur, <persName ref="#solignac">de Solignac</persName>,
+                           secrétaire, de Beauchamps, Bagard, Cupers, Harmant, <persName ref="#thibault">Thibault</persName>, Pierre de
                            Sivry, Sozzi, P. Husson, Gautier, Plaid, et Durival l’aîné. Elle a
-                           commencé par l’Eloge de feu M. d’Hegherti par M. de Solignac. M. André a
-                           lu le discours fort abrégé de M. Dupuy Demportes. M. de Tervenus a lu
+                           commencé par l’Eloge de feu M. d’Hegherti par M. <persName ref="#solignac">de Solignac</persName>. M. <persName ref="#andre">André</persName> a
+                           lu le discours fort abrégé de M. Dupuy Demportes. M. <persName ref="#tervenus">de Tervenus</persName> a lu
                            ensuite un discours sur l’union qui <choice>
                               <orig>devroit</orig>
                               <reg>devrait</reg>
@@ -4786,8 +4786,8 @@
                               <orig>tremblemens</orig>
                               <reg>tremblements</reg>
                            </choice> de terre. Le nombre des auditeurs n’était pas considérable.</p>
-                        <p xml:id="d1763102002">Avant l’assemblée M. de Solignac a montré une lettre
-                           de M. le Chancelier à lui, portant que le s. Coster <choice>
+                        <p xml:id="d1763102002">Avant l’assemblée M. <persName ref="#solignac">de Solignac</persName> a montré une lettre
+                           de M. le Chancelier à lui, portant que le s. <persName ref="#coster">Coster</persName> <choice>
                               <orig>aiant</orig>
                               <reg>ayant</reg>
                            </choice> donné des sujets de <choice>
@@ -4962,11 +4962,11 @@
                            <choice>
                               <orig>Mrs</orig>
                               <reg>Messieurs</reg>
-                           </choice> de Tervenus, Thibault, de Beauchamps, André, P. Leslie,
+                           </choice> <persName ref="#tervenus">de Tervenus</persName>, <persName ref="#thibault">Thibault</persName>, de Beauchamps, <persName ref="#andre">André</persName>, <persName ref="#leslie">P. Leslie</persName>,
                            Gautier, Sozzi et Durival l[’aîn]é.</p>
-                        <p xml:id="d1763110803">On a lu une lettre de M. de Solignac, qui envoie de
+                        <p xml:id="d1763110803">On a lu une lettre de M. <persName ref="#solignac">de Solignac</persName>, qui envoie de
                            la part du Roy un mémoire, avec un dessin d’une nouvelle montre à
-                           répétition, on l’a donné à examiner à M. l’abbé Gautier.</p>
+                           répétition, on l’a donné à examiner à M. l’<persName ref="#gautier">abbé Gautier</persName>.</p>
                         <p xml:id="d1763110804">M. Feuillet, contrôleur des poudres, a été proposé
                            pour académicien. Il fait une <choice>
                               <orig>trad</orig>
@@ -5059,7 +5059,7 @@
                            <choice>
                               <orig>Mrs</orig>
                               <reg>Messieurs</reg>
-                           </choice> de Tervenus, André, Thibault, de Menoux, <pb n="33r"/> de
+                           </choice> <persName ref="#tervenus">de Tervenus</persName>, <persName ref="#andre">André</persName>, <persName ref="#thibault">Thibault</persName>, de Menoux, <pb n="33r"/> de
                            Beauchamps, Gautier, Cupers, de Nicéville et Durival l’aîné. On a parlé
                            de M. Roussel, curé à Chaalons, qui demande d’être de l’académie, et son
                            discours sur l’éloquence a été trouvé mauvais. Il a été question ensuite
@@ -5274,8 +5274,8 @@
                            <choice>
                               <orig>Mrs</orig>
                               <reg>Messieurs</reg>
-                           </choice> de Tervenus, de Solignac, Thibault, PP. de Menoux et Leslie,
-                           abbé Gautier, P. Husson, Cupers, Sozzi, Harmant, Durival l’aîné. On y a
+                           </choice> <persName ref="#tervenus">de Tervenus</persName>, <persName ref="#solignac">de Solignac</persName>, <persName ref="#thibault">Thibault</persName>, PP. de Menoux et Leslie,
+                           <persName ref="#gautier">abbé Gautier</persName>, P. Husson, Cupers, Sozzi, Harmant, Durival l’aîné. On y a
                            parlé de l’ouvrage sur les <pb n="36v"/> mœurs, usages, etc, avant le Duc
                            Charles III. Et de l’échap[p]ement de M. Mirbeck, garde du corps du Roy
                            de P. La machine en bois est <choice>
@@ -5284,9 +5284,9 @@
                            </choice> à l’académie, on la fera examiner par les <choice>
                               <orig>srs</orig>
                               <reg>sieurs</reg>
-                           </choice> Deranton et Arnould, horlogers, M. l’abbé Gautier en a rendu un
+                           </choice> Deranton et Arnould, horlogers, M. l’<persName ref="#gautier">abbé Gautier</persName> en a rendu un
                            compte favorable.</p>
-                        <p xml:id="d1763120703">M. de Solignac a proposé M. Favart, qui demande une
+                        <p xml:id="d1763120703">M. <persName ref="#solignac">de Solignac</persName> a proposé M. Favart, qui demande une
                            place à l’académie. Tout le monde est d’accord q[u’i]l ne peut y être
                            reçu à moins d’un ordre exprès du Roy, à cause de la profession de sa <choice>
                               <orig>fe</orig>
@@ -5437,7 +5437,7 @@
                            <choice>
                               <orig>Mrs</orig>
                               <reg>Messieurs</reg>
-                           </choice> de Tervenus, André, de Solignac, Thibault, Gautier, les PP. de
+                           </choice> <persName ref="#tervenus">de Tervenus</persName>, <persName ref="#andre">André</persName>, de Solignac, <persName ref="#thibault">Thibault</persName>, Gautier, les PP. de
                            Menoux, Leslie et Husson, <choice>
                               <orig>Mrs</orig>
                               <reg>Messieurs</reg>
@@ -6728,7 +6728,7 @@
 
                   <!-- CH AVRIL 1764 -->
                   <div type="month" xml:id="d176404">
-                     <pb facs="#B543956161M00863_06_0048_1L" n="45v"/>
+                     <pb facs="#B543956101M00863_06_0048_1L" n="45v"/>
                      <fw type="runningHead" place="top">
                         <seg type="print">Jours du mois</seg>
                         <date when="1764-04">mois de avril 1764</date>
@@ -6983,7 +6983,7 @@
                               Chevalier</persName>, femme du <persName ref="#plassiard">jeune
                               <lb/>Plassiard</persName>, commis en l’hôtel de ville.</p>
                      </div>
-                     <pb facs="#B543956161M00863_06_049_1L" n="46v"/>
+                     <pb facs="#B543956101M00863_06_049_1L" n="46v"/>
                      <fw type="runningHead" place="top">
                         <seg type="print">Jours du mois</seg>
                         <date>mois d'avril 1764</date>
@@ -26366,7 +26366,7 @@ REGNE NOMINAL DE STANISLAS, thèse pour le doctorat en droit, université de Nan
                                  <expan>présidente</expan>
                               </choice>
                               <lb/>Vigneron</persName>, et <persName ref="#coster">M.
-                              Coster</persName> partent pour <placeName ref="#paris"
+                              <persName ref="#coster">Coster</persName></persName> partent pour <placeName ref="#paris"
                               >Paris</placeName>. </p>
                      </div>
 
