@@ -128,6 +128,7 @@
                                                                                     <xsl:value-of select="normalize-space(concat(upper-case(substring(tei:p,1,1)),substring(tei:p, 2),' '[not(last())]))"/><xsl:choose><xsl:when test="following-sibling::tei:event[1]"/><xsl:otherwise><xsl:text>.</xsl:text></xsl:otherwise></xsl:choose>
                                                                                 </xsl:when>
                                                                                 <xsl:when test="position() != last()">
+                                                                                    <!-- TODO régler le problème lorsqu'il y a plusieur paragraphes dans un event -->
                                                                                     <xsl:text> - </xsl:text><xsl:value-of select="normalize-space(concat(lower-case(substring(tei:p,1,1)),substring(tei:p, 2),' '[not(last())]))"/>
                                                                                 </xsl:when>
                                                                                 <xsl:otherwise>

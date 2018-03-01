@@ -7,8 +7,7 @@
             <title>Index général du projet</title>
          </titleStmt>
          <publicationStmt>
-            <p>Fichier qui regroupe les index de personnes, lieux, organismes et oeuvres citées dans
-               la source</p>
+            <p>Fichier qui regroupe les index de personnes, lieux, organismes et oeuvres citées dans la source</p>
          </publicationStmt>
          <sourceDesc>
             <p>En partie réalisé en collaboration avec les étudiants de l'université Lorraine</p>
@@ -1488,8 +1487,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="duhautoy">
-               <persName><surname>Du Hautoy</surname><forename>Jean Baptiste
-                     Gaston</forename><roleName>Marquis de Clémery</roleName></persName>
+               <persName><surname>Du Hautoy</surname><forename>Jean Baptiste Gaston</forename><roleName>Marquis de Clémery</roleName></persName>
                <listEvent>
                   <event>
                      <p>Épouse Claude Charlotte de Runes en 1711</p>
@@ -2252,11 +2250,9 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <death when="1803"/>
                <listEvent>
                   <event>
-                     <p> études au collège de Pont-à-Mousson puis servit dans les gardes lorraines
-                        du roi Stanislas Leszczyński, avant de devenir grand-maître de sa
-                        garde-robe.</p>
-                     <p>Auteur recueil poétique des Saisons, chef d'oeuvre de la poésie descriptive du XVIIIe siècle. Il est aussi en 1765 l'auteur d'un Essai sur le luxe. Issu d’une famille noble mais modeste, Jean-François de Saint-Lambert fit ses études au collège de Pont-à-Mousson puis servit dans les gardes lorraines du roi Stanislas Leszczyński, avant de devenir grand-maître de sa garde-robe. Il fut d'abord remarqué par la Marquise de Boufflers jusqu'à en devenir l'amant puis devint proche de Voltaire jusqu'au décès de d'Émilie du Châtelet qui fut sa seconde maîtresse et qui mourut en 1749 après avoir mis au monde une petite fille conçue avec l'écrivain</p>
+                     <p>études au collège de Pont-à-Mousson puis servit dans les gardes lorraines du roi Stanislas Leszczyński, avant de devenir grand-maître de sa garde-robe.</p>
                   </event>
+                  <event><p>Auteur recueil poétique des Saisons, chef d'oeuvre de la poésie descriptive du XVIIIe siècle. Il est aussi en 1765 l'auteur d'un Essai sur le luxe. Issu d’une famille noble mais modeste, Jean-François de Saint-Lambert fit ses études au collège de Pont-à-Mousson puis servit dans les gardes lorraines du roi Stanislas Leszczyński, avant de devenir grand-maître de sa garde-robe. Il fut d'abord remarqué par la Marquise de Boufflers jusqu'à en devenir l'amant puis devint proche de Voltaire jusqu'au décès de d'Émilie du Châtelet qui fut sa seconde maîtresse et qui mourut en 1749 après avoir mis au monde une petite fille conçue avec l'écrivain</p></event>
                </listEvent>
             </person>
             <person xml:id="laMilliere">
@@ -2964,8 +2960,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <listEvent>
                   <event>
 
-                     <p>Comedienne et directrice de la Comédie à Nancy, elle a remplacée Fleury,
-                        elle fera venir Lekain à Nancy.</p>
+                     <p>Comedienne et directrice de la Comédie à Nancy, elle a remplacée Fleury, elle fera venir Lekain à Nancy.</p>
                   </event>
                </listEvent>
                <!--               Source: Essai de répertoire des artistes lorrains...Paris, 1900
@@ -3864,8 +3859,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="poniatowski">
-               <persName><surname>Poniatowski</surname><forename> Stanislas
-                  Auguste</forename></persName>
+               <persName><surname>Poniatowski</surname><forename> Stanislas Auguste</forename></persName>
                <state>
                   <p>Stanislas II roi de Pologne </p>
                </state>
@@ -3895,8 +3889,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </state>
             </person>
             <person xml:id="opalinska">
-               <persName><surname>Opalinska</surname><forename>Catherine</forename><roleName>Reine
-                     de Pologne et duchesse de Lorraine</roleName></persName>
+               <persName><surname>Opalinska</surname><forename>Catherine</forename><roleName>Reine de Pologne et duchesse de Lorraine</roleName></persName>
                <birth when="1680"/>
                <death when="1747"/>
                <listEvent>
@@ -3959,7 +3952,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                   <roleName/>
                   <state/>
                </persName>
-               
+
                <death when="1764"/>
                <listEvent>
                   <event>
@@ -4088,8 +4081,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
 
 
             <person xml:id="dauphineMlle">
-               <persName><surname>Elisabeth de France</surname><forename>M<hi rend="super">lle</hi>
-                     la dauphine <!--ou
+               <persName><surname>Elisabeth de France</surname><forename>M<hi rend="super">lle</hi> la dauphine <!--ou
                      Clotilde--></forename></persName>
                <!--TODO vérifier laquelle-->
             </person>
@@ -4097,13 +4089,11 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
 
 
             <person xml:id="antoineMme">
-               <persName><surname>Antoine</surname><addName>M<hi rend="super"
-                  >e</hi></addName></persName>
+               <persName><surname>Antoine</surname><addName>M<hi rend="super">e</hi></addName></persName>
             </person>
 
             <person xml:id="regnaultEpouse">
-               <persName><surname>Regnault</surname><addName>M<hi rend="super"
-                  >e</hi></addName></persName>
+               <persName><surname>Regnault</surname><addName>M<hi rend="super">e</hi></addName></persName>
                <listEvent>
                   <event>
                      <p/>
@@ -4111,8 +4101,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="serignacMme">
-               <persName><surname>Serignac</surname><addName>M<hi rend="super"
-                     >e</hi></addName><addName type="say">mère Sainte Gertrude</addName></persName>
+               <persName><surname>Serignac</surname><addName>M<hi rend="super">e</hi></addName><addName type="say">mère Sainte Gertrude</addName></persName>
                <death when="1764"/>
                <listEvent>
                   <event>
@@ -4153,16 +4142,14 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             <person xml:id="CoulonJeanYves">
 
                <persName>
-                  <surname>Coulon</surname><forename>Jean-Yves</forename><roleName>Seigneur de
-                     Maxéville</roleName><state>
+                  <surname>Coulon</surname><forename>Jean-Yves</forename><roleName>Seigneur de Maxéville</roleName><state>
                      <p>Secrétaire du roi</p>
                   </state></persName>
             </person>
             <person xml:id="AntoinePierreMarc">
 
                <persName>
-                  <surname>Antoine</surname><forename>Pierre-Marc</forename><roleName>Seigneur du
-                     fief de Vandoeuvre</roleName></persName>
+                  <surname>Antoine</surname><forename>Pierre-Marc</forename><roleName>Seigneur du fief de Vandoeuvre</roleName></persName>
             </person>
 
 
@@ -4212,17 +4199,13 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <death when="1794"/>
                <listEvent>
                   <event>
-                     <p>Notaire à Nancy de 1751 à 1766; Notaire royal gardenottes héréditaire au
-                        Baillage de Nancy en 1760 et 1770 Conseiller du roy, notaire royal et
-                        procureur au baillage royal de Nancy en 1765;</p>
+                     <p>Notaire à Nancy de 1751 à 1766; Notaire royal gardenottes héréditaire au Baillage de Nancy en 1760 et 1770 Conseiller du roy, notaire royal et procureur au baillage royal de Nancy en 1765;</p>
                   </event>
                   <event>
                      <p>Avocat à la cour souveraine de Nancy en 1776.</p>
                   </event>
                   <event>
-                     <p>Son fils ainé fut Antoine André CHAPPÉ de Léonval (1743-1792), seigneur de
-                        Bioncourt, fut Notaire, Conseiller du roi à la chancellerie de Metz, avocat
-                        au Parlement de Metz et à celui de Nancy.</p>
+                     <p>Son fils ainé fut Antoine André CHAPPÉ de Léonval (1743-1792), seigneur de Bioncourt, fut Notaire, Conseiller du roi à la chancellerie de Metz, avocat au Parlement de Metz et à celui de Nancy.</p>
                   </event>
                </listEvent>
                <!--source : Frédéric (de METZ-NOBLAT) et Laurent (THOMAS), catalogue Est Enchères, Livres – Archives Bibliothèque d’un château lorrain et à divers, Vendredi 10 février 2012 –14h00 Quelques CHAPPÉ parmi d'autres (http://leonval.free.fr/CHAPPE-LEONVAL/index.html), site consulté le 28 fevrier 2017-->
@@ -4244,8 +4227,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <death when="1783-09-15"/>
                <listEvent>
                   <event>
-                     <p>fille de Joseph-Augustin de Mailly d’Haucourt (1708-1794) et de Constance
-                        Colbert de Torcy</p>
+                     <p>fille de Joseph-Augustin de Mailly d’Haucourt (1708-1794) et de Constance Colbert de Torcy</p>
                   </event>
 
                </listEvent>
@@ -4261,9 +4243,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <death when="1782-09-18"/>
                <listEvent>
                   <event>
-                     <p>lieutenant général des armées du roi, directeur général des haras et
-                        gouverneur du château de Vincennes, puis gouverneur de plusieurs
-                        provinces.</p>
+                     <p>lieutenant général des armées du roi, directeur général des haras et gouverneur du château de Vincennes, puis gouverneur de plusieurs provinces.</p>
                   </event>
 
 
@@ -4281,8 +4261,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <listEvent>
 
                   <event>
-                     <p>Fils de Georg Hochbrücker, lutier bavarois, à partir de 1760, harpiste au
-                        Concert spirituel</p>
+                     <p>Fils de Georg Hochbrücker, lutier bavarois, à partir de 1760, harpiste au Concert spirituel</p>
                   </event>
 
                   <event>
@@ -4301,8 +4280,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                   <forename>Louis César Constantin</forename>
                   <roleName>Cardinal</roleName>
                   <state>
-                     <p>Ancien chevalier de Malte, officier de marine dans la Marine royale et
-                        capitaine de vaisseau (1720).</p>
+                     <p>Ancien chevalier de Malte, officier de marine dans la Marine royale et capitaine de vaisseau (1720).</p>
                   </state>
                </persName>
                <birth when="1697-03-24"/>
@@ -4312,9 +4290,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                      <p>Fils de Charles III de Rohan, cousin d'Armand-Gaston-Maximilien de Rohan</p>
                   </event>
                   <event>
-                     <p>Fait carrière dans les ordres dès 1732, de chanoine et grand-prévôt de
-                        Strasbourg jusqu'a devenir cardinal par le pape Clément XIII lors du
-                        consistoire du 23 novembre 1761</p>
+                     <p>Fait carrière dans les ordres dès 1732, de chanoine et grand-prévôt de Strasbourg jusqu'a devenir cardinal par le pape Clément XIII lors du consistoire du 23 novembre 1761</p>
                   </event>
 
                </listEvent>
@@ -4330,12 +4306,10 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <death when="1818-01-06"/>
                <listEvent>
                   <event>
-                     <p>Lieutenant de cavalerie au régiment Royal-Navarre, prévôt général de
-                        maréchaussée (succède au sieur Du Boroger)...</p>
+                     <p>Lieutenant de cavalerie au régiment Royal-Navarre, prévôt général de maréchaussée (succède au sieur Du Boroger)...</p>
                   </event>
                   <event>
-                     <p>Il a fait une carrière militaire, il a été fait chevalier de Saint-Louis en
-                        1786. Il fut un général de brigade de la Révolution française.</p>
+                     <p>Il a fait une carrière militaire, il a été fait chevalier de Saint-Louis en 1786. Il fut un général de brigade de la Révolution française.</p>
                   </event>
                   <event>
                      <p>beau-père de Mathieu-de-Dombasle.</p>
@@ -4372,13 +4346,10 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <death when="1754"/>
                <listEvent>
                   <event>
-                     <p>Chef du Conseil des finances, Régent de la principauté de Commercy,
-                        Chancelier de la principauté de Commercy, Fondateur de l'Hôpital de
-                        Bruyères</p>
+                     <p>Chef du Conseil des finances, Régent de la principauté de Commercy, Chancelier de la principauté de Commercy, Fondateur de l'Hôpital de Bruyères</p>
                   </event>
                   <event>
-                     <p>Chancelier de la principauté de Commercy , Fondateur de l'Hôpital de
-                        Bruyères</p>
+                     <p>Chancelier de la principauté de Commercy , Fondateur de l'Hôpital de Bruyères</p>
                   </event>
                   <event>
                      <p>Sa famille était au service des ducs de Lorraine depuis le XVIe siècle</p>
@@ -4401,8 +4372,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                      <p>Cardinal (de 1788 à 1791). Évêque de Condom (1760/1761-1763)</p>
                   </event>
                   <event>
-                     <p>archevêque de Toulouse (1763-1788), puis de Sens (1788-1790), puis évêque de
-                        l'Yonne</p>
+                     <p>archevêque de Toulouse (1763-1788), puis de Sens (1788-1790), puis évêque de l'Yonne</p>
                   </event>
                   <event>
                      <p>Premier ministre (1787-1788). Membre de l'Académie française</p>
@@ -4416,8 +4386,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                   <surname>Montluisant Charles Louis</surname>
                   <forename>Charles Louis</forename>
                   <state>
-                     <p>Architecte français et nommé en 1763 inspecteur des bâtiments et usines du
-                        roi de France pour la Lorraine et le Barrois</p>
+                     <p>Architecte français et nommé en 1763 inspecteur des bâtiments et usines du roi de France pour la Lorraine et le Barrois</p>
                   </state>
                </persName>
                <birth when="1717"/>
@@ -4453,8 +4422,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <death when="1764"/>
                <listEvent>
                   <event>
-                     <p>On lui doit la plupart des travaux publics faits en Lorraine au cours du
-                        XVIII</p>
+                     <p>On lui doit la plupart des travaux publics faits en Lorraine au cours du XVIII</p>
                   </event>
                   <event>
                      <p>Marié à Marie Catherine Josephe Després en 1738</p>
@@ -4480,8 +4448,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <death when="1788"/>
                <listEvent>
                   <event>
-                     <p>Grand Gruyer (premier officier d'un grand domaine forestier que l'on nomme
-                        "gruerie")</p>
+                     <p>Grand Gruyer (premier officier d'un grand domaine forestier que l'on nomme "gruerie")</p>
                   </event>
                   <event>
                      <p>Mariage avec Anne Jacob en 1746</p>
@@ -4712,8 +4679,7 @@ Dernière consultation le 02/03/17-->
                <death when="1754"/>
                <listEvent>
                   <event>
-                     <p>Fils de Nicolas Breton, lieutenant général, civil et criminel au bailliage
-                        de Pont-à-Mousson</p>
+                     <p>Fils de Nicolas Breton, lieutenant général, civil et criminel au bailliage de Pont-à-Mousson</p>
                   </event>
 
                </listEvent>
@@ -4888,10 +4854,7 @@ Dernière consultation le 02/03/17-->
 
                <listEvent>
                   <event>
-                     <p>Anne Borson, qui était de la veille dans la maison de Fleury, place
-                        d’Alliance a été rendu à ces parents par Durival le 19 juillet 1764. Elle
-                        devait partir avec le sieur Baligand (fils), qui voulait l’épouser, et aller
-                        dans les pays étrangers. (cf. Affaire Baligand)</p>
+                     <p>Anne Borson, qui était de la veille dans la maison de Fleury, place d’Alliance a été rendu à ces parents par Durival le 19 juillet 1764. Elle devait partir avec le sieur Baligand (fils), qui voulait l’épouser, et aller dans les pays étrangers. (cf. Affaire Baligand)</p>
                   </event>
 
                </listEvent>
@@ -4907,14 +4870,10 @@ Dernière consultation le 02/03/17-->
                <death when="1783"/>
                <listEvent>
                   <event>
-                     <p>Second président de la Société Royale des Sciences et Belles-Lettres de
-                        Nancy en 1751 et membre de plusieurs autres académies françaises et
-                        étrangères. Il est nommé gouverneur de Toul. Il reçoit le titre de grand
-                        maréchal de Stanislas.</p>
+                     <p>Second président de la Société Royale des Sciences et Belles-Lettres de Nancy en 1751 et membre de plusieurs autres académies françaises et étrangères. Il est nommé gouverneur de Toul. Il reçoit le titre de grand maréchal de Stanislas.</p>
                   </event>
                   <event>
-                     <p>militaire, physicien et écrivain français, connu principalement pour ses
-                        adaptations de romans de chevalerie du Moyen Âge.</p>
+                     <p>militaire, physicien et écrivain français, connu principalement pour ses adaptations de romans de chevalerie du Moyen Âge.</p>
                   </event>
                   <event>
                      <p>Il épousa Charlotte Michel Russell en 1744.</p>
@@ -4958,9 +4917,7 @@ Dictionnaire des journalistes (1600-1789), http://dictionnaire-journalistes.gaze
                      <p>Chanoine de Saint-Dié jusqu'en 1764 (Canonicat)</p>
                   </event>
                   <event>
-                     <p>Né à Ligny en Barrois, il a composé un ouvrage: Siège quasi épiscopal de
-                        l'église insigne de St Dié, et un recueil de lettres, pour servir de
-                        réplique à la défense de l'église de Toul</p>
+                     <p>Né à Ligny en Barrois, il a composé un ouvrage: Siège quasi épiscopal de l'église insigne de St Dié, et un recueil de lettres, pour servir de réplique à la défense de l'église de Toul</p>
                   </event>
 
                </listEvent>
@@ -4982,8 +4939,7 @@ Dictionnaire des journalistes (1600-1789), http://dictionnaire-journalistes.gaze
                <listEvent>
 
                   <event>
-                     <p>Ici Durival fait référence au régiment de Schomberg nommé ainsi en l'honneur
-                        de Frédéric-Armand de Schomberg (1615-1690)</p>
+                     <p>Ici Durival fait référence au régiment de Schomberg nommé ainsi en l'honneur de Frédéric-Armand de Schomberg (1615-1690)</p>
                   </event>
 
                </listEvent>
@@ -4998,8 +4954,7 @@ Dictionnaire des journalistes (1600-1789), http://dictionnaire-journalistes.gaze
                <death when="1790"/>
                <listEvent>
                   <event>
-                     <p>abbé, chanoine de Toul, Membre de la Société royale des sciences et
-                        belles-lettres de Nancy</p>
+                     <p>abbé, chanoine de Toul, Membre de la Société royale des sciences et belles-lettres de Nancy</p>
                   </event>
 
                </listEvent>
@@ -5055,8 +5010,7 @@ Dictionnaire des journalistes (1600-1789), http://dictionnaire-journalistes.gaze
                <death when="1810"/>
                <listEvent>
                   <event>
-                     <p>Chanteur (basse-taille) français. - Actif à l'Académie royale de musique
-                        entre 1750 et 1779, au Concert Spirituel entre 1750 et 1772</p>
+                     <p>Chanteur (basse-taille) français. - Actif à l'Académie royale de musique entre 1750 et 1779, au Concert Spirituel entre 1750 et 1772</p>
                   </event>
 
                </listEvent>
@@ -5322,8 +5276,7 @@ Dictionnaire des journalistes (1600-1789), http://dictionnaire-journalistes.gaze
                </persName>
                <listEvent>
                   <event>
-                     <p>père de la dauphine de France et deuxième successeur de Stanislas au trône
-                        de Pologne</p>
+                     <p>père de la dauphine de France et deuxième successeur de Stanislas au trône de Pologne</p>
                   </event>
                </listEvent>
             </person>
@@ -5516,8 +5469,7 @@ Dictionnaire des journalistes (1600-1789), http://dictionnaire-journalistes.gaze
                <persName>
                   <surname>Froment</surname>
                   <state>
-                     <p> officier de la maîtrise, assesseur du lieutenant de la capitainerie de
-                        Nancy </p>
+                     <p> officier de la maîtrise, assesseur du lieutenant de la capitainerie de Nancy </p>
                   </state>
                </persName>
 
@@ -6782,8 +6734,7 @@ Dictionnaire des journalistes (1600-1789), http://dictionnaire-journalistes.gaze
                <location>
                   <geo/>
                </location>
-               <desc>Le kiosque est détruit en 1764, une rampe d'accès permet de descendre sur la
-                  place de la Carrière</desc>
+               <desc>Le kiosque est détruit en 1764, une rampe d'accès permet de descendre sur la place de la Carrière</desc>
             </place>
             <place xml:id="nancySteCatherinerue" type="civil">
                <placeName>Nancy</placeName>
@@ -6805,8 +6756,7 @@ Dictionnaire des journalistes (1600-1789), http://dictionnaire-journalistes.gaze
             </place>
             <place xml:id="gerbeviller">
                <placeName>Gerbéviller</placeName>
-               <desc>Le marquis de Gerbéviller, Camille de Lambertye, y fait ériger un château par
-                  Germain Boffrand.</desc>
+               <desc>Le marquis de Gerbéviller, Camille de Lambertye, y fait ériger un château par Germain Boffrand.</desc>
             </place>
             <!--176409-->
             <place xml:id="houdemontFontaine">
@@ -6873,8 +6823,7 @@ Dictionnaire des journalistes (1600-1789), http://dictionnaire-journalistes.gaze
             <place xml:id="laDesirade">
                <placeName>La Désirade</placeName>
                <country>Guadeloupe</country>
-               <desc>Ile de la Guadeloupe qui a parfois été servie de lieu de relégation pour les
-                  délinquants nobles de la métropole</desc>
+               <desc>Ile de la Guadeloupe qui a parfois été servie de lieu de relégation pour les délinquants nobles de la métropole</desc>
             </place>
             <place xml:id="lisbonne">
                <placeName>Lisbonne</placeName>
@@ -7442,10 +7391,8 @@ Dictionnaire des journalistes (1600-1789), http://dictionnaire-journalistes.gaze
                <pubPlace>À Londres [Nancy] [ca 1765]</pubPlace>
                <publisher>[Leclerc]</publisher>
                <date>1765</date>
-               <note>Fausse adresse, imprimé en France, peut-être à Nancy chez J.-B. Hyacinthe
-                  Leclerc, d'après le matériel typographique (voir BnF)</note>
-               <title level="m">Dictionnaire philosophique, portatif, ou supplément à l'édition de
-                  1765 . Revu, corrigé &amp; augmenté de XXXVII articles par l'auteur</title>
+               <note>Fausse adresse, imprimé en France, peut-être à Nancy chez J.-B. Hyacinthe Leclerc, d'après le matériel typographique (voir BnF)</note>
+               <title level="m">Dictionnaire philosophique, portatif, ou supplément à l'édition de 1765 . Revu, corrigé &amp; augmenté de XXXVII articles par l'auteur</title>
             </bibl>
             <bibl xml:id="bib31">
                <title>Théogonie d'Hésiode</title>

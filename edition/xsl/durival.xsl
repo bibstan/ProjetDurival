@@ -237,6 +237,9 @@
         <xsl:apply-templates select="//tei:projectDesc" mode="projecDesc"/>
         <xsl:apply-templates select="//tei:div[@type='bibl']" mode="bibl"/>
         <xsl:apply-templates select="//tei:div[@type='pictures']" mode="galerie"/>
+        <xsl:result-document format="xml" encoding="UTF-8" href="html/durivallc.tei.xml">
+            <xsl:apply-templates select="." mode="copyXML"/>
+        </xsl:result-document>
     </xsl:template>    
     
     <!--********** pages du Journal **********-->
@@ -918,6 +921,10 @@
     <!--********** galerie **********-->
     
     <xsl:include href="include/galerie.xsl"/>
+    
+    <!--********** galerie **********-->
+    
+    <xsl:include href="include/copySearch.xsl"/>
     
     <!--********** a propos **********-->
     
