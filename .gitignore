@@ -10,6 +10,7 @@ edition/index.html
 /edition/images
 /edition/csv
 /edition/xml
+/edition/html
 /transcription
 /edition/latex
 # except .tex files which are maintained by hand
