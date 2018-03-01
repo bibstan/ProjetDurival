@@ -21,15 +21,13 @@
                <persName><surname>Antoine</surname><roleName>abbé</roleName></persName>
             </person>
             <person xml:id="abbeBousey">
-               <persName><surname>Bousey</surname><forename>Jean Claude</forename><roleName>abbé
-                     de</roleName></persName>
+               <persName><surname>Bousey</surname><forename>Jean Claude</forename><roleName>abbé de</roleName></persName>
                <listEvent>
                   <event>
                      <p>Doyen de l'église primatiale de Nancy</p>
                   </event>
                   <event>
-                     <p>il fut également grand aumônier et conseiller d'État de Léopold de
-                        Lorraine</p>
+                     <p>il fut également grand aumônier et conseiller d'État de Léopold de Lorraine</p>
                   </event>
                </listEvent>
             </person>
@@ -58,8 +56,7 @@
                </listEvent>
             </person>
             <person xml:id="abbeEtanche">
-               <persName><surname>Rouyer</surname><forename>Nicolas</forename><roleName>abbé de
-                     L'Étanche</roleName></persName>
+               <persName><surname>Rouyer</surname><forename>Nicolas</forename><roleName>abbé de L'Étanche</roleName></persName>
                <death when="1765"/>
                <listEvent>
                   <event>
@@ -68,8 +65,7 @@
                </listEvent>
             </person>
             <person xml:id="abbeExpilly">
-               <persName><surname>Expilly</surname><forename>Jean-Joseph</forename><roleName>abbé
-                     d'</roleName></persName>
+               <persName><surname>Expilly</surname><forename>Jean-Joseph</forename><roleName>abbé d'</roleName></persName>
                <birth when="1719"/>
                <death when="1793"/>
                <listEvent>
@@ -97,8 +93,7 @@
                <birth when="1715"/>
                <listEvent>
                   <event>
-                     <p>Membre de l'Académie dès 1754, il est docteur en Théologie et chanoine de
-                        Toul</p>
+                     <p>Membre de l'Académie dès 1754, il est docteur en Théologie et chanoine de Toul</p>
                   </event>
                </listEvent>
             </person>
@@ -126,8 +121,7 @@
 
 
             <person xml:id="choiseulMme">
-               <persName><surname>Choiseul-Stainville</surname><forename>Charlotte-Eugénie
-                     de</forename></persName>
+               <persName><surname>Choiseul-Stainville</surname><forename>Charlotte-Eugénie de</forename></persName>
                <death when="1816"/>
                <state>
                   <p>abbesse</p>
@@ -141,14 +135,12 @@
 
             <person xml:id="aiguillonDuchesse">
                <!-- voir si renvoi à Aiguillon -->
-               <persName><surname>Brehan de Plélo</surname><forename>Louise-Félicité
-                     de</forename><roleName>duchesse d'Aiguillon</roleName></persName>
+               <persName><surname>Brehan de Plélo</surname><forename>Louise-Félicité de</forename><roleName>duchesse d'Aiguillon</roleName></persName>
                <birth when="1726"/>
                <death when="1796"/>
                <listEvent>
                   <event>
-                     <p>Épouse du duc d'Aiguillon gouverneur de Bretagne, accusé d'abus de pouvoir,
-                        il est à l'origine de la fronde du Parlement de Bretagne</p>
+                     <p>Épouse du duc d'Aiguillon gouverneur de Bretagne, accusé d'abus de pouvoir, il est à l'origine de la fronde du Parlement de Bretagne</p>
                   </event>
                </listEvent>
             </person>
@@ -158,8 +150,7 @@
                <death when="1779"/>
                <listEvent>
                   <event>
-                     <p>Conseiller aulique, commissaire général intendant de la maison de Stanislas
-                        (1742-1766)</p>
+                     <p>Conseiller aulique, commissaire général intendant de la maison de Stanislas (1742-1766)</p>
                   </event>
                   <event>
                      <p>fermier général (1756-1779)</p>
@@ -170,18 +161,15 @@
                </listEvent>
             </person>
             <person xml:id="andre">
-               <persName><surname>André de
-                  Pirouel</surname><forename>Jean-Claude</forename></persName>
+               <persName><surname>André de Pirouel</surname><forename>Jean-Claude</forename></persName>
                <birth when="1707"/>
                <death when="1779"/>
                <listEvent>
                   <event>
-                     <p>Avocat. Membre de la Chambre royale des consultations, créée par Stanislas
-                        en 1750. </p>
+                     <p>Avocat. Membre de la Chambre royale des consultations, créée par Stanislas en 1750. </p>
                   </event>
                   <event>
-                     <p>Membre de l'Académie (1756-1779), il en est sous-directeur en 1762, 1763 et
-                        1773.</p>
+                     <p>Membre de l'Académie (1756-1779), il en est sous-directeur en 1762, 1763 et 1773.</p>
                   </event>
                </listEvent>
                <!-- source : Académie Stanislas, table 1750-1900, réf 769006 bis
@@ -194,15 +182,13 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <persName><surname>Antoine</surname><forename>Françoise</forename></persName>
                <listEvent>
                   <event>
-                     <p>Pensionnaire au refuge de la fondation de l'abbé de Bousey pour l'année
-                        1767</p>
+                     <p>Pensionnaire au refuge de la fondation de l'abbé de Bousey pour l'année 1767</p>
                   </event>
                </listEvent>
             </person>
 
             <person xml:id="archCambray">
-               <persName><surname>Choiseul-Stainville</surname><forename>Léopold Charles
-                     de</forename></persName>
+               <persName><surname>Choiseul-Stainville</surname><forename>Léopold Charles de</forename></persName>
                <birth when="1724"/>
                <death when="1774"/>
                <state>
@@ -220,9 +206,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </persName>
             </person>
             <person xml:id="armentieres">
-               <persName><persName>Armentières</persName><forename>Louis Gabriel
-                     de</forename><surname>Brienne de Conflans</surname><roleName>marquis
-                     d'</roleName></persName>
+               <persName><persName>Armentières</persName><forename>Louis Gabriel de</forename><surname>Brienne de Conflans</surname><roleName>marquis d'</roleName></persName>
                <birth when="1711"/>
                <death when="1774"/>
                <listEvent>
@@ -235,34 +219,31 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="aufresne">
-               <persName><surname>Rival</surname><forename>Jean</forename><addName>dit
-                     Aufresne</addName></persName>
+               <persName><surname>Rival</surname><forename>Jean</forename><addName>dit Aufresne</addName></persName>
                <birth when="1728"/>
                <death when="1804"/>
                <state>
                   <p>comédien</p>
                </state>
                <event>
-                  <p>Débute à la Comédie-Française en 1765 dans Cinna de Corneille, il aura une
-                     carrière internationale (Genève avec Lekain vers 1768, Vienne en 1772,
-                     Amsterdam, Berlin)</p>
+                  <p>Débute à la Comédie-Française en 1765 dans Cinna de Corneille, il aura une carrière internationale (Genève avec Lekain vers 1768, Vienne en 1772, Amsterdam, Berlin)</p>
                </event>
                <event>
                   <p>Aufresne a également joué à Ferney devant Voltaire en 1776</p>
                </event>
             </person>
             <person xml:id="aufresnePere">
-               <persName><surname>Rival</surname><forename>David</forename><addName>dit Aufresne
-                     père</addName></persName>
+               <persName><surname>Rival</surname><forename>David</forename><addName>dit Aufresne père</addName></persName>
                <birth when="1696"/>
                <death when="1759"/>
-              <listEvent> <event>
-                  <p> Père de l'acteur Jean Rival dit Aufresne </p>
-               </event>
-               <event>
-                  <p>Horloger genevois et poète amateur apprécié de Voltaire et cité par Rousseau
-                     dans Les Confessions.</p>
-               </event></listEvent>
+               <listEvent>
+                  <event>
+                     <p> Père de l'acteur Jean Rival dit Aufresne </p>
+                  </event>
+                  <event>
+                     <p>Horloger genevois et poète amateur apprécié de Voltaire et cité par Rousseau dans Les Confessions.</p>
+                  </event>
+               </listEvent>
                <!-- source : Les Confessions par Rousseau -->
             </person>
             <person xml:id="aumonierSuede">
@@ -313,8 +294,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <persName><surname>Baligand</surname><addName>M.</addName></persName>
             </person>
             <person xml:id="baligandMere">
-               <persName><surname>Baligand</surname><addName>M<hi rend="super"
-                  >me</hi></addName></persName>
+               <persName><surname>Baligand</surname><addName>M<hi rend="super">me</hi></addName></persName>
             </person>
             <person xml:id="baltazardMarie">
                <persName><surname>Baltazard</surname><forename>Marie-Marthe-Scholastique</forename></persName>
@@ -358,8 +338,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             </person>
 
             <person xml:id="beauvau">
-               <persName><surname>Beauvau</surname><forename>Charles
-                     Juste</forename><roleName>prince de</roleName></persName>
+               <persName><surname>Beauvau</surname><forename>Charles Juste</forename><roleName>prince de</roleName></persName>
                <birth when="1720"/>
                <death when="1793"/>
                <listEvent>
@@ -375,8 +354,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="beauvauMis">
-               <persName><surname>Beauvau</surname><forename>Louis Charles
-                     Antoine</forename><roleName>marquis de</roleName></persName>
+               <persName><surname>Beauvau</surname><forename>Louis Charles Antoine</forename><roleName>marquis de</roleName></persName>
                <birth when="1715"/>
                <death when="1744"/>
                <listEvent>
@@ -408,8 +386,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
 
             <person xml:id="belloyBuirette">
                <!-- todo dit Dormont de Belloy -->
-               <persName><surname>Buirette de
-                  Belloy</surname><forename>Pierre-Laurent</forename></persName>
+               <persName><surname>Buirette de Belloy</surname><forename>Pierre-Laurent</forename></persName>
                <state>
                   <p>comédien</p>
                </state>
@@ -433,8 +410,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="bercheni">
-               <persName><surname>Berchény</surname><forename>Ladislas-Ignace</forename><roleName>comte
-                     de</roleName></persName>
+               <persName><surname>Berchény</surname><forename>Ladislas-Ignace</forename><roleName>comte de</roleName></persName>
                <state>
                   <p>Maréchal de France</p>
                </state>
@@ -466,8 +442,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="billecard">
-               <persName><surname>Billecard</surname><addName>M<hi rend="super"
-                  >lle</hi></addName></persName>
+               <persName><surname>Billecard</surname><addName>M<hi rend="super">lle</hi></addName></persName>
                <!-- todo <state>
                   <p>épouse Stadler</p>
                </state>-->
@@ -512,8 +487,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="boufflersMis">
-               <persName><surname>Boufflers</surname><forename>Charles-Marc</forename><roleName>marquis
-                     de</roleName></persName>
+               <persName><surname>Boufflers</surname><forename>Charles-Marc</forename><roleName>marquis de</roleName></persName>
                <birth when="1736"/>
                <death when="1783"/>
             </person>
@@ -538,14 +512,12 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                      <p>Chevalier de Malte, militaire, poète et littérateur</p>
                   </event>
                   <event>
-                     <p>Il est le fils de la marquise de Boufflers-Remiencourt et filleul et protégé
-                        de Stanislas</p>
+                     <p>Il est le fils de la marquise de Boufflers-Remiencourt et filleul et protégé de Stanislas</p>
                   </event>
                </listEvent>
             </person>
             <person xml:id="bouflersMme">
-               <persName><surname>Beauvau-Craon</surname><forename>Marie Françoise Catherine
-                     de</forename><roleName>marquise de Boufflers-Remiencourt</roleName></persName>
+               <persName><surname>Beauvau-Craon</surname><forename>Marie Françoise Catherine de</forename><roleName>marquise de Boufflers-Remiencourt</roleName></persName>
                <birth when="1711"/>
                <death when="1786"/>
                <listEvent>
@@ -558,8 +530,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="bourcierDeTheyLeopold">
-               <persName><surname>Bourcier de
-                  They</surname><forename>Charles-Léopold</forename></persName>
+               <persName><surname>Bourcier de They</surname><forename>Charles-Léopold</forename></persName>
                <death when="1752"/>
                <!-- todo pas certain de la date de naissance -->
                <listEvent>
@@ -568,20 +539,17 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                   </event>
                </listEvent>
             </person>
-            <person xml:id="baye"> <!--ID corrigée-->
-               <persName><surname>Baye</surname><forename>François
-                     Berthelot</forename><roleName>Marquis de</roleName></persName>
+            <person xml:id="baye">
+               <!--ID corrigée-->
+               <persName><surname>Baye</surname><forename>François Berthelot</forename><roleName>Marquis de</roleName></persName>
                <birth when="1703"/>
                <death when="1776"/>
                <listEvent>
                   <event>
-                     <p>Lieutenant général des armées du Roi. Commandeur de l'ordre militaire de
-                        saint-Louis. Maréchal de camps et lieutenant général des armées du roi à
-                        Lunéville. </p>
+                     <p>Lieutenant général des armées du Roi. Commandeur de l'ordre militaire de saint-Louis. Maréchal de camps et lieutenant général des armées du roi à Lunéville. </p>
                   </event>
                   <event>
-                     <p>Commandant des deux compagnies de Cadets-Gentilhommes de feu S.M. le roi de
-                        Pologne, duc de Lorraine et de Bar (1753-1766).</p>
+                     <p>Commandant des deux compagnies de Cadets-Gentilhommes de feu S.M. le roi de Pologne, duc de Lorraine et de Bar (1753-1766).</p>
                   </event>
                   <event>
                      <p>Grand-Bailli d'Epée des ville et baillage de Saint-Dié.</p>
@@ -658,9 +626,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <persName><surname>Burkana</surname><roleName>baron de</roleName></persName>
             </person>
             <person xml:id="busquetDeCaumontDuch">
-               <persName><surname>Bertout de
-                     Forbany</surname><forename>Marie-Elisabeth</forename><roleName>duchesse de
-                     Busquet de Caumont</roleName></persName>
+               <persName><surname>Bertout de Forbany</surname><forename>Marie-Elisabeth</forename><roleName>duchesse de Busquet de Caumont</roleName></persName>
                <birth when="1715"/>
                <death when="1766"/>
                <listEvent>
@@ -671,8 +637,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                      <p>une fille de son premier mariage habitait Nancy</p>
                   </event>-->
                   <event>
-                     <p>son mari, Nicolas Isambart Busquet de Caumont, est conseiller au parlement
-                        de Normandie</p>
+                     <p>son mari, Nicolas Isambart Busquet de Caumont, est conseiller au parlement de Normandie</p>
                   </event>
                </listEvent>
             </person>
@@ -704,14 +669,11 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             <person xml:id="capresAnne">
                <persName><surname>Capres</surname><forename>Anne</forename></persName>
                <state>
-                  <p>pensionnaire au refuge de la fondation de l'abbé de Bousey pour l'année
-                     1767</p>
+                  <p>pensionnaire au refuge de la fondation de l'abbé de Bousey pour l'année 1767</p>
                </state>
             </person>
             <person xml:id="castriesMis">
-               <persName><persName>Castries</persName><forename>Charles Eugène Gabriel
-                     de</forename><surname>La Croix</surname><roleName>marquis
-                  de</roleName></persName>
+               <persName><persName>Castries</persName><forename>Charles Eugène Gabriel de</forename><surname>La Croix</surname><roleName>marquis de</roleName></persName>
                <birth when="1727"/>
                <death when="1801"/>
                <listEvent>
@@ -721,8 +683,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="catalde">
-               <persName><surname>Catalde</surname><addName>M<hi rend="super"
-                  >me</hi></addName></persName>
+               <persName><surname>Catalde</surname><addName>M<hi rend="super">me</hi></addName></persName>
                <state>
                   <p>supérieure des Dames prêcheresses</p>
                </state>
@@ -731,17 +692,14 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <persName><surname>Chabot</surname><addName>M. de</addName></persName>
             </person>
             <person xml:id="chancelier">
-               <persName><persName>La
-                     Galaizière</persName><forename>Antoine-Martin</forename><surname>Chaumont
-                     de</surname></persName>
+               <persName><persName>La Galaizière</persName><forename>Antoine-Martin</forename><surname>Chaumont de</surname></persName>
                <state>
                   <p>chancelier</p>
                </state>
             </person>
             <person xml:id="chancelierLudres">
                <!-- todo -->
-               <persName><surname>Ludres</surname><roleName>M. le chancelier
-                  de</roleName></persName>
+               <persName><surname>Ludres</surname><roleName>M. le chancelier de</roleName></persName>
             </person>
             <person xml:id="chapuisComedien">
                <persName><surname>Chapuis</surname><addName>M.</addName></persName>
@@ -750,15 +708,13 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </state>
             </person>
             <person xml:id="chapuisFils">
-               <persName><surname>Chapuis <hi rend="italic"
-                     >(fils)</hi></surname><forename>Louis-Gabriel</forename></persName>
+               <persName><surname>Chapuis <hi rend="italic">(fils)</hi></surname><forename>Louis-Gabriel</forename></persName>
                <state>
                   <p>avocat à la cour, procureur syndic</p>
                </state>
             </person>
             <person xml:id="chapuisPere">
-               <persName><surname>Chapuis <hi rend="italic"
-                     >(père)</hi></surname><forename>Guillaume</forename></persName>
+               <persName><surname>Chapuis <hi rend="italic">(père)</hi></surname><forename>Guillaume</forename></persName>
                <state>
                   <p>conseiller de la ville, libraire</p>
                </state>
@@ -770,14 +726,12 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </state>
             </person>
             <person xml:id="charles1">
-               <persName><surname>Charles I</surname><roleName>roi
-                  d'Angleterre</roleName></persName>
+               <persName><surname>Charles I</surname><roleName>roi d'Angleterre</roleName></persName>
                <birth when="1600"/>
                <death when="1649"/>
             </person>
             <person xml:id="charlottePrincesse">
-               <persName><surname>Lorraine</surname><forename>Anne Charlotte
-                  de</forename></persName>
+               <persName><surname>Lorraine</surname><forename>Anne Charlotte de</forename></persName>
                <birth when="1714"/>
                <death when="1773"/>
                <listEvent>
@@ -793,8 +747,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <persName><surname>Charvet</surname><addName>M.</addName></persName>
             </person>
             <person xml:id="chasteletMis">
-               <persName><surname>Chastelet</surname><forename>Florent-Claude</forename><roleName>marquis
-                     du</roleName></persName>
+               <persName><surname>Chastelet</surname><forename>Florent-Claude</forename><roleName>marquis du</roleName></persName>
                <birth when="1695"/>
                <death when="1765"/>
                <listEvent>
@@ -811,8 +764,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <persName><surname>Du Chastelet <hi rend="italic">frère</hi></surname></persName>
             </person>
             <person xml:id="chateaufort">
-               <persName><surname>Aristay de Châteaufort</surname><forename>François
-                  d'</forename></persName>
+               <persName><surname>Aristay de Châteaufort</surname><forename>François d'</forename></persName>
                <birth when="1704"/>
                <death when="1765"/>
                <listEvent>
@@ -820,8 +772,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                      <p>Conseiller à la Cour souveraine</p>
                   </event>
                   <event>
-                     <p>commissaire de François I<hi rend="super">er</hi> auprès de la cour de
-                        France pour les affaires de Lorraine (1759)</p>
+                     <p>commissaire de François I<hi rend="super">er</hi> auprès de la cour de France pour les affaires de Lorraine (1759)</p>
                   </event>
                </listEvent>
             </person>
@@ -834,8 +785,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="cheneauFille">
-               <persName><surname>Cheneau</surname><addName>M<hi rend="super"
-                  >lle</hi></addName></persName>
+               <persName><surname>Cheneau</surname><addName>M<hi rend="super">lle</hi></addName></persName>
                <listEvent>
                   <event>
                      <p>Fille de M. Cheneau et épouse M. de Rutant de Saulxures</p>
@@ -843,8 +793,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="choiseul">
-               <persName><surname>Choiseul-Stainville</surname><forename>Étienne François
-                     de</forename></persName>
+               <persName><surname>Choiseul-Stainville</surname><forename>Étienne François de</forename></persName>
                <birth when="1719"/>
                <death when="1785"/>
                <listEvent>
@@ -874,8 +823,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             </person>-->
 
             <person xml:id="choiseulCdl">
-               <persName><surname>Choiseul-Beaupré</surname><forename>Antoine-Clériade</forename><roleName>cardinal
-                     de</roleName></persName>
+               <persName><surname>Choiseul-Beaupré</surname><forename>Antoine-Clériade</forename><roleName>cardinal de</roleName></persName>
                <birth when="1707"/>
                <death when="1774"/>
                <listEvent>
@@ -908,8 +856,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             </person>-->
 
             <person xml:id="choiseulMis">
-               <persName><surname>Choiseul-Chevigny</surname><forename>César
-                     Gabriel</forename><roleName>marquis de</roleName></persName>
+               <persName><surname>Choiseul-Chevigny</surname><forename>César Gabriel</forename><roleName>marquis de</roleName></persName>
                <birth when="1712"/>
                <death when="1785"/>
             </person>
@@ -939,13 +886,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <death when="1805"/>
                <listEvent>
                   <event>
-                     <p>peintre paysagiste et décorateur, il fut l'élève de Girardet, Vernet et
-                        Joly. Reçu bourgeois de Nancy en 1762, il peignit Saint-Sébastien chez Irène
-                        pour la Chapelle sainte Concorde de la cathédrale de nancy et et des
-                        tableaux pour le Palais du Gouvernement en 1764 et 1765. Il réalisa
-                        égalemenent 1766 des peintures à la Comédie, le portrait du Roi pour l'Hôtel
-                        de ville et les peintures du catafalque de Stanislas en 1766, tout comme
-                        celles de Louis XV en 1774.</p>
+                     <p>peintre paysagiste et décorateur, il fut l'élève de Girardet, Vernet et Joly. Reçu bourgeois de Nancy en 1762, il peignit Saint-Sébastien chez Irène pour la Chapelle sainte Concorde de la cathédrale de nancy et et des tableaux pour le Palais du Gouvernement en 1764 et 1765. Il réalisa égalemenent 1766 des peintures à la Comédie, le portrait du Roi pour l'Hôtel de ville et les peintures du catafalque de Stanislas en 1766, tout comme celles de Louis XV en 1774.</p>
                   </event>
                </listEvent>
             </person>
@@ -961,8 +902,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <persName><surname>Collancy</surname><addName>M.</addName></persName>
             </person>
             <person xml:id="collenel">
-               <persName><surname>Collenel</surname><forename>Jean-Baptiste-Charles
-                  de</forename></persName>
+               <persName><surname>Collenel</surname><forename>Jean-Baptiste-Charles de</forename></persName>
                <birth when="1749"/>
                <death when="1834"/>
                <listEvent>
@@ -1015,8 +955,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>-->
             <person xml:id="contade">
-               <persName><surname>Contade</surname><forename>Louis Georges Érasme
-                  de</forename></persName>
+               <persName><surname>Contade</surname><forename>Louis Georges Érasme de</forename></persName>
                <birth when="1704"/>
                <death when="1795"/>
                <state>
@@ -1052,28 +991,22 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <persName><surname>Crédo</surname><roleName>abbé</roleName></persName>
             </person>
             <person xml:id="croismare">
-               <persName><surname>Croismare</surname><forename>Louis
-                     Eugène</forename><roleName>marquis de</roleName></persName>
+               <persName><surname>Croismare</surname><forename>Louis Eugène</forename><roleName>marquis de</roleName></persName>
                <birth when="1700"/>
                <death when="1812"/>
                <listEvent>
                   <event>
-                     <p>En 1767 les terres de Craon lui sont données en marquisat sous le nom de
-                        marquisat de Croismare (actuelle Haudonville)</p>
+                     <p>En 1767 les terres de Craon lui sont données en marquisat sous le nom de marquisat de Croismare (actuelle Haudonville)</p>
                   </event>
                </listEvent>
             </person>
             <person xml:id="cumberlandWilliam">
-               <persName><surname>Cumberland</surname><forename>William-Augustus</forename><roleName>duc
-                     de</roleName></persName>
+               <persName><surname>Cumberland</surname><forename>William-Augustus</forename><roleName>duc de</roleName></persName>
                <birth when="1721"/>
                <death when="1765"/>
                <listEvent>
                   <event>
-                     <p>Oncle du roi George III roi d'Angleterre et sixième enfant du roi Georges II
-                        d'Angleterre, commandant des troupes défaites par les Français à Fontenoy en
-                        1745, célèbre pour la répression barbare qu'il mena contre le soulèvement
-                        jacobite de Bonnie Prince Charlie en Ecosse en 1745-1746.</p>
+                     <p>Oncle du roi George III roi d'Angleterre et sixième enfant du roi Georges II d'Angleterre, commandant des troupes défaites par les Français à Fontenoy en 1745, célèbre pour la répression barbare qu'il mena contre le soulèvement jacobite de Bonnie Prince Charlie en Ecosse en 1745-1746.</p>
                   </event>
                </listEvent>
             </person>
@@ -1083,12 +1016,10 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <death when="1775"/>
                <listEvent>
                   <event>
-                     <p>Membre de l'Académie dès 1751 et président du Collège royal de médecine dès
-                        1772</p>
+                     <p>Membre de l'Académie dès 1751 et président du Collège royal de médecine dès 1772</p>
                   </event>
                   <event>
-                     <p>docteur en médecine en 1734, il a fait ses études à Montpellier et
-                        Pont-à-Mouson</p>
+                     <p>docteur en médecine en 1734, il a fait ses études à Montpellier et Pont-à-Mouson</p>
                   </event>
                   <event>
                      <p>il est le fils de Claude Cupers, marchand, et d'Élisabeth Humblot</p>
@@ -1126,8 +1057,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="dAuthieulles">
-               <persName><surname>Godard d'Authieulle</surname><forename>Philippe
-                  de</forename></persName>
+               <persName><surname>Godard d'Authieulle</surname><forename>Philippe de</forename></persName>
                <listEvent>
                   <event>
                      <p>chevalier de Saint-Louis</p>
@@ -1138,20 +1068,20 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="rioult">
-               <!--madame de Baye --> <!--ID corrigée-->
-               <persName><surname>Rioult-d'Ouilly de Cursay</surname><forename>Cécile
-                     Élisabeth</forename></persName>
+               <!--madame de Baye -->
+               <!--ID corrigée-->
+               <persName><surname>Rioult-d'Ouilly de Cursay</surname><forename>Cécile Élisabeth</forename></persName>
                <birth when="1714"/>
-             <listEvent>  <event>
-                  <p>Cousine germaine de François Berthelot, marquis de Baye, qu'elle épouse le 26
-                     avril 1740</p>
-               </event></listEvent>
+               <listEvent>
+                  <event>
+                     <p>Cousine germaine de François Berthelot, marquis de Baye, qu'elle épouse le 26 avril 1740</p>
+                  </event>
+               </listEvent>
                <!-- source : Dictionnaire de la noblesse, contenant les généalogies, l'histoire et... 
                   par François-Alexandre Aubert de La Chesnaye Des Bois -->
             </person>
             <person xml:id="deBeaumont">
-               <persName><surname>Moreau de
-                  Baumont</surname><forename>Jean-Louis</forename></persName>
+               <persName><surname>Moreau de Baumont</surname><forename>Jean-Louis</forename></persName>
                <birth when="1715"/>
                <death when="1785"/>
                <listEvent>
@@ -1172,19 +1102,15 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                      <p>président du Comité contentieux des Finances (1777)</p>
                   </event>
                   <event>
-                     <p>conseiller à la première chambre des requêtes du Parlement de Paris avec
-                        dispense d'âge (20/12/1736), maître des requêtes (1740), président au Grand
-                        Conseil (1745)</p>
+                     <p>conseiller à la première chambre des requêtes du Parlement de Paris avec dispense d'âge (20/12/1736), maître des requêtes (1740), président au Grand Conseil (1745)</p>
                   </event>
                   <event>
-                     <p>intendant de Poitiers (1747), de Franche-Comté (1750) et de Flandre
-                        (1754)</p>
+                     <p>intendant de Poitiers (1747), de Franche-Comté (1750) et de Flandre (1754)</p>
                   </event>
                </listEvent>
             </person>
             <person xml:id="deBernage">
-               <persName><surname>Bernage de Vaux</surname><forename>Jean-Louis
-                  de</forename></persName>
+               <persName><surname>Bernage de Vaux</surname><forename>Jean-Louis de</forename></persName>
                <birth when="1716"/>
                <death when="1780"/>
                <listEvent>
@@ -1192,8 +1118,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                      <p>Intendant de Moulins (1744-1756) puis intendant de Metz (1756-1766)</p>
                   </event>
                   <event>
-                     <p>conseiller d'État, président du grand conseil (commission en décembre
-                        1743)</p>
+                     <p>conseiller d'État, président du grand conseil (commission en décembre 1743)</p>
                   </event>
                   <event>
                      <p>grand croix de l'ordre de Saint-Louis</p>
@@ -1209,8 +1134,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
 
             </person>
             <person xml:id="deCalonne">
-               <persName><surname>Calonne</surname><forename>Charles Alexandre
-                  de</forename></persName>
+               <persName><surname>Calonne</surname><forename>Charles Alexandre de</forename></persName>
                <birth when="1734"/>
                <death when="1802"/>
 
@@ -1220,20 +1144,17 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
 
             </person>
             <person xml:id="deCambis">
-               <persName><surname>Cambis</surname><forename>Jacques-François-Xavier-Régis-Ignace</forename><roleName>vicomte
-                     de</roleName></persName>
+               <persName><surname>Cambis</surname><forename>Jacques-François-Xavier-Régis-Ignace</forename><roleName>vicomte de</roleName></persName>
                <birth when="1727"/>
                <death when="1792"/>
                <listEvent>
                   <event>
-                     <p>Époux de Gabrielle Charlotte Françoise, petite fille de Anne de Ligniville
-                        et favorite du duc Léopold</p>
+                     <p>Époux de Gabrielle Charlotte Françoise, petite fille de Anne de Ligniville et favorite du duc Léopold</p>
                   </event>
                </listEvent>
             </person>
             <person xml:id="deFaremont">
-               <persName><surname>Bugnot de
-                     Farémont</surname><forename>François-Alexandre</forename></persName>
+               <persName><surname>Bugnot de Farémont</surname><forename>François-Alexandre</forename></persName>
                <birth when="1739"/>
                <death when="1832"/>
                <listEvent>
@@ -1249,8 +1170,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="deJevaincourtMlle">
-               <persName><surname>Jevaincourt</surname><addName>M<hi rend="super">lle</hi>
-                     de</addName></persName>
+               <persName><surname>Jevaincourt</surname><addName>M<hi rend="super">lle</hi> de</addName></persName>
             </person>
             <person xml:id="deLaFargue">
                <persName><surname>La Fargue</surname><addName>M. de</addName></persName>
@@ -1261,21 +1181,12 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="deLally">
-               <persName><surname>Lally</surname><forename>Thomas-Arthur
-                     de</forename><roleName>comte de</roleName><addName>dit
-                     Lally-Tollendal</addName></persName>
+               <persName><surname>Lally</surname><forename>Thomas-Arthur de</forename><roleName>comte de</roleName><addName>dit Lally-Tollendal</addName></persName>
                <birth when="1702"/>
                <death when="1766"/>
                <listEvent>
                   <event>
-                     <p>Militaire français d'origine irlandaise, excellent officier de la guerre de
-                        succession d'Autriche, il est nommé commandant des forces françaises en Inde
-                        durant la guerre de Sept Ans. Il s'agit d'une erreur stratégique du ministre
-                        de la Guerre. Tenu pour personnellement responsable des défaites indiennes,
-                        il est exécuté en place de Grève à Paris pour trahison. Inique et barbare,
-                        sa décapitation soulève une vague de protestations dans toute l'Europe.
-                        Voltaire aide notamment son fils à obtenir une révision de l'accusation de
-                        haute trahison.</p>
+                     <p>Militaire français d'origine irlandaise, excellent officier de la guerre de succession d'Autriche, il est nommé commandant des forces françaises en Inde durant la guerre de Sept Ans. Il s'agit d'une erreur stratégique du ministre de la Guerre. Tenu pour personnellement responsable des défaites indiennes, il est exécuté en place de Grève à Paris pour trahison. Inique et barbare, sa décapitation soulève une vague de protestations dans toute l'Europe. Voltaire aide notamment son fils à obtenir une révision de l'accusation de haute trahison.</p>
                   </event>
                   <event>
                      <p>père de Trophime-Gérard de Lally-Tolendal (1751-1830)</p>
@@ -1300,8 +1211,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             </person>
             <!-- todo arrêt ici. -->
             <person xml:id="deMalleloyMme">
-               <persName><surname>Malleloy</surname><addName>M<hi rend="super">me</hi>
-                  de</addName></persName>
+               <persName><surname>Malleloy</surname><addName>M<hi rend="super">me</hi> de</addName></persName>
                <listEvent>
                   <event>
                      <p>Épouse de M. de Malleloy</p>
@@ -1325,8 +1235,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="deMontesquiou">
-               <persName><surname>Montesquiou Fézensac</surname><forename>Anne-Pierre
-                     de</forename><roleName>marquis de Monstesquiou</roleName></persName>
+               <persName><surname>Montesquiou Fézensac</surname><forename>Anne-Pierre de</forename><roleName>marquis de Monstesquiou</roleName></persName>
                <birth when="1739"/>
                <death when="1798"/>
                <listEvent>
@@ -1346,8 +1255,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             </person>
             <person xml:id="dePixerecourtAlix">
                <!-- todo Alix = prénom ? -->
-               <persName><surname>Alix de
-                     Pixérécourt</surname><forename>Nicolas-Christophe</forename></persName>
+               <persName><surname>Alix de Pixérécourt</surname><forename>Nicolas-Christophe</forename></persName>
                <birth when="1713"/>
                <death when="1788"/>
                <listEvent>
@@ -1355,8 +1263,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                      <p>Maître des eaux et des forêts</p>
                   </event>
                   <event>
-                     <p>conseiller du roi en sens Conseils, grand gruyer (premier officier d'un
-                        grand domaine forestier que l'on nomme "gruerie")</p>
+                     <p>conseiller du roi en sens Conseils, grand gruyer (premier officier d'un grand domaine forestier que l'on nomme "gruerie")</p>
                   </event>
                   <event>
                      <p>mariage avec Anne Jacob en 1746</p>
@@ -1364,8 +1271,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="deRutan">
-               <persName><surname>Rutant</surname><forename>Pierre Louis
-                     de</forename><roleName>comte de Saulxures</roleName></persName>
+               <persName><surname>Rutant</surname><forename>Pierre Louis de</forename><roleName>comte de Saulxures</roleName></persName>
                <birth when="1702"/>
                <death when="1799"/>
                <listEvent>
@@ -1375,8 +1281,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="desarmoises">
-               <persName><surname>Des
-                     Armoises</surname><forename>Antoine-Bernard</forename><roleName>marquis</roleName></persName>
+               <persName><surname>Des Armoises</surname><forename>Antoine-Bernard</forename><roleName>marquis</roleName></persName>
                <!-- todo - mort à Nancy en 1768 ? -->
                <listEvent>
                   <event>
@@ -1385,8 +1290,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="desarmoisesMme">
-               <persName><surname>Beauvau</surname><forename>Anne de</forename><roleName>marquise
-                     Des Armoises</roleName></persName>
+               <persName><surname>Beauvau</surname><forename>Anne de</forename><roleName>marquise Des Armoises</roleName></persName>
                <birth when="1710"/>
                <death when="1766"/>
                <listEvent>
@@ -1394,25 +1298,20 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                      <p>Fille du maréchal de Lorraine Louis marquis de Beauvau</p>
                   </event>
                   <event>
-                     <p>épouse de Antoine Bernard des Armoises (officier général au service de
-                        l'Empereur)</p>
+                     <p>épouse de Antoine Bernard des Armoises (officier général au service de l'Empereur)</p>
                   </event>
                </listEvent>
             </person>
             <person xml:id="deSartine">
-               <persName><surname>Sartine</surname><forename>Antoine Raymond Juan Gualbert Gabriel
-                     de</forename><roleName>comte d'Alby</roleName></persName>
+               <persName><surname>Sartine</surname><forename>Antoine Raymond Juan Gualbert Gabriel de</forename><roleName>comte d'Alby</roleName></persName>
                <birth when="1729"/>
                <death when="1801"/>
                <listEvent>
                   <event>
-                     <p>Homme politique français, conseiller (1752), puis lieutenant criminel du
-                        Châtelet (1755), il est lieutenant général de police (1759–1774), et enfin
-                        ministre de la Marine sous Louis XVI.</p>
+                     <p>Homme politique français, conseiller (1752), puis lieutenant criminel du Châtelet (1755), il est lieutenant général de police (1759–1774), et enfin ministre de la Marine sous Louis XVI.</p>
                   </event>
                   <event>
-                     <p>lieutenant criminel du Châtelet (1755) puis lieutenant général de police
-                        (1759–1774)</p>
+                     <p>lieutenant criminel du Châtelet (1755) puis lieutenant général de police (1759–1774)</p>
                   </event>
                   <event>
                      <p>ministre de la Marine sous Louis XVI</p>
@@ -1420,8 +1319,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="deschampsdeVillers">
-               <persName><surname>Deschamps de Villers</surname><addName>M<hi rend="super"
-                     >e</hi></addName></persName>
+               <persName><surname>Deschamps de Villers</surname><addName>M<hi rend="super">e</hi></addName></persName>
                <state>
                   <p>Avocat</p>
                </state>
@@ -1433,8 +1331,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </state>
             </person>
             <person xml:id="deSilly">
-               <persName><surname>Durand de
-                  Silly</surname><forename>Charles-François</forename></persName>
+               <persName><surname>Durand de Silly</surname><forename>Charles-François</forename></persName>
                <death when="1766"/>
                <listEvent>
                   <event>
@@ -1452,8 +1349,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <persName><surname>Despois</surname><addName>M.</addName></persName>
                <listEvent>
                   <event>
-                     <p>Auteur d'un mémoire sur une pompe, il reçoit pour son invention un prix de
-                        l'Académie en décembre 1766</p>
+                     <p>Auteur d'un mémoire sur une pompe, il reçoit pour son invention un prix de l'Académie en décembre 1766</p>
                   </event>
                </listEvent>
             </person>
@@ -1464,12 +1360,10 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <death when="1778"/>
                <listEvent>
                   <event>
-                     <p>Maréchal de camp, gouverneur de Vaucouleurs, de Rhinfeld, de Valenciennes,
-                        de Maubeuge, conseiller d'État, chambellan du duc de Lorraine</p>
+                     <p>Maréchal de camp, gouverneur de Vaucouleurs, de Rhinfeld, de Valenciennes, de Maubeuge, conseiller d'État, chambellan du duc de Lorraine</p>
                   </event>
                   <event>
-                     <p>lieutenant-Général des armées du Roi en 1759, commandeur de l'Ordre de
-                        Saint-Louis</p>
+                     <p>lieutenant-Général des armées du Roi en 1759, commandeur de l'Ordre de Saint-Louis</p>
                   </event>
                   <event>
                      <p>il épousa le 6 mars 1730 Adélaide-Louise-Candide de Brancas</p>
@@ -1477,12 +1371,10 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="deTillyMlle">
-               <persName><surname>Tilly</surname><addName>M<hi rend="super">lle</hi>
-                  de</addName></persName>
+               <persName><surname>Tilly</surname><addName>M<hi rend="super">lle</hi> de</addName></persName>
             </person>
             <person xml:id="deVassimont">
-               <persName><surname>Cachedenier de
-                  Vassimont</surname><forename>Benoit</forename></persName>
+               <persName><surname>Cachedenier de Vassimont</surname><forename>Benoit</forename></persName>
                <birth when="1702"/>
                <death when="1776"/>
                <listEvent>
@@ -1490,14 +1382,12 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                      <p>Conseiller en la Cour souveraine</p>
                   </event>
                   <event>
-                     <p>président de la Chambre des comptes de Bar (1768-1774) jusqu'à sa
-                        démission</p>
+                     <p>président de la Chambre des comptes de Bar (1768-1774) jusqu'à sa démission</p>
                   </event>
                </listEvent>
             </person>
             <person xml:id="devaux">
-               <persName><surname>Devaux</surname><forename>François Antoine</forename><addName
-                     type="say">Panpan</addName></persName>
+               <persName><surname>Devaux</surname><forename>François Antoine</forename><addName type="say">Panpan</addName></persName>
                <birth when="1712"/>
                <death when="1796"/>
                <listEvent>
@@ -1537,8 +1427,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="dOrmesson">
-               <persName><surname>Lefèvre
-                  d'Ormesson</surname><forename>François-Marie</forename></persName>
+               <persName><surname>Lefèvre d'Ormesson</surname><forename>François-Marie</forename></persName>
                <birth when="1710"/>
                <death when="1775"/>
                <state>
@@ -1558,21 +1447,17 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             </person>
             <person xml:id="ducDeuxPonts">
                <!-- todo Christian IV de Deux-Ponts-Birkenfeld ? -->
-               <persName><surname>Deux-Ponts</surname><forename>Christian IV</forename><roleName>duc
-                     de</roleName></persName>
+               <persName><surname>Deux-Ponts</surname><forename>Christian IV</forename><roleName>duc de</roleName></persName>
                <birth when="1722"/>
                <death when="1775"/>
                <listEvent>
                   <event>
-                     <p>Prétendant au trône de Bavière, il joua un rôle important dans la diplomatie
-                        de la deuxième partie du règne de Louis XV.</p>
+                     <p>Prétendant au trône de Bavière, il joua un rôle important dans la diplomatie de la deuxième partie du règne de Louis XV.</p>
                   </event>
                </listEvent>
             </person>
             <person xml:id="ducFleury">
-               <persName><persName>Fleury</persName><forename>André Hercule
-                     de</forename><surname>Rosset de Rocozels</surname><roleName>duc
-                  de</roleName></persName>
+               <persName><persName>Fleury</persName><forename>André Hercule de</forename><surname>Rosset de Rocozels</surname><roleName>duc de</roleName></persName>
                <state>
                   <p>Pair de France</p>
                </state>
@@ -1580,8 +1465,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <death when="1788"/>
             </person>
             <person xml:id="ducLeopold">
-               <persName><surname>Léopold I<hi rend="super"
-                     >er</hi></surname><roleName>duc</roleName></persName>
+               <persName><surname>Léopold I<hi rend="super">er</hi></surname><roleName>duc</roleName></persName>
                <birth when="1679"/>
                <death when="1729"/>
                <listEvent>
@@ -1591,8 +1475,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="ducOrleans">
-               <persName><surname>Orléans</surname><forename>Louis-Philippe</forename><roleName>duc
-                     d'</roleName></persName>
+               <persName><surname>Orléans</surname><forename>Louis-Philippe</forename><roleName>duc d'</roleName></persName>
                <birth when="1725"/>
                <death when="1785"/>
                <listEvent>
@@ -1611,8 +1494,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <persName><surname>Duhautoy</surname><addName>M.</addName></persName>
             </person>
             <person xml:id="dujardVeuve">
-               <persName><surname>Dujard</surname><addName>V<hi rend="super"
-                  >e</hi></addName></persName>
+               <persName><surname>Dujard</surname><addName>V<hi rend="super">e</hi></addName></persName>
                <listEvent>
                   <event>
                      <p>Sœur de M. Hocquet <hi rend="italic">(fils)</hi></p>
@@ -1628,8 +1510,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="durasDuchesse">
-               <persName><surname>Coëtquen</surname><forename>Louise-Françoise-Maclovie-Céleste
-                     de</forename><roleName>duchesse de Duras</roleName></persName>
+               <persName><surname>Coëtquen</surname><forename>Louise-Françoise-Maclovie-Céleste de</forename><roleName>duchesse de Duras</roleName></persName>
                <birth when="1724"/>
                <death when="1802"/>
                <listEvent>
@@ -1658,29 +1539,23 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <death when="1795"/>
                <listEvent>
                   <event>
-                     <p>Secrétaire au service du chancelier français Chaumont de La Galaizière
-                        (1737-1751), greffier en chef du Conseil d'Etat et des Finances du roi de
-                        Pologne (1751-1760), économe séquestre des bénéfices de Lorraine et Barrois
-                        (1754-1760)</p>
+                     <p>Secrétaire au service du chancelier français Chaumont de La Galaizière (1737-1751), greffier en chef du Conseil d'Etat et des Finances du roi de Pologne (1751-1760), économe séquestre des bénéfices de Lorraine et Barrois (1754-1760)</p>
                   </event>
                </listEvent>
             </person>
             <person xml:id="durivalClaude">
-               <persName><surname>Durival</surname><forename>Claude</forename><addName type="say">le
-                     jeune</addName></persName>
+               <persName><surname>Durival</surname><forename>Claude</forename><addName type="say">le jeune</addName></persName>
                <birth when="1728"/>
                <death when="1805"/>
                <listEvent>
                   <event>
-                     <p>secrétaire-greffier des Conseils du roi de Pologne, économe séquestre des
-                        bénéfices de Lorraine et du Barrois.</p>
+                     <p>secrétaire-greffier des Conseils du roi de Pologne, économe séquestre des bénéfices de Lorraine et du Barrois.</p>
                   </event>
                </listEvent>
             </person>
             <person xml:id="durivalJean">
                <!-- todo vérif -->
-               <persName><surname>Durival</surname><forename>Jean-Baptiste Lutton</forename><addName
-                     type="say">le commissaire</addName></persName>
+               <persName><surname>Durival</surname><forename>Jean-Baptiste Lutton</forename><addName type="say">le commissaire</addName></persName>
                <birth when="1725"/>
                <death when="1810"/>
                <listEvent>
@@ -1688,12 +1563,10 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                      <p>Cadet des Durival, commissaire des guerres en Lorraine en 1761</p>
                   </event>
                   <event>
-                     <p>premier secrétaire de l'intendance de Lorraine en 1759, secrétaire-greffier
-                        en chef du Conseil d'État et du Conseil des finances de Lorraine en 1760</p>
+                     <p>premier secrétaire de l'intendance de Lorraine en 1759, secrétaire-greffier en chef du Conseil d'État et du Conseil des finances de Lorraine en 1760</p>
                   </event>
                   <event>
-                     <p>membre titulaire de l'Académie fondée par Stanislas de 1760 à 1793 et de
-                        1802 à 1809</p>
+                     <p>membre titulaire de l'Académie fondée par Stanislas de 1760 à 1793 et de 1802 à 1809</p>
                   </event>
                </listEvent>
             </person>
@@ -1708,8 +1581,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             <person xml:id="edelinJeanne">
                <persName><surname>Édelin</surname><forename>Jeanne</forename></persName>
                <state>
-                  <p>pensionnaire au refuge de la fondation de l'abbé de Bousey pour l'année
-                     1767</p>
+                  <p>pensionnaire au refuge de la fondation de l'abbé de Bousey pour l'année 1767</p>
                </state>
             </person>
             <person xml:id="elisee">
@@ -1725,26 +1597,22 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                      <p>prédicateur du roi</p>
                   </event>
                   <event>
-                     <p>auteur d'une oraison funèbre en l'honneur de Stanislas prononcée le 10 Mai
-                        1766</p>
+                     <p>auteur d'une oraison funèbre en l'honneur de Stanislas prononcée le 10 Mai 1766</p>
                   </event>
                </listEvent>
             </person>
 
             <person xml:id="eveqCracovie">
                <!--Stanislas (saint) ???-->
-               <persName><surname>Saint Stanislas</surname><roleName>évèque de
-                  Cracovie</roleName></persName>
+               <persName><surname>Saint Stanislas</surname><roleName>évèque de Cracovie</roleName></persName>
                <listEvent>
                   <event>
-                     <p>Dans le cadre du journal, il s'agit d'une référence à Saint Stanislas, un
-                        des premiers évêques polonais massacré par le roi de Pologne Boleslas II</p>
+                     <p>Dans le cadre du journal, il s'agit d'une référence à Saint Stanislas, un des premiers évêques polonais massacré par le roi de Pologne Boleslas II</p>
                   </event>
                </listEvent>
             </person>
             <person xml:id="eveqMetz">
-               <persName><surname>Montmorency-Laval</surname><forename>Louis Joseph
-                     de</forename><roleName>évèque de Metz</roleName></persName>
+               <persName><surname>Montmorency-Laval</surname><forename>Louis Joseph de</forename><roleName>évèque de Metz</roleName></persName>
                <birth when="1724"/>
                <death when="1808"/>
                <listEvent>
@@ -1757,20 +1625,17 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="eveqToul">
-               <persName><surname>Boussey</surname><forename>Claude Drouas
-                     de</forename><roleName>évèque de Toul</roleName></persName>
+               <persName><surname>Boussey</surname><forename>Claude Drouas de</forename><roleName>évèque de Toul</roleName></persName>
                <birth when="1712"/>
                <death when="1773"/>
                <listEvent>
                   <event>
-                     <p>a lutté contre le jansénisme et a tenté de ramener le clergé régulier sous
-                        son autorité d'évêque</p>
+                     <p>a lutté contre le jansénisme et a tenté de ramener le clergé régulier sous son autorité d'évêque</p>
                   </event>
                </listEvent>
             </person>
             <person xml:id="eveqVerdun">
-               <persName><surname>Nicolaï</surname><forename>Aymar de</forename><roleName>évèque de
-                     Verdun</roleName></persName>
+               <persName><surname>Nicolaï</surname><forename>Aymar de</forename><roleName>évèque de Verdun</roleName></persName>
                <listEvent>
                   <event>
                      <p>premier aumônier de la dauphine Marie Josèphe</p>
@@ -1804,21 +1669,18 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <persName><surname>Fendrick</surname><forename>Marie</forename></persName>
                <listEvent>
                   <event>
-                     <p>pensionnaire au refuge de la fondation de l'abbé de Bousey pour l'année
-                        1767</p>
+                     <p>pensionnaire au refuge de la fondation de l'abbé de Bousey pour l'année 1767</p>
                   </event>
                </listEvent>
             </person>
             <person xml:id="ferdinantPrince">
-               <persName><forename>Ferdinand
-                     des</forename><surname>Deux-Siciles</surname><roleName>prince</roleName></persName>
+               <persName><forename>Ferdinand des</forename><surname>Deux-Siciles</surname><roleName>prince</roleName></persName>
                <state>
                   <p>infant d'Espagne</p>
                </state>
                <listEvent>
                   <event>
-                     <p>Fils de Charles III d'Espagne, infant d'Espagne et roi des Deux-Siciles à
-                        l'âge de neuf ans</p>
+                     <p>Fils de Charles III d'Espagne, infant d'Espagne et roi des Deux-Siciles à l'âge de neuf ans</p>
                   </event>
                </listEvent>
             </person>
@@ -1835,16 +1697,13 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </state>
             </person>
             <person xml:id="fleury">
-               <persName><surname>Bénard</surname><forename>François</forename><addName type="say"
-                     >Fleury</addName></persName>
+               <persName><surname>Bénard</surname><forename>François</forename><addName type="say">Fleury</addName></persName>
                <state>
                   <p>comédien</p>
                </state>
                <listEvent>
                   <event>
-                     <p>Fleury fut Directeur du théâtre de Nancy de 1758 à 1767 et commissaire des
-                        poudres et salpêtres à partir de 1767. A un fils, Joseph-Abraham (1750-822),
-                        est comédien et sociétaire de la Comédie française</p>
+                     <p>Fleury fut Directeur du théâtre de Nancy de 1758 à 1767 et commissaire des poudres et salpêtres à partir de 1767. A un fils, Joseph-Abraham (1750-822), est comédien et sociétaire de la Comédie française</p>
                   </event>
                </listEvent>
             </person>
@@ -1861,8 +1720,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </state>
             </person>
             <person xml:id="francoisIEmpereur">
-               <persName><surname>François I<hi rend="super"
-                     >er</hi></surname><roleName>empereur</roleName></persName>
+               <persName><surname>François I<hi rend="super">er</hi></surname><roleName>empereur</roleName></persName>
                <birth when="1708"/>
                <death when="1765"/>
                <listEvent>
@@ -1870,9 +1728,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                      <p>empereur du Saint-Empire romain germanique de 1745 à 1765</p>
                   </event>
                   <event>
-                     <p>duc de Lorraine, de Bar (1729-1737) sous le nom de François III, duc de
-                        Teschen (1729-1765) puis grand-duc de Toscane (1737–1765) sous le nom de
-                        François II</p>
+                     <p>duc de Lorraine, de Bar (1729-1737) sous le nom de François III, duc de Teschen (1729-1765) puis grand-duc de Toscane (1737–1765) sous le nom de François II</p>
                   </event>
                </listEvent>
             </person>
@@ -1886,15 +1742,13 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="friant">
-               <persName><surname>Friant
-                     d'Alincourt</surname><forename>Dominique-François</forename></persName>
+               <persName><surname>Friant d'Alincourt</surname><forename>Dominique-François</forename></persName>
                <state>
                   <p>procureur du roi</p>
                </state>
             </person>
             <person xml:id="fumeronMarieCatherine">
-               <persName><surname>Fumeron</surname><forename>Marie-Catherine
-                  de</forename></persName>
+               <persName><surname>Fumeron</surname><forename>Marie-Catherine de</forename></persName>
                <listEvent>
                   <event>
                      <p>Douairière de feu M. Jacques Dalmas</p>
@@ -1914,8 +1768,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="gandoger">
-               <persName><surname>Gandoger de Foigny</surname><forename>Pierre
-                  Louis</forename></persName>
+               <persName><surname>Gandoger de Foigny</surname><forename>Pierre Louis</forename></persName>
                <birth when="1732"/>
                <death when="1770"/>
                <listEvent>
@@ -1929,8 +1782,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                      <p>membre de l'Académie</p>
                   </event>
                   <event>
-                     <p>Auteur d'un <hi rend="italic">Traité pratique de l'inoculation</hi> en
-                        1768.</p>
+                     <p>Auteur d'un <hi rend="italic">Traité pratique de l'inoculation</hi> en 1768.</p>
                   </event>
                   <event>
                      <p>membre du collège Royal de Médecine</p>
@@ -1943,8 +1795,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
 
             <!-- todo distinguer les Gignéville ? -->
             <person xml:id="gautierGigneville">
-               <persName><surname>Gauthier de Gignéville</surname><forename>Guillaume
-                     Hyacinthe</forename><roleName>seigneur de Gignéville</roleName></persName>
+               <persName><surname>Gauthier de Gignéville</surname><forename>Guillaume Hyacinthe</forename><roleName>seigneur de Gignéville</roleName></persName>
                <birth when="1691"/>
                <death when="1781"/>
                <listEvent>
@@ -1954,8 +1805,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="gautierGignevilleJB">
-               <persName><surname>Gauthier de Gignéville</surname><forename>Jean
-                  Baptiste</forename></persName>
+               <persName><surname>Gauthier de Gignéville</surname><forename>Jean Baptiste</forename></persName>
                <death when="1765"/>
                <listEvent>
                   <event>
@@ -1989,8 +1839,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             </person>
 
             <person xml:id="gauvinVe">
-               <persName><surname>Gauvin</surname><addName>V<hi rend="super"
-                  >e</hi></addName></persName>
+               <persName><surname>Gauvin</surname><addName>V<hi rend="super">e</hi></addName></persName>
             </person>
             <person xml:id="gennete">
                <persName><surname>Genneté</surname><addName>M.</addName></persName>
@@ -1999,14 +1848,12 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </state>
             </person>
             <person xml:id="georgeIII">
-               <persName><surname>George III</surname><roleName>roi
-                  d'Angleterre</roleName></persName>
+               <persName><surname>George III</surname><roleName>roi d'Angleterre</roleName></persName>
                <birth when="1738"/>
                <death when="1820"/>
             </person>
             <person xml:id="georgin">
-               <persName><surname>Georgin</surname><addName>M<hi rend="super"
-                  >lle</hi></addName></persName>
+               <persName><surname>Georgin</surname><addName>M<hi rend="super">lle</hi></addName></persName>
                <listEvent>
                   <event>
                      <p>Suisse de la paroisse Saint-Epvre</p>
@@ -2014,8 +1861,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="gerardDeVietAnneCatherine">
-               <persName><surname>Wiet</surname><forename>Anne-Catherine Girard
-                     de</forename><roleName>duchesse d'Aiguillon</roleName></persName>
+               <persName><surname>Wiet</surname><forename>Anne-Catherine Girard de</forename><roleName>duchesse d'Aiguillon</roleName></persName>
                <birth when="1702"/>
                <death when="1766"/>
                <listEvent>
@@ -2028,13 +1874,10 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="gerbevillerMis2">
-               <persName ref="#gerbevillerMis"><surname>Lambertye</surname><forename>Camille
-                     de</forename><roleName>marquis de Gerbeviller</roleName></persName>
+               <persName ref="#gerbevillerMis"><surname>Lambertye</surname><forename>Camille de</forename><roleName>marquis de Gerbeviller</roleName></persName>
             </person>
             <person xml:id="gerbevillerMis">
-               <persName><persName>Gerbeviller</persName><forename>Camille
-                     de</forename><surname>Lambertye</surname><roleName>marquis
-                  de</roleName></persName>
+               <persName><persName>Gerbeviller</persName><forename>Camille de</forename><surname>Lambertye</surname><roleName>marquis de</roleName></persName>
                <birth when="1714"/>
                <death when="1770"/>
                <listEvent>
@@ -2082,8 +1925,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             </person>
 
             <person xml:id="grammontDuchesse">
-               <persName><surname>Choiseul-Stainville</surname><forename>Béatrix
-                     de</forename><roleName>duchesse de Gramont</roleName></persName>
+               <persName><surname>Choiseul-Stainville</surname><forename>Béatrix de</forename><roleName>duchesse de Gramont</roleName></persName>
                <birth when="1730"/>
                <death when="1794"/>
                <listEvent>
@@ -2108,9 +1950,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <persName><surname>Grandpair</surname><roleName>abbé</roleName></persName>
             </person>
             <person xml:id="granvilleMme">
-               <persName><surname>Royer de
-                     Marainville</surname><forename>Elisabeth-Charlotte-Léopoldine</forename><roleName>comtesse
-                     de Grandville</roleName></persName>
+               <persName><surname>Royer de Marainville</surname><forename>Elisabeth-Charlotte-Léopoldine</forename><roleName>comtesse de Grandville</roleName></persName>
                <birth when="1701"/>
                <death when="1784"/>
                <listEvent>
@@ -2121,15 +1961,13 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             </person>
 
             <person xml:id="gronierMlle">
-               <persName><surname>Gronier</surname><addName>M<hi rend="super"
-                  >lle</hi></addName></persName>
+               <persName><surname>Gronier</surname><addName>M<hi rend="super">lle</hi></addName></persName>
                <state>
                   <p>comédienne</p>
                </state>
             </person>
             <person xml:id="grossierDlle">
-               <persName><surname>Grossier</surname><addName>M<hi rend="super"
-                  >lle</hi></addName></persName>
+               <persName><surname>Grossier</surname><addName>M<hi rend="super">lle</hi></addName></persName>
                <state>
                   <p>comédienne</p>
                </state>
@@ -2137,8 +1975,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
 
             <person xml:id="guerchyComte">
                <!-- todo renvoi ? -->
-               <persName><surname>Régnier</surname><forename>Claude-Louis-François</forename><roleName>comte
-                     de Guerchy, marquis de Nangis</roleName></persName>
+               <persName><surname>Régnier</surname><forename>Claude-Louis-François</forename><roleName>comte de Guerchy, marquis de Nangis</roleName></persName>
                <birth when="1715"/>
                <death when="1767"/>
                <listEvent>
@@ -2167,8 +2004,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="guireMme">
-               <persName><surname>Guire</surname><addName>M<hi rend="super"
-                  >me</hi></addName></persName>
+               <persName><surname>Guire</surname><addName>M<hi rend="super">me</hi></addName></persName>
                <listEvent>
                   <event>
                      <p>Épouse de M. Guire</p>
@@ -2227,8 +2063,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             </person>
             <person xml:id="hericourtM">
                <!-- todo faire renvoi -->
-               <persName><surname>Héricourt</surname><forename>Bénigne-Jérôme</forename><surname>Du
-                     Trousset</surname><roleName>marquis d'</roleName></persName>
+               <persName><surname>Héricourt</surname><forename>Bénigne-Jérôme</forename><surname>Du Trousset</surname><roleName>marquis d'</roleName></persName>
                <birth when="1691"/>
                <death when="1770"/>
                <listEvent>
@@ -2245,8 +2080,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             </person>
             <person xml:id="hocquetFils">
                <!-- todo gestion xsl -->
-               <persName><surname>Hocquet <hi rend="italic"
-                     >(fils)</hi></surname><addName>M.</addName></persName>
+               <persName><surname>Hocquet <hi rend="italic">(fils)</hi></surname><addName>M.</addName></persName>
                <listEvent>
                   <event>
                      <p>Frère de la veuve Dujard</p>
@@ -2260,12 +2094,10 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <persName><surname>Hogard</surname><forename>Clément</forename></persName>
             </person>
             <person xml:id="huart">
-               <persName><surname>Huart</surname><addName>M.</addName><addName type="say"
-                     >Desruisseaux de Commercy</addName></persName>
+               <persName><surname>Huart</surname><addName>M.</addName><addName type="say">Desruisseaux de Commercy</addName></persName>
             </person>
             <person xml:id="huguetDeMontaran">
-               <persName><surname>Huguet de
-                  Montaran</surname><forename>Pierre-François</forename></persName>
+               <persName><surname>Huguet de Montaran</surname><forename>Pierre-François</forename></persName>
                <listEvent>
                   <event>
                      <p>écuyer et avocat au Parlement de Paris</p>
@@ -2279,22 +2111,18 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </state>
             </person>
             <person xml:id="intendant">
-               <persName><surname>Chaumont de La
-                     Galaizière</surname><forename>Antoine</forename><roleName>marquis de La
-                     Galaizière</roleName></persName>
+               <persName><surname>Chaumont de La Galaizière</surname><forename>Antoine</forename><roleName>marquis de La Galaizière</roleName></persName>
                <birth when="1727"/>
                <death when="1812"/>
                <listEvent>
                   <event>
-                     <p>Intendant de Lorraine et de Barrois (1758-1777) et conseiller du roi de
-                        Pologne puis intendant de Strasbourg (1778-1790)</p>
+                     <p>Intendant de Lorraine et de Barrois (1758-1777) et conseiller du roi de Pologne puis intendant de Strasbourg (1778-1790)</p>
                   </event>
                   <event>
                      <p>conseiller d'État honoraire</p>
                   </event>
                   <event>
-                     <p>intendant à Montauban (1756), membre de l'Académie des sciences,
-                        belles-lettres et arts de Montauban</p>
+                     <p>intendant à Montauban (1756), membre de l'Académie des sciences, belles-lettres et arts de Montauban</p>
                   </event>
                   <event>
                      <p>fils du chancelier de Lorraine Antoine Martin Chaumont de la Galaizière</p>
@@ -2302,8 +2130,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="intendantMme">
-               <persName><surname>Maussion de la
-                     Courtaujay</surname><forename>Geneviève-Perrine</forename></persName>
+               <persName><surname>Maussion de la Courtaujay</surname><forename>Geneviève-Perrine</forename></persName>
                <birth when="1741"/>
                <death when="1799"/>
                <listEvent>
@@ -2313,8 +2140,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="jacob">
-               <persName><surname>Jacob</surname><addName>M<hi rend="super"
-                  >me</hi></addName></persName>
+               <persName><surname>Jacob</surname><addName>M<hi rend="super">me</hi></addName></persName>
                <listEvent>
                   <event>
                      <p>épouse de M. Alix de Pixérécourt</p>
@@ -2332,8 +2158,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <persName><addName>La Jeunesse</addName></persName>
                <listEvent>
                   <event>
-                     <p>Concierge puis portier à l'Intendance fils d'un ancien portier du château de
-                        Nancy</p>
+                     <p>Concierge puis portier à l'Intendance fils d'un ancien portier du château de Nancy</p>
                   </event>
                </listEvent>
             </person>
@@ -2359,8 +2184,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="laChataigneraye">
-               <persName><surname>La Chataigneraye</surname><forename>Claude Léopold Turpin
-                     de</forename></persName>
+               <persName><surname>La Chataigneraye</surname><forename>Claude Léopold Turpin de</forename></persName>
             </person>
             <person xml:id="laCoste">
                <persName><surname>La Coste</surname><addName>M.</addName></persName>
@@ -2369,18 +2193,15 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </state>-->
             </person>
             <person xml:id="laDuclos">
-               <persName><surname>La Duclos</surname><addName>M<hi rend="super"
-                  >me</hi></addName></persName>
+               <persName><surname>La Duclos</surname><addName>M<hi rend="super">me</hi></addName></persName>
                <listEvent>
                   <event>
-                     <p>Pensionnaire au refuge de la fondation de l'abbé de Bousey pour l'année 1767
-                        et 1768</p>
+                     <p>Pensionnaire au refuge de la fondation de l'abbé de Bousey pour l'année 1767 et 1768</p>
                   </event>
                </listEvent>
             </person>
             <person xml:id="laGalaiziereBarth">
-               <persName><surname>Chaumont de La
-                     Galaizière</surname><forename>Barthélemy-Louis-Martin</forename></persName>
+               <persName><surname>Chaumont de La Galaizière</surname><forename>Barthélemy-Louis-Martin</forename></persName>
                <birth when="1737"/>
                <death when="1808"/>
                <listEvent>
@@ -2426,27 +2247,17 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             </person>
             <person xml:id="lambert">
                <!-- todo vérif -->
-               <persName><surname>Saint-Lambert</surname><forename>Jean-François</forename><roleName>marquis
-                     de</roleName></persName>
+               <persName><surname>Saint-Lambert</surname><forename>Jean-François</forename><roleName>marquis de</roleName></persName>
                <birth when="1716"/>
                <death when="1803"/>
                <listEvent>
                   <event>
-                     <p>Auteur recueil poétique des Saisons, chef d'oeuvre de la poésie descriptive
-                        du XVIIIe siècle. Il est aussi en 1765 l'auteur d'un Essai sur le luxe. Issu
-                        d’une famille noble mais modeste, Jean-François de Saint-Lambert fit ses
-                        études au collège de Pont-à-Mousson puis servit dans les gardes lorraines du
-                        roi Stanislas Leszczyński, avant de devenir grand-maître de sa garde-robe.
-                        Il fut d'abord remarqué par la Marquise de Boufflers jusqu'à en devenir
-                        l'amant puis devint proche de Voltaire jusqu'au décès de d'Émilie du
-                        Châtelet qui fut sa seconde maîtresse et qui mourut en 1749 après avoir mis
-                        au monde une petite fille conçue avec l'écrivain</p>
+                     <p>Auteur recueil poétique des Saisons, chef d'oeuvre de la poésie descriptive du XVIIIe siècle. Il est aussi en 1765 l'auteur d'un Essai sur le luxe. Issu d’une famille noble mais modeste, Jean-François de Saint-Lambert fit ses études au collège de Pont-à-Mousson puis servit dans les gardes lorraines du roi Stanislas Leszczyński, avant de devenir grand-maître de sa garde-robe. Il fut d'abord remarqué par la Marquise de Boufflers jusqu'à en devenir l'amant puis devint proche de Voltaire jusqu'au décès de d'Émilie du Châtelet qui fut sa seconde maîtresse et qui mourut en 1749 après avoir mis au monde une petite fille conçue avec l'écrivain</p>
                   </event>
                </listEvent>
             </person>
             <person xml:id="laMilliere">
-               <persName><surname>Chaumont de la
-                     Millière</surname><forename>Antoine-Louis</forename></persName>
+               <persName><surname>Chaumont de la Millière</surname><forename>Antoine-Louis</forename></persName>
                <birth when="1746"/>
                <death when="1803"/>
                <listEvent>
@@ -2462,12 +2273,10 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="laMilliereMlle">
-               <persName><surname>La Millière</surname><addName>M<hi rend="super">lle</hi>
-                     de</addName></persName>
+               <persName><surname>La Millière</surname><addName>M<hi rend="super">lle</hi> de</addName></persName>
             </person>
             <person xml:id="laMilliereMme">
-               <persName><surname>Héron de
-                     Villefosse</surname><forename>Charlotte-Élisabeth</forename></persName>
+               <persName><surname>Héron de Villefosse</surname><forename>Charlotte-Élisabeth</forename></persName>
                <birth when="1720"/>
                <!-- todo vers -->
                <death when="1771"/>
@@ -2476,15 +2285,12 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </state>
                <listEvent>
                   <event>
-                     <p>famille par alliance d'Antoine Martin Chaumont de la Galaizière (chancelier
-                        de Lorraine)</p>
+                     <p>famille par alliance d'Antoine Martin Chaumont de la Galaizière (chancelier de Lorraine)</p>
                   </event>
                </listEvent>
             </person>
             <person xml:id="langalleriMise">
-               <persName><surname>Constant de
-                     Rebecque</surname><forename>Angélique</forename><roleName>marquise de
-                     Langallerie</roleName></persName>
+               <persName><surname>Constant de Rebecque</surname><forename>Angélique</forename><roleName>marquise de Langallerie</roleName></persName>
                <birth when="1731"/>
                <death when="1772"/>
                <listEvent>
@@ -2492,8 +2298,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                      <p>épouse du marquis Gentil de Langallerie</p>
                   </event>
                   <event>
-                     <p>son époux est passé au service de roi de Pologne après avoir été au service
-                        de l'Empereur</p>
+                     <p>son époux est passé au service de roi de Pologne après avoir été au service de l'Empereur</p>
                   </event>
                </listEvent>
             </person>
@@ -2536,15 +2341,13 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="launayComm">
-               <persName><surname>Launay <hi rend="italic"
-                     >(père)</hi></surname><addName>M.</addName></persName>
+               <persName><surname>Launay <hi rend="italic">(père)</hi></surname><addName>M.</addName></persName>
                <state>
                   <p>commissaire des guerres</p>
                </state>
             </person>
             <person xml:id="launayFils">
-               <persName><surname>Launay <hi rend="italic"
-                     >(fils)</hi></surname><addName>M.</addName></persName>
+               <persName><surname>Launay <hi rend="italic">(fils)</hi></surname><addName>M.</addName></persName>
                <listEvent>
                   <event>
                      <p>fils de M. Launay et commissaire des guerres</p>
@@ -2579,8 +2382,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <persName><surname>Lefèvre</surname><addName>M.</addName></persName>
             </person>
             <person xml:id="legros">
-               <persName><surname>Legros</surname><addName>M<hi rend="super"
-                  >me</hi></addName></persName>
+               <persName><surname>Legros</surname><addName>M<hi rend="super">me</hi></addName></persName>
             </person>
             <person xml:id="leKain">
                <persName><surname>Le Kain</surname><forename>Henri Louis</forename></persName>
@@ -2623,12 +2425,10 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <!-- todo vers -->
                <listEvent>
                   <event>
-                     <p>Actif 1757-1810, jusqu'en 1776 en association avec sa mère la Veuve Antoine
-                        Leseure</p>
+                     <p>Actif 1757-1810, jusqu'en 1776 en association avec sa mère la Veuve Antoine Leseure</p>
                   </event>
                   <event>
-                     <p>imprimeur ordinaire du Roi (1757), de l'évêque. Chargé des impressions pour
-                        l'intendance et la Société royale et littéraire</p>
+                     <p>imprimeur ordinaire du Roi (1757), de l'évêque. Chargé des impressions pour l'intendance et la Société royale et littéraire</p>
                   </event>
                   <event>
                      <p>installé rue Saint-Dizier</p>
@@ -2659,13 +2459,11 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="leTexierElisabeth">
-               <persName><surname>Le
-                  Texier</surname><forename>Élisabeth-Henriette</forename></persName>
+               <persName><surname>Le Texier</surname><forename>Élisabeth-Henriette</forename></persName>
                <death when="1766"/>
                <listEvent>
                   <event>
-                     <p>épouse de M. Léopold de Bourcier de They, lieutenant colonel des Gardes du
-                        duc Léopold</p>
+                     <p>épouse de M. Léopold de Bourcier de They, lieutenant colonel des Gardes du duc Léopold</p>
                   </event>
                </listEvent>
             </person>
@@ -2689,8 +2487,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="ligneville">
-               <persName><surname>Ligniville</surname><forename>Henri-Honoré</forename><roleName>abbé
-                     et comte de</roleName></persName>
+               <persName><surname>Ligniville</surname><forename>Henri-Honoré</forename><roleName>abbé et comte de</roleName></persName>
                <!-- Pfister histoire de Nancy -->
                <death when="1765"/>
                <listEvent>
@@ -2700,13 +2497,10 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="lomont2">
-               <persName ref="#lomont"><surname>Chastelet</surname><forename>Florent Louis Marie
-                     du</forename></persName>
+               <persName ref="#lomont"><surname>Chastelet</surname><forename>Florent Louis Marie du</forename></persName>
             </person>
             <person xml:id="lomont">
-               <persName><persName>Lomont</persName><forename>Florent Louis Marie
-                     du</forename><surname>Chastelet</surname><roleName>comte
-                  de</roleName></persName>
+               <persName><persName>Lomont</persName><forename>Florent Louis Marie du</forename><surname>Chastelet</surname><roleName>comte de</roleName></persName>
                <birth when="1727"/>
                <death when="1793"/>
                <listEvent>
@@ -2720,8 +2514,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <death when="1765"/>
                <listEvent>
                   <event>
-                     <p>Directeur général des droits en régie des domaines de Lorraine et de Bar au
-                        plus tard vers 1762</p>
+                     <p>Directeur général des droits en régie des domaines de Lorraine et de Bar au plus tard vers 1762</p>
                   </event>
                   <event>
                      <p>Inspecteur général</p>
@@ -2773,8 +2566,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             </person>
             <person xml:id="louisXVI">
                <!-- todo garder cette dénomination OUI ou simplifier en Louis XVI (mais il ne l'est pas encore) ? -->
-               <persName><forename>Louis-Auguste</forename><surname>de France</surname><roleName>duc
-                     de Berry</roleName></persName>
+               <persName><forename>Louis-Auguste</forename><surname>de France</surname><roleName>duc de Berry</roleName></persName>
                <birth when="1754"/>
                <death when="1793"/>
                <listEvent>
@@ -2785,8 +2577,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             </person>
             <person xml:id="luceComte">
                <!-- todo faire un renvoi ? -->
-               <persName><surname>Chaumont</surname><forename>Jean
-                     Baptiste</forename><roleName>comte de Lucé</roleName></persName>
+               <persName><surname>Chaumont</surname><forename>Jean Baptiste</forename><roleName>comte de Lucé</roleName></persName>
                <birth when="1701"/>
                <death when="1777"/>
                <listEvent>
@@ -2810,8 +2601,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <persName><surname>Maisonneuve</surname><addName>M. de</addName></persName>
             </person>
             <person xml:id="malcuitMme">
-               <persName><surname>Malcuit</surname><addName>M<hi rend="super"
-                  >me</hi></addName></persName>
+               <persName><surname>Malcuit</surname><addName>M<hi rend="super">me</hi></addName></persName>
                <death when="1766"/>
                <listEvent>
                   <event>
@@ -2820,8 +2610,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="marchandMlle">
-               <persName><surname>Marchand</surname><addName>M<hi rend="super"
-                  >lle</hi></addName></persName>
+               <persName><surname>Marchand</surname><addName>M<hi rend="super">lle</hi></addName></persName>
             </person>
             <person xml:id="marcol">
                <persName><surname>Marcol</surname><forename>Pascal Joseph de</forename></persName>
@@ -2838,9 +2627,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="mareil">
-               <persName><surname>Chaumont de la
-                     Millière</surname><forename>Dieudonné</forename><roleName>comte de
-                     Saint-Dié</roleName></persName>
+               <persName><surname>Chaumont de la Millière</surname><forename>Dieudonné</forename><roleName>comte de Saint-Dié</roleName></persName>
                <birth when="1708"/>
                <death when="1768"/>
                <listEvent>
@@ -2935,8 +2722,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <persName><surname>Mengin</surname><forename>Marguerite</forename></persName>
                <listEvent>
                   <event>
-                     <p>pensionnaire au refuge de la fondation de l'abbé de Bousey pour l'année
-                        1767</p>
+                     <p>pensionnaire au refuge de la fondation de l'abbé de Bousey pour l'année 1767</p>
                   </event>
                </listEvent>
             </person>
@@ -3010,8 +2796,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="mirebeck">
-               <persName><surname>Mirebeck</surname><forename>Ignace-Frederic
-                  de</forename></persName>
+               <persName><surname>Mirebeck</surname><forename>Ignace-Frederic de</forename></persName>
                <birth when="1732"/>
                <death when="1818"/>
                <state>
@@ -3024,8 +2809,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="mittie">
-               <persName><surname>Mittié <hi rend="italic"
-                     >(fils)</hi></surname><addName>M.</addName></persName>
+               <persName><surname>Mittié <hi rend="italic">(fils)</hi></surname><addName>M.</addName></persName>
                <state>
                   <p>Médecin</p>
                </state>
@@ -3048,8 +2832,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </state>
                <listEvent>
                   <event>
-                     <p>Médecin du Roi Stanislas à la cour de Nancy, membre de l'Académie de
-                        Stanislas de 1766 à 1793</p>
+                     <p>Médecin du Roi Stanislas à la cour de Nancy, membre de l'Académie de Stanislas de 1766 à 1793</p>
                   </event>
                   <event>
                      <p>régent de la Faculté de médecine de Paris</p>
@@ -3070,8 +2853,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </state>
             </person>
             <person xml:id="monboisThibault">
-               <persName><surname>Monbois</surname><forename>François-Timothé-Thibault
-                  de</forename></persName>
+               <persName><surname>Monbois</surname><forename>François-Timothé-Thibault de</forename></persName>
                <listEvent>
                   <event>
                      <p>Maître des comptes</p>
@@ -3085,8 +2867,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="monboisThibaultMme">
-               <persName><surname>Friant</surname><addName>M<hi rend="super"
-                  >me</hi></addName></persName>
+               <persName><surname>Friant</surname><addName>M<hi rend="super">me</hi></addName></persName>
                <listEvent>
                   <event>
                      <p>Épouse de Thibault de Monbois, maître des comptes.</p>
@@ -3135,8 +2916,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="najacMme">
-               <persName><surname>Macalla de
-                  Dampierre</surname><forename>Marie-Thérèse</forename></persName>
+               <persName><surname>Macalla de Dampierre</surname><forename>Marie-Thérèse</forename></persName>
                <birth when="1714"/>
                <death when="1794"/>
                <listEvent>
@@ -3168,8 +2948,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="niceville">
-               <persName><surname>Nicéville</surname><forename>Charles-Martin
-                  de</forename></persName>
+               <persName><surname>Nicéville</surname><forename>Charles-Martin de</forename></persName>
                <birth when="1721"/>
                <death when="1781"/>
                <listEvent>
@@ -3188,8 +2967,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <persName><surname>Nicolas</surname><addName>M.</addName></persName>
             </person>
             <person xml:id="noaillesMme">
-               <persName><surname>Arpajon</surname><forename>Anne Claude Louise
-                     d'</forename><roleName>comtesse de Noailles</roleName></persName>
+               <persName><surname>Arpajon</surname><forename>Anne Claude Louise d'</forename><roleName>comtesse de Noailles</roleName></persName>
                <birth when="1729"/>
                <death when="1794"/>
                <listEvent>
@@ -3199,8 +2977,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="noelVe">
-               <persName><surname>Noël</surname><addName>V<hi rend="super"
-                  >e</hi></addName></persName>
+               <persName><surname>Noël</surname><addName>V<hi rend="super">e</hi></addName></persName>
             </person>
             <person xml:id="noel">
                <persName><surname>Noël</surname><addName>M.</addName></persName>
@@ -3246,8 +3023,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <persName><surname>Philibert</surname><roleName>baron de</roleName></persName>
             </person>
             <person xml:id="philippeInfant">
-               <persName><forename>Philippe d'</forename><surname>Espagne</surname><roleName>duc de
-                     Parme</roleName></persName>
+               <persName><forename>Philippe d'</forename><surname>Espagne</surname><roleName>duc de Parme</roleName></persName>
                <state>
                   <p>infant d'Espagne</p>
                </state>
@@ -3267,8 +3043,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="pileCatherine">
-               <persName><surname>Pile</surname><forename>Catherine</forename><addName type="say">la
-                     fortune</addName></persName>
+               <persName><surname>Pile</surname><forename>Catherine</forename><addName type="say">la fortune</addName></persName>
             </person>
             <person xml:id="pitoux">
                <persName><surname>Pitoux</surname><addName>M.</addName></persName>
@@ -3312,8 +3087,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <persName><surname>Porquet</surname><addName>M.</addName></persName>
             </person>
             <person xml:id="potesDlle">
-               <persName><surname>Potès</surname><addName>M<hi rend="super">lle</hi>
-                  de</addName></persName>
+               <persName><surname>Potès</surname><addName>M<hi rend="super">lle</hi> de</addName></persName>
             </person>
             <person xml:id="potier">
                <persName><surname>Potier</surname><forename>Jean-Jacques</forename></persName>
@@ -3334,32 +3108,27 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             </person>
 
             <person xml:id="princeBrunswic">
-               <persName><surname>Brunswick-Lünebourg</surname><forename>Charles-Guillaume-Ferdinand
-                     de</forename><roleName>prince héréditaire de Brunswick</roleName></persName>
+               <persName><surname>Brunswick-Lünebourg</surname><forename>Charles-Guillaume-Ferdinand de</forename><roleName>prince héréditaire de Brunswick</roleName></persName>
                <birth when="1735"/>
                <death when="1806"/>
                <listEvent>
                   <event>
-                     <p>Général allemand, neveu du roi de Prusse Frédéric le Grand. Voyage en France
-                        en 1766</p>
+                     <p>Général allemand, neveu du roi de Prusse Frédéric le Grand. Voyage en France en 1766</p>
                   </event>
                </listEvent>
             </person>
             <person xml:id="princeHesse">
-               <persName><surname>Hesse-Cassel</surname><forename>Charles
-                     de</forename><roleName>prince de Hesse</roleName></persName>
+               <persName><surname>Hesse-Cassel</surname><forename>Charles de</forename><roleName>prince de Hesse</roleName></persName>
                <birth when="1744"/>
                <death when="1836"/>
                <listEvent>
                   <event>
-                     <p>Prince non régnant, fils du Landgrave de Hesse-Cassel Frédéric II et
-                        gouverneur (Statthalter) de la principauté de Schleswig-Holstein</p>
+                     <p>Prince non régnant, fils du Landgrave de Hesse-Cassel Frédéric II et gouverneur (Statthalter) de la principauté de Schleswig-Holstein</p>
                   </event>
                </listEvent>
             </person>
             <person xml:id="princeNassau">
-               <persName><surname>Nassau-Weilburg</surname><forename>Charles Christian
-                     de</forename><roleName>prince de Nassau</roleName></persName>
+               <persName><surname>Nassau-Weilburg</surname><forename>Charles Christian de</forename><roleName>prince de Nassau</roleName></persName>
                <birth when="1735"/>
                <death when="1788"/>
                <listEvent>
@@ -3408,8 +3177,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             </person>
 
             <person xml:id="prevostFille">
-               <persName><surname>Prevost <hi rend="italic">(fille)</hi></surname><addName>M<hi
-                        rend="super">me</hi></addName></persName>
+               <persName><surname>Prevost <hi rend="italic">(fille)</hi></surname><addName>M<hi rend="super">me</hi></addName></persName>
             </person>
             <person xml:id="prevostMme">
                <persName><surname>Le Maistre</surname><forename>Marie</forename></persName>
@@ -3450,8 +3218,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <persName><surname>Renel</surname><forename>Marianne</forename></persName>
                <listEvent>
                   <event>
-                     <p>pensionnaire au refuge de la fondation de l'abbé de Bousey pour l'année
-                        1767</p>
+                     <p>pensionnaire au refuge de la fondation de l'abbé de Bousey pour l'année 1767</p>
                   </event>
                </listEvent>
             </person>
@@ -3465,8 +3232,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             </person>
             <person xml:id="riocourt">
                <!-- todo renvoi ? -->
-               <persName><persName>Riocourt</persName><forename>Nicolas-Joseph</forename><surname>Dubois</surname><roleName>baron
-                     de</roleName></persName>
+               <persName><persName>Riocourt</persName><forename>Nicolas-Joseph</forename><surname>Dubois</surname><roleName>baron de</roleName></persName>
                <birth when="1688"/>
                <death when="1757"/>
                <listEvent>
@@ -3477,18 +3243,15 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                      <p>conseiller d’État et des Finances en 1732</p>
                   </event>
                   <event>
-                     <p>commissaire du duc François III pour la cession de la Lorraine au roi de
-                        France en 1737 par l’intermédiaire du roi Stanislas</p>
+                     <p>commissaire du duc François III pour la cession de la Lorraine au roi de France en 1737 par l’intermédiaire du roi Stanislas</p>
                   </event>
                </listEvent>
             </person>
             <person xml:id="riocourtMme">
-               <persName><surname>Hosselise</surname><addName>M<hi rend="super">me</hi>
-                  d'</addName></persName>
+               <persName><surname>Hosselise</surname><addName>M<hi rend="super">me</hi> d'</addName></persName>
                <listEvent>
                   <event>
-                     <p>épouse de Nicolas François de Riocourt (premier président de la chambre des
-                        comptes de Lorraine)</p>
+                     <p>épouse de Nicolas François de Riocourt (premier président de la chambre des comptes de Lorraine)</p>
                   </event>
                </listEvent>
             </person>
@@ -3501,8 +3264,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="rochechouartC">
-               <persName><surname>Rochechouart</surname><forename>Jean-François-Joseph</forename><roleName>cardinal
-                     de</roleName></persName>
+               <persName><surname>Rochechouart</surname><forename>Jean-François-Joseph</forename><roleName>cardinal de</roleName></persName>
                <birth when="1718"/>
                <death when="1777"/>
                <listEvent>
@@ -3539,8 +3301,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="rorteMme">
-               <persName><surname>Aucy de Vioncourt</surname><forename>Marie
-                  d'</forename></persName>
+               <persName><surname>Aucy de Vioncourt</surname><forename>Marie d'</forename></persName>
                <death when="1765"/>
                <listEvent>
                   <event>
@@ -3580,8 +3341,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </state>
             </person>
             <person xml:id="sanlaville">
-               <persName><surname>Sanlaville</surname><addName>M<hi rend="super"
-                  >me</hi></addName></persName>
+               <persName><surname>Sanlaville</surname><addName>M<hi rend="super">me</hi></addName></persName>
             </person>
             <person xml:id="saulxMis">
                <persName><surname>Saulx</surname><roleName>M. le marquis de</roleName></persName>
@@ -3596,12 +3356,10 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <persName><persName>Secrétaire de Nicolas Durival, le</persName></persName>
             </person>
             <person xml:id="seguin">
-               <persName><surname>Séguin</surname><addName>M<hi rend="super"
-                  >me</hi></addName></persName>
+               <persName><surname>Séguin</surname><addName>M<hi rend="super">me</hi></addName></persName>
                <listEvent>
                   <event>
-                     <p>pensionnaire au refuge de la fondation de l'abbé de Bousey pour l'année
-                        1767</p>
+                     <p>pensionnaire au refuge de la fondation de l'abbé de Bousey pour l'année 1767</p>
                   </event>
                </listEvent>
             </person>
@@ -3650,12 +3408,10 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             </person>
 
             <person xml:id="sirejean">
-               <persName><surname>Sirejean <hi rend="italic"
-                     >(père)</hi></surname><addName>M.</addName></persName>
+               <persName><surname>Sirejean <hi rend="italic">(père)</hi></surname><addName>M.</addName></persName>
             </person>
             <person xml:id="sirejeanfils">
-               <persName><surname>Sirejean <hi rend="italic"
-                     >(fils)</hi></surname><addName>M.</addName></persName>
+               <persName><surname>Sirejean <hi rend="italic">(fils)</hi></surname><addName>M.</addName></persName>
             </person>
             <person xml:id="sivry">
                <persName><surname>Sivry</surname><forename>Pierre de</forename></persName>
@@ -3694,8 +3450,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="sontkenJeanJoseph">
-               <persName><surname>Sontken de
-                  Coesfeld</surname><forename>Jean-Joseph</forename></persName>
+               <persName><surname>Sontken de Coesfeld</surname><forename>Jean-Joseph</forename></persName>
                <state>
                   <p>sculpteur</p>
                </state>
@@ -3725,9 +3480,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="stainville">
-               <persName><surname>Choiseul
-                     Stainville</surname><forename>Jacques-Philippe</forename><roleName>comte puis
-                     duc de</roleName></persName>
+               <persName><surname>Choiseul Stainville</surname><forename>Jacques-Philippe</forename><roleName>comte puis duc de</roleName></persName>
                <birth when="1727"/>
                <death when="1789"/>
                <listEvent>
@@ -3738,9 +3491,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             </person>
 
             <person xml:id="stainvilleMme">
-               <persName><surname>Clermont
-                     d'Amboise</surname><forename>Thomasse-Thérèse</forename><roleName>comtesse de
-                     Stainville</roleName></persName>
+               <persName><surname>Clermont d'Amboise</surname><forename>Thomasse-Thérèse</forename><roleName>comtesse de Stainville</roleName></persName>
                <birth when="1746"/>
                <death when="1789"/>
                <listEvent>
@@ -3758,8 +3509,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <death when="1766"/>
                <listEvent>
                   <event>
-                     <p>Roi de Pologne et grand-duc de Lithuanie (1704-1709), puis duc de Lorraine
-                        (1737-1766)</p>
+                     <p>Roi de Pologne et grand-duc de Lithuanie (1704-1709), puis duc de Lorraine (1737-1766)</p>
                   </event>
                   <event>
                      <p>père de la reine de France Marie Leszczynska</p>
@@ -3771,8 +3521,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <persName><surname>Steinbock</surname><roleName>comte de</roleName></persName>
             </person>
             <person xml:id="stFlorentinComte">
-               <persName><surname>Saint-Florentin</surname><forename>Louis-Phélypeaux</forename><roleName>comte
-                     de</roleName></persName>
+               <persName><surname>Saint-Florentin</surname><forename>Louis-Phélypeaux</forename><roleName>comte de</roleName></persName>
                <birth when="1705"/>
                <death when="1777"/>
                <listEvent>
@@ -3782,8 +3531,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="stLambertMere">
-               <persName><surname>Saint-Lambert</surname><addName>M<hi rend="super">me</hi>
-                     de</addName></persName>
+               <persName><surname>Saint-Lambert</surname><addName>M<hi rend="super">me</hi> de</addName></persName>
                <listEvent>
                   <event>
                      <p>Mère de Jean François de Saint-Lambert</p>
@@ -3795,16 +3543,13 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <persName><persName>Saint-Nicolas</persName><addName>curé de</addName></persName>
             </person>
             <person xml:id="stRochVicaire">
-               <persName><persName>Saint-Roch</persName><roleName>M. le vicaire
-                  de</roleName></persName>
+               <persName><persName>Saint-Roch</persName><roleName>M. le vicaire de</roleName></persName>
             </person>
             <person xml:id="stSimon">
                <persName><surname>Saint-Simon</surname><addName>M. de</addName></persName>
             </person>
             <person xml:id="suffraBesancon">
-               <persName><surname>Franchet de
-                     Rans</surname><forename>Claude-Ignace-François-Xavier-Alexis
-                  de</forename></persName>
+               <persName><surname>Franchet de Rans</surname><forename>Claude-Ignace-François-Xavier-Alexis de</forename></persName>
                <state>
                   <p>suffragant de Besançon</p>
                </state>
@@ -3818,8 +3563,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                      <p>abbé commendataire du prieuré de Fontaine-les-Luxeuil</p>
                   </event>
                   <event>
-                     <p>obtient graduellement toutes les dignités du chapitre métropolitain de
-                        Besançon</p>
+                     <p>obtient graduellement toutes les dignités du chapitre métropolitain de Besançon</p>
                   </event>
                </listEvent>
             </person>
@@ -3839,8 +3583,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </state>
             </person>
             <person xml:id="tervenus">
-               <persName><surname>Tervenus</surname><forename>Charles-François</forename><roleName>abbé
-                     de</roleName></persName>
+               <persName><surname>Tervenus</surname><forename>Charles-François</forename><roleName>abbé de</roleName></persName>
                <listEvent>
                   <event>
                      <p>Curé de la paroisse Saint-Roch à Nancy, prêtre docteur en théologie</p>
@@ -3848,18 +3591,15 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="thibault">
-               <persName><surname>Thibault de
-                     Montbois</surname><forename>François-Timothée</forename></persName>
+               <persName><surname>Thibault de Montbois</surname><forename>François-Timothée</forename></persName>
                <birth when="1701"/>
                <death when="1774"/>
                <listEvent>
                   <event>
-                     <p>membre fondateur de l'Académie (1751) ; sous directeur (1754,1761) et
-                        directeur (1758,1764)</p>
+                     <p>membre fondateur de l'Académie (1751) ; sous directeur (1754,1761) et directeur (1758,1764)</p>
                   </event>
                   <event>
-                     <p>Lieutenant général de la police civile et criminelle du baillage de Nancy
-                        (1753-1760)</p>
+                     <p>Lieutenant général de la police civile et criminelle du baillage de Nancy (1753-1760)</p>
                   </event>
                   <event>
                      <p>Procureur Général de la Chambre des Comptes (1760-1767)</p>
@@ -3867,8 +3607,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="thibaultMme">
-               <persName><surname>Thibault</surname><addName>M<hi rend="super"
-                  >me</hi></addName></persName>
+               <persName><surname>Thibault</surname><addName>M<hi rend="super">me</hi></addName></persName>
             </person>
             <person xml:id="thoilleyMarguerite">
                <persName><surname>Thoilley</surname><forename>Marguerite</forename></persName>
@@ -3893,8 +3632,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <persName><surname>Turique</surname><roleName>abbé de</roleName></persName>
             </person>
             <person xml:id="ubexi">
-               <persName><surname>Renault
-                  d'Ubexi</surname><forename>François-Joseph</forename></persName>
+               <persName><surname>Renault d'Ubexi</surname><forename>François-Joseph</forename></persName>
                <birth when="1735"/>
                <!-- todo vers -->
                <listEvent>
@@ -3907,8 +3645,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <persName><surname>Uriot</surname><addName>M.</addName></persName>
             </person>
             <person xml:id="valbelleMise">
-               <persName><surname>Valbelle</surname><roleName>M<hi rend="super">me</hi> la marquise
-                     de</roleName></persName>
+               <persName><surname>Valbelle</surname><roleName>M<hi rend="super">me</hi> la marquise de</roleName></persName>
             </person>
             <person xml:id="vannson">
                <persName><surname>Vannson</surname><addName>M.</addName></persName>
@@ -3920,8 +3657,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <persName><persName>Vice Chancelier</persName><addName>le</addName></persName>
             </person>
             <person xml:id="vigneron">
-               <persName><surname>Vigneron</surname><forename>Charles-François
-                  de</forename></persName>
+               <persName><surname>Vigneron</surname><forename>Charles-François de</forename></persName>
                <state>
                   <p>président à la cour</p>
                </state>
@@ -3938,8 +3674,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="vigneronMme">
-               <persName><surname>Vigneron</surname><addName>M<hi rend="super"
-                  >me</hi></addName></persName>
+               <persName><surname>Vigneron</surname><addName>M<hi rend="super">me</hi></addName></persName>
                <listEvent>
                   <event>
                      <p>Femme du premier président de la cour souverain de de Lorraine</p>
@@ -3947,8 +3682,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="villarsDuchesse">
-               <persName><surname>Noailles</surname><forename>Amable Gabrielle
-                     de</forename><roleName>duchesse de Villars</roleName></persName>
+               <persName><surname>Noailles</surname><forename>Amable Gabrielle de</forename><roleName>duchesse de Villars</roleName></persName>
                <birth when="1706"/>
                <death when="1771"/>
             </person>
@@ -3967,14 +3701,12 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="virionVe">
-               <persName><surname>Virion</surname><addName>M<hi rend="super"
-                  >me</hi></addName></persName>
+               <persName><surname>Virion</surname><addName>M<hi rend="super">me</hi></addName></persName>
                <birth when="1713"/>
                <death when="1764"/>
                <listEvent>
                   <event>
-                     <p>Veuve du pharmacien Jean-Claude Virion installé rue Saint-Dizier,
-                        dépositaire général des eaux minérales pour Nancy</p>
+                     <p>Veuve du pharmacien Jean-Claude Virion installé rue Saint-Dizier, dépositaire général des eaux minérales pour Nancy</p>
                   </event>
                </listEvent>
             </person>
@@ -3985,18 +3717,15 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </state>
             </person>
             <person xml:id="vissembergMarianne">
-               <persName><surname>Legal de
-                  Vissemberg</surname><forename>Marianne</forename></persName>
+               <persName><surname>Legal de Vissemberg</surname><forename>Marianne</forename></persName>
             </person>
             <person xml:id="voltaire">
-               <persName><surname>Arouet</surname><forename>François-Marie</forename><addName
-                     type="say">Voltaire</addName></persName>
+               <persName><surname>Arouet</surname><forename>François-Marie</forename><addName type="say">Voltaire</addName></persName>
                <birth when="1694"/>
                <death when="1778"/>
                <listEvent>
                   <event>
-                     <p>Tragédien, philosophe et littérateur emblématique des Lumières
-                        françaises</p>
+                     <p>Tragédien, philosophe et littérateur emblématique des Lumières françaises</p>
                   </event>
                </listEvent>
             </person>
@@ -4007,16 +3736,13 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </state>
             </person>
             <person xml:id="willeminAbbe">
-               <persName><surname>Willemin</surname><forename>Joseph-Bernard</forename><roleName>abbé
-                     de</roleName></persName>
+               <persName><surname>Willemin</surname><forename>Joseph-Bernard</forename><roleName>abbé de</roleName></persName>
             </person>
             <person xml:id="zuilyComte">
                <persName><surname>Zuily</surname><roleName>M. le comte de</roleName></persName>
             </person>
             <person xml:id="deMalleloy">
-               <persName><surname>Collignon de
-                     Malleloy</surname><forename>Léopold</forename><roleName>comte de
-                     Malleloy</roleName></persName>
+               <persName><surname>Collignon de Malleloy</surname><forename>Léopold</forename><roleName>comte de Malleloy</roleName></persName>
                <listEvent>
                   <event>
                      <p>Chambellan du duc Léopold</p>
@@ -4032,8 +3758,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <death when="1794"/>
                <listEvent>
                   <event>
-                     <p>D'origine allemande, actif 1754-1781 par rachat du fonds d'Abel-Denis
-                        Cusson</p>
+                     <p>D'origine allemande, actif 1754-1781 par rachat du fonds d'Abel-Denis Cusson</p>
                   </event>
                   <event>
                      <p>imprimeur du roi (1757), de l'évêque, de la congrégation de Saint-Vanne</p>
@@ -4044,15 +3769,13 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="maitreBasseOeuvres">
-               <persName><persName>Maître des basses
-                  œuvres</persName><addName>le</addName></persName>
+               <persName><persName>Maître des basses œuvres</persName><addName>le</addName></persName>
             </person>
             <!--<person xml:id="deLaGal"> M. le Chancelier
                <persName>M. de La Galaiziere</persName>
             </person>-->
             <person xml:id="cdtGnl">
-               <persName><persName>Commandant général de la
-                  province</persName><addName>le</addName></persName>
+               <persName><persName>Commandant général de la province</persName><addName>le</addName></persName>
             </person>
             <person xml:id="maitreComptes">
                <persName><surname>Malcuit</surname><forename>Hubert</forename></persName>
@@ -4065,14 +3788,12 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="ltGnlBauge">
-               <persName><surname>Lieutenant général du
-                  Bauge</surname><addName>le</addName></persName>
+               <persName><surname>Lieutenant général du Bauge</surname><addName>le</addName></persName>
             </person>
 
 
             <person xml:id="thouveninFille">
-               <persName><surname>Huilier</surname><addName>M<hi rend="super"
-                  >me</hi></addName></persName>
+               <persName><surname>Huilier</surname><addName>M<hi rend="super">me</hi></addName></persName>
                <listEvent>
                   <event>
                      <p>fille de M. Thouvenin</p>
@@ -4080,8 +3801,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </listEvent>
             </person>
             <person xml:id="auroyMise">
-               <persName><surname>Foucault</surname><forename>Anne Françoise
-                     de</forename><roleName>marquise de Saint-Germain Beaupré</roleName></persName>
+               <persName><surname>Foucault</surname><forename>Anne Françoise de</forename><roleName>marquise de Saint-Germain Beaupré</roleName></persName>
                <birth when="1718"/>
                <death when="1766"/>
                <listEvent>
@@ -4131,12 +3851,10 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <persName><surname>Mercator</surname><forename>Gérard</forename></persName>
             </person>
             <person xml:id="moryDElvange">
-               <persName><surname>Mory d'Elvange</surname><forename>François-Dominique
-                  de</forename></persName>
+               <persName><surname>Mory d'Elvange</surname><forename>François-Dominique de</forename></persName>
             </person>
             <person xml:id="sonnini">
-               <persName><surname>Sonnini de
-                     Manoncourt</surname><forename>Charles-Nicolas-Sigisbert</forename></persName>
+               <persName><surname>Sonnini de Manoncourt</surname><forename>Charles-Nicolas-Sigisbert</forename></persName>
             </person>
 
             <!-- encart -->
@@ -4150,8 +3868,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <persName><surname>Opalinska</surname><forename>Catherine</forename></persName>
             </person>
             <person xml:id="marieJosepheDeSaxe">
-               <persName><surname>Saxe</surname><forename>Marie Josèphe
-                     de</forename><roleName>Madame la Dauphine</roleName></persName>
+               <persName><surname>Saxe</surname><forename>Marie Josèphe de</forename><roleName>Madame la Dauphine</roleName></persName>
                <birth when="1731"/>
                <death when="1767"/>
                <listEvent>
@@ -4190,9 +3907,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                      <p>Conseiller à la Cour impériale</p>
                   </event>
                   <event>
-                     <p>membre correspondant de l'Académie de Strasbourg, de la Société des
-                        antiquaires de France et l'un des fondateurs de la Société d'archéologie de
-                        Lorraine</p>
+                     <p>membre correspondant de l'Académie de Strasbourg, de la Société des antiquaires de France et l'un des fondateurs de la Société d'archéologie de Lorraine</p>
                   </event>
                </listEvent>
             </person>
@@ -4219,8 +3934,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <location>
                   <geo>48.69807,6.18542</geo>
                </location>
-               <desc>Le terrain est attribué à l'établissement de la Pépinière royale par arrêt du
-                  conseil des finances du 26 octobre 1765.</desc>
+               <desc>Le terrain est attribué à l'établissement de la Pépinière royale par arrêt du conseil des finances du 26 octobre 1765.</desc>
             </place>
             <place xml:id="bonsecours" type="religious">
                <placeName>Nancy</placeName>
@@ -4228,14 +3942,12 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <location>
                   <geo>48.6765536,6.1994878</geo>
                </location>
-               <desc>Construite en 1738 sur l'emplacement de la chapelle Notre-Dame-de-la-Victoire
-                  (1484).</desc>
+               <desc>Construite en 1738 sur l'emplacement de la chapelle Notre-Dame-de-la-Victoire (1484).</desc>
             </place>
             <place xml:id="nancyFabriques">
                <placeName>Nancy</placeName>
                <placeName>Fabriques de Nancy</placeName>
-               <desc>Ensemble des biens matériels d'une église paroissiale. A VERIFIER LE SENS
-                  ICI</desc>
+               <desc>Ensemble des biens matériels d'une église paroissiale. A VERIFIER LE SENS ICI</desc>
             </place>
             <place xml:id="nancyJardin" type="civil">
                <placeName>Nancy</placeName>
@@ -4251,9 +3963,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <location>
                   <geo>48.696289,6.18809063321451</geo>
                </location>
-               <desc>Construites à partir de 1764 près de la porte Sainte-Catherine. Avant cette
-                  date l'allusion aux casernes fait référence en particulier aux casernes qui
-                  étaient alors sur le site de l'actuel Rectorat.</desc>
+               <desc>Construites à partir de 1764 près de la porte Sainte-Catherine. Avant cette date l'allusion aux casernes fait référence en particulier aux casernes qui étaient alors sur le site de l'actuel Rectorat.</desc>
             </place>
             <place xml:id="nancyVenerie">
                <placeName>Nancy</placeName>
@@ -4273,8 +3983,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <location>
                   <geo>48.70013,6.17806</geo>
                </location>
-               <desc>La construction de la citadelle remonte à 1634 alors que la France occupait
-                  Nancy.</desc>
+               <desc>La construction de la citadelle remonte à 1634 alors que la France occupait Nancy.</desc>
             </place>
             <place xml:id="nancyPrimatiale" type="religious">
                <placeName>Nancy</placeName>
@@ -4282,9 +3991,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <location>
                   <geo>48.69142, 6.18595</geo>
                </location>
-               <desc>La construction débute en 1607, interrompue puis reprise en 1703, mais c'est à
-                  Stanislas qu'on doit l'achèvemment de ce chantier en 1742. Devient
-                  Cathédrale-Primatiale en 1777.</desc>
+               <desc>La construction débute en 1607, interrompue puis reprise en 1703, mais c'est à Stanislas qu'on doit l'achèvemment de ce chantier en 1742. Devient Cathédrale-Primatiale en 1777.</desc>
             </place>
             <place xml:id="nancyHDV" type="civil">
                <placeName>Nancy</placeName>
@@ -4292,9 +3999,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <location>
                   <geo>48.69309,6.18358</geo>
                </location>
-               <desc>La construction du nouvel Hôtel de Ville débute en 1752 et s'achève en 1755.
-                  L'ancien était près de Saint-Sébastien, entre la rue des Ponts et des
-                  Quatres-Églises, il fut démoli en 1752.</desc>
+               <desc>La construction du nouvel Hôtel de Ville débute en 1752 et s'achève en 1755. L'ancien était près de Saint-Sébastien, entre la rue des Ponts et des Quatres-Églises, il fut démoli en 1752.</desc>
             </place>
             <place xml:id="nancyPlaceRoyale" type="civil">
                <placeName>Nancy</placeName>
@@ -4302,9 +4007,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <location>
                   <geo>48.693644, 6.183240</geo>
                </location>
-               <desc>En 1752, le programme des travaux destinés à créer une grande place qui
-                  réunirait les deux villes est entériné. La place est achevée avec l'érection de la
-                  statue de Louis XV le 18 novembre 1755.</desc>
+               <desc>En 1752, le programme des travaux destinés à créer une grande place qui réunirait les deux villes est entériné. La place est achevée avec l'érection de la statue de Louis XV le 18 novembre 1755.</desc>
             </place>
             <place xml:id="nancyMarche" type="civil">
                <placeName>Nancy</placeName>
@@ -4312,8 +4015,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <location>
                   <geo>48.68910,6.18200</geo>
                </location>
-               <desc>Centre de la ville neuve voulue par Charles III, l'ancien Hôtel de ville y
-                  était érigé.</desc>
+               <desc>Centre de la ville neuve voulue par Charles III, l'ancien Hôtel de ville y était érigé.</desc>
             </place>
             <place xml:id="nancyMinimes" type="religious">
                <placeName>Nancy</placeName>
@@ -4337,9 +4039,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <location>
                   <geo>48.67650684045987,6.198976635932922</geo>
                </location>
-               <desc>Établi en 1611, près de la chapelle de Notre-Dame-de-la-Victoire, Stanislas le
-                  fait reconstruire après l'édification de la nouvelle église de Bonsecours en
-                  1738.</desc>
+               <desc>Établi en 1611, près de la chapelle de Notre-Dame-de-la-Victoire, Stanislas le fait reconstruire après l'édification de la nouvelle église de Bonsecours en 1738.</desc>
             </place>
             <place xml:id="boudonvilleAqueduc" type="civil">
                <placeName>Nancy</placeName>
@@ -4347,8 +4047,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <location>
                   <geo>48.69588944524845,6.176145672798157</geo>
                </location>
-               <desc>Un aqueduc amenait l'eau des pentes de Boudonville et passait approximativement
-                  entre le Bastion de Salm et de Danemark pour aller rue de la Source.</desc>
+               <desc>Un aqueduc amenait l'eau des pentes de Boudonville et passait approximativement entre le Bastion de Salm et de Danemark pour aller rue de la Source.</desc>
             </place>
             <place xml:id="nancyCongregation" type="religious">
                <placeName>Nancy</placeName>
@@ -4364,9 +4063,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <location>
                   <geo>48.69305,6.17843</geo>
                </location>
-               <desc>Le 9 septembre 1764 les officiers municipaux obtiennent l'autorisation
-                  d'exploiter à nouveau une ardoisière dans les fossés près de la Vénerie, on
-                  suppose que c'est à ce site que Durival fait allusion.</desc>
+               <desc>Le 9 septembre 1764 les officiers municipaux obtiennent l'autorisation d'exploiter à nouveau une ardoisière dans les fossés près de la Vénerie, on suppose que c'est à ce site que Durival fait allusion.</desc>
             </place>
             <place xml:id="nancyRueCongregation" type="civil">
                <placeName>Nancy</placeName>
@@ -4391,8 +4088,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <location>
                   <geo>48.69561,6.1801</geo>
                </location>
-               <desc>L'ancienne église est rasée et remplacée par l'église actuelle (par Prosper
-                  Morey à la fin du XIXe siècle).</desc>
+               <desc>L'ancienne église est rasée et remplacée par l'église actuelle (par Prosper Morey à la fin du XIXe siècle).</desc>
             </place>
             <place xml:id="nancyPlaceStEpvre" type="civil">
                <placeName>Nancy</placeName>
@@ -4407,8 +4103,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <location>
                   <geo>48.68732,6.18251</geo>
                </location>
-               <desc>Église du prieuré des Bénedictins, fondée en 1617, prend le titre d'abbaye en
-                  1718.</desc>
+               <desc>Église du prieuré des Bénedictins, fondée en 1617, prend le titre d'abbaye en 1718.</desc>
             </place>
             <place xml:id="nancyStSebastien" type="religious">
                <placeName>Nancy</placeName>
@@ -4432,8 +4127,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <location>
                   <geo>48.6908736324152,6.182100176811218</geo>
                </location>
-               <desc>Fondé en 1615. Accolé à l'église Saint-Roch, entre la rue des Carmes ou était
-                  son entrée, et la rue Saint-Dizier</desc>
+               <desc>Fondé en 1615. Accolé à l'église Saint-Roch, entre la rue des Carmes ou était son entrée, et la rue Saint-Dizier</desc>
             </place>
             <!-- idem Nancy Collège des Jésuites -->
             <!--<place xml:id="nancyCollege">
@@ -4453,8 +4147,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <location>
                   <geo>48.681738364255395,6.192228198051453</geo>
                </location>
-               <desc>Église consacrée en 1737. La nouvelle église Saint-Pierre sera construite en
-                  1855.</desc>
+               <desc>Église consacrée en 1737. La nouvelle église Saint-Pierre sera construite en 1855.</desc>
             </place>
             <place xml:id="nancyBibliotheque" type="civil">
                <placeName>Nancy</placeName>
@@ -4462,9 +4155,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <location>
                   <geo>48.69318,6.18394</geo>
                </location>
-               <desc>La bibliothèque royale est au premier étage de l'hôtel de Ville depuis 1763,
-                  auparavant elle était dans la galerie des Cerfs au Palais Ducal. Elle intègrera à
-                  son emplacement actuel vers 1797.</desc>
+               <desc>La bibliothèque royale est au premier étage de l'hôtel de Ville depuis 1763, auparavant elle était dans la galerie des Cerfs au Palais Ducal. Elle intègrera à son emplacement actuel vers 1797.</desc>
             </place>
             <place xml:id="nancyPetiteCarmelites" type="religious">
                <placeName>Nancy</placeName>
@@ -4488,9 +4179,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <location>
                   <geo>48.6921578,6.1848052992915</geo>
                </location>
-               <desc>La fondation pour les orphelins de Stanislas y est installée en 1748. Hôpital
-                  installé en Ville Neuve en 1589. Auparavant Grande-Rue depuis le XIVe
-                  siècle.</desc>
+               <desc>La fondation pour les orphelins de Stanislas y est installée en 1748. Hôpital installé en Ville Neuve en 1589. Auparavant Grande-Rue depuis le XIVe siècle.</desc>
             </place>
             <place xml:id="nancyDominiquains" type="religious">
                <placeName>Nancy</placeName>
@@ -4506,8 +4195,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <location>
                   <geo>48.69160133692096,6.179393827915192</geo>
                </location>
-               <desc>Le couvent est fondé en 1632, la chapelle subsiste, le lycée Poincaré est
-                  construit sur son emprise et celle des Minimes.</desc>
+               <desc>Le couvent est fondé en 1632, la chapelle subsiste, le lycée Poincaré est construit sur son emprise et celle des Minimes.</desc>
             </place>
             <place xml:id="nancyPenitentsBlancs" type="religious">
                <placeName>Nancy</placeName>
@@ -4515,8 +4203,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <location>
                   <geo>48.69609,6.17806</geo>
                </location>
-               <desc>La confrérie des Pénitents blancs est fondée en 1633. Leur église, Saint-Michel
-                  sera détruite en 1793.</desc>
+               <desc>La confrérie des Pénitents blancs est fondée en 1633. Leur église, Saint-Michel sera détruite en 1793.</desc>
             </place>
             <place xml:id="nancyTiercelins" type="religious">
                <placeName>Nancy</placeName>
@@ -4591,8 +4278,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <location>
                   <geo>48.68564,6.18638</geo>
                </location>
-               <desc>Situation approximative. Sur l'emplacement de l'ancien Hôpital Notre-Dame,
-                  Porte Saint-Nicolas.</desc>
+               <desc>Situation approximative. Sur l'emplacement de l'ancien Hôpital Notre-Dame, Porte Saint-Nicolas.</desc>
             </place>
             <place xml:id="nancyPorteRoyale" type="military">
                <placeName>Nancy</placeName>
@@ -4601,8 +4287,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <location>
                   <geo>48.69441,6.18268</geo>
                </location>
-               <desc>Louis XIV fait construire la porte royale en 1673. Aujourd'hui Porte
-                  Héré</desc>
+               <desc>Louis XIV fait construire la porte royale en 1673. Aujourd'hui Porte Héré</desc>
             </place>
             <place xml:id="nancyPlaceDames" type="civil">
                <placeName>Nancy</placeName>
@@ -4611,8 +4296,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <location>
                   <geo>48.6952,6.1798</geo>
                </location>
-               <desc>Une des plus anciennes places de Nancy, aujourd'hui Place du Colonel
-                  Fabien.</desc>
+               <desc>Une des plus anciennes places de Nancy, aujourd'hui Place du Colonel Fabien.</desc>
             </place>
             <place xml:id="nancyPalais" type="civil">
                <placeName>Nancy</placeName>
@@ -4620,8 +4304,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <location>
                   <geo>48.69499,6.18286</geo>
                </location>
-               <desc>Palais, ancien Hôtel de Craon construit en 1716 par Boffrand, architecte du duc
-                  Léopold</desc>
+               <desc>Palais, ancien Hôtel de Craon construit en 1716 par Boffrand, architecte du duc Léopold</desc>
             </place>
             <place xml:id="frescati">
                <placeName>Frescati</placeName>
@@ -4668,8 +4351,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <location>
                   <geo>48.700155945275355,6.178084909915924</geo>
                </location>
-               <desc>À priori logement du commandant de la place militaire, dans la
-                  citadelle.</desc>
+               <desc>À priori logement du commandant de la place militaire, dans la citadelle.</desc>
             </place>
             <place xml:id="darney">
                <placeName>Darney</placeName>
@@ -4852,8 +4534,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <location>
                   <geo>48.69886895202777,6.177661120891571</geo>
                </location>
-               <desc>On peut supposer que Durival évoque la prison militaire de la Tour Notre-Dame
-                  (actuelle Porte de la Craffe)</desc>
+               <desc>On peut supposer que Durival évoque la prison militaire de la Tour Notre-Dame (actuelle Porte de la Craffe)</desc>
             </place>
             <place xml:id="stuttgart">
                <placeName>Stuttgart</placeName>
@@ -4925,8 +4606,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <location>
                   <geo>48.6918394,6.1793484</geo>
                </location>
-               <desc>Rebaptisée rue Stanislas depuis l'inauguration de la statue du roi en
-                  1831</desc>
+               <desc>Rebaptisée rue Stanislas depuis l'inauguration de la statue du roi en 1831</desc>
             </place>
             <place xml:id="nancySoeursGrises" type="religious">
                <placeName>Nancy</placeName>
@@ -4965,8 +4645,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             <place xml:id="duhautoyVille">
                <placeName>Duhautoy</placeName>
                <placeName type="today">Clémery</placeName>
-               <desc>Par arrêt du conseil d'état (24 novembre 1760) le village de Duhautoy devient
-                  Clémery et est rattaché au baillage de Pont-à-Mousson.</desc>
+               <desc>Par arrêt du conseil d'état (24 novembre 1760) le village de Duhautoy devient Clémery et est rattaché au baillage de Pont-à-Mousson.</desc>
             </place>
             <place xml:id="clemery">
                <placeName>Clemery</placeName>
@@ -5073,8 +4752,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <location>
                   <geo>48.69342745,6.18206770823004</geo>
                </location>
-               <desc>Nouvelle salle inaugurée en 1755. Auparavant une salle était située depuis 1750
-                  derrière la Palais Ducal.</desc>
+               <desc>Nouvelle salle inaugurée en 1755. Auparavant une salle était située depuis 1750 derrière la Palais Ducal.</desc>
             </place>
             <place xml:id="nancyRuePoissonnerie" type="civil">
                <placeName>Nancy</placeName>
@@ -5083,9 +4761,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <location>
                   <geo>48.692001481389006,6.179801523685455</geo>
                </location>
-               <desc>Actuelle rue Gambetta (depuis 1883), Le marché au Poissons était à l'angle de
-                  la rue Gambetta et Saint-Dizier, le bâtiment abritera la Comédie jusqu'en 1738
-                  puis une Renfermerie en 1754.</desc>
+               <desc>Actuelle rue Gambetta (depuis 1883), Le marché au Poissons était à l'angle de la rue Gambetta et Saint-Dizier, le bâtiment abritera la Comédie jusqu'en 1738 puis une Renfermerie en 1754.</desc>
             </place>
             <place xml:id="garenne" type="civil">
                <placeName>Nancy</placeName>
@@ -5093,8 +4769,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <location>
                   <geo>48.68053,6.17210</geo>
                </location>
-               <desc>Emplacement approximatif du bois de la Garenne. Concession faite en 1731 pour
-                  forme une promenade publique.</desc>
+               <desc>Emplacement approximatif du bois de la Garenne. Concession faite en 1731 pour forme une promenade publique.</desc>
             </place>
             <place xml:id="etuve" type="civil">
                <placeName>Nancy</placeName>
@@ -5110,8 +4785,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <location>
                   <geo>48.68567138976192,6.186193227767944</geo>
                </location>
-               <desc>Porte élevée entre 1603 et 1608. Remaniée pour la visite des filles de Louis XV
-                  en 1761.</desc>
+               <desc>Porte élevée entre 1603 et 1608. Remaniée pour la visite des filles de Louis XV en 1761.</desc>
             </place>
             <place xml:id="nancyPorteStGeorges" type="military">
                <placeName>Nancy</placeName>
@@ -5127,9 +4801,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <location>
                   <geo>48.69491925287271,6.187834739685059</geo>
                </location>
-               <desc>Construite en 1761 sur les plans de Richard Mique, en l'honneur de Catherine
-                  Opalinska, épouse de Stanislas, elle sera démontée et reculée des quelques
-                  centaines de mètres en 1768 lors de la construction des casernes.</desc>
+               <desc>Construite en 1761 sur les plans de Richard Mique, en l'honneur de Catherine Opalinska, épouse de Stanislas, elle sera démontée et reculée des quelques centaines de mètres en 1768 lors de la construction des casernes.</desc>
             </place>
             <place xml:id="nancyPorteStStanislas" type="military">
                <placeName>Nancy</placeName>
@@ -5241,9 +4913,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                   <placeName>Nancy</placeName>
                   <geo>48.692107713899404,6.178988814353943</geo>
                </location>
-               <desc> Académie Royale des Sciences et Belles-Lettres de Nancy créé le 28 décembre
-                  1750. Aujourd'hui Académie Stanislas, elle est installée dans la salle de
-                  l'académie de la bibliothèque Stanislas. </desc>
+               <desc> Académie Royale des Sciences et Belles-Lettres de Nancy créé le 28 décembre 1750. Aujourd'hui Académie Stanislas, elle est installée dans la salle de l'académie de la bibliothèque Stanislas. </desc>
             </org>
             <org xml:id="conseilFrance">
                <orgName>Conseil de France</orgName>
@@ -5408,17 +5078,14 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <location>
                   <placeName>Nancy</placeName>
                </location>
-               <desc>La bibliothèque royale est au premier étage de l'hôtel de Ville depuis 1763,
-                  auparavant elle était dans la galerie des Cerfs au Palais Ducal. Elle intègrera
-                  son emplacement actuel vers 1797.</desc>
+               <desc>La bibliothèque royale est au premier étage de l'hôtel de Ville depuis 1763, auparavant elle était dans la galerie des Cerfs au Palais Ducal. Elle intègrera son emplacement actuel vers 1797.</desc>
             </org>
             <org xml:id="aumonePub">
                <orgName>Aumône publique, bureau de l'</orgName>
                <location>
                   <placeName>Nancy</placeName>
                </location>
-               <desc>L'aumône publique est crée vers 1595 pour aider les pauvres de la ville, elle
-                  est alimentée par des quêtes et une contribution des bourgeois.</desc>
+               <desc>L'aumône publique est crée vers 1595 pour aider les pauvres de la ville, elle est alimentée par des quêtes et une contribution des bourgeois.</desc>
             </org>
             <org xml:id="ancChpStGeorges">
                <orgName>Chapitre de Saint-Georges (ancien)</orgName>
@@ -5440,8 +5107,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                   <placeName>Nancy</placeName>
                   <geo>48.69189170755945,6.184414923191071</geo>
                </location>
-               <desc>Fondation de Stanislas en 1747, sise dans l'hôpital Saint-Julien, rue de
-                  l'Hopital (actuel parking Stanislas).</desc>
+               <desc>Fondation de Stanislas en 1747, sise dans l'hôpital Saint-Julien, rue de l'Hopital (actuel parking Stanislas).</desc>
             </org>
             <org xml:id="conseilAulique">
                <orgName>Conseil aulique</orgName>
@@ -5467,16 +5133,14 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <location>
                   <placeName>Nancy</placeName>
                </location>
-               <desc> Fondation de Stanislas en 1752 (bâtiment de l'actuel Musée des Beaux-Arts).
-               </desc>
+               <desc> Fondation de Stanislas en 1752 (bâtiment de l'actuel Musée des Beaux-Arts). </desc>
             </org>
             <org xml:id="comedie">
                <orgName>Théâtre<!-- de Nancy--></orgName>
                <location>
                   <placeName>Nancy</placeName>
                </location>
-               <desc> La troupe du théâtre de Nancy, dont le directeur est Fleury (1758 à 1767)
-                  théâtre construit en 1755. </desc>
+               <desc> La troupe du théâtre de Nancy, dont le directeur est Fleury (1758 à 1767) théâtre construit en 1755. </desc>
             </org>
             <org xml:id="HDVLuneville">
                <orgName>Hôtel de ville</orgName>
@@ -5574,8 +5238,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <note>Lu à l'Académie le 12 juin 1765</note>
             </bibl>
             <bibl xml:id="bib5">
-               <title level="m">Mémoire sur la Lorraine et le Barrois, suivi de la table
-                  alphabétique et topographique des lieux</title>
+               <title level="m">Mémoire sur la Lorraine et le Barrois, suivi de la table alphabétique et topographique des lieux</title>
                <author>
                   <surname>Durival</surname>
                   <forename>Nicolas Luton</forename>
@@ -5617,8 +5280,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <date>1765</date>
                <pubPlace>Amsterdam</pubPlace>
                <publisher>Faucheux</publisher>
-               <note>Lu à l'Académie le 31 juillet 1765. Par cet ouvrage, Sigorgne s'oppose à
-                  Rousseau et ses Lettres écrites de la montagne</note>
+               <note>Lu à l'Académie le 31 juillet 1765. Par cet ouvrage, Sigorgne s'oppose à Rousseau et ses Lettres écrites de la montagne</note>
             </bibl>
             <bibl xml:id="bib10">
                <title>Lettres écrites de la Montagne, Les </title>
@@ -5632,8 +5294,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             </bibl>
             <bibl xml:id="bib11">
                <title>Ouvrage sur les inconvénients de la litterature</title>
-               <note>Lu à l'Académie le 13 novembre 1765. L'auteur n'est pas cité, mais l'ouvrage
-                  est admis au concours. N'obtiendra pas le prix (11 décembre 1765)</note>
+               <note>Lu à l'Académie le 13 novembre 1765. L'auteur n'est pas cité, mais l'ouvrage est admis au concours. N'obtiendra pas le prix (11 décembre 1765)</note>
             </bibl>
             <bibl xml:id="bib12">
                <title>Mémoire militaire</title>
@@ -5645,14 +5306,11 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             </bibl>
             <bibl xml:id="bib13">
                <title>Ouvrage sur la manière de tenir les livres de commerce</title>
-               <note>Récipiendaire anonyme (une jeune fille) d'une dotation de 300 livres par
-                  l'Académie le 11 décembre 1765</note>
+               <note>Récipiendaire anonyme (une jeune fille) d'une dotation de 300 livres par l'Académie le 11 décembre 1765</note>
             </bibl>
             <bibl xml:id="bib14">
-               <title>Description d'un ouvrage de mécanique pour sonner en volée, brider et débrider
-                  les cloches sans monter au clocher</title>
-               <note>Récipiendaire anonyme d'une dotation de 100 livres par l'Académie le 11
-                  décembre 1765</note>
+               <title>Description d'un ouvrage de mécanique pour sonner en volée, brider et débrider les cloches sans monter au clocher</title>
+               <note>Récipiendaire anonyme d'une dotation de 100 livres par l'Académie le 11 décembre 1765</note>
             </bibl>
             <bibl xml:id="bib15">
                <title>Ouvrage sur les fortifications</title>
@@ -5660,8 +5318,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                   <surname>Falois</surname>
                   <forename>Joseph de</forename>
                </author>
-               <note>Joseph de Falois est proposé à l'Académie, mais sa candidature est rejettée,
-                  malgré que son ouvrage ait été approuvé par l'Académie des sciences.</note>
+               <note>Joseph de Falois est proposé à l'Académie, mais sa candidature est rejettée, malgré que son ouvrage ait été approuvé par l'Académie des sciences.</note>
             </bibl>
             <bibl xml:id="bib16">
                <title>Éloge historique de Stanislas I. Roi de Pologne... Prononcé le 11 mai 1766... </title>
@@ -5697,13 +5354,10 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             </bibl>
             <bibl xml:id="bib20">
                <title>Memoire du Parlement de Metz sur son ressort</title>
-               <note>Ce mémoire sur des questions de ressort n'a pas été identifié mais a donné
-                  lieux à deux réponses de Nancy</note>
+               <note>Ce mémoire sur des questions de ressort n'a pas été identifié mais a donné lieux à deux réponses de Nancy</note>
             </bibl>
             <bibl xml:id="bib21">
-               <title> Second mémoire, Présenté par la Cour Souveraine de Lorraine et Barrois;
-                  contenant des Observations sur les Questions auxquelles ont donné lieu les
-                  prétentions formées sur son Ressort / par le Parlement de Metz</title>
+               <title> Second mémoire, Présenté par la Cour Souveraine de Lorraine et Barrois; contenant des Observations sur les Questions auxquelles ont donné lieu les prétentions formées sur son Ressort / par le Parlement de Metz</title>
                <!--TODO rs a attacher à réponse"-->
             </bibl>
             <!--  <bibl xml:id="bib22">
@@ -5711,10 +5365,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
             </bibl>-->
             <bibl xml:id="bib23">
                <!--TODO rs a attacher aussi à mémoire de la cour le 14-07-66"-->
-               <title>Mémoire présenté par la Cour Souveraine de Lorraine et de Barrois, pour
-                  prouver que le Parlement de Metz ne peut à aucun Titre, ni par aucune
-                  considération, demander le Ressort de la Cour Souveraine de Lorraine et
-                  Barrois</title>
+               <title>Mémoire présenté par la Cour Souveraine de Lorraine et de Barrois, pour prouver que le Parlement de Metz ne peut à aucun Titre, ni par aucune considération, demander le Ressort de la Cour Souveraine de Lorraine et Barrois</title>
                <date>1766</date>
             </bibl>
             <!--  <bibl xml:id="bib24">
@@ -5740,15 +5391,13 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <note>Lu à l'Académie le 15 octobre 1766</note>
             </bibl>
             <bibl xml:id="bib27">
-               <title level="m">Charles 1<hi rend="super">er</hi> Roi d'Angleterre à son fils le
-                  Prince de Galles retiré en France</title>
+               <title level="m">Charles 1<hi rend="super">er</hi> Roi d'Angleterre à son fils le Prince de Galles retiré en France</title>
                <author>
                   <surname>Neufchâteau</surname>
                   <forename>François de</forename>
                </author>
                <note>Lu à l'Académie le 15 octobre 1766</note>
-               <idno type="callNumber">Bibliothèque de l'Académie Stanislas, manuscrit des séances
-                  de 1766</idno>
+               <idno type="callNumber">Bibliothèque de l'Académie Stanislas, manuscrit des séances de 1766</idno>
             </bibl>
             <!-- <bibl xml:id="bib28">
               <title>Histoire romaine (voir 1766-11-05)</title>
@@ -5758,14 +5407,12 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <note>Lu à l'Académie le 05 novembre 1766 par Gautier</note>
             </bibl>
             <bibl xml:id="bib30">
-               <title level="m">Dictionnaire philosophique, portatif, ou supplément à l'édition de
-                  1765 . Revu, corrigé &amp; augmenté de XXXVII articles par l'auteur</title>
+               <title level="m">Dictionnaire philosophique, portatif, ou supplément à l'édition de 1765 . Revu, corrigé &amp; augmenté de XXXVII articles par l'auteur</title>
                <author><surname>Voltaire</surname></author>
                <pubPlace>À Londres [Nancy] [ca 1765]</pubPlace>
                <publisher>[Leclerc]</publisher>
                <date>1765</date>
-               <note>Fausse adresse, imprimé en France, peut-être à Nancy chez J.-B. Hyacinthe
-                  Leclerc, d'après le matériel typographique (voir BnF)</note>
+               <note>Fausse adresse, imprimé en France, peut-être à Nancy chez J.-B. Hyacinthe Leclerc, d'après le matériel typographique (voir BnF)</note>
             </bibl>
             <bibl xml:id="bib31">
                <title>Théogonie d'Hésiode</title>
@@ -5812,25 +5459,18 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <date>1765</date>
             </bibl>
             <bibl xml:id="bib36">
-               <title>Ortografe des Dames pour aprandre à écrire et à lire corectemant en tres peu
-                  de temps.</title>
-               <author><surname>Chaumont de la
-                     Galaizière</surname><forename>Barthélemy-Louis-Martin</forename></author>
+               <title>Ortografe des Dames pour aprandre à écrire et à lire corectemant en tres peu de temps.</title>
+               <author><surname>Chaumont de la Galaizière</surname><forename>Barthélemy-Louis-Martin</forename></author>
                <pubPlace>Nancy</pubPlace>
                <publisher>Haenner</publisher>
                <date>1766</date>
             </bibl>
             <bibl xml:id="bib37">
-               <title level="m">Discours d'un de MM. des enquêtes au parlement, chambres
-                  assemblées... et sur la lettre circulaire qui devait être adressée à tous les
-                  prélats du royaume avec ces Actes. Du 4 (et du 5) septembre 1765</title>
+               <title level="m">Discours d'un de MM. des enquêtes au parlement, chambres assemblées... et sur la lettre circulaire qui devait être adressée à tous les prélats du royaume avec ces Actes. Du 4 (et du 5) septembre 1765</title>
                <date>1765</date>
             </bibl>
             <bibl xml:id="bib38">
-               <title>Extraits des assertions dangereuses et pernicieuses en tout genre, que les
-                  soi-disant Jésuites ont, dans tous les temps et persévéramment, soutenues,
-                  enseignées et publiées dans leurs livres, avec l'approbation des supérieurs et
-                  généraux... </title>
+               <title>Extraits des assertions dangereuses et pernicieuses en tout genre, que les soi-disant Jésuites ont, dans tous les temps et persévéramment, soutenues, enseignées et publiées dans leurs livres, avec l'approbation des supérieurs et généraux... </title>
                <placeName>Paris</placeName>
                <publisher>Simon, Pierre Guillaume</publisher>
                <date>1762</date>
@@ -5867,8 +5507,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </author>
             </bibl>
             <bibl xml:id="bib63">
-               <title>Recueil des plans, élévations et coupes ... des châteaux, jardins et
-                  dépendances que le roy de Pologne occupe en Lorraine ...</title>
+               <title>Recueil des plans, élévations et coupes ... des châteaux, jardins et dépendances que le roy de Pologne occupe en Lorraine ...</title>
                <author>
                   <surname>Héré</surname>
                   <forename>Emmanuel</forename>
@@ -5887,8 +5526,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                   <forename>Claude François Xavier</forename>
                   <surname>Millot</surname>
                </author>
-               <note>Lu à l'Académie le 06 février 1765, l'auteur est proposé comme
-                  académicien.</note>
+               <note>Lu à l'Académie le 06 février 1765, l'auteur est proposé comme académicien.</note>
             </bibl>
             <!--<bibl xml:id="bib66">
               <title>Discours sur les qualités qui font un bon citoyen</title>
@@ -5926,8 +5564,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </author>
                <!-- <publisher>Lesclapart</publisher>
               <date>1762</date>-->
-               <note>Pastorale. Représentée pour la premiere fois par les comédiens italiens
-                  ordinaires du Roi (Paris), le 15 février 1762</note>
+               <note>Pastorale. Représentée pour la premiere fois par les comédiens italiens ordinaires du Roi (Paris), le 15 février 1762</note>
             </bibl>
             <bibl xml:id="bib44">
                <title level="m">Alzire ou les Américains</title>
@@ -5986,8 +5623,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <!-- <publisher>Cailleau</publisher>
               <pubPlace>A Paris, chez Cailleau. M.DCC.LXIV, France</pubPlace>
               <date>1764</date>-->
-               <note>Comédie en un acte et en vers. Représentée pour la premiere fois par les
-                  comédiens français ordinaires du Roi (Paris), le 30 avril 1764.</note>
+               <note>Comédie en un acte et en vers. Représentée pour la premiere fois par les comédiens français ordinaires du Roi (Paris), le 30 avril 1764.</note>
             </bibl>
             <bibl xml:id="bib49">
                <title level="m">Misantrope, Le</title>
@@ -6005,8 +5641,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <!--   <pubPlace>Amsterdam</pubPlace>
               <publisher>[S.n.]</publisher>
               <date>1758</date>-->
-               <note>Comédie en 5 actes et en prose. Pièce de 1758, première représentation par les
-                  Comédiens français le 18 février 1761</note>
+               <note>Comédie en 5 actes et en prose. Pièce de 1758, première représentation par les Comédiens français le 18 février 1761</note>
             </bibl>
             <bibl xml:id="bib51">
                <title level="m">Caffé, ou l'Écossaise, Le </title>
@@ -6016,8 +5651,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                </author>
                <!--  <pubPlace>Londres</pubPlace>
               <date>1761</date>-->
-               <note>Comédie. Représentée pour la première fois par les Comédiens français
-                  ordinaires du Roi (Paris), le 26 juillet 1760</note>
+               <note>Comédie. Représentée pour la première fois par les Comédiens français ordinaires du Roi (Paris), le 26 juillet 1760</note>
             </bibl>
             <bibl xml:id="bib52">
                <title level="m">Légataire universel, Le</title>
@@ -6050,8 +5684,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <!-- <publisher>Duchesne (veuve)</publisher>
               <pubPlace>Paris</pubPlace>
               <date>1787</date>-->
-               <note>Comédie en un acte en prose. Représentée par les Comédiens français, le mardi
-                  15 mars 1707.</note>
+               <note>Comédie en un acte en prose. Représentée par les Comédiens français, le mardi 15 mars 1707.</note>
             </bibl>
             <bibl xml:id="bib55">
                <title level="m">Démocrite, Les Folies amoureuses, les Menechmes</title>
@@ -6082,8 +5715,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <!--  <publisher>Hérissant</publisher>
               <pubPlace>Paris</pubPlace>
               <date>1766</date>-->
-               <note>Représentée par les comédiens français ordinaires du Roi (Paris), le 2 novembre
-                  1765.</note>
+               <note>Représentée par les comédiens français ordinaires du Roi (Paris), le 2 novembre 1765.</note>
             </bibl>
             <bibl xml:id="bib58">
                <title level="m">Trois frères rivaux, Les</title>
@@ -6118,20 +5750,17 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <!-- <publisher>[S.n.]</publisher>
               <pubPlace>[S.l.]</pubPlace>
               <date>1711</date>-->
-               <note>Tragédie en cinq actes, en vers. Représentée pour la première fois le 23
-                  janvier 1711</note>
+               <note>Tragédie en cinq actes, en vers. Représentée pour la première fois le 23 janvier 1711</note>
             </bibl>
             <bibl xml:id="bib71">
-               <title level="m">Oraison funèbre de très-haut,... Stanislas I,... Prononcée en
-                  l'Eglise Primatiale de Lorraine le 10 du mois de Mai 1766</title>
+               <title level="m">Oraison funèbre de très-haut,... Stanislas I,... Prononcée en l'Eglise Primatiale de Lorraine le 10 du mois de Mai 1766</title>
                <author><surname>Élisée</surname></author>
                <pubPlace>Paris</pubPlace>
                <publisher>Lottin, Antoine-Prosper</publisher>
                <date>1766</date>
             </bibl>
             <bibl xml:id="bib72">
-               <title>Oraison funèbre de... Stanislas 1<hi rend="super">er</hi>,... duc de
-                  Lorraine... prononcée le 12 mai 1766...</title>
+               <title>Oraison funèbre de... Stanislas 1<hi rend="super">er</hi>,... duc de Lorraine... prononcée le 12 mai 1766...</title>
                <author>
                   <surname>Dombasle</surname>
                   <!-- prévoir quelque chose pour les abbés ou ne pas en tenir compte  <forename>Abbé de</forename>-->
@@ -6142,8 +5771,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <idno type="callNumber">BM Nancy 50 279 (g)</idno>
             </bibl>
             <bibl xml:id="bib73">
-               <title>Oraison funèbre de Stanislas... prononcée dans l'Eglise du Collège,... le 15
-                  may 1766,...</title>
+               <title>Oraison funèbre de Stanislas... prononcée dans l'Eglise du Collège,... le 15 may 1766,...</title>
                <author>
                   <surname>Coster</surname>
                   <forename>Sigisbert-Etienne</forename>
@@ -6154,8 +5782,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <idno type="callNumber">BM cote 50 279 (h)</idno>
             </bibl>
             <bibl xml:id="bib74">
-               <title>Oraison funèbre de... Stanislas I,... , prononcée en l'église paroissiale de
-                  St-Roch de Nancy..., le 26 may 1766...</title>
+               <title>Oraison funèbre de... Stanislas I,... , prononcée en l'église paroissiale de St-Roch de Nancy..., le 26 may 1766...</title>
                <author>
                   <surname>Clément</surname>
                   <forename>Denis-Xavier</forename>
@@ -6166,8 +5793,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <idno type="callNumber">BM Nancy 50 279 (j)</idno>
             </bibl>
             <bibl xml:id="bib75">
-               <title>Oraison funèbre de Stanislas 1<hi rend="super">er</hi>,[...] prononcée le 10
-                  juin 1766...</title>
+               <title>Oraison funèbre de Stanislas 1<hi rend="super">er</hi>,[...] prononcée le 10 juin 1766...</title>
                <author>
                   <surname>Guyot</surname>
                   <forename>Guillaume-Germain</forename>
@@ -6181,8 +5807,7 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
                <title>Mémoire attribué à la Chambre des Comptes</title>
             </bibl>
             <bibl xml:id="catalogueBibiliotheque">
-               <title>Catalogue des livres de la bibliothèque royale de Nancy, fondée par le roi de
-                  Pologne [...]</title>
+               <title>Catalogue des livres de la bibliothèque royale de Nancy, fondée par le roi de Pologne [...]</title>
                <pubPlace>Nancy</pubPlace>
                <publisher>Leseure, Veuve d'Antoine</publisher>
                <date>1766</date>
@@ -6191,13 +5816,11 @@ http://ecrivosges.com/vosgiens/bio.php?id=4004&id_bio=3074&operateur=one&recherc
          </listBibl>
 
          <list type="artwork">
-            <item xml:id="estampeCollin">Construction du quartier roïal des cazernes par
-               Collin</item>
+            <item xml:id="estampeCollin">Construction du quartier roïal des cazernes par Collin</item>
             <item xml:id="arcTriomphe">Construction du quartier roïal des cazernes par Collin</item>
             <item xml:id="sceauxCollin">Sceaux gravés par Collin</item>
             <item xml:id="piecesMausolee">Mausolée de Stanislas</item>
-            <item xml:id="estampeCollinMausolee">Mausolée de Stanislas estampe gravée par
-               Collin</item>
+            <item xml:id="estampeCollinMausolee">Mausolée de Stanislas estampe gravée par Collin</item>
          </list>
       </body>
    </text>
