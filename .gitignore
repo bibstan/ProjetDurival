@@ -8,6 +8,8 @@ edition/index.html
 /pdf
 /images
 /edition/images
+/edition/csv
+/edition/xml
 /transcription
 /edition/latex
 # except .tex files which are maintained by hand
