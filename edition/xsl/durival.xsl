@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns="http://www.w3.org/1999/xhtml"
-    exclude-result-prefixes="xs tei"
+    xmlns:tei="http://www.tei-c.org/ns/1.0"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    exclude-result-prefixes="xs tei xhtml"
     version="2.0">
     <!-- 
     *******************************************************************
@@ -30,14 +31,18 @@
     *******************************************************************
     -->
     
-    <xsl:output method="xhtml" indent="yes" omit-xml-declaration="no" encoding="UTF-8"/>
+    <xsl:output method="xhtml" indent="yes" omit-xml-declaration="yes" encoding="UTF-8"/>
     <xsl:output method="xhtml" indent="yes" omit-xml-declaration="yes" encoding="UTF-8" name="html"/>
+    <xsl:output method="xml" indent="yes" omit-xml-declaration="yes" encoding="UTF-8" name="xml"/>
     <xsl:output method="text" indent="yes" encoding="UTF-8" name="frise"/>
+    
     
     <!--********** page d'index **********-->
 
     
     <xsl:template match="/">
+        <xsl:text disable-output-escaping="yes"><![CDATA[<!DOCTYPE html>]]>
+</xsl:text>
         <html>
             <head>
                 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -140,9 +145,9 @@
                                         durival</b> est la première étape d'un projet qui vise à
                                         l'édition complète des 14 volumes composés par Nicolas
                                         Durival entre 1737 et 1795. </p>
-
+                                    
                                     <p class="edito text-left"> Nicolas Durival est un officier au service du chancelier
-
+                                        
                                         Chaumont de la Galaizière dès l'arrivée de Stanislas et des
                                         Français en Lorraine en 1737. Il passe ensuite au Conseil du
                                         roi et, à partir de 1760, achète la charge de lieutenant
@@ -153,9 +158,9 @@
                                         l'histoire de la ville et de la cour, ces 14 volumes
                                         manuscrits n'ont encore jamais fait l'objet d'une
                                         édition complète. </p>
-
+                                    
                                     <p class="edito text-left">Dès aujourd'hui, les Bibliothèques de Nancy proposent l'édition de deux années
-
+                                        
                                         charnières pour l'histoire de la Lorraine : 1765-1766. Cette
                                         édition est annotée et augmentée d'un index, de cartes
                                         anciennes ou interactives, d'illustrations , de ressources
@@ -213,7 +218,7 @@
                         </div>
                     </div>
                 </div>
-
+                
                 <script src="js/vendor/jquery.js">/*Pour transformation xslt*/</script>
                 <script src="js/foundation.min.js">/*Pour transformation xslt*/</script>
                 <script src="js/modernisation/modernisation.js">                    
@@ -244,7 +249,7 @@
         <xsl:result-document format="xml" encoding="UTF-8" href="html/durivallc.tei.xml">
             <xsl:apply-templates select="." mode="copyXML"/>
         </xsl:result-document>
-    </xsl:template>    
+    </xsl:template>
     
     <!--********** pages du Journal **********-->
     
@@ -252,6 +257,8 @@
         <xsl:for-each select=".//tei:div[@type='month']">
             <xsl:variable name="year" select="substring(./tei:fw[@type='runningHead']/tei:date/@when,1,4)"/>
             <xsl:result-document format="html" encoding="UTF-8" href="html/{./@xml:id}.html">
+                <xsl:text disable-output-escaping="yes"><![CDATA[<!DOCTYPE html>]]>
+</xsl:text>
                 <html>
                     <head>
                         <title>Édition du journal de Nicolas Durival 1765-1766</title>
@@ -259,7 +266,7 @@
                         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
                         
                         <!-- css Pour personnalisation -->
-                        <link rel="stylesheet" href="../css/app.css"/>
+                        <link rel="stylesheet" href="../css/app.css" />
                         <!-- css Foundation -->
                         <link rel="stylesheet" href="../css/foundation.css"/>
                                                 

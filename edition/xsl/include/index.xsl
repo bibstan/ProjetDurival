@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
-  
-  xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:tei="http://www.tei-c.org/ns/1.0"
   exclude-result-prefixes="xs tei"    
   version="2.0">
   
   <!-- la normalisation des patronymes impacte également les notes de survole (@mode='tooltip') -->
-    
-    <xsl:output method="xhtml" indent="yes" omit-xml-declaration="no" encoding="UTF-8"/>
-    <xsl:output method="xhtml" indent="yes" omit-xml-declaration="yes" encoding="UTF-8" name="html"/>
-    <xsl:output method="text" indent="yes" encoding="UTF-8" name="frise"/>
     
     
   <xsl:template match="tei:persName[ancestor::tei:person and ancestor::tei:persName] | tei:surname[ancestor::tei:person] | tei:roleName[ancestor::tei:person]">
@@ -67,6 +62,8 @@
   
   <xsl:template match="//tei:div[@type='index']/tei:listPerson" mode="index">
         <xsl:result-document format="html" encoding="UTF-8" href="html/listPerson.html">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<!DOCTYPE html>]]>
+</xsl:text>
             <html>
                 <head>
                     <title>Édition du journal de Nicolas Durival 1765-1766</title>
@@ -421,6 +418,8 @@
     
     <xsl:template match="//tei:div[@type='index']/tei:listPlace" mode="index">
         <xsl:result-document format="html" encoding="UTF-8" href="html/listPlace.html">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<!DOCTYPE html>]]>
+</xsl:text>
             <html>
                 <head>
                     <title>Édition du journal de Nicolas Durival 1765-1766</title>
@@ -548,7 +547,9 @@
     </xsl:template>
     
     <xsl:template match="//tei:div[@type='index']/tei:listOrg" mode="index">
-        <xsl:result-document format="html" encoding="UTF-8" href="html/listOrg.html">           
+        <xsl:result-document format="html" encoding="UTF-8" href="html/listOrg.html">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<!DOCTYPE html>]]>
+</xsl:text>
             <html>
                 <head>
                     <title>Édition du journal de Nicolas Durival 1765-1766</title>
@@ -680,7 +681,9 @@
     </xsl:template>
     
     <xsl:template match="//tei:div[@type='index']/tei:listBibl" mode="index">
-        <xsl:result-document format="html" encoding="UTF-8" href="html/listbib.html">           
+        <xsl:result-document format="html" encoding="UTF-8" href="html/listbib.html">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<!DOCTYPE html>]]>
+</xsl:text>
             <html>
                 <head>
                     <title>Édition du journal de Nicolas Durival 1765-1766</title>

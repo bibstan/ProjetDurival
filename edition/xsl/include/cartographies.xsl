@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
-  xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:tei="http://www.tei-c.org/ns/1.0"
   exclude-result-prefixes="xs tei"    
   version="2.0">
   
   <xsl:template match="/" mode="carte">
         <xsl:result-document format="html" encoding="UTF-8" href="html/cartes.html">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<!DOCTYPE html>]]>
+</xsl:text>
             <html>
                 <head>
                     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -119,7 +121,9 @@
     
     <xsl:template match="/" mode="belprey">
         <xsl:result-document format="html" encoding="UTF-8" href="html/belprey.html">
-            <html xmlns="http://www.w3.org/1999/xhtml">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<!DOCTYPE html>]]>
+</xsl:text>
+            <html>
                 <head>
                     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
                     <title>Édition du journal de Nicolas Durival 1765-1766</title>
@@ -156,7 +160,9 @@
     
     <xsl:template match="/" mode="mique">
         <xsl:result-document format="html" encoding="UTF-8" href="html/mique.html">
-            <html xmlns="http://www.w3.org/1999/xhtml">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<!DOCTYPE html>]]>
+</xsl:text>
+            <html>
                 <head>
                     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
                     <title>Édition du journal de Nicolas Durival 1765-1766</title>
@@ -194,6 +200,8 @@
     <xsl:template match="//tei:div[@type='index'][descendant::tei:listPlace[@xml:id='listPlace']][descendant::tei:listOrg[@xml:id='listOrg']]" mode="cartographie">
         <!--<xsl:template match="//tei:listPlace[@xml:id='listPlace']" mode="cartographie">-->        
         <xsl:result-document format="html" encoding="UTF-8" href="html/cartographie.html">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<!DOCTYPE html>]]>
+</xsl:text>
             <html>
                 <head>
                     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />

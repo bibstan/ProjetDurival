@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
-  xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:tei="http://www.tei-c.org/ns/1.0"
   exclude-result-prefixes="xs tei"    
   version="2.0">
   
@@ -53,6 +53,8 @@
   
   <xsl:template match="tei:projectDesc" mode="projecDesc">
     <xsl:result-document format="html" encoding="UTF-8" href="html/apropos.html">
+      <xsl:text disable-output-escaping="yes"><![CDATA[<!DOCTYPE html>]]>
+</xsl:text>
       <html>
         <head>
           <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />

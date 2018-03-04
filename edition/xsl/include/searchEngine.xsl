@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns="http://www.w3.org/1999/xhtml" exclude-result-prefixes="xs tei" version="2.0">
+<xsl:stylesheet 
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:tei="http://www.tei-c.org/ns/1.0"
+    exclude-result-prefixes="xs tei"
+    version="2.0">
 
     <xsl:template match="/" mode="searchEngine">
         <xsl:result-document format="html" encoding="UTF-8" href="html/query.php">
-            <html xmlns="http://www.w3.org/1999/xhtml">
+            <xsl:text disable-output-escaping="yes"><![CDATA[<!DOCTYPE html>]]>
+</xsl:text>
+            <html>
                 <head>
                     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
                     <title>Édition du journal de Nicolas Durival 1765-1766</title>
@@ -78,18 +85,20 @@
                                 else {
                                     if ($_POST['string']!=="" && $_POST['date']=='null' && $_POST['theme']=='null') {
                                         //TODO echappement de l'apostrophe dans la requête.
-                                        if ($xmlstr->xpath('//tei:div[@id][./tei:p[contains(translate(.,"ABCDEFGHIJKLMNOPQRSTUVWXYZ","abcdefghijklmnopqrstuvwxyz"),"'.$stringlc.'")]]')) {
-                                            foreach ($xmlstr->xpath('//tei:div[@id][./tei:p[contains(translate(.,"ABCDEFGHIJKLMNOPQRSTUVWXYZ","abcdefghijklmnopqrstuvwxyz"),"'.$stringlc.'")]]') as $result) {
+                                        if ($xmlstr->xpath('//tei:body//tei:div[@id][./tei:p[contains(translate(.,"ABCDEFGHIJKLMNOPQRSTUVWXYZ","abcdefghijklmnopqrstuvwxyz"),"'.$stringlc.'")]]')) {
+                                            foreach ($xmlstr->xpath('//tei:body//tei:div[@id][./tei:p[contains(translate(.,"ABCDEFGHIJKLMNOPQRSTUVWXYZ","abcdefghijklmnopqrstuvwxyz"),"'.$stringlc.'")]]') as $result) {
                                             echo "<br />";
                     
                                             //TODO aller récupérer la date dans le <dateline>-><date>->@when/@from
                                             $year = substr($result['id'], 1,4);
                                             $month = substr($result['id'], 5,2);
                                             $day = substr($result['id'], 7,2);
-                                            $date = $year."-".$month."-".$day;
+                                            //TODO pour mettre la date $date = $year."-".$month."-".$day;
+                                            //TODO pour mettre la date dans le lien strftime('%e %B %G',strtotime($date)) 
+                                            $date = $day." ".$month." ".$year;
                                             $date = $date;
                     
-                                            echo "<a href='".substr($result['id'], 0,7).".html#".$result['id']."'/>".strftime('%e %B %G',strtotime($date))."</a>";
+                                            echo "<a href='".substr($result['id'], 0,7).".html#".$result['id']."'/>".$date."</a>";
                                             echo "<br />";
                                             $result->registerXPathNamespace("tei", "http://www.tei-c.org/ns/1.0");
                                             foreach ($result->xpath('./tei:p[contains(translate(.,"ABCDEFGHIJKLMNOPQRSTUVWXYZ","abcdefghijklmnopqrstuvwxyz"),"'.$stringlc.'")]') as $p) {
@@ -114,10 +123,10 @@
                                     $year = substr($result['id'], 1,4);
                                     $month = substr($result['id'], 5,2);
                                     $day = substr($result['id'], 7,2);
-                                    $date = $year."-".$month."-".$day;
+                                    $date = $day." ".$month." ".$year;
                                     $date = $date;
                     
-                                    echo "<a href='".substr($result['id'], 0,7).".html#".$result['id']."'/>".strftime('%e %B %G',strtotime($date))."</a>";
+                                    echo "<a href='".substr($result['id'], 0,7).".html#".$result['id']."'/>".$date."</a>";
                                     echo "<br />";
                                     $result->registerXPathNamespace("tei", "http://www.tei-c.org/ns/1.0");
                                     foreach ($result->xpath('./tei:p[contains(translate(.,"ABCDEFGHIJKLMNOPQRSTUVWXYZ","abcdefghijklmnopqrstuvwxyz"),"'.$stringlc.'")]') as $p) {
@@ -142,10 +151,10 @@
                                     $year = substr($result['id'], 1,4);
                                     $month = substr($result['id'], 5,2);
                                     $day = substr($result['id'], 7,2);
-                                    $date = $year."-".$month."-".$day;
+                                    $date = $day." ".$month." ".$year;
                                     $date = $date;
                     
-                                    echo "<a href='".substr($result['id'], 0,7).".html#".$result['id']."'/>".strftime('%e %B %G',strtotime($date))."</a>";
+                                    echo "<a href='".substr($result['id'], 0,7).".html#".$result['id']."'/>".$date."</a>";
                                     echo "<br />";
                                     $result->registerXPathNamespace("tei", "http://www.tei-c.org/ns/1.0");
                                     foreach ($result->xpath('./tei:p[contains(translate(.,"ABCDEFGHIJKLMNOPQRSTUVWXYZ","abcdefghijklmnopqrstuvwxyz"),"'.$stringlc.'")][contains(@ana,"'.$theme.'")]') as $p) {
@@ -171,10 +180,10 @@
                                     $year = substr($result['id'], 1,4);
                                     $month = substr($result['id'], 5,2);
                                     $day = substr($result['id'], 7,2);
-                                    $date = $year."-".$month."-".$day;
+                                    $date = $day." ".$month." ".$year;
                                     $date = $date;
                     
-                                    echo "<a href='".substr($result['id'], 0,7).".html#".$result['id']."'/>".strftime('%e %B %G',strtotime($date))."</a>";
+                                    echo "<a href='".substr($result['id'], 0,7).".html#".$result['id']."'/>".$date."</a>";
                                     echo "<br />";
                                     $result->registerXPathNamespace("tei", "http://www.tei-c.org/ns/1.0");
                                     foreach ($result->xpath('./tei:p[contains(translate(.,"ABCDEFGHIJKLMNOPQRSTUVWXYZ","abcdefghijklmnopqrstuvwxyz"),"'.$stringlc.'")][contains(@ana,"'.$theme.'")]') as $p) {
@@ -200,10 +209,10 @@
                                     $year = substr($result['id'], 1,4);
                                     $month = substr($result['id'], 5,2);
                                     $day = substr($result['id'], 7,2);
-                                    $date = $year."-".$month."-".$day;
+                                    $date = $day." ".$month." ".$year;
                                     $date = $date;
                     
-                                    echo "<a href='".substr($result['id'], 0,7).".html#".$result['id']."'/>".strftime('%e %B %G',strtotime($date))."</a>";
+                                    echo "<a href='".substr($result['id'], 0,7).".html#".$result['id']."'/>".$date."</a>";
                                     echo "<br />";
                                     $result->registerXPathNamespace("tei", "http://www.tei-c.org/ns/1.0");
                                     foreach ($result->xpath('./tei:p[contains(@ana,"'.$theme.'")]') as $p) {
@@ -229,10 +238,10 @@
                                     $year = substr($result['id'], 1,4);
                                     $month = substr($result['id'], 5,2);
                                     $day = substr($result['id'], 7,2);
-                                    $date = $year."-".$month."-".$day;
+                                    $date = $day." ".$month." ".$year;
                                     $date = $date;
                     
-                                    echo "<a href='".substr($result['id'], 0,7).".html#".$result['id']."'/>".strftime('%e %B %G',strtotime($date))."</a>";
+                                    echo "<a href='".substr($result['id'], 0,7).".html#".$result['id']."'/>".$date."</a>";
                                     echo "<br />";
                                     $result->registerXPathNamespace("tei", "http://www.tei-c.org/ns/1.0");
                                     foreach ($result->xpath('./tei:p[contains(@ana,"'.$theme.'")]') as $p) {
