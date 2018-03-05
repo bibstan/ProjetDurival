@@ -118,7 +118,10 @@
               </ul>
             </div>
             <div class="top-bar-right">
-              <ul class="vertical medium-horizontal menu" data-responsive-menu="drilldown medium-dropdown">                                                                             
+              <ul class="vertical medium-horizontal menu" data-responsive-menu="drilldown medium-dropdown">
+                <li>
+                  <a href="query.php">Recherche</a>
+                </li>
                 <li>
                   <a href="#">Index</a>
                   <ul class="vertical menu">

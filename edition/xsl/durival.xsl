@@ -32,7 +32,7 @@
     -->
     
     <xsl:output method="xhtml" indent="yes" omit-xml-declaration="yes" encoding="UTF-8"/>
-    <xsl:output method="xhtml" indent="yes" omit-xml-declaration="yes" encoding="UTF-8" name="html"/>
+    <xsl:output method="xhtml" indent="no" omit-xml-declaration="yes" encoding="UTF-8" name="html"/>
     <xsl:output method="xml" indent="yes" omit-xml-declaration="yes" encoding="UTF-8" name="xml"/>
     <xsl:output method="text" indent="yes" encoding="UTF-8" name="frise"/>
     
